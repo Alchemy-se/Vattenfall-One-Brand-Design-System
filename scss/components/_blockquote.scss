@@ -1,0 +1,71 @@
+// <div class="vattenfall-blockquote">
+//   <blockquote class="vattenfall-blockquote__quote">
+//     It's not enough to be efficient:
+//     we must also be innovative in
+//     our ways of working
+//   </blockquote>
+//   <div class="vattenfall-blockquote__author">Magnus Hall</div>
+//   <div class="vattenfall-blockquote__author-title">PRESIDENT AND CEO</div>
+//   <img class="vattenfall-blockquote__image" src="" />
+// </div>
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.vattenfall-blockquote {
+  position: relative;
+  padding: 3rem 0 2rem;
+}
+
+.vattenfall-blockquote * {
+  position: relative;
+
+}
+.vattenfall-blockquote__quote {
+  font-size: 2.2rem;
+  border-left: 3px gray solid;
+  padding-left: 60px;
+  width: 60%;
+  line-height: 1;
+  font-weight: 900;
+  text-align: left;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+    padding-left: 20px;
+    width: 85%;
+  }
+}
+
+
+.vattenfall-blockquote__author ,
+.vattenfall-blockquote__author-title {
+  margin-left: 65px;
+    font-size: 18px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+
+.vattenfall-blockquote__author {
+  font-weight: 600;
+}
+.vattenfall-blockquote__author-title {
+  margin-left: 65px;
+}
+.vattenfall-blockquote__illustration {
+  max-width: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  max-height: 100%;
+  display: block;
+}
+
