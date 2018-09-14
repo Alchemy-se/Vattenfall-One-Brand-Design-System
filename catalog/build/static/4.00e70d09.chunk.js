@@ -1,0 +1,2 @@
+webpackJsonp([4],{777:function(e,t,n){var o=n(15),a=n(45),r=n(286).PageRenderer;r.__esModule&&(r=r.default);var i=a({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(786)}},componentWillMount:function(){},render:function(){return o.createElement(r,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},786:function(e,t){e.exports="This is how a layout for a Vattenfall mobile application could look.\n\nImage be here"}});
+//# sourceMappingURL=4.00e70d09.chunk.js.map
