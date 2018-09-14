@@ -1,0 +1,2 @@
+webpackJsonp([0],{287:function(e,t,n){var o=n(15),a=n(45),r=n(286).PageRenderer;r.__esModule&&(r=r.default);var i=a({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(791)}},componentWillMount:function(){},render:function(){return o.createElement(r,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},791:function(e,t){e.exports="# This page is not done yet :("}});
+//# sourceMappingURL=0.61fdec84.chunk.js.map
