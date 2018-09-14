@@ -5,6 +5,7 @@
   "scripts": {
     "test": "yarn build",
     "build": "npm-run-all --sequential css-main catalog-build",
+    "deploy": "now --public",
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
