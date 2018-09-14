@@ -1,0 +1,2 @@
+webpackJsonp([3],{776:function(e,t,n){var a=n(15),o=n(45),r=n(286).PageRenderer;r.__esModule&&(r=r.default);var i=o({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(785)}},componentWillMount:function(){},render:function(){return a.createElement(r,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},785:function(e,t){e.exports="This is how a layout for a Vattenfall website start page could look.\n\n```image\nsrc: img/placholder-site.png\n```\n"}});
+//# sourceMappingURL=3.b3c2d1ee.chunk.js.map
