@@ -47,9 +47,13 @@ const pages = [
         title: "Components",
         content: pageLoader(() => import("./components/intro.md"))
       }, {
-        path: "/css/hero",
+        path: "/css/blockquote",
         title: "- Blockquote",
         content: pageLoader(() => import("./components/blockquote.md"))
+      }, {
+        path: "/css/button",
+        title: "- Button",
+        content: pageLoader(() => import("./components/button.md"))
       }, {
       //   path: "/css/hero",
       //   title: "- Hero",
