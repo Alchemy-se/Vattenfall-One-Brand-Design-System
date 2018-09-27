@@ -8,6 +8,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  font-size: 87.5%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -24,7 +25,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -126,13 +127,13 @@ sup {
 }
 
 a {
-  color: #FFDA01;
+  color: #ffda00;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #b49900;
+  color: #b39900;
   text-decoration: underline;
 }
 
