@@ -14,7 +14,7 @@ const pages = [
     content: pageLoader(() => import("./WELCOME.md"))
   },
   {
-    title: 'Layouts', 
+    title: 'Examples', 
     pages: [
       {
         path: "/layouts-intro",
@@ -43,6 +43,22 @@ const pages = [
         title: "Getting started",
         content: pageLoader(() => import("./getting-started.md"))
       }, {
+        path: "/sizing",
+        title: "Sizing",
+        content: pageLoader(() => import("./sizing.md"))
+      }, {
+        path: "/grid",
+        title: "Grid",
+        content: pageLoader(() => import("./grid.md"))
+      }, {
+        path: "/colors",
+        title: "Colors",
+        content: pageLoader(() => import("./colors.md"))
+      }, {
+        path: "/spacing",
+        title: "Spacing",
+        content: pageLoader(() => import("./spacing.md"))
+      }, {
         path: "/components-intro",
         title: "Components",
         content: pageLoader(() => import("./components/intro.md"))
@@ -58,6 +74,10 @@ const pages = [
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => import("./components/button.md"))
+      }, {
+        path: "/css/navbar",
+        title: "- Navbar",
+        content: pageLoader(() => import("./components/navbar.md"))
       }, {
       //   path: "/css/hero",
       //   title: "- Hero",
