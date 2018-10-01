@@ -3,19 +3,19 @@ A bunch of different buttons.
 ### Primary buttons / Large
 
 ```html
-<div class="row">
-  <div class="col">
+<div class="vf-row">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--primary">Yellow button</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--secondary">Blue Button</button>
   </div>
 </div>
-<div class="row" style="padding-top: 20px">
-  <div class="col">
+<div class="vf-row" style="padding-top: 20px">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--primary">Disabled</button>
   </div>
-    <div class="col">
+    <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--secondary">Disabled</button>
   </div>
 </div>
@@ -24,19 +24,19 @@ A bunch of different buttons.
 ### Primary buttons / Medium
 
 ```html
-<div class="row">
-  <div class="col">
+<div class="vf-row">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn  vattenfall-btn--primary">Yellow button</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn  vattenfall-btn--secondary">Blue Button</button>
   </div>
 </div>
-<div class="row" style="padding-top: 20px">
-  <div class="col">
+<div class="vf-row" style="padding-top: 20px">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn  vattenfall-btn--primary">Disabled</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn  vattenfall-btn--secondary">Disabled</button>
   </div>
 </div>
@@ -45,19 +45,19 @@ A bunch of different buttons.
 ### Outlined buttons / Large
 
 ```html
-<div class="row">
-  <div class="col">
+<div class="vf-row">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--outline-dark">Dark button</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--outline-secondary">Blue Button</button>
   </div>
 </div>
-<div class="row" style="padding-top: 20px">
-  <div class="col">
+<div class="vf-row" style="padding-top: 20px">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--outline-dark">Disabled</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn vattenfall-btn--lg vattenfall-btn--outline-secondary">Disabled</button>
   </div>
 </div>
@@ -66,19 +66,19 @@ A bunch of different buttons.
 ### Outlined buttons / Medium
 
 ```html
-<div class="row">
-  <div class="col">
+<div class="vf-row">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn  vattenfall-btn--outline-dark">Dark button</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" class="vattenfall-btn  vattenfall-btn--outline-secondary">Blue Button</button>
   </div>
 </div>
-<div class="row" style="padding-top: 20px">
-  <div class="col">
+<div class="vf-row" style="padding-top: 20px">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn  vattenfall-btn--outline-dark">Disabled</button>
   </div>
-  <div class="col">
+  <div class="vf-col">
     <button type="button" disabled class="vattenfall-btn  vattenfall-btn--outline-secondary">Disabled</button>
   </div>
 </div>

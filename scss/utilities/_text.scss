@@ -4,13 +4,13 @@
 // Text
 //
 
-.text-monospace { font-family: $font-family-monospace; }
+.vf-text--monospace { font-family: $font-family-monospace; }
 
 // Alignment
 
-.text-justify  { text-align: justify !important; }
-.text-nowrap   { white-space: nowrap !important; }
-.text-truncate { @include text-truncate; }
+.vf-text--justify  { text-align: justify !important; }
+.vf-text--nowrap   { white-space: nowrap !important; }
+.vf-text--truncate { @include text-truncate; }
 
 // Responsive alignment
 
@@ -18,17 +18,17 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .text#{$infix}-left   { text-align: left !important; }
-    .text#{$infix}-right  { text-align: right !important; }
-    .text#{$infix}-center { text-align: center !important; }
+    .vf-text#{$infix}--left   { text-align: left !important; }
+    .vf-text#{$infix}--right  { text-align: right !important; }
+    .vf-text#{$infix}--center { text-align: center !important; }
   }
 }
 
 // Transformation
 
-.text-lowercase  { text-transform: lowercase !important; }
-.text-uppercase  { text-transform: uppercase !important; }
-.text-capitalize { text-transform: capitalize !important; }
+.vf-text--lowercase  { text-transform: lowercase !important; }
+.vf-text--uppercase  { text-transform: uppercase !important; }
+.vf-text--capitalize { text-transform: capitalize !important; }
 
 // Weight and italics
 
@@ -41,25 +41,25 @@
 
 // Contextual colors
 
-.text-white { color: $white !important; }
+.vf-text--white { color: $white !important; }
 
 @each $color, $value in $theme-colors {
-  @include text-emphasis-variant(".text-#{$color}", $value);
+  @include text-emphasis-variant(".vf-text--#{$color}", $value);
 }
 
-.text-body { color: $body-color !important; }
-.text-muted { color: $text-muted !important; }
+.vf-text--body { color: $body-color !important; }
+.vf-text--muted { color: $text-muted !important; }
 
-.text-black-50 { color: rgba($black, .5) !important; }
-.text-white-50 { color: rgba($white, .5) !important; }
+.vf-text--black-50 { color: rgba($black, .5) !important; }
+.vf-text--white-50 { color: rgba($white, .5) !important; }
 
 // Misc
 
-.text-hide {
+.vf-text--hide {
   @include text-hide($ignore-warning: true);
 }
 
-.text-decoration-none { text-decoration: none !important; }
+.vf-text--decoration-none { text-decoration: none !important; }
 
 // Reset
 
