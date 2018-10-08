@@ -92,7 +92,7 @@ $colors: map-merge(
     "sunflower-yellow": $vattenfall-sunflower-yellow,
     "blue-grey":        $vattenfall-blue-grey,
 
-    "dark-moss":       $vattenfall-dark-green,
+    "dark-moss":       $vattenfall-dark-moss,
     "dark-blue":        $vattenfall-dark-blue,
     "dark-pink":        $vattenfall-dark-pink,
     "dark-green":       $vattenfall-dark-green,
@@ -131,7 +131,9 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
 
-    "dark-moss":       $vattenfall-dark-green,
+    "blue-grey":        $vattenfall-blue-grey,
+
+    "dark-moss":       $vattenfall-dark-moss,
     "dark-blue":        $vattenfall-dark-blue,
     "dark-pink":        $vattenfall-dark-pink,
     "dark-green":       $vattenfall-dark-green,
@@ -271,7 +273,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           24px !default;
 
 // Components
 //
@@ -322,7 +324,7 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$line-height-base:            1.75 !default;
 
 $h1-font-size:                $font-size-base * 4.5 !default;
 $h2-font-size:                $font-size-base * 3.25 !default;
@@ -333,7 +335,6 @@ $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
-$headings-font-weight:        400 !default;
 $headings-color:              inherit !default;
 
 $display1-size:               6rem !default;
@@ -735,7 +736,7 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                rgba($black, .5) !default;
+$navbar-light-color:                #333333; //rgba($black, .5) !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;

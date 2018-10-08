@@ -383,7 +383,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
 
 ## Containers
 
-Although it's not required, you can wrap a navbar in a `.container` to center it on a page or add one within to only center the contents of a [fixed or static top navbar](#placement).
+Although it's not required, you can wrap a navbar in a `.vf-container` to center it on a page or add one within to only center the contents of a [fixed or static top navbar](#placement).
 
 ```html
 <div class="container">
