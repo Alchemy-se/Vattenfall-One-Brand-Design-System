@@ -69,7 +69,8 @@
   list-style: none;
   justify-content: space-between; // space out brand from logo
 
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
 
   .nav-link {
     padding-right: 0;
@@ -79,6 +80,14 @@
   .dropdown-menu {
     position: static;
     float: none;
+  }
+}
+
+.navbar-nav--subnav {
+  background: $vattenfall-blue-grey;
+
+  a.nav-link {
+    color: white;
   }
 }
 

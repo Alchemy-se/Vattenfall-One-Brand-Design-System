@@ -2,10 +2,21 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
+$container-tight-max-widths: (
+  sm: 540px,
+  md: 600px,
+  lg: 680px,
+  xl: 774px
+) !default;
+
 @if $enable-grid-classes {
   .vf-container {
     @include make-container();
     @include make-container-max-widths();
+  }
+
+  .vf-container--tight {
+    @include make-container-max-widths($container-tight-max-widths);
   }
 }
 
