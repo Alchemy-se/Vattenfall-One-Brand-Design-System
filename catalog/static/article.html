@@ -7,70 +7,63 @@
     <title>Vattenfall head</title>
     <link rel="stylesheet" href="/dist/css/reboot.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/dist/css/main.css" crossorigin="anonymous">
-    <style>
-      html.sr .reveal {
-        visibility: hidden;
-      }
-    </style>
+
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    </script>
   </head>
   <body>
-    <div class="vf-container">
-      <div class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand d-block" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 22" width="160">
-            <path d="M131.13,0a10.93,10.93,0,0,0-10.87,11H142A10.93,10.93,0,0,0,131.13,0Z" style="fill: #ffda00" />
-            <path d="M131.13,22a10.93,10.93,0,0,1-10.87-11H142A10.93,10.93,0,0,1,131.13,22Z" style="fill: #2071b5" />
-            <polygon points="33.31 5.05 23.22 5.05 23.22 7.74 26.82 7.74 26.82 17.61 30.07 17.61 30.07 7.74 33.31 7.74 33.31 5.05"
-              style="fill: #4e4b48" />
-            <polygon points="34.45 5.05 34.45 7.74 37.7 7.74 37.7 17.61 40.95 17.61 40.95 7.74 44.54 7.74 44.54 5.05 34.45 5.05"
-              style="fill: #4e4b48" />
-            <polygon points="69.27 17.61 69.27 5.05 66.17 5.05 66.17 12.57 60.64 5.05 57.54 5.05 57.54 17.61 60.64 17.61 60.64 10.19 66.17 17.61 69.27 17.61"
-              style="fill: #4e4b48" />
-            <polygon points="46.12 17.61 49.36 17.61 55.29 17.61 55.29 14.92 49.36 14.92 49.36 12.45 54.38 12.45 54.38 9.76 49.36 9.76 49.36 7.74 55.29 7.74 55.29 5.05 46.12 5.05 46.12 17.61"
-              style="fill: #4e4b48" />
-            <polygon points="71.74 17.61 74.99 17.61 74.99 12.53 80.24 12.53 80.24 9.84 74.99 9.84 74.99 7.74 81.21 7.74 81.21 5.05 71.74 5.05 71.74 17.61"
-              style="fill: #4e4b48" />
-            <polygon points="10.24 5.05 6.7 13.88 6.68 13.88 3.14 5.05 0 5.05 5.09 17.61 8.29 17.61 13.38 5.05 10.24 5.05"
-              style="fill: #4e4b48" />
-            <polygon points="105.08 17.61 114.05 17.61 114.05 14.82 108.33 14.82 108.33 5.05 105.08 5.05 105.08 17.61"
-              style="fill: #4e4b48" />
-            <polygon points="94.71 17.61 103.68 17.61 103.68 14.82 97.96 14.82 97.96 5.05 94.71 5.05 94.71 17.61" style="fill: #4e4b48" />
-            <path d="M90.51,17.61h3.14L88.48,5.05H85.3L80.13,17.61h3.14l.89-2.24h5.46Zm-5.33-4.8,1.7-4.29h0l1.7,4.29Z"
-              style="fill: #4e4b48" />
-            <path d="M21.67,17.61h3.14L19.64,5.05H16.45L11.28,17.61h3.14l.9-2.24h5.46Zm-5.33-4.8L18,8.52h0l1.7,4.29Z" style="fill: #4e4b48" />
-          </svg>
+    <header class="vf-navbar">
+      <svg class="vf-navbar__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 22" width="160">
+        <path d="M131.13,0a10.93,10.93,0,0,0-10.87,11H142A10.93,10.93,0,0,0,131.13,0Z" style="fill: #ffda00" />
+        <path d="M131.13,22a10.93,10.93,0,0,1-10.87-11H142A10.93,10.93,0,0,1,131.13,22Z" style="fill: #2071b5" />
+        <polygon points="33.31 5.05 23.22 5.05 23.22 7.74 26.82 7.74 26.82 17.61 30.07 17.61 30.07 7.74 33.31 7.74 33.31 5.05"
+          style="fill: #4e4b48" />
+        <polygon points="34.45 5.05 34.45 7.74 37.7 7.74 37.7 17.61 40.95 17.61 40.95 7.74 44.54 7.74 44.54 5.05 34.45 5.05"
+          style="fill: #4e4b48" />
+        <polygon points="69.27 17.61 69.27 5.05 66.17 5.05 66.17 12.57 60.64 5.05 57.54 5.05 57.54 17.61 60.64 17.61 60.64 10.19 66.17 17.61 69.27 17.61"
+          style="fill: #4e4b48" />
+        <polygon points="46.12 17.61 49.36 17.61 55.29 17.61 55.29 14.92 49.36 14.92 49.36 12.45 54.38 12.45 54.38 9.76 49.36 9.76 49.36 7.74 55.29 7.74 55.29 5.05 46.12 5.05 46.12 17.61"
+          style="fill: #4e4b48" />
+        <polygon points="71.74 17.61 74.99 17.61 74.99 12.53 80.24 12.53 80.24 9.84 74.99 9.84 74.99 7.74 81.21 7.74 81.21 5.05 71.74 5.05 71.74 17.61"
+          style="fill: #4e4b48" />
+        <polygon points="10.24 5.05 6.7 13.88 6.68 13.88 3.14 5.05 0 5.05 5.09 17.61 8.29 17.61 13.38 5.05 10.24 5.05" style="fill: #4e4b48" />
+        <polygon points="105.08 17.61 114.05 17.61 114.05 14.82 108.33 14.82 108.33 5.05 105.08 5.05 105.08 17.61" style="fill: #4e4b48" />
+        <polygon points="94.71 17.61 103.68 17.61 103.68 14.82 97.96 14.82 97.96 5.05 94.71 5.05 94.71 17.61" style="fill: #4e4b48" />
+        <path d="M90.51,17.61h3.14L88.48,5.05H85.3L80.13,17.61h3.14l.89-2.24h5.46Zm-5.33-4.8,1.7-4.29h0l1.7,4.29Z" style="fill: #4e4b48" />
+        <path d="M21.67,17.61h3.14L19.64,5.05H16.45L11.28,17.61h3.14l.9-2.24h5.46Zm-5.33-4.8L18,8.52h0l1.7,4.29Z" style="fill: #4e4b48" />
+      </svg>
+
+      <nav class="vf-navbar__nav">
+        <a class="vf-navbar__nav-item" href="#">About us</a>
+        <a class="vf-navbar__nav-item" href="#">Our solutions</a>
+        <a class="vf-navbar__nav-item" href="#">Sustainability</a>
+        <a class="vf-navbar__nav-item" href="#">Investors</a>
+        <a class="vf-navbar__nav-item vf-navbar__nav-item--active" href="#">Press and Media</a>
+        <a class="vf-navbar__nav-item" href="#">Careers</a>
+        <a class="vf-navbar__nav-item" href="#">
+          <img src="/img/example-startpage/globe.svg" />
         </a>
-    
-        <nav class="navbar-nav justify-content-between vf-u-md-hidden">
-          <a class="nav-item nav-link" href="#">About us</a>
-          <a class="nav-item nav-link" href="#">Our solutions</a>
-          <a class="nav-item nav-link" href="#">Sustainability</a>
-          <a class="nav-item nav-link" href="#">Investors</a>
-          <a class="nav-item nav-link" href="#">Press and Media</a>
-          <a class="nav-item nav-link" href="#">Careers</a>
-          <a class="nav-item nav-link" href="#">
-            <img src="/img/example-startpage/globe.svg" />
-          </a>
-          <a class="nav-item nav-link" href="#">
-            <img src="/img/example-startpage/search.svg" />
-          </a>
+        <a class="vf-navbar__nav-item" href="#">
+          <img src="/img/example-startpage/search.svg" />
+        </a>
+      </nav>
+      <div class="vf-navbar__subnav">
+        <nav class="vf-navbar__nav vf-navbar__nav--subnav">
+          <a class="vf-navbar__nav-item" href="#">News</a>
+          <a class="vf-navbar__nav-item" href="#">Media bank</a>
+          <a class="vf-navbar__nav-item" href="#">Contacts</a>
         </nav>
-        <nav class="navbar-nav navbar-nav--subnav justify-content-between">
-          <a class="nav-item nav-link" href="#">News</a>
-          <a class="nav-item nav-link" href="#">Media bank</a>
-          <a class="nav-item nav-link" href="#">Contacts</a>
-        </nav>
-      </div>
-    </div>
+      </div>  
+    </header>
 
     <div class="vf-container vf-container--tight">
-      <div class="vf-text--center pt-4 pb-3 reveal">  
+      <div class="vf-text--center pt-4 pb-3">  
         <h2>The hidden power plant</h2>
         <p class="vf-preamble">Gigantic steel doors in the mountain hide<br /> a cold war secret.</p>
       </div>
         
-      <p class="reveal pb-3">
+      <p class="pb-3">
         <strong class="intro-in-caps">That the Stenungsund Power Plant</strong>
         was built as a wartime safeguard is clear before you even enter the facility. Above all entrances to the plant you see
         large blocks of concrete that could, in the event of attack, be used to barricade the access, and the main entrance has
@@ -221,8 +214,8 @@
 
     <script>
       ScrollReveal().reveal('.reveal', {
-        delay: 320,
-        duration: 700,
+        delay: 180,
+        duration: 1200,
       });
     </script>
   </body>

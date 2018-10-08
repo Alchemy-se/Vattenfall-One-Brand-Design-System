@@ -25,6 +25,10 @@ html {
   }
 }
 
+html.sr .reveal {
+  visibility: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -8263,6 +8267,134 @@ input[type="button"].vattenfall-btn--block {
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.vf-navbar__logo {
+  display: block;
+  margin: 2rem auto 0.5rem;
+  text-align: center;
+}
+
+.vf-navbar__subnav {
+  background: #8694a0;
+}
+
+.vf-navbar__nav {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1;
+  padding: 0;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .vf-navbar__nav {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-navbar__nav {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-navbar__nav {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-navbar__nav {
+    max-width: 1160px;
+  }
+}
+
+@media (min-width: 576px) {
+  .vf-navbar__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.vf-navbar__nav--subnav {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.vf-navbar__nav-item {
+  color: #222222;
+  font-weight: 500;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  line-height: 64px;
+}
+
+@media (min-width: 576px) {
+  .vf-navbar__nav-item {
+    font-size: 1rem;
+    line-height: 4rem;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-navbar__nav-item {
+    font-size: 1.25rem;
+  }
+}
+
+.vf-navbar__nav-item:hover {
+  text-decoration: none;
+  color: #2071b5;
+}
+
+.vf-navbar__nav-item--active {
+  position: relative;
+}
+
+.vf-navbar__nav-item--active:after {
+  content: ' ';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  pointer-events: none;
+  border-bottom-color: #8694a0;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+.vf-navbar__nav--subnav .vf-navbar__nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+}
+
+.vf-navbar__nav--subnav .vf-navbar__nav-item:hover {
+  color: #2071b5;
 }
 
 .vf-bg--primary {
