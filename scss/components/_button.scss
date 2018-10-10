@@ -17,6 +17,51 @@
   @include transition($btn-transition);
   min-width: 180px;
 
+
+
+  //   box-sizing: border-box;
+  // position: relative;
+  // display: inline-block;
+  // min-width: 190px;
+  // min-height: 45px;
+  // padding: 9px 44px;
+  // font-family: "Vattenfall Hall", sans-serif;
+  // font-size: 16px;
+  // font-weight: 500;
+  // line-height: 26px;
+  // text-decoration: none;
+  // text-align: center;
+  // color: #000000;
+  // border-width: 2px;
+  // border-style: solid;
+  // border-color: transparent;
+  // background-color: #ffda00;
+  // border-radius: 23px;
+  // transition-property: background-color, border-color, color;
+  // transition-duration: 300ms;
+  // -webkit-tap-highlight-color: transparent;
+  // -webkit-font-smoothing: antialiased;
+  // cursor: pointer;
+
+
+  &:before {
+    content: '\2192';
+    position: absolute;
+    transform: translate(-45px, -2px);
+    font-weight: normal;
+    font-size: 21px;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-delay: 0ms;
+  }
+
+  &:hover:before {
+    transition-delay: 150ms;
+    transform: translate(-30px, -2px);
+    opacity: 1;
+  }
+
   // Share hover and focus styles
   @include hover-focus {
     color: $body-color;
