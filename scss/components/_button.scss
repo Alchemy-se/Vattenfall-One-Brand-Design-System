@@ -4,7 +4,7 @@
 // Base styles
 //
 
-.vattenfall-btn {
+.vf-btn {
   display: inline-block;
   font-weight: $btn-font-weight;
   color: $body-color;
@@ -16,38 +16,13 @@
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
   min-width: 180px;
-
-
-
-  //   box-sizing: border-box;
-  // position: relative;
-  // display: inline-block;
-  // min-width: 190px;
-  // min-height: 45px;
-  // padding: 9px 44px;
-  // font-family: "Vattenfall Hall", sans-serif;
-  // font-size: 16px;
-  // font-weight: 500;
-  // line-height: 26px;
-  // text-decoration: none;
-  // text-align: center;
-  // color: #000000;
-  // border-width: 2px;
-  // border-style: solid;
-  // border-color: transparent;
-  // background-color: #ffda00;
-  // border-radius: 23px;
-  // transition-property: background-color, border-color, color;
-  // transition-duration: 300ms;
-  // -webkit-tap-highlight-color: transparent;
-  // -webkit-font-smoothing: antialiased;
-  // cursor: pointer;
-
+  position: relative;
 
   &:before {
     content: '\2192';
     position: absolute;
-    transform: translate(-45px, -2px);
+    transform-origin: top left;
+    transform: translate(-220%, -2px);
     font-weight: normal;
     font-size: 21px;
     opacity: 0;
@@ -58,7 +33,7 @@
 
   &:hover:before {
     transition-delay: 150ms;
-    transform: translate(-30px, -2px);
+    transform: translate(-150%, -2px);
     opacity: 1;
   }
 
@@ -81,7 +56,7 @@
     @include box-shadow(none);
   }
 
-  // Opinionated: add "hand" cursor to non-disabled .vattenfall-btn elements
+  // Opinionated: add "hand" cursor to non-disabled .vf-btn elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
@@ -97,8 +72,8 @@
 }
 
 // Future-proof disabling of clicks on `<a>` elements
-a.vattenfall-btn.disabled,
-fieldset:disabled a.vattenfall-btn {
+a.vf-btn.disabled,
+fieldset:disabled a.vf-btn {
   pointer-events: none;
 }
 
@@ -108,27 +83,45 @@ fieldset:disabled a.vattenfall-btn {
 //
 
 @each $color, $value in $theme-colors {
-  .vattenfall-btn--#{$color} {
+  .vf-btn--#{$color} {
     @include button-variant($value, $value);
   }
 }
 
 @each $color, $value in $theme-colors {
-  .vattenfall-btn--outline-#{$color} {
+  .vf-btn--outline-#{$color} {
     @include button-outline-variant($value);
   }
 }
-
 
 //
 // Link buttons
 //
 
 // Make a button look and behave like a link
-.vattenfall-btn--link {
-  font-weight: $font-weight-normal;
-  color: $link-color;
+.vf-btn--link {
+  position: relative;
+  font-weight: 500;
+  color: #222222;
+  text-decoration: none;
   background-color: transparent;
+
+  // For the arrow
+  transform: translateZ(1);
+  padding-left: 25px;
+
+  &:before {
+    top: calc(50% + 1px);
+    transform: translate(-200%, -50%);
+    font-weight: 400;
+    font-size: 20px;
+    color: $vattenfall-mid-blue;
+  }
+
+  &:focus:before, &:active:before, &:hover:before {
+    transform: translate(-150%, -50%);
+  }
+
 
   @include hover {
     color: $link-hover-color;
@@ -153,17 +146,25 @@ fieldset:disabled a.vattenfall-btn {
   // No need for an active state here
 }
 
+.vf-btn--link-with-arrow {
+  padding-left: 30px;
+
+  &:before {
+    font-size: 28px;
+    opacity: 1;
+  }
+}
 
 //
 // Button Sizes
 //
 
-.vattenfall-btn--lg {
+.vf-btn--lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, ($font-size-base * 1.125), $btn-line-height-lg, $btn-border-radius-lg);
   min-width: 240px;
 }
 
-.vattenfall-btn--sm {
+.vf-btn--sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
@@ -172,12 +173,12 @@ fieldset:disabled a.vattenfall-btn {
 // Block button
 //
 
-.vattenfall-btn--block {
+.vf-btn--block {
   display: block;
   width: 100%;
 
   // Vertically space out multiple block buttons
-  + .vattenfall-btn--block {
+  + .vf-btn--block {
     margin-top: $btn-block-spacing-y;
   }
 }
@@ -186,7 +187,7 @@ fieldset:disabled a.vattenfall-btn {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  &.vattenfall-btn--block {
+  &.vf-btn--block {
     width: 100%;
   }
 }

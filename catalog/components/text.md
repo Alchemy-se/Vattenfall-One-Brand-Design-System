@@ -46,6 +46,6 @@ Basic text components
 ### Outlined buttons
 
 ```html
-<a href="#" class="vattenfall-btn vattenfall-btn--outline-primary">A button</a>
+<a href="#" class="vf-btn vf-btn--outline-primary">A button</a>
 ```
 
