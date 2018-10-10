@@ -369,9 +369,13 @@
   &:hover {
     text-decoration: none;
     color: $vattenfall-mid-blue;
-  }
 
+    & .svg-text-color {
+      fill: $vattenfall-mid-blue !important;
+    }
+  }   
 }
+
   .vf-navbar__nav-item--active {
     position: relative;
     &:after {
@@ -419,7 +423,7 @@
     color: white;
   }
 
-  & .vf-navbar__logo .logo-text {
+  & .svg-text-color {
     transition-property: fill;
     transition-duration: 200ms;
     fill: #ffffff !important;
@@ -435,7 +439,7 @@
     }
   }
 
-  & .vf-navbar__logo .logo-text {
+  & .svg-text-color {
     fill: #4e4b48 !important;
   }
 }
