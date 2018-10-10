@@ -43,13 +43,17 @@ const pages = [
         title: "Getting started",
         content: pageLoader(() => import("./getting-started.md"))
       }, {
-        path: "/sizing",
-        title: "Sizing",
-        content: pageLoader(() => import("./sizing.md"))
-      }, {
         path: "/grid",
         title: "Grid",
         content: pageLoader(() => import("./grid.md"))
+      }, {
+        path: "/responsive",
+        title: "Responsive",
+        content: pageLoader(() => import("./responsive.md"))
+      }, {
+        path: "/sizing",
+        title: "Sizing",
+        content: pageLoader(() => import("./sizing.md"))
       }, {
         path: "/colors",
         title: "Colors",
