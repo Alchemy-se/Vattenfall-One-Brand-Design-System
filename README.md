@@ -29,6 +29,22 @@ vattenfall-design-system/
 
 We provide compiled CSS (`main.*`), as well as compiled and minified CSS (`main.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`.*.map`) are available for use with certain browsers' developer tools.
 
+## Deployment
+
+You can run this repo as a docker image. 
+
+Build the docker image: 
+```sh
+docker build -t vattenfallds .
+```
+
+Start a docker container with the previously built image, binding port 4040
+```sh
+docker run -p 4040:80 vattenfallds
+```
+
+Now you should see the design system documentation on `http://localhost:4040`
+
 
 ## Contributing
 

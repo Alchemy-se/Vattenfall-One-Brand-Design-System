@@ -49,21 +49,21 @@ For example, here are two grid layouts that apply to every device and viewport, 
 <div class="vf-container">
   <div class="vf-row">
     <div class="vf-col">
-      1 of 2
+      <div style="background: rgba(255,0,0,0.3)">1 of 2</div>
     </div>
     <div class="vf-col">
-      2 of 2
+      <div style="background: rgba(255,0,0,0.3)">2 of 2</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      1 of 3
+      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
     </div>
     <div class="vf-col">
-      2 of 3
+      <div style="background: rgba(255,0,0,0.3)">2 of 3</div>
     </div>
     <div class="vf-col">
-      3 of 3
+      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
     </div>
   </div>
 </div>
@@ -74,11 +74,11 @@ Equal-width columns can be broken into multiple lines, but there was a [Safari f
 ```html
 <div class="vf-container">
   <div class="vf-row">
-    <div class="vf-col">Column</div>
-    <div class="vf-col">Column</div>
+    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
+    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
     <div class="w-100"></div>
-    <div class="vf-col">Column</div>
-    <div class="vf-col">Column</div>
+    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
+    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
   </div>
 </div>
 ```
@@ -91,24 +91,24 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
 <div class="vf-container">
   <div class="vf-row">
     <div class="vf-col">
-      1 of 3
+      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
     </div>
     <div class="vf-col-6">
-      2 of 3 (wider)
+      <div style="background: rgba(255,0,0,0.3)">2 of 3 (wider)</div>
     </div>
     <div class="vf-col">
-      3 of 3
+      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      1 of 3
+      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
     </div>
     <div class="vf-col-5">
-      2 of 3 (wider)
+      <div style="background: rgba(255,0,0,0.3)">2 of 3 (wider)</div>
     </div>
     <div class="vf-col">
-      3 of 3
+      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
     </div>
   </div>
 </div>
@@ -122,24 +122,24 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
 <div class="vf-container">
   <div class="row justify-content-md-center">
     <div class="vf-col vf-col-lg-2">
-      1 of 3
+      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
     </div>
     <div class="vf-col-md-auto">
-      Variable width content
+      <div style="background: rgba(255,0,0,0.3)">Variable width content</div>
     </div>
     <div class="vf-col vf-col-lg-2">
-      3 of 3
+      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      1 of 3
+      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
     </div>
     <div class="vf-col-md-auto">
-      Variable width content
+      <div style="background: rgba(255,0,0,0.3)">Variable width content</div>
     </div>
     <div class="vf-col vf-col-lg-2">
-      3 of 3
+      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
     </div>
   </div>
 </div>
@@ -151,11 +151,19 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
 
 ```html
 <div class="vf-row">
-  <div class="vf-col">col</div>
-  <div class="vf-col">col</div>
+  <div class="vf-col">
+    <div style="background: rgba(255,0,0,0.3)">col</div>
+  </div>
+  <div class="vf-col">
+    <div style="background: rgba(255,0,0,0.3)">col</div>
+  </div>
   <div class="w-100"></div>
-  <div class="vf-col">col</div>
-  <div class="vf-col">col</div>
+  <div class="vf-col">
+    <div style="background: rgba(255,0,0,0.3)">col</div>
+  </div>
+  <div class="vf-col">
+    <div style="background: rgba(255,0,0,0.3)">col</div>
+  </div>
 </div>
 ```
 
