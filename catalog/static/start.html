@@ -12,7 +12,7 @@
 
   </head>
   <body>
-    <header class="vf-navbar vf-navbar--on-hero">
+    <header class="vf-navbar vf-navbar--on-hero vf-navbar--on-hero-active">
       <a href="/start.html">
         <svg class="vf-navbar__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 22" width="160">
           <path d="M131.13,0a10.93,10.93,0,0,0-10.87,11H142A10.93,10.93,0,0,0,131.13,0Z" style="fill: #ffda00" />
@@ -79,19 +79,37 @@
     </header>
 
     <section 
-      class="vf-bg--dark-blue vf-vh-80 vf-hero"
-      style="background-image: url(/img/example-startpage/hero.jpg);"
+      class="vf-bg--dark-blue vf-vh-80 vf-hero vf-hero--menu-active"
+      style="background-image: url(/img/example-startpage/hero.png);"
       >
       <div class="vf-container vf-text--center vf-text--white h-100">
         <div class="vf-row vf-row--vertical-center h-100 reveal">
           <div class="vf-col-md-8 offset-md-2">
             <h1>Sustainable Cities</h1>
-            <p class="vf-lead">Find out more about our sustainable cities Amsterdam, Berlin, Hamburg and Uppsala</p>
+            <p class="vf-lead">Find out more about our sustainable cities Amsterdam,<br /> Berlin, Hamburg and Uppsala</p>
     
             <a href="#" class="vf-btn vf-btn--lg vf-btn--primary">Find out more</a>
           </div>
         </div>
       </div>
+
+      <svg class="vf-hero__scroll-down-button" width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <polygon id="path-1" points="18 22 10 16.2200234 11.0215764 15 18 20.0415271 24.9784236 15 26 16.2200234"></polygon>
+        </defs>
+        <g id="Concepts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M0,24 C1.96077538,10.4308234 13.7498009,0 28,0 C42.2501991,0 54.0392246,10.4308234 56,24 L0,24 Z" id="Combined-Shape"
+              fill="#FFFFFF" fill-rule="nonzero"></path>
+            <g id="Icons-/-Symbols-/-Scroll" transform="translate(10.000000, 2.000000)">
+              <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+              </mask>
+              <use id="Mask" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+              <g id="Colors-/-Primary-/-Black" mask="url(#mask-2)" fill="#222222" fill-rule="nonzero">
+              </g>
+            </g>
+        </g>
+      </svg>
     </section>
 
     <section class="py-5">
@@ -104,28 +122,35 @@
           </div>
         </div>
 
-        <div class="vf-row pt-3 reveal">
+        <div class="vf-row pt-3">
           <div class="vf-col vf-col-md-8">
-            <article class="vf-card vf-bg--dark vf-text--white">
-              <img src="/img/example-startpage/our-solution.png" class="vf-card-img" />
-              <div class="vf-card__img-overlay">
+            <article class="vf-card vf-bg--dark vf-text--white reveal">
+              <img src="/img/example-startpage/carousel-our-solutions.jpg" class="vf-card-img w-100" />
+              <div class="vf-card__img-overlay p-5">
                 <h3 class="vf-card__title">Our solutions</h3>
-                <p class="vf-card__text">Vattenfall provides a wide range of energy solutions to give customers tools for more sustainable and efficient energy consumption.</p>
-                <p class="vf-card__text">Read more</p>
+                <p class="vf-card__text w-50">Vattenfall provides a wide range of energy solutions to give customers tools for more sustainable and efficient energy consumption.</p>
+                <p class="vf-card__text">
+                  <a href="#" class="vf-btn vf-btn--link vf-btn--link-white vf-btn--link-with-arrow">Read more</a>
+                </p>
               </div>
             </article>
           </div>
           <div class="vf-col vf-col-md-4">
-            <article class="vf-card vf-bg--dark vf-text--white mt-md-0 mt-3">
-              <img src="/img/example-startpage/q2-report.png" class="vf-card-img" />
+            <article class="vf-card vf-bg--dark vf-text--white mt-md-0 mt-3 reveal-2">
+              <img src="/img/example-startpage/carousel-bg.png" class="vf-card-img w-100" />
               <div class="vf-card__img-overlay">
-                <h4 class="vf-card__title">Leadership</h4>
+                <img src="/img/example-startpage/carousel-woman.png"
+                  style="position: absolute; bottom: 0; width: 50%; right: 0"
+                />
+              </div>
+              <div class="vf-card__img-overlay">
+                <h4 class="vf-card__title vf-preamble vf-text--dark">Leadership</h4>
               </div>
             </article>
-            <article class="vf-card vf-bg--dark vf-text--white mt-3">
-              <img src="/img/example-startpage/q2-report.png" class="vf-card-img" />
+            <article class="vf-card vf-bg--dark vf-text--white mt-grid-gutter reveal-3">
+              <img src="/img/example-startpage/carousel-q2.png" class="vf-card-img w-100" />
               <div class="vf-card__img-overlay">
-                <h4 class="vf-card__title">Q2 Report</h4>
+                <h4 class="vf-card__title vf-preamble">Q2 Report</h4>
               </div>
             </article>
           </div>
@@ -133,35 +158,35 @@
       </div>
     </section>
 
-    <section class="vf-bg--light-turquoise pt-5 pb-3 mb-5 reveal">
+    <section class="vf-bg--light-turquoise pt-5 pb-4 mb-5">
       <div class="vf-container">
         <div class="vf-row">
-          <div class="vf-col-md-4">
+          <div class="vf-col-md-4 reveal">
             <h3>Fossil free within one generation</h3>
-            <p>We have been electrifying industries, powering homes and transforming life through innovation and collaboration for
+            <p class="vf-text--small">We have been electrifying industries, powering homes and transforming life through innovation and collaboration for
             more than 100 years.</p>
             <a href="#" class="vf-btn vf-btn--lg vf-btn--outline-dark">Read more</a>
           </div>
-          <div class="vf-col-md-8">
+          <div class="vf-col-md-8 reveal-3">
             <img class="w-100 mb-n8" src="/img/example-startpage/fossil-free.png" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pt-3 pb-5 reveal">
+    <section class="pt-3 pb-5">
       <div class="vf-container">
         <div class="vf-blockquote d-flex justify-content-end">
-          <div class="vf-blockquote__illustration">
+          <div class="vf-blockquote__illustration reveal">
             <img src="/img/example-startpage/blockquote.png" />
           </div>
 
-          <blockquote class="vf-blockquote__quote">
+          <blockquote class="vf-blockquote__quote reveal-3">
             It's not enough to be efficient: we must also be innovative in our ways of working
           </blockquote>
-          <div class="vf-blockquote__byline">
+          <div class="vf-blockquote__byline reveal-3">
             <h5 class="my-0">Magnus Hall</h5>
-            <div class="intro-in-caps">PRESIDENT AND CEO</div>
+            <div class="intro-in-caps intro-in-caps--small">PRESIDENT AND CEO</div>
           </div>
         </div>
       </div>
@@ -170,25 +195,25 @@
     <section class="py-5 mb-0 vf-border-top-gray-200 reveal">
       <div class="vf-container">
         <div class="vf-row">
-          <div class="vf-col vf-col-sm-4">
+          <div class="vf-col vf-col-sm-4 reveal">
             <h3>Ready to make a difference?</h3>
-            <p>A career at Vattenfall will never stop challenging you. We make sure we offer trainging opportunities to
+            <p class="vf-text--small">A career at Vattenfall will never stop challenging you. We make sure we offer trainging opportunities to
               develop our staff accross all competencies.</p>
             <a href="#" class="vf-btn vf-btn--outline-dark vf-btn--lg">See openings</a>
           </div>
-          <div class="vf-col vf-col-sm-8">
+          <div class="vf-col vf-col-sm-8 reveal-3">
             <img class="w-100 mb-n8" src="/img/example-startpage/open-positions.jpg" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pt-6 pb-5 reveal">      
+    <section class="pt-6 pb-5">      
       <div class="vf-container">
-        <h3 class="vf-text--center pb-3 pt-2">In focus</h3>
+        <h3 class="vf-text--center pb-3 pt-2 reveal">In focus</h3>
         <div class="vf-row">
           <div class="vf-col-md-4">
-            <article class="vf-card">
+            <article class="vf-card reveal">
               <img src="/img/example-startpage/solar-racer.jpg" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h5 class="vf-card__title">The cows are milked with the help of sunshine and a battery</h5>
@@ -197,7 +222,7 @@
             </article>
           </div>
           <div class="vf-col-md-4">
-            <article class="vf-card">
+            <article class="vf-card reveal-2">
               <img src="/img/example-startpage/blockchain.jpg" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h5 class="vf-card__title">Blockchain in energy trading closer with us</h5>
@@ -206,7 +231,7 @@
             </article>
           </div>
           <div class="vf-col-md-4">
-            <article class="vf-card">
+            <article class="vf-card reveal-3">
               <img src="/img/example-startpage/cows-milked.jpg" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h5 class="vf-card__title">Sponsorship for solar racer Nuna extended</h5>
@@ -269,24 +294,36 @@
     </footer>
 
     <script>
+      const delay = 180
+
       // https://scrollrevealjs.org/api/defaults.html
       ScrollReveal().reveal('.reveal', {
-        delay: 180,
+        delay,
+        duration: 1200,
+        reset: true
+      });
+      ScrollReveal().reveal('.reveal-2', {
+        delay: delay*2,
+        duration: 1200,
+        reset: true
+      });
+      ScrollReveal().reveal('.reveal-3', {
+        delay: delay * 3,
         duration: 1200,
         reset: true
       });
 
       // This is just an example of how to toggle the classes on the navigation and hero elements, 
       // feel free to implement this using React/Angular/whatever you use for your frontend application
-      const navbar = $('.vf-navbar--on-hero')
-      const hero = $('.vf-hero')
-      navbar.hover(() => {
-        hero.addClass('vf-hero--menu-active')
-        navbar.addClass('vf-navbar--on-hero-active')
-      }, () => {
-        hero.removeClass('vf-hero--menu-active')
-        navbar.removeClass('vf-navbar--on-hero-active')
-      })  
+      // const navbar = $('.vf-navbar--on-hero')
+      // const hero = $('.vf-hero')
+      // navbar.hover(() => {
+      //   hero.addClass('vf-hero--menu-active')
+      //   navbar.addClass('vf-navbar--on-hero-active')
+      // }, () => {
+      //   hero.removeClass('vf-hero--menu-active')
+      //   navbar.removeClass('vf-navbar--on-hero-active')
+      // })  
     </script>
   </body>
 </html>
