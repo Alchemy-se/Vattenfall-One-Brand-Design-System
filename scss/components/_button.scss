@@ -94,6 +94,17 @@ fieldset:disabled a.vf-btn {
   }
 }
 
+
+// Ugly override for now
+.vf-btn--outline-dark {
+  border-color: #cdd1d4;
+}
+
+// .vf-btn--outline-dark:hover {
+//   color: #fff;
+//   background-color: #222222;
+//   border-color: #222222;
+// }
 //
 // Link buttons
 //
@@ -144,6 +155,17 @@ fieldset:disabled a.vf-btn {
   }
 
   // No need for an active state here
+}
+
+.vf-btn--link-white {
+  color: #ffffff;
+
+  &:before {
+    color: inherit;
+  }
+  @include hover {
+    color: $vattenfall-mid-blue;
+  }
 }
 
 .vf-btn--link-with-arrow {

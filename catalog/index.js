@@ -22,7 +22,7 @@ const pages = [
         content: pageLoader(() => import("./layouts/intro.md"))
       }, {
         path: "/layouts/vattenfall-se",
-        title: "- Start Page",
+        title: "- Corporate web",
         content: pageLoader(() => import("./layouts/layout-start-page.md"))
       }, {
         path: "/layouts/app",
@@ -30,7 +30,7 @@ const pages = [
         content: pageLoader(() => import("./layouts/layout-mobile-app.md"))
       }, {
         path: "/layouts/tool",
-        title: "- Web tool",
+        title: "- Web service",
         content: pageLoader(() => import("./layouts/layout-web-tool.md"))
       },
     ]

@@ -44,15 +44,8 @@ $vattenfall-sunflower-yellow: #ffda00;
 $vattenfall-blue-grey: #8694a0;
 
 $blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
 
 $vattenfall-dark-moss: #005C63;
 $vattenfall-dark-blue:  #1E324F;
@@ -74,15 +67,8 @@ $colors: () !default;
 $colors: map-merge(
   (
     "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
+    // "red":        $red,
     "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
     "gray-dark":  $gray-800,
@@ -112,9 +98,9 @@ $colors: map-merge(
 $primary:       $vattenfall-sunflower-yellow;
 $secondary:     $vattenfall-mid-blue;
 $success:       $green !default;
-$info:          $cyan !default;
+// $info:          $vattenfall-light-blue !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        $vattenfall-dark-red !default;
 $light:         $gray-100 !default;
 $dark:          #222222;
 
@@ -125,7 +111,7 @@ $theme-colors: map-merge(
     "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
-    "info":       $info,
+    // "info":       $info,
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
@@ -1013,7 +999,7 @@ $close-text-shadow:                 0 1px 0 $white !default;
 // Code
 
 $code-font-size:                    87.5% !default;
-$code-color:                        $pink !default;
+$code-color:                        $black !default;
 
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;

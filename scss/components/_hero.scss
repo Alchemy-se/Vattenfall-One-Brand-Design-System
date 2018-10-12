@@ -1,10 +1,11 @@
 .vf-hero {
   position: relative;
   background: $vattenfall-blue-grey;
-  min-height: 500px;
+  min-height: 600px;
   background-size: cover;
   background-position: center center;
-  
+  padding-top: 125px;
+
   &:after {
     transition: border-width 300ms ease-out;
 
@@ -28,4 +29,21 @@
   
   border-top-width: 125px;
   border-bottom-width: 0;
+}
+
+$scroll-down-button-size: 56px;
+
+.vf-hero__scroll-down-button {
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  color: #222222;
+  position: absolute;
+  left: 50%;
+  width: $scroll-down-button-size;
+  height: $scroll-down-button-size;
+  line-height: $scroll-down-button-size;
+
+  bottom: - ($scroll-down-button-size / 2);
+  margin-left: - ($scroll-down-button-size / 2);
 }
