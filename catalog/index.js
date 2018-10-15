@@ -56,7 +56,7 @@ const pages = [
         content: pageLoader(() => import("./sizing.md"))
       }, {
         path: "/colors",
-        title: "Colors",
+        title: "Colors & borders",
         content: pageLoader(() => import("./colors.md"))
       }, {
         path: "/spacing",

@@ -30,10 +30,6 @@
 <p class="vf-text--light-red vf-bg--dark">.vf-text--light-red</p>
 <p class="vf-text--light-grey vf-bg--dark">.vf-text--light-grey</p>
 
-
-
-
-
 <p class="vf-text--white vf-bg--dark">.vf-text--white</p>
 <p class="vf-text--black-50">.vf-text--black-50</p>
 <p class="vf-text--white-50 vf-bg--dark">.vf-text--white-50</p>
@@ -66,3 +62,23 @@ Similar to the contextual text color classes, easily set the background of an el
 <div class="p-3 mb-2 vf-bg--transparent text-dark">.vf-bg--transparent</div>
 ```
 
+## Borders
+
+Borders can be used to separate sections of a site or service. 
+
+```html
+<div class="vf-bg--white">
+  <div class="vf-container vf-container--tight">
+    <section class="p-2">Dummy section</section>
+    <section class="p-2 vf-border-top-gray-200">
+      Border on top
+    </section>
+    <section class="p-2">Dummy section</section>
+    <section class="p-2 vf-border-bottom-gray-200">
+      Border on bottom
+    </section>
+    <section class="p-2">Dummy section</section>
+  </div>
+
+
+```
