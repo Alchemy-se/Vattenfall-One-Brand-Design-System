@@ -1,0 +1,215 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.vf-btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  color: $body-color;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+  min-width: 180px;
+  position: relative;
+
+  &:before {
+    content: '\2192';
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(-220%, -2px);
+    font-weight: normal;
+    font-size: 21px;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-delay: 0ms;
+  }
+
+  &:hover:before {
+    transition-delay: 150ms;
+    transform: translate(-150%, -2px);
+    opacity: 1;
+  }
+
+  // Share hover and focus styles
+  @include hover-focus {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .vf-btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.vf-btn.disabled,
+fieldset:disabled a.vf-btn {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .vf-btn--#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .vf-btn--outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+
+// Ugly override for now
+.vf-btn--outline-dark {
+  border-color: #cdd1d4;
+}
+
+// .vf-btn--outline-dark:hover {
+//   color: #fff;
+//   background-color: #222222;
+//   border-color: #222222;
+// }
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.vf-btn--link {
+  position: relative;
+  font-weight: 500;
+  color: #222222;
+  text-decoration: none;
+  background-color: transparent;
+
+  // For the arrow
+  transform: translateZ(1);
+  padding-left: 25px;
+
+  &:before {
+    top: calc(50% + 1px);
+    transform: translate(-200%, -50%);
+    font-weight: 400;
+    font-size: 20px;
+    color: $vattenfall-mid-blue;
+  }
+
+  &:focus:before, &:active:before, &:hover:before {
+    transform: translate(-150%, -50%);
+  }
+
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  // No need for an active state here
+}
+
+.vf-btn--link-white {
+  color: #ffffff;
+
+  &:before {
+    color: inherit;
+  }
+  @include hover {
+    color: $vattenfall-mid-blue;
+  }
+}
+
+.vf-btn--link-with-arrow {
+  padding-left: 30px;
+
+  &:before {
+    font-size: 28px;
+    opacity: 1;
+  }
+}
+
+//
+// Button Sizes
+//
+
+.vf-btn--lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, ($font-size-base * 1.125), $btn-line-height-lg, $btn-border-radius-lg);
+  min-width: 240px;
+}
+
+.vf-btn--sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}
+
+
+//
+// Block button
+//
+
+.vf-btn--block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .vf-btn--block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.vf-btn--block {
+    width: 100%;
+  }
+}

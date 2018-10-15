@@ -1,0 +1,68 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+$container-tight-max-widths: (
+  sm: 540px,
+  md: 600px,
+  lg: 680px,
+  xl: 774px
+) !default;
+
+@if $enable-grid-classes {
+  .vf-container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .vf-container--tight {
+    @include make-container-max-widths($container-tight-max-widths);
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+
+@if $enable-grid-classes {
+  .vf-container-fluid {
+    @include make-container();
+  }
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+@if $enable-grid-classes {
+  .vf-row {
+    @include make-row();
+  }
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .vf-no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .vf-col,
+    > [class*="vf-col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
+
+.vf-row--vertical-center {
+  display: flex;
+  align-items: center;
+}

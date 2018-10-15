@@ -5,15 +5,15 @@ The Blockquote component is used for displaying shorter textual content, like qu
 This example uses a quote, with an author and his title, along with an image.
 
 ```html
-<div class="vattenfall-blockquote">
-  <img class="vattenfall-blockquote__illustration" src="/img/example-blockquote.png" />
-  <blockquote class="vattenfall-blockquote__quote">
+<div class="vf-blockquote">
+  <img class="vf-blockquote__illustration" src="/img/example-blockquote.png" />
+  <blockquote class="vf-blockquote__quote">
     It's not enough to be efficient:
     we must also be innovative in
     our ways of working
   </blockquote>
-  <div class="vattenfall-blockquote__author">Magnus Hall</div>
-  <div class="vattenfall-blockquote__author-title">PRESIDENT AND CEO</div>
+  <div class="vf-blockquote__author">Magnus Hall</div>
+  <div class="vf-blockquote__author-title">PRESIDENT AND CEO</div>
 </div>
 ```
 
@@ -25,16 +25,16 @@ The HTML Specimen supports the same responsive options as the React Specimen. To
 ```html
 responsive: true
 ---
-<div class="container">
-  <div class="vattenfall-blockquote">
-  <img class="vattenfall-blockquote__illustration" src="/img/example-blockquote.png" />
-  <blockquote class="vattenfall-blockquote__quote">
+<div class="vf-container">
+  <div class="vf-blockquote">
+  <img class="vf-blockquote__illustration" src="/img/example-blockquote.png" />
+  <blockquote class="vf-blockquote__quote">
     It's not enough to be efficient:
     we must also be innovative in
     our ways of working
   </blockquote>
-  <div class="vattenfall-blockquote__author">Magnus Hall</div>
-  <div class="vattenfall-blockquote__author-title">PRESIDENT AND CEO</div>
+  <div class="vf-blockquote__author">Magnus Hall</div>
+  <div class="vf-blockquote__author-title">PRESIDENT AND CEO</div>
 </div>
 </div>
 ```

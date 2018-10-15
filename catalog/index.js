@@ -14,7 +14,7 @@ const pages = [
     content: pageLoader(() => import("./WELCOME.md"))
   },
   {
-    title: 'Layouts', 
+    title: 'Examples', 
     pages: [
       {
         path: "/layouts-intro",
@@ -22,7 +22,7 @@ const pages = [
         content: pageLoader(() => import("./layouts/intro.md"))
       }, {
         path: "/layouts/vattenfall-se",
-        title: "- Start Page",
+        title: "- Corporate web",
         content: pageLoader(() => import("./layouts/layout-start-page.md"))
       }, {
         path: "/layouts/app",
@@ -30,7 +30,7 @@ const pages = [
         content: pageLoader(() => import("./layouts/layout-mobile-app.md"))
       }, {
         path: "/layouts/tool",
-        title: "- Web tool",
+        title: "- Web service",
         content: pageLoader(() => import("./layouts/layout-web-tool.md"))
       },
     ]
@@ -43,13 +43,45 @@ const pages = [
         title: "Getting started",
         content: pageLoader(() => import("./getting-started.md"))
       }, {
+        path: "/grid",
+        title: "Grid",
+        content: pageLoader(() => import("./grid.md"))
+      }, {
+        path: "/responsive",
+        title: "Responsive",
+        content: pageLoader(() => import("./responsive.md"))
+      }, {
+        path: "/sizing",
+        title: "Sizing",
+        content: pageLoader(() => import("./sizing.md"))
+      }, {
+        path: "/colors",
+        title: "Colors & borders",
+        content: pageLoader(() => import("./colors.md"))
+      }, {
+        path: "/spacing",
+        title: "Spacing",
+        content: pageLoader(() => import("./spacing.md"))
+      }, {
         path: "/components-intro",
         title: "Components",
         content: pageLoader(() => import("./components/intro.md"))
       }, {
-        path: "/css/hero",
+        path: "/css/text",
+        title: "- Text",
+        content: pageLoader(() => import("./components/text.md"))
+      }, {
+        path: "/css/blockquote",
         title: "- Blockquote",
         content: pageLoader(() => import("./components/blockquote.md"))
+      }, {
+        path: "/css/button",
+        title: "- Button",
+        content: pageLoader(() => import("./components/button.md"))
+      }, {
+        path: "/css/navbar",
+        title: "- Navbar",
+        content: pageLoader(() => import("./components/navbar.md"))
       }, {
       //   path: "/css/hero",
       //   title: "- Hero",
