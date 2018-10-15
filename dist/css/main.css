@@ -41,7 +41,7 @@ html.sr .reveal {
 }
 
 .vf-border-bottom-gray-200 {
-  border-top: 1px #e6eaed solid;
+  border-bottom: 1px #e6eaed solid;
 }
 
 @font-face {
