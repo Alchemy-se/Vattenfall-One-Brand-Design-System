@@ -29,6 +29,50 @@ vattenfall-design-system/
 
 We provide compiled CSS (`main.*`), as well as compiled and minified CSS (`main.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`.*.map`) are available for use with certain browsers' developer tools.
 
+## Deployment
+
+You can run this repo as a docker image. 
+
+Build the docker image: 
+```sh
+docker build -t vattenfallds .
+```
+
+Start a docker container with the previously built image, binding port 4040
+```sh
+docker run -p 4040:80 vattenfallds
+```
+
+Now you should see the design system documentation on `http://localhost:4040`
+
+
+### Connecting to Google Container Cloud 
+
+Make sure you have `gcloud` command line tools installed.
+
+Login to google cloud
+```sh
+gcloud auth login
+```
+
+Select the project `vattenfall-design-system`
+```sh
+gcloud config set project vattenfall-design-system
+```
+
+Tag a docker image to be able to upload it to the continer registry.
+
+```sh
+docker tag vattenfallds eu.gcr.io/vattenfall-design-system/vattenfallds
+```
+
+The first `vattenfallds` is the local docker image name. The second argument is made up from the `[HOST]/[PROJECT]/[docker-tag]`
+
+Upload the tagged image to google container registry
+
+```sh
+docker push eu.gcr.io/vattenfall-design-system/vattenfallds
+```
 
 ## Contributing
 

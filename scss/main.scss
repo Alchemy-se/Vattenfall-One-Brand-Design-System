@@ -2,8 +2,67 @@
 @import "variables";
 @import "mixins";
 
-@import "fonts";
-@import "sizes";
 
-@import "components/hero";
+@at-root {
+  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 1.6rem;
+//   }
+// }
+
+// To prevent revealed elements from flickering
+html.sr .reveal {
+  visibility: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "borders";
+@import "fonts";
+@import "grid";
+@import "type";
+
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/responsive";
+@import "utilities/spacing";
+@import "utilities/sizing";
+
 @import "components/blockquote";
+@import "components/button";
+@import "components/card";
+@import "components/footer";
+@import "components/hero";
+@import "components/nav";
+@import "components/navbar";
+
+@import "utilities/background";
+@import "utilities/text";
