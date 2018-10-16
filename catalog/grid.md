@@ -169,7 +169,7 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
 
 ## Responsive classes
 
-Bootstrap's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+VF Design System's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
 
 ### All breakpoints
 
@@ -233,7 +233,7 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
 
 Gutters can be responsively adjusted by breakpoint-specific padding and negative margin utility classes. To change the gutters in a given row, pair a negative margin utility on the `.row` and matching padding utilities on the `.vf-col`s.
 
-Here's an example of customizing the Bootstrap grid at the large (`lg`) breakpoint and above. We've increased the `.vf-col` padding with `.px-lg-5` and then counteracted that with `.mx-lg-n5` on the parent `.row`.
+Here's an example of customizing the VF Design System grid at the large (`lg`) breakpoint and above. We've increased the `.vf-col` padding with `.px-lg-5` and then counteracted that with `.mx-lg-n5` on the parent `.row`.
 
 ```html
 <div class="row mx-lg-n5">
