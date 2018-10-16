@@ -10,7 +10,6 @@ COPY . .
 # RUN CI=true yarn test
 RUN yarn catalog-build
 RUN mv ./catalog/build /app/build
-# RUN ls /app/conf
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.15
