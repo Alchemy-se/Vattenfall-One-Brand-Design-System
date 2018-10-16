@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
 import moleculesNavigation from './molecules/navigation'
 import organismsNavigation from './organisms/navigation'
-
+import layoutsNavigation from './layouts/navigation'
 const styles = [
   '/dist/css/reboot.css',
   '/dist/css/main.css'
@@ -15,28 +15,7 @@ const pages = [
     title: "Welcome",
     content: pageLoader(() => import("./WELCOME.md"))
   },
-  {
-    title: 'Examples', 
-    pages: [
-      {
-        path: "/layouts-intro",
-        title: "Intro",
-        content: pageLoader(() => import("./layouts/intro.md"))
-      }, {
-        path: "/layouts/vattenfall-se",
-        title: "- Corporate web",
-        content: pageLoader(() => import("./layouts/layout-start-page.md"))
-      }, {
-        path: "/layouts/app",
-        title: "- Mobile App",
-        content: pageLoader(() => import("./layouts/layout-mobile-app.md"))
-      }, {
-        path: "/layouts/tool",
-        title: "- Web service",
-        content: pageLoader(() => import("./layouts/layout-web-tool.md"))
-      },
-    ]
-  },
+  layoutsNavigation,
   {
     title: 'CSS Library',
     pages: [
