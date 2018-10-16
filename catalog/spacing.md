@@ -60,7 +60,7 @@ Here are some representative examples of these classes:
 
 ### Horizontal centering
 
-Additionally, Bootstrap also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
+Additionally, VF Design System also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
 
 ```html
 <div class="mx-auto" style="width: 200px;">
@@ -80,7 +80,7 @@ The syntax is nearly the same as the default, positive margin utilities, but wit
 }
 ```
 
-Here's an example of customizing the Bootstrap grid at the medium (`md`) breakpoint and above. We've increased the `.col` padding with `.px-md-5` and then counteracted that with `.mx-md-n5` on the parent `.row`.
+Here's an example of customizing the VF Design System grid at the medium (`md`) breakpoint and above. We've increased the `.col` padding with `.px-md-5` and then counteracted that with `.mx-md-n5` on the parent `.row`.
 
 ```html
 <div class="row mx-md-n5">

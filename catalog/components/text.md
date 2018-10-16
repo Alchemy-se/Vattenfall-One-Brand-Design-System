@@ -6,6 +6,11 @@ Basic text components
 <p>Standard text with no extra styles.</p>
 ```
 
+### Smaller text
+```html
+<p class="vf-text--small">Smaller text with no extra styles.</p>
+```
+
 ### H1
 
 ```html
@@ -42,10 +47,17 @@ Basic text components
 <h6>h6. Vattenfall Heading</h6>
 ```
 
-
-### Outlined buttons
-
+### Preamble
 ```html
-<a href="#" class="vf-btn vf-btn--outline-primary">A button</a>
+<p class="vf-preamble">Preamble</p>
 ```
 
+### Intro in Caps
+```html
+<p class="intro-in-caps">Intro in caps</p>
+```
+
+### Intro in Caps - Small
+```html
+<p class="intro-in-caps intro-in-caps--small">Intro in caps - smaller</p>
+```

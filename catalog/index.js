@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
+import moleculesNavigation from './molecules/navigation'
+import organismsNavigation from './organisms/navigation'
 
 const styles = [
   '/dist/css/reboot.css',
@@ -64,33 +66,19 @@ const pages = [
         content: pageLoader(() => import("./spacing.md"))
       }, {
         path: "/components-intro",
-        title: "Components",
+        title: "Atoms",
         content: pageLoader(() => import("./components/intro.md"))
       }, {
         path: "/css/text",
         title: "- Text",
         content: pageLoader(() => import("./components/text.md"))
       }, {
-        path: "/css/blockquote",
-        title: "- Blockquote",
-        content: pageLoader(() => import("./components/blockquote.md"))
-      }, {
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => import("./components/button.md"))
-      }, {
-        path: "/css/navbar",
-        title: "- Navbar",
-        content: pageLoader(() => import("./components/navbar.md"))
-      }, {
-      //   path: "/css/hero",
-      //   title: "- Hero",
-      //   content: pageLoader(() => import("./components/hero.md"))
-      // }, {
-        path: "/css/all-components",
-        title: "- All components",
-        content: pageLoader(() => import("./not-produced-yet.md"))
-      },
+      }, 
+      ...moleculesNavigation,
+      ...organismsNavigation,
     ]
   },
   {
@@ -144,6 +132,11 @@ const theme = {
 }
 
 ReactDOM.render(
-  <Catalog title="Vattenfall Design System" useBrowserHistory pages={pages} theme={theme} styles={styles} />,
+  <Catalog 
+    title="Vattenfall Design System" 
+    useBrowserHistory 
+    pages={pages} 
+    theme={theme} 
+    styles={styles} />,
   document.getElementById("catalog")
 );
