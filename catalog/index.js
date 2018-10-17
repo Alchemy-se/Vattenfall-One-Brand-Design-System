@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
-
+import moleculesNavigation from './molecules/navigation'
+import organismsNavigation from './organisms/navigation'
+import layoutsNavigation from './layouts/navigation'
 const styles = [
   '/dist/css/reboot.css',
   '/dist/css/main.css'
@@ -13,28 +15,7 @@ const pages = [
     title: "Welcome",
     content: pageLoader(() => import("./WELCOME.md"))
   },
-  {
-    title: 'Examples', 
-    pages: [
-      {
-        path: "/layouts-intro",
-        title: "Intro",
-        content: pageLoader(() => import("./layouts/intro.md"))
-      }, {
-        path: "/layouts/vattenfall-se",
-        title: "- Corporate web",
-        content: pageLoader(() => import("./layouts/layout-start-page.md"))
-      }, {
-        path: "/layouts/app",
-        title: "- Mobile App",
-        content: pageLoader(() => import("./layouts/layout-mobile-app.md"))
-      }, {
-        path: "/layouts/tool",
-        title: "- Web service",
-        content: pageLoader(() => import("./layouts/layout-web-tool.md"))
-      },
-    ]
-  },
+  layoutsNavigation,
   {
     title: 'CSS Library',
     pages: [
@@ -64,33 +45,19 @@ const pages = [
         content: pageLoader(() => import("./spacing.md"))
       }, {
         path: "/components-intro",
-        title: "Components",
+        title: "Atoms",
         content: pageLoader(() => import("./components/intro.md"))
       }, {
         path: "/css/text",
         title: "- Text",
         content: pageLoader(() => import("./components/text.md"))
       }, {
-        path: "/css/blockquote",
-        title: "- Blockquote",
-        content: pageLoader(() => import("./components/blockquote.md"))
-      }, {
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => import("./components/button.md"))
-      }, {
-        path: "/css/navbar",
-        title: "- Navbar",
-        content: pageLoader(() => import("./components/navbar.md"))
-      }, {
-      //   path: "/css/hero",
-      //   title: "- Hero",
-      //   content: pageLoader(() => import("./components/hero.md"))
-      // }, {
-        path: "/css/all-components",
-        title: "- All components",
-        content: pageLoader(() => import("./not-produced-yet.md"))
-      },
+      }, 
+      ...moleculesNavigation,
+      ...organismsNavigation,
     ]
   },
   {
@@ -144,6 +111,11 @@ const theme = {
 }
 
 ReactDOM.render(
-  <Catalog title="Vattenfall Design System" useBrowserHistory pages={pages} theme={theme} styles={styles} />,
+  <Catalog 
+    title="Vattenfall Design System" 
+    useBrowserHistory 
+    pages={pages} 
+    theme={theme} 
+    styles={styles} />,
   document.getElementById("catalog")
 );
