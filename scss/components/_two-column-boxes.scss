@@ -11,6 +11,7 @@
     width: 100%;
     left: 0;
     text-align: center;
+    z-index: 20;
   }
   .vf-two-column-boxes__content {
     margin-left: 44%;
@@ -20,8 +21,15 @@
   .vf-two-column-boxes__image {
     float: left; 
     width: 50%;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 45%;
+    position: relative;
 
     & > img {
-      width: 100%; 
+      width: 120%; 
+      position: absolute;
+      left: -10%;
+      top: -15%;
     }
   }

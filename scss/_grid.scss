@@ -5,8 +5,8 @@
 $container-tight-max-widths: (
   sm: 540px,
   md: 600px,
-  lg: 680px,
-  xl: 774px
+  lg: 774px,
+  xl: 960px
 ) !default;
 
 @if $enable-grid-classes {
