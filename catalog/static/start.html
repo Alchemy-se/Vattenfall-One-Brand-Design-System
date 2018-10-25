@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/dist/css/reboot.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/dist/css/main.css" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/rellax.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
   </head>
   <body>
@@ -136,7 +137,7 @@
         </h2>
 
         <div class="vf-two-column-boxes__image">
-          <img src="/img/example-startpage/energy-and-solutions.png" />
+          <img src="/img/example-startpage/energy-and-solutions.png" class="parallax" data-rellax-speed="-1" />
         </div>
         <div class="vf-two-column-boxes__content vf-bg--light-blue">
           <p>
@@ -320,6 +321,9 @@
     </footer>
 
     <script>
+
+      const rellax = new Rellax('.parallax');
+
       const delay = 180
 
       // https://scrollrevealjs.org/api/defaults.html

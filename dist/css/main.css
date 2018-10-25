@@ -178,13 +178,13 @@ html.sr .reveal {
 
 @media (min-width: 992px) {
   .vf-container--tight {
-    max-width: 680px;
+    max-width: 774px;
   }
 }
 
 @media (min-width: 1200px) {
   .vf-container--tight {
-    max-width: 774px;
+    max-width: 960px;
   }
 }
 
@@ -8476,6 +8476,7 @@ input[type="button"].vf-btn--block {
   width: 100%;
   left: 0;
   text-align: center;
+  z-index: 20;
 }
 
 .vf-two-column-boxes__content {
@@ -8487,10 +8488,17 @@ input[type="button"].vf-btn--block {
 .vf-two-column-boxes__image {
   float: left;
   width: 50%;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 45%;
+  position: relative;
 }
 
 .vf-two-column-boxes__image > img {
-  width: 100%;
+  width: 120%;
+  position: absolute;
+  left: -10%;
+  top: -15%;
 }
 
 .vf-bg--primary {
