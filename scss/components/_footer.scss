@@ -13,15 +13,22 @@
 }
 
   .vf-footer__nav {
-
   }
     .vf-footer__nav-item {
       display: block;
       padding: 0.5rem 0;
       color: $dark;
       font-weight: 500;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
+    
     }
 
+  .vf-footer__social-links {
+    text-align: right;
+  }
 
   .vf-footer__social-link {
     width: 28px;
