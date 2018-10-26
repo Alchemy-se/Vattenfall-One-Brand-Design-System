@@ -11,7 +11,7 @@
 
 .vf-blockquote {
   position: relative;
-  padding: 0;
+  padding: 0 0 70px 0;
   width: 100%;
 }
 
@@ -22,32 +22,27 @@
 .vf-blockquote:before {
   content: "“";
   position: absolute;
-  top: 50px;
+  top: 0;
   left: 0;
   text-align: center;
   color: #cdd1d4;
-  border: 1px #cdd1d4 solid;
-  width: 40px;
-  height: 40px;
-  line-height: 1;
+  border: 2px #cdd1d4 solid;
+  width: 48px;
+  height: 48px;
+  line-height: 72px;
   border-radius: 50%;
   font-size: 68px;
 }
 
-
-.vf-blockquote__quote {
-  @extend .h3;
-
-  border-left: 3px rgba($vattenfall-blue-grey, 0.5) solid;
-  padding-left: 92px;
-
-  width: 60%;
+.vf-blockquote__content {
+  width: 83%;
   text-align: left;
+  z-index: 20;
+  margin: 0;
 
-  top: 50%;
-  transform: translateY(-50%);
   position: absolute;
   left: 0;
+  bottom: 0;
 
   @include media-breakpoint-down(sm) {
     padding-left: 20px;
@@ -55,14 +50,20 @@
   }
 }
 
+.vf-blockquote__quote {
+  color: #222222;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+  line-height: 60px;
+  margin: 0;
+  padding: 40px 90px 60px 0;
+  background: white;
+}
 
 .vf-blockquote__byline {
   margin-left: 0;
   font-size: 18px;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
   @include media-breakpoint-down(sm) {
     font-size: 16px;
@@ -77,12 +78,24 @@
   margin-left: 0;
 }
 .vf-blockquote__illustration {
-  width: calc(66.666667% - 10px);
+  position: relative;
+  // width: calc(66.666667% - 10px);
+  width: 74.33%;
 
   & img {
     width: 100%;
   }
 }
+
+.vf-blockquote__illustration-cutout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 80% !important;
+}
+.vf-blockquote__illustration-bg {}
+
 
 .vf-quote {
   padding: 3rem;
