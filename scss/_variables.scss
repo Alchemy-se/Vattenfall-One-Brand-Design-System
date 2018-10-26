@@ -314,7 +314,7 @@ $line-height-base:            1.75 !default;
 
 $h1-font-size:                $font-size-base * 4.5 !default;
 $h2-font-size:                $font-size-base * 3.25 !default;
-$h3-font-size:                $font-size-base * 2.25 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
@@ -776,7 +776,6 @@ $card-border-radius:                0px;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
-$card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 

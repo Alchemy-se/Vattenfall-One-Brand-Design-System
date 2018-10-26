@@ -1,0 +1,35 @@
+.vf-two-column-boxes {
+  @include make-container();
+  max-width: 1400px;
+  position: relative;
+  padding-top: 1px; // Trigger margin offset
+}
+
+  .vf-two-column-boxes__headline {
+    position: absolute;
+    top: 9.5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 20;
+  }
+  .vf-two-column-boxes__content {
+    margin-left: 44%;
+    margin-top: 62px;
+    padding: 17.5rem 10rem 10rem 12rem; 
+  }
+  .vf-two-column-boxes__image {
+    float: left; 
+    width: 50%;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 45%;
+    position: relative;
+
+    & > img {
+      width: 120%; 
+      position: absolute;
+      left: -10%;
+      top: -15%;
+    }
+  }
