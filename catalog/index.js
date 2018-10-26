@@ -110,10 +110,17 @@ const theme = {
   bgDark: "#333333"
 }
 
+const responsiveSizes =  [
+  {name: 'phone', width: 375, height: 667},
+  {name: 'tablet', width: 768, height: 1024},
+  {name: 'desktop', width: 1920, height: 1080},
+]
+
 ReactDOM.render(
   <Catalog 
     title="Vattenfall Design System" 
     useBrowserHistory 
+    responsiveSizes={responsiveSizes}
     pages={pages} 
     theme={theme} 
     styles={styles} />,

@@ -7774,6 +7774,16 @@ input[type="button"].vf-btn--block {
   font-weight: 500;
 }
 
+@media (max-width: 767.98px) {
+  .vf-footer__nav-item {
+    font-size: 20px;
+  }
+}
+
+.vf-footer__social-links {
+  text-align: right;
+}
+
 .vf-footer__social-link {
   width: 28px;
   margin: 18px 36px 18px 0;
