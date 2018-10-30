@@ -1,5 +1,5 @@
 {
-  "name": "vattenfall-design-system",
+  "name": "@vf-alchemy/vattenfall-design-system",
   "version": "0.0.0-development",
   "main": "index.js",
   "scripts": {
