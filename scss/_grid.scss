@@ -20,6 +20,14 @@ $container-tight-max-widths: (
   }
 }
 
+
+.vf-container {
+  @include media-breakpoint-down(sm) {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+}
+
 // Fluid container
 //
 // Utilizes the mixin meant for fixed width containers, but with 100% width for

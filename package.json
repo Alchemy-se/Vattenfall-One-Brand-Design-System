@@ -1,6 +1,6 @@
 {
-  "name": "Vattenfall-One-Brand-Design-System",
-  "version": "1.0.0",
+  "name": "vattenfall-design-system",
+  "version": "0.0.0-development",
   "main": "index.js",
   "scripts": {
     "test": "yarn build",
@@ -13,7 +13,8 @@
     "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/main.min.css dist/css/main.css && cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/reboot.min.css dist/css/reboot.css",
     "css-copy": "shx mkdir -p catalog/static/dist/ && shx cp -r dist/css/ catalog/static/dist/",
     "watch": "npm-run-all --parallel watch-css catalog-start",
-    "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\""
+    "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
+    "semantic-release": "semantic-release"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
@@ -24,11 +25,15 @@
     "nodemon": "^1.18.4",
     "npm-run-all": "^4.1.3",
     "postcss-cli": "^6.0.0",
+    "semantic-release": "^15.10.6",
     "shx": "^0.3.2"
   },
   "dependencies": {
     "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }

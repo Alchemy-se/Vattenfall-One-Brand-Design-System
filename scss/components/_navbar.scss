@@ -340,6 +340,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 
 .vf-navbar__nav--subnav {
