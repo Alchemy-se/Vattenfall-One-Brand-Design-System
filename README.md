@@ -6,8 +6,8 @@
 
 Coming soon:
 - ~~- [Download the latest release.](https://no-cdn-yet.com/vattenfall.zip)~~
-- ~~- Install with [npm](https://www.npmjs.com/): `npm install vattenfall-design-system`~~
-- ~~- Install with [yarn](https://yarnpkg.com/): `yarn add vattenfall-design-system`~~
+ - Install with [npm](https://www.npmjs.com/): `npm install @alchemy-vf/vattenfall-design-system`
+ - Install with [yarn](https://yarnpkg.com/): `yarn add @alchemy-vf/vattenfall-design-system`
 
 ## What's included
 
