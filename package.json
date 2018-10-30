@@ -20,6 +20,7 @@
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/git": "^7.0.5",
     "@semantic-release/npm": "semantic-release/npm",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.9.3",
@@ -33,6 +34,12 @@
     "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
   },
   "publishConfig": {
     "access": "restricted"
