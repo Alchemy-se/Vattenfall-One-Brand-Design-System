@@ -6,7 +6,7 @@ Follow the steps under [getting started](asda)
 
 # Design Components
 
-For a list of all Components in the design system, go to [CSS Library](asda)
+For a list of all Components in the design system, go to [CSS Library](/getting-started)
 
 # Contributing
 
