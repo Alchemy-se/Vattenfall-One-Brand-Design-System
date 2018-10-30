@@ -1,5 +1,7 @@
 # Vattenfall-One-Brand-Design-System
 
+A shared component library based on the Vattenfall Design System.
+
 ## Quick start
 
 - Clone the repo: `git clone git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git`
