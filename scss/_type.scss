@@ -1,89 +1,112 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 //
-// Headings
+// Mixins
 //
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: $headings-margin-bottom;
-  color: $headings-color;
+@mixin typo-preamble {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 36px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+    line-height: 1.67;
+  }  
 }
 
-h1, .h1 { 
+@mixin typo-primary {
   font-size: $h1-font-size; 
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: -0.2px;
 }
-h2, .h2 { 
+
+@mixin typo-secondary {
   font-size: $h2-font-size;
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.2px;
 }
-h3, .h3 { 
+
+@mixin typo-tetriary {
   font-size: $h3-font-size; 
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.2px;
 }
-h4, .h4 { 
+
+@mixin typo-quaternary {
   font-family: $headings-font-family;
   font-weight: 400;
   font-size: $h4-font-size;
   line-height: 1.33;
   font-weight: 500;
 }
-h5, .h5 { 
-  font-family: $headings-font-family;
-  font-weight: 500;
-  line-height: 1.33;
-  font-size: $h5-font-size;
-}
-h6, .h6 { 
-  font-family: $headings-font-family;
-  font-weight: 500;
-  line-height: 1.33;
-  font-size: $h6-font-size;
+
+@mixin typo-paragraph-primary {
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
 }
 
-.vf-preamble {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
+@mixin typo-paragraph-secondary {
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: -0.1px;
 }
 
-.vf-lead {
-  font-size: $lead-font-size;
-  font-weight: $lead-font-weight;
+@mixin typo-intro-in-caps {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+    line-height: 36px;
+  }
 }
 
-// Type display classes
-.display-1 {
-  font-size: $display1-size;
-  font-weight: $display1-weight;
-  line-height: $display-line-height;
+@mixin typo-intro-in-caps-small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
-.display-2 {
-  font-size: $display2-size;
-  font-weight: $display2-weight;
-  line-height: $display-line-height;
+
+
+//
+// Headings
+//
+
+
+h1, h2, h3, h4 {
+  margin-bottom: $headings-margin-bottom;
+  color: $headings-color;
 }
-.display-3 {
-  font-size: $display3-size;
-  font-weight: $display3-weight;
-  line-height: $display-line-height;
+
+h1 { 
+  @include typo-primary();
 }
-.display-4 {
-  font-size: $display4-size;
-  font-weight: $display4-weight;
-  line-height: $display-line-height;
+h2 { 
+  @include typo-secondary();
+}
+h3 { 
+  @include typo-tetriary();
+}
+h4 {
+  @include typo-quaternary() 
 }
 
 
@@ -141,12 +164,6 @@ mark,
 // Misc
 //
 
-// Builds on `abbr`
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-
 // Blockquotes
 .blockquote {
   margin-bottom: $spacer;
@@ -164,28 +181,45 @@ mark,
 }
 
 p {
-  font-size: 1.25rem;
+  @include typo-paragraph-primary();
 }
 
+@if $enable-typography-classes {
+  .vf-typo-primary {
+    @include typo-primary();
+  }
 
-.intro-in-caps {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
+  .vf-preamble {
+    @include typo-preamble();
+  }
+  
+  .vf-typo-primary { 
+    @include typo-primary();
+  }
+  .vf-typo-secondary { 
+    @include typo-secondary();
+  }
+  .vf-typo-tetriary { 
+    @include typo-tetriary();
+  }
+  .vf-typo-quaternary {
+    @include typo-quaternary() 
+  }
 
-.intro-in-caps--small {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
+  .vf-typo-p, 
+  .vf-typo-p-primary {
+    @include typo-paragraph-primary();
+  }
 
-.vf-text--small {
-  font-size: 1rem;
-  line-height: 1.75;
-  letter-spacing: -0.1px;
-}
+  .vf-typo-p-secondary {
+    @include typo-paragraph-secondary();
+  }
 
-.vf-weight--500 {
-  font-weight: 500;
+  .vf-intro-in-caps {
+    @include typo-intro-in-caps();
+  }
+
+  .vf-intro-in-caps-small {
+    @include typo-intro-in-caps-small();
+  }
 }

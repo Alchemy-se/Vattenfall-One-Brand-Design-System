@@ -1284,13 +1284,12 @@ html.sr .reveal {
   align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4 {
   margin-bottom: 1rem;
   color: inherit;
 }
 
-h1, .h1 {
+h1 {
   font-size: 4.5rem;
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
@@ -1298,7 +1297,7 @@ h1, .h1 {
   letter-spacing: -0.2px;
 }
 
-h2, .h2 {
+h2 {
   font-size: 3.25rem;
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
@@ -1306,7 +1305,7 @@ h2, .h2 {
   letter-spacing: -0.2px;
 }
 
-h3, .h3 {
+h3 {
   font-size: 1.75rem;
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
@@ -1314,63 +1313,12 @@ h3, .h3 {
   letter-spacing: -0.2px;
 }
 
-h4, .h4 {
+h4 {
   font-family: inherit;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.33;
   font-weight: 500;
-}
-
-h5, .h5 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.33;
-  font-size: 1.25rem;
-}
-
-h6, .h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.33;
-  font-size: 1rem;
-}
-
-.vf-preamble {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-}
-
-.vf-lead {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-.display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.33;
-}
-
-.display-2 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.33;
-}
-
-.display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.33;
-}
-
-.display-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.33;
 }
 
 hr {
@@ -1410,11 +1358,6 @@ mark,
   margin-right: 0.5rem;
 }
 
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-
 .blockquote {
   margin-bottom: 2rem;
   font-size: 1.25rem;
@@ -1431,29 +1374,114 @@ mark,
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
 }
 
-.intro-in-caps {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 1px;
+@media (min-width: 576px) {
+  p {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
 }
 
-.intro-in-caps--small {
-  font-size: 0.75rem;
+.vf-typo-primary {
+  font-size: 4.5rem;
+  font-family: "Vattenfall Hall Display";
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.2px;
+}
+
+.vf-preamble {
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 0;
+  line-height: 36px;
 }
 
-.vf-text--small {
+@media (min-width: 576px) {
+  .vf-preamble {
+    font-size: 1.5rem;
+    line-height: 1.67;
+  }
+}
+
+.vf-typo-primary {
+  font-size: 4.5rem;
+  font-family: "Vattenfall Hall Display";
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.2px;
+}
+
+.vf-typo-secondary {
+  font-size: 3.25rem;
+  font-family: "Vattenfall Hall Display";
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.2px;
+}
+
+.vf-typo-tetriary {
+  font-size: 1.75rem;
+  font-family: "Vattenfall Hall Display";
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.2px;
+}
+
+.vf-typo-quaternary {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-weight: 500;
+}
+
+.vf-typo-p,
+.vf-typo-p-primary {
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+}
+
+@media (min-width: 576px) {
+  .vf-typo-p,
+  .vf-typo-p-primary {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+}
+
+.vf-typo-p-secondary {
   font-size: 1rem;
   line-height: 1.75;
   letter-spacing: -0.1px;
 }
 
-.vf-weight--500 {
-  font-weight: 500;
+.vf-intro-in-caps {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+@media (min-width: 576px) {
+  .vf-intro-in-caps {
+    font-size: 16px;
+    line-height: 36px;
+  }
+}
+
+.vf-intro-in-caps-small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .d-none {
