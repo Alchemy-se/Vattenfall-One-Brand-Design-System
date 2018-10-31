@@ -48,22 +48,44 @@
   font-weight: 500;
 }
 
-@mixin typo-paragraph-primary {
+@mixin typo-paragraph-primary-desktop {
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+@mixin typo-paragraph-primary-mobile {
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+}
+
+@mixin typo-paragraph-primary {
+  @include typo-paragraph-primary-mobile();
   
   @include media-breakpoint-up(sm) {
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 36px;
+    @include typo-paragraph-primary-desktop();
   }
 }
 
-@mixin typo-paragraph-secondary {
-  font-size: 1rem;
+@mixin typo-paragraph-secondary-desktop {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.05px;
+}
+
+@mixin typo-paragraph-secondary-mobile {
+  font-size: 16px;
   line-height: 1.75;
   letter-spacing: -0.1px;
+}
+
+@mixin typo-paragraph-secondary {
+  @include typo-paragraph-secondary-mobile();
+  
+  @include media-breakpoint-up(sm) {
+    @include typo-paragraph-secondary-desktop();
+  }
 }
 
 @mixin typo-intro-in-caps {
