@@ -151,6 +151,7 @@ $yiq-text-light:            $white !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
+$enable-typography-classes: true !default;
 $enable-caret:              true !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
@@ -316,26 +317,10 @@ $h1-font-size:                $font-size-base * 4.5 !default;
 $h2-font-size:                $font-size-base * 3.25 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-color:              inherit !default;
-
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.5rem !default;
-
-$display1-weight:             300 !default;
-$display2-weight:             300 !default;
-$display3-weight:             300 !default;
-$display4-weight:             300 !default;
-$display-line-height:         1.33 !default;
-
-$lead-font-size:              ($font-size-base * 1.25) !default;
-$lead-font-weight:            400;
 
 $small-font-size:             80% !default;
 
