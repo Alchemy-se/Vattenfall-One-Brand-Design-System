@@ -1,6 +1,6 @@
 .vf-two-column-boxes {
   @include make-container();
-  max-width: 1400px;
+  max-width: $bleed-container-max-width;
   position: relative;
   padding-top: 1px; // Trigger margin offset
 }

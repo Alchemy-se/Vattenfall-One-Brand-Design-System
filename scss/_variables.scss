@@ -254,6 +254,7 @@ $container-max-widths: (
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
+$bleed-container-max-width: 1680px;
 
 // Grid columns
 //
