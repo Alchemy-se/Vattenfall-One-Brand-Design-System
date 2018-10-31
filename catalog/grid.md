@@ -2,7 +2,6 @@
 
 Vattenfall's grid system uses a series of containers, rows, and columns to layout and align content. It's built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
-**New to or unfamiliar with flexbox?** [Read this CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, guidelines, and code snippets.
 
 ```html
 <div class="vf-container">
@@ -24,16 +23,15 @@ The above example creates three equal-width columns on small, medium, large, and
 
 Breaking it down, here's how it works:
 
-- Containers provide a means to center and horizontally pad your site's contents. Use `.vf-container` for a responsive pixel width or `.vf-container-fluid` for `width: 100%` across all viewport and device sizes.
+- Containers provide a means to center and horizontally pad your site's contents. See [Containers](#different-containers) section on the bottom.
 - Rows are wrappers for columns. Each column has horizontal `padding` (called a gutter) for controlling the space between them. This `padding` is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.
 - In a grid layout, content must be placed within columns and only columns may be immediate children of rows.
-- Thanks to flexbox, grid columns without a specified `width` will automatically layout as equal width columns. For example, four instances of `.vf-col-sm` will each automatically be 25% wide from the small breakpoint and up. See the [auto-layout columns](#auto-layout-columns) section for more examples.
+- Grid columns without a specified `width` will automatically layout as equal width columns. See the [auto-layout columns](#auto-layout-columns) section for more examples.
 - Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use `.vf-col-4`.
 - Column `width`s are set in percentages, so they're always fluid and sized relative to their parent element.
 - Columns have horizontal `padding` to create the gutters between individual columns, however, you can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
-- To make the grid responsive, there are five grid breakpoints, one for each [responsive breakpoint](/docs/layout/overview/#responsive-breakpoints): all breakpoints (extra small), small, medium, large, and extra large.
+- To make the grid responsive, there are five grid breakpoints, one for each [responsive breakpoint](#responsive-classes): all breakpoints, small, medium, large, and extra large.
 - Grid breakpoints are based on minimum width media queries, meaning **they apply to that one breakpoint and all those above it** (e.g., `.vf-col-sm-4` applies to small, medium, large, and extra large devices, but not the first `xs` breakpoint).
-- You can use predefined grid classes (like `.vf-col-4`) or [Sass mixins](#sass-mixins) for more semantic markup.
 
 Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#flexbug-9).
 
@@ -169,7 +167,7 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
 
 ## Responsive classes
 
-VF Design System's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+VF Design System's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on small, medium, large, or extra large devices however you see fit.
 
 ### All breakpoints
 
@@ -517,22 +515,22 @@ With the move to flexbox in v4, you can use margin utilities like `.mr-auto` to 
 </div>
 ```
 
-## Nesting
+## Different containers
 
-To nest your content with the default grid, add a new `.row` and set of `.vf-col-sm-*` columns within an existing `.vf-col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
+### Standard container
 
-```html
-<div class="vf-row">
-  <div class="vf-col-sm-9">
-    Level 1: .vf-col-sm-9
-    <div class="vf-row">
-      <div class="vf-col-8 vf-col-sm-6">
-        Level 2: .vf-col-8 .vf-col-sm-6
-      </div>
-      <div class="vf-col-4 vf-col-sm-6">
-        Level 2: .vf-col-4 .vf-col-sm-6
-      </div>
-    </div>
-  </div>
-</div>
-```
+`.vf-container`
+
+The regular container for all standard content.
+
+### Tight container
+
+`.vf-container--tight`
+
+Used for content heavy pages etc.
+
+### Tight container
+
+`.vf-container-bleed`
+
+For content areas that are supposed to bleed out of the standard container. 
