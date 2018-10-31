@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "@semantic-release/git": "^7.0.5",
+    "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "semantic-release/npm",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.9.3",
@@ -31,14 +32,19 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/release-notes-generator": "^7.1.2",
     "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
   "release": {
     "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
-      "@semantic-release/git"
+      "@semantic-release/git",
+      "@semantic-release/github"
     ]
   },
   "publishConfig": {
