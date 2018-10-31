@@ -4,6 +4,9 @@
   background-size: cover;
   background-position: center center;
   
+  margin: 0 auto;
+  max-width: $bleed-container-max-width;
+
   @include media-breakpoint-up(sm) {
     min-height: 600px;
     padding-top: 125px;

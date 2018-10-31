@@ -28,6 +28,12 @@ $container-tight-max-widths: (
   }
 }
 
+.vf-container-bleed {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $bleed-container-max-width;
+}
+
 // Fluid container
 //
 // Utilizes the mixin meant for fixed width containers, but with 100% width for
