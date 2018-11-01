@@ -8615,6 +8615,7 @@ input[type="button"].vf-btn--block {
     float: left;
     width: 168px;
     margin-right: 60px;
+    margin-bottom: 50px;
   }
 }
 

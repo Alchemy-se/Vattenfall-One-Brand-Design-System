@@ -1,0 +1,1 @@
+Blockquote component features a prominent image, a quote and a byline.
