@@ -1465,7 +1465,7 @@ p {
 
 .vf-typo-p-secondary {
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 28px;
   letter-spacing: -0.1px;
 }
 
@@ -6062,37 +6062,6 @@ p {
   width: 80% !important;
 }
 
-.vf-quote {
-  padding: 3rem;
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 3rem;
-  font-size: 1.25rem;
-}
-
-.vf-quote:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  left: 4rem;
-  border: 32px solid transparent;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -16px;
-  margin-bottom: -32px;
-}
-
-/* Colors */
-.vf-quote {
-  background-color: #f7f6d8;
-}
-
-.vf-quote:after {
-  border-top-color: #f7f6d8;
-}
-
 .vf-btn {
   display: inline-block;
   font-weight: 400;
@@ -8589,6 +8558,101 @@ input[type="button"].vf-btn--block {
   fill: #4e4b48 !important;
 }
 
+.vf-small-quote {
+  position: relative;
+  padding: 32px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 40px 0 60px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+@media (min-width: 576px) {
+  .vf-small-quote {
+    padding: 32px 48px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+}
+
+.vf-small-quote:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  left: 50%;
+  border: 32px solid transparent;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -16px;
+  margin-bottom: -32px;
+}
+
+@media (min-width: 576px) {
+  .vf-small-quote:after {
+    left: 70px;
+  }
+}
+
+/* Colors */
+.vf-small-quote {
+  background-color: #f7f6d8;
+}
+
+.vf-small-quote:after {
+  border-top-color: #f7f6d8;
+}
+
+.vf-small-quote-byline {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .vf-small-quote-byline {
+    float: left;
+    width: 168px;
+    margin-right: 60px;
+  }
+}
+
+.vf-small-quote-byline-photo {
+  margin: 0 auto;
+  padding: 0;
+  width: 45%;
+}
+
+@media (min-width: 576px) {
+  .vf-small-quote-byline-photo {
+    width: 100%;
+  }
+}
+
+.vf-small-quote-byline-title {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  padding: 30px 0 15px 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.vf-small-quote-byline-description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  color: #8694a0;
+  padding: 0 100px;
+}
+
+@media (min-width: 576px) {
+  .vf-small-quote-byline-description {
+    padding: 0;
+  }
+}
+
 .vf-two-column-boxes {
   width: 100%;
   padding-right: 12px;
@@ -8837,6 +8901,12 @@ button.vf-bg--light-grey:focus {
 
 .vf-bg--transparent {
   background-color: transparent !important;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
 }
 
 .vf-text--monospace {
