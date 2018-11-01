@@ -1,25 +1,14 @@
-// <div class="vf-blockquote">
-//   <blockquote class="vf-blockquote__quote">
-//     It's not enough to be efficient:
-//     we must also be innovative in
-//     our ways of working
-//   </blockquote>
-//   <div class="vf-blockquote__author">Magnus Hall</div>
-//   <div class="vf-blockquote__author-title">PRESIDENT AND CEO</div>
-//   <img class="vf-blockquote__image" src="" />
-// </div>
-
-.vf-blockquote {
+.vf-large-quote {
   position: relative;
   padding: 0 0 70px 0;
   width: 100%;
 }
 
-.vf-blockquote * {
+.vf-large-quote * {
   position: relative;
 }
 
-.vf-blockquote:before {
+.vf-large-quote:before {
   content: "“";
   position: absolute;
   top: 0;
@@ -34,7 +23,7 @@
   font-size: 68px;
 }
 
-.vf-blockquote__content {
+.vf-large-quote__content {
   width: 83%;
   text-align: left;
   z-index: 20;
@@ -50,7 +39,7 @@
   }
 }
 
-.vf-blockquote__quote {
+.vf-large-quote__quote {
   color: #222222;
   font-size: 3rem;
   font-weight: 500;
@@ -61,7 +50,7 @@
   background: white;
 }
 
-.vf-blockquote__byline {
+.vf-large-quote__byline {
   margin-left: 0;
   font-size: 18px;
 
@@ -71,13 +60,13 @@
   }
 }
 
-.vf-blockquote__author {
+.vf-large-quote__author {
   font-weight: 600;
 }
-.vf-blockquote__author-title {
+.vf-large-quote__author-title {
   margin-left: 0;
 }
-.vf-blockquote__illustration {
+.vf-large-quote__illustration {
   position: relative;
   // width: calc(66.666667% - 10px);
   width: 74.33%;
@@ -87,7 +76,7 @@
   }
 }
 
-.vf-blockquote__illustration-cutout {
+.vf-large-quote__illustration-cutout {
   position: absolute;
   bottom: 0;
   right: 0;
