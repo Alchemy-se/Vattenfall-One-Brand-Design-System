@@ -2,6 +2,12 @@
   position: relative;
   padding: 0 0 70px 0;
   width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    align-content: flex-end;
+
+  }
 }
 
 .vf-large-quote * {
@@ -12,7 +18,6 @@
   content: "“";
   position: absolute;
   top: 0;
-  left: 0;
   text-align: center;
   color: #cdd1d4;
   border: 2px #cdd1d4 solid;
@@ -21,65 +26,96 @@
   line-height: 72px;
   border-radius: 50%;
   font-size: 68px;
+
+  left: 21px;
+  @include media-breakpoint-up(sm) {
+    left: 0;
+  }
 }
 
 .vf-large-quote__content {
-  width: 83%;
   text-align: left;
+  width: 100%;
+  position: relative;
   z-index: 20;
-  margin: 0;
+  top: -200px;
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+    margin: 0;
 
-  @include media-breakpoint-down(sm) {
-    padding-left: 20px;
-    width: 85%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
   }
 }
 
 .vf-large-quote__quote {
   color: #222222;
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -0.15px;
-  line-height: 60px;
-  margin: 0;
-  padding: 40px 90px 60px 0;
+  padding: 48px 80px 48px 21px;
+  margin: 0 21px 0 0;
+
   background: white;
-}
-
-.vf-large-quote__byline {
-  margin-left: 0;
-  font-size: 18px;
-
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-    margin-left: 20px;
+  
+  @include typo-quote-mobile();
+  @include media-breakpoint-up(sm) {
+    @include typo-quote-desktop();
+    padding: 40px 90px 60px 0;
   }
 }
 
-.vf-large-quote__author {
-  font-weight: 600;
+.vf-large-quote__byline { 
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 36px;
+
+  padding-left: 21px;
+  
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
 }
-.vf-large-quote__author-title {
-  margin-left: 0;
+
+.vf-large-quote__byline-description {
+  padding-left: 21px;
+
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.05px;
+  line-height: 28px;
 }
+
 .vf-large-quote__illustration {
   position: relative;
-  // width: calc(66.666667% - 10px);
-  width: 74.33%;
 
-  & img {
-    width: 100%;
+  height: 330px;
+
+  @include media-breakpoint-up(sm) {
+    width: 74.33%;
   }
+
+  // & img {
+  //   width: 100%;
+  // }
 }
 
 .vf-large-quote__illustration-cutout {
   position: absolute;
-  bottom: 0;
-  right: 0;
   z-index: 10;
-  width: 80% !important;
+  top: -50px;
+  left: 110px;
+  height: 380px;
+
+  @include media-breakpoint-up(sm) {
+    bottom: 0;
+    right: 0;
+    width: 80% !important;
+  }
+}
+.vf-large-quote__illustration-bg {
+  height: 330px;
+  position: absolute;
+  left: 155px;
 }
