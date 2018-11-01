@@ -1,2 +1,0 @@
-webpackJsonp([2],{778:function(e,t,n){var o=n(15),a=n(45),r=n(286).PageRenderer;r.__esModule&&(r=r.default);var i=a({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(787)}},componentWillMount:function(){},render:function(){return o.createElement(r,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},787:function(e,t){e.exports="This is how a layout for a Vattenfall web tool, such as Mina sidor, could look.\n\nImage be here"}});
-//# sourceMappingURL=2.db55758c.chunk.js.map
