@@ -4,7 +4,6 @@ Large quote component features a prominent image, a quote and a byline.
 ```html
 responsive: true
 ---
-
 <div class="p-3" style="background: white;">
   <article class="vf-large-quote d-flex justify-content-end">
     <div class="vf-large-quote__illustration">
