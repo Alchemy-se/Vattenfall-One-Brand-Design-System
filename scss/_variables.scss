@@ -779,151 +779,6 @@ $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
 
-// Tooltips
-
-$tooltip-font-size:                 $font-size-sm !default;
-$tooltip-max-width:                 200px !default;
-$tooltip-color:                     $white !default;
-$tooltip-bg:                        $black !default;
-$tooltip-border-radius:             $border-radius !default;
-$tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
-$tooltip-margin:                    0 !default;
-
-$tooltip-arrow-width:               .8rem !default;
-$tooltip-arrow-height:              .4rem !default;
-$tooltip-arrow-color:               $tooltip-bg !default;
-
-
-// Popovers
-
-$popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $white !default;
-$popover-max-width:                 276px !default;
-$popover-border-width:              $border-width !default;
-$popover-border-color:              rgba($black, .2) !default;
-$popover-border-radius:             $border-radius-lg !default;
-$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
-
-$popover-header-bg:                 darken($popover-bg, 3%) !default;
-$popover-header-color:              $headings-color !default;
-$popover-header-padding-y:          .5rem !default;
-$popover-header-padding-x:          .75rem !default;
-
-$popover-body-color:                $body-color !default;
-$popover-body-padding-y:            $popover-header-padding-y !default;
-$popover-body-padding-x:            $popover-header-padding-x !default;
-
-$popover-arrow-width:               1rem !default;
-$popover-arrow-height:              .5rem !default;
-$popover-arrow-color:               $popover-bg !default;
-
-$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
-
-
-// Badges
-
-$badge-font-size:                   75% !default;
-$badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
-$badge-border-radius:               $border-radius !default;
-
-$badge-pill-padding-x:              .6em !default;
-// Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
-$badge-pill-border-radius:          10rem !default;
-
-
-// Modals
-
-// Padding applied to the modal body
-$modal-inner-padding:               1rem !default;
-
-$modal-dialog-margin:               .5rem !default;
-$modal-dialog-margin-y-sm-up:       1.75rem !default;
-
-$modal-title-line-height:           $line-height-base !default;
-
-$modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
-$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
-$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
-
-$modal-backdrop-bg:                 $black !default;
-$modal-backdrop-opacity:            .5 !default;
-$modal-header-border-color:         $gray-200 !default;
-$modal-footer-border-color:         $modal-header-border-color !default;
-$modal-header-border-width:         $modal-content-border-width !default;
-$modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding:              1rem !default;
-
-$modal-xl:                          1140px !default;
-$modal-lg:                          800px !default;
-$modal-md:                          500px !default;
-$modal-sm:                          300px !default;
-
-$modal-fade-transform:              translate(0, -50px) !default;
-$modal-show-transform:              none !default;
-$modal-transition:                  transform .3s ease-out !default;
-
-
-// Alerts
-//
-// Define alert colors, border radius, and padding.
-
-$alert-padding-y:                   .75rem !default;
-$alert-padding-x:                   1.25rem !default;
-$alert-margin-bottom:               1rem !default;
-$alert-border-radius:               $border-radius !default;
-$alert-link-font-weight:            $font-weight-bold !default;
-$alert-border-width:                $border-width !default;
-
-$alert-bg-level:                    -10 !default;
-$alert-border-level:                -9 !default;
-$alert-color-level:                 6 !default;
-
-
-// Progress bars
-
-$progress-height:                   1rem !default;
-$progress-font-size:                ($font-size-base * .75) !default;
-$progress-bg:                       $gray-200 !default;
-$progress-border-radius:            $border-radius !default;
-$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
-$progress-bar-color:                $white !default;
-$progress-bar-bg:                   theme-color("primary") !default;
-$progress-bar-animation-timing:     1s linear infinite !default;
-$progress-bar-transition:           width .6s ease !default;
-
-// List group
-
-$list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
-$list-group-border-width:           $border-width !default;
-$list-group-border-radius:          $border-radius !default;
-
-$list-group-item-padding-y:         .75rem !default;
-$list-group-item-padding-x:         1.25rem !default;
-
-$list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
-
-$list-group-disabled-color:         $gray-600 !default;
-$list-group-disabled-bg:            $list-group-bg !default;
-
-$list-group-action-color:           $gray-700 !default;
-$list-group-action-hover-color:     $list-group-action-color !default;
-
-$list-group-action-active-color:    $body-color !default;
-$list-group-action-active-bg:       $gray-200 !default;
-
-
 // Image thumbnails
 
 $thumbnail-padding:                 .25rem !default;
@@ -932,60 +787,6 @@ $thumbnail-border-width:            $border-width !default;
 $thumbnail-border-color:            $gray-300 !default;
 $thumbnail-border-radius:           $border-radius !default;
 $thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
-
-
-// Figures
-
-$figure-caption-font-size:          90% !default;
-$figure-caption-color:              $gray-600 !default;
-
-
-// Breadcrumbs
-
-$breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding:           .5rem !default;
-
-$breadcrumb-margin-bottom:          1rem !default;
-
-$breadcrumb-bg:                     $gray-200 !default;
-$breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
-
-$breadcrumb-border-radius:          $border-radius !default;
-
-
-// Carousel
-
-$carousel-control-color:             $white !default;
-$carousel-control-width:             15% !default;
-$carousel-control-opacity:           .5 !default;
-
-$carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
-$carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer:          3px !default;
-$carousel-indicator-active-bg:       $white !default;
-$carousel-indicator-transition:      opacity .6s ease !default;
-
-$carousel-caption-width:             70% !default;
-$carousel-caption-color:             $white !default;
-
-$carousel-control-icon-width:        20px !default;
-
-$carousel-control-prev-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
-$carousel-control-next-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
-
-$carousel-transition:                transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-
-
-// Close
-
-$close-font-size:                   $font-size-base * 1.5 !default;
-$close-font-weight:                 $font-weight-bold !default;
-$close-color:                       $black !default;
-$close-text-shadow:                 0 1px 0 $white !default;
 
 // Code
 
@@ -1006,5 +807,8 @@ $pre-scrollable-max-height:         340px !default;
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 
+// Custom icons
+$icon-share:                        url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAxNiAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGRlZnM+ICAgICAgICA8cGF0aCBkPSJNMjEsMTQgTDI2LDEzLjk4OTQxOCBMMjYsMjggTDEwLDI4IEwxMC4wMDcwNTQ3LDEzLjk4OTQxOCBMMTUsMTMuOTg5NDE4IEwxNSwxNS45ODU4OTA3IEwxMi4wMDM1MjczLDE1Ljk4NTg5MDcgTDEyLjAwMzUyNzMsMjUuOTk2NDcyNyBMMjQuMDAzNTI3MywyNS45OTY0NzI3IEwyNC4wMDM1MjczLDE1Ljk4NTg5MDcgTDIxLDE1Ljk4NTg5MDcgTDIxLDE0IFogTTE3LjAwNTI5MSwxMS44MTY1Nzg1IEwxNS43MDcyMzEsMTMuMTA3NTgzOCBMMTQuMjk2Mjk2MywxMS42ODk1OTQ0IEwxOC4wMDcwNTQ3LDggTDIxLjcwMzcwMzcsMTEuNjc1NDg1IEwyMC4yOTI3NjksMTMuMDkzNDc0NCBMMTkuMDAxNzYzNywxMS44MDk1MjM4IEwxOS4wMDE3NjM3LDE5IEwxNy4wMDUyOTEsMTkgTDE3LjAwNTI5MSwxMS44MTY1Nzg1IFoiIGlkPSJwYXRoLTEiPjwvcGF0aD4gICAgPC9kZWZzPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iQnV0dG9uLS8tUm91bmQtLy1TbWFsbC0vLURlZmF1bHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNi4wMDAwMDAsIC0xNC4wMDAwMDApIj4gICAgICAgICAgICA8ZyBpZD0iSWNvbi0vLVN5bWJvbC0vLVNoYXJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjAwMDAwMCwgNi4wMDAwMDApIj4gICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPiAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4gICAgICAgICAgICAgICAgPC9tYXNrPiAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBmaWxsPSIjMjIyMjIyIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPiAgICAgICAgICAgICAgICA8ZyBpZD0iQ29sb3ItLy1QcmltYXJ5LS8tQmxhY2siIG1hc2s9InVybCgjbWFzay0yKSIgZmlsbD0iIzIyMjIyMiIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiI+PC9yZWN0PiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
 
-$icon-share: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAxNiAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGRlZnM+ICAgICAgICA8cGF0aCBkPSJNMjEsMTQgTDI2LDEzLjk4OTQxOCBMMjYsMjggTDEwLDI4IEwxMC4wMDcwNTQ3LDEzLjk4OTQxOCBMMTUsMTMuOTg5NDE4IEwxNSwxNS45ODU4OTA3IEwxMi4wMDM1MjczLDE1Ljk4NTg5MDcgTDEyLjAwMzUyNzMsMjUuOTk2NDcyNyBMMjQuMDAzNTI3MywyNS45OTY0NzI3IEwyNC4wMDM1MjczLDE1Ljk4NTg5MDcgTDIxLDE1Ljk4NTg5MDcgTDIxLDE0IFogTTE3LjAwNTI5MSwxMS44MTY1Nzg1IEwxNS43MDcyMzEsMTMuMTA3NTgzOCBMMTQuMjk2Mjk2MywxMS42ODk1OTQ0IEwxOC4wMDcwNTQ3LDggTDIxLjcwMzcwMzcsMTEuNjc1NDg1IEwyMC4yOTI3NjksMTMuMDkzNDc0NCBMMTkuMDAxNzYzNywxMS44MDk1MjM4IEwxOS4wMDE3NjM3LDE5IEwxNy4wMDUyOTEsMTkgTDE3LjAwNTI5MSwxMS44MTY1Nzg1IFoiIGlkPSJwYXRoLTEiPjwvcGF0aD4gICAgPC9kZWZzPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iQnV0dG9uLS8tUm91bmQtLy1TbWFsbC0vLURlZmF1bHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNi4wMDAwMDAsIC0xNC4wMDAwMDApIj4gICAgICAgICAgICA8ZyBpZD0iSWNvbi0vLVN5bWJvbC0vLVNoYXJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjAwMDAwMCwgNi4wMDAwMDApIj4gICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPiAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4gICAgICAgICAgICAgICAgPC9tYXNrPiAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBmaWxsPSIjMjIyMjIyIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPiAgICAgICAgICAgICAgICA8ZyBpZD0iQ29sb3ItLy1QcmltYXJ5LS8tQmxhY2siIG1hc2s9InVybCgjbWFzay0yKSIgZmlsbD0iIzIyMjIyMiIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiI+PC9yZWN0PiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+// Font location
+$fontPath:                          "../../fonts" !default;
