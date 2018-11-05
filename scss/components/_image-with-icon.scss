@@ -45,12 +45,14 @@ $share-icon-size: 48px;
   display: block;
   background: white;
   color: #222;
-  font-size: 10px;
+  font-size: 0;
+  overflow: hidden;
+  text-indent: 200px;
   line-height: $share-icon-size;
   text-align: center;
-  // @include media-breakpoint-up(sm) {
-  //   left: - ($share-icon-size / 2) + 1;
-  // }
+  background-image: $icon-share;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .vf-image-with-icon__description {

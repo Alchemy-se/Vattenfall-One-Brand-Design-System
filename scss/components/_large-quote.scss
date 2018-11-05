@@ -7,12 +7,13 @@ $cutout-height-desktop: 85px;
 .vf-large-quote {
   position: relative;
   width: 100%;
-  
+  overflow:hidden;
   @include make-container();
   @include make-container-max-widths($container-max-widths-except-sm);
   
   padding: 0 0 70px 0;
   @include media-breakpoint-up(sm) {
+    overflow: auto;
     height: $component-height-desktop;
   }
 }
