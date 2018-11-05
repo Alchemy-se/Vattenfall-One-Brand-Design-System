@@ -1,0 +1,131 @@
+$component-height-mobile: 330px;
+$cutout-height-mobile: 50px;
+
+$component-height-desktop: 555px;
+$cutout-height-desktop: 85px;
+
+.vf-large-quote {
+  position: relative;
+  width: 100%;
+  
+  @include make-container();
+  @include make-container-max-widths($container-max-widths-except-sm);
+  
+  padding: 0 0 70px 0;
+  @include media-breakpoint-up(sm) {
+    height: $component-height-desktop;
+  }
+}
+
+.vf-large-quote:before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: #cdd1d4;
+  border: 2px #cdd1d4 solid;
+  width: 48px;
+  height: 48px;
+  line-height: 72px;
+  border-radius: 50%;
+  font-size: 68px;
+
+  left: 21px;
+  @include media-breakpoint-up(sm) {
+    left: 0;
+  }
+}
+
+.vf-large-quote__content {
+  text-align: left;
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  top: -200px;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    position: absolute;
+    top: initial;
+    bottom: 0;
+  }
+}
+
+.vf-large-quote__quote {
+  color: #222222;
+  padding: 48px 80px 48px 21px;
+  margin: 0 21px 0 0;
+
+  background: white;
+  
+  @include typo-quote-mobile();
+  @include media-breakpoint-up(sm) {
+    @include typo-quote-desktop();
+    padding: 40px 90px 60px 0;
+  }
+}
+
+.vf-large-quote__byline { 
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 36px;
+  
+  padding-left: 21px;
+  font-size: 20px;
+  @include media-breakpoint-up(sm) {
+    padding-left: 0;
+    font-size: 20px;
+  }
+}
+
+.vf-large-quote__byline-description {
+  font-weight: normal;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  
+  font-size: 16px;
+  padding-left: 21px;
+  @include media-breakpoint-up(sm) {
+    padding-left: 0;
+  }
+}
+
+.vf-large-quote__illustration {
+  position: relative;
+  height: $component-height-mobile;
+
+  @include media-breakpoint-up(sm) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.vf-large-quote__illustration-cutout {
+  position: absolute;
+  z-index: 10;
+
+  top: - $cutout-height-mobile;
+  left: 110px;
+
+  height: $component-height-mobile + $cutout-height-mobile;
+
+  @include media-breakpoint-up(sm) {
+    top: - $cutout-height-desktop;
+    left: 50%;
+    height: $component-height-desktop + $cutout-height-desktop;
+  }
+}
+.vf-large-quote__illustration-bg {
+  position: absolute;
+
+  height: $component-height-mobile;
+  left: 155px;
+
+  @include media-breakpoint-up(sm) {
+    height: $component-height-desktop;
+    width: 60%;
+    right: 0;
+  }
+}

@@ -107,6 +107,19 @@
   letter-spacing: 2px;
 }
 
+@mixin typo-quote-mobile {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 40px;
+}
+
+@mixin typo-quote-desktop {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+  line-height: 60px;
+}
 
 //
 // Headings
