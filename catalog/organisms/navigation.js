@@ -10,6 +10,10 @@ const nav = [
     title: "- Footer",
     content: pageLoader(() => import("./footer.md"))
   }, {
+    path: "/css/form",
+    title: "- Form",
+    content: pageLoader(() => import("./form.md"))
+  }, {    
     path: "/css/hero",
     title: "- Hero",
     content: pageLoader(() => import("./hero.md"))
