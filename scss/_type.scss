@@ -11,21 +11,26 @@
   line-height: 36px;
 
   @include media-breakpoint-up(sm) {
-    font-size: 1.5rem;
+    font-size: 25px;
     line-height: 1.67;
   }  
 }
 
 @mixin typo-primary {
-  font-size: $h1-font-size; 
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: -0.2px;
+  letter-spacing: 0; 
+
+  font-size: 44px;
+  line-height: 48px;
+  @include media-breakpoint-up(sm) {
+    font-size: 72px;
+    line-height: 1.17;
+  }
 }
 
 @mixin typo-secondary {
-  font-size: $h2-font-size;
+  font-size: 52px;
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
   line-height: 1.33;
@@ -33,7 +38,7 @@
 }
 
 @mixin typo-tetriary {
-  font-size: $h3-font-size; 
+  font-size: 28px; 
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
   line-height: 1.33;
@@ -41,9 +46,9 @@
 }
 
 @mixin typo-quaternary {
-  font-family: $headings-font-family;
+  font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  font-size: $h4-font-size;
+  font-size: 16px;
   line-height: 1.33;
   font-weight: 500;
 }
