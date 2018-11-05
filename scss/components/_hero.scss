@@ -1,31 +1,43 @@
 .vf-hero {
-  // position: relative;
+  position: relative;
   background: $vattenfall-blue-grey;
   background-size: cover;
   background-position: center center;
-  
   margin: 0 auto;
-  max-width: $bleed-container-max-width;
-
-  @include media-breakpoint-up(sm) {
-    min-height: 600px;
-    padding-top: 125px;
-  }
+  width: 100%;
+  max-width: $bleed-container-max-width + 20px; // To add the borders
+  border-left: 21px white solid;
+  border-right: 21px white solid;
+  height: 60vh;
 
   @include media-breakpoint-down(sm) {
-    border-left: 21px white solid;
-    border-right: 21px white solid;
     font-size: 44px;
     height: 370px;
     min-height: 370px;
   }
 }
 
-.vf-hero__headline {
-  @include media-breakpoint-down(sm) {
-    font-size: 36px;
-    max-width: 87%;
-    margin: 0 auto;
-    padding-bottom: 20px;
+.vf-hero__content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  text-align: center;
+  @include typo-paragraph-secondary-mobile();
+  
+  @include media-breakpoint-up(sm) {
+    @include typo-paragraph-primary-desktop();
   }
+  
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.vf-hero__headline {
+  color: white;
+  padding-bottom: 10px;
 }
