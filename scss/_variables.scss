@@ -245,12 +245,23 @@ $grid-breakpoints: (
 //
 // Define the maximum width of `.vf-container` for different screen sizes.
 
+$sizeSm: 540px;
+$sizeMd: 720px;
+$sizeLg: 960px;
+$sizeXl: 1160px;
+
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1160px
+  sm: $sizeSm,
+  md: $sizeMd,
+  lg: $sizeLg,
+  xl: $sizeXl
 ) !default;
+
+$container-max-widths-except-sm: (
+  md: $sizeMd,
+  lg: $sizeLg,
+  xl: $sizeXl
+);
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
