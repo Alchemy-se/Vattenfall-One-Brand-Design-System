@@ -24,7 +24,12 @@
   transform: translateY(-50%);
   
   text-align: center;
-  @include typo-paragraph-secondary();
+  @include typo-paragraph-secondary-mobile();
+  
+  @include media-breakpoint-up(sm) {
+    @include typo-paragraph-primary-desktop();
+  }
+  
   color: white;
 
   a {
@@ -34,4 +39,5 @@
 
 .vf-hero__headline {
   color: white;
+  padding-bottom: 10px;
 }

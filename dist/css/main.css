@@ -7774,9 +7774,9 @@ input[type="button"].vf-btn--block {
 
 @media (min-width: 576px) {
   .vf-hero__content {
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.05px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
   }
 }
 
@@ -7786,6 +7786,7 @@ input[type="button"].vf-btn--block {
 
 .vf-hero__headline {
   color: white;
+  padding-bottom: 10px;
 }
 
 .vf-image-with-caption {
