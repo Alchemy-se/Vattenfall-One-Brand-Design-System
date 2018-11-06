@@ -2,8 +2,9 @@
   background: $vattenfall-light-blue;
   @include make-container-bleed();
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     max-height: 488px;
+    margin-bottom: 100px;
   }
 }
 
@@ -15,7 +16,7 @@
 
   margin-top: 90px;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     margin-top: 0;
   }
 }
@@ -24,10 +25,14 @@
   @include make-col-ready();
   margin-top: -90px;
   
-  @include media-breakpoint-up(sm) {
-    @include make-col(8);
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
     margin-top: 0;
     padding-top: 88px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
   }
   
   img {
@@ -40,11 +45,17 @@
   padding-top: 35px;
   padding-bottom: 35px;
 
-  @include media-breakpoint-up(sm) {
-    @include make-col(4);
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
     order: -1;
 
     padding-top: 88px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+  @include media-breakpoint-up(xl) {
     padding-right: 110px;
   }
 }
@@ -53,8 +64,22 @@
 .vf-media-block__text, .vf-media-block__text p {
   @include typo-paragraph-primary-mobile();
   
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     @include typo-paragraph-secondary-desktop();
   }
   margin-bottom: 1rem;
+}
+
+// Styles for reversed mode (image on the left on desktop)
+.vf-media-block--reversed {
+
+  .vf-media-block__content {
+    order: initial !important;
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 110px;
+      padding-right: 0;
+    }  
+  }
+
 }

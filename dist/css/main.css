@@ -7990,9 +7990,10 @@ a.vf-card:hover {
   max-width: 1680px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .vf-media-block {
     max-height: 488px;
+    margin-bottom: 100px;
   }
 }
 
@@ -8034,7 +8035,7 @@ a.vf-card:hover {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .vf-media-block__body {
     margin-top: 0;
   }
@@ -8048,14 +8049,23 @@ a.vf-card:hover {
   margin-top: -90px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  .vf-media-block__media {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 0;
+    padding-top: 88px;
+  }
+}
+
+@media (min-width: 992px) {
   .vf-media-block__media {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
-    margin-top: 0;
-    padding-top: 88px;
   }
 }
 
@@ -8072,16 +8082,30 @@ a.vf-card:hover {
   padding-bottom: 35px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  .vf-media-block__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    padding-top: 88px;
+  }
+}
+
+@media (min-width: 992px) {
   .vf-media-block__content {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1;
-    padding-top: 88px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-media-block__content {
     padding-right: 110px;
   }
 }
@@ -8093,11 +8117,24 @@ a.vf-card:hover {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .vf-media-block__text, .vf-media-block__text p {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.05px;
+  }
+}
+
+.vf-media-block--reversed .vf-media-block__content {
+  -webkit-box-ordinal-group: initial !important;
+  -ms-flex-order: initial !important;
+  order: initial !important;
+}
+
+@media (min-width: 1200px) {
+  .vf-media-block--reversed .vf-media-block__content {
+    padding-left: 110px;
+    padding-right: 0;
   }
 }
 

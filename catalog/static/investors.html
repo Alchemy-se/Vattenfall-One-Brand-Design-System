@@ -124,29 +124,6 @@
     </div>
   </section>
 
-  <div style="height:300px"></div>
-
-  <section class="vf-bg--light-turquoise pt-5 pb-3 mb-5 reveal">
-    <div class="vf-container">
-      <div class="vf-row">
-        <div class="vf-col-md-4">
-          <h3>Q2 Report 2018</h3>
-          <p>President and CEO Magnus Hall and CFO Anna Borg comment on Vattenfall's half-year results 2018. The web audiocast for
-          analysts.</p>
-
-          <p>
-            <a href="#" class="vf-btn vf-btn--link">Download report as PDF</a><br />
-            <a href="#" class="vf-btn vf-btn--link">Watch on Youtube</a><br />
-            <a href="#" class="vf-btn vf-btn--link">Listen as audiocast</a>
-          </p>
-        </div>
-        <div class="vf-col-md-8">
-          <img class="w-100 mb-n8" src="/img/example-startpage/fossil-free.png" />
-        </div>
-      </div>
-    </div>
-  </section>
-
   <div class="vf-container">
     <h2 class="vf-text--center pb-3 pt-2 reveal">News & Press</h2>
     <div class="vf-row">
@@ -191,6 +168,37 @@
       </div>
     </div>
   </div>
+
+  <section class="vf-media-block vf-media-block--reversed mb-6 mt-5">
+    <div class="vf-media-block__body">
+      <div class="vf-media-block__media">
+        <img src="/img/example-startpage/fossil-free.png" />
+      </div>
+      <div class="vf-media-block__content">
+        <h3 class="vf-media-block__title">
+            Vattenfall Capital Markets Day
+        </h3>
+        <div class="vf-media-block__text">
+          <p>
+              Vattenfall's Capital Markets Day for analysts and investors was held on 18 June 2018 in London, UK.
+          </p>
+
+          <a href="#" class="vf-btn vf-btn--link">
+            Download report as PDF
+          </a>
+          <br />
+          <a href="#" class="vf-btn vf-btn--link">
+            Watch on Youtube
+          </a>
+          <br />
+          <a href="#" class="vf-btn vf-btn--link">
+            Listen as audiocast
+          </a>    
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="vf-footer">
       <div class="vf-container">
@@ -243,12 +251,25 @@
       </div>
     </footer>
 
-  <script>
-    ScrollReveal().reveal('.reveal', {
-      delay: 180,
-      duration: 1200,
-    });
-  </script>
-</body>
+    <script>
+      const delay = 180
 
+      // https://scrollrevealjs.org/api/defaults.html
+      ScrollReveal().reveal('.reveal', {
+        delay,
+        duration: 1200,
+        reset: true
+      });
+      ScrollReveal().reveal('.reveal-2', {
+        delay: delay*2,
+        duration: 1200,
+        reset: true
+      });
+      ScrollReveal().reveal('.reveal-3', {
+        delay: delay * 3,
+        duration: 1200,
+        reset: true
+      });
+    </script>
+  </body>
 </html>
