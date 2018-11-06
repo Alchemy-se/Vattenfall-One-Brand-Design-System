@@ -7948,6 +7948,123 @@ input[type="button"].vf-btn--block {
   line-height: 48px;
 }
 
+.vf-media-block {
+  background: #EDF1F6;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1680px;
+}
+
+@media (min-width: 576px) {
+  .vf-media-block {
+    max-height: 488px;
+  }
+}
+
+.vf-media-block__body {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+@media (min-width: 576px) {
+  .vf-media-block__body {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-media-block__body {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-media-block__body {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-media-block__body {
+    max-width: 1160px;
+  }
+}
+
+@media (min-width: 576px) {
+  .vf-media-block__body {
+    margin-top: 0;
+  }
+}
+
+.vf-media-block__media {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-top: -90px;
+}
+
+@media (min-width: 576px) {
+  .vf-media-block__media {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    margin-top: 0;
+    padding-top: 88px;
+  }
+}
+
+.vf-media-block__media img {
+  width: 100%;
+}
+
+.vf-media-block__content {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+@media (min-width: 576px) {
+  .vf-media-block__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    padding-top: 88px;
+    padding-right: 110px;
+  }
+}
+
+.vf-media-block__text {
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+}
+
+@media (min-width: 576px) {
+  .vf-media-block__text {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.05px;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
