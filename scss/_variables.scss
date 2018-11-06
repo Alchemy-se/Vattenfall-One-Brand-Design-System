@@ -753,12 +753,6 @@ $pagination-disabled-bg:            $white !default;
 $pagination-disabled-border-color:  $gray-300 !default;
 
 
-// Jumbotron
-
-$jumbotron-padding:                 2rem !default;
-$jumbotron-bg:                      $gray-200 !default;
-
-
 // Cards
 
 $card-spacer-y:                     1.5rem !default;
@@ -768,15 +762,6 @@ $card-border-radius:                0px;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
-
-$card-img-overlay-padding:          1.25rem !default;
-
-$card-group-margin:                 ($grid-gutter-width / 2) !default;
-$card-deck-margin:                  $card-group-margin !default;
-
-$card-columns-count:                3 !default;
-$card-columns-gap:                  1.25rem !default;
-$card-columns-margin:               $card-spacer-y !default;
 
 
 // Image thumbnails
