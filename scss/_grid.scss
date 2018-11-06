@@ -28,10 +28,14 @@ $container-tight-max-widths: (
   }
 }
 
-.vf-container-bleed {
+@mixin make-container-bleed {
   margin-right: auto;
   margin-left: auto;
   max-width: $bleed-container-max-width;
+}
+
+.vf-container-bleed {
+  @include make-container-bleed();
 }
 
 // Fluid container
