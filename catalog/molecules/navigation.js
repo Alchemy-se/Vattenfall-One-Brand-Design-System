@@ -6,6 +6,10 @@ const nav = [
     title: "Molecules",
     content: pageLoader(() => import("./index.md"))
   }, {
+    path: "/css/card",
+    title: "- Card",
+    content: pageLoader(() => import("./card.md"))
+  }, {
     path: "/css/image-with-caption",
     title: "- Image with Caption",
     content: pageLoader(() => import("./image-with-caption.md"))
@@ -29,6 +33,10 @@ const nav = [
     path: "/css/small-quote",
     title: "- Small Quote",
     content: pageLoader(() => import("./small-quote.md"))
+  }, {
+    path: "/css/three-column",
+    title: "- Three Column",
+    content: pageLoader(() => import("./three-column.md"))
   }
 ]
 export default nav

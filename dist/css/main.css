@@ -1319,11 +1319,21 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
   font-family: "Vattenfall Hall Display";
-  font-weight: 400;
-  line-height: 1.33;
-  letter-spacing: -0.2px;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-family: "Vattenfall Hall Display";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.33;
+    letter-spacing: -0.2px;
+  }
 }
 
 h4 {
@@ -1453,11 +1463,21 @@ p {
 }
 
 .vf-typo-tetriary {
-  font-size: 28px;
   font-family: "Vattenfall Hall Display";
-  font-weight: 400;
-  line-height: 1.33;
-  letter-spacing: -0.2px;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+@media (min-width: 576px) {
+  .vf-typo-tetriary {
+    font-family: "Vattenfall Hall Display";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.33;
+    letter-spacing: -0.2px;
+  }
 }
 
 .vf-typo-quaternary {
@@ -7589,6 +7609,7 @@ input[type="button"].vf-btn--block {
   background-clip: border-box;
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0px;
+  margin-bottom: 50px;
 }
 
 .vf-card > hr {
@@ -7606,24 +7627,38 @@ input[type="button"].vf-btn--block {
   border-bottom-left-radius: 0px;
 }
 
+a.vf-card {
+  -webkit-transition: -webkit-transform 230ms ease-in-out;
+  transition: -webkit-transform 230ms ease-in-out;
+  transition: transform 230ms ease-in-out;
+  transition: transform 230ms ease-in-out, -webkit-transform 230ms ease-in-out;
+}
+
+a.vf-card:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 .vf-card__body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 0px;
+  color: #222222;
 }
 
 .vf-card__title {
   margin-bottom: 1.5rem;
-}
-
-.vf-card__subtitle {
-  margin-top: -0.75rem;
-  margin-bottom: 0;
+  text-align: center;
+  color: #222222;
 }
 
 .vf-card__text {
-  font-size: 1rem;
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .vf-card__text:last-child {
@@ -8982,6 +9017,21 @@ input[type="button"].vf-btn--block {
 
 .vf-navbar__nav--subnav .vf-navbar__nav-item:hover {
   color: #2071b5;
+}
+
+.news-outer-container {
+  margin-top: 300px;
+}
+
+@media (min-width: 576px) {
+  .news-outer-container {
+    max-height: 450px;
+  }
+}
+
+.news-inner-container {
+  position: relative;
+  top: -220px;
 }
 
 .vf-bg--primary {

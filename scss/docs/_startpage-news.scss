@@ -1,0 +1,11 @@
+.news-outer-container {
+  margin-top: 300px;
+
+  @include media-breakpoint-up (sm) {
+    max-height: 450px;
+  }
+}
+.news-inner-container {
+  position: relative;
+  top: -220px;
+}
