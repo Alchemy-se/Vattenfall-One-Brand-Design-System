@@ -37,12 +37,30 @@
   letter-spacing: -0.2px;
 }
 
-@mixin typo-tetriary {
-  font-size: 28px; 
+@mixin typo-tetriary-base {
   font-family: "Vattenfall Hall Display";
-  font-weight: 400;
+  font-weight: bold;
+}
+
+@mixin typo-tetriary-mobile {
+  @include typo-tetriary-base();
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+@mixin typo-tetriary-desktop {
+  @include typo-tetriary-base();
+  font-size: 28px; 
   line-height: 1.33;
   letter-spacing: -0.2px;
+}
+
+@mixin typo-tetriary {
+  @include typo-tetriary-mobile();
+  @include media-breakpoint-up(sm) {
+    @include typo-tetriary-desktop();
+  }
 }
 
 @mixin typo-quaternary {
