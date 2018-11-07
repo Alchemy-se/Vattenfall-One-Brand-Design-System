@@ -8,6 +8,11 @@
   padding-left: ($grid-gutter-width / 2);
   margin-right: auto;
   margin-left: auto;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
 }
 
 
