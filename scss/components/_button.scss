@@ -191,6 +191,51 @@ fieldset:disabled a.vf-btn {
 }
 
 
+.vf-link-with-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none;
+  text-decoration: none;
+  position: relative;
+
+  @include typo-paragraph-primary();
+  font-weight: 500;
+  color: #222222;
+
+  &:before {
+    content: '\2192';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    font-size: 28px;
+    font-weight: normal;
+    color: $vattenfall-mid-blue;
+  }
+
+  // For the arrow
+  padding-left: 35px;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}
+
 //
 // Block button
 //
