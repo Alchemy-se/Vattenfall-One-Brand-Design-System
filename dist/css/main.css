@@ -440,47 +440,47 @@ html.sr .reveal {
   order: 12;
 }
 
-.offset-1 {
+.vf-offset-1 {
   margin-left: 8.333333%;
 }
 
-.offset-2 {
+.vf-offset-2 {
   margin-left: 16.666667%;
 }
 
-.offset-3 {
+.vf-offset-3 {
   margin-left: 25%;
 }
 
-.offset-4 {
+.vf-offset-4 {
   margin-left: 33.333333%;
 }
 
-.offset-5 {
+.vf-offset-5 {
   margin-left: 41.666667%;
 }
 
-.offset-6 {
+.vf-offset-6 {
   margin-left: 50%;
 }
 
-.offset-7 {
+.vf-offset-7 {
   margin-left: 58.333333%;
 }
 
-.offset-8 {
+.vf-offset-8 {
   margin-left: 66.666667%;
 }
 
-.offset-9 {
+.vf-offset-9 {
   margin-left: 75%;
 }
 
-.offset-10 {
+.vf-offset-10 {
   margin-left: 83.333333%;
 }
 
-.offset-11 {
+.vf-offset-11 {
   margin-left: 91.666667%;
 }
 
@@ -647,40 +647,40 @@ html.sr .reveal {
     -ms-flex-order: 12;
     order: 12;
   }
-  .offset-sm-0 {
+  .vf-offset-sm-0 {
     margin-left: 0;
   }
-  .offset-sm-1 {
+  .vf-offset-sm-1 {
     margin-left: 8.333333%;
   }
-  .offset-sm-2 {
+  .vf-offset-sm-2 {
     margin-left: 16.666667%;
   }
-  .offset-sm-3 {
+  .vf-offset-sm-3 {
     margin-left: 25%;
   }
-  .offset-sm-4 {
+  .vf-offset-sm-4 {
     margin-left: 33.333333%;
   }
-  .offset-sm-5 {
+  .vf-offset-sm-5 {
     margin-left: 41.666667%;
   }
-  .offset-sm-6 {
+  .vf-offset-sm-6 {
     margin-left: 50%;
   }
-  .offset-sm-7 {
+  .vf-offset-sm-7 {
     margin-left: 58.333333%;
   }
-  .offset-sm-8 {
+  .vf-offset-sm-8 {
     margin-left: 66.666667%;
   }
-  .offset-sm-9 {
+  .vf-offset-sm-9 {
     margin-left: 75%;
   }
-  .offset-sm-10 {
+  .vf-offset-sm-10 {
     margin-left: 83.333333%;
   }
-  .offset-sm-11 {
+  .vf-offset-sm-11 {
     margin-left: 91.666667%;
   }
 }
@@ -848,40 +848,40 @@ html.sr .reveal {
     -ms-flex-order: 12;
     order: 12;
   }
-  .offset-md-0 {
+  .vf-offset-md-0 {
     margin-left: 0;
   }
-  .offset-md-1 {
+  .vf-offset-md-1 {
     margin-left: 8.333333%;
   }
-  .offset-md-2 {
+  .vf-offset-md-2 {
     margin-left: 16.666667%;
   }
-  .offset-md-3 {
+  .vf-offset-md-3 {
     margin-left: 25%;
   }
-  .offset-md-4 {
+  .vf-offset-md-4 {
     margin-left: 33.333333%;
   }
-  .offset-md-5 {
+  .vf-offset-md-5 {
     margin-left: 41.666667%;
   }
-  .offset-md-6 {
+  .vf-offset-md-6 {
     margin-left: 50%;
   }
-  .offset-md-7 {
+  .vf-offset-md-7 {
     margin-left: 58.333333%;
   }
-  .offset-md-8 {
+  .vf-offset-md-8 {
     margin-left: 66.666667%;
   }
-  .offset-md-9 {
+  .vf-offset-md-9 {
     margin-left: 75%;
   }
-  .offset-md-10 {
+  .vf-offset-md-10 {
     margin-left: 83.333333%;
   }
-  .offset-md-11 {
+  .vf-offset-md-11 {
     margin-left: 91.666667%;
   }
 }
@@ -1049,40 +1049,40 @@ html.sr .reveal {
     -ms-flex-order: 12;
     order: 12;
   }
-  .offset-lg-0 {
+  .vf-offset-lg-0 {
     margin-left: 0;
   }
-  .offset-lg-1 {
+  .vf-offset-lg-1 {
     margin-left: 8.333333%;
   }
-  .offset-lg-2 {
+  .vf-offset-lg-2 {
     margin-left: 16.666667%;
   }
-  .offset-lg-3 {
+  .vf-offset-lg-3 {
     margin-left: 25%;
   }
-  .offset-lg-4 {
+  .vf-offset-lg-4 {
     margin-left: 33.333333%;
   }
-  .offset-lg-5 {
+  .vf-offset-lg-5 {
     margin-left: 41.666667%;
   }
-  .offset-lg-6 {
+  .vf-offset-lg-6 {
     margin-left: 50%;
   }
-  .offset-lg-7 {
+  .vf-offset-lg-7 {
     margin-left: 58.333333%;
   }
-  .offset-lg-8 {
+  .vf-offset-lg-8 {
     margin-left: 66.666667%;
   }
-  .offset-lg-9 {
+  .vf-offset-lg-9 {
     margin-left: 75%;
   }
-  .offset-lg-10 {
+  .vf-offset-lg-10 {
     margin-left: 83.333333%;
   }
-  .offset-lg-11 {
+  .vf-offset-lg-11 {
     margin-left: 91.666667%;
   }
 }
@@ -1250,40 +1250,40 @@ html.sr .reveal {
     -ms-flex-order: 12;
     order: 12;
   }
-  .offset-xl-0 {
+  .vf-offset-xl-0 {
     margin-left: 0;
   }
-  .offset-xl-1 {
+  .vf-offset-xl-1 {
     margin-left: 8.333333%;
   }
-  .offset-xl-2 {
+  .vf-offset-xl-2 {
     margin-left: 16.666667%;
   }
-  .offset-xl-3 {
+  .vf-offset-xl-3 {
     margin-left: 25%;
   }
-  .offset-xl-4 {
+  .vf-offset-xl-4 {
     margin-left: 33.333333%;
   }
-  .offset-xl-5 {
+  .vf-offset-xl-5 {
     margin-left: 41.666667%;
   }
-  .offset-xl-6 {
+  .vf-offset-xl-6 {
     margin-left: 50%;
   }
-  .offset-xl-7 {
+  .vf-offset-xl-7 {
     margin-left: 58.333333%;
   }
-  .offset-xl-8 {
+  .vf-offset-xl-8 {
     margin-left: 66.666667%;
   }
-  .offset-xl-9 {
+  .vf-offset-xl-9 {
     margin-left: 75%;
   }
-  .offset-xl-10 {
+  .vf-offset-xl-10 {
     margin-left: 83.333333%;
   }
-  .offset-xl-11 {
+  .vf-offset-xl-11 {
     margin-left: 91.666667%;
   }
 }
