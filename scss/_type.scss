@@ -1,10 +1,8 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
-
 @mixin headline-base {
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-
 }
 
 //
@@ -92,6 +90,10 @@
     @include typo-tetriary-desktop();
   }
 }
+
+// 
+// h4 - headline quarternary
+// 
 
 @mixin typo-quaternary {
   font-family: "Vattenfall Hall Display";
@@ -268,8 +270,10 @@ mark,
   }
 }
 
-p {
-  @include typo-paragraph-primary();
+@if $enable-default-p {
+  p {
+    @include typo-paragraph-primary();
+  }
 }
 
 @if $enable-typography-classes {
