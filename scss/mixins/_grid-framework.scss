@@ -54,8 +54,8 @@
 
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
-        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
-          .offset#{$infix}-#{$i} {
+        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .vf-offset-0
+          .vf-offset#{$infix}-#{$i} {
             @include make-col-offset($i, $columns);
           }
         }
