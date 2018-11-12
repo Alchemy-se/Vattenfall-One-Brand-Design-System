@@ -1,7 +1,4 @@
-@import "functions";
-@import "variables";
-@import "mixins";
-
+@import "default-import";
 
 @at-root {
   @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
