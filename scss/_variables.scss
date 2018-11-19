@@ -144,7 +144,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold:  150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             $gray-900 !default;
+$yiq-text-dark:             #222222 !default;
 $yiq-text-light:            $white !default;
 
 // Options
@@ -207,7 +207,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                #222222 !default;
 
 // Links
 //
@@ -344,9 +344,6 @@ $hr-border-width:             $border-width !default;
 $mark-padding:                .2em !default;
 
 $dt-font-weight:              $font-weight-bold !default;
-
-$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
-$nested-kbd-font-weight:      $font-weight-bold !default;
 
 $list-inline-padding:         .5rem !default;
 
@@ -642,8 +639,8 @@ $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
-$dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-color:               #222222 !default;
+$dropdown-link-hover-color:         darken(#222222, 5%) !default;
 $dropdown-link-hover-bg:            $gray-100 !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
@@ -779,13 +776,7 @@ $thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
 $code-font-size:                    87.5% !default;
 $code-color:                        $black !default;
 
-$kbd-padding-y:                     .2rem !default;
-$kbd-padding-x:                     .4rem !default;
-$kbd-font-size:                     $code-font-size !default;
-$kbd-color:                         $white !default;
-$kbd-bg:                            $gray-900 !default;
-
-$pre-color:                         $gray-900 !default;
+$pre-color:                         #222222 !default;
 $pre-scrollable-max-height:         340px !default;
 
 
