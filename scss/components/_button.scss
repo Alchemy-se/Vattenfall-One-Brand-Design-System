@@ -77,35 +77,133 @@ fieldset:disabled a.vf-btn {
   pointer-events: none;
 }
 
+.vf-btn--primary {
+  color: #111111;
+  background: #FFDA00;
 
-//
-// Alternate buttons
-//
+  @include hover {
+    color: #111111;
+    background: #FFE85B;
+  }
 
-@each $color, $value in $theme-colors {
-  .vf-btn--#{$color} {
-    @include button-variant($value, $value);
+  &:focus,
+  &.focus {
+    background: #F1C50B;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #767676;
+    background-color: #EEEEEE;
   }
 }
 
-@each $color, $value in $theme-colors {
-  .vf-btn--outline-#{$color} {
-    @include button-outline-variant($value);
+.vf-btn--secondary {
+  color: white;
+  background: #1964A3;
+
+  @include hover {
+    color: white;
+    background: #2071B5;
+  }
+
+  &:focus,
+  &:active,
+  &.focus {
+    color: white;
+    background: #1E324F;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #767676;
+    background-color: #EEEEEE;
   }
 }
 
+.vf-btn--tertiary {
+  color: #222222;
+  background: transparent;
+  border: 2px #CDD1D4 solid;
 
-// Ugly override for now
+  @include hover {
+    color: white;
+    background: #1964A3;
+    border-color: #1964A3;
+  }
+
+  &:focus,
+  &:active,
+  &.focus {
+    color: white;
+    background: #1E324F;
+    border-color: #1E324F;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #767676;
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+  }
+
+}
+
+.vf-btn--outline-secondary {
+  color: #1964A3;
+  background: transparent;
+  border: 2px #2071B5 solid;
+
+  @include hover {
+    color: white;
+    background: #1964A3;
+    border-color: #1964A3;
+  }
+
+  &:focus,
+  &:active,
+  &.focus {
+    color: white;
+    background: #1E324F;
+    border-color: #1E324F;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #767676;
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+  }
+}
+
 .vf-btn--outline-dark {
-  border-color: #cdd1d4;
+  color: #222222;
+  background: transparent;
+  border: 2px #222222 solid;
+
+  @include hover {
+    color: white;
+    background: #222222;
+    border-color: #222222;
+  }
+
+  &:focus,
+  &:active,
+  &.focus {
+    color: white;
+    background: #4E4B48;
+    border-color: #4E4B48;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #767676;
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+  }
 }
 
-// .vf-btn--outline-dark:hover {
-//   color: #fff;
-//   background-color: #222222;
-//   border-color: #222222;
-// }
-//
+
 // Link buttons
 //
 
@@ -214,12 +312,20 @@ fieldset:disabled a.vf-btn {
     color: $vattenfall-mid-blue;
   }
 
+  &:hover:before {
+    color: $vattenfall-mid-blue;
+  }
+
+  &:active:before {
+    color: #1E324F;
+  }
+
   // For the arrow
   padding-left: 35px;
 
   @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    color: $vattenfall-mid-blue;
+    text-decoration: none;
   }
 
   &:focus,
@@ -235,6 +341,9 @@ fieldset:disabled a.vf-btn {
     pointer-events: none;
   }
 }
+  .vf-link-with-arrow--small {
+    font-size: 16px;
+  }
 
 //
 // Block button
