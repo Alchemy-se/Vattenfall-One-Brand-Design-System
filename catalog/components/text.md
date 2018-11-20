@@ -26,7 +26,7 @@ How to use a typography mixin:
 - typo-paragraph-primary()
 - typo-paragraph-secondary()
 
-Refer to the file `scss/_type.scss` for more details.
+Refer to the file `scss/_typo.scss` for more details.
 
 ## Skip generating typography classes
 
