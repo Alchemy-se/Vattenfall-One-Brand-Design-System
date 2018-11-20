@@ -10,6 +10,9 @@ A bunch of different buttons.
   <div class="vf-col">
     <button type="button" class="vf-btn vf-btn--lg vf-btn--secondary">Blue Button</button>
   </div>
+  <div class="vf-col">
+    <button type="button" class="vf-btn vf-btn--lg vf-btn--tertiary">Tertiary Button</button>
+  </div>
 </div>
 <div class="vf-row" style="padding-top: 20px">
   <div class="vf-col">
@@ -18,6 +21,7 @@ A bunch of different buttons.
     <div class="vf-col">
     <button type="button" disabled class="vf-btn vf-btn--lg vf-btn--secondary">Disabled</button>
   </div>
+  <div class="vf-col"></div>
 </div>
 ```
 
@@ -26,19 +30,23 @@ A bunch of different buttons.
 ```html
 <div class="vf-row">
   <div class="vf-col">
-    <button type="button" class="vf-btn  vf-btn--primary">Yellow button</button>
+    <button type="button" class="vf-btn vf-btn--primary">Yellow button</button>
   </div>
   <div class="vf-col">
-    <button type="button" class="vf-btn  vf-btn--secondary">Blue Button</button>
+    <button type="button" class="vf-btn vf-btn--secondary">Blue Button</button>
+  </div>
+  <div class="vf-col">
+    <button type="button" class="vf-btn vf-btn--tertiary">Tertiary Button</button>
   </div>
 </div>
 <div class="vf-row" style="padding-top: 20px">
   <div class="vf-col">
-    <button type="button" disabled class="vf-btn  vf-btn--primary">Disabled</button>
+    <button type="button" disabled class="vf-btn vf-btn--primary">Disabled</button>
   </div>
   <div class="vf-col">
-    <button type="button" disabled class="vf-btn  vf-btn--secondary">Disabled</button>
+    <button type="button" disabled class="vf-btn vf-btn--secondary">Disabled</button>
   </div>
+  <div class="vf-col"></div>
 </div>
 ```
 
@@ -83,6 +91,31 @@ A bunch of different buttons.
   </div>
 </div>
 ```
+
+### Text Button
+
+```html
+<div class="vf-row">
+  <div class="vf-col">
+    <a href="#" class="vf-link-with-arrow">Text Button</a>
+  </div>
+  <div class="vf-col">
+  </div>
+</div>
+```
+
+### Text Button / Small
+
+```html
+<div class="vf-row">
+  <div class="vf-col">
+    <a href="#" class="vf-link-with-arrow vf-link-with-arrow--small">Text Button - smaller</a>
+  </div>
+  <div class="vf-col">
+  </div>
+</div>
+```
+
 ### Button combinations
 
 Coming soon
