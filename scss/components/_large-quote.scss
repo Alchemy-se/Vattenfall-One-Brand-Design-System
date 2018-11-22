@@ -1,7 +1,7 @@
 $component-height-mobile: 330px;
 $cutout-height-mobile: 50px;
 
-$component-height-desktop: 555px;
+$component-height-desktop: 680px;
 $cutout-height-desktop: 85px;
 
 .vf-large-quote {
@@ -11,17 +11,18 @@ $cutout-height-desktop: 85px;
   @include make-container();
   @include make-container-max-widths($container-max-widths-except-sm);
   
-  padding: 0 0 70px 0;
+  padding: 70px 0 70px 0;
+
   @include media-breakpoint-up(sm) {
-    overflow: auto;
     height: $component-height-desktop;
+    padding-top: 100px;
   }
 }
 
 .vf-large-quote:before {
   content: "“";
   position: absolute;
-  top: 0;
+  top: 70px;
   text-align: center;
   color: #cdd1d4;
   border: 2px #cdd1d4 solid;
@@ -33,6 +34,7 @@ $cutout-height-desktop: 85px;
 
   left: 21px;
   @include media-breakpoint-up(sm) {
+    top: 100px;
     left: 0;
   }
 }
@@ -47,7 +49,7 @@ $cutout-height-desktop: 85px;
   @include media-breakpoint-up(sm) {
     padding: 0;
     margin: 0;
-    width: 85%;
+    width: 82%;
     position: absolute;
     top: initial;
     bottom: 0;
@@ -64,7 +66,7 @@ $cutout-height-desktop: 85px;
   @include typo-quote-mobile();
   @include media-breakpoint-up(sm) {
     @include typo-quote-desktop();
-    padding: 40px 90px 60px 0;
+    padding: 40px 90px 0px 0;
   }
 }
 
@@ -114,8 +116,8 @@ $cutout-height-desktop: 85px;
 
   @include media-breakpoint-up(sm) {
     top: - $cutout-height-desktop;
-    left: 50%;
-    height: $component-height-desktop + $cutout-height-desktop;
+    left: 27%;
+    height: 666px; //$component-height-desktop + $cutout-height-desktop;
   }
 }
 .vf-large-quote__illustration-bg {
@@ -126,7 +128,8 @@ $cutout-height-desktop: 85px;
 
   @include media-breakpoint-up(sm) {
     height: $component-height-desktop;
-    width: 60%;
+    width: 68%;
     right: 0;
+    left: auto;
   }
 }

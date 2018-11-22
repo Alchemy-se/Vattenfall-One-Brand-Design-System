@@ -7418,7 +7418,7 @@ a.vf-card:hover {
   padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 0 70px 0;
+  padding: 70px 0 70px 0;
 }
 
 @media (max-width: 767.98px) {
@@ -7448,15 +7448,15 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-large-quote {
-    overflow: auto;
-    height: 555px;
+    height: 680px;
+    padding-top: 100px;
   }
 }
 
 .vf-large-quote:before {
   content: "“";
   position: absolute;
-  top: 0;
+  top: 70px;
   text-align: center;
   color: #cdd1d4;
   border: 2px #cdd1d4 solid;
@@ -7470,6 +7470,7 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-large-quote:before {
+    top: 100px;
     left: 0;
   }
 }
@@ -7486,7 +7487,7 @@ a.vf-card:hover {
   .vf-large-quote__content {
     padding: 0;
     margin: 0;
-    width: 85%;
+    width: 82%;
     position: absolute;
     top: initial;
     bottom: 0;
@@ -7510,7 +7511,7 @@ a.vf-card:hover {
     font-weight: 500;
     letter-spacing: -0.15px;
     line-height: 60px;
-    padding: 40px 90px 60px 0;
+    padding: 40px 90px 0px 0;
   }
 }
 
@@ -7566,8 +7567,8 @@ a.vf-card:hover {
 @media (min-width: 576px) {
   .vf-large-quote__illustration-cutout {
     top: -85px;
-    left: 50%;
-    height: 640px;
+    left: 27%;
+    height: 666px;
   }
 }
 
@@ -7579,9 +7580,10 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-large-quote__illustration-bg {
-    height: 555px;
-    width: 60%;
+    height: 680px;
+    width: 68%;
     right: 0;
+    left: auto;
   }
 }
 
