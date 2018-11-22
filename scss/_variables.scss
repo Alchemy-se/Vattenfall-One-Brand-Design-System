@@ -188,6 +188,19 @@ $spacers: map-merge(
   $spacers
 );
 
+$spacing-sm: 28px;
+$spacing-md: 44px;
+$spacing-lg: 56px;
+$spacing-xl: 88px;
+
+$vf-spacers: (
+  0: 0,
+  sm: $spacing-sm,
+  md: $spacing-md,
+  lg: $spacing-lg,
+  xl: $spacing-xl
+);
+
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

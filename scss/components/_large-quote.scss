@@ -6,7 +6,6 @@ $cutout-height-desktop: 85px;
 
 .vf-large-quote {
   position: relative;
-  width: 100%;
   overflow:hidden;
   @include make-container();
   @include make-container-max-widths($container-max-widths-except-sm);
@@ -58,7 +57,7 @@ $cutout-height-desktop: 85px;
 
 .vf-large-quote__quote {
   color: #222222;
-  padding: 48px 80px 48px 21px;
+  padding: 48px 0px 48px 21px;
   margin: 0 21px 0 0;
 
   background: white;
