@@ -8,7 +8,11 @@
   }
 
   p {
-    font-size: 1rem
+    @include typo-paragraph-secondary();
+  }
+
+  h4 {
+    @include typo-paragraph-primary();
   }
 }
 
@@ -19,10 +23,7 @@
       padding: 0.5rem 0;
       color: $dark;
       font-weight: 500;
-
-      @include media-breakpoint-down(sm) {
-        font-size: 20px;
-      }
+      @include typo-paragraph-primary();
     
     }
 
