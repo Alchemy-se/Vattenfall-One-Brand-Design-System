@@ -6,7 +6,7 @@
   @include typo-paragraph-secondary-mobile();
 
   @include media-breakpoint-up(sm) {
-    padding: 32px 48px;
+    padding: 32px $spacing-md;
     @include typo-paragraph-primary-desktop();
   }
   
@@ -43,12 +43,12 @@
 
 .vf-small-quote-byline {
   text-align: center;
+  margin-bottom: $spacing-md;
 
   @include media-breakpoint-up(sm) {
     float: left;
     width: 168px;
-    margin-right: 60px;
-    margin-bottom: 50px;
+    margin-right: $spacing-md;
   }
 }
 .vf-small-quote-byline-photo {
@@ -61,7 +61,7 @@
 }
 .vf-small-quote-byline-title {
   @include typo-paragraph-secondary-mobile();
-  padding: 30px 0 15px 0;
+  padding: $spacing-md 0 15px 0;
   margin: 0;
   font-weight: 500;
 }
