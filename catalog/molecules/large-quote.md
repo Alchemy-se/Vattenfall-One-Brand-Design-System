@@ -5,7 +5,8 @@ Large quote component features a prominent image, a quote and a byline.
 responsive: true
 ---
 <div class="p-3" style="background: white;">
-  <article class="vf-large-quote d-flex justify-content-end">
+
+  <article class="vf-large-quote">
     <div class="vf-large-quote__illustration">
       <img class="vf-large-quote__illustration-cutout" src="/img/example-startpage/magnus-hall.png" />
       <img class="vf-large-quote__illustration-bg" src="/img/example-startpage/quote-bg.png" />
@@ -13,13 +14,16 @@ responsive: true
 
     <div class="vf-large-quote__content">
       <div class="vf-large-quote__byline">
-        <h5 class="my-0">Magnus Hall</h5>
-        <div class="vf-intro-in-caps-small">PRESIDENT AND CEO</div>
+          Magnus Hall
+      </div>
+      <div class="vf-large-quote__byline-description">
+        President and CEO
       </div>
       <blockquote class="vf-large-quote__quote">
-        It's not enough to be efficient: we must also be innovative in our ways of working
+        It's not enough to be efficient: we must also be innovative in our ways of working.
       </blockquote>
-    </div>
+    </div>         
   </article>
+
 </div>
 ```
