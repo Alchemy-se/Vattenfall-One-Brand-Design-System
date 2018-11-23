@@ -9,7 +9,7 @@ $vf-image-with-caption-widths: (
   background: $vattenfall-dark-moss;
   margin: 0 auto;
   @include make-container-max-widths($vf-image-with-caption-widths);
-  padding-bottom: 48px;
+  padding-bottom: $spacing-md;
 }
 
 .vf-image-with-caption__image {
@@ -21,7 +21,7 @@ $vf-image-with-caption-widths: (
 .vf-image-with-caption__caption {
   color: white;
   @include typo-paragraph-primary-mobile();
-  margin-top: 48px;
+  margin-top: $spacing-md;
   margin-left: 21px;
   margin-right: 21px;
   margin-bottom: 0;
@@ -29,8 +29,8 @@ $vf-image-with-caption-widths: (
 
   @include media-breakpoint-up(sm) {
     @include typo-paragraph-secondary-desktop();
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: $spacing-md;
+    margin-right: $spacing-md;
     padding-left: 50px;
     border-left: 2px white solid;
   }

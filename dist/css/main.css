@@ -1330,7 +1330,7 @@ h2 {
     font-family: "Vattenfall Hall Display";
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.33;
+    line-height: 72px;
     letter-spacing: -0.2px;
   }
 }
@@ -1359,6 +1359,16 @@ h4 {
   font-size: 16px;
   line-height: 1.33;
   font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h4 {
+    font-family: "Vattenfall Hall Display";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.33;
+    font-weight: 500;
+  }
 }
 
 hr {
@@ -1414,13 +1424,16 @@ mark,
 }
 
 p {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
 }
 
 @media (min-width: 576px) {
   p {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;
     line-height: 36px;
@@ -1484,7 +1497,7 @@ p {
     font-family: "Vattenfall Hall Display";
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.33;
+    line-height: 72px;
     letter-spacing: -0.2px;
   }
 }
@@ -1515,16 +1528,29 @@ p {
   font-weight: 500;
 }
 
+@media (min-width: 576px) {
+  .vf-typo-quaternary {
+    font-family: "Vattenfall Hall Display";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.33;
+    font-weight: 500;
+  }
+}
+
 .vf-typo-p,
 .vf-typo-p-primary {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
 }
 
 @media (min-width: 576px) {
   .vf-typo-p,
   .vf-typo-p-primary {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;
     line-height: 36px;
@@ -7335,9 +7361,11 @@ fieldset:disabled a.vf-btn {
   user-select: none;
   text-decoration: none;
   position: relative;
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
   font-weight: 500;
   color: #222222;
   padding-left: 35px;
@@ -7345,6 +7373,7 @@ fieldset:disabled a.vf-btn {
 
 @media (min-width: 576px) {
   .vf-link-with-arrow {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;
     line-height: 36px;
@@ -7465,9 +7494,11 @@ a.vf-card:hover {
 }
 
 .vf-card__text {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -7558,7 +7589,34 @@ a.vf-card:hover {
 }
 
 .vf-footer p {
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+@media (min-width: 576px) {
+  .vf-footer p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.05px;
+  }
+}
+
+.vf-footer h4 {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+@media (min-width: 576px) {
+  .vf-footer h4 {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
 }
 
 .vf-footer__nav-item {
@@ -7566,11 +7624,19 @@ a.vf-card:hover {
   padding: 0.5rem 0;
   color: #222222;
   font-weight: 500;
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) {
   .vf-footer__nav-item {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
   }
 }
 
@@ -7585,7 +7651,7 @@ a.vf-card:hover {
 
 .vf-hero {
   position: relative;
-  background: #8694a0;
+  background: #69788C;
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
@@ -7619,6 +7685,7 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-hero__content {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;
     line-height: 36px;
@@ -7639,7 +7706,7 @@ a.vf-card:hover {
 .vf-image-with-caption {
   background: #005C63;
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding-bottom: 44px;
 }
 
 @media (min-width: 768px) {
@@ -7669,10 +7736,12 @@ a.vf-card:hover {
 
 .vf-image-with-caption__caption {
   color: white;
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
-  margin-top: 48px;
+  font-weight: normal;
+  margin-top: 44px;
   margin-left: 21px;
   margin-right: 21px;
   margin-bottom: 0;
@@ -7684,8 +7753,8 @@ a.vf-card:hover {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.05px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 44px;
+    margin-right: 44px;
     padding-left: 50px;
     border-left: 2px white solid;
   }
@@ -7750,9 +7819,11 @@ a.vf-card:hover {
 
 .vf-image-with-icon__caption {
   color: white;
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -7930,9 +8001,11 @@ a.vf-card:hover {
 }
 
 .vf-media-block__text, .vf-media-block__text p {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
@@ -8130,7 +8203,7 @@ a.vf-card:hover {
 }
 
 .navbar-nav--subnav {
-  background: #8694a0;
+  background: #69788C;
 }
 
 .navbar-nav--subnav a.nav-link {
@@ -8612,7 +8685,8 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-small-quote {
-    padding: 32px 48px;
+    padding: 32px 44px;
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;
     line-height: 36px;
@@ -8641,23 +8715,23 @@ a.vf-card:hover {
 
 /* Colors */
 .vf-small-quote {
-  background-color: #f7f6d8;
+  background-color: #faf9dc;
 }
 
 .vf-small-quote:after {
-  border-top-color: #f7f6d8;
+  border-top-color: #faf9dc;
 }
 
 .vf-small-quote-byline {
   text-align: center;
+  margin-bottom: 44px;
 }
 
 @media (min-width: 576px) {
   .vf-small-quote-byline {
     float: left;
     width: 168px;
-    margin-right: 60px;
-    margin-bottom: 50px;
+    margin-right: 44px;
   }
 }
 
@@ -8677,7 +8751,7 @@ a.vf-card:hover {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  padding: 30px 0 15px 0;
+  padding: 44px 0 15px 0;
   margin: 0;
   font-weight: 500;
 }
@@ -8686,7 +8760,7 @@ a.vf-card:hover {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  color: #8694a0;
+  color: #69788C;
   padding: 0 100px;
 }
 
@@ -8829,7 +8903,7 @@ a.vf-card:hover {
 }
 
 .vf-navbar__subnav {
-  background: #8694a0;
+  background: #69788C;
 }
 
 .vf-navbar__nav {
@@ -8943,7 +9017,7 @@ a.vf-card:hover {
   height: 0;
   border: solid transparent;
   pointer-events: none;
-  border-bottom-color: #8694a0;
+  border-bottom-color: #69788C;
   border-width: 20px;
   margin-left: -20px;
 }
@@ -9049,13 +9123,13 @@ button.vf-bg--dark:focus {
 }
 
 .vf-bg--blue-grey {
-  background-color: #8694a0 !important;
+  background-color: #69788C !important;
 }
 
 a.vf-bg--blue-grey:hover, a.vf-bg--blue-grey:focus,
 button.vf-bg--blue-grey:hover,
 button.vf-bg--blue-grey:focus {
-  background-color: #6b7b88 !important;
+  background-color: #535f6f !important;
 }
 
 .vf-bg--dark-moss {
@@ -9367,11 +9441,11 @@ a.vf-text--dark:hover, a.vf-text--dark:focus {
 }
 
 .vf-text--blue-grey {
-  color: #8694a0 !important;
+  color: #69788C !important;
 }
 
 a.vf-text--blue-grey:hover, a.vf-text--blue-grey:focus {
-  color: #6b7b88 !important;
+  color: #535f6f !important;
 }
 
 .vf-text--dark-moss {
