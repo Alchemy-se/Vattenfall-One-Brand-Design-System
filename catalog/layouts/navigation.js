@@ -11,15 +11,7 @@ const nav = {
       path: "/layouts/vattenfall-se",
       title: "- Corporate web",
       content: pageLoader(() => import("./layout-start-page.md"))
-    }, {
-      path: "/layouts/app",
-      title: "- Mobile App",
-      content: pageLoader(() => import("./layout-mobile-app.md"))
-    }, {
-      path: "/layouts/tool",
-      title: "- Web service",
-      content: pageLoader(() => import("./layout-web-tool.md"))
-    },
+    }
   ]
 }
 
