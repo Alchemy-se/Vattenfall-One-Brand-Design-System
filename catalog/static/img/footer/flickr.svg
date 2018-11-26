@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Social / Flickr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M32,18.0540541 C32,21.3953153 29.2905666,24.1081081 25.9454694,24.1081081 C22.6003723,24.1081081 19.8918919,21.3981982 19.8918919,18.0540541 C19.8918919,14.7099099 22.6022783,12 25.9454694,12 C29.2886606,12 32,14.7099099 32,18.0540541 Z M10.0550071,12 C6.70964667,12 4,14.7099099 4,18.0540541 C4,21.3981982 6.70964667,24.1081081 10.0550071,24.1081081 C13.4003676,24.1081081 16.1081081,21.3981982 16.1081081,18.0540541 C16.1081081,14.7099099 13.3984614,12 10.0550071,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Social-/-Flickr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#1964A3" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Color-/-Primary-/-Blue-/-Default" mask="url(#mask-2)" fill="#1964A3" fill-rule="nonzero">
+            <g transform="translate(2.000000, 2.000000)" id="Rectangle">
+                <rect x="0" y="0" width="32" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
