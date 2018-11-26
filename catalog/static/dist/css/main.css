@@ -8018,9 +8018,9 @@ a.vf-card:hover {
 }
 
 .vf-media-block--reversed .vf-media-block__content {
-  -webkit-box-ordinal-group: initial !important;
-  -ms-flex-order: initial !important;
-  order: initial !important;
+  -webkit-box-ordinal-group: 2 !important;
+  -ms-flex-order: 1 !important;
+  order: 1 !important;
 }
 
 @media (min-width: 1200px) {

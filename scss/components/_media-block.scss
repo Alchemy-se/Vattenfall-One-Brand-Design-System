@@ -74,7 +74,7 @@
 .vf-media-block--reversed {
 
   .vf-media-block__content {
-    order: initial !important;
+    order: 1 !important;
 
     @include media-breakpoint-up(xl) {
       padding-left: 110px;
