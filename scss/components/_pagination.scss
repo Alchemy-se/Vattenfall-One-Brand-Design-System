@@ -1,0 +1,67 @@
+.vf-pagination {
+  display: flex;
+  @include list-unstyled();
+  font-size: 16px;
+}
+
+.vf-page-link {
+  position: relative;
+  display: block;
+  padding: $pagination-padding-y $pagination-padding-x;
+
+  line-height: 28px;
+  color: #222222;
+  background-color: white;
+  border: 1px solid #E8E8E9;
+  margin: 0 3px;
+  min-width: 36px;
+  text-align: center;
+  border-radius: 4px;
+
+  &:hover {
+    z-index: 2;
+    color: $pagination-hover-color;
+    text-decoration: none;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 2;
+    outline: $pagination-focus-outline;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .vf-page-link elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
+
+.vf-page-item {
+  &:first-child {
+    .vf-page-link {
+      margin-left: 0;
+    }
+  }
+  &:last-child {
+    .vf-page-link {
+    }
+  }
+
+  &.active .vf-page-link {
+    z-index: 1;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border-color;
+  }
+
+  &.disabled .vf-page-link {
+    color: $pagination-disabled-color;
+    pointer-events: none;
+    // Opinionated: remove the "hand" cursor set previously for .vf-page-link
+    cursor: auto;
+    background-color: $pagination-disabled-bg;
+    border-color: $pagination-disabled-border-color;
+  }
+}
