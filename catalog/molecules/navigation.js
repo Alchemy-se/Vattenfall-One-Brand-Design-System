@@ -37,6 +37,10 @@ const nav = [
     path: "/css/three-column",
     title: "- Three Column",
     content: pageLoader(() => import("./three-column.md"))
+  }, {
+    path: "/css/pagination",
+    title: "- Pagination",
+    content: pageLoader(() => import("./pagination.md"))
   }
 ]
 export default nav
