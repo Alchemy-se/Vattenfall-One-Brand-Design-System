@@ -1338,7 +1338,7 @@ h2 {
 h3 {
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0;
   line-height: 28px;
 }
@@ -1356,8 +1356,8 @@ h3 {
 h4 {
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.33;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
 }
 
@@ -1365,8 +1365,8 @@ h4 {
   h4 {
     font-family: "Vattenfall Hall Display";
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.33;
+    font-size: 24px;
+    line-height: 36px;
     font-weight: 500;
   }
 }
@@ -1505,7 +1505,7 @@ p {
 .vf-typo-tetriary {
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0;
   line-height: 28px;
 }
@@ -1523,8 +1523,8 @@ p {
 .vf-typo-quaternary {
   font-family: "Vattenfall Hall Display";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.33;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
 }
 
@@ -1532,8 +1532,8 @@ p {
   .vf-typo-quaternary {
     font-family: "Vattenfall Hall Display";
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.33;
+    font-size: 24px;
+    line-height: 36px;
     font-weight: 500;
   }
 }
@@ -9047,9 +9047,11 @@ a.vf-card:hover {
   }
 }
 
-.news-inner-container {
-  position: relative;
-  top: -220px;
+@media (min-width: 576px) {
+  .news-inner-container {
+    position: relative;
+    top: -220px;
+  }
 }
 
 .vf-bg--primary {
