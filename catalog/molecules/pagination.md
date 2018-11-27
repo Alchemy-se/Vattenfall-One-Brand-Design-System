@@ -91,9 +91,11 @@ You can optionally swap out active or disabled anchors for `<span>`, or omit the
 
 ## Alignment
 
-Change the alignment of pagination components with [flexbox utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/).
+Change the alignment of pagination components with flexbox utility classes.
 
 ```html
+showSource: true
+---
 <nav aria-label="Page navigation example">
   <ul class="vf-pagination justify-content-center">
     <li class="vf-page-item disabled">
@@ -110,6 +112,8 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
 ```
 
 ```html
+showSource: true
+---
 <nav aria-label="Page navigation example">
   <ul class="vf-pagination justify-content-end">
     <li class="vf-page-item disabled">
