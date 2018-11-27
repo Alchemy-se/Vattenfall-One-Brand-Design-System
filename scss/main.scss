@@ -66,9 +66,11 @@ html.sr .reveal {
 @import "components/small-quote";
 @import "components/two-column-boxes";
 @import "components/vf-navbar";
+@import "components/pagination";
 
 @import "docs/startpage-news";
 
 @import "utilities/background";
 @import "utilities/clearfix";
 @import "utilities/text";
+@import "utilities/screenreaders";
