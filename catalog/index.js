@@ -66,6 +66,16 @@ const pages = [
     content: pageLoader(() => import("./react.md"))
   },
   {
+    title: "Utilities",
+    pages: [
+      {
+        path: "/utilities/favicon",
+        title: "Favicon",
+        content: pageLoader(() => import("./utilities/favicon.md"))
+      }
+    ]
+  },
+  {
     path: "/contributing",
     title: "Contributing",
     content: pageLoader(() => import("./not-produced-yet.md"))
