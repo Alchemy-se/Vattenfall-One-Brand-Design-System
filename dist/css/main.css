@@ -8690,7 +8690,7 @@ a.vf-card:hover {
 
 .vf-small-quote {
   position: relative;
-  padding: 32px;
+  padding: 44px;
   border-radius: 20px 20px 20px 20px;
   margin: 40px 0 60px;
   font-size: 16px;
@@ -8700,7 +8700,6 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-small-quote {
-    padding: 32px 44px;
     font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
     letter-spacing: 0;

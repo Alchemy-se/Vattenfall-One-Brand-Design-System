@@ -1,12 +1,11 @@
 .vf-small-quote {
   position: relative;
-  padding: 32px;
+  padding: $spacing-md;
   border-radius: 20px 20px 20px 20px;
   margin: 40px 0 60px;
   @include typo-paragraph-secondary-mobile();
 
   @include media-breakpoint-up(sm) {
-    padding: 32px $spacing-md;
     @include typo-paragraph-primary-desktop();
   }
   
