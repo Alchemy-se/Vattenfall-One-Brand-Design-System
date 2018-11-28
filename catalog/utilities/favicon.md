@@ -30,12 +30,12 @@ url: "/favicon/favicon.ico"
 
 ```download|span-3
 title: Favicon 16x16px PNG
-url: "/favicon/favicon-16x16.png.png"
+url: "/favicon/favicon-16x16.png"
 ```
 
 ```download|span-3
 title: Favicon 32x32px PNG
-url: "/favicon/favicon-32x32.png.png"
+url: "/favicon/favicon-32x32.png"
 ```
 
 ```download|span-3
