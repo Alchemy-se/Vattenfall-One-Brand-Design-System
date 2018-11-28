@@ -7,11 +7,10 @@
     <title>Vattenfall Start</title>
     <link rel="stylesheet" href="/dist/css/reboot.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/dist/css/main.css" crossorigin="anonymous">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <script src="/js/rallylax.js"></script>
     <!-- <script src="/js/rellax.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-
   </head>
   <body>
     <header class="vf-navbar">
@@ -188,11 +187,11 @@
 
     <section class="vf-bg--light-blue vf-container-bleed news-outer-container">
       <div class="vf-container news-inner-container">
-        <h2 class="vf-text--center pb-3 pt-2 reveal">In focus</h2>
+        <h2 class="vf-text--center pb-3 pt-2 ">In focus</h2>
         <div class="vf-row">
           <div class="vf-col-md-4">
 
-            <a class="vf-card reveal" href="#">
+            <a class="vf-card " href="#">
               <img src="/img/example-startpage/news1-heating-hamburg.png" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h3 class="vf-card__title">
@@ -206,7 +205,7 @@
 
           </div>
           <div class="vf-col-md-4">
-            <a class="vf-card reveal-2" href="#">
+            <a class="vf-card -2" href="#">
               <img src="/img/example-startpage/news2-nuon.png" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h3 class="vf-card__title">
@@ -219,7 +218,7 @@
             </a>
           </div>
           <div class="vf-col-md-4">
-            <a class="vf-card reveal-3" href="#">
+            <a class="vf-card -3" href="#">
               <img src="/img/example-startpage/news3-vattenfall-france.png" class="vf-card__img-top" alt="Example image" />
               <div class="vf-card__body">
                 <h3 class="vf-card__title">
@@ -235,10 +234,10 @@
       </div>
     </section>
 
-    <section class="py-6 reveal">
+    <section class="py-6 ">
       <div class="vf-container">
         <div class="vf-row">
-          <div class="vf-col-sm-6 reveal order-12 order-sm-1">
+          <div class="vf-col-sm-6  order-12 order-sm-1">
             <h2>Ready to make a difference?</h2>
             <p>A career at Vattenfall will never stop challenging you.<br />
               We make sure we offer trainging opportunities to
@@ -302,29 +301,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-
-      // const rellax = new Rellax('.parallax');
-
-      const delay = 180
-
-      // https://scrollrevealjs.org/api/defaults.html
-      ScrollReveal().reveal('.reveal', {
-        delay,
-        duration: 1200,
-        reset: true
-      });
-      ScrollReveal().reveal('.reveal-2', {
-        delay: delay*2,
-        duration: 1200,
-        reset: true
-      });
-      ScrollReveal().reveal('.reveal-3', {
-        delay: delay * 3,
-        duration: 1200,
-        reset: true
-      });
-    </script>
   </body>
 </html>
