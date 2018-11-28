@@ -54,6 +54,7 @@ a.vf-card:hover {
   margin-bottom: $card-spacer-y;
   text-align: center;
   color: #222222;
+  @include typo-quaternary();
 }
 
 // .vf-card__subtitle {
