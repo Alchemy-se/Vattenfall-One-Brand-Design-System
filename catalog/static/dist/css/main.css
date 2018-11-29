@@ -8792,10 +8792,12 @@ a.vf-card:hover {
 .vf-small-quote-byline {
   text-align: left;
   margin-bottom: 44px;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
   .vf-small-quote-byline {
+    text-align: left;
     float: left;
     width: 168px;
     margin-right: 44px;
@@ -8806,6 +8808,7 @@ a.vf-card:hover {
   margin: 0 auto;
   padding: 0;
   width: 45%;
+  display: block;
 }
 
 @media (min-width: 576px) {
@@ -8828,7 +8831,7 @@ a.vf-card:hover {
   line-height: 28px;
   letter-spacing: -0.1px;
   color: #69788C;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 @media (min-width: 576px) {
