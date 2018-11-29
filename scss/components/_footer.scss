@@ -1,6 +1,6 @@
 .vf-footer {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
   background: $vattenfall-light-turquoise;
 
   a {
@@ -13,6 +13,7 @@
 
   h4 {
     @include typo-paragraph-primary();
+    font-weight: 500;
   }
 }
 
@@ -22,9 +23,8 @@
       display: block;
       padding: 0.5rem 0;
       color: $dark;
-      font-weight: 500;
       @include typo-paragraph-primary();
-    
+      font-weight: 500;
     }
 
   .vf-footer__social-links {
