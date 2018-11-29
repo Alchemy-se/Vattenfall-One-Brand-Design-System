@@ -8747,7 +8747,7 @@ a.vf-card:hover {
 }
 
 .vf-small-quote-byline {
-  text-align: center;
+  text-align: left;
   margin-bottom: 44px;
 }
 
@@ -8775,7 +8775,7 @@ a.vf-card:hover {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  padding: 44px 0 15px 0;
+  padding: 25px 0 15px 0;
   margin: 0;
   font-weight: 500;
 }
