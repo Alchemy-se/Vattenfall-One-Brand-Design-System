@@ -1317,7 +1317,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
   font-size: 44px;
@@ -1332,7 +1332,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: 0;
@@ -1341,7 +1341,7 @@ h2 {
 
 @media (min-width: 576px) {
   h2 {
-    font-family: "Vattenfall Hall Display";
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 72px;
@@ -1350,7 +1350,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 24px;
   letter-spacing: 0;
@@ -1455,7 +1455,7 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
   font-size: 44px;
@@ -1484,7 +1484,7 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
   font-size: 44px;
@@ -1499,7 +1499,7 @@ p {
 }
 
 .vf-typo-secondary {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: 0;
@@ -1508,7 +1508,7 @@ p {
 
 @media (min-width: 576px) {
   .vf-typo-secondary {
-    font-family: "Vattenfall Hall Display";
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 72px;
@@ -1517,7 +1517,7 @@ p {
 }
 
 .vf-typo-tetriary {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 24px;
   letter-spacing: 0;
