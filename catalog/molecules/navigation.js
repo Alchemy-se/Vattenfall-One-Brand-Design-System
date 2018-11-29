@@ -41,6 +41,10 @@ const nav = [
     path: "/css/pagination",
     title: "- Pagination",
     content: pageLoader(() => import("./pagination.md"))
+  }, {
+    path: "/css/progress",
+    title: "- Progress",
+    content: pageLoader(() => import("./progress.md"))
   }
 ]
 export default nav
