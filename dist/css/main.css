@@ -7722,7 +7722,7 @@ a.vf-card:hover {
 .vf-image-with-caption {
   background: #005C63;
   margin: 0 auto;
-  padding-bottom: 44px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: 768px) {
@@ -7757,7 +7757,7 @@ a.vf-card:hover {
   letter-spacing: -0.05px;
   line-height: 28px;
   font-weight: normal;
-  margin-top: 44px;
+  margin-top: 30px;
   margin-left: 21px;
   margin-right: 21px;
   margin-bottom: 0;
@@ -7778,7 +7778,7 @@ a.vf-card:hover {
 
 .vf-image-with-caption__share {
   position: absolute;
-  top: -72px;
+  top: -54px;
   left: 0;
   width: 48px;
   height: 48px;
