@@ -1,0 +1,22 @@
+$progress-height: 4px;
+
+.vf-progress {
+  margin: $spacing-sm 0;
+  display: flex;
+  height: $progress-height;
+  background-color: #E8E8E9;
+}
+
+.vf-progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #1964A3;
+}
+
+.vf-progress--small {
+  height: $progress-height / 2;
+}
