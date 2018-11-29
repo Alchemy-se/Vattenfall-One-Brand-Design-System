@@ -1313,7 +1313,7 @@ h1 {
 @media (min-width: 576px) {
   h1 {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -1451,7 +1451,7 @@ p {
 @media (min-width: 576px) {
   .vf-typo-primary {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -1480,7 +1480,7 @@ p {
 @media (min-width: 576px) {
   .vf-typo-primary {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -7305,7 +7305,7 @@ fieldset:disabled a.vf-btn {
 }
 
 .vf-btn--link:focus, .vf-btn--link.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -7314,6 +7314,10 @@ fieldset:disabled a.vf-btn {
 .vf-btn--link:disabled, .vf-btn--link.disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.vf-btn--link:active {
+  text-decoration: none;
 }
 
 .vf-btn--link-white {
@@ -7404,7 +7408,7 @@ fieldset:disabled a.vf-btn {
 }
 
 .vf-link-with-arrow:focus, .vf-link-with-arrow.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -7413,6 +7417,11 @@ fieldset:disabled a.vf-btn {
 .vf-link-with-arrow:disabled, .vf-link-with-arrow.disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.vf-link-with-arrow:active {
+  color: #1E324F;
+  text-decoration: none;
 }
 
 .vf-link-with-arrow--small {
@@ -7892,7 +7901,7 @@ a.vf-card:hover {
 @media (min-width: 768px) {
   .vf-media-block {
     max-height: 488px;
-    margin-bottom: 100px;
+    margin-bottom: 188px;
   }
 }
 
