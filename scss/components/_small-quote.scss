@@ -1,6 +1,6 @@
 .vf-small-quote {
   position: relative;
-  padding: $spacing-md;
+  padding: 35px $spacing-md 37px;
   border-radius: 20px 20px 20px 20px;
   margin: 40px 0 60px;
   @include typo-paragraph-secondary-mobile();
@@ -41,7 +41,7 @@
 }
 
 .vf-small-quote-byline {
-  text-align: center;
+  text-align: left;
   margin-bottom: $spacing-md;
 
   @include media-breakpoint-up(sm) {
@@ -60,7 +60,7 @@
 }
 .vf-small-quote-byline-title {
   @include typo-paragraph-secondary-mobile();
-  padding: $spacing-md 0 15px 0;
+  padding: 25px 0 15px 0;
   margin: 0;
   font-weight: 500;
 }

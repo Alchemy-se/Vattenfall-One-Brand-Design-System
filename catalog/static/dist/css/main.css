@@ -147,6 +147,13 @@ html.sr .reveal {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 576px) {
   .vf-container {
     max-width: 540px;
@@ -213,6 +220,13 @@ html.sr .reveal {
   .vf-container-fluid {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -1313,7 +1327,7 @@ h1 {
 @media (min-width: 576px) {
   h1 {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -1451,7 +1465,7 @@ p {
 @media (min-width: 576px) {
   .vf-typo-primary {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -1480,7 +1494,7 @@ p {
 @media (min-width: 576px) {
   .vf-typo-primary {
     font-size: 72px;
-    line-height: 1.17;
+    line-height: 84px;
   }
 }
 
@@ -7305,7 +7319,7 @@ fieldset:disabled a.vf-btn {
 }
 
 .vf-btn--link:focus, .vf-btn--link.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -7314,6 +7328,10 @@ fieldset:disabled a.vf-btn {
 .vf-btn--link:disabled, .vf-btn--link.disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.vf-btn--link:active {
+  text-decoration: none;
 }
 
 .vf-btn--link-white {
@@ -7404,7 +7422,7 @@ fieldset:disabled a.vf-btn {
 }
 
 .vf-link-with-arrow:focus, .vf-link-with-arrow.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -7413,6 +7431,11 @@ fieldset:disabled a.vf-btn {
 .vf-link-with-arrow:disabled, .vf-link-with-arrow.disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.vf-link-with-arrow:active {
+  color: #1E324F;
+  text-decoration: none;
 }
 
 .vf-link-with-arrow--small {
@@ -7594,8 +7617,8 @@ a.vf-card:hover {
 }
 
 .vf-footer {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 88px;
+  padding-bottom: 88px;
   background: #EBF2F3;
 }
 
@@ -7623,6 +7646,7 @@ a.vf-card:hover {
   letter-spacing: -0.05px;
   line-height: 28px;
   font-weight: normal;
+  font-weight: 500;
 }
 
 @media (min-width: 576px) {
@@ -7638,12 +7662,12 @@ a.vf-card:hover {
   display: block;
   padding: 0.5rem 0;
   color: #222222;
-  font-weight: 500;
   font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 28px;
   font-weight: normal;
+  font-weight: 500;
 }
 
 @media (min-width: 576px) {
@@ -7677,11 +7701,20 @@ a.vf-card:hover {
   height: 60vh;
 }
 
+@media (max-width: 991.98px) {
+  .vf-hero {
+    border-left: 30px white solid;
+    border-right: 30px white solid;
+  }
+}
+
 @media (max-width: 767.98px) {
   .vf-hero {
     font-size: 44px;
     height: 370px;
     min-height: 370px;
+    border-left: 21px white solid;
+    border-right: 21px white solid;
   }
 }
 
@@ -7713,15 +7746,21 @@ a.vf-card:hover {
 
 .vf-hero__headline {
   color: white;
-  padding-bottom: 10px;
   margin: 0 auto;
   max-width: 90%;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .vf-hero__headline {
+    padding-bottom: 32px;
+  }
 }
 
 .vf-image-with-caption {
   background: #005C63;
   margin: 0 auto;
-  padding-bottom: 44px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: 768px) {
@@ -7756,7 +7795,7 @@ a.vf-card:hover {
   letter-spacing: -0.05px;
   line-height: 28px;
   font-weight: normal;
-  margin-top: 44px;
+  margin-top: 30px;
   margin-left: 21px;
   margin-right: 21px;
   margin-bottom: 0;
@@ -7777,7 +7816,7 @@ a.vf-card:hover {
 
 .vf-image-with-caption__share {
   position: absolute;
-  top: -72px;
+  top: -54px;
   left: 0;
   width: 48px;
   height: 48px;
@@ -7891,7 +7930,7 @@ a.vf-card:hover {
 @media (min-width: 768px) {
   .vf-media-block {
     max-height: 488px;
-    margin-bottom: 100px;
+    margin-bottom: 188px;
   }
 }
 
@@ -7913,6 +7952,13 @@ a.vf-card:hover {
   .vf-media-block__body {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-media-block__body {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -8529,6 +8575,13 @@ a.vf-card:hover {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-large-quote {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .vf-large-quote {
     max-width: 720px;
@@ -8690,7 +8743,7 @@ a.vf-card:hover {
 
 .vf-small-quote {
   position: relative;
-  padding: 44px;
+  padding: 35px 44px 37px;
   border-radius: 20px 20px 20px 20px;
   margin: 40px 0 60px;
   font-size: 16px;
@@ -8737,7 +8790,7 @@ a.vf-card:hover {
 }
 
 .vf-small-quote-byline {
-  text-align: center;
+  text-align: left;
   margin-bottom: 44px;
 }
 
@@ -8765,7 +8818,7 @@ a.vf-card:hover {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  padding: 44px 0 15px 0;
+  padding: 25px 0 15px 0;
   margin: 0;
   font-weight: 500;
 }
@@ -8802,6 +8855,13 @@ a.vf-card:hover {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-two-column-boxes {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .vf-two-column-boxes:after {
   content: '';
   background: #EDF1F6;
@@ -8813,6 +8873,12 @@ a.vf-card:hover {
   bottom: 28px;
   display: block;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes:after {
+    right: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -8831,8 +8897,8 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-two-column-boxes__headline {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -8851,6 +8917,12 @@ a.vf-card:hover {
 @media (min-width: 1200px) {
   .vf-two-column-boxes__headline {
     top: 9.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes__content {
+    padding-right: 30px;
   }
 }
 
@@ -8886,6 +8958,12 @@ a.vf-card:hover {
 
 .vf-two-column-boxes__image > img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes__image > img {
+    width: 94%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -8934,6 +9012,13 @@ a.vf-card:hover {
   .vf-navbar__nav {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-navbar__nav {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

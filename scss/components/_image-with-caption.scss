@@ -9,7 +9,7 @@ $vf-image-with-caption-widths: (
   background: $vattenfall-dark-moss;
   margin: 0 auto;
   @include make-container-max-widths($vf-image-with-caption-widths);
-  padding-bottom: $spacing-md;
+  padding-bottom: 35px;
 }
 
 .vf-image-with-caption__image {
@@ -21,7 +21,7 @@ $vf-image-with-caption-widths: (
 .vf-image-with-caption__caption {
   color: white;
   @include typo-paragraph-primary-mobile();
-  margin-top: $spacing-md;
+  margin-top: 30px;
   margin-left: 21px;
   margin-right: 21px;
   margin-bottom: 0;
@@ -40,7 +40,7 @@ $share-icon-size: 48px;
 
 .vf-image-with-caption__share {
   position: absolute;
-  top: - (($share-icon-size / 2) + 48);
+  top: - (($share-icon-size / 2) + 30);
   left: 0;
   width: $share-icon-size;
   height: $share-icon-size;

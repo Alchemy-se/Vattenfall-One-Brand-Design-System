@@ -231,7 +231,6 @@ fieldset:disabled a.vf-btn {
     transform: translate(-150%, -50%);
   }
 
-
   @include hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
@@ -241,7 +240,7 @@ fieldset:disabled a.vf-btn {
 
   &:focus,
   &.focus {
-    text-decoration: $link-hover-decoration;
+    text-decoration: none;
     border-color: transparent;
     box-shadow: none;
   }
@@ -252,6 +251,9 @@ fieldset:disabled a.vf-btn {
     pointer-events: none;
   }
 
+  &:active {
+    text-decoration: none;
+  }
   // No need for an active state here
 }
 
@@ -330,7 +332,7 @@ fieldset:disabled a.vf-btn {
 
   &:focus,
   &.focus {
-    text-decoration: $link-hover-decoration;
+    text-decoration: none;
     border-color: transparent;
     box-shadow: none;
   }
@@ -339,6 +341,11 @@ fieldset:disabled a.vf-btn {
   &.disabled {
     color: $btn-link-disabled-color;
     pointer-events: none;
+  }
+
+  &:active {
+    color: #1E324F;
+    text-decoration: none;
   }
 }
   .vf-link-with-arrow--small {
