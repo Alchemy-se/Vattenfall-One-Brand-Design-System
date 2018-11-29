@@ -6,14 +6,19 @@
 
 .vf-btn {
   display: inline-block;
-  font-weight: $btn-font-weight;
+  font-weight: 500;
   color: $body-color;
   text-align: center;
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+
+  padding: 9px 48px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 20px;
+
   @include transition($btn-transition);
   min-width: 180px;
   position: relative;
@@ -22,9 +27,9 @@
     content: '\2192';
     position: absolute;
     transform-origin: top left;
-    transform: translate(-220%, -4px);
+    transform: translate(-220%, 0);
     font-weight: normal;
-    font-size: 21px;
+    font-size: 20px;
     opacity: 0;
     transition-property: opacity, transform;
     transition-duration: 300ms;
@@ -33,7 +38,7 @@
 
   &:hover:before {
     transition-delay: 150ms;
-    transform: translate(-150%, -4px);
+    transform: translate(-150%, 0);
     opacity: 1;
   }
 
@@ -208,24 +213,21 @@ fieldset:disabled a.vf-btn {
 //
 
 .vf-btn--lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, 18px, $btn-line-height-lg, $btn-border-radius-lg);
-  min-width: 240px;
+  padding: 12px 48px;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 24px;
+  border-radius: 26px;
+  min-width: 240px;
 
   &:before {
-    transform: translate(-220%, -2px);
+    font-size: 24px;
+    transform: translate(-220%, 0);
   }
 
   &:hover:before {
-    transform: translate(-150%, -2px);
+    transform: translate(-150%, 0);
   }
 }
-
-.vf-btn--sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-}
-
 
 .vf-link-with-arrow {
   display: inline-block;
@@ -248,10 +250,15 @@ fieldset:disabled a.vf-btn {
     font-size: 28px;
     font-weight: normal;
     color: $vattenfall-mid-blue;
+
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-delay: 0ms;
   }
 
   &:hover:before {
     color: $vattenfall-mid-blue;
+    transform: translate(40%, 0);
   }
 
   &:active:before {

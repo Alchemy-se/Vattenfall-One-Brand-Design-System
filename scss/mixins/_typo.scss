@@ -1,7 +1,7 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 @mixin headline-base {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -22,8 +22,7 @@
 }
 
 @mixin typo-primary {
-  font-family: "Vattenfall Hall Display";
-  font-weight: 400;
+  @include headline-base();
   letter-spacing: 0; 
 
   font-size: 44px;
