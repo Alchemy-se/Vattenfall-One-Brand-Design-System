@@ -4,6 +4,8 @@
   position: relative;
   padding-top: 1px; // Trigger margin offset
 
+  margin-bottom: $spacing-xl;
+
   &:after {
     content: '';
     background: $vattenfall-light-blue;
