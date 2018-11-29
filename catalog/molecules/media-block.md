@@ -18,15 +18,15 @@ responsive: true
           President and CEO Magnus Hall and CFO Anna Borg comment on Vattenfall's half-year results 2018. The web audiocast for analysts.
         </p>
 
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Download report as PDF
         </a>
         <br />
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Watch on Youtube
         </a>
         <br />
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Listen as audiocast
         </a>    
       </div>
@@ -57,15 +57,15 @@ responsive: true
           President and CEO Magnus Hall and CFO Anna Borg comment on Vattenfall's half-year results 2018. The web audiocast for analysts.
         </p>
 
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Download report as PDF
         </a>
         <br />
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Watch on Youtube
         </a>
         <br />
-        <a href="#" class="vf-btn vf-btn--link">
+        <a href="#" class="vf-link-with-arrow">
           Listen as audiocast
         </a>    
       </div>
