@@ -22,7 +22,7 @@
     content: '\2192';
     position: absolute;
     transform-origin: top left;
-    transform: translate(-220%, -2px);
+    transform: translate(-220%, -4px);
     font-weight: normal;
     font-size: 21px;
     opacity: 0;
@@ -33,7 +33,7 @@
 
   &:hover:before {
     transition-delay: 150ms;
-    transform: translate(-150%, -2px);
+    transform: translate(-150%, -4px);
     opacity: 1;
   }
 
@@ -203,87 +203,23 @@ fieldset:disabled a.vf-btn {
   }
 }
 
-
-// Link buttons
-//
-
-// Make a button look and behave like a link
-.vf-btn--link {
-  position: relative;
-  font-weight: 500;
-  color: #222222;
-  text-decoration: none;
-  background-color: transparent;
-
-  // For the arrow
-  transform: translateZ(1);
-  padding-left: 25px;
-
-  &:before {
-    top: calc(50% + 1px);
-    transform: translate(-200%, -50%);
-    font-weight: 400;
-    font-size: 20px;
-    color: $vattenfall-mid-blue;
-  }
-
-  &:focus:before, &:active:before, &:hover:before {
-    transform: translate(-150%, -50%);
-  }
-
-  @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    background-color: transparent;
-    border-color: transparent;
-  }
-
-  &:focus,
-  &.focus {
-    text-decoration: none;
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  &:disabled,
-  &.disabled {
-    color: $btn-link-disabled-color;
-    pointer-events: none;
-  }
-
-  &:active {
-    text-decoration: none;
-  }
-  // No need for an active state here
-}
-
-.vf-btn--link-white {
-  color: #ffffff;
-
-  &:before {
-    color: inherit;
-  }
-  @include hover {
-    color: $vattenfall-mid-blue;
-  }
-}
-
-.vf-btn--link-with-arrow {
-  padding-left: 30px;
-
-  &:before {
-    font-size: 28px;
-    opacity: 1;
-  }
-}
-
 //
 // Button Sizes
 //
 
 .vf-btn--lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, ($font-size-base * 1.125), $btn-line-height-lg, $btn-border-radius-lg);
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, 18px, $btn-line-height-lg, $btn-border-radius-lg);
   min-width: 240px;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:before {
+    transform: translate(-220%, -2px);
+  }
+
+  &:hover:before {
+    transform: translate(-150%, -2px);
+  }
 }
 
 .vf-btn--sm {
