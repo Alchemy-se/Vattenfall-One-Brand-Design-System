@@ -22,7 +22,7 @@ responsive: true
         <p>
           Vattenfall is a European energy company with approximately 20.000 employees. For more than 100 years we have electrified industries, supplied energy to people's homes and modernized our way of living through innovation and cooperation.
         </p>
-        <a href="#" class="vf-btn vf-btn--link vf-btn--link-with-arrow">Read more</a>
+        <a href="#" class="vf-link-with-arrow">Read more</a>
       </div>
       <div class="vf-col-6 vf-col-md-2 vf-offset-md-1">
         <div class="vf-footer__social-links">
