@@ -10,6 +10,10 @@ const nav = [
     title: "- Card",
     content: pageLoader(() => import("./card.md"))
   }, {
+    path: "/css/button-group",
+    title: "- Button Group",
+    content: pageLoader(() => import("./button-group.md"))
+  }, {
     path: "/css/image-with-caption",
     title: "- Image with Caption",
     content: pageLoader(() => import("./image-with-caption.md"))
