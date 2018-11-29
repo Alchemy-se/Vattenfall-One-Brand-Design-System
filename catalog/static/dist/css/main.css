@@ -7723,9 +7723,15 @@ a.vf-card:hover {
 
 .vf-hero__headline {
   color: white;
-  padding-bottom: 10px;
   margin: 0 auto;
   max-width: 90%;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .vf-hero__headline {
+    padding-bottom: 32px;
+  }
 }
 
 .vf-image-with-caption {
@@ -8700,7 +8706,7 @@ a.vf-card:hover {
 
 .vf-small-quote {
   position: relative;
-  padding: 44px;
+  padding: 29px 44px 32px;
   border-radius: 20px 20px 20px 20px;
   margin: 40px 0 60px;
   font-size: 16px;
