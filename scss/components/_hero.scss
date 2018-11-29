@@ -10,10 +10,19 @@
   border-right: 21px white solid;
   height: 60vh;
 
+  @include media-breakpoint-down(md) {
+    border-left: 30px white solid;
+    border-right: 30px white solid;
+  }
+
   @include media-breakpoint-down(sm) {
     font-size: 44px;
     height: 370px;
     min-height: 370px;
+
+    border-left: 21px white solid;
+    border-right: 21px white solid;
+
   }
 }
 

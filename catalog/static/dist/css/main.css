@@ -147,6 +147,13 @@ html.sr .reveal {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 576px) {
   .vf-container {
     max-width: 540px;
@@ -213,6 +220,13 @@ html.sr .reveal {
   .vf-container-fluid {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -7687,11 +7701,20 @@ a.vf-card:hover {
   height: 60vh;
 }
 
+@media (max-width: 991.98px) {
+  .vf-hero {
+    border-left: 30px white solid;
+    border-right: 30px white solid;
+  }
+}
+
 @media (max-width: 767.98px) {
   .vf-hero {
     font-size: 44px;
     height: 370px;
     min-height: 370px;
+    border-left: 21px white solid;
+    border-right: 21px white solid;
   }
 }
 
@@ -7929,6 +7952,13 @@ a.vf-card:hover {
   .vf-media-block__body {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-media-block__body {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -8545,6 +8575,13 @@ a.vf-card:hover {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-large-quote {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .vf-large-quote {
     max-width: 720px;
@@ -8818,6 +8855,13 @@ a.vf-card:hover {
   }
 }
 
+@media (max-width: 991.98px) {
+  .vf-two-column-boxes {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .vf-two-column-boxes:after {
   content: '';
   background: #EDF1F6;
@@ -8829,6 +8873,12 @@ a.vf-card:hover {
   bottom: 28px;
   display: block;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes:after {
+    right: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -8847,8 +8897,8 @@ a.vf-card:hover {
 
 @media (min-width: 576px) {
   .vf-two-column-boxes__headline {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -8867,6 +8917,12 @@ a.vf-card:hover {
 @media (min-width: 1200px) {
   .vf-two-column-boxes__headline {
     top: 9.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes__content {
+    padding-right: 30px;
   }
 }
 
@@ -8902,6 +8958,12 @@ a.vf-card:hover {
 
 .vf-two-column-boxes__image > img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .vf-two-column-boxes__image > img {
+    width: 94%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -8950,6 +9012,13 @@ a.vf-card:hover {
   .vf-navbar__nav {
     padding-left: 21px;
     padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-navbar__nav {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
