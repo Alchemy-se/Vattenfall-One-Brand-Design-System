@@ -13,6 +13,11 @@
     padding-left: 21px;
     padding-right: 21px;
   }
+  
+  @include media-breakpoint-down(md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 
