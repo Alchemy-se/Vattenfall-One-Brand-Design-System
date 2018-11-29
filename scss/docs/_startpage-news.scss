@@ -2,12 +2,26 @@
   margin-top: 300px;
 
   @include media-breakpoint-up (sm) {
-    max-height: 450px;
   }
 }
 .news-inner-container {
   @include media-breakpoint-up (sm) {
     position: relative;
     top: -220px;
+  }
+
+  @include media-breakpoint-up (sm) {
+    max-height: 430px;
+  }
+  @include media-breakpoint-down (sm) {
+    max-height: calc(100% + 220px);
+  }
+
+  @include media-breakpoint-up (lg) {
+    max-height: 400px;
+  }
+
+  @include media-breakpoint-up (xl) {
+    max-height: 450px;
   }
 }
