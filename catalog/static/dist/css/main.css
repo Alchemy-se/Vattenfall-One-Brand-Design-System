@@ -7562,9 +7562,16 @@ a.vf-card:hover {
 }
 
 .vf-footer {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 44px;
+  padding-bottom: 46px;
   background: #EBF2F3;
+}
+
+@media (min-width: 576px) {
+  .vf-footer {
+    padding-top: 76px;
+    padding-bottom: 78px;
+  }
 }
 
 .vf-footer a {
@@ -7628,9 +7635,27 @@ a.vf-card:hover {
   text-align: right;
 }
 
+.vf-footer__social-links a {
+  text-decoration: none !important;
+}
+
 .vf-footer__social-link {
   width: 28px;
   margin: 18px 0 18px 35px;
+}
+
+.vf-footer__social-link:hover {
+  text-decoration: none;
+}
+
+.vf-footer__social-link:hover .vf-footer__social-link-hover-color {
+  fill: #2071B5;
+}
+
+@media (min-width: 576px) {
+  .footer-about-vf-link {
+    display: none;
+  }
 }
 
 .vf-hero {
