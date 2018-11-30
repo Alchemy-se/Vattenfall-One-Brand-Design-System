@@ -9181,6 +9181,8 @@ a.vf-card:hover {
   display: inline-flex;
   vertical-align: middle;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   border-radius: 34px;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
@@ -9239,9 +9241,13 @@ a.vf-card:hover {
   margin-top: 300px;
 }
 
+.news-inner-container {
+  position: relative;
+  top: -66px;
+}
+
 @media (min-width: 576px) {
   .news-inner-container {
-    position: relative;
     top: -220px;
   }
 }
@@ -9254,7 +9260,7 @@ a.vf-card:hover {
 
 @media (max-width: 767.98px) {
   .news-inner-container {
-    max-height: calc(100% + 220px);
+    max-height: calc(100% + 520px);
   }
 }
 
