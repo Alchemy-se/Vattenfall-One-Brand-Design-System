@@ -15,7 +15,10 @@ $vf-image-with-caption-widths: (
 .vf-image-with-caption__image {
   object-fit: cover;
   width: 100%;
-  min-height: 360px;
+  height: 252px;
+  @include media-breakpoint-up(sm) {
+    height: 436px;
+  }
 }
 
 .vf-image-with-caption__caption {

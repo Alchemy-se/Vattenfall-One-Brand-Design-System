@@ -7755,7 +7755,13 @@ a.vf-card:hover {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  min-height: 360px;
+  height: 252px;
+}
+
+@media (min-width: 576px) {
+  .vf-image-with-caption__image {
+    height: 436px;
+  }
 }
 
 .vf-image-with-caption__caption {
