@@ -134,8 +134,8 @@ html.sr .reveal {
 
 .vf-container {
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -210,8 +210,8 @@ html.sr .reveal {
 
 .vf-container-fluid {
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -7666,8 +7666,8 @@ a.vf-card:hover {
   margin: 0 auto;
   width: 100%;
   max-width: 1700px;
-  border-left: 21px white solid;
-  border-right: 21px white solid;
+  border-left: 20px white solid;
+  border-right: 20px white solid;
   height: 60vh;
 }
 
@@ -7683,8 +7683,8 @@ a.vf-card:hover {
     font-size: 44px;
     height: 370px;
     min-height: 370px;
-    border-left: 21px white solid;
-    border-right: 21px white solid;
+    border-left: 20px white solid;
+    border-right: 20px white solid;
   }
 }
 
@@ -7912,8 +7912,8 @@ a.vf-card:hover {
 
 .vf-media-block__body {
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -8537,8 +8537,8 @@ a.vf-card:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
@@ -8818,8 +8818,8 @@ a.vf-card:hover {
 
 .vf-two-column-boxes {
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
@@ -8966,7 +8966,7 @@ a.vf-card:hover {
   text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .vf-navbar__logo {
     display: none;
   }
@@ -8978,8 +8978,8 @@ a.vf-card:hover {
 
 .vf-navbar__nav {
   width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
   line-height: 1;
@@ -9026,7 +9026,7 @@ a.vf-card:hover {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .vf-navbar__nav {
     height: auto;
     display: -webkit-box;
@@ -9057,7 +9057,7 @@ a.vf-card:hover {
   line-height: 64px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .vf-navbar__nav-item {
     font-size: 1rem;
     line-height: 4rem;
