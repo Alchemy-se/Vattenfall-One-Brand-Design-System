@@ -7636,6 +7636,7 @@ a.vf-card:hover {
 }
 
 .vf-footer__social-links a {
+  display: inline-block;
   text-decoration: none !important;
 }
 
