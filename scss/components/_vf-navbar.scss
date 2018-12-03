@@ -7,7 +7,7 @@
   margin: 16px auto;
   height: 24px;
   text-align: center;
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     display: none;
   }
 }
@@ -25,7 +25,7 @@
   display: none;
   height: 56px;
   
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     height: auto;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
   padding: 0;
   line-height: 64px;
   
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     font-size: 1rem;
     line-height: 4rem; // 64px
     display: inline-block;
