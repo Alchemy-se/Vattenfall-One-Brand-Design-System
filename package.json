@@ -23,6 +23,8 @@
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "semantic-release/npm",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/release-notes-generator": "^7.1.2",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
@@ -32,8 +34,6 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
-    "@semantic-release/commit-analyzer": "^6.1.0",
-    "@semantic-release/release-notes-generator": "^7.1.2",
     "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
