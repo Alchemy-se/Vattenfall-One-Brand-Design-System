@@ -46,88 +46,88 @@ html.sr .reveal {
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-Light.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-Light.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-Light.woff2") format("woff2"), url("../../fonts/VattenfallHall-Light.woff") format("woff");
+  src: url("../fonts/VattenfallHall-Light.eot?#iefix");
+  src: url("../fonts/VattenfallHall-Light.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Light.woff2") format("woff2"), url("../fonts/VattenfallHall-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-LightItalic.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-LightItalic.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-LightItalic.woff2") format("woff2"), url("../../fonts/VattenfallHall-LightItalic.woff") format("woff");
+  src: url("../fonts/VattenfallHall-LightItalic.eot?#iefix");
+  src: url("../fonts/VattenfallHall-LightItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-LightItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-Regular.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-Regular.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-Regular.woff2") format("woff2"), url("../../fonts/VattenfallHall-Regular.woff") format("woff");
+  src: url("../fonts/VattenfallHall-Regular.eot?#iefix");
+  src: url("../fonts/VattenfallHall-Regular.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Regular.woff2") format("woff2"), url("../fonts/VattenfallHall-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-RegularItalic.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-RegularItalic.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-RegularItalic.woff2") format("woff2"), url("../../fonts/VattenfallHall-RegularItalic.woff") format("woff");
+  src: url("../fonts/VattenfallHall-RegularItalic.eot?#iefix");
+  src: url("../fonts/VattenfallHall-RegularItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-RegularItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-RegularItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-Medium.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-Medium.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-Medium.woff2") format("woff2"), url("../../fonts/VattenfallHall-Medium.woff") format("woff");
+  src: url("../fonts/VattenfallHall-Medium.eot?#iefix");
+  src: url("../fonts/VattenfallHall-Medium.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Medium.woff2") format("woff2"), url("../fonts/VattenfallHall-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-MediumItalic.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-MediumItalic.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-MediumItalic.woff2") format("woff2"), url("../../fonts/VattenfallHall-MediumItalic.woff") format("woff");
+  src: url("../fonts/VattenfallHall-MediumItalic.eot?#iefix");
+  src: url("../fonts/VattenfallHall-MediumItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-MediumItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Vattenfall Hall Display";
-  src: url("../../fonts/VattenfallHallDisplay-Bold.eot?#iefix");
-  src: url("../../fonts/VattenfallHallDisplay-Bold.eot?#iefix") format("eot"), url("../../fonts/VattenfallHallDisplay-Bold.woff2") format("woff2"), url("../../fonts/VattenfallHallDisplay-Bold.woff") format("woff");
+  src: url("../fonts/VattenfallHallDisplay-Bold.eot?#iefix");
+  src: url("../fonts/VattenfallHallDisplay-Bold.eot?#iefix") format("eot"), url("../fonts/VattenfallHallDisplay-Bold.woff2") format("woff2"), url("../fonts/VattenfallHallDisplay-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-Bold.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-Bold.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../../fonts/VattenfallHall-Bold.woff") format("woff");
+  src: url("../fonts/VattenfallHall-Bold.eot?#iefix");
+  src: url("../fonts/VattenfallHall-Bold.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../fonts/VattenfallHall-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-BoldItalic.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-BoldItalic.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-BoldItalic.woff2") format("woff2"), url("../../fonts/VattenfallHall-BoldItalic.woff") format("woff");
+  src: url("../fonts/VattenfallHall-BoldItalic.eot?#iefix");
+  src: url("../fonts/VattenfallHall-BoldItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-BoldItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-BoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-Heavy.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-Heavy.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-Heavy.woff2") format("woff2"), url("../../fonts/VattenfallHall-Heavy.woff") format("woff");
+  src: url("../fonts/VattenfallHall-Heavy.eot?#iefix");
+  src: url("../fonts/VattenfallHall-Heavy.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Heavy.woff2") format("woff2"), url("../fonts/VattenfallHall-Heavy.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Vattenfall Hall";
-  src: url("../../fonts/VattenfallHall-HeavyItalic.eot?#iefix");
-  src: url("../../fonts/VattenfallHall-HeavyItalic.eot?#iefix") format("eot"), url("../../fonts/VattenfallHall-HeavyItalic.woff2") format("woff2"), url("../../fonts/VattenfallHall-HeavyItalic.woff") format("woff");
+  src: url("../fonts/VattenfallHall-HeavyItalic.eot?#iefix");
+  src: url("../fonts/VattenfallHall-HeavyItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-HeavyItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-HeavyItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }

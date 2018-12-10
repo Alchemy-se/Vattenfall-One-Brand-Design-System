@@ -27,12 +27,12 @@ Be sure to have your pages set up with the latest design and development standar
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.vattenfall.com/design-system/css/1.0.0.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
 
-    <title>Hello, world!</title>
+    <title>Vattenfall Horizon Boilerplate!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>I'm using Vattenfall Horizon!</h1>
 
     <!-- Optional JavaScript -->
   </body>
