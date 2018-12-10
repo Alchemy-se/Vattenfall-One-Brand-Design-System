@@ -6,7 +6,8 @@ import organismsNavigation from './organisms/navigation'
 import layoutsNavigation from './layouts/navigation'
 const styles = [
   '/dist/css/reboot.css',
-  '/dist/css/main.css'
+  '/dist/css/main.css',
+  '/dist/css/documentation.css'
 ]
 
 const pages = [
@@ -83,8 +84,8 @@ const pages = [
 ];
 
 const theme = {
-  background: "#F9F9F9",
-  textColor: "#333333",
+  background: "#ffffff",
+  textColor: "#222222",
   codeColor: "#00263E",
   linkColor: "#FF5555",
 
@@ -93,12 +94,12 @@ const theme = {
   lightColor: "#D6D6D6",
 
   // Used in PageHeader
-  pageHeadingBackground: "#003B5C",
-  pageHeadingTextColor: "#fff",
+  pageHeadingBackground: "#ffffff",
+  pageHeadingTextColor: "#222222",
 
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
-  pageHeadingHeight: 200,
+  pageHeadingHeight: 140,
 
   // Used for navigation bar
   navBarBackground: "#F2F2F2",
@@ -108,7 +109,7 @@ const theme = {
   // Typography: headings.
   brandColor: "#003B5C",
 
-  sidebarColor: "#F2F2F2",
+  sidebarColor: "#ffffff",
   sidebarColorActive: "#D1312E",
   sidebarColorText: "#2071B5",
   sidebarColorTextActive: "#85254B",
@@ -116,7 +117,7 @@ const theme = {
   sidebarColorHeading: "#2071B5",
 
   // Used in the html, react, and image specimens.
-  bgLight: "#F2F2F2",
+  bgLight: "#ffffff",
   bgDark: "#333333"
 }
 
