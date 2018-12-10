@@ -1,7 +1,12 @@
 .vf-footer {
-  padding-top: $spacing-xl;
-  padding-bottom: $spacing-xl;
+  padding-top: 44px;
+  padding-bottom: 46px;
   background: $vattenfall-light-turquoise;
+
+  @include media-breakpoint-up (sm) {
+    padding-top: 76px;
+    padding-bottom: 78px;  
+  }
 
   a {
     color: $dark;
@@ -23,15 +28,34 @@
       display: block;
       padding: 0.5rem 0;
       color: $dark;
-      @include typo-paragraph-primary();
+      @include typo-paragraph-primary-desktop();
       font-weight: 500;
     }
 
   .vf-footer__social-links {
     text-align: right;
+    a {
+      display: inline-block;
+      text-decoration: none !important;
+    }
   }
 
   .vf-footer__social-link {
-    width: 28px;
-    margin: 18px 0 18px 35px;
+    width: 34px;
+    margin: 0 0 14px 18px;
+
+    &:hover {
+      text-decoration: none;
+
+      .vf-footer__social-link-hover-color {
+        fill: #2071B5;
+      }
+    }
   }
+
+
+.footer-about-vf-link {
+  @include media-breakpoint-up (sm) {
+    display: none;
+  }
+}
