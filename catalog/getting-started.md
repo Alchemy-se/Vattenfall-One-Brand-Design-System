@@ -2,12 +2,20 @@
 
 To start using this design system, add the JS and CSS files to your site by following the steps below.
 
+### Installation
+
+ - Install with [npm](https://www.npmjs.com/): `npm install @alchemy-vf/vattenfall-design-system`
+ - Install with [yarn](https://yarnpkg.com/): `yarn add @alchemy-vf/vattenfall-design-system`
+Coming soon:
+- ~~- [Download the latest release.](unpkg.com/react@16.0.0/umd/react.production.min.js)~~
+
 ### CSS
 
-Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+Copy-paste the stylesheets `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 ```
-<link rel="stylesheet" href="https://cdn.vattenfall.com/design-system/css/1.0.0.css" crossorigin="anonymous">
+<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css"">
+<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
 ```
 
 ### JS
@@ -27,6 +35,7 @@ Be sure to have your pages set up with the latest design and development standar
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css"">
     <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
 
     <title>Vattenfall Horizon Boilerplate!</title>
@@ -40,6 +49,30 @@ Be sure to have your pages set up with the latest design and development standar
 ```
 
 That's all you need for overall page requirements. 
+
+### SCSS
+
+You can choose to only include certain components and mixins from the design system if you choose. There is however a few things that you need to take into consideration then.
+
+#### Autoprefixer
+Make sure your build process uses autoprefixer to ensure vendor prefixes are automatically added to your output CSS.
+
+#### Global SCSS variables
+These variables are used to configure which parts of the SCSS get compiled and some colors and such.
+
+All variables are found in `_variables.scss`.
+
+These flags are set for you by default when you @import the styles.scss file. You can override these default settings by redeclaring the variables.
+
+#### Importing SCSS files
+To add a component style to your build, simply import the component directly.
+
+@import 'node_modules/@vf-alchemy/vattenfall-design-system/scss/components/card';
+
+Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
+
+#### Namespacing
+Horizon Components are built to be included individually and not clobber global styles - all class attributes are prefixed by the vf-- moniker. 
 
 ## Important globals
 
