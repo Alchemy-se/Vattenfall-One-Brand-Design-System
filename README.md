@@ -1,15 +1,13 @@
 # Vattenfall-One-Brand-Design-System
 
-A shared component library based on the Vattenfall Design System.
+A shared component library based on the Vattenfall Horizon Design System.
+
+This README is about how to work on the Vattenfall Horizon Design System, if you are looking for the technical documentation of how to use this in your own application, head to:
+http://vattenfall.alchemystudio.se/
 
 ## Quick start
 
 - Clone the repo: `git clone git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git`
-
-Coming soon:
-- ~~- [Download the latest release.](https://no-cdn-yet.com/vattenfall.zip)~~
- - Install with [npm](https://www.npmjs.com/): `npm install @alchemy-vf/vattenfall-design-system`
- - Install with [yarn](https://yarnpkg.com/): `yarn add @alchemy-vf/vattenfall-design-system`
 
 ## What's included
 
