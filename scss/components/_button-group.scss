@@ -6,6 +6,8 @@
   display: inline-flex;
   vertical-align: middle; // match .vf-btn alignment given font-size hack above
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 
   border-radius: 34px;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);

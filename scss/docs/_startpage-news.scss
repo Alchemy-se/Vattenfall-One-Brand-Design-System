@@ -5,8 +5,10 @@
   }
 }
 .news-inner-container {
+  position: relative;
+  top: -66px;
+
   @include media-breakpoint-up (sm) {
-    position: relative;
     top: -220px;
   }
 
@@ -14,7 +16,7 @@
     max-height: 430px;
   }
   @include media-breakpoint-down (sm) {
-    max-height: calc(100% + 220px);
+    max-height: calc(100% + 520px);
   }
 
   @include media-breakpoint-up (lg) {
