@@ -4,26 +4,30 @@
   "main": "index.js",
   "scripts": {
     "test": "yarn build",
-    "build": "npm-run-all --sequential css-main catalog-build",
+    "build": "npm-run-all --sequential js-main css-main catalog-build",
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss dist/css/main.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/reboot.scss dist/css/reboot.css",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/main.min.css dist/css/main.css && cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/reboot.min.css dist/css/reboot.css",
-    "css-copy": "shx mkdir -p catalog/static/dist/ && shx cp -r dist/css/ catalog/static/dist/ && shx cp -r catalog/static/fonts dist/fonts",
-    "watch": "npm-run-all --parallel watch-css catalog-start",
+    "css-copy": "shx mkdir -p catalog/static/dist/ && shx cp -r dist/css/ catalog/static/dist/ && shx cp -r dist/fonts catalog/static/dist/",
+    "watch": "npm-run-all --parallel watch-css watch-js catalog-start",
     "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
-    "semantic-release": "semantic-release"
+    "watch-js": "nodemon --watch js/ --ext js --exec \"npm run js-main\"",
+    "semantic-release": "semantic-release",
+    "js-main": "npm-run-all --sequential js-build js-copy",
+    "js-build": "webpack",
+    "js-copy": "shx cp -r dist/js/ catalog/static/dist/"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "semantic-release/npm",
-    "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/release-notes-generator": "^7.1.2",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.9.3",
@@ -31,9 +35,12 @@
     "npm-run-all": "^4.1.3",
     "postcss-cli": "^6.0.0",
     "semantic-release": "^15.10.6",
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "babel-loader": "7",
     "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"

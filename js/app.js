@@ -1,0 +1,1 @@
+require('./components/two-column-boxes.js')
