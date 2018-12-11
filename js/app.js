@@ -1,3 +1,1 @@
-require('./rellax.js');
-
-require('./components/hero.js')
+require('./components/two-column-boxes.js')
