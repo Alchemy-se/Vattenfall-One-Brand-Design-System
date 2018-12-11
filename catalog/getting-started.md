@@ -43,6 +43,7 @@ Be sure to have your pages set up with the latest design and development standar
   <body>
     <h1>I'm using Vattenfall Horizon!</h1>
 
+    <script src="node_modules/@vf-alchemy/vattenfall-design-system/dist/js/horizon.min.js"></script>
     <!-- Optional JavaScript -->
   </body>
 </html>

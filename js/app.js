@@ -1,4 +1,3 @@
-const konstis = 'asdsd';
-let tempis = 'bbbaac';
+require('./rellax.js');
 
-console.log('i am built')
+require('./components/hero.js')
