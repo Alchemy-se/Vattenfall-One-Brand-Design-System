@@ -138,6 +138,7 @@ html.sr .reveal {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  clear: left;
 }
 
 @media (max-width: 767.98px) {
@@ -206,6 +207,13 @@ html.sr .reveal {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-container-bleed {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .vf-container-fluid {
@@ -7562,6 +7570,7 @@ a.vf-card:hover {
 }
 
 .vf-footer {
+  clear: left;
   padding-top: 44px;
   padding-bottom: 46px;
   background: #EBF2F3;
@@ -7965,6 +7974,8 @@ a.vf-card:hover {
   padding-right: 12px;
   padding-left: 12px;
   margin-top: -90px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -7998,6 +8009,8 @@ a.vf-card:hover {
   padding-left: 12px;
   padding-top: 35px;
   padding-bottom: 35px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -8888,6 +8901,24 @@ a.vf-card:hover {
 @media (min-width: 1200px) {
   .vf-two-column-boxes__headline {
     top: 9.5rem;
+  }
+}
+
+.vf-two-column-boxes__headline-inner {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 45%;
   }
 }
 
