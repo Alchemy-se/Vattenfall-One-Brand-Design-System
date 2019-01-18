@@ -209,6 +209,13 @@ html.sr .reveal {
   max-width: 1680px;
 }
 
+@media (max-width: 767.98px) {
+  .vf-container-bleed {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .vf-container-fluid {
   width: 100%;
   padding-right: 20px;
