@@ -8,8 +8,9 @@ responsive: true
     <img src="/img/example-startpage/energy-and-solutions.png" />
   </div>
   <h2 class="vf-two-column-boxes__headline">
-    Energy solutions<br />
-    in a broader perspective
+    <span class="vf-two-column-boxes__headline-inner">
+      Energy solutions in a broader perspective
+    </span>
   </h2>
 
   <div class="vf-two-column-boxes__content">
