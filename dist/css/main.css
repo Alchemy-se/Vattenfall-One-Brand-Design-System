@@ -138,6 +138,7 @@ html.sr .reveal {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  clear: left;
 }
 
 @media (max-width: 767.98px) {
@@ -7562,6 +7563,7 @@ a.vf-card:hover {
 }
 
 .vf-footer {
+  clear: left;
   padding-top: 44px;
   padding-bottom: 46px;
   background: #EBF2F3;
