@@ -8891,6 +8891,24 @@ a.vf-card:hover {
   }
 }
 
+.vf-two-column-boxes__headline-inner {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 45%;
+  }
+}
+
 @media (min-width: 768px) {
   .vf-two-column-boxes__content {
     padding-right: 30px;

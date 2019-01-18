@@ -55,6 +55,21 @@
       top: 9.5rem;
     }
   }
+
+  .vf-two-column-boxes__headline-inner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 70%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 45%;
+    }
+
+  }
   
   .vf-two-column-boxes__content {
     @include media-breakpoint-up(md) {
