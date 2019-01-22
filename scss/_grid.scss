@@ -13,6 +13,8 @@ $container-tight-max-widths: (
   .vf-container {
     @include make-container();
     @include make-container-max-widths();
+
+    clear: left;
   }
 
   .vf-container--tight {
@@ -28,6 +30,10 @@ $container-tight-max-widths: (
 
 .vf-container-bleed {
   @include make-container-bleed();
+  @include media-breakpoint-down(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  } 
 }
 
 // Fluid container

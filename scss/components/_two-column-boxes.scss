@@ -26,7 +26,13 @@
       display: none;
     }
   }
+
+  .vf-container & {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+  
 
   .vf-two-column-boxes__headline {
     width: 90%;
@@ -54,6 +60,21 @@
     @include media-breakpoint-up(xl) {
       top: 9.5rem;
     }
+  }
+
+  .vf-two-column-boxes__headline-inner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 70%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 45%;
+    }
+
   }
   
   .vf-two-column-boxes__content {
