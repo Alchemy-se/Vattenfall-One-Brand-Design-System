@@ -57,7 +57,7 @@ $cutout-height-desktop: 85px;
 
 .vf-large-quote__quote {
   color: #222222;
-  padding: 48px 0px 48px 21px;
+  padding: 48px 0px 48px;
   margin: 0 21px 0 0;
 
   background: white;
@@ -74,9 +74,9 @@ $cutout-height-desktop: 85px;
   letter-spacing: 0;
   line-height: 36px;
   
-  padding-left: 21px;
   font-size: 20px;
   @include media-breakpoint-up(sm) {
+    padding-left: 21px;
     padding-left: 0;
     font-size: 20px;
   }
@@ -88,8 +88,8 @@ $cutout-height-desktop: 85px;
   line-height: 28px;
   
   font-size: 16px;
-  padding-left: 21px;
   @include media-breakpoint-up(sm) {
+    padding-left: 21px;
     padding-left: 0;
   }
 }
@@ -117,6 +117,12 @@ $cutout-height-desktop: 85px;
     top: - $cutout-height-desktop;
     left: 27%;
     height: 666px; //$component-height-desktop + $cutout-height-desktop;
+  }
+
+  // Reset normal img default sizings set from common libraries
+  img {
+    width: auto;
+    max-width: none;
   }
 }
 .vf-large-quote__illustration-bg {
