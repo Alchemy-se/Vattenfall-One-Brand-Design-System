@@ -8,6 +8,10 @@
   }
 }
 
+.vf-container .vf-media-block {
+  
+}
+
 .vf-media-block__body {
   @include make-container();
   @include make-container-max-widths();
@@ -24,7 +28,9 @@
 .vf-media-block__media {
   @include make-col-ready();
   margin-top: -90px;
-  
+  padding-left: 0;
+  padding-right: 0;
+
   @include media-breakpoint-up(md) {
     @include make-col(6);
     margin-top: 0;
@@ -34,7 +40,7 @@
   @include media-breakpoint-up(lg) {
     @include make-col(8);
   }
-  
+
   img {
     width: 100%;
   }
@@ -44,6 +50,9 @@
   @include make-col-ready();
   padding-top: 35px;
   padding-bottom: 35px;
+
+  padding-left: 0;
+  padding-right: 0;
 
   @include media-breakpoint-up(md) {
     @include make-col(6);

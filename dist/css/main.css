@@ -138,6 +138,7 @@ html.sr .reveal {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  clear: left;
 }
 
 @media (max-width: 767.98px) {
@@ -206,6 +207,13 @@ html.sr .reveal {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-container-bleed {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .vf-container-fluid {
@@ -7562,6 +7570,7 @@ a.vf-card:hover {
 }
 
 .vf-footer {
+  clear: left;
   padding-top: 44px;
   padding-bottom: 46px;
   background: #EBF2F3;
@@ -7965,6 +7974,8 @@ a.vf-card:hover {
   padding-right: 12px;
   padding-left: 12px;
   margin-top: -90px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -7998,6 +8009,8 @@ a.vf-card:hover {
   padding-left: 12px;
   padding-top: 35px;
   padding-bottom: 35px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -8617,7 +8630,7 @@ a.vf-card:hover {
 
 .vf-large-quote__quote {
   color: #222222;
-  padding: 48px 0px 48px 21px;
+  padding: 48px 0px 48px;
   margin: 0 21px 0 0;
   background: white;
   font-size: 32px;
@@ -8640,12 +8653,12 @@ a.vf-card:hover {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 36px;
-  padding-left: 21px;
   font-size: 20px;
 }
 
 @media (min-width: 576px) {
   .vf-large-quote__byline {
+    padding-left: 21px;
     padding-left: 0;
     font-size: 20px;
   }
@@ -8656,11 +8669,11 @@ a.vf-card:hover {
   letter-spacing: -0.05px;
   line-height: 28px;
   font-size: 16px;
-  padding-left: 21px;
 }
 
 @media (min-width: 576px) {
   .vf-large-quote__byline-description {
+    padding-left: 21px;
     padding-left: 0;
   }
 }
@@ -8691,6 +8704,11 @@ a.vf-card:hover {
     left: 27%;
     height: 666px;
   }
+}
+
+.vf-large-quote__illustration-cutout img {
+  width: auto;
+  max-width: none;
 }
 
 .vf-large-quote__illustration-bg {
@@ -8858,6 +8876,11 @@ a.vf-card:hover {
   }
 }
 
+.vf-container .vf-two-column-boxes {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .vf-two-column-boxes__headline {
   width: 90%;
   text-align: left;
@@ -8888,6 +8911,24 @@ a.vf-card:hover {
 @media (min-width: 1200px) {
   .vf-two-column-boxes__headline {
     top: 9.5rem;
+  }
+}
+
+.vf-two-column-boxes__headline-inner {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-two-column-boxes__headline-inner {
+    max-width: 45%;
   }
 }
 
