@@ -8,6 +8,10 @@
   }
 }
 
+.vf-container .vf-media-block {
+  
+}
+
 .vf-media-block__body {
   @include make-container();
   @include make-container-max-widths();
