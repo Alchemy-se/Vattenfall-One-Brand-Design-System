@@ -8630,7 +8630,7 @@ a.vf-card:hover {
 
 .vf-large-quote__quote {
   color: #222222;
-  padding: 48px 0px 48px 21px;
+  padding: 48px 0px 48px;
   margin: 0 21px 0 0;
   background: white;
   font-size: 32px;
@@ -8653,12 +8653,12 @@ a.vf-card:hover {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 36px;
-  padding-left: 21px;
   font-size: 20px;
 }
 
 @media (min-width: 576px) {
   .vf-large-quote__byline {
+    padding-left: 21px;
     padding-left: 0;
     font-size: 20px;
   }
@@ -8669,11 +8669,11 @@ a.vf-card:hover {
   letter-spacing: -0.05px;
   line-height: 28px;
   font-size: 16px;
-  padding-left: 21px;
 }
 
 @media (min-width: 576px) {
   .vf-large-quote__byline-description {
+    padding-left: 21px;
     padding-left: 0;
   }
 }
@@ -8704,6 +8704,11 @@ a.vf-card:hover {
     left: 27%;
     height: 666px;
   }
+}
+
+.vf-large-quote__illustration-cutout img {
+  width: auto;
+  max-width: none;
 }
 
 .vf-large-quote__illustration-bg {
@@ -8869,6 +8874,11 @@ a.vf-card:hover {
   .vf-two-column-boxes:after {
     display: none;
   }
+}
+
+.vf-container .vf-two-column-boxes {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .vf-two-column-boxes__headline {
