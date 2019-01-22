@@ -118,6 +118,12 @@ $cutout-height-desktop: 85px;
     left: 27%;
     height: 666px; //$component-height-desktop + $cutout-height-desktop;
   }
+
+  // Reset normal img default sizings set from common libraries
+  img {
+    width: auto;
+    max-width: none;
+  }
 }
 .vf-large-quote__illustration-bg {
   position: absolute;

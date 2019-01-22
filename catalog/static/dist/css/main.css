@@ -8706,6 +8706,11 @@ a.vf-card:hover {
   }
 }
 
+.vf-large-quote__illustration-cutout img {
+  width: auto;
+  max-width: none;
+}
+
 .vf-large-quote__illustration-bg {
   position: absolute;
   height: 330px;
