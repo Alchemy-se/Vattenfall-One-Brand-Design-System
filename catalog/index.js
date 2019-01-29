@@ -56,6 +56,10 @@ const pages = [
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => import("./components/button.md"))
+      }, {
+        path: "/css/list",
+        title: "- Lists",
+        content: pageLoader(() => import("./components/list.md"))
       }, 
       ...moleculesNavigation,
       ...organismsNavigation,
