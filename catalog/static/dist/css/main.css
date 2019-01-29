@@ -8546,6 +8546,7 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
+  height: 550px;
 }
 
 @media (max-width: 767.98px) {
@@ -9300,8 +9301,28 @@ a.vf-card:hover {
   border-bottom-left-radius: 0;
 }
 
+.vf-ul {
+  list-style-position: outside;
+  padding: 0 0 0 18px;
+}
+
+.vf-ul li {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 12px 0 12px 14px;
+}
+
 .news-outer-container {
-  margin-top: 300px;
+  margin-top: 50px;
+}
+
+@media (min-width: 576px) {
+  .news-outer-container {
+    margin-top: 300px;
+  }
 }
 
 .news-inner-container {

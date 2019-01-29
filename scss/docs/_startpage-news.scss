@@ -1,7 +1,7 @@
 .news-outer-container {
-  margin-top: 300px;
-
+  margin-top: 50px;
   @include media-breakpoint-up (sm) {
+    margin-top: 300px;
   }
 }
 .news-inner-container {
