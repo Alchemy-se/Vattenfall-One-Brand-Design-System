@@ -75,12 +75,12 @@ responsive: true
 ```
 
 
-
 ## Background Colors
 
-The following background colors are okay to use as background colors.
+The following background colors are okay to use as background colors. Use any of these helper classes.
 
-Light blue
-Pale green
-Pale yellow
-
+```
+.vf-bg--light-green
+.vf-bg--light-blue
+.vf-bg--light-grey
+```
