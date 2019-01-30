@@ -132,7 +132,7 @@ const responsiveSizes =  [
 
 ReactDOM.render(
   <Catalog 
-    title="Vattenfall Horizon Technical Documentation" 
+    title="Vattenfall Design System Technical Documentation" 
     useBrowserHistory 
     responsiveSizes={responsiveSizes}
     pages={pages} 

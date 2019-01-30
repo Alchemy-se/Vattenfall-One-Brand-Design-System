@@ -1,6 +1,6 @@
-**Welcome to the technical documentation for Vattenfall Horizon Design System.**
+**Welcome to the technical documentation for Vattenfall Design System.**
 
-The Horizon Design System provides front-end developers & engineers a collection of reusable HTML and CSS classes, as well ass SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+The Vattenfall Design System provides front-end developers & engineers a collection of reusable HTML and CSS classes, as well ass SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 # Installation
 
