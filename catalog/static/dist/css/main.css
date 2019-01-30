@@ -7840,6 +7840,17 @@ a.vf-card:hover {
   }
 }
 
+.vf-image-with-icon--dimmed:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .vf-image-with-icon__image {
   -o-object-fit: cover;
   object-fit: cover;
