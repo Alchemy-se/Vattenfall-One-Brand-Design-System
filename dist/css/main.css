@@ -8073,12 +8073,18 @@ a.vf-card:hover {
   -webkit-box-ordinal-group: 2 !important;
   -ms-flex-order: 1 !important;
   order: 1 !important;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .vf-media-block--reversed .vf-media-block__content {
+    padding-left: 44px;
+  }
 }
 
 @media (min-width: 1200px) {
   .vf-media-block--reversed .vf-media-block__content {
     padding-left: 110px;
-    padding-right: 0;
   }
 }
 
