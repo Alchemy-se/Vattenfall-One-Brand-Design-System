@@ -14,6 +14,10 @@ const nav = [
     title: "- Button Group",
     content: pageLoader(() => import("./button-group.md"))
   }, {
+    path: "/css/cookie-banner",
+    title: "- Cookie Banner",
+    content: pageLoader(() => import("./cookie-banner.md"))
+  }, {
     path: "/css/image-with-caption",
     title: "- Image with Caption",
     content: pageLoader(() => import("./image-with-caption.md"))
