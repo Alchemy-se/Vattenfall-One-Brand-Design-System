@@ -8021,7 +8021,6 @@ a.vf-card:hover {
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 0;
-  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -8033,6 +8032,7 @@ a.vf-card:hover {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
+    padding-right: 44px;
     padding-top: 88px;
   }
 }
