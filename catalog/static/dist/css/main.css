@@ -9327,6 +9327,35 @@ a.vf-card:hover {
   padding: 12px 0 12px 14px;
 }
 
+.vf-badge {
+  display: inline-block;
+  padding: 6px 4px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.04px;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  min-width: 24px;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 12px;
+  background: #F93B18;
+}
+
+a.vf-badge:hover, a.vf-badge:focus {
+  text-decoration: none;
+}
+
+.vf-badge:empty {
+  display: none;
+}
+
+.vf-btn .vf-badge {
+  position: relative;
+  top: -1px;
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
