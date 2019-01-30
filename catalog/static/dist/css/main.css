@@ -7844,7 +7844,7 @@ a.vf-card:hover {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
   width: 100%;
