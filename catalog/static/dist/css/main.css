@@ -9356,6 +9356,53 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: -1px;
 }
 
+.vf-cookie-banner {
+  background: #1E324F;
+  color: white;
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
+  position: relative;
+  text-align: left;
+  padding: 10px 20px 10px 30px;
+}
+
+@media (min-width: 576px) {
+  .vf-cookie-banner {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 576px) {
+  .vf-cookie-banner {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.vf-cookie-banner__close-btn {
+  position: absolute;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 300;
+  right: 5px;
+  font-size: 30px;
+}
+
+@media (min-width: 576px) {
+  .vf-cookie-banner__close-btn {
+    right: 15px;
+    font-size: 40px;
+  }
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
