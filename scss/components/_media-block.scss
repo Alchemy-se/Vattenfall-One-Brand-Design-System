@@ -52,11 +52,11 @@
   padding-bottom: 35px;
 
   padding-left: 0;
-  padding-right: 0;
 
   @include media-breakpoint-up(md) {
     @include make-col(6);
     order: -1;
+    padding-right: $spacing-md;
 
     padding-top: 88px;
   }
