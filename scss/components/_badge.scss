@@ -1,0 +1,37 @@
+// Base class
+//
+
+.vf-badge {
+  display: inline-block;
+  padding: 6px 4px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.04px;
+  color: white;
+
+  line-height: 1;
+  text-align: center;
+
+
+  min-width: 24px;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 12px;
+
+  background: $vattenfall-dark-red;
+
+  @at-root a#{&} {
+    @include hover-focus {
+      text-decoration: none;
+    }
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+.vf-btn .vf-badge {
+  position: relative;
+  top: -1px;
+}

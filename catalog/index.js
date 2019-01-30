@@ -60,6 +60,10 @@ const pages = [
         path: "/css/list",
         title: "- Lists",
         content: pageLoader(() => import("./components/list.md"))
+      }, {
+        path: "/css/badge",
+        title: "- Badge",
+        content: pageLoader(() => import("./components/badge.md"))
       }, 
       ...moleculesNavigation,
       ...organismsNavigation,
