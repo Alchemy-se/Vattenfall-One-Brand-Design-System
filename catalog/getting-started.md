@@ -38,10 +38,10 @@ Be sure to have your pages set up with the latest design and development standar
     <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css"">
     <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
 
-    <title>Vattenfall Horizon Boilerplate!</title>
+    <title>Vattenfall Design System Boilerplate!</title>
   </head>
   <body>
-    <h1>I'm using Vattenfall Horizon!</h1>
+    <h1>I'm using Vattenfall Design System!</h1>
 
     <script src="node_modules/@vf-alchemy/vattenfall-design-system/dist/js/horizon.min.js"></script>
     <!-- Optional JavaScript -->
@@ -73,7 +73,7 @@ To add a component style to your build, simply import the component directly.
 Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 #### Namespacing
-Horizon Components are built to be included individually and not clobber global styles - all class attributes are prefixed by the vf-- moniker. 
+Vattenfall Design System Components are built to be included individually and not clobber global styles - all class attributes are prefixed by the vf-- moniker. 
 
 ## Important globals
 

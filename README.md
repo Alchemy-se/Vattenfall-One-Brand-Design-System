@@ -1,8 +1,8 @@
 # Vattenfall-One-Brand-Design-System
 
-A shared component library based on the Vattenfall Horizon Design System.
+A shared component library based on the Vattenfall Design System.
 
-This README is about how to work on the Vattenfall Horizon Design System, if you are looking for the technical documentation of how to use this in your own application, head to:
+This README is about how to work on the Vattenfall Design System, if you are looking for the technical documentation of how to use this in your own application, head to:
 http://vattenfall.alchemystudio.se/
 
 ## Quick start
