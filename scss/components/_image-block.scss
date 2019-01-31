@@ -1,0 +1,65 @@
+.vf-image-block {
+  @include make-container-bleed();
+}
+
+.vf-image-block__body {
+  @include make-container();
+  @include make-container-max-widths();
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 90px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
+
+.vf-image-block__media {
+  @include make-col-ready();
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(4);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.vf-image-block__content {
+  @include make-col-ready();
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  padding-left: 0;
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(8);
+    order: -1;
+    padding-right: $spacing-md;
+  }
+}
+
+.vf-image-block__title {
+  @include typo-secondary();
+}
+.vf-image-block__text, .vf-image-block__text p {
+  margin-bottom: 1rem;
+}
+
+// Styles for reversed mode (image on the left on desktop)
+.vf-image-block--reversed {
+
+  .vf-image-block__content {
+    order: 1 !important;
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 110px;
+      padding-right: 0;
+    }  
+  }
+
+}
