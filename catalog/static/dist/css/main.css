@@ -9409,6 +9409,150 @@ a.vf-badge:hover, a.vf-badge:focus {
   }
 }
 
+.vf-image-block {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1680px;
+}
+
+.vf-image-block__body {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-image-block__body {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vf-image-block__body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .vf-image-block__body {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-image-block__body {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-image-block__body {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vf-image-block__body {
+    max-width: 1160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vf-image-block__body {
+    margin-top: 0;
+  }
+}
+
+.vf-image-block__media {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 576px) {
+  .vf-image-block__media {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.vf-image-block__media img {
+  width: 100%;
+}
+
+.vf-image-block__content {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 0;
+}
+
+@media (min-width: 576px) {
+  .vf-image-block__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    padding-right: 44px;
+  }
+}
+
+.vf-image-block__title {
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 40px;
+}
+
+@media (min-width: 576px) {
+  .vf-image-block__title {
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 72px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.vf-image-block__text, .vf-image-block__text p {
+  margin-bottom: 1rem;
+}
+
+.vf-image-block--reversed .vf-image-block__content {
+  -webkit-box-ordinal-group: 2 !important;
+  -ms-flex-order: 1 !important;
+  order: 1 !important;
+}
+
+@media (min-width: 1200px) {
+  .vf-image-block--reversed .vf-image-block__content {
+    padding-left: 110px;
+    padding-right: 0;
+  }
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
