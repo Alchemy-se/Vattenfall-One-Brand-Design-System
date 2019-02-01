@@ -98,6 +98,10 @@
     padding-bottom: 61%;
 
     @include media-breakpoint-up(lg) {
+      z-index: 10;
+    }
+
+    @include media-breakpoint-up(lg) {
       padding-bottom: 45%;
       float: left; 
       width: 50%;
@@ -110,13 +114,12 @@
       @include media-breakpoint-up(md) {
         width: 94%;
       }
-
+      
       @include media-breakpoint-up(lg) {
         width: 120%; 
         position: absolute;
         left: -10%;
         top: -15%;
-        z-index: 3;
       }
     }
   }
