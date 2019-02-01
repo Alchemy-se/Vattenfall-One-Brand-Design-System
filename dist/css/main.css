@@ -8979,6 +8979,12 @@ a.vf-card:hover {
 
 @media (min-width: 992px) {
   .vf-two-column-boxes__image {
+    z-index: 10;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-two-column-boxes__image {
     padding-bottom: 45%;
     float: left;
     width: 50%;
@@ -9002,7 +9008,6 @@ a.vf-card:hover {
     position: absolute;
     left: -10%;
     top: -15%;
-    z-index: 3;
   }
 }
 
