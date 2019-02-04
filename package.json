@@ -8,7 +8,7 @@
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss dist/css/main.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/reboot.scss dist/css/reboot.css",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss dist/css/main.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/reboot.scss dist/css/reboot.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/documentation.scss dist/css/documentation.css",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/main.min.css dist/css/main.css && cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/reboot.min.css dist/css/reboot.css",
     "css-copy": "shx mkdir -p catalog/static/dist/ && shx cp -r dist/css/ catalog/static/dist/ && shx cp -r dist/fonts catalog/static/dist/",
