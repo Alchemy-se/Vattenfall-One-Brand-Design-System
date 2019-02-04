@@ -50,7 +50,10 @@ Start a docker container with the previously built image, binding port 4040
 docker run -p 4040:80 vattenfallds
 ```
 
-Now you should see the design system documentation on `http://localhost:4040`
+Now you should be able to login with the following details: 
+- user: `vf-test` pass: `v4tt3nf4ll`
+
+ and see the design system documentation on `http://localhost:4040`
 
 
 ### Connecting to Google Container Cloud 
