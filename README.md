@@ -29,6 +29,13 @@ vattenfall-design-system/
 
 We provide compiled CSS (`main.*`), as well as compiled and minified CSS (`main.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`.*.map`) are available for use with certain browsers' developer tools.
 
+## Documentation
+
+The documentation is powered by a system called Catalog, which is a React app that renders the documentation. 
+The source for the documentation is in the folder `./catalog`.
+
+The documentation for Catalog is available at https://docs.catalog.style/configuration/pages
+
 ## Deployment
 
 You can run this repo as a docker image. 
