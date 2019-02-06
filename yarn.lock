@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alchemy-se/catalog@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@alchemy-se/catalog/-/catalog-3.7.0.tgz#538f504b159248aa0ebbd582415a484f51d2a970"
-  integrity sha512-/WCJfc8O4g/RDjgxfjUuT2KGdiFDEqeMRgvpQI71W3+IRKsU5tQeaXsyNCNOM/zhBeHg4pxrDZ9FdjM6ii8oEA==
+"@alchemy-se/catalog@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alchemy-se/catalog/-/catalog-4.1.0.tgz#062451d138eaff2219d33fc31685236bda31b332"
+  integrity sha512-FxpmAArfTpgI5uKVFmn8uS5P2M6Iy85Qrf4cH0etP0uXvbvB/TU2z2e7c/W3/ROaT2kk+Rn3k49KOr3DBdGUUQ==
   dependencies:
     args "^3.0.8"
     autoprefixer "^7.1.3"
@@ -2047,6 +2047,58 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
+
+catalog@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/catalog/-/catalog-3.6.0.tgz#2aabbbf1f0c05b35a6fe9a7c79612d2b54351317"
+  integrity sha512-mNGGzcbhVA9a0U9WHMzAdPz0+MA4ADeVgbrCS+BzR4PatKAm37UPzBMSgxN1BBJAtRNCzGju/SBfXYQVe02MJQ==
+  dependencies:
+    args "^3.0.8"
+    autoprefixer "^7.1.3"
+    babel-core "^6.26.2"
+    babel-loader "^7.1.2"
+    babel-plugin-emotion "^9.1.2"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-transform-object-rest-spread "^6.26.0"
+    babel-polyfill "^6.26.0"
+    babel-preset-flow "^6.23.0"
+    babel-preset-react "^6.24.1"
+    babel-preset-react-app "^3.0.2"
+    babel-runtime "^6.26.0"
+    babel-standalone "^6.26.0"
+    chalk "^2.1.0"
+    create-emotion "^9.2.6"
+    create-react-class "^15.6.0"
+    css-loader "^0.28.7"
+    d3-color "^1.1.0"
+    detect-port "^1.2.1"
+    extract-text-webpack-plugin "^3.0.0"
+    file-loader "^0.11.2"
+    friendly-errors-webpack-plugin "^1.6.1"
+    github-slugger "^1.1.3"
+    history "^3.2.1"
+    html-webpack-plugin "^2.30.1"
+    js-yaml "^3.9.1"
+    marked "^0.4.0"
+    postcss-loader "^2.0.6"
+    prismjs "^1.14.0"
+    prop-types "^15.6.0"
+    raf "^3.3.2"
+    ramda "^0.25.0"
+    raw-loader "^0.5.1"
+    react-dev-utils "^4.0.1"
+    react-document-title "^2.0.3"
+    react-router "^3.2.0"
+    react-router-scroll "^0.4.2"
+    sander "^0.6.0"
+    srcset "^1.0.0"
+    strip-indent "^2.0.0"
+    style-loader "^0.18.2"
+    unfetch "^3.0.0"
+    url-loader "^0.5.9"
+    webpack "^3.5.5"
+    webpack-dev-server "^2.9.1"
+    webpack-manifest-plugin "^1.3.1"
 
 center-align@^0.1.1:
   version "0.1.3"
