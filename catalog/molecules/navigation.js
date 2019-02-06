@@ -1,4 +1,4 @@
-import { pageLoader } from "catalog";
+import { pageLoader } from "@alchemy-se/catalog";
 
 const nav = [
   {

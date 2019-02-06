@@ -40,8 +40,8 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "@alchemy-se/catalog": "^3.7.0",
     "babel-loader": "7",
-    "catalog": "^3.5.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
