@@ -13,12 +13,12 @@ const styles = [
 const pages = [
   {
     path: "/",
-    title: "Welcome",
+    title: "Digital Design System",
     content: pageLoader(() => import("./WELCOME.md"))
   },
   layoutsNavigation,
   {
-    title: 'CSS Library',
+    title: 'Getting Started',
     pages: [
       {
         path: "/getting-started",
@@ -80,10 +80,20 @@ const pages = [
     ]
   },
   {
-    path: "/contribute",
-    title: "Contributing",
-    content: pageLoader(() => import("./contribute.md"))
-  }
+    path: "/components-intro",
+    title: "Atoms",
+    content: pageLoader(() => import("./components/intro.md"))
+  },
+  {
+    title: "Utilities",
+    pages: [
+      {
+        path: "/utilities/favicon",
+        title: "Favicon",
+        content: pageLoader(() => import("./utilities/favicon.md"))
+      }
+    ]
+  },
 ];
 
 const theme = {
@@ -98,8 +108,8 @@ const theme = {
 
   // Used in PageHeader
   pageHeadingBackground: "#ffffff",
-  pageHeadingTextColor: "#222222",
-
+  pageHeadingTextColor: "black",
+  
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
   pageHeadingHeight: 140,
@@ -112,7 +122,7 @@ const theme = {
   // Typography: headings.
   brandColor: "#003B5C",
 
-  sidebarColor: "#ffffff",
+  sidebarColor: "#EDF1F6",
   sidebarColorActive: "#D1312E",
   sidebarColorText: "#2071B5",
   sidebarColorTextActive: "#85254B",
@@ -131,8 +141,7 @@ const responsiveSizes =  [
 ]
 
 ReactDOM.render(
-  <Catalog 
-    title="Vattenfall Design System Technical Documentation" 
+  <Catalog  
     useBrowserHistory 
     responsiveSizes={responsiveSizes}
     pages={pages} 

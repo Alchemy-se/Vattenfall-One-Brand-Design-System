@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "babel-loader": "7",
-    "catalog": "^3.5.5",
+    "catalog": "^3.6.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
