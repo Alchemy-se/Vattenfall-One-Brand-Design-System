@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Catalog, pageLoader } from "catalog";
+import { Catalog, pageLoader } from "@alchemy-se/catalog";
 import moleculesNavigation from './molecules/navigation'
 import organismsNavigation from './organisms/navigation'
 import layoutsNavigation from './layouts/navigation'
