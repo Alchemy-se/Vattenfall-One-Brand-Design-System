@@ -8733,6 +8733,7 @@ a.vf-card:hover {
   position: absolute;
   height: 330px;
   left: 155px;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
