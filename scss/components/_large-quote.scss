@@ -132,7 +132,8 @@ $cutout-height-desktop: 85px;
 
   height: $component-height-mobile;
   left: 155px;
-
+  width: 100%;
+  
   @include media-breakpoint-up(sm) {
     height: $component-height-desktop;
     width: 68%;
