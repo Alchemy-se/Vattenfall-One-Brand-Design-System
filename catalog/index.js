@@ -115,7 +115,7 @@ const theme = {
   // Typography: headings.
   brandColor: "#003B5C",
 
-  sidebarColor: "#ffffff",
+  sidebarColor: "#EDF1F6",
   sidebarColorActive: "#D1312E",
   sidebarColorText: "#2071B5",
   sidebarColorTextActive: "#85254B",
@@ -135,10 +135,11 @@ const responsiveSizes =  [
 
 ReactDOM.render(
   <Catalog 
-    title="VATTENFALL" 
+    title="Vattenfall Design System" 
     useBrowserHistory 
     responsiveSizes={responsiveSizes}
     pages={pages} 
+    logoSrc={'/img/docs/logo.svg'}
     theme={theme} 
     styles={styles} />,
   document.getElementById("catalog")
