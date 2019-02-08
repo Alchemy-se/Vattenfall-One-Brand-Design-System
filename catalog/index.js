@@ -93,7 +93,7 @@ const theme = {
   background: "#ffffff",
   textColor: "#222222",
   codeColor: "#00263E",
-  linkColor: "#FF5555",
+  linkColor: "red",
 
   // NavigationBar background color, but also sometimes used as a foreground
   // or border color.
@@ -135,7 +135,7 @@ const responsiveSizes =  [
 
 ReactDOM.render(
   <Catalog 
-    title="Vattenfall Design System Technical Documentation" 
+    title="VATTENFALL" 
     useBrowserHistory 
     responsiveSizes={responsiveSizes}
     pages={pages} 
