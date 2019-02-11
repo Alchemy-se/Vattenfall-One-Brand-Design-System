@@ -5,6 +5,8 @@ The Blockquote component is used for displaying shorter textual content, like qu
 This example uses a quote, with an author and his title, along with an image.
 
 ```html
+showSource: true
+---
 <div class="vf-blockquote">
   <img class="vf-blockquote__illustration" src="/img/example-blockquote.png" />
   <blockquote class="vf-blockquote__quote">
@@ -23,6 +25,7 @@ This example uses a quote, with an author and his title, along with an image.
 The HTML Specimen supports the same responsive options as the React Specimen. To read more about the options and configuration, visit the [React Specimen](/specimens/react#responsive-display) page.
 
 ```html
+showSource: true
 responsive: true
 ---
 <div class="vf-container">

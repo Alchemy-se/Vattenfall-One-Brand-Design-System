@@ -4,6 +4,7 @@ The Hero component is used for large areas in top of pages to convey a message o
 
 ```html
 responsive: true
+showSource: true
 ---
 <section 
   class="vf-hero"

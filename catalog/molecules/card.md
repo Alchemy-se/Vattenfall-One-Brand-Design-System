@@ -2,6 +2,7 @@ The card is mostly used for presenting shorter, article like, content segments. 
 
 ```html
 responsive: true
+showSource: true
 ---
 <article class="vf-card reveal" style="max-width: 400px">
   <img src="/img/example-startpage/news1-heating-hamburg.png" class="vf-card__img-top" alt="Example image" />
@@ -22,6 +23,7 @@ Simply change the `<article>` tag to a `<a>` tag to make the whole article a lin
 
 ```html
 responsive: true
+showSource: true
 ---
 <a class="vf-card reveal" style="max-width: 400px" href="#">
   <img src="/img/example-startpage/news1-heating-hamburg.png" class="vf-card__img-top" alt="Example image" />

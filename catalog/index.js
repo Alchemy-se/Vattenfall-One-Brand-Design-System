@@ -5,7 +5,7 @@ import moleculesNavigation from './molecules/navigation'
 import organismsNavigation from './organisms/navigation'
 import layoutsNavigation from './layouts/navigation'
 
-import Welcome from './WELCOME.md';
+import Welcome from './WELCOME';
 
 const styles = [
   '/dist/css/reboot.css',
@@ -16,8 +16,18 @@ const styles = [
 const pages = [
   {
     path: "/",
-    title: "Welcome",
-    content: Welcome //, pageLoader(() => import("./WELCOME.md"))
+    title: "Digital Design System",
+    content: Welcome 
+  },
+  {
+    title: 'Design',
+    pages: [
+      { 
+        path: "/design",
+        title: "Design",
+        content: pageLoader(() => import("./getting-started.md"))
+      }
+    ]
   },
   layoutsNavigation,
   {
@@ -93,14 +103,14 @@ const theme = {
   background: "#ffffff",
   textColor: "#222222",
   codeColor: "#00263E",
-  linkColor: "red",
+  linkColor: "#1964A3",
 
   // NavigationBar background color, but also sometimes used as a foreground
   // or border color.
   lightColor: "#D6D6D6",
 
   // Used in PageHeader
-  pageHeadingBackground: "#ffffff",
+  pageHeadingBackground: "transparent",
   pageHeadingTextColor: "#222222",
 
   // Used in Menu and PageHeader to make sure the top parts have
@@ -116,9 +126,9 @@ const theme = {
   brandColor: "#003B5C",
 
   sidebarColor: "#EDF1F6",
-  sidebarColorActive: "#D1312E",
-  sidebarColorText: "#2071B5",
-  sidebarColorTextActive: "#85254B",
+  sidebarColorActive: "#222222",
+  sidebarColorText: "#1964A3",
+  sidebarColorTextActive: "#1964A3",
   sidebarColorLine: "#EBEBEB",
   sidebarColorHeading: "#2071B5",
 
@@ -133,6 +143,33 @@ const responsiveSizes =  [
   {name: 'Desktop', width: 1920, height: 1080},
 ]
 
+const menuFooterLinkStyle = {
+  color: '#1964A3',
+  fontSize: '16px',
+  fontWeight: 'normal',
+  display: 'block',
+  letterSpacing: 0,
+  lineHeight: '32px',
+  padding: '5px 0',
+  textDecoration: 'none',
+}
+
+const menuFooterLinkIconStyle = {
+  verticalAlign: 'baseline',
+  marginRight: '5px'
+}
+
+const menuFooter = () => (
+  <div style={{ padding: '40px 42px', fontFamily: 'Vattenfall Hall' }}>
+    <a href="#" style={menuFooterLinkStyle}>
+      <img style={menuFooterLinkIconStyle} src="/img/docs/abstract.svg" /> Abstract
+    </a>
+    <a href="#" style={menuFooterLinkStyle}>
+      <img style={menuFooterLinkIconStyle} src="/img/docs/github.svg" /> Github
+    </a>
+  </div>
+)
+
 ReactDOM.render(
   <Catalog 
     title="Vattenfall Design System" 
@@ -141,6 +178,8 @@ ReactDOM.render(
     pages={pages} 
     logoSrc={'/img/docs/logo.svg'}
     theme={theme} 
-    styles={styles} />,
+    menuFooter={menuFooter}
+    styles={[]}
+    globalStyles={styles} />,
   document.getElementById("catalog")
 );

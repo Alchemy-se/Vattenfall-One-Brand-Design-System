@@ -2,10 +2,6 @@ import { pageLoader } from "@alchemy-se/catalog";
 
 const nav = [
   {
-    path: "/css/molecules",
-    title: "Molecules",
-    content: pageLoader(() => import("./index.md"))
-  }, {
     path: "/css/card",
     title: "- Card",
     content: pageLoader(() => import("./card.md"))

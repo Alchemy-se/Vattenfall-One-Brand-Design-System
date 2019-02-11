@@ -3,6 +3,8 @@ Lists for displaying data.
 ### Standard lists
 
 ```html
+showSource: true
+---
 <ul class="vf-ul">
   <li>Snoopy the Cat</li>
   <li>Garfi the Angry Cat</li>
