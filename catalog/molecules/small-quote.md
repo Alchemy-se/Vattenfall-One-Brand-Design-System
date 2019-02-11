@@ -3,6 +3,7 @@ Quote component for shorter amounts of text, if you're looking for a more impact
 ## Without byline
 
 ```html
+showSource: true
 responsive: true
 ---
 <blockquote class="vf-small-quote">
@@ -13,6 +14,7 @@ responsive: true
 ## With byline
 
 ```html
+showSource: true
 responsive: true
 ---
   <blockquote class="vf-small-quote">

@@ -47,21 +47,21 @@ For example, here are two grid layouts that apply to every device and viewport, 
 <div class="vf-container">
   <div class="vf-row">
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">1 of 2</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 2</div>
     </div>
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">2 of 2</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">2 of 2</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 3</div>
     </div>
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">2 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">2 of 3</div>
     </div>
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">3 of 3</div>
     </div>
   </div>
 </div>
@@ -72,11 +72,11 @@ Equal-width columns can be broken into multiple lines, but there was a [Safari f
 ```html
 <div class="vf-container">
   <div class="vf-row">
-    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
-    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
+    <div class="vf-col"><div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Column</div></div>
+    <div class="vf-col"><div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Column</div></div>
     <div class="w-100"></div>
-    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
-    <div class="vf-col"><div style="background: rgba(255,0,0,0.3)">Column</div></div>
+    <div class="vf-col"><div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Column</div></div>
+    <div class="vf-col"><div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Column</div></div>
   </div>
 </div>
 ```
@@ -89,24 +89,24 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
 <div class="vf-container">
   <div class="vf-row">
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 3</div>
     </div>
     <div class="vf-col-6">
-      <div style="background: rgba(255,0,0,0.3)">2 of 3 (wider)</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">2 of 3 (wider)</div>
     </div>
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">3 of 3</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 3</div>
     </div>
     <div class="vf-col-5">
-      <div style="background: rgba(255,0,0,0.3)">2 of 3 (wider)</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">2 of 3 (wider)</div>
     </div>
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">3 of 3</div>
     </div>
   </div>
 </div>
@@ -120,24 +120,24 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
 <div class="vf-container">
   <div class="row justify-content-md-center">
     <div class="vf-col vf-col-lg-2">
-      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 3</div>
     </div>
     <div class="vf-col-md-auto">
-      <div style="background: rgba(255,0,0,0.3)">Variable width content</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Variable width content</div>
     </div>
     <div class="vf-col vf-col-lg-2">
-      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">3 of 3</div>
     </div>
   </div>
   <div class="vf-row">
     <div class="vf-col">
-      <div style="background: rgba(255,0,0,0.3)">1 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">1 of 3</div>
     </div>
     <div class="vf-col-md-auto">
-      <div style="background: rgba(255,0,0,0.3)">Variable width content</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Variable width content</div>
     </div>
     <div class="vf-col vf-col-lg-2">
-      <div style="background: rgba(255,0,0,0.3)">3 of 3</div>
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">3 of 3</div>
     </div>
   </div>
 </div>
@@ -150,17 +150,17 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
 ```html
 <div class="vf-row">
   <div class="vf-col">
-    <div style="background: rgba(255,0,0,0.3)">col</div>
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
   </div>
   <div class="vf-col">
-    <div style="background: rgba(255,0,0,0.3)">col</div>
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
   </div>
   <div class="w-100"></div>
   <div class="vf-col">
-    <div style="background: rgba(255,0,0,0.3)">col</div>
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
   </div>
   <div class="vf-col">
-    <div style="background: rgba(255,0,0,0.3)">col</div>
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
   </div>
 </div>
 ```
@@ -175,14 +175,26 @@ For grids that are the same from the smallest of devices to the largest, use the
 
 ```html
 <div class="vf-row">
-  <div class="vf-col">col</div>
-  <div class="vf-col">col</div>
-  <div class="vf-col">col</div>
-  <div class="vf-col">col</div>
+  <div class="vf-col">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
+  </div>
+  <div class="vf-col">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
+  </div>
+  <div class="vf-col">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
+  </div>
+  <div class="vf-col">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col</div>
+  </div>
 </div>
 <div class="vf-row">
-  <div class="vf-col-8">col-8</div>
-  <div class="vf-col-4">col-4</div>
+  <div class="vf-col-8">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-8</div>
+  </div>
+  <div class="vf-col-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-4</div>
+  </div>
 </div>
 ```
 
@@ -192,13 +204,23 @@ Using a single set of `.vf-col-sm-*` classes, you can create a basic grid system
 
 ```html
 <div class="vf-row">
-  <div class="vf-col-sm-8">col-sm-8</div>
-  <div class="vf-col-sm-4">col-sm-4</div>
+  <div class="vf-col-sm-8">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-sm-8</div>
+  </div>
+  <div class="vf-col-sm-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-sm-4</div>
+  </div>
 </div>
 <div class="vf-row">
-  <div class="vf-col-sm">col-sm</div>
-  <div class="vf-col-sm">col-sm</div>
-  <div class="vf-col-sm">col-sm</div>
+  <div class="vf-col-sm">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-sm</div>
+  </div>
+  <div class="vf-col-sm">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-sm</div>
+  </div>
+  <div class="vf-col-sm">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">col-sm</div>
+  </div>
 </div>
 ```
 
@@ -209,21 +231,35 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
 ```html
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="vf-row">
-  <div class="vf-col-12 vf-col-md-8">.vf-col-12 .vf-col-md-8</div>
-  <div class="vf-col-6 vf-col-md-4">.vf-col-6 .vf-col-md-4</div>
+  <div class="vf-col-12 vf-col-md-8">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-12 .vf-col-md-8</div>
+  </div>
+  <div class="vf-col-6 vf-col-md-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6 .vf-col-md-4</div>
+  </div>
 </div>
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="vf-row">
-  <div class="vf-col-6 vf-col-md-4">.vf-col-6 .vf-col-md-4</div>
-  <div class="vf-col-6 vf-col-md-4">.vf-col-6 .vf-col-md-4</div>
-  <div class="vf-col-6 vf-col-md-4">.vf-col-6 .vf-col-md-4</div>
+  <div class="vf-col-6 vf-col-md-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6 .vf-col-md-4</div>
+  </div>
+  <div class="vf-col-6 vf-col-md-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6 .vf-col-md-4</div>
+  </div>
+  <div class="vf-col-6 vf-col-md-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6 .vf-col-md-4</div>
+  </div>
 </div>
 
 <!-- Columns are always 50% wide, on mobile and desktop -->
 <div class="vf-row">
-  <div class="vf-col-6">.vf-col-6</div>
-  <div class="vf-col-6">.vf-col-6</div>
+  <div class="vf-col-6">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6</div>
+  </div>
+  <div class="vf-col-6">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6</div>
+  </div>
 </div>
 ```
 
@@ -235,8 +271,12 @@ Here's an example of customizing the VF Design System grid at the large (`lg`) b
 
 ```html
 <div class="row mx-lg-n5">
-  <div class="vf-col py-3 px-lg-5 border bg-light">Custom column padding</div>
-  <div class="vf-col py-3 px-lg-5 border bg-light">Custom column padding</div>
+  <div class="vf-col py-3 px-lg-5 border bg-light">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Custom column padding</div>
+  </div>
+  <div class="vf-col py-3 px-lg-5 border bg-light">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">Custom column padding</div>
+  </div>
 </div>
 ```
 ## Alignment
@@ -249,35 +289,35 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 <div class="vf-container">
   <div class="row align-items-start">
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
   </div>
   <div class="row align-items-center">
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
   </div>
   <div class="row align-items-end">
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
   </div>
 </div>
@@ -287,13 +327,13 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 <div class="vf-container">
   <div class="vf-row">
     <div class="vf-col align-self-start">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col align-self-center">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
     <div class="vf-col align-self-end">
-      One of three columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of three columns</div>
     </div>
   </div>
 </div>
@@ -305,42 +345,42 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 <div class="vf-container">
   <div class="row justify-content-start">
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
   </div>
   <div class="row justify-content-end">
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
   </div>
   <div class="row justify-content-around">
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
   </div>
   <div class="row justify-content-between">
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
     <div class="vf-col-4">
-      One of two columns
+      <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">One of two columns</div>
     </div>
   </div>
 </div>
@@ -371,8 +411,12 @@ In practice, here's how it looks. Note you can continue to use this with all oth
 
 ```html
 <div class="row no-gutters">
-  <div class="vf-col-12 vf-col-sm-6 vf-col-md-8">.vf-col-12 .vf-col-sm-6 .vf-col-md-8</div>
-  <div class="vf-col-6 vf-col-md-4">.vf-col-6 .vf-col-md-4</div>
+  <div class="vf-col-12 vf-col-sm-6 vf-col-md-8">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-12 .vf-col-sm-6 .vf-col-md-8</div>
+  </div>
+  <div class="vf-col-6 vf-col-md-4">
+    <div style="border: 2px rgba(255,0,0,0.3) solid; padding: 10px;">.vf-col-6 .vf-col-md-4</div>
+  </div>
 </div>
 ```
 
