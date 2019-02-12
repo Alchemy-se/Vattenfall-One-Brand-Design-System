@@ -3,4 +3,11 @@ p {
   letter-spacing: -0.05px;
   line-height: 28px;
 }
+
+#catalog h2 {
+  color: #222222;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
 /*# sourceMappingURL=documentation.css.map */

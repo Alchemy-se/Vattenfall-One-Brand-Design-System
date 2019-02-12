@@ -40,10 +40,6 @@ const pages = [
     title: 'Components',
     pages: [
       {
-        path: "/getting-started",
-        title: "Getting started",
-        content: pageLoader(() => import("./getting-started.md"))
-      }, {
         path: "/grid",
         title: "Grid",
         content: pageLoader(() => import("./grid.md"))
@@ -168,10 +164,10 @@ const menuFooterLinkIconStyle = {
 
 const menuFooter = () => (
   <div style={{ padding: '40px 42px', fontFamily: 'Vattenfall Hall' }}>
-    <a href="#" style={menuFooterLinkStyle}>
+    <a href="https://app.goabstract.com/organizations/2776932d-ce7d-4fc3-8c46-0da875d726d3/projects" style={menuFooterLinkStyle}>
       <img style={menuFooterLinkIconStyle} src="/img/docs/abstract.svg" /> Abstract
     </a>
-    <a href="#" style={menuFooterLinkStyle}>
+    <a href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" style={menuFooterLinkStyle}>
       <img style={menuFooterLinkIconStyle} src="/img/docs/github.svg" /> Github
     </a>
   </div>
