@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alchemy-se/catalog@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@alchemy-se/catalog/-/catalog-4.3.0.tgz#f6054558071da8b67a2fbfdb8db15555f1e44582"
-  integrity sha512-t2cDPTbxNVb8t50eVc+yRrmvaZ85KhtrfHaMaPr2UnOSF4Ps/5/OMCSd6ZhUb8iqvW+7yLPwc0rXeYz/oXqATw==
+"@alchemy-se/catalog@^4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@alchemy-se/catalog/-/catalog-4.4.3.tgz#3d85af8060667da7068f76ab1c830102bc85d875"
+  integrity sha512-fN+4vyXVxYVarf6xxMM/79ygUeVYUkhj8HsOpvqDah7OCpx325k3fVnF01wzXFQwg8LZxPO0yLckKBAtAVDazw==
   dependencies:
     args "^3.0.8"
     autoprefixer "^7.1.3"

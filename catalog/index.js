@@ -84,9 +84,9 @@ const pages = [
       ...organismsNavigation,
       
       {
-        path: "./components/utilities",
+        path: "/components/utilities",
         title: "Utilities",
-        content: pageLoader(() => import("./utilities/favicon.md"))
+        content: pageLoader(() => import("./utilities/utilities.md"))
       },
        {
         path: "/utilities/favicon",
