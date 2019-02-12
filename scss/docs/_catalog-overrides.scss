@@ -6,9 +6,15 @@ p {
   line-height: 28px;
 }
 
-#catalog h2 {
-  color: #222222;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: 32px;
+#catalog {
+  h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+  }
+
+  h2 {
+    color: #222222;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
 }
