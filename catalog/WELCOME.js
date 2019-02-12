@@ -5,14 +5,27 @@ const Welcome = () => (
     <link href="/dist/css/reboot.css" rel="stylesheet" type="text/css" />
     <link href="/dist/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/dist/css/documentation.css" rel="stylesheet" type="text/css" />
-    <p>
-      Welcome to the technical documentation for Vattenfall Design System.
-    </p>
 
-    <p>
-      The Vattenfall Design System provides front-end developers & engineers a collection of reusable HTML and CSS classes, as well ass SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
-    </p>
-  
+    <div style={{
+      height: '70vh',
+      maxWidth: '750px',
+      background: 'transparent'
+    }}>
+      <p style={{ fontSize: '18px' }}>
+        Welcome to the technical documentation for Vattenfall Design System.
+      </p>
+
+      <p style={{ fontSize: '18px' }} className="">
+        Vattenfall Digital Design System unites products around a common visual language. 
+        It is a constantly evolving library accelerates design process, and builds bridges between teams working in concert to bring unified products to life within set brand. We focus on creating Vattenfall’s Digital Design System that helps the team improve product quality while reducing design debt and amplifying efficiency.
+      </p>
+
+      <div className="vf-pb-3">
+        <a href="#" className="vf-btn vf-btn--primary vf-btn--lg">Getting started</a>
+        <a href="#" className="vf-btn vf-btn--secondary vf-btn--lg">Resources</a>
+      </div>
+    </div> 
+
     <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%' }} />
 
     <h4>Designers</h4>

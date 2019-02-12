@@ -20,13 +20,18 @@ const pages = [
     content: Welcome 
   },
   {
-    title: 'Design',
+    title: 'Get started',
     pages: [
       { 
         path: "/design",
-        title: "Design",
+        title: "Designers",
+        content: pageLoader(() => import("./designers/getting-started-designers.md"))
+      },
+      {
+        title: 'Developers',
+        path: "/getting-started",
         content: pageLoader(() => import("./getting-started.md"))
-      }
+      },
     ]
   },
   layoutsNavigation,
