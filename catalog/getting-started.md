@@ -6,8 +6,7 @@ To start using this design system, add the JS and CSS files to your site by foll
 
  - Install with [npm](https://www.npmjs.com/): `npm install @alchemy-vf/vattenfall-design-system`
  - Install with [yarn](https://yarnpkg.com/): `yarn add @alchemy-vf/vattenfall-design-system`
-Coming soon:
-- ~~- [Download the latest release.](unpkg.com/react@16.0.0/umd/react.production.min.js)~~
+ - [Download the latest release.](https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System/releases)
 
 ### CSS
 
@@ -20,8 +19,11 @@ Copy-paste the stylesheets `<link>` into your `<head>` before all other styleshe
 
 ### JS
 
-There is yet no functionality that uses javascript, but will be added.
+Add this `<script>` tag to your `<head>`.
 
+```
+<script src="node_modules/@vf-alchemy/vattenfall-design-system/dist/js/horizon.min.js"></script>
+```
 
 ## Starter template
 
