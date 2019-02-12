@@ -6,6 +6,7 @@ import organismsNavigation from './organisms/navigation'
 import layoutsNavigation from './layouts/navigation'
 
 import Welcome from './WELCOME';
+import Designers from "./designers/getting-started-designers";
 
 const styles = [
   '/dist/css/reboot.css',
@@ -25,7 +26,7 @@ const pages = [
       { 
         path: "/design",
         title: "Designers",
-        content: pageLoader(() => import("./designers/getting-started-designers.md"))
+        content: Designers
       },
       {
         title: 'Developers',
@@ -36,7 +37,7 @@ const pages = [
   },
   layoutsNavigation,
   {
-    title: 'CSS Library',
+    title: 'Components',
     pages: [
       {
         path: "/getting-started",
@@ -82,19 +83,20 @@ const pages = [
         path: "/css/badge",
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
-      }, 
+      },  
       ...moleculesNavigation,
       ...organismsNavigation,
-    ]
-  },
-  {
-    title: "Utilities",
-    pages: [
+      
       {
-        path: "/utilities/favicon",
-        title: "Favicon",
+        path: "./components/utilities",
+        title: "Utilities",
         content: pageLoader(() => import("./utilities/favicon.md"))
-      }
+      },
+       {
+        path: "/utilities/favicon",
+        title: "- Favicon",
+        content: pageLoader(() => import("./utilities/favicon.md"))
+      },
     ]
   },
   {

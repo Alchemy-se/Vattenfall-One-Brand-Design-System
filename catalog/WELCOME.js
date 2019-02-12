@@ -8,7 +8,7 @@ const Welcome = () => (
 
     <div style={{
       height: '70vh',
-      maxWidth: '750px',
+      maxWidth: '50%',
       background: 'transparent'
     }}>
       <p style={{ fontSize: '18px' }}>
@@ -16,12 +16,11 @@ const Welcome = () => (
       </p>
 
       <p style={{ fontSize: '18px' }} className="">
-        Vattenfall Digital Design System unites products around a common visual language. 
-        It is a constantly evolving library accelerates design process, and builds bridges between teams working in concert to bring unified products to life within set brand. We focus on creating Vattenfall’s Digital Design System that helps the team improve product quality while reducing design debt and amplifying efficiency.
+      Vattenfall Design System unites products & services around a common visual language. It aims to reduce current Design Debt, accelerates the design process, and builds bridges between teams working in concert to bring unified products to life within set brand. Vattenfall Design System is created with aim to help the teams within Vattenfall to improve product quality, amplify production efficiency and enhance communication.
       </p>
 
       <div className="vf-pb-3">
-        <a href="#" className="vf-btn vf-btn--primary vf-btn--lg">Getting started</a>
+        <a href="#" style={{ marginRight: '20px'}} className="vf-btn vf-btn--primary vf-btn--lg">Getting started</a>
         <a href="#" className="vf-btn vf-btn--secondary vf-btn--lg">Resources</a>
       </div>
     </div> 
