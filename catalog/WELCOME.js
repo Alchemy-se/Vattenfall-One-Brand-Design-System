@@ -2,16 +2,12 @@ import React from "react";
 
 const Welcome = () => (
   <div style={{ margin: '0 30px 0 40px' }}>
-    <link href="/dist/css/reboot.css" rel="stylesheet" type="text/css" />
-    <link href="/dist/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="/dist/css/documentation.css" rel="stylesheet" type="text/css" />
-
     <div style={{
       height: '70vh',
       maxWidth: '750px',
       background: 'transparent'
     }}>
-      <p style={{ fontSize: '18px' }}>
+      <p style={{ fontSize: '18px' }} className="vf-pt-md">
         Welcome to the technical documentation for Vattenfall Design System.
       </p>
 
@@ -21,25 +17,25 @@ const Welcome = () => (
       </p>
 
       <div className="vf-pb-3">
-        <a href="#" className="vf-btn vf-btn--primary vf-btn--lg">Getting started</a>
-        <a href="#" className="vf-btn vf-btn--secondary vf-btn--lg">Resources</a>
+        <a href="/design" className="vf-btn vf-btn--primary vf-btn--lg vf-mr-sm">Getting started</a>
+        <a href="/resources" className="vf-btn vf-btn--secondary vf-btn--lg">Resources</a>
       </div>
     </div> 
 
-    <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%' }} />
+    <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%', objectFit: 'contain', maxWidth: '30%' }} />
 
     <h4>Designers</h4>
     <p>
-      Get the latest Design System Sketch library through abstract. Read the <a href="/designers">getting started for designers</a> page.
+      Get the latest Design System Sketch library through abstract. Read the <a href="/designers">Getting Started for Designers</a> page.
     </p>
 
     <h4>Developers</h4>
     <p>
-      Follow the steps under <a href="/getting-started">getting started</a>.
+      Follow the steps under <a href="/getting-started">Getting Started for Developers</a>.
     </p>
 
     <p>
-      For a list of all Components in the design system, go to <a href="/getting-started">CSS Library</a>.
+      For a list of all Components in the design system, go to <a href="/getting-started">Components</a>.
     </p>
 
     <h4>Contributing</h4>
