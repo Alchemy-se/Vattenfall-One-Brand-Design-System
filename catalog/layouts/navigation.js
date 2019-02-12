@@ -1,12 +1,13 @@
 import { pageLoader } from "@alchemy-se/catalog";
+import Examples from "../EXAMPLES";
 
 const nav = {
   title: 'Examples',
   pages: [
     {
-      path: "/layouts-intro",
-      title: "Intro",
-      content: pageLoader(() => import("./intro.md"))
+      path: "/examples",
+      title: "Design Gallery",
+      content: Examples
     }, {
       path: "/layouts/vattenfall-se-start",
       title: "- Web Start",
