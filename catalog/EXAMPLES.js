@@ -1,7 +1,7 @@
 import React from "react";
 
 const Examples = () => (
-  <div style={{ margin: '10px 20px 0 40px' }}>
+  <div style={{ margin: '10px 20px 0 40px', maxWidth: '80%' }}>
       <p style={{ fontSize: '16px', 
                   width: '50%', 
                   lineHeight: '32px'
@@ -14,7 +14,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Homepage</h4>
               <div className="vf-col">
-                <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }} src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
+                <img style={{width: '500px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }} src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
               </div>
               <div className="vf-col">
                 <img></img>
@@ -23,7 +23,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Article</h4>
               <div className="vf-col">
-                <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Web/Article-Desktop.jpg"></img>
+                <img style={{width: '500px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Web/Article-Desktop.jpg"></img>
               </div>
           </div>
         </div>
@@ -38,19 +38,19 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Log in</h4>
               <div className="vf-col">
-                  <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Login.jpg"></img>
+                  <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Login.jpg"></img>
              </div>
           </div>
           <div className="vf-col">
             <h4>Dashboard</h4>
             <div className="vf-col">
-                  <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Home.jpg"></img>
+                  <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Home.jpg"></img>
             </div>
           </div>
           <div className="vf-col">
             <h4>Comparison</h4>
             <div className="vf-col">
-                  <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Compare.jpg"></img>
+                  <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Compare.jpg"></img>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Dashboard</h4>
             <div className="vf-col">
-                  <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Invoices.jpg"></img>
+                  <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Invoices.jpg"></img>
             </div>
           </div>
         </div>
@@ -67,23 +67,23 @@ const Examples = () => (
     <div className="vf-row">
           <div className="vf-col">
             <h4>Log In</h4>
-            <img style={{width: '147px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Login.jpg"></img>
+            <img style={{width: '150px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Login.jpg"></img>
           </div>
           <div className="vf-col">
             <h4>Homescreen</h4>
-            <img style={{height: '147px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Home.jpg"></img>
+            <img style={{width: '150px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Home.jpg"></img>
           </div>
           <div className="vf-col">
             <h4>Overview</h4>
-          <img style={{height: '147px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Tarif.jpg"></img>
+          <img style={{width: '150px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Tarif.jpg"></img>
           </div>
           <div className="vf-col">
             <h4>Consumption</h4>
-            <img style={{height: '147px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/ZählerstandAblesen.jpg"></img>
+            <img style={{width: '150px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/ZählerstandAblesen.jpg"></img>
           </div>
           <div className="vf-col">
             <h4>Products</h4>
-            <img style={{height: '147px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Details.jpg"></img>
+            <img style={{width: '150px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/App/Details.jpg"></img>
           </div>
     </div>
 

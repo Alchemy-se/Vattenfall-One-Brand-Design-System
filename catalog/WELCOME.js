@@ -1,6 +1,7 @@
 import React from "react";
 
 const Welcome = () => (
+  
   <div style={{ margin: '10px 20px 0 40px' }}>
     <div style={{
       height: '50vh',
@@ -14,7 +15,7 @@ const Welcome = () => (
 
       <div className="vf-pb-3">
         <a href="/design" className="vf-btn vf-btn--primary vf-btn--lg vf-mr-sm">Getting started</a>
-        <a href="/resources" className="vf-btn vf-btn--secondary vf-btn--lg">Resources</a>
+        <a href="/examples" className="vf-btn vf-btn--secondary vf-btn--lg">View examples</a>
       </div>
     </div> 
 
