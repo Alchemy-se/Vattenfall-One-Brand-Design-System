@@ -20,24 +20,6 @@ const Welcome = () => (
 
     <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%', objectFit: 'contain', maxWidth: '30%' }} />
     <div style={{width: '70%'}}>
-    <h4>Designers</h4>
-    <p>
-      Get the latest Design System Sketch library through abstract. Read the <a href="/designers">Getting Started for Designers</a> page.
-    </p>
-
-    <h4>Developers</h4>
-    <p>
-      Follow the steps under <a href="/getting-started">Getting Started for Developers</a>.
-    </p>
-
-    <p>
-      For a list of all Components in the design system, go to <a href="/getting-started">Components</a>.
-    </p>
-
-    <h4>Contributing</h4>
-    <p>
-      To improve and extend this design system, read the <a href="/contribute">Contribution guidelines</a>.
-    </p>
 
     <h4>Designers?</h4>
     <p>
