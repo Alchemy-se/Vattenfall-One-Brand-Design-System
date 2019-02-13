@@ -1,12 +1,12 @@
 import React from "react";
 
 const Examples = () => (
-  <div style={{ margin: '0 40px 40px 40px' }}>
-      <p className="vf-pt-md" style={{ fontSize: '16px', 
+  <div style={{ margin: '10px 20px 0 40px' }}>
+      <p style={{ fontSize: '16px', 
                   width: '50%', 
                   lineHeight: '32px'
                 }}>
-      To set the components in context here are a few examples of designs you can create with the Digital Design system.
+      Here are a few examples of designs you can create with the Digital Design system.
       </p>
 
       <h2 style={{marginTop: '40px'}}>Corporate website</h2>
