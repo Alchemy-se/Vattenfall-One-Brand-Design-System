@@ -79,7 +79,12 @@ const pages = [
         path: "/css/badge",
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
+      }, {
+        path: "/css/table",
+        title: "- Table",
+        content: pageLoader(() => import("./components/table.md"))
       },  
+      
       ...moleculesNavigation,
       ...organismsNavigation,
       

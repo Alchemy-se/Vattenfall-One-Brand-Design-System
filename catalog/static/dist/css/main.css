@@ -9559,6 +9559,90 @@ a.vf-badge:hover, a.vf-badge:focus {
   }
 }
 
+.vf-table {
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #222;
+  background-color: white;
+}
+
+.vf-table th,
+.vf-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.vf-table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.vf-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.vf-table-sm th,
+.vf-table-sm td {
+  padding: 0.3rem;
+}
+
+.vf-table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.vf-table-bordered th,
+.vf-table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.vf-table-bordered thead th,
+.vf-table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.vf-table-borderless th,
+.vf-table-borderless td,
+.vf-table-borderless thead th,
+.vf-table-borderless tbody + tbody {
+  border: 0;
+}
+
+.vf-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.vf-table-hover tbody tr:hover {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.vf-simple-table {
+  width: 100%;
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.05px;
+}
+
+.vf-simple-table td {
+  text-align: right;
+}
+
+.vf-simple-table th {
+  text-align: left;
+  font-weight: 600;
+}
+
+.vf-simple-table th,
+.vf-simple-table td {
+  width: 55%;
+  padding: 15px 0;
+  vertical-align: top;
+  border-bottom: 1px solid #D8D8D8;
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
