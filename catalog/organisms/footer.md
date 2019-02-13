@@ -4,6 +4,7 @@ The footer component is used on most Vattenfall pages, and contains links, socia
 
 ```html
 responsive: true
+showSource: true
 ---
 <footer class="vf-footer">
   <div class="vf-container">

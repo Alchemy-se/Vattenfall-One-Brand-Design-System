@@ -76,6 +76,8 @@ Here are some representative examples of these classes:
 Additionally, VF Design System also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
 
 ```html
+showSource: true
+---
 <div class="mx-auto" style="width: 200px;">
   Centered element
 </div>
@@ -96,6 +98,8 @@ The syntax is nearly the same as the default, positive margin utilities, but wit
 Here's an example of customizing the VF Design System grid at the medium (`md`) breakpoint and above. We've increased the `.col` padding with `.px-md-5` and then counteracted that with `.mx-md-n5` on the parent `.row`.
 
 ```html
+showSource: true
+---
 <div class="row mx-md-n5">
   <div class="col py-3 px-md-5 border bg-light">Custom column padding</div>
   <div class="col py-3 px-md-5 border bg-light">Custom column padding</div>

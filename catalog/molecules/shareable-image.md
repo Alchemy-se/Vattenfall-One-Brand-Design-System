@@ -2,6 +2,7 @@ This component is used to show an image with a share icon, and a optional descri
 
 ```html
 responsive: true
+showSource: true
 ---
 <figure class="vf-image-with-icon">
   <img class="vf-image-with-icon__image" src="/img/example-article/kraftverk.jpg" alt="Example image" />
