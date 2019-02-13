@@ -2,7 +2,9 @@
 import React from "react";
 
 const Designers = () => (
-  <div style= {{ padding: '40px', width: '70%'}}>
+  <div style= {{ 
+    margin:'10px 20px 0 40px',
+    width: '70%'}}>
     <link href="/dist/css/reboot.css" rel="stylesheet" type="text/css" />
     <link href="/dist/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/dist/css/documentation.css" rel="stylesheet" type="text/css" />
@@ -10,7 +12,7 @@ const Designers = () => (
     <div style={{
       background: 'transparent'
     }}>
-      <h4>Get started / Designers</h4>
+      <h2>Get started / Designers</h2>
         <p style={{ fontSize: '18px' }}>
         In order to get started with Vattenfall Digital Design System, make sure you have been provided with both apps: Abstract and Sketch. Abstract is a version control tool, which keeps all of your Sketch working files in one place. It also prevents creating conflicting copies and allows contributors to request reviews and inspect the files without opening Sketch.
         </p>
@@ -39,16 +41,10 @@ const Designers = () => (
       </div>
     </div> 
 
-    <iframe style={{marginTop: '40px'}} src="https://player.vimeo.com/video/305508035?color=ffda00&title=0&byline=0&portrait=0" width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
-<p><a href="https://vimeo.com/305508035">Horizon: Abstract &amp; Sketch Walkthrough</a> from <a href="https://vimeo.com/alchemyse">Alchemy</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
       <h4 style={{marginTop: '40px'}}>Vattenfall Design Kit</h4>
         <p style={{ fontSize: '18px' }}>
         The Vattenfall Design Kit (VDK) is a living library that contains Vattenfall's digital visual assets for everyday purpose: modules, components, icons, color palettes, grids, typography, etc. The purpose of VDK is to ensure design and development consistency across entire Vattenfall ecosystem, improve quality & efficiency in production, bring digital products & services to next level of coherency. The VDK can be accessed via Abstract in Sketch format and connected to your working design documents as a Sketch Library source.
         </p>
-
-    <iframe style={{marginTop: '40px'}}src="https://player.vimeo.com/video/305756714?color=ffda00&title=0&byline=0&portrait=0" width="640" height="400" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
-<p><a href="https://vimeo.com/305756714">Vattenfall Design Kit</a> from <a href="https://vimeo.com/alchemyse">Alchemy</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
        
         <div className="vf-row">
           <div className="vf-col">
