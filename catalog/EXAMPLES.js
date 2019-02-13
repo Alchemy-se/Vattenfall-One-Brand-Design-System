@@ -1,7 +1,7 @@
 import React from "react";
 
 const Examples = () => (
-  <div style={{ margin: '0 30px 40px 40px' }}>
+  <div style={{ margin: '0 40px 40px 40px' }}>
       <p className="vf-pt-md" style={{ fontSize: '16px', 
                   width: '50%', 
                   lineHeight: '32px'
@@ -14,7 +14,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Homepage</h4>
               <div className="vf-col">
-                <img style={{height: '147px'}} src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
+                <img style={{width: '400px'}} src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
               </div>
               <div className="vf-col">
                 <img></img>
@@ -23,7 +23,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Article</h4>
               <div className="vf-col">
-                <img style={{height: '147px'}} src="./img/use-cases/Web/Article-Desktop.jpg"></img>
+                <img style={{width: '400px'}} src="./img/use-cases/Web/Article-Desktop.jpg"></img>
               </div>
           </div>
         </div>
@@ -38,19 +38,19 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Log in</h4>
               <div className="vf-col">
-                  <img style={{height: '147px'}} src="./img/use-cases/Service/Login.jpg"></img>
+                  <img style={{width: '400px'}} src="./img/use-cases/Service/Login.jpg"></img>
              </div>
           </div>
           <div className="vf-col">
             <h4>Dashboard</h4>
             <div className="vf-col">
-                  <img style={{height: '147px'}} src="./img/use-cases/Service/Home.jpg"></img>
+                  <img style={{width: '400px'}} src="./img/use-cases/Service/Home.jpg"></img>
             </div>
           </div>
           <div className="vf-col">
             <h4>Comparison</h4>
             <div className="vf-col">
-                  <img style={{height: '147px'}} src="./img/use-cases/Service/Compare.jpg"></img>
+                  <img style={{width: '400px'}} src="./img/use-cases/Service/Compare.jpg"></img>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Examples = () => (
           <div className="vf-col">
             <h4>Dashboard</h4>
             <div className="vf-col">
-                  <img style={{height: '147px'}} src="./img/use-cases/Service/Invoices.jpg"></img>
+                  <img style={{width: '400px'}} src="./img/use-cases/Service/Invoices.jpg"></img>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Examples = () => (
     <div className="vf-row">
           <div className="vf-col">
             <h4>Log In</h4>
-            <img style={{height: '147px'}} src="./img/use-cases/App/Login.jpg"></img>
+            <img style={{width: '147px'}} src="./img/use-cases/App/Login.jpg"></img>
           </div>
           <div className="vf-col">
             <h4>Homescreen</h4>
