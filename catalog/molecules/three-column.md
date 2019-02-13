@@ -3,6 +3,7 @@
 The three column content box is made using the regular Grid system, but gives an example of how you can use the grid in a way fitting to Vattenfall's design guidelines.
 
 ```html
+showSource: true
 responsive: true
 ---
 <section class="pt-6 pb-5 vf-bg--light-blue vf-container-bleed">
@@ -54,6 +55,7 @@ To get a offseted background bleed, simply add a negative `margin-top` to the `.
 
 
 ```html
+showSource: true
 responsive: ['Desktop']
 ---
 <section class="pt-6 pb-5 vf-bg--light-blue vf-container-bleed" style="margin-top: 300px">
