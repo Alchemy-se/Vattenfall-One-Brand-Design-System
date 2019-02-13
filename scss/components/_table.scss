@@ -1,0 +1,112 @@
+.vf-table {
+  width: 100%;
+  margin-bottom: $spacer;
+  color: #222;
+  background-color: white; // Reset for nesting within parents with `background-color`.
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+    border-top: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+}
+
+
+//
+// Condensed table w/ half padding
+//
+
+.vf-table-sm {
+  th,
+  td {
+    padding: $table-cell-padding-sm;
+  }
+}
+
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+
+.vf-table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: 2 * $table-border-width;
+    }
+  }
+}
+
+.vf-table-borderless {
+  th,
+  td,
+  thead th,
+  tbody + tbody {
+    border: 0;
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.vf-table-striped {
+  tbody tr:nth-of-type(#{$table-striped-order}) {
+    background-color: $table-accent-bg;
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.vf-table-hover {
+  tbody tr {
+    @include hover {
+      color: $table-hover-color;
+      background-color: $table-hover-bg;
+    }
+  }
+}
+
+.vf-simple-table {
+  width: 100%;
+  margin-bottom: $spacer;
+  color: black;
+  @include typo-paragraph-secondary-desktop();
+
+  td {
+    text-align: right;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  th,
+  td {
+    width: 55%;
+    padding: 15px 0;
+    vertical-align: top;
+    border-bottom: 1px solid #D8D8D8;
+  }
+}
