@@ -1,7 +1,7 @@
 import React from "react";
 
 const Examples = () => (
-  <div style={{ margin: '10px 20px 0 40px' }}>
+  <div style={{ margin: '10px 20px 60px 40px' }}>
       <p style={{ fontSize: '16px', 
                   width: '50%', 
                   lineHeight: '32px'
