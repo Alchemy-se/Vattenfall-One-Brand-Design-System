@@ -12,7 +12,7 @@ const Designers = () => (
     <div style={{
       background: 'transparent'
     }}>
-      <h2>Get started / Designers</h2>
+      <h2 style={{marginTop:'48px'}}>Get started / Designers</h2>
         <p style={{ fontSize: '18px' }}>
         In order to get started with Vattenfall Digital Design System, make sure you have been provided with both apps: Abstract and Sketch. Abstract is a version control tool, which keeps all of your Sketch working files in one place. It also prevents creating conflicting copies and allows contributors to request reviews and inspect the files without opening Sketch.
         </p>
