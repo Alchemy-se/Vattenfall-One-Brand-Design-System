@@ -54,7 +54,7 @@ const Examples = () => (
             <h4 style={{ marginTop: '30px'}}>Log in</h4>
               <div className="vf-col">
               <a href="./img/use-cases/Service/Login.jpg">
-                <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Login.jpg"></img>
+                <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Login.jpg"></img>
               </a>
              </div>
           </div>
@@ -62,7 +62,7 @@ const Examples = () => (
             <h4 style={{ marginTop: '30px'}}>Dashboard</h4>
               <div className="vf-col">
               <a href="./img/use-cases/Service/Home.jpg">
-                <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Home.jpg"></img>
+                <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Home.jpg"></img>
               </a>
               </div>
           </div>
@@ -72,7 +72,7 @@ const Examples = () => (
             <h4 style={{ marginTop: '30px'}}>Comparison</h4>
             <div className="vf-col">
             <a href="./img/use-cases/Service/Compare.jpg">
-              <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Compare.jpg"></img>
+              <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Compare.jpg"></img>
             </a>
             </div>
           </div>
@@ -80,7 +80,7 @@ const Examples = () => (
             <h4 style={{ marginTop: '30px'}}>Dashboard</h4>
             <div className="vf-col">
             <a href="./img/use-cases/Service/Invoices.jpg">
-              <img style={{width: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Invoices.jpg"></img>
+              <img style={{width: '450px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}} src="./img/use-cases/Service/Invoices.jpg"></img>
             </a>
             </div>
          </div>
