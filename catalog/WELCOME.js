@@ -24,7 +24,7 @@ const Welcome = () => (
 
     <h4>Designers?</h4>
     <p>
-      Are you rather looking for a general styleguide with information about how to use Vattenfalls logotype, colors and such? Then you will find everything you need over at https://clients.alchemy.se/vattenfall/.
+      Are you rather looking for a general styleguide with information about how to use Vattenfalls logotype, colors and such? Then you will find everything you need over at <a href="https://vattenfall.frontify.com/hub/1">Frontify</a>.
     </p>
     </div>
   </div>
