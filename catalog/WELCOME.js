@@ -22,9 +22,9 @@ const Welcome = () => (
     <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%', objectFit: 'contain', maxWidth: '30%' }} />
     <div style={{width: '70%'}}>
 
-    <h4>Designers?</h4>
+    <h4>Brand Styleguide</h4>
     <p>
-      Are you rather looking for a general styleguide with information about how to use Vattenfalls logotype, colors and such? Then you will find everything you need over at <a href="https://vattenfall.frontify.com/hub/1">Frontify</a>.
+      Are you rather looking for the Vattenfall Brand Styleguide with information about how to use Vattenfalls logotype, colors and such? Then you will find everything you need over at <a href="https://vattenfall.frontify.com/hub/1">Frontify</a>.
     </p>
     </div>
   </div>
