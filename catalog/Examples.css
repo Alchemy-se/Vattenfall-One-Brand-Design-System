@@ -1,0 +1,21 @@
+.examples {
+    margin: 10px 20px 60px 40px;
+}
+
+.examplesHeader{
+    margin-top: 100px;
+    }
+
+.examplesImage { 
+    width: 450px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imageHeader {
+    margin-top: 30px;
+}
+
+.iosImage {
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
