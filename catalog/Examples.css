@@ -2,25 +2,20 @@
     margin: 10px 20px 60px 40px;
 }
 
-.examplesHeader{
+.examples__header{
     margin-top: 100px;
     }
 
-.examplesImage { 
+.examples__image { 
     width: 450px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.examplesLink { 
-    color: 'red';
-    margin-top: '20px'
-}
-
-.imageHeader {
+.examples__image-header {
     margin-top: 30px;
 }
 
-.iosImage {
+.examples__ios-image {
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
