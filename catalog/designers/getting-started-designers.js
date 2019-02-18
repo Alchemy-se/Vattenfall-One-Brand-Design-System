@@ -54,15 +54,6 @@ const Designers = () => (
       </div>
     </div> 
 
-    <div className="vf-row">
-          <div className="vf-col">
-        <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" target="_blank" rel="noopener">Vattenfall Design Kit on Github</a>
-        </div>
-        <div className="vf-col">
-      </div>
-    </div> 
-  
-
       <h4 style={{marginTop: '40px'}}>Design Kit Structure</h4>
         <p style={{ fontSize: '18px' }}>
         Have a look at the Design Kit structure here. It is a nested library of symbols for all everyday design needs. It is grouped by a type of module or component with different aspects depending on the use case of such.
