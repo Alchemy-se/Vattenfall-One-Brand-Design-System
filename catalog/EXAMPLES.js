@@ -16,20 +16,21 @@ const Examples = () => (
             <h4 className="examples__image-header">Homepage</h4>
               <div className="vf-col">
               <a href="./img/use-cases/Web/Homepage-Desktop.jpg">
-                   <img className="examples__image" src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
-                  <p style={{marginTop: "20px"}}><a style={{color: "#888888"}} href="/start.html" target="_blank" rel="noopener">See the coded page</a></p>
-                  <p><a style={{color: "#888888"}} href="https://share.goabstract.com/6f85c042-9b71-4bcd-96a5-9c27a2b2a581" target="_blank" rel="noopener">Go to Abstract</a></p>
+                <img className="examples__image" src="./img/use-cases/Web/Homepage-Desktop.jpg"></img>
               </a>
+               <p style={{marginTop: "20px"}}><a style={{color: "#888888"}} href="/start.html" target="_blank" rel="noopener">See the coded page</a></p>
+                  <p><a style={{color: "#888888"}} href="https://share.goabstract.com/6f85c042-9b71-4bcd-96a5-9c27a2b2a581" target="_blank" rel="noopener">Go to Abstract</a></p>
               </div>
           </div>
           <div className="vf-col">
             <h4 className="examples__image-header">Article</h4>
               <div className="vf-col">
               <a href="./img/use-cases/Web/Article-Desktop.jpg">
-                  <img className="examples__image" src="./img/use-cases/Web/Article-Desktop.jpg"></img>
+                <img className="examples__image" src="./img/use-cases/Web/Article-Desktop.jpg"></img>
+               </a>
                   <p style={{marginTop: "20px"}}><a style={{color: "#888888"}} href="./article.html" target="_blank" rel="noopener">See the coded page</a></p>
                   <p><a style={{color: "#888888"}} href="https://share.goabstract.com/cb9164a3-976c-474d-a351-72906a7f4c13" target="_blank" rel="noopener">Go to Abstract</a></p>
-              </a>
+              
               </div> 
           </div>
         </div>
@@ -38,10 +39,11 @@ const Examples = () => (
             <h4 className="examples__image-header">Secondary page</h4>
               <div className="vf-col">
               <a href="./img/use-cases/Web/Investors-Desktop.jpg">
-                  <img className="examples__image" src="./img/use-cases/Web/Investors-Desktop.jpg"></img>
-                  <p style={{marginTop: "20px"}}><a style={{color: "#888888"}} href="./investors.html" target="_blank" rel="noopener">See the coded page</a></p>
-                  <p><a style={{color: "#888888"}} href="https://share.goabstract.com/f4fa75b4-6b07-46ca-a84b-2a0fe44d8e50" target="_blank" rel="noopener">Go to Abstract</a></p>
+                <img className="examples__image" src="./img/use-cases/Web/Investors-Desktop.jpg"></img>
+                <p style={{marginTop: "20px"}}><a style={{color: "#888888"}} href="./investors.html" target="_blank" rel="noopener">See the coded page</a></p>
               </a>
+                  <p><a style={{color: "#888888"}} href="https://share.goabstract.com/f4fa75b4-6b07-46ca-a84b-2a0fe44d8e50" target="_blank" rel="noopener">Go to Abstract</a></p>
+              
               </div>
             </div>
         </div>
