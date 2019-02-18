@@ -107,11 +107,7 @@ const pages = [
     title: 'Design guidelines',
     content: Guidelines
   },
-  {
-    path: "/video-walkthroughs",
-    title: 'Video walkthroughs',
-    content: Video
-  },
+  
   {
     path: "/contribute",
     title: "Contributing",
