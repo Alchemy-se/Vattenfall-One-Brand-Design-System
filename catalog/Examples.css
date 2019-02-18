@@ -11,6 +11,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.examplesLink { 
+    color: 'red';
+    margin-top: '20px'
+}
+
 .imageHeader {
     margin-top: 30px;
 }
