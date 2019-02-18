@@ -81,14 +81,19 @@ const pages = [
         path: "/css/badge",
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
+      }, {
+        path: "/css/table",
+        title: "- Table",
+        content: pageLoader(() => import("./components/table.md"))
       },  
+      
       ...moleculesNavigation,
       ...organismsNavigation,
       
       {
-        path: "./components/utilities",
+        path: "/components/utilities",
         title: "Utilities",
-        content: pageLoader(() => import("./utilities/favicon.md"))
+        content: pageLoader(() => import("./utilities/utilities.md"))
       },
        {
         path: "/utilities/favicon",
