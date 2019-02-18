@@ -35,7 +35,7 @@ const Designers = () => (
 
       <div className="vf-row">
         <div className="vf-col">
-      <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://www.goabstract.com/blog/making-sketch-collaboration-better-with-abstract/" target="_blank" rel="noopener" data-mce-href="https://www.goabstract.com/blog/making-sketch-collaboration-better-with-abstract/">Sketch + Abstract collaboration</a>
+      <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://www.goabstract.com/blog/making-sketch-collaboration-better-with-abstract/" target="_blank" rel="noopener">Sketch + Abstract collaboration</a>
         </div>
         <div className="vf-col">
       </div>
@@ -48,7 +48,7 @@ const Designers = () => (
        
         <div className="vf-row">
           <div className="vf-col">
-        <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://www.goabstract.com/how-it-works/" target="_blank" rel="noopener" data-mce-href="https://www.goabstract.com/how-it-works/">Vattenfall Design Kit on Abstract</a>
+        <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://app.goabstract.com/organizations/2776932d-ce7d-4fc3-8c46-0da875d726d3/projects" target="_blank" rel="noopener">Vattenfall Design Kit on Abstract</a>
           </div>
         <div className="vf-col">
       </div>
@@ -56,7 +56,7 @@ const Designers = () => (
 
     <div className="vf-row">
           <div className="vf-col">
-        <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://sketchapp.com/docs/the-interface/" target="_blank" rel="noopener" data-mce-href="https://sketchapp.com/docs/the-interface/" data-mce-selected="1">Vattenfall Design Kit on Github</a>
+        <a className="vf-link-with-arrow vf-link-with-arrow--small" href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" target="_blank" rel="noopener">Vattenfall Design Kit on Github</a>
         </div>
         <div className="vf-col">
       </div>
