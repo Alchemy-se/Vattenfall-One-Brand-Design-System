@@ -29,7 +29,7 @@ const Examples = () => (
               <a href="./img/use-cases/Web/Article-Desktop.jpg">
                 <figure>
                   <img className="examplesImage" src="./img/use-cases/Web/Article-Desktop.jpg"></img>
-                  <figcaption style={{ color: '#888888', marginTop: '20px'}}>Desktop</figcaption>  
+                  <p style={{ color: '#888888', marginTop: '20px'}}>Desktop</p>  
                 </figure>
               </a>
               </div> 
