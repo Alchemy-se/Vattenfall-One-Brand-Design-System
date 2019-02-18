@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Catalog, pageLoader } from "@alchemy-se/catalog";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Catalog, pageLoader } from '@alchemy-se/catalog';
 import moleculesNavigation from './molecules/navigation'
 import organismsNavigation from './organisms/navigation'
 import layoutsNavigation from './layouts/navigation'
 
 import Welcome from './WELCOME';
-import Designers from "./designers/getting-started-designers";
+import Designers from './designers/getting-started-designers';
+import Guidelines from './Guidelines'
 
 const styles = [
   '/dist/css/reboot.css',
@@ -94,6 +95,11 @@ const pages = [
         content: pageLoader(() => import("./utilities/favicon.md"))
       },
     ]
+  },
+  {
+    path: "/guidelines",
+    title: 'Design guidelines',
+    content: Guidelines
   },
   {
     path: "/contribute",
