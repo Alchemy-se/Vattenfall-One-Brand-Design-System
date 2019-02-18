@@ -7,7 +7,8 @@ import layoutsNavigation from './layouts/navigation'
 
 import Welcome from './WELCOME';
 import Designers from './designers/getting-started-designers';
-import Guidelines from './Guidelines'
+import Guidelines from './Guidelines';
+import Video from './Video'
 
 const styles = [
   '/dist/css/reboot.css',
@@ -100,6 +101,11 @@ const pages = [
     path: "/guidelines",
     title: 'Design guidelines',
     content: Guidelines
+  },
+  {
+    path: "/video-walkthroughs",
+    title: 'Video walkthroughs',
+    content: Video
   },
   {
     path: "/contribute",
