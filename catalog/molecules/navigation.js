@@ -46,6 +46,10 @@ const nav = [
     title: "- Three Column",
     content: pageLoader(() => import("./three-column.md"))
   }, {
+    path: "/css/topbar",
+    title: "- Top bar",
+    content: pageLoader(() => import("./topbar.md"))
+  }, {
     path: "/css/pagination",
     title: "- Pagination",
     content: pageLoader(() => import("./pagination.md"))
