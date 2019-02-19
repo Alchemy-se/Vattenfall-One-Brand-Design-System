@@ -7,7 +7,7 @@ showSource: true
 <header class="vf-topbar">
   <div class="vf-container">
     <a href="#" class="vf-topbar__logo">
-      <img src="/img/vf-logo.svg" />
+      <img src="/img/vf-logo.svg" width="170" />
     </a>
   </div>
 </header>
