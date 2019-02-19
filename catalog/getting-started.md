@@ -4,8 +4,8 @@ The Vattenfall Design System provides front-end developers & engineers a collect
 
 ### Installation
 
- - Install with [npm](https://www.npmjs.com/): `npm install @alchemy-vf/vattenfall-design-system`
- - Install with [yarn](https://yarnpkg.com/): `yarn add @alchemy-vf/vattenfall-design-system`
+ - Install with [npm](https://www.npmjs.com/): `npm install "@vf-alchemy/vattenfall-design-system"`
+ - Install with [yarn](https://yarnpkg.com/): `yarn add "@vf-alchemy/vattenfall-design-system"`
  - [Download the latest release.](https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System/releases)
 
 ### CSS
