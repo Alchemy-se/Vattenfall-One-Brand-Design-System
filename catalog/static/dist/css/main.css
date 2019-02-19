@@ -9643,6 +9643,20 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-bottom: 1px solid #D8D8D8;
 }
 
+.vf-topbar {
+  text-align: center;
+  padding: 22px 0;
+}
+
+.vf-topbar__logo {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.vf-topbar__logo img {
+  display: block;
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
