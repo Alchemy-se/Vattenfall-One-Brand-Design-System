@@ -108,11 +108,11 @@ const pages = [
     content: Guidelines
   },
   
-  {
+ /* {
     path: "/contribute",
     title: "Contributing",
     content: pageLoader(() => import("./contribute.md"))
-  }
+  }*/
 ];
 
 const theme = {
