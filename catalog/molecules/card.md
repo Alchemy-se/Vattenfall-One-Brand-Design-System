@@ -26,7 +26,9 @@ responsive: true
 showSource: true
 ---
 <a class="vf-card reveal" style="max-width: 400px" href="#">
-  <img src="/img/example-startpage/news1-heating-hamburg.png" class="vf-card__img-top" alt="Example image" />
+  <div class="vf-card__img-top">
+    <img src="/img/example-startpage/news1-heating-hamburg.png" alt="Example image" />
+  </div>
   <div class="vf-card__body">
     <h3 class="vf-card__title">
         Vattenfall sells heating system in Hamburg
