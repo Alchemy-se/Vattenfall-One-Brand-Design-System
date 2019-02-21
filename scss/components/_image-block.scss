@@ -21,7 +21,10 @@
   padding-right: 0;
 
   img {
-    width: 50%;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
     display: block;
     margin: 0 auto;
   }
