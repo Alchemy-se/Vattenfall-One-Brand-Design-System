@@ -39,7 +39,6 @@ a.vf-card {
 
 a.vf-card:hover {
   text-decoration: none;
-  transform: scale(1.05);
 }
 
 .vf-card__body {
@@ -154,4 +153,26 @@ a.vf-card:hover {
 .vf-card__img-bottom {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-bottom-radius($card-inner-border-radius);
+}
+
+.vf-card__img, 
+.vf-card__img-top ,
+.vf-card__img-bottom {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    transition: transform 1200ms ease;
+    transform: scale(1.0);
+  }  
+}
+
+.vf-card:hover {
+  .vf-card__img, 
+  .vf-card__img-top ,
+  .vf-card__img-bottom {
+    img {
+      transform: scale(1.3);
+    }  
+  }
 }
