@@ -9511,17 +9511,28 @@ a.vf-badge:hover, a.vf-badge:focus {
   padding-right: 0;
 }
 
+.vf-image-block__media img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: 576px) {
+  .vf-image-block__media img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
   .vf-image-block__media {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-}
-
-.vf-image-block__media img {
-  width: 100%;
+  .vf-image-block__media img {
+    width: 100%;
+  }
 }
 
 .vf-image-block__content {
@@ -9534,7 +9545,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   padding-left: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .vf-image-block__content {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.666667%;
