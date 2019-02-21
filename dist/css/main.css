@@ -9512,9 +9512,15 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-image-block__media img {
-  width: 50%;
+  width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .vf-image-block__media img {
+    width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
