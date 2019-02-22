@@ -52,7 +52,9 @@ $cutout-height-desktop: 85px;
     margin: 0;
     width: 82%;
     position: absolute;
+    top: 396px; // IE Hack
     top: initial;
+
     bottom: 0;
   }
 }
