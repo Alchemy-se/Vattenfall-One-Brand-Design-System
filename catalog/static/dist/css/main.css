@@ -8664,6 +8664,7 @@ a.vf-card:hover {
     margin: 0;
     width: 82%;
     position: absolute;
+    top: 396px;
     top: initial;
     bottom: 0;
   }
