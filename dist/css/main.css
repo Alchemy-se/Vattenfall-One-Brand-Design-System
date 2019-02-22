@@ -9018,6 +9018,10 @@ a.vf-card:hover {
 
 .vf-two-column-boxes__image > img {
   width: 100%;
+  -webkit-transition: -webkit-transform 100ms linear;
+  transition: -webkit-transform 100ms linear;
+  transition: transform 100ms linear;
+  transition: transform 100ms linear, -webkit-transform 100ms linear;
 }
 
 @media (min-width: 768px) {
