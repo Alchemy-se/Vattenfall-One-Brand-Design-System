@@ -17,7 +17,7 @@
     "watch-js": "nodemon --watch js/ --ext js --exec \"npm run js-main\"",
     "semantic-release": "semantic-release",
     "js-main": "npm-run-all --sequential js-build js-copy",
-    "js-build": "webpack",
+    "js-build": "webpack",,
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
