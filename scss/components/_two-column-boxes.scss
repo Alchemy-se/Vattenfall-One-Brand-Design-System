@@ -110,6 +110,7 @@
 
     & > img {
       width: 100%;
+      transition: transform 100ms linear;
 
       @include media-breakpoint-up(md) {
         width: 94%;

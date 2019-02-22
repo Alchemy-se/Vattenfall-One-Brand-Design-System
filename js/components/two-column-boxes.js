@@ -8,7 +8,13 @@ if (window.innerWidth >= 992) {
     wrapper: null,
     round: true,
     vertical: true,
-    horizontal: false
+    horizontal: false,
+    callback: function (pos, element, percentages) {
+      var y = percentages.y;
+      var image = element.children[0];
+      var size = 1 + y;
+      image.style.transform = 'scale(' + size.toString() + ')';
+    }
   });
 
   var rellax2 = new Rellax('.vf-two-column-boxes__headline', {
