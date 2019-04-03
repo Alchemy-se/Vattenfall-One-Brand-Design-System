@@ -1,0 +1,35 @@
+.vf-file-list {
+  padding: 0;
+  margin: 0; 
+  list-style-type: none;
+}
+.vf-file-list__item {
+  padding: 6px 0;
+  line-height: 24px;
+}
+.vf-file-list__link {
+  color: $link-color;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 36px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMTggMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBkPSJNMTcuOTgzMDk4Niw2IEw5LDYgTDksMjkuOTU3NzQ2NSBMMjYuOTY2MTk3MiwyOS45NTc3NDY1IEwyNi45NjYxOTcyLDEzLjc4MzA5ODYgTDE3Ljk4MzA5ODYsNiBaIE0xOS4xODMwOTg2LDEwLjIwODQ1MDcgTDIxLjkyOTU3NzUsMTIuNTkxNTQ5MyBMMTkuMTgzMDk4NiwxMi41OTE1NDkzIEwxOS4xODMwOTg2LDEwLjIwODQ1MDcgWiBNMTEuNCwyNy41NTc3NDY1IEwxMS40LDguMzkxNTQ5MyBMMTYuNzkxNTQ5Myw4LjM5MTU0OTMgTDE2Ljc5MTU0OTMsMTQuOTgzMDk4NiBMMjQuNTc0NjQ3OSwxNC45ODMwOTg2IEwyNC41NzQ2NDc5LDI3LjU1Nzc0NjUgTDExLjQsMjcuNTU3NzQ2NSBaIiBpZD0icGF0aC0xIj48L3BhdGg+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkNvbXBvbmVudHMtLy1MaXN0LS8tTGluay1MaXN0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOS4wMDAwMDAsIC02LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iQ29tcG9uZW50cy0vLUljb25zLS8tU3ltYm9sLS8tRG9jdW1lbnQiPgogICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBmaWxsPSIjMDAwMDAwIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPGcgaWQ9IkJyYW5kaW5nLS8tQ29sb3JzLS8tUHJpbWFyeS0vLUJsYWNrIiBtYXNrPSJ1cmwoI21hc2stMikiIGZpbGw9IiMyMjIyMjIiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 19px 24px;
+    margin-right: 10px;
+    transform: translate(0, 4px);
+  }
+}
+.vf-file-list__item-description {
+  color: #888888;
+  font-size: 14px;
+  margin-left: 20px;
+}

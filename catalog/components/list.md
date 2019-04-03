@@ -18,3 +18,25 @@ showSource: true
   <li>Grumpy Cat</li>
 </ul>
 ```
+
+
+### File list
+
+```html
+showSource: true
+---
+<ul class="vf-file-list">
+  <li class="vf-file-list__item">
+    <a class="vf-file-list__link" href="#">File name goes here</a>
+    <span class="vf-file-list__item-description">(DOC, 10 kB)</span>
+  </li>
+  <li class="vf-file-list__item">
+    <a class="vf-file-list__link" href="#">Vattenfall uppförandekod för leverantörer, bilaga 9</a>
+    <span class="vf-file-list__item-description">(PDF, 460 kB)</span>
+  </li>
+  <li class="vf-file-list__item">
+    <a class="vf-file-list__link" href="#">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
+    <span class="vf-file-list__item-description">(PDF, 520 kB)</span>
+  </li>
+</ul>
+```
