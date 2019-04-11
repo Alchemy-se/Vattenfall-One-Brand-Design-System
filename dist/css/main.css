@@ -8124,7 +8124,7 @@ a.vf-card:hover {
   }
 }
 
-.vf-linked-list-block__body {
+.vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
@@ -8135,54 +8135,57 @@ a.vf-card:hover {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 90px;
 }
 
 @media (max-width: 767.98px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media (min-width: 576px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     max-width: 1160px;
   }
 }
 
 @media (min-width: 768px) {
-  .vf-linked-list-block__body {
+  .vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
     margin-top: 0;
   }
 }
 
-.vf-linked-list-block__media {
+.vf-linked-list-block__body {
+  margin-top: 90px;
+}
+
+.vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
   position: relative;
   width: 100%;
   padding-right: 12px;
@@ -8193,7 +8196,7 @@ a.vf-card:hover {
 }
 
 @media (min-width: 768px) {
-  .vf-linked-list-block__media {
+  .vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -8204,19 +8207,31 @@ a.vf-card:hover {
 }
 
 @media (min-width: 992px) {
-  .vf-linked-list-block__media {
+  .vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-.vf-linked-list-block__media img {
+.vf-linked-list-block__media img, .vf-linked-list-block__no-media-list img {
   width: 100%;
 }
 
-.vf-linked-list-block__content {
+.vf-linked-list-block__no-media-list {
+  margin-top: 0;
+  padding-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .vf-linked-list-block__no-media-list {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+.vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
   position: relative;
   width: 100%;
   padding-right: 12px;
@@ -8227,7 +8242,7 @@ a.vf-card:hover {
 }
 
 @media (min-width: 768px) {
-  .vf-linked-list-block__content {
+  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -8237,22 +8252,31 @@ a.vf-card:hover {
     order: -1;
     padding-right: 44px;
     padding-top: 88px;
+    padding-bottom: 88px;
   }
 }
 
 @media (min-width: 992px) {
-  .vf-linked-list-block__content {
+  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
-  .vf-linked-list-block__content {
+  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
     padding-right: 110px;
   }
+}
+
+.vf-linked-list-block__content .vf-file-list .vf-file-list__link, .vf-linked-list-block__no-media-content .vf-file-list .vf-file-list__link, .vf-linked-list-block__no-media-list .vf-file-list .vf-file-list__link {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
 }
 
 .vf-linked-list-block__text, .vf-linked-list-block__text p {
@@ -8272,22 +8296,23 @@ a.vf-card:hover {
   }
 }
 
-.vf-linked-list-block--reversed .vf-linked-list-block__content {
-  -webkit-box-ordinal-group: 2 !important;
-  -ms-flex-order: 1 !important;
-  order: 1 !important;
-  padding-right: 0;
-}
-
 @media (min-width: 768px) {
-  .vf-linked-list-block--reversed .vf-linked-list-block__content {
+  .vf-linked-list-block--reversed .vf-linked-list-block__content, .vf-linked-list-block--reversed .vf-linked-list-block__no-media-content {
     padding-left: 44px;
+    -webkit-box-ordinal-group: 2 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .vf-linked-list-block--reversed .vf-linked-list-block__content {
+  .vf-linked-list-block--reversed .vf-linked-list-block__content, .vf-linked-list-block--reversed .vf-linked-list-block__no-media-content {
     padding-left: 110px;
+    -webkit-box-ordinal-group: 2 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+    padding-right: 0;
   }
 }
 
