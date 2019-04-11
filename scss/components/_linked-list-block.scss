@@ -3,7 +3,6 @@
   @include make-container-bleed();
 
   @include media-breakpoint-up(md) {
-    max-height: 488px;
     margin-bottom: 188px;
   }
 }

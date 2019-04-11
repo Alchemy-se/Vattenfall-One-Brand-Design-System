@@ -30,6 +30,10 @@ const nav = [
     title: "- Media Block",
     content: pageLoader(() => import("./media-block.md"))
   }, {
+    path: "/css/linked-list-block",
+    title: "- Linked List Block",
+    content: pageLoader(() => import("./linked-list-block.md"))
+  }, {
     path: "/css/parallax-image-block",
     title: "- Parallax Image Block",
     content: pageLoader(() => import("./parallax-image-block.md"))
