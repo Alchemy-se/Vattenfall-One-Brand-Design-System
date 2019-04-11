@@ -19,3 +19,9 @@ COPY --from=build-stage /app/build/build /usr/share/nginx/html
 
 COPY --from=build-stage /app/conf/nginx/nginx.conf /etc/nginx/conf.d/default.conf  
 COPY --from=build-stage /app/conf/nginx/htpasswd /etc/nginx/.htpasswd
+
+# Add the Certificates
+
+RUN mkdir -p /etc/ssl
+COPY --from=build-stage /app/conf/certs/digitaldesign.vattenfall.com.crt /etc/ssl/digitaldesign.vattenfall.com.crt
+COPY --from=build-stage /app/conf/certs/digitaldesign.vattenfall.com.key /etc/ssl/digitaldesign.vattenfall.com.key
