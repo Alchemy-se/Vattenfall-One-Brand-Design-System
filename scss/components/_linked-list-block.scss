@@ -11,20 +11,23 @@
   
 }
 
-.vf-linked-list-block__body {
+.vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
   @include make-container();
   @include make-container-max-widths();
   display: flex;
   flex-wrap: wrap;
-
-  margin-top: 90px;
 
   @include media-breakpoint-up(md) {
     margin-top: 0;
   }
 }
 
-.vf-linked-list-block__media {
+.vf-linked-list-block__body {
+  margin-top: 90px;
+
+}
+
+.vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
   @include make-col-ready();
   margin-top: -90px;
   padding-left: 0;
@@ -37,7 +40,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    @include make-col(8);
+    @include make-col(6);
   }
 
   img {
@@ -45,7 +48,18 @@
   }
 }
 
-.vf-linked-list-block__content {
+.vf-linked-list-block__no-media-list{
+  margin-top: 0;
+  padding-bottom: 35px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+}
+
+.vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
   @include make-col-ready();
   padding-top: 35px;
   padding-bottom: 35px;
@@ -58,13 +72,23 @@
     padding-right: $spacing-md;
 
     padding-top: 88px;
+    padding-bottom: 88px;
   }
 
   @include media-breakpoint-up(lg) {
-    @include make-col(4);
+    @include make-col(6);
   }
   @include media-breakpoint-up(xl) {
     padding-right: 110px;
+  }
+
+}
+
+.vf-linked-list-block__content, .vf-linked-list-block__no-media-content, .vf-linked-list-block__no-media-list{
+  .vf-file-list {
+    .vf-file-list__link {
+      @include typo-paragraph-primary-mobile();
+    }
   }
 }
 
@@ -81,17 +105,19 @@
 // Styles for reversed mode (image on the left on desktop)
 .vf-linked-list-block--reversed {
 
-  .vf-linked-list-block__content {
-    order: 1 !important;
-
-    padding-right: 0;
+  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
+    
 
     @include media-breakpoint-up(md) {
       padding-left: $spacing-md;
+      order: 1 !important;
+      padding-right: 0;
     }
   
     @include media-breakpoint-up(xl) {
       padding-left: 110px;
+      order: 1 !important;
+      padding-right: 0;
     }
   }
 }
