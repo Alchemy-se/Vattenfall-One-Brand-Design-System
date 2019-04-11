@@ -1,0 +1,123 @@
+.vf-linked-list-block {
+  background: $vattenfall-light-blue;
+  @include make-container-bleed();
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 188px;
+  }
+}
+
+.vf-container .vf-linked-list-block {
+  
+}
+
+.vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
+  @include make-container();
+  @include make-container-max-widths();
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
+
+.vf-linked-list-block__body {
+  margin-top: 90px;
+
+}
+
+.vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
+  @include make-col-ready();
+  margin-top: -90px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+    margin-top: 0;
+    padding-top: 88px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.vf-linked-list-block__no-media-list{
+  margin-top: 0;
+  padding-bottom: 35px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+}
+
+.vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
+  @include make-col-ready();
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  padding-left: 0;
+
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+    order: -1;
+    padding-right: $spacing-md;
+
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(xl) {
+    padding-right: 110px;
+  }
+
+}
+
+.vf-linked-list-block__content, .vf-linked-list-block__no-media-content, .vf-linked-list-block__no-media-list{
+  .vf-file-list {
+    .vf-file-list__link {
+      @include typo-paragraph-primary-mobile();
+    }
+  }
+}
+
+.vf-linked-list-block__title {}
+.vf-linked-list-block__text, .vf-linked-list-block__text p {
+  @include typo-paragraph-primary-mobile();
+  
+  @include media-breakpoint-up(md) {
+    @include typo-paragraph-secondary-desktop();
+  }
+  margin-bottom: 1rem;
+}
+
+// Styles for reversed mode (image on the left on desktop)
+.vf-linked-list-block--reversed {
+
+  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
+    
+
+    @include media-breakpoint-up(md) {
+      padding-left: $spacing-md;
+      order: 1 !important;
+      padding-right: 0;
+    }
+  
+    @include media-breakpoint-up(xl) {
+      padding-left: 110px;
+      order: 1 !important;
+      padding-right: 0;
+    }
+  }
+}
