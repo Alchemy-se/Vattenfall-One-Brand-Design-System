@@ -1,123 +1,224 @@
+@mixin vf-linked-list-block-col-1() {
+
+	@include make-col-ready();
+	margin-top: -90px;
+	padding-left: 0;
+	padding-right: 0;
+
+	@include media-breakpoint-up(md) {
+
+		@include make-col(6);
+		margin-top: 0;
+		padding-top: 88px;
+
+	}
+
+	@include media-breakpoint-up(lg) {
+
+		@include make-col(6);
+
+	}
+}
+
+@mixin vf-linked-list-block-col-2() {
+
+	@include make-col-ready();
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 0;
+
+	@include media-breakpoint-up(md) {
+
+		@include make-col(6);
+		order: -1;
+		padding-right: $spacing-md;
+		padding-top: 88px;
+		padding-bottom: 88px;
+	}
+
+	@include media-breakpoint-up(lg) {
+
+		@include make-col(6);
+
+	}
+
+	@include media-breakpoint-up(xl) {
+
+		padding-right: 110px;
+
+	}
+}
+
+@mixin vf-linked-list-block-reverse(){
+
+	@include media-breakpoint-up(md) {
+		padding-left: $spacing-md!important;
+		order: 1 !important;
+		padding-right: 0!important;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-left: 110px!important;
+		order: 1 !important;
+		padding-right: 0!important;
+	}
+
+}
+
+
 .vf-linked-list-block {
-  background: $vattenfall-light-blue;
-  @include make-container-bleed();
 
-  @include media-breakpoint-up(md) {
-    margin-bottom: 188px;
-  }
-}
+	background: $vattenfall-light-blue;
+	@include make-container-bleed();
 
-.vf-container .vf-linked-list-block {
-  
-}
+	@include media-breakpoint-up(md) {
 
-.vf-linked-list-block__body, .vf-linked-list-block__body-no-media {
-  @include make-container();
-  @include make-container-max-widths();
-  display: flex;
-  flex-wrap: wrap;
+		margin-bottom: 188px;
 
-  @include media-breakpoint-up(md) {
-    margin-top: 0;
-  }
-}
+	}
 
-.vf-linked-list-block__body {
-  margin-top: 90px;
+		.vf-linked-list-block__body{
 
-}
+			.vf-linked-list-block__content{
+				.vf-file-list {
+					.vf-file-list__link {
+						@include typo-paragraph-primary-mobile();
+					}
+				}
+			}
+		}
 
-.vf-linked-list-block__media, .vf-linked-list-block__no-media-list {
-  @include make-col-ready();
-  margin-top: -90px;
-  padding-left: 0;
-  padding-right: 0;
+	&:not(.vf-linked-list-block--no-media){
 
-  @include media-breakpoint-up(md) {
-    @include make-col(6);
-    margin-top: 0;
-    padding-top: 88px;
-  }
+		.vf-linked-list-block__body{
 
-  @include media-breakpoint-up(lg) {
-    @include make-col(6);
-  }
+			@include make-container();
+			@include make-container-max-widths();
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 90px;
 
-  img {
-    width: 100%;
-  }
-}
+			@include media-breakpoint-up(md) {
 
-.vf-linked-list-block__no-media-list{
-  margin-top: 0;
-  padding-bottom: 35px;
+				margin-top: 0;
 
-  @include media-breakpoint-up(md) {
-    padding-top: 88px;
-    padding-bottom: 88px;
-  }
+			}
 
-}
+			.vf-linked-list-block__media {
 
-.vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
-  @include make-col-ready();
-  padding-top: 35px;
-  padding-bottom: 35px;
+				@include vf-linked-list-block-col-1();
 
-  padding-left: 0;
+				img {
 
-  @include media-breakpoint-up(md) {
-    @include make-col(6);
-    order: -1;
-    padding-right: $spacing-md;
+					width: 100%;
 
-    padding-top: 88px;
-    padding-bottom: 88px;
-  }
+				}
 
-  @include media-breakpoint-up(lg) {
-    @include make-col(6);
-  }
-  @include media-breakpoint-up(xl) {
-    padding-right: 110px;
-  }
+			}
 
-}
+			.vf-linked-list-block__content{
 
-.vf-linked-list-block__content, .vf-linked-list-block__no-media-content, .vf-linked-list-block__no-media-list{
-  .vf-file-list {
-    .vf-file-list__link {
-      @include typo-paragraph-primary-mobile();
-    }
-  }
-}
+				@include vf-linked-list-block-col-2();
 
-.vf-linked-list-block__title {}
-.vf-linked-list-block__text, .vf-linked-list-block__text p {
-  @include typo-paragraph-primary-mobile();
-  
-  @include media-breakpoint-up(md) {
-    @include typo-paragraph-secondary-desktop();
-  }
-  margin-bottom: 1rem;
-}
+				.vf-linked-list-block__text, .vf-linked-list-block__text p {
 
-// Styles for reversed mode (image on the left on desktop)
-.vf-linked-list-block--reversed {
+					@include typo-paragraph-primary-mobile();
 
-  .vf-linked-list-block__content, .vf-linked-list-block__no-media-content {
-    
+					@include media-breakpoint-up(md) {
 
-    @include media-breakpoint-up(md) {
-      padding-left: $spacing-md;
-      order: 1 !important;
-      padding-right: 0;
-    }
-  
-    @include media-breakpoint-up(xl) {
-      padding-left: 110px;
-      order: 1 !important;
-      padding-right: 0;
-    }
-  }
+						@include typo-paragraph-secondary-desktop();
+
+					}
+
+					margin-bottom: 1rem;
+				}
+		    }
+		}
+
+		// Styles for reversed mode (image on the left on desktop)
+		&.vf-linked-list-block--reversed {
+
+			.vf-linked-list-block__content{
+
+				@include vf-linked-list-block-reverse();
+
+			}
+		}
+
+	}
+
+	&.vf-linked-list-block--no-media{
+
+		.vf-linked-list-block__body{
+
+			.vf-linked-list-block__media{
+
+				display:none;
+
+			}
+
+			.vf-linked-list-block__content{
+
+				@include make-container();
+				@include make-container-max-widths();
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 0;
+
+				.vf-linked-list-block__content-text{
+
+					@include vf-linked-list-block-col-2();
+					margin-top: 0;
+					padding-bottom: 0;
+
+					@include media-breakpoint-up(xs) {
+						padding-top: 35px;
+					}
+
+					@include media-breakpoint-up(md) {
+						padding-top: 88px;
+						padding-bottom: 88px;
+					}
+
+				}
+
+				.vf-linked-list-block__content-list{
+
+					@include vf-linked-list-block-col-1();
+
+					padding: 0;
+					margin-top: 0;
+
+					@include media-breakpoint-up(md) {
+						padding-top: 88px;
+						padding-bottom: 88px;
+					}
+
+					.vf-linked-list-block__text, .vf-linked-list-block__text p {
+
+						@include typo-paragraph-primary-mobile();
+
+						@include media-breakpoint-up(md) {
+
+							@include typo-paragraph-secondary-desktop();
+
+						}
+
+						margin-bottom: 1rem;
+					}
+
+				}
+			}
+		}
+
+		// Styles for reversed mode (list on the left on desktop)
+		&.vf-linked-list-block--reversed {
+
+			.vf-linked-list-block__content-text{
+
+				@include vf-linked-list-block-reverse();
+
+			}
+		}
+	}
 }
