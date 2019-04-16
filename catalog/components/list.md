@@ -22,13 +22,13 @@ showSource: true
 
 ### File list
 
-To add a specific file type icon, simply add the corresponding modifier class to the `vf-file-list__link` element. Supported modifiers: 
+Specific icons are automatically added to the following filetypes: 
 
-`vf-file-list__link--xls`
-`vf-file-list__link--txt`
-`vf-file-list__link--ppt`
-`vf-file-list__link--pdf`
-`vf-file-list__link--doc`
+`xls`
+`txt`
+`ppt`
+`pdf`
+`doc`
 
 
 ```html
@@ -40,23 +40,23 @@ showSource: true
     <span class="vf-file-list__item-description">(FILE, 10 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link vf-file-list__link--xls" href="#">Vattenfall uppförandekod för leverantörer, bilaga 9</a>
+    <a class="vf-file-list__link" href="#?.xls">Vattenfall uppförandekod för leverantörer, bilaga 9</a>
     <span class="vf-file-list__item-description">(XLS, 460 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link vf-file-list__link--txt" href="#">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
+    <a class="vf-file-list__link" href="#?.txt">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
     <span class="vf-file-list__item-description">(TXT, 520 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link vf-file-list__link--ppt" href="#">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
+    <a class="vf-file-list__link" href="#?.ppt">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
     <span class="vf-file-list__item-description">(PPT, 520 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link vf-file-list__link--pdf" href="#">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
+    <a class="vf-file-list__link" href="#?.pdf">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
     <span class="vf-file-list__item-description">(PDF, 520 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link vf-file-list__link--doc" href="#">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
+    <a class="vf-file-list__link" href="#?.doc">Vattenfall Electronic Commerce Guidelines, bilaga 10a</a>
     <span class="vf-file-list__item-description">(DOC, 520 kB)</span>
   </li>
 </ul>
