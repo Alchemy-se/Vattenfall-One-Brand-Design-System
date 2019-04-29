@@ -40,13 +40,17 @@ And the following modifier classes are available:
 * `.vf-file-list__link--type-doc`
 * `.vf-file-list__link--type-new-window`
 * `.vf-file-list__link--type-arrow-right`
+* `.vf-file-list__link--type-download`
 
 ```html
 showSource: true
 ---
 <ul class="vf-file-list">
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link" href="#">File name goes here</a>
+    <a class="vf-file-list__link" href="#">Default link style</a>
+  </li>
+  <li class="vf-file-list__item">
+    <a class="vf-file-list__link vf-file-list__link--type-download" href="#">File name goes here</a>
     <span class="vf-file-list__item-description">(FILE, 10 kB)</span>
   </li>
   <li class="vf-file-list__item">
