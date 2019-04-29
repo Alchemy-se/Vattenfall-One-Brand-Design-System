@@ -1,6 +1,6 @@
 {
   "name": "@vf-alchemy/vattenfall-design-system",
-  "version": "7.6.0",
+  "version": "7.6.1",
   "main": "index.js",
   "scripts": {
     "test": "yarn build",
