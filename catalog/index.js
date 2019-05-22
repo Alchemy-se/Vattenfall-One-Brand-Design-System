@@ -85,6 +85,10 @@ const pages = [
         path: "/css/table",
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))
+      }, {
+        path: "/css/drop-down",
+        title: "- Drop-down list",
+        content: pageLoader(() => import("./components/drop-down.md"))
       },  
       
       ...moleculesNavigation,
