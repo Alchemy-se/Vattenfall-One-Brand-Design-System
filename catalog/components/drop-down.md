@@ -47,6 +47,8 @@ showSource: true
 
 ### Underline style
 
+To use the underline style, simply add the modifier class `vf-dropdown--underline` to the `vf-dropdown` element.
+
 ```html
 showSource: true
 ---
@@ -92,6 +94,8 @@ showSource: true
 
 ### Disabled
 
+To disable a drop-down, simply add the modifier class `disabled` to the `vf-dropdown` element, and change the `data-control` attribute to `vf-dropdown-data-disabled`
+
 ```html
 showSource: true
 ---
@@ -136,6 +140,8 @@ showSource: true
 ```
 
 ### With checkboxes
+
+To add checkboxes, simply add `inputs` before the `label` within the `vf-dropdown-list-item` element. The `name` attribute must be `vf-dropdown-group`, and the `value` attribute must be the same as the `label`.
 
 ```html
 showSource: true
