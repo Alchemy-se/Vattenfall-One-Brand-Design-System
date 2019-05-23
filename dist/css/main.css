@@ -10146,7 +10146,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-dropdown .vf-dropdown-label {
   display: block;
   background: #fff;
-  padding: 12px 10px 12px 20px;
+  padding: 12px 114px 12px 20px;
   margin-bottom: 0;
   border-radius: 4px 4px 4px 4px;
   border: 1px solid #e8e8e9;
@@ -10168,7 +10168,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   background-size: 36px;
   background-position: right center;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzMzMzMzO30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K");
-  padding-left: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  padding: 18px;
 }
 
 .vf-dropdown .vf-dropdown-list {
@@ -10180,10 +10184,6 @@ a.vf-badge:hover, a.vf-badge:focus {
   transform-origin: 50% 0;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
-  -webkit-transition: -webkit-transform .15s ease-in-out .15s;
-  transition: -webkit-transform .15s ease-in-out .15s;
-  transition: transform .15s ease-in-out .15s;
-  transition: transform .15s ease-in-out .15s, -webkit-transform .15s ease-in-out .15s;
   max-height: 500px;
   overflow-y: scroll;
 }
@@ -10192,7 +10192,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   padding: 12px 20px;
 }
 
-.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item:hover {
+.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item:hover, .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item.checked {
   background-color: #1964a3;
   color: #fff;
 }
@@ -10222,11 +10222,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
   border-bottom: 3px solid #d8d8d8;
   border-right: 3px solid #d8d8d8;
-  height: 18px;
-  width: 10px;
+  height: 16px;
+  width: 8px;
   margin: auto;
-  left: 8px;
-  top: 1px;
+  left: 9px;
+  top: 3px;
   -webkit-transform: rotate(45deg) scale(0);
   transform: rotate(45deg) scale(0);
 }

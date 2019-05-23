@@ -98,7 +98,7 @@ showSource: true
 
 <div class="vf-row">
 
-  <div class="vf-dropdown disabled" data-control="vf-dropdown-data">
+  <div class="vf-dropdown disabled" data-control="vf-dropdown-data-disabled">
 
     <label class="vf-dropdown-label">Select option</label>
     
@@ -143,7 +143,7 @@ showSource: true
 
 <div class="vf-row">
 
-  <div class="vf-dropdown on" data-control="vf-dropdown-data">
+  <div class="vf-dropdown" data-control="vf-dropdown-data">
 
     <label class="vf-dropdown-label">Select option</label>
     
