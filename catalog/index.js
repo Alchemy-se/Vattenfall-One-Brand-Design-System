@@ -24,7 +24,7 @@ const styles = [
 ]
 
 const scripts = [
-  '/dist/js/drop-down.js'
+  '/dist/js/horizon.min.js'
 ]
 
 const pages = [
