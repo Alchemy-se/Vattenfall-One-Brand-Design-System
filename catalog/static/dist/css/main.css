@@ -10198,9 +10198,9 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item input {
-  -moz-appearance: none;
-  -o-apperance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: white;
   border-radius: 4px 4px 4px 4px;
   border: 1px solid #a4a9ac;
