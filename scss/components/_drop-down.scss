@@ -17,7 +17,7 @@
 .vf-dropdown{
 
 	position: relative;
-	//height: 52px;
+	width: 300px;
 
 	.vf-dropdown-label{
 
@@ -33,6 +33,9 @@
 		font-weight: normal;
 		letter-spacing: 0px;
 		cursor: pointer;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 
 		&:hover{
 
@@ -171,6 +174,9 @@
 				letter-spacing: 0px;
 				line-height: 22px;
 				vertical-align: middle;
+				max-width: 210px;
+				word-break: break-all;
+				hyphens: auto;
 
 			}
 		}
