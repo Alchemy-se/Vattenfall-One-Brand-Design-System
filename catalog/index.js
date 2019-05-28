@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from '@alchemy-se/catalog';
-import moleculesNavigation from './molecules/navigation'
-import organismsNavigation from './organisms/navigation'
-import layoutsNavigation from './layouts/navigation'
+import moleculesNavigation from './molecules/navigation';
+import organismsNavigation from './organisms/navigation';
+import layoutsNavigation from './layouts/navigation';
+
+
+//All this needed?
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
 
 import Welcome from './WELCOME';
 import Designers from './designers/getting-started-designers';
@@ -14,6 +21,10 @@ const styles = [
   '/dist/css/reboot.css',
   '/dist/css/main.css',
   '/dist/css/documentation.css'
+]
+
+const scripts = [
+  '/dist/js/horizon.min.js'
 ]
 
 const pages = [
@@ -85,6 +96,11 @@ const pages = [
         path: "/css/table",
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))
+      },  
+      , {
+        path: "/css/drop-down",
+        title: "- Drop-down List",
+        content: pageLoader(() => import("./components/drop-down.md"))
       },  
       
       ...moleculesNavigation,
@@ -196,6 +212,7 @@ ReactDOM.render(
     theme={theme} 
     menuFooter={menuFooter}
     styles={[]}
-    globalStyles={styles} />,
+    globalStyles={styles}
+    scripts={scripts} />,
   document.getElementById("catalog")
 );
