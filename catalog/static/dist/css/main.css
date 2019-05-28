@@ -10141,6 +10141,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown {
   position: relative;
+  width: 300px;
 }
 
 .vf-dropdown .vf-dropdown-label {
@@ -10156,6 +10157,9 @@ a.vf-badge:hover, a.vf-badge:focus {
   font-weight: normal;
   letter-spacing: 0px;
   cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .vf-dropdown .vf-dropdown-label:hover {
@@ -10270,6 +10274,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
   line-height: 22px;
   vertical-align: middle;
+  max-width: 210px;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .vf-dropdown.vf-dropdown--underline .vf-dropdown-label {
