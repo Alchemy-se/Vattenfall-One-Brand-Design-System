@@ -9963,9 +9963,9 @@ a.vf-badge:hover, a.vf-badge:focus {
   order: 1 !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .vf-image-block--reversed .vf-image-block__content {
-    padding-left: 110px;
+    padding-left: 44px;
     padding-right: 0;
   }
 }
@@ -10292,15 +10292,13 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-color: #69788c;
 }
 
-.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-label,
-.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-list {
+.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-label, .vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-list {
   color: #767676;
   background: none;
   border-color: #869bad;
 }
 
-.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-label,
-.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-list {
+.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-label, .vf-dropdown.vf-dropdown--underline.on .vf-dropdown-list {
   background: #fff;
 }
 
@@ -10358,15 +10356,13 @@ a.vf-badge:hover, a.vf-badge:focus {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojOTk5OTk5O30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K");
 }
 
-.vf-dropdown.disabled .vf-dropdown-label,
-.vf-dropdown.disabled .vf-dropdown-list {
+.vf-dropdown.disabled .vf-dropdown-label, .vf-dropdown.disabled .vf-dropdown-list {
   color: #767676;
   background: #f1f1f1;
   border-color: #bcbcbc;
 }
 
-.vf-dropdown.disabled .vf-dropdown-label .vf-dropdown-list-item:hover,
-.vf-dropdown.disabled .vf-dropdown-list .vf-dropdown-list-item:hover {
+.vf-dropdown.disabled .vf-dropdown-label .vf-dropdown-list-item:hover, .vf-dropdown.disabled .vf-dropdown-list .vf-dropdown-list-item:hover {
   background-color: inherit;
   color: inherit;
 }
