@@ -1,4 +1,5 @@
 {
+  "version": 1,
   "type": "static",
   "static": {
     "rewrites": [
@@ -7,6 +8,5 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "version": 1,
+  }
 }
