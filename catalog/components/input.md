@@ -2,7 +2,6 @@ Input fields.
 
 ### Standard
 
-If a label is added, it will be hidden until input.
 
 ```html
 showSource: true
@@ -10,36 +9,24 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" class="vf-input" placeholder="Standard Input Placeholder" id="with_label">
-    <label for="with_label">Standard Label</label>
-  </div>
-</div>
-```
-
-### No label
-
-If no label is added, but a placeholder is, a label will be generated and will appear above the field on input. If an ID is added, the corresponding "for" attribute will be added to the generated label.
-
-```html
-showSource: true
----
-
-<div class="vf-row">
-  <div class="vf-input-container">
-    <input type="text" class="vf-input" placeholder="Standard Input Placeholder" id="standard">
+    <input type="text" id="vf_standard_input" class="vf-input">
+    <label for="vf_standard_input">Standard Label</label>
   </div>
 </div>
 ```
 
 ### Number
 
+To use a number input, change the `input type`to `number`:
+
 ```html
 showSource: true
 ---
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="number" class="vf-input" placeholder="Number Input Placeholder">
+    <input type="number" id="vf_number_input" class="vf-input">
+    <label for="vf_number_input">Number Label</label>
   </div>
 </div>
 ```
@@ -53,8 +40,9 @@ showSource: true
 ---
 
 <div class="vf-row">
-  <div class="vf-input-container" title="Tooltip text">
-    <input type="text" class="vf-input vf-input--underline" placeholder="Underline Style Input Placeholder">
+  <div class="vf-input-container">
+    <input type="text" id="vf_underline_input" class="vf-input vf-input--underline">
+    <label for="vf_underline_input">Underline Label</label>
   </div>
 </div>
 ```
@@ -69,7 +57,8 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" class="vf-input vf-input--tooltip" placeholder="Input with Tooltip Placeholder" data-tooltip="Tooltip text123">
+    <input type="text" id="vf_tooltip_input" class="vf-input vf-input--tooltip" data-tooltip="Tooltip text123">
+    <label for="vf_tooltip_input">Tooltip Label</label>
   </div>
 </div>
 ```
@@ -84,7 +73,8 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" class="vf-input vf-input--warning" placeholder="Input with Warning State Placeholder" >
+    <input type="text" id="vf_warning_state_input" class="vf-input vf-input--warning">
+    <label for="vf_warning_state_input">Warning State Label</label>
   </div>
 </div>
 ```
@@ -99,7 +89,8 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" class="vf-input vf-input--error" placeholder="Input with Error State Placeholder" >
+    <input type="text" id=vf_error_state_input" class="vf-input vf-input--error">
+    <label for="vf_error_state_input">Error State Label</label>
   </div>
 </div>
 ```
