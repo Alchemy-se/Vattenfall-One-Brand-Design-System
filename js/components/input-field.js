@@ -1,7 +1,5 @@
 (function($){
 
-console.log("werwe"); //Called twice. Jquery included twice?
-
 	$('.vf-input').each(function( index ) {
 
 		$(this).on('keyup',function(){
@@ -20,21 +18,8 @@ console.log("werwe"); //Called twice. Jquery included twice?
 			}
 		});
 
-		if($(this).attr('type') == 'number'){ //use class instread...?
+		if($(this).attr('type') == 'number'){
 			
-
-/*
-			//minus not being inputted. Restricted by "number"?
-			//Numbers only
-			this.oninput = function(value){
-
-				this.value = this.value.replace((/[^0-9.]/g), ''); //Does not allow minus
-				this.value = this.value.replace(/(\..*)\./g, '$1');
-
-			};
-*/
-
-
 			if (!$(this).siblings().hasClass('vf-input--number-decrement')) {
 				$('<div class="vf-input--number-decrement"></div>').insertAfter(this);
 			}
@@ -43,7 +28,7 @@ console.log("werwe"); //Called twice. Jquery included twice?
 				$('<div class="vf-input--number-increment"></div>').insertAfter(this);
 			}
 
-			$('.vf-input--number-increment, .vf-input--number-decrement').unbind().on('click keyup',function(){ //unbind() Prevents double call
+			$('.vf-input--number-increment, .vf-input--number-decrement').unbind().on('click keyup',function(){
 
 				if(!$(this).closest('.vf-input-container').find('.vf-input').hasClass("vf-input--data")){
 
