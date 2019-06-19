@@ -11,7 +11,7 @@
 				}
 			}
 			else{
-				//Input has been entered. Prevent label from returning to original position.
+				//Prevent label from returning to original position.
 				if(!$(this).hasClass('vf-input--data')){
 					$(this).addClass('vf-input--data');
 				}
