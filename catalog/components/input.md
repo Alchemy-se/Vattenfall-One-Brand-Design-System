@@ -17,7 +17,7 @@ showSource: true
 
 ### Number
 
-To use a number input, change the `input type`to `number`:
+To use a number input, change the `input type` to `number`:
 
 ```html
 showSource: true
@@ -89,7 +89,7 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" id=vf_error_state_input" class="vf-input vf-input--error">
+    <input type="text" id="vf_error_state_input" class="vf-input vf-input--error">
     <label for="vf_error_state_input">Error State Label</label>
   </div>
 </div>
