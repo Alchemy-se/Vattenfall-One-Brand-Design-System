@@ -89,7 +89,7 @@ const pages = [
         title: "- Lists",
         content: pageLoader(() => import("./components/list.md"))
       }, {
-        path: "/css/numbnered-list",
+        path: "/css/numbered-list",
         title: "- Numbered List",
         content: pageLoader(() => import("./components/numbered-list.md"))
       }, {
