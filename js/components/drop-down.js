@@ -22,6 +22,8 @@
         $(this).siblings().removeClass("checked");
         $(this).addClass("checked");
         _this.onCheckBox();
+        _this.toggleOpen(); //Close
+
       });
     }
 

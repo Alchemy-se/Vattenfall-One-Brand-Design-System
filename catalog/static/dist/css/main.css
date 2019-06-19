@@ -9963,9 +9963,9 @@ a.vf-badge:hover, a.vf-badge:focus {
   order: 1 !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .vf-image-block--reversed .vf-image-block__content {
-    padding-left: 110px;
+    padding-left: 44px;
     padding-right: 0;
   }
 }
