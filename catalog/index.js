@@ -96,12 +96,15 @@ const pages = [
         path: "/css/table",
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))
-      },  
-      , {
+      }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => import("./components/drop-down.md"))
-      },  
+      }, {
+        path: "/css/input",
+        title: "- Input",
+        content: pageLoader(() => import("./components/input.md"))
+      }, 
       
       ...moleculesNavigation,
       ...organismsNavigation,
