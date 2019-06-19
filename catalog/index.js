@@ -89,6 +89,10 @@ const pages = [
         title: "- Lists",
         content: pageLoader(() => import("./components/list.md"))
       }, {
+        path: "/css/numbnered-list",
+        title: "- Numbered List",
+        content: pageLoader(() => import("./components/numbered-list.md"))
+      }, {
         path: "/css/badge",
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
@@ -96,8 +100,7 @@ const pages = [
         path: "/css/table",
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))
-      },  
-      , {
+      }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => import("./components/drop-down.md"))
@@ -110,8 +113,7 @@ const pages = [
         path: "/components/utilities",
         title: "Utilities",
         content: pageLoader(() => import("./utilities/utilities.md"))
-      },
-       {
+      }, {
         path: "/utilities/favicon",
         title: "- Favicon",
         content: pageLoader(() => import("./utilities/favicon.md"))
