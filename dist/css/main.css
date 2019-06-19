@@ -9739,6 +9739,20 @@ a.vf-card:hover {
   padding: 12px 0 12px 14px;
 }
 
+.vf-ol {
+  list-style-position: outside;
+  padding: 0 0 0 18px;
+}
+
+.vf-ol li {
+  font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 12px 0 12px 14px;
+}
+
 .vf-badge {
   display: inline-block;
   padding: 6px 4px;
