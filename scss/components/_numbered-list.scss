@@ -1,0 +1,8 @@
+.vf-ol {
+  list-style-position: outside;
+  padding: 0 0 0 18px;
+  li {
+    @include typo-paragraph-primary-mobile();
+    padding: 12px 0 12px 14px;
+  }
+}
