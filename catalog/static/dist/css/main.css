@@ -9782,6 +9782,42 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: -1px;
 }
 
+.vf-preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.vf-preloader .vf-preloader-svg {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+.vf-preloader .vf-preloader-svg .vf-preloader-circle {
+  fill: none;
+  stroke: #1964a3;
+  stroke-width: 4;
+  stroke-linecap: round;
+  -webkit-transition: stroke-dasharray 1s linear;
+  transition: stroke-dasharray 1s linear;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 0, 238.76;
+}
+
+.vf-preloader .vf-preloader-svg .vf-preloader-percentage {
+  fill: #1964a3;
+  stroke: none;
+  font-size: 16px;
+  text-anchor: middle;
+  alignment-baseline: central;
+}
+
 .vf-cookie-banner {
   background: #1E324F;
   color: white;
