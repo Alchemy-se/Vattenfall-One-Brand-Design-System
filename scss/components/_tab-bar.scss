@@ -1,7 +1,7 @@
 .vf-container--inline{
 
 	display: inline;
-	
+
 }
 
 .vf-tab-bar{
@@ -26,6 +26,10 @@
     	background-color: rgb(255,255,255);
     	border-right: 1px solid rgb(237, 241, 246);
 
+    	//box-shadow: 0 0 0 0 rgb(32, 113, 181);
+    	box-shadow: 0 0px 0 0 transparent;
+    	transition: box-shadow .3s ease-in-out;;
+
 		cursor: pointer;
 
 		&:focus {
@@ -35,12 +39,14 @@
     	&:first-of-type{
 
     		border-radius: 50px 0 0 50px;
+
     	}
 
     	&:last-of-type{
 
     		border: none;
     		border-radius: 0 50px 50px 0;
+
     	}
 
     	@include media-breakpoint-down(lg) {
@@ -64,7 +70,9 @@
 
     	&.vf-tab-bar-item--active{
 
-    		border-bottom: 3px solid rgb(32, 113, 181);
+    		//border-bottom: 3px solid rgb(32, 113, 181);
+
+    		box-shadow: 0 3px 0 0 rgb(32, 113, 181);
 
     		@include media-breakpoint-down(lg) {
 

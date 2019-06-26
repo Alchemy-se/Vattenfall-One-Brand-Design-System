@@ -10094,6 +10094,12 @@ a.vf-badge:hover, a.vf-badge:focus {
   padding: 16px 22px;
   background-color: white;
   border-right: 1px solid #edf1f6;
+  -webkit-box-shadow: 0 0px 0 0 transparent;
+  box-shadow: 0 0px 0 0 transparent;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   cursor: pointer;
 }
 
@@ -10131,7 +10137,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active {
-  border-bottom: 3px solid #2071b5;
+  -webkit-box-shadow: 0 3px 0 0 #2071b5;
+  box-shadow: 0 3px 0 0 #2071b5;
 }
 
 @media (max-width: 1199.98px) {
