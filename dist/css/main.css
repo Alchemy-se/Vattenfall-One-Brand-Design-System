@@ -101,7 +101,7 @@ html.sr .reveal {
 }
 
 @font-face {
-  font-family: "Vattenfall Hall";
+  font-family: "Vattenfall Hall Bold";
   src: url("../fonts/VattenfallHall-Bold.eot?#iefix");
   src: url("../fonts/VattenfallHall-Bold.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../fonts/VattenfallHall-Bold.woff") format("woff");
   font-weight: 600;
@@ -10236,9 +10236,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: none;
   top: 80px;
   color: #222222;
-  font-family: "Vattenfall Hall";
+  font-family: "Vattenfall Hall Bold";
   font-size: 18px;
-  font-weight: bold;
   letter-spacing: 0px;
   line-height: 24px;
   text-align: center;
