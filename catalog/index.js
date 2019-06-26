@@ -101,6 +101,10 @@ const pages = [
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))
       }, {
+        path: "/css/tab-bar",
+        title: "- Tab Bar",
+        content: pageLoader(() => import("./components/tab-bar.md"))
+      }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => import("./components/drop-down.md"))
