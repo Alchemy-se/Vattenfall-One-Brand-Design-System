@@ -1,7 +1,5 @@
 (function($){
 
-	console.log("1sdf");
-
 	$('.vf-tab-bar-item').each(function( index ) {
 
 		if($(this).hasClass('vf-tab-bar-item--active')){
