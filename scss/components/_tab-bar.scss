@@ -1,59 +1,192 @@
-.vf-container--inline{
+.vf-tab-bar-container{
 
-	display: inline;
+	*[hidden] {
+		display: none;
+	}
 
-}
+	*:focus {
+		outline: none;
+	}
 
-.vf-tab-bar{
-
-	position: relative;
-	display: flex;
-	justify-content: center;
-
-	padding: 16px 22px;
-
-	list-style: none;
-	padding: 0;
-	margin: 0;
-
-	.vf-tab-bar-item{
+	.vf-tab-bar{
 
 		position: relative;
-		flex-grow: 1;
-    	//flex-basis: 0; //Equal length required?
+		display: flex;
+		justify-content: center;
 
-    	padding: 16px 22px;
-    	background-color: rgb(255,255,255);
-    	border-right: 1px solid rgb(237, 241, 246);
+		padding: 16px 22px;
 
-    	//box-shadow: 0 0 0 0 rgb(32, 113, 181);
-    	box-shadow: 0 0px 0 0 transparent;
-    	transition: box-shadow .3s ease-in-out;;
+		list-style: none;
+		padding: 0;
+		margin: 0;
 
-		cursor: pointer;
+		.vf-tab-bar-item{
 
-		&:focus {
-			outline: none;
-		}
+			position: relative;
+			flex-grow: 1;
+	    	//flex-basis: 0; //Equal length required?
 
-    	&:first-of-type{
+	    	padding: 16px 22px;
+	    	background-color: rgb(255,255,255);
+	    	border-right: 1px solid rgb(237, 241, 246);
 
-    		border-radius: 50px 0 0 50px;
+	    	//box-shadow: 0 0 0 0 rgb(32, 113, 181);
+	    	box-shadow: 0 0px 0 0 transparent;
+	    	transition: box-shadow .3s ease-in-out;;
 
-    	}
+			cursor: pointer;
 
-    	&:last-of-type{
+	    	&:first-of-type{
 
-    		border: none;
-    		border-radius: 0 50px 50px 0;
+	    		border-radius: 50px 0 0 50px;
 
-    	}
+	    	}
 
-    	@include media-breakpoint-down(lg) {
+	    	&:last-of-type{
 
-    			height: 64px;
-				width: 69px;
-				flex: none;
+	    		border: none;
+	    		border-radius: 0 50px 50px 0;
+
+	    	}
+
+	    	@include media-breakpoint-down(lg) {
+
+	    			height: 64px;
+					width: 69px;
+					flex: none;
+
+					&:before{
+
+						content: '';
+						position: absolute;
+						background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPHRpdGxlPkNvbXBvbmVudHMgLyBJY29ucyAvIFN5bWJvbCAvIFBsYWNlaG9sZGVyPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LjEsMTUuOEwxMiwxMi43bC0zLjEsMy4xYzAuOCwwLjcsMS45LDEuMSwzLjEsMS4xQzEzLjIsMTYuOSwxNC4yLDE2LjUsMTUuMSwxNS44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LjEsOC4yYy0wLjgtMC43LTEuOS0xLjEtMy4xLTEuMWMtMS4yLDAtMi4yLDAuNC0zLjEsMS4xbDMuMSwzLjFMMTUuMSw4LjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNy4xLDEyYzAsMS4yLDAuNCwyLjIsMS4xLDMuMWwzLjEtMy4xTDguMiw4LjlDNy41LDkuOCw3LjEsMTAuOCw3LjEsMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYuOSwxMmMwLTEuMi0wLjQtMi4yLTEuMS0zLjFMMTIuNywxMmwzLjEsMy4xQzE2LjUsMTQuMiwxNi45LDEzLjIsMTYuOSwxMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiw2LjJjMS40LDAsMi44LDAuNSwzLjgsMS40bDMuNC0zLjRjLTEuOS0xLjctNC40LTIuOC03LjItMi44Yy0yLjgsMC01LjMsMS4xLTcuMiwyLjhsMy40LDMuNAoJCUM5LjIsNi43LDEwLjYsNi4yLDEyLDYuMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LjIsMTJjMC0xLjQsMC41LTIuOCwxLjQtMy44TDQuMSw0LjhDMi40LDYuNywxLjMsOS4yLDEuMywxMmMwLDIuOCwxLjEsNS4zLDIuOCw3LjJsMy40LTMuNAoJCUM2LjcsMTQuOCw2LjIsMTMuNCw2LjIsMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTkuOSw0LjhsLTMuNCwzLjRjMC45LDEsMS40LDIuMywxLjQsMy44YzAsMS40LTAuNSwyLjgtMS40LDMuOGwzLjQsMy40YzEuNy0xLjksMi44LTQuNCwyLjgtNy4yCgkJQzIyLjcsOS4yLDIxLjYsNi43LDE5LjksNC44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTS01LjUtNS41djM1aDM1di0zNUgtNS41eiBNMjMuNCwyMi43bC0wLjcsMC43bC0yLjgtMi44Yy0yLjEsMS45LTQuOCwzLjEtNy45LDMuMXMtNS44LTEuMi03LjktMy4xbC0yLjgsMi44CgkJbC0wLjctMC43bDIuOC0yLjhjLTEuOS0yLjEtMy4xLTQuOC0zLjEtNy45YzAtMy4xLDEuMi01LjgsMy4xLTcuOUwwLjYsMS4zbDAuNy0wLjdsMi44LDIuOEM2LjIsMS41LDguOSwwLjMsMTIsMC4zCgkJYzMuMSwwLDUuOCwxLjIsNy45LDMuMWwyLjgtMi44bDAuNywwLjdsLTIuOCwyLjhjMS45LDIuMSwzLjEsNC44LDMuMSw3LjljMCwzLjEtMS4yLDUuOC0zLjEsNy45TDIzLjQsMjIuN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiwxNy44Yy0xLjQsMC0yLjgtMC41LTMuOC0xLjRsLTMuNCwzLjRjMS45LDEuNyw0LjQsMi44LDcuMiwyLjhjMi44LDAsNS4zLTEuMSw3LjItMi44bC0zLjQtMy40CgkJQzE0LjgsMTcuMywxMy40LDE3LjgsMTIsMTcuOHoiLz4KPC9nPgo8L3N2Zz4K");			height: 24px;
+						background-color: rgb(25, 100, 163);
+						width: 24px;
+						top: 20px;
+						left: 22px;
+
+					}
+
+				}
+
+	    	&.vf-tab-bar-item--active{
+
+	    		//border-bottom: 3px solid rgb(32, 113, 181);
+
+	    		box-shadow: 0 3px 0 0 rgb(32, 113, 181);
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			color: rgb(34, 34, 34);
+
+					&:before{
+
+						background-color: rgb(34, 34, 34);
+
+					}
+
+	    		}
+
+	    		.vf-tab-bar-link{
+
+					color: rgb(34, 34, 34);
+
+					&:before{
+
+						background-color: rgb(34, 34, 34);
+
+					}
+
+				}
+	    		
+	    	}
+
+	    	&.vf-tab-bar-item--disabled{
+
+	    		cursor: not-allowed;
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			color: rgb(118, 118, 118);
+
+	    			&:before{
+
+		    			background-color: rgb(118, 118, 118);
+
+		    		}
+
+	    		}
+
+		   		.vf-tab-bar-link{
+
+		   			pointer-events: none;
+		    		color: rgb(118, 118, 118);
+
+		    		&:before{
+
+		    			background-color: rgb(118, 118, 118);
+
+		    		}
+
+		    	}
+	    		
+	    	}
+
+	    	&:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active){
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			&:hover{
+						
+						color: rgb(32, 113, 181);
+
+						&:before{
+
+							background-color: rgb(32, 113, 181);
+
+						}
+
+					}
+		    		
+	    		}
+
+	    		.vf-tab-bar-link{
+
+		    		&:hover{
+						
+						color: rgb(32, 113, 181);
+
+						&:before{
+
+							background-color: rgb(32, 113, 181);
+						}
+
+					}
+				}
+	    	}
+
+	    	.vf-tab-bar-link{
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			display:none;
+
+	    		}
+
+	    		display: flex;
+		    	color: rgb(25, 100, 163);
+				font-family: "Vattenfall Hall";
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: -0.05px;
+				line-height: 28px;
+				padding-left: 44px;
+
+				&:hover{
+					
+					text-decoration: none;
+
+				}
 
 				&:before{
 					content: '';
@@ -66,155 +199,48 @@
 
 				}
 
-			}
+		    }
+		}
 
-    	&.vf-tab-bar-item--active{
+		.vf-tab-bar-link-mobile {
 
-    		//border-bottom: 3px solid rgb(32, 113, 181);
+			position: absolute;
+			display: none;
+			top: 80px;
 
-    		box-shadow: 0 3px 0 0 rgb(32, 113, 181);
+			color: rgb(34, 34, 34);
+			font-family: "Vattenfall Hall Bold";
+			font-size: 18px;
+			letter-spacing: 0px;
+			line-height: 24px;
+			text-align: center;
 
-    		@include media-breakpoint-down(lg) {
+			&.vf-tab-bar-link-mobile--active{
 
-    			color: rgb(34, 34, 34);
+				@include media-breakpoint-down(lg) {
 
-				&:before{
-					background-color: rgb(34, 34, 34);
-				}
+					display: block;
+					cursor: default;
 
-    		}
-
-    		.vf-tab-bar-link{
-
-				color: rgb(34, 34, 34);
-
-				&:before{
-					background-color: rgb(34, 34, 34);
-				}
-
-			}
-    		
-    	}
-
-    	&.vf-tab-bar-item--disabled{
-
-    		cursor: not-allowed;
-
-    		@include media-breakpoint-down(lg) {
-
-    			color: rgb(118, 118, 118);
-
-    			&:before{
-	    			background-color: rgb(118, 118, 118);
-	    		}
-
-    		}
-
-	   		.vf-tab-bar-link{
-
-	   			pointer-events: none;
-	    		color: rgb(118, 118, 118);
-
-	    		&:before{
-	    			background-color: rgb(118, 118, 118);
-	    		}
-
-	    	}
-    		
-    	}
-
-    	&:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active){
-
-    		@include media-breakpoint-down(lg) {
-
-    			&:hover{
+					&:hover{
 					
-					color: rgb(32, 113, 181);
+						text-decoration: none;
 
-					&:before{
-						background-color: rgb(32, 113, 181);
 					}
-
-				}
-	    		
-    		}
-
-    		.vf-tab-bar-link{
-
-	    		&:hover{
-					
-					color: rgb(32, 113, 181);
-
-					&:before{
-						background-color: rgb(32, 113, 181);
-					}
-
 				}
 			}
-    	}
 
-    	.vf-tab-bar-link{
-
-    		@include media-breakpoint-down(lg) {
-
-    			display:none;
-
-    		}
-
-    		display: flex;
-	    	color: rgb(25, 100, 163);
-			font-family: "Vattenfall Hall";
-			font-size: 16px;
-			font-weight: 500;
-			letter-spacing: -0.05px;
-			line-height: 28px;
-			padding-left: 44px;
-
-			&:hover{
-				
-				text-decoration: none;
-
-			}
-
-			&:before{
-				content: '';
-				position: absolute;
-				background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPHRpdGxlPkNvbXBvbmVudHMgLyBJY29ucyAvIFN5bWJvbCAvIFBsYWNlaG9sZGVyPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LjEsMTUuOEwxMiwxMi43bC0zLjEsMy4xYzAuOCwwLjcsMS45LDEuMSwzLjEsMS4xQzEzLjIsMTYuOSwxNC4yLDE2LjUsMTUuMSwxNS44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LjEsOC4yYy0wLjgtMC43LTEuOS0xLjEtMy4xLTEuMWMtMS4yLDAtMi4yLDAuNC0zLjEsMS4xbDMuMSwzLjFMMTUuMSw4LjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNy4xLDEyYzAsMS4yLDAuNCwyLjIsMS4xLDMuMWwzLjEtMy4xTDguMiw4LjlDNy41LDkuOCw3LjEsMTAuOCw3LjEsMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYuOSwxMmMwLTEuMi0wLjQtMi4yLTEuMS0zLjFMMTIuNywxMmwzLjEsMy4xQzE2LjUsMTQuMiwxNi45LDEzLjIsMTYuOSwxMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiw2LjJjMS40LDAsMi44LDAuNSwzLjgsMS40bDMuNC0zLjRjLTEuOS0xLjctNC40LTIuOC03LjItMi44Yy0yLjgsMC01LjMsMS4xLTcuMiwyLjhsMy40LDMuNAoJCUM5LjIsNi43LDEwLjYsNi4yLDEyLDYuMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LjIsMTJjMC0xLjQsMC41LTIuOCwxLjQtMy44TDQuMSw0LjhDMi40LDYuNywxLjMsOS4yLDEuMywxMmMwLDIuOCwxLjEsNS4zLDIuOCw3LjJsMy40LTMuNAoJCUM2LjcsMTQuOCw2LjIsMTMuNCw2LjIsMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTkuOSw0LjhsLTMuNCwzLjRjMC45LDEsMS40LDIuMywxLjQsMy44YzAsMS40LTAuNSwyLjgtMS40LDMuOGwzLjQsMy40YzEuNy0xLjksMi44LTQuNCwyLjgtNy4yCgkJQzIyLjcsOS4yLDIxLjYsNi43LDE5LjksNC44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTS01LjUtNS41djM1aDM1di0zNUgtNS41eiBNMjMuNCwyMi43bC0wLjcsMC43bC0yLjgtMi44Yy0yLjEsMS45LTQuOCwzLjEtNy45LDMuMXMtNS44LTEuMi03LjktMy4xbC0yLjgsMi44CgkJbC0wLjctMC43bDIuOC0yLjhjLTEuOS0yLjEtMy4xLTQuOC0zLjEtNy45YzAtMy4xLDEuMi01LjgsMy4xLTcuOUwwLjYsMS4zbDAuNy0wLjdsMi44LDIuOEM2LjIsMS41LDguOSwwLjMsMTIsMC4zCgkJYzMuMSwwLDUuOCwxLjIsNy45LDMuMWwyLjgtMi44bDAuNywwLjdsLTIuOCwyLjhjMS45LDIuMSwzLjEsNC44LDMuMSw3LjljMCwzLjEtMS4yLDUuOC0zLjEsNy45TDIzLjQsMjIuN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiwxNy44Yy0xLjQsMC0yLjgtMC41LTMuOC0xLjRsLTMuNCwzLjRjMS45LDEuNyw0LjQsMi44LDcuMiwyLjhjMi44LDAsNS4zLTEuMSw3LjItMi44bC0zLjQtMy40CgkJQzE0LjgsMTcuMywxMy40LDE3LjgsMTIsMTcuOHoiLz4KPC9nPgo8L3N2Zz4K");			height: 24px;
-				background-color: rgb(25, 100, 163);
-				width: 24px;
-				top: 20px;
-				left: 22px;
-
-			}
-
-	    }
+		}
 	}
 
-	.vf-tab-bar-link-mobile {
+	.vf-tab-bar-panels{
 
-		position: absolute;
-		display: none;
-		top: 80px;
+		padding-top: 35px;
 
-		color: rgb(34, 34, 34);
-		font-family: "Vattenfall Hall Bold";
-		font-size: 18px;
-		//font-weight: 600;
-		letter-spacing: 0px;
-		line-height: 24px;
-		text-align: center;
+		@include media-breakpoint-down(lg){
 
-		&.vf-tab-bar-link-mobile--active{
-			@include media-breakpoint-down(lg) {
-				display: block;
-				cursor: default;
+			padding-top: 55px;
 
-				&:hover{
-				
-					text-decoration: none;
-
-				}
-			}
 		}
 
 	}
