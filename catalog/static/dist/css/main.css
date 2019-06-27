@@ -7937,6 +7937,12 @@ a.vf-card:hover {
   max-width: 1680px;
 }
 
+@media (max-width: 767.98px) {
+  .vf-media-block {
+    margin-top: 180px;
+  }
+}
+
 @media (min-width: 768px) {
   .vf-media-block {
     max-height: 488px;
@@ -8116,6 +8122,12 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-linked-list-block {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8958,7 +8970,6 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
-  height: 550px;
 }
 
 @media (max-width: 767.98px) {
@@ -9028,6 +9039,7 @@ a.vf-card:hover {
   position: relative;
   z-index: 20;
   top: -200px;
+  margin-bottom: -200px;
 }
 
 @media (min-width: 576px) {
