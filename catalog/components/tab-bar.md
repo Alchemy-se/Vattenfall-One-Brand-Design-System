@@ -12,24 +12,24 @@ plain: false
 <div class="vf-container vf-tab-bar-container">
   <ul class="vf-tab-bar" aria-label="Tab bar example" role="tablist">
     <li id="vf-tab-1" class="vf-tab-bar-item vf-tab-bar-item--active" role="tab" aria-controls="vf-panel-1" aria-selected="true" tabindex="0">
-      <a class="vf-tab-bar-link" href="#">
+      <div class="vf-tab-bar-link">
         Tab name 1
-      </a>
+      </div>
     </li>
     <li id="vf-tab-2" class="vf-tab-bar-item" role="tab" aria-controls="vf-panel-2" aria-selected="false" tabindex="-1">
-      <a class="vf-tab-bar-link" href="#">
+      <div class="vf-tab-bar-link">
         Tab name 2
-      </a>
+      </div>
     </li>
     <li id="vf-tab-3" class="vf-tab-bar-item vf-tab-bar-item--disabled" role="tab" aria-disabled="true" tabindex="-1">
-      <a class="vf-tab-bar-link" href="#">
+      <div class="vf-tab-bar-link" div>
         Disabled tab
-      </a>
+      </div>
     </li>
     <li id="vf-tab-4" class="vf-tab-bar-item" role="tab" aria-controls="vf-panel-4" aria-selected="false" tabindex="-1">
-      <a class="vf-tab-bar-link" href="#">
+      <div class="vf-tab-bar-link">
         Tab name 4
-      </a>
+      </div>
     </li>
   </ul>
   <div class="vf-tab-bar-panels">
