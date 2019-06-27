@@ -23,6 +23,11 @@
 			$(this).addClass('vf-tab-bar-item--active').attr({'aria-selected':'true', 'tabindex':'0'}).siblings().removeClass('vf-tab-bar-item--active').attr({'aria-selected':'false', 'tabindex':'-1'});
 
 			$(this).nextAll('.vf-tab-bar-link-mobile:first').addClass('vf-tab-bar-link-mobile--active').siblings('.vf-tab-bar-link-mobile').removeClass('vf-tab-bar-link-mobile--active');
+
+			$(this).closest('.vf-tab-bar-container').find('[role="tabpanel"]').attr('hidden', true);			
+
+			$(this).closest('.vf-tab-bar-container').find('#' + $(this).attr('aria-controls')).attr('hidden', false);
+
 		}
 
 	});
