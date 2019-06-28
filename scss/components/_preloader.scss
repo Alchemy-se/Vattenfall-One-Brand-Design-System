@@ -1,0 +1,32 @@
+.vf-preloader{
+    display: flex;
+    flex-flow: row nowrap;
+
+    .vf-preloader-svg {
+
+        display: block;
+        height: 80px;
+        width: 80px;
+
+        .vf-preloader-circle {
+            
+            fill: none;
+            stroke: #1964a3;
+            stroke-width: 4;
+            stroke-linecap: round;
+            transition: stroke-dasharray 1s linear; //Updated by preloader.js
+            transform-origin: 50% 50%;
+            stroke-dasharray: 0, 238.76; //0 until updated.
+ 
+        }
+
+        .vf-preloader-percentage {
+            fill: #1964a3;
+            stroke: none;
+            font-size: 16px;
+            text-anchor: middle;
+            alignment-baseline: central;
+
+        }
+    }
+}

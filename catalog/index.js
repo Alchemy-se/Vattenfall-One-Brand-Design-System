@@ -97,6 +97,10 @@ const pages = [
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
       }, {
+        path: "/css/preloader",
+        title: "- Preloader",
+        content: pageLoader(() => import("./components/preloader.md"))
+      }, {
         path: "/css/table",
         title: "- Table",
         content: pageLoader(() => import("./components/table.md"))

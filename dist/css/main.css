@@ -34,6 +34,7 @@ html.sr .reveal {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  overflow-wrap: break-word;
 }
 
 .vf-border-top-gray-200 {
@@ -7816,6 +7817,12 @@ a.vf-card:hover {
   }
 }
 
+.vf-image-with-caption__image.vf-image-with-caption__image--full {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: auto !important;
+}
+
 .vf-image-with-caption__caption {
   color: white;
   font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7964,6 +7971,12 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-media-block {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8145,6 +8158,12 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-linked-list-block {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8987,7 +9006,6 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
-  height: 550px;
 }
 
 @media (max-width: 767.98px) {
@@ -9057,6 +9075,7 @@ a.vf-card:hover {
   position: relative;
   z-index: 20;
   top: -200px;
+  margin-bottom: -200px;
 }
 
 @media (min-width: 576px) {
@@ -9080,6 +9099,12 @@ a.vf-card:hover {
   font-weight: 500;
   letter-spacing: -0.1px;
   line-height: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-large-quote__quote {
+    padding-right: 12px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -9809,6 +9834,42 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-btn .vf-badge {
   position: relative;
   top: -1px;
+}
+
+.vf-preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.vf-preloader .vf-preloader-svg {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+.vf-preloader .vf-preloader-svg .vf-preloader-circle {
+  fill: none;
+  stroke: #1964a3;
+  stroke-width: 4;
+  stroke-linecap: round;
+  -webkit-transition: stroke-dasharray 1s linear;
+  transition: stroke-dasharray 1s linear;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 0, 238.76;
+}
+
+.vf-preloader .vf-preloader-svg .vf-preloader-percentage {
+  fill: #1964a3;
+  stroke: none;
+  font-size: 16px;
+  text-anchor: middle;
+  alignment-baseline: central;
 }
 
 .vf-cookie-banner {
