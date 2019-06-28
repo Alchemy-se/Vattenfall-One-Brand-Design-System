@@ -34,6 +34,7 @@ html.sr .reveal {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  overflow-wrap: break-word;
 }
 
 .vf-border-top-gray-200 {
@@ -7787,6 +7788,12 @@ a.vf-card:hover {
   }
 }
 
+.vf-image-with-caption__image.vf-image-with-caption__image--full {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: auto !important;
+}
+
 .vf-image-with-caption__caption {
   color: white;
   font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7935,6 +7942,12 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-media-block {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8116,6 +8129,12 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-linked-list-block {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8958,7 +8977,6 @@ a.vf-card:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
-  height: 550px;
 }
 
 @media (max-width: 767.98px) {
@@ -9028,6 +9046,7 @@ a.vf-card:hover {
   position: relative;
   z-index: 20;
   top: -200px;
+  margin-bottom: -200px;
 }
 
 @media (min-width: 576px) {
@@ -9051,6 +9070,12 @@ a.vf-card:hover {
   font-weight: 500;
   letter-spacing: -0.1px;
   line-height: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .vf-large-quote__quote {
+    padding-right: 12px;
+  }
 }
 
 @media (min-width: 576px) {

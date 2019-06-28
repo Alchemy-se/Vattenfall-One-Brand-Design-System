@@ -25,7 +25,7 @@ Vattenfall Digital Design System encourage consistency across platforms, environ
 
 <h2 className="guidelines_header">Typography</h2>
 <p className="guidelines_text">
-Vattenfall Digitas Design Kit include a typography set for general usage.
+Vattenfall Digital Design Kit includes a typography set for general usage.
 Use typography to present your design and content as clearly and efficiently as possible. This set is a range of contrasting styles that support the needs of your product and its content.
 </p>
 
