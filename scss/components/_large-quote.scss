@@ -68,6 +68,11 @@ $cutout-height-desktop: 85px;
   background: white;
   
   @include typo-quote-mobile();
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 12px;
+  }
+  
   @include media-breakpoint-up(sm) {
     @include typo-quote-desktop();
     padding: 40px 90px 0px 0;
