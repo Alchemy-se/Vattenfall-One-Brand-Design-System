@@ -1,0 +1,220 @@
+.vf-tab-bar-container{
+
+	*[hidden] {
+		display: none;
+	}
+
+	*:focus {
+		outline: none;
+	}
+
+	.vf-tab-bar{
+
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		//padding: 16px 22px;
+
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		.vf-tab-bar-item{
+
+			position: relative;
+			flex-grow: 1;
+
+			@include media-breakpoint-down(lg) {
+	    		flex-grow: 0;
+	    	}
+
+	    	flex-basis: 0; //Equal length
+
+	    	padding: 22px;
+	    	background-color: rgb(255,255,255);
+	    	border-right: 1px solid rgb(237, 241, 246);
+
+	    	//box-shadow: 0 0 0 0 rgb(32, 113, 181);
+	    	box-shadow: 0 0px 0 0 transparent;
+	    	transition: box-shadow .3s ease-in-out;;
+
+			cursor: pointer;
+
+	    	&:last-of-type{
+
+	    		border: none;
+
+	    	}
+
+	    	@include media-breakpoint-down(lg) {
+
+					align-items: center;
+					color: rgb(25, 100, 163);
+
+
+					&:before{
+
+						//content is supplied by class as font icon. See _fonts.scss
+						position: relative;
+						width: 24px;
+						height: 24px;
+						font-size: 24px;
+
+					}
+
+				}
+
+	    	&.vf-tab-bar-item--active{
+
+	    		//border-bottom: 3px solid rgb(32, 113, 181);
+
+	    		box-shadow: 0 3px 0 0 rgb(32, 113, 181);
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			color: rgb(34, 34, 34);
+
+	    		}
+
+	    		.vf-tab-bar-link{
+
+					color: rgb(34, 34, 34);
+
+				}
+	    		
+	    	}
+
+	    	&.vf-tab-bar-item--disabled{
+
+	    		cursor: not-allowed;
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			color: rgb(118, 118, 118);
+
+	    		}
+
+		   		.vf-tab-bar-link{
+
+		   			pointer-events: none;
+		    		color: rgb(118, 118, 118);
+
+		    	}
+	    		
+	    	}
+
+	    	&:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active){
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			&:hover{
+						
+						color: rgb(32, 113, 181);
+
+					}
+		    		
+	    		}
+
+	    		.vf-tab-bar-link{
+
+		    		&:hover{
+						
+						color: rgb(32, 113, 181);
+
+					}
+				}
+	    	}
+
+	    	.vf-tab-bar-link{
+
+	    		@include media-breakpoint-down(lg) {
+
+	    			//(display:none;
+	    			font-size: 0;
+
+	    			&:before{
+	    				left: 0!important;
+	    			}
+
+	    		}
+
+	    		display: flex;
+		    	color: rgb(25, 100, 163);
+				font-family: "Vattenfall Hall";
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: -0.05px;
+				line-height: 28px;
+				justify-content: center;
+				align-items: center;
+
+				&:hover{
+					
+					text-decoration: none;
+
+				}
+
+				&:before{
+					//content is supplied by class as font icon. See _fonts.scss
+					position: relative;
+					width: 24px;
+					height: 24px;
+					left: -20px;
+					top: 2px;
+					font-size: 24px;
+
+				}
+
+		    }
+		}
+
+		.vf-tab-bar-link-mobile {
+
+			position: absolute;
+			display: none;
+			top: 94px;
+
+			color: rgb(34, 34, 34);
+			font-family: "Vattenfall Hall Bold";
+			font-size: 18px;
+			letter-spacing: 0px;
+			line-height: 24px;
+			text-align: center;
+
+			&.vf-tab-bar-link-mobile--active{
+
+				@include media-breakpoint-down(lg) {
+
+					display: block;
+					cursor: default;
+
+					&:hover{
+					
+						text-decoration: none;
+
+					}
+				}
+			}
+
+			&:before{
+
+				content: none!important;
+
+			}
+
+		}
+	}
+
+	.vf-tab-bar-panels{
+
+		padding-top: 35px;
+
+		@include media-breakpoint-down(lg){
+
+			padding-top: 55px;
+
+		}
+
+	}
+}
