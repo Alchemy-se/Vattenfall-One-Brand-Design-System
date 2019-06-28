@@ -40,6 +40,7 @@ html.sr .reveal {
 *::before,
 *::after {
   box-sizing: inherit;
+  overflow-wrap: break-word;
 }
 
 @import "borders";

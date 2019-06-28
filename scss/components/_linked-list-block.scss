@@ -71,6 +71,10 @@
 	background: $vattenfall-light-blue;
 	@include make-container-bleed();
 
+	@include media-breakpoint-down(sm) {
+	    margin-top: 180px;
+	  }
+
 	@include media-breakpoint-up(md) {
 
 		margin-bottom: 188px;
