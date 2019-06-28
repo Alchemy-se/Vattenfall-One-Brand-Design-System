@@ -34,6 +34,7 @@ html.sr .reveal {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  overflow-wrap: break-word;
 }
 
 .vf-border-top-gray-200 {
