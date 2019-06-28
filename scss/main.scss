@@ -40,6 +40,7 @@ html.sr .reveal {
 *::before,
 *::after {
   box-sizing: inherit;
+  overflow-wrap: break-word;
 }
 
 @import "borders";
@@ -73,6 +74,7 @@ html.sr .reveal {
 @import "components/list";
 @import "components/numbered-list";
 @import "components/badge";
+@import "components/preloader";
 @import "components/cookie-banner";
 @import "components/image-block"; 
 @import "components/table";

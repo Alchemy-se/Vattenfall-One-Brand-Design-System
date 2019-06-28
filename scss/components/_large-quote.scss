@@ -12,7 +12,7 @@ $cutout-height-desktop: 85px;
   @include make-container-max-widths($container-max-widths-except-sm);
   
   padding: 70px 0 70px 0;
-  height: 550px;
+  //height: 550px;
 
   @include media-breakpoint-up(sm) {
     height: $component-height-desktop;
@@ -46,6 +46,7 @@ $cutout-height-desktop: 85px;
   position: relative;
   z-index: 20;
   top: -200px;
+  margin-bottom: -200px;
 
   @include media-breakpoint-up(sm) {
     padding: 0;
@@ -67,6 +68,11 @@ $cutout-height-desktop: 85px;
   background: white;
   
   @include typo-quote-mobile();
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 12px;
+  }
+  
   @include media-breakpoint-up(sm) {
     @include typo-quote-desktop();
     padding: 40px 90px 0px 0;
