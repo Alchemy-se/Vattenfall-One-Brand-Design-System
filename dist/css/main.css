@@ -9072,6 +9072,12 @@ a.vf-card:hover {
   line-height: 40px;
 }
 
+@media (max-width: 767.98px) {
+  .vf-large-quote__quote {
+    padding-right: 12px;
+  }
+}
+
 @media (min-width: 576px) {
   .vf-large-quote__quote {
     font-size: 48px;
