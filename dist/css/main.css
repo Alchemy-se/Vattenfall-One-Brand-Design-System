@@ -102,7 +102,7 @@ html.sr .reveal {
 }
 
 @font-face {
-  font-family: "Vattenfall Hall";
+  font-family: "Vattenfall Hall Bold";
   src: url("../fonts/VattenfallHall-Bold.eot?#iefix");
   src: url("../fonts/VattenfallHall-Bold.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../fonts/VattenfallHall-Bold.woff") format("woff");
   font-weight: 600;
@@ -131,6 +131,35 @@ html.sr .reveal {
   src: url("../fonts/VattenfallHall-HeavyItalic.eot?#iefix") format("eot"), url("../fonts/VattenfallHall-HeavyItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-HeavyItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'vf-icons';
+  src: url("../fonts/vf-icons.eot?8nv9jd");
+  src: url("../fonts/vf-icons.eot?8nv9jd#iefix") format("embedded-opentype"), url("../fonts/vf-icons.ttf?8nv9jd") format("truetype"), url("../fonts/vf-icons.woff?8nv9jd") format("woff"), url("../fonts/vf-icons.svg?8nv9jd#vf-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="vf-icon-"], [class*=" vf-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+}
+
+[class^="vf-icon-"]:before, [class*=" vf-icon-"]:before {
+  font-family: 'vf-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vf-icon-placeholder:before {
+  content: "\e900";
 }
 
 .vf-container {
@@ -10127,6 +10156,189 @@ a.vf-badge:hover, a.vf-badge:focus {
   padding: 15px 0;
   vertical-align: top;
   border-bottom: 1px solid #D8D8D8;
+}
+
+.vf-tab-bar-container *[hidden] {
+  display: none;
+}
+
+.vf-tab-bar-container *:focus {
+  outline: none;
+}
+
+.vf-tab-bar-container .vf-tab-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  padding: 22px;
+  background-color: white;
+  border-right: 1px solid #edf1f6;
+  -webkit-box-shadow: 0 0px 0 0 transparent;
+  box-shadow: 0 0px 0 0 transparent;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:last-of-type {
+  border: none;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #1964a3;
+  }
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:before {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active {
+  -webkit-box-shadow: 0 3px 0 0 #2071b5;
+  box-shadow: 0 3px 0 0 #2071b5;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active {
+    color: #222222;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active .vf-tab-bar-link {
+  color: #222222;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--disabled {
+    color: #767676;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--disabled .vf-tab-bar-link {
+  pointer-events: none;
+  color: #767676;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active):hover {
+    color: #2071b5;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active) .vf-tab-bar-link:hover {
+  color: #2071b5;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item .vf-tab-bar-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1964a3;
+  font-family: "Vattenfall Hall";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item .vf-tab-bar-link {
+    font-size: 0;
+  }
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item .vf-tab-bar-link:before {
+    left: 0 !important;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item .vf-tab-bar-link:hover {
+  text-decoration: none;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item .vf-tab-bar-link:before {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: -20px;
+  top: 2px;
+  font-size: 24px;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-link-mobile {
+  position: absolute;
+  display: none;
+  top: 94px;
+  color: #222222;
+  font-family: "Vattenfall Hall Bold";
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-link-mobile.vf-tab-bar-link-mobile--active {
+    display: block;
+    cursor: default;
+  }
+  .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-link-mobile.vf-tab-bar-link-mobile--active:hover {
+    text-decoration: none;
+  }
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-link-mobile:before {
+  content: none !important;
+}
+
+.vf-tab-bar-container .vf-tab-bar-panels {
+  padding-top: 35px;
+}
+
+@media (max-width: 1199.98px) {
+  .vf-tab-bar-container .vf-tab-bar-panels {
+    padding-top: 55px;
+  }
 }
 
 .vf-topbar {
