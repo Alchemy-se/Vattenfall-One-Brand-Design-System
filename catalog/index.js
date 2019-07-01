@@ -109,6 +109,10 @@ const pages = [
         title: "- Tab Bar",
         content: pageLoader(() => import("./components/tab-bar.md"))
       }, {
+        path: "/css/tooltip",
+        title: "- Tooltip",
+        content: pageLoader(() => import("./components/tooltip.md"))
+      }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => import("./components/drop-down.md"))
@@ -129,6 +133,10 @@ const pages = [
         path: "/utilities/favicon",
         title: "- Favicon",
         content: pageLoader(() => import("./utilities/favicon.md"))
+      }, {
+        path: "/utilities/icons",
+        title: "- Icons",
+        content: pageLoader(() => import("./utilities/icons.md"))
       },
     ]
   },
