@@ -49,7 +49,7 @@ showSource: true
 
 ### With Tooltip
 
-To add a tooltip icon and text, simply add the modifier class `vf-input--tooltip` to the `input` element, and add a `data-tooltip` data attribute with the required text.
+To add a tooltip icon and text, simply add a `data-tooltip` data attribute with the required text.
 
 ```html
 showSource: true
@@ -57,7 +57,7 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="text" id="vf_tooltip_input" class="vf-input vf-input--tooltip" data-tooltip="Tooltip text123">
+    <input type="text" id="vf_tooltip_input" class="vf-input" data-tooltip="Tooltip text123">
     <label for="vf_tooltip_input">Tooltip Label</label>
   </div>
 </div>
