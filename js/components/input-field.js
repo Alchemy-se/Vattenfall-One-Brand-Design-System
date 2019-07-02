@@ -21,11 +21,11 @@
 		if($(this).attr('type') == 'number'){
 			
 			if (!$(this).siblings().hasClass('vf-input--number-decrement')) {
-				$('<div class="vf-input--number-decrement"></div>').insertAfter(this);
+				$('<div class="vf-input--number-decrement vf-icon-down"></div>').insertAfter(this);
 			}
 
 			if (!$(this).siblings().hasClass('vf-input--number-increment')) {
-				$('<div class="vf-input--number-increment"></div>').insertAfter(this);
+				$('<div class="vf-input--number-increment vf-icon-up"></div>').insertAfter(this);
 			}
 
 			$('.vf-input--number-increment, .vf-input--number-decrement').unbind().on('click keyup',function(){
@@ -59,15 +59,6 @@
 				}
 
 			});
-		}
-
-		if ($(this).data('tooltip')){
-
-			let tooltip = $(this).data("tooltip");
-
-			$('<div class="vf-input-tooltip-message">' + tooltip + '</div>').insertAfter(this);
-			$('<div class="vf-input-tooltip-icon"></div>').insertAfter(this);
-
 		}
 
 	});
