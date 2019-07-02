@@ -10196,8 +10196,16 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-tooltip {
   position: relative;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   cursor: pointer;
+  color: #1964A3;
+}
+
+.vf-tooltip:hover {
+  color: #05131e;
+  text-decoration: underline;
 }
 
 .vf-tooltip:hover .vf-tooltip-message {
@@ -10206,43 +10214,31 @@ a.vf-badge:hover, a.vf-badge:focus {
   transition: opacity .3s ease-in-out;
 }
 
-.vf-tooltip.vf-icon-question .vf-tooltip-message {
-  top: calc(-100% - 12px);
+.vf-tooltip[class*="vf-icon-"] {
+  color: inherit;
 }
 
-/*
-@mixin tooltip-alignment($position) {
-
-
-
-	@if ($position == 'left') {
-    	$vehicleSeating: 4;
-	} @else if ($position == 'right'){
-	    $vehicleSeating: 20;
-	} @else if ($position == 'bottom'){
-	    $vehicleSeating: 20;
-	}
-
-	~ .vf-tooltip-message, .vf-tooltip-message{
-		
-		&:before {
-
-		}
-
-		&:after {
-
-		}
-
-	}
+.vf-tooltip[class*="vf-icon-"]:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
-*/
+.vf-tooltip[class*="vf-icon-"] .vf-tooltip-message {
+  top: calc(-100% - 18px);
+}
+
+.vf-tooltip--left ~ .vf-tooltip-message {
+  right: 52px !important;
+}
+
+.vf-tooltip--left .vf-tooltip-message {
+  right: calc(100% + 12px);
+}
+
 .vf-tooltip--left ~ .vf-tooltip-message, .vf-tooltip--left .vf-tooltip-message {
-  bottom: 0;
-  top: 0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  right: calc(100% + 10px);
+  top: 50% !important;
+  -webkit-transform: translate(0, -50%) !important;
+  transform: translate(0, -50%) !important;
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message:before, .vf-tooltip--left ~ .vf-tooltip-message:after, .vf-tooltip--left .vf-tooltip-message:before, .vf-tooltip--left .vf-tooltip-message:after {
@@ -10262,18 +10258,24 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message:after, .vf-tooltip--left .vf-tooltip-message:after {
-  right: -4px;
+  right: -5px;
   border-width: 10px;
   border-color: transparent #EDF9F3 #EDF9F3 transparent;
 }
 
+.vf-tooltip--right ~ .vf-tooltip-message {
+  left: 100% !important;
+}
+
+.vf-tooltip--right .vf-tooltip-message {
+  left: calc(100% + 12px);
+}
+
 .vf-tooltip--right ~ .vf-tooltip-message, .vf-tooltip--right .vf-tooltip-message {
-  bottom: 0;
-  top: 0;
-  right: auto;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  left: calc(100% + 10px);
+  top: 50% !important;
+  -webkit-transform: translate(0, -50%) !important;
+  transform: translate(0, -50%) !important;
+  right: auto !important;
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message:before, .vf-tooltip--right ~ .vf-tooltip-message:after, .vf-tooltip--right .vf-tooltip-message:before, .vf-tooltip--right .vf-tooltip-message:after {
@@ -10289,18 +10291,21 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message:before, .vf-tooltip--right .vf-tooltip-message:before {
-  left: -5.5px;
+  left: -6px;
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message:after, .vf-tooltip--right .vf-tooltip-message:after {
-  left: -4px;
+  left: -5px;
   border-width: 10px;
   border-color: #EDF9F3 transparent transparent #EDF9F3;
 }
 
-.vf-tooltip--bottom ~ .vf-tooltip-message, .vf-tooltip--bottom .vf-tooltip-message {
+.vf-tooltip--bottom .vf-tooltip-message {
   bottom: -100%;
-  top: auto;
+}
+
+.vf-tooltip--bottom ~ .vf-tooltip-message, .vf-tooltip--bottom .vf-tooltip-message {
+  top: auto !important;
 }
 
 .vf-tooltip--bottom ~ .vf-tooltip-message:before, .vf-tooltip--bottom ~ .vf-tooltip-message:after, .vf-tooltip--bottom .vf-tooltip-message:before, .vf-tooltip--bottom .vf-tooltip-message:after {
@@ -10320,6 +10325,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-color: #EDF9F3 #EDF9F3 transparent transparent;
 }
 
+.vf-tooltip--bottom[class*="vf-icon-"] ~ .vf-tooltip-message, .vf-tooltip--bottom[class*="vf-icon-"] .vf-tooltip-message {
+  bottom: calc(-100% - 18px);
+}
+
 .vf-tooltip--blue ~ .vf-tooltip-message, .vf-tooltip--blue .vf-tooltip-message {
   background: #f1f8ff;
   border-color: #c5dcee;
@@ -10331,7 +10340,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--blue ~ .vf-tooltip-message:after, .vf-tooltip--blue .vf-tooltip-message:after {
-  border-color: transparent transparent #f1f8ff #f1f8ff;
+  border-color: #f1f8ff;
 }
 
 .vf-tooltip--red ~ .vf-tooltip-message, .vf-tooltip--red .vf-tooltip-message {
@@ -10345,7 +10354,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--red ~ .vf-tooltip-message:after, .vf-tooltip--red .vf-tooltip-message:after {
-  border-color: transparent transparent #fff5f1 #fff5f1;
+  border-color: #fff5f1;
 }
 
 .vf-tooltip--blue-solid ~ .vf-tooltip-message, .vf-tooltip--blue-solid .vf-tooltip-message {
@@ -10359,7 +10368,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--blue-solid ~ .vf-tooltip-message:after, .vf-tooltip--blue-solid .vf-tooltip-message:after {
-  border-color: transparent transparent #2071b5 #2071b5;
+  border-color: #2071b5;
 }
 
 .vf-tooltip--green-solid ~ .vf-tooltip-message, .vf-tooltip--green-solid .vf-tooltip-message {
@@ -10373,7 +10382,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--green-solid ~ .vf-tooltip-message:after, .vf-tooltip--green-solid .vf-tooltip-message:after {
-  border-color: transparent transparent #3DC07C #3DC07C;
+  border-color: #3DC07C;
 }
 
 .vf-tooltip--red-solid ~ .vf-tooltip-message, .vf-tooltip--red-solid .vf-tooltip-message {
@@ -10387,7 +10396,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--red-solid ~ .vf-tooltip-message:after, .vf-tooltip--red-solid .vf-tooltip-message:after {
-  border-color: transparent transparent #F93B18 #F93B18;
+  border-color: #F93B18;
 }
 
 .vf-tooltip--yellow-solid ~ .vf-tooltip-message, .vf-tooltip--yellow-solid .vf-tooltip-message {
@@ -10401,15 +10410,9 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--yellow-solid ~ .vf-tooltip-message:after, .vf-tooltip--yellow-solid .vf-tooltip-message:after {
-  border-color: transparent transparent #ffda00 #ffda00;
+  border-color: #ffda00;
 }
 
-/*
-[class^="vf-tooltip--yellow"]{
-	+ .vf-tooltip-message, .vf-tooltip-message{
-		color: $dark;
-	}
-}*/
 .vf-tooltip-message {
   opacity: 0;
   position: absolute;
@@ -10417,16 +10420,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   right: 50%;
   -webkit-transform: translate(50%, 0);
   transform: translate(50%, 0);
-  border-radius: 4px 4px 4px 4px;
+  padding: 4px 10px;
+  z-index: 999;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0px;
   line-height: 20px;
-  padding: 4px 10px;
   white-space: nowrap;
-  z-index: 999;
+  pointer-events: none;
   background: #EDF9F3;
   border: 1px solid #c5eecc;
+  border-radius: 4px 4px 4px 4px;
   color: #3DC07C;
 }
 

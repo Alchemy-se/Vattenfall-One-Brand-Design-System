@@ -1,10 +1,167 @@
+@mixin tooltip-color($background-color, $border-color, $color) {
+
+	~ .vf-tooltip-message, .vf-tooltip-message{
+
+		background: $background-color;
+		border-color: $border-color;
+		color: $color;
+
+		&:before {
+
+			border-color: $border-color;
+
+		}
+
+		&:after {
+
+			border-color: $background-color;
+		}
+
+	}
+}
+
+@mixin tooltip-alignment($position) {
+
+	~ .vf-tooltip-message{
+
+		@if $position == left {
+
+			right: 52px!important;
+
+		} @else if $position == right {
+
+			left: 100%!important;
+
+		} @else if $position == bottom {
+
+		}
+	}
+
+	.vf-tooltip-message{
+		
+		@if $position == left {
+
+			right: calc(100% + 12px);
+
+		} @else if $position == right {
+
+			left: calc(100% + 12px);
+
+		} @else if $position == bottom {
+
+			bottom: -100%;
+
+		}
+	}
+
+	~ .vf-tooltip-message, .vf-tooltip-message{
+
+    	@if $position == left {
+
+    		top: 50%!important;
+	    	transform: translate(0, -50%)!important;
+		
+		} @else if $position == right {
+
+			top: 50%!important;
+	    	transform: translate(0, -50%)!important;
+			right: auto!important;
+
+		} @else if $position == bottom {
+
+			top: auto!important;
+
+		}
+
+		&:before, &:after{
+
+			@if $position == left {
+
+				top: 0;
+				left: auto;
+				bottom: 0;
+				transform: translate(0, 100%)rotate(-45deg);
+				border-left: none;
+				border-bottom: 1px solid rgb(197, 238, 204);
+				border-right: 1px solid rgb(197, 238, 204);
+				border-top: none;
+
+			} @else if $position == right {
+
+				top: 0;
+				right: auto;
+				bottom: 0;
+				transform: translate(0, 100%)rotate(-45deg);
+				border-left: 1px solid rgb(197, 238, 204);
+				border-bottom: none;
+				border-right: none;
+				border-top: 1px solid rgb(197, 238, 204);
+
+			} @else if $position == bottom {
+
+				border-left: none;
+				border-bottom: none;
+				border-right: 1px solid rgb(197, 238, 204);
+				border-top: 1px solid rgb(197, 238, 204);
+
+			}
+
+		}
+			
+		&:before {
+
+			@if $position == left {
+
+				right: -6px;
+
+			} @else if $position == right {
+
+				left: -6px;
+				
+			} @else if $position == bottom {
+
+				top: -6px;
+
+			}
+
+		}
+
+		&:after {
+
+			@if $position == left {
+
+				right: -5px;
+				border-width: 10px;
+				border-color: transparent $vattenfall-light-green $vattenfall-light-green transparent;
+
+			} @else if $position == right {
+
+				left: -5px;
+				border-width: 10px;
+				border-color: $vattenfall-light-green transparent transparent $vattenfall-light-green;
+
+			} @else if $position == bottom {
+
+				top: -5px;
+				border-width: 10px;
+				border-color: $vattenfall-light-green $vattenfall-light-green transparent transparent;
+
+			}
+		}
+	}
+}
+
 .vf-tooltip{
 
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
 	cursor: pointer;
+	color: $link-color;
 
 	&:hover{
+
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
 
 		.vf-tooltip-message{
 
@@ -13,196 +170,56 @@
 		}
 	}
 
-	&.vf-icon-question{
+	//&.vf-icon-question{
+	&[class*="vf-icon-"]{
+
+		color: inherit;
+
+		&:hover{
+
+			color: inherit;
+			text-decoration: none;
+
+		}
 
 		.vf-tooltip-message{
 
-			top: calc(-100% - 12px);
+			top: calc(-100% - 18px);
 
 		}
 	}
 }
-
-@mixin tooltip-color($background-color, $border-color, $color) {
-
-	~ .vf-tooltip-message, .vf-tooltip-message{
-		background: $background-color;
-		//border: 1px solid $border-color;
-		border-color: $border-color;
-		//box-shadow: 0px 2px 14px 0px rgba(235, 243, 238, 0.67);
-		color: $color;
-
-		&:before {
-			//border-left:1px solid $border-color;
-			//border-bottom:1px solid $border-color;
-
-			border-color: $border-color;
-			//box-shadow: 0px 2px 14px 0px rgba(235, 243, 238, 0.67);
-		}
-
-		&:after {
-			border-color: transparent transparent $background-color $background-color;
-		}
-
-	}
-}
-
-/*
-@mixin tooltip-alignment($position) {
-
-
-
-	@if ($position == 'left') {
-    	$vehicleSeating: 4;
-	} @else if ($position == 'right'){
-	    $vehicleSeating: 20;
-	} @else if ($position == 'bottom'){
-	    $vehicleSeating: 20;
-	}
-
-	~ .vf-tooltip-message, .vf-tooltip-message{
-		
-		&:before {
-
-		}
-
-		&:after {
-
-		}
-
-	}
-}
-
-*/
-
-
 
 .vf-tooltip--left{
 
-	~ .vf-tooltip-message, .vf-tooltip-message{
-
-		bottom: 0;
-		top: 0;
-		transform: translate(0, 0);
-		right: calc(100% + 10px);
-
-		&:before, &:after{
-
-			top: 0;
-			left: auto;
-			bottom: 0;
-			transform: translate(0, 100%)rotate(-45deg);
-
-			border-left: none;
-			border-bottom: 1px solid rgb(197, 238, 204);
-			border-right: 1px solid rgb(197, 238, 204);
-			border-top: none;
-
-		}
-			
-		&:before {
-
-			right: -6px;
-
-		}
-
-		&:after {
-
-			right: -4px;
-			border-width: 10px;
-			border-color: transparent $vattenfall-light-green $vattenfall-light-green transparent;
-
-		}
-
-	}
+	@include tooltip-alignment(left);
 	
 }
 
 .vf-tooltip--right{
 
-	//@include tooltip-alignment(right);
+	@include tooltip-alignment(right);
 
-	~ .vf-tooltip-message, .vf-tooltip-message{
-
-		bottom: 0;
-		top: 0;
-		right: auto;
-		transform: translate(0, 0);
-		left: calc(100% + 10px);
-
-		&:before, &:after{
-
-			top: 0;
-			right: auto;
-			bottom: 0;
-			transform: translate(0, 100%)rotate(-45deg);
-
-			border-left: 1px solid rgb(197, 238, 204);
-			border-bottom: none;
-			border-right: none;
-			border-top: 1px solid rgb(197, 238, 204);
-
-		}
-			
-		&:before {
-
-			left: -5.5px;
-
-		}
-
-		&:after {
-
-			left: -4px;
-			border-width: 10px;
-			border-color: $vattenfall-light-green transparent transparent $vattenfall-light-green;
-
-		}
-
-	}
-	
 }
 
 .vf-tooltip--bottom{
 
-	~ .vf-tooltip-message, .vf-tooltip-message{
+	@include tooltip-alignment(bottom);
 
-		bottom: -100%;
-		top: auto;
+	//&.vf-icon-question{
+	&[class*="vf-icon-"]{
 
-		&:before, &:after{
+		~ .vf-tooltip-message, .vf-tooltip-message{
 
-			border-left: none;
-			border-bottom: none;
-			border-right: 1px solid rgb(197, 238, 204);
-			border-top: 1px solid rgb(197, 238, 204);
+			bottom: calc(-100% - 18px);
 
 		}
-			
-		&:before {
-			top: -6px;
-		}
-
-		&:after {
-			top: -5px;
-			border-width: 10px;
-			border-color: $vattenfall-light-green $vattenfall-light-green transparent transparent;
-		}
-
 	}
-	
 }
-
 
 .vf-tooltip--blue{
 
 	@include tooltip-color(rgb(241, 248, 255), rgb(197, 220, 238), $vattenfall-mid-blue);
-	
-}
-
-.vf-tooltip--green{
-
-	//default
-	//@include tooltip-color($vattenfall-dark-green, $vattenfall-dark-green);
 	
 }
 
@@ -211,16 +228,6 @@
 	@include tooltip-color(rgb(255, 245, 241), rgb(238, 200, 197), $vattenfall-dark-red);
 	
 }
-
-.vf-tooltip--yellow{
-
-	//@include tooltip-color($vattenfall-light-yellow, $vattenfall-sunflower-yellow, $vattenfall-sunflower-yellow);
-
-}
-
-
-
-
 
 .vf-tooltip--blue-solid{
 
@@ -246,35 +253,25 @@
 
 }
 
-/*
-[class^="vf-tooltip--yellow"]{
-	+ .vf-tooltip-message, .vf-tooltip-message{
-		color: $dark;
-	}
-}*/
-
 //Also exists independently of .vf-tooltip - See input.md
 .vf-tooltip-message{
 
 	opacity: 0;
 	position: absolute;
-
 	top: -100%;
 	right: 50%;
 	transform: translate(50%, 0);
-	border-radius: 4px 4px 4px 4px;
-
+	padding: 4px 10px;
+	z-index: 999;
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 0px;
 	line-height: 20px;
-	padding: 4px 10px;
     white-space: nowrap;
-    z-index: 999;
-
+    pointer-events: none;
     background: $vattenfall-light-green;
 	border: 1px solid rgb(197, 238, 204);
-	//box-shadow: 0px 2px 14px 0px rgba(235, 243, 238, 0.67);
+	border-radius: 4px 4px 4px 4px;
 	color: $vattenfall-dark-green;
 
 	&:before, &:after{
@@ -292,8 +289,6 @@
 		border-left:1px solid rgb(197, 238, 204);
 		border-bottom:1px solid rgb(197, 238, 204);
 		transform: rotate(-45deg);
-
-		//box-shadow: 0px 2px 14px 0px rgba(235, 243, 238, 0.67);
     
 	}
 
@@ -310,5 +305,4 @@
 		border-width: 10px;
 
 	}
-
 }
