@@ -49,7 +49,7 @@ showSource: true
 
 ### With Tooltip
 
-To add a Tooltip icon and text, simply add a `data-tooltip` data attribute with the required text. [Tooltip](/css/tooltip) styling classes must be applied to the `input` element. Available options:
+To add a Tooltip icon and text, simply add a `data-tooltip` data attribute with the required text to the `input` element. [Tooltip](/css/tooltip) styling classes must be applied to the `input` element. Available options:
 
 * `vf-tooltip--blue`
 * `vf-tooltip--red`
