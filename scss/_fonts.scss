@@ -113,11 +113,11 @@
 
 @font-face {
   font-family: 'vf-icons';
-  src:  url($fontPath + '/vf-icons.eot?8nv9jd');
-  src:  url($fontPath + '/vf-icons.eot?8nv9jd#iefix') format('embedded-opentype'),
-    url($fontPath + '/vf-icons.ttf?8nv9jd') format('truetype'),
-    url($fontPath + '/vf-icons.woff?8nv9jd') format('woff'),
-    url($fontPath + '/vf-icons.svg?8nv9jd#vf-icons') format('svg');
+  src:  url($fontPath + '/vf-icons.eot?o2vgyw');
+  src:  url($fontPath + '/vf-icons.eot?o2vgyw#iefix') format('embedded-opentype'),
+    url($fontPath + '/vf-icons.ttf?o2vgyw') format('truetype'),
+    url($fontPath + '/vf-icons.woff?o2vgyw') format('woff'),
+    url($fontPath + '/vf-icons.svg?o2vgywd#vf-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -127,6 +127,7 @@
 
   &:before{
     font-family: 'vf-icons' !important;
+    font-size: 24px;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -142,4 +143,33 @@
 
 .vf-icon-placeholder:before {
   content: "\e900";
+}
+.vf-icon-settings:before {
+  content: "\e901";
+}
+.vf-icon-up:before {
+  content: "\e902";
+  font-size: 7px;
+}
+.vf-icon-down:before {
+  content: "\e903";
+  font-size: 7px;
+}
+.vf-icon-left:before {
+  content: "\e904";
+}
+.vf-icon-right:before {
+  content: "\e905";
+}
+.vf-icon-question{
+  cursor: pointer;
+  &:before {
+    content: "\e906";
+    color: #999999;
+  }
+  &:hover{
+    &:before{
+      color: #1964a3;
+    }
+  }
 }
