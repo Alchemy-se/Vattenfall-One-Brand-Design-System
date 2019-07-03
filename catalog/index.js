@@ -81,6 +81,10 @@ const pages = [
         title: "- Text",
         content: pageLoader(() => import("./components/text.md"))
       }, {
+        path: "/css/utility-typography",
+        title: "- Utility Typography",
+        content: pageLoader(() => import("./components/utility-typography.md"))
+      }, {
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => import("./components/button.md"))
