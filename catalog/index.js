@@ -124,8 +124,12 @@ const pages = [
         path: "/css/input",
         title: "- Input",
         content: pageLoader(() => import("./components/input.md"))
-      }, 
-      
+      }, {
+        path: "/css/notification-module",
+        title: "- Notification Module",
+        content: pageLoader(() => import("./components/notification-module.md"))
+      },
+    
       ...moleculesNavigation,
       ...organismsNavigation,
       
