@@ -124,6 +124,10 @@ const pages = [
         path: "/css/input",
         title: "- Input",
         content: pageLoader(() => import("./components/input.md"))
+      }, {
+        path: "/css/file-upload-module",
+        title: "- File Upload Module",
+        content: pageLoader(() => import("./components/file-upload-module.md"))
       }, 
       
       ...moleculesNavigation,
