@@ -41,11 +41,11 @@
 		
 		@if $position == left {
 
-			right: calc(100% + 12px);
+			right: calc(100% + 10px);
 
 		} @else if $position == right {
 
-			left: calc(100% + 12px);
+			left: calc(100% + 10px);
 
 		} @else if $position == bottom {
 
@@ -288,19 +288,20 @@
 		height: 10px; 
 		border-left:1px solid rgb(197, 238, 204);
 		border-bottom:1px solid rgb(197, 238, 204);
+		border-radius: 3px;
 		transform: rotate(-45deg);
     
 	}
 
 	&:before {
 
-		bottom: -6px;
+		bottom: -5px;
 	}
 
 	&:after {
 
 		content: '';
-		bottom: -5px;
+		bottom: -4px;
 		border-color: transparent transparent $vattenfall-light-green $vattenfall-light-green;
 		border-width: 10px;
 

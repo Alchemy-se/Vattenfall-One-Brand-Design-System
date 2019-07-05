@@ -10232,7 +10232,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--left .vf-tooltip-message {
-  right: calc(100% + 12px);
+  right: calc(100% + 10px);
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message, .vf-tooltip--left .vf-tooltip-message {
@@ -10268,7 +10268,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--right .vf-tooltip-message {
-  left: calc(100% + 12px);
+  left: calc(100% + 10px);
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message, .vf-tooltip--right .vf-tooltip-message {
@@ -10447,17 +10447,18 @@ a.vf-badge:hover, a.vf-badge:focus {
   height: 10px;
   border-left: 1px solid #c5eecc;
   border-bottom: 1px solid #c5eecc;
+  border-radius: 3px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
 .vf-tooltip-message:before {
-  bottom: -6px;
+  bottom: -5px;
 }
 
 .vf-tooltip-message:after {
   content: '';
-  bottom: -5px;
+  bottom: -4px;
   border-color: transparent transparent #EDF9F3 #EDF9F3;
   border-width: 10px;
 }
@@ -11197,6 +11198,138 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-utility-typo--warning {
   color: #f5a623;
+}
+
+.vf-notification-module-container {
+  width: 333px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.vf-notification-module-container .vf-notification-module-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 16px 10px 16px auto;
+  padding: 10px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #1964A3;
+  cursor: pointer;
+}
+
+.vf-notification-module-container .vf-notification-module {
+  position: absolute;
+  top: 76px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #bcbcbc;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.vf-notification-module-container .vf-notification-module.vf-notification-module--show {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-header {
+  position: relative;
+  color: #fff;
+  background-color: #1964A3;
+  font-family: Vattenfall Hall Display;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  padding: 18px 20px;
+  border-radius: 4px 4px 0 0;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  border-top: 10px solid #1964A3;
+  border-right: 10px solid #1964A3;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-header .vf-notification-module-header-settings {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #fff;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-header .vf-notification-module-header-settings:hover {
+  text-decoration: none;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body {
+  margin: 0 20px;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #e8e8e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item .vf-notification-module-body-item-col1 {
+  padding-right: 12px;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item .vf-notification-module-body-item-col1 .vf-notification-module-body-item-image {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item .vf-notification-module-body-item-col2 .vf-notification-module-body-item-event {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item .vf-notification-module-body-item-col2 .vf-notification-module-body-item-event .vf-notification-module-body-item-event-action {
+  font-weight: 400;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-body-item .vf-notification-module-body-item-col2 .vf-notification-module-body-item-time {
+  color: #888888;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-size: 14px;
+  padding-top: 1px;
+}
+
+.vf-notification-module-container .vf-notification-module .vf-notification-module-body .vf-notification-module-footer {
+  padding: 10px 0;
+  text-align: center;
 }
 
 .news-outer-container {
