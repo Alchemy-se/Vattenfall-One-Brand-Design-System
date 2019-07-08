@@ -55,7 +55,7 @@
 
 			}
 
-			.vf-file-upload-module__input--heading-drag{ //, .vf-file-upload-module__input--details-quota
+			.vf-file-upload-module__input--heading-drag{
 
 				display: none;
 
@@ -63,7 +63,7 @@
 		}
 	}
 
-	&.is-uploading{ //Worth it? Maybe not remove immediately.
+	&.is-uploading{ //Worth it? Maybe not remove immediately. Transition?
 
 		.vf-file-upload-module__input-container{
 
@@ -86,7 +86,6 @@
 		.vf-file-upload-module__input-container{
 
 			.vf-file-upload-module__input--heading-uploading, .vf-file-upload-module__input--details-quota{
-
 				display: none;
 
 			}
@@ -98,6 +97,28 @@
 
 			}
 		}
+	}
+
+	&.is-error{
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--details-error, .vf-file-upload-module__input--heading-uploading{
+				display: block;
+				
+			}
+
+			.vf-file-upload-module__input--details-error{
+				color: $vattenfall-dark-red;
+				
+			}
+
+			.vf-file-upload-module__input--details-percentage, .vf-file-upload-module__input--details-quota, .vf-file-upload-module__input--heading-files, .vf-file-upload-module__input--heading-drag{
+				display: none;
+			}
+
+		}
+
 	}
 
 	&:not(.has-advanced-upload){
@@ -195,7 +216,7 @@
 		.vf-file-upload-module__input--label-no-drag,
 		.vf-file-upload-module__input--heading-uploading,
 		.vf-file-upload-module__input--heading-success,
-		.vf-file-upload-module__input--heading-error,
+		.vf-file-upload-module__input--details-error,
 		.vf-file-upload-module__input--details-percentage,
 		.vf-file-upload-module__input--heading-files{
 			display: none;

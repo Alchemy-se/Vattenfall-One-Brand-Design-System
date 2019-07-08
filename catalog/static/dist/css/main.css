@@ -11249,6 +11249,18 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #3DC07C;
 }
 
+.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading {
+  display: block;
+}
+
+.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error {
+  color: #F93B18;
+}
+
+.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag {
+  display: none;
+}
+
 .vf-file-upload-module:not(.has-advanced-upload) .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
   display: none;
 }
@@ -11320,7 +11332,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--label-no-drag,
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading,
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-success,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-error,
+.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error,
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage,
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files {
   display: none;

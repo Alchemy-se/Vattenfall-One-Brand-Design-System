@@ -72,7 +72,6 @@
 							$('.vf-file-upload-module__input--details-percentage').text(percentComplete + '%');
 							var vfUploadIconFill = 100 - percentComplete;
 							$('.vf-file-upload-module__icon svg #vf-upload-icon--fill').css('fill', vfUploadIconFill);
-							//$('.vf-file-upload-module__input--details-percentage').removeClass('vf-file-upload-module__input--complete');
 						} else {
 							console.log('Unable to compute progress information since the total size is unknown');
 						}
@@ -82,12 +81,15 @@
 					},
 					success: function(data) {
 						$uploadModule.addClass( data.success == true ? 'is-success' : 'is-error' );
-						if (!data.success) $errorMsg.text(data.error);
+						if (!data.success){
+							$errorMsg.text(data.error); //?
+						}
 						else{
 							$label.text($label.text().substring(0, $label.text().length - 8).concat("uploaded"));
 						}
 					},
 					error: function() {
+						$uploadModule.addClass('is-error');
 						console.log("File upload error.");
 					}
 				});
@@ -107,7 +109,7 @@
 					.addClass(data.success == true ? 'is-success' : 'is-error')
 					.removeAttr('target');
 					
-					if (!data.success) $errorMsg.text(data.error);
+					if (!data.success) $errorMsg.text(data.error); //?
 
 					$uploadModule.removeAttr('target');
 					$iframe.remove();
@@ -117,9 +119,6 @@
 			
 		});
 
-		/*var $input = $uploadModule.find('input[type="file"]'),
-		$label = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files'),
-		$quota = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota'),*/
 		var showFiles = function(files) {
 			var $totalSize = 0;
 			$label.text(files.length > 1 ? ($input.attr('data-multiple-caption') || '').replace( '{count}', files.length ) : files[ 0 ].name);

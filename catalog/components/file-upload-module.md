@@ -23,9 +23,7 @@ plain: false
 		<div class="vf-file-upload-module__input-container">
 
 			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-uploading">Uploading&hellip;</div>
-			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-success">Done</div>
-			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-error">Error</div>
-			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-drag">Drag & drop your file here</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-drag">Drag & drop your file(s) here</div>
 			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-files"></div>
 
 			<label class="vf-file-upload-module__input--label-no-drag">
@@ -35,6 +33,7 @@ plain: false
 
 			<div class="vf-file-upload-module__input--details vf-file-upload-module__input--details-quota">Up to 20MB</div>
 			<div class="vf-file-upload-module__input--details vf-file-upload-module__input--details-percentage">0%</div>
+			<div class="vf-file-upload-module__input--details vf-file-upload-module__input--details-error">Error</div>
 
 			<div class="vf-file-upload-module__button">
 				<button type="submit" class="vf-btn vf-btn--outline-secondary">Submit</button>
