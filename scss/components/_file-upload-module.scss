@@ -1,12 +1,99 @@
 .vf-file-upload-module{
 
+	position: relative;
 	background: $white;
 	border-radius: 4px;
 	border: 1px solid rgb(214, 218, 219);
-	//height: 304px;
 	width: 264px;
 
-	.vf-file-upload-module-icon{
+	&.has-advanced-upload{
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--heading-drag{
+
+	  			display: block;
+
+			}
+
+			.vf-file-upload-module__input--heading-no-drag{
+
+	  			display:none;
+
+			}
+
+		}
+
+	}
+
+	&.is-dragover{
+
+		border: 1px dashed rgb(32, 113, 181);
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__button{
+
+				button{
+
+					color: rgb(118, 118, 118);
+					border-color: rgb(238, 238, 238);
+
+				}
+			}
+
+		}
+	}
+
+	&.has-dropped{
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--heading-files {
+				
+				display: block;
+
+			}
+
+			.vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
+
+				display: none;
+
+			}
+		}
+	}
+
+	&.is-uploading{
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--heading-uploading, .vf-file-upload-module__input--details-percentage{
+				
+				display: block;
+
+			}
+
+			.vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
+
+				display: none;
+
+			}
+		}
+	}
+
+	&:not(.has-advanced-upload){
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--details-percentage{
+				
+				display: none;
+
+			}
+		}
+	}
+
+	.vf-file-upload-module__icon{
 
 		padding: 48px 0 32px 0;
 		text-align: center;
@@ -19,13 +106,52 @@
 			#vf-upload-icon--fill{
 				y: 100%;
 			}
-
 		}
 	}
 
-	.vf-file-upload-module-instructions, .vf-file-upload-module-status{
+	.vf-file-upload-module__input-container{
 
-		.vf-file-upload-module-instructions--heading{
+		label{
+
+			width: 100%;
+			padding: 0 10px;
+			cursor: pointer;
+			text-align: center;
+			margin-bottom: 0;
+
+			.vf-file-upload-module__input--heading{
+
+				color: #1964A3;
+				text-decoration: none;
+				background-color: transparent;
+
+				&:hover{
+
+					text-decoration: underline;
+					color: #05131e;
+
+				}
+
+			}
+
+			input[type="file"] {
+
+				width: 0.1px;
+				height: 0.1px;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: -1;
+
+			}
+
+		}
+
+		.vf-file-upload-module__input--heading-files{
+			padding: 0 10px;
+		}
+
+		.vf-file-upload-module__input--heading{
 
 			color: $dark;
 			font-size: 16px;
@@ -36,7 +162,7 @@
 
 		}
 
-		.vf-file-upload-module-instructions--details{
+		.vf-file-upload-module__input--details{
 
 			color: rgb(136, 136, 136);
 			font-size: 14px;
@@ -46,14 +172,25 @@
 			text-align: center;
 
 		}
+
+		.vf-file-upload-module__input--label-no-drag,
+		.vf-file-upload-module__input--heading-uploading,
+		.vf-file-upload-module__input--heading-success,
+		.vf-file-upload-module__input--heading-error,
+		.vf-file-upload-module__input--details-percentage,
+		.vf-file-upload-module__input--heading-files{
+			display: none;
+		}
+
+		.vf-file-upload-module__input--heading-percentage{
+
+			&.vf-file-upload-module__input--complete{
+				color: $vattenfall-dark-green;
+			}
+		}
 	}
 
-	.vf-file-upload-module-status{
-
-		display: none;
-	}
-
-	.vf-file-upload-module-button{
+	.vf-file-upload-module__button{
 
 		padding: 14px 0 40px 0;
 		color: $vattenfall-mid-blue;

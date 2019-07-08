@@ -1,31 +1,46 @@
 
 
 
+Add note about accept: <input type="file" id="docpicker"
+  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-accept
+
+Validation, etc...
+
+
 ```html
 showSource: true
 plain: false
 ---
 
-<div class="vf-file-upload-module">
+	<form class="vf-file-upload-module" method="post" action="/" enctype="multipart/form-data">
 
-	<div class="vf-file-upload-module-icon">
-	</div>
+		<div class="vf-file-upload-module__icon">
+		</div>
 
-	<div class="vf-file-upload-module-instructions">
-		<div class="vf-file-upload-module-instructions--heading">Drag & drop your file here</div>
-		<div class="vf-file-upload-module-instructions--details">Up to 20MB</div>
-	</div>
+		<div class="vf-file-upload-module__input-container">
 
-	<div class="vf-file-upload-module-status">
-		<div class="vf-file-upload-module-instructions--heading">Uploading</div>
-		<div class="vf-file-upload-module-instructions--details" data-vf-upload-percentage="0"></div>
-	</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-uploading">Uploading&hellip;</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-success">Done</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-error">Error</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-drag">Drag & drop your file here</div>
+			<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-files"></div>
 
-	<div class="vf-file-upload-module-button">
-		<button type="button" class="vf-btn vf-btn--outline-secondary">Attach file(s)...</button>
-	</div>
+			<label class="vf-file-upload-module__input--label-no-drag">
+				<div class="vf-file-upload-module__input--heading vf-file-upload-module__input--heading-select">Select file</div>
+				<input class="vf-file-upload-module__input-file" type="file" name="files[]" data-multiple-caption="{count} files selected" multiple />
+			</label>
 
-</div>
+			<div class="vf-file-upload-module__input--details vf-file-upload-module__input--details-quota">Up to 20MB</div>
+			<div class="vf-file-upload-module__input--details vf-file-upload-module__input--details-percentage">0%</div>
+
+			<div class="vf-file-upload-module__button">
+				<button type="submit" class="vf-btn vf-btn--outline-secondary">Submit</button>
+			</div>
+			
+		</div>
+
+	</form>
 
   
 ```
