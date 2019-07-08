@@ -55,7 +55,7 @@
 
 			}
 
-			.vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
+			.vf-file-upload-module__input--heading-drag{ //, .vf-file-upload-module__input--details-quota
 
 				display: none;
 
@@ -63,7 +63,7 @@
 		}
 	}
 
-	&.is-uploading{
+	&.is-uploading{ //Worth it? Maybe not remove immediately.
 
 		.vf-file-upload-module__input-container{
 
@@ -73,9 +73,28 @@
 
 			}
 
-			.vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
+			.vf-file-upload-module__input--heading-files, .vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
 
 				display: none;
+
+			}
+		}
+	}
+
+	&.is-success{
+
+		.vf-file-upload-module__input-container{
+
+			.vf-file-upload-module__input--heading-uploading, .vf-file-upload-module__input--details-quota{
+
+				display: none;
+
+			}
+
+			.vf-file-upload-module__input--details-percentage{
+
+				display: block;
+				color: $vattenfall-dark-green;
 
 			}
 		}
@@ -180,13 +199,6 @@
 		.vf-file-upload-module__input--details-percentage,
 		.vf-file-upload-module__input--heading-files{
 			display: none;
-		}
-
-		.vf-file-upload-module__input--heading-percentage{
-
-			&.vf-file-upload-module__input--complete{
-				color: $vattenfall-dark-green;
-			}
 		}
 	}
 

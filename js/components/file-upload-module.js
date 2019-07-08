@@ -1,6 +1,6 @@
 (function($){
 
-	document.querySelectorAll('.vf-file-upload-module').forEach(function(preloader) {
+	document.querySelectorAll('.vf-file-upload-module').forEach(function() {
 
 		//Check required browser features are supported
 		var isAdvancedUpload = function() {
@@ -14,6 +14,9 @@
 		});
 
 		var $uploadModule = $('.vf-file-upload-module');
+		var $input = $uploadModule.find('input[type="file"]');
+		$label = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files');
+		$quota = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota');
 
 		if (isAdvancedUpload) {
 
@@ -46,7 +49,7 @@
 			if (isAdvancedUpload) {
 				
 				e.preventDefault();
-				var ajaxData = new FormData($uploadModule.get(0));
+				var ajaxData = new FormData($uploadModule.get(1));
 
 				if (droppedFiles) {
 					$.each( droppedFiles, function(i, file) {
@@ -69,18 +72,20 @@
 							$('.vf-file-upload-module__input--details-percentage').text(percentComplete + '%');
 							var vfUploadIconFill = 100 - percentComplete;
 							$('.vf-file-upload-module__icon svg #vf-upload-icon--fill').css('fill', vfUploadIconFill);
-							$('.vf-file-upload-module__input--details-percentage').removeClass('vf-file-upload-module__input--complete');
+							//$('.vf-file-upload-module__input--details-percentage').removeClass('vf-file-upload-module__input--complete');
 						} else {
 							console.log('Unable to compute progress information since the total size is unknown');
 						}
 					},
 					complete: function() {
 						$uploadModule.removeClass('is-uploading');
-						$('.vf-file-upload-module__input--details-percentage').addClass('vf-file-upload-module__input--complete');
 					},
 					success: function(data) {
 						$uploadModule.addClass( data.success == true ? 'is-success' : 'is-error' );
 						if (!data.success) $errorMsg.text(data.error);
+						else{
+							$label.text($label.text().substring(0, $label.text().length - 8).concat("uploaded"));
+						}
 					},
 					error: function() {
 						console.log("File upload error.");
@@ -112,14 +117,18 @@
 			
 		});
 
-		var $input = $uploadModule.find('input[type="file"]'),
+		/*var $input = $uploadModule.find('input[type="file"]'),
 		$label = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files'),
-		showFiles = function(files) {
+		$quota = $uploadModule.find('.vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota'),*/
+		var showFiles = function(files) {
+			var $totalSize = 0;
 			$label.text(files.length > 1 ? ($input.attr('data-multiple-caption') || '').replace( '{count}', files.length ) : files[ 0 ].name);
+			for (var i  = 0; i < files.length; i++){$totalSize  += files[i].size;}
+			$quota.text($totalSize < 1000000 ? (Math.round( ($totalSize/1000) * 10 ) / 10) + " KB" : (Math.round( ($totalSize/1000000) * 10 ) / 10) + " MB");
+
 		};
 
 		$uploadModule.on('drop', function(e) {
-
 			$uploadModule.addClass('has-dropped');
 			droppedFiles = e.originalEvent.dataTransfer.files; // the files that were dropped
 			showFiles( droppedFiles );

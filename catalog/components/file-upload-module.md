@@ -1,11 +1,13 @@
 
 
 
-Add note about accept: <input type="file" id="docpicker"
+Add note about accept: <input type="file"
   accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-accept
 
 Validation, etc...
+
+Have a transition if files upload quickly?
 
 
 ```html

@@ -11228,7 +11228,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: block;
 }
 
-.vf-file-upload-module.has-dropped .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag, .vf-file-upload-module.has-dropped .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
+.vf-file-upload-module.has-dropped .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag {
   display: none;
 }
 
@@ -11236,8 +11236,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: block;
 }
 
-.vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
+.vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
   display: none;
+}
+
+.vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading, .vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
+  display: none;
+}
+
+.vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
+  display: block;
+  color: #3DC07C;
 }
 
 .vf-file-upload-module:not(.has-advanced-upload) .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
@@ -11315,10 +11324,6 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage,
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files {
   display: none;
-}
-
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-percentage.vf-file-upload-module__input--complete {
-  color: #3DC07C;
 }
 
 .vf-file-upload-module .vf-file-upload-module__button {
