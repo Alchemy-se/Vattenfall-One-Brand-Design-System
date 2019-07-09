@@ -10,20 +10,12 @@
 
 		.vf-file-upload-module__input-container{
 
-			.vf-file-upload-module__input--heading-drag{
+			.vf-file-upload-module__input--label-no-drag{
 
-	  			display: block;
-
-			}
-
-			.vf-file-upload-module__input--heading-no-drag{
-
-	  			display:none;
+				display: none;
 
 			}
-
 		}
-
 	}
 
 	&.is-dragover{
@@ -41,95 +33,6 @@
 
 				}
 			}
-
-		}
-	}
-
-	&.has-dropped{
-
-		.vf-file-upload-module__input-container{
-
-			.vf-file-upload-module__input--heading-files {
-				
-				display: block;
-
-			}
-
-			.vf-file-upload-module__input--heading-drag{
-
-				display: none;
-
-			}
-		}
-	}
-
-	&.is-uploading{ //Worth it? Maybe not remove immediately. Transition?
-
-		.vf-file-upload-module__input-container{
-
-			.vf-file-upload-module__input--heading-uploading, .vf-file-upload-module__input--details-percentage{
-				
-				display: block;
-
-			}
-
-			.vf-file-upload-module__input--heading-files, .vf-file-upload-module__input--heading-drag, .vf-file-upload-module__input--details-quota{
-
-				display: none;
-
-			}
-		}
-	}
-
-	&.is-success{
-
-		.vf-file-upload-module__input-container{
-
-			.vf-file-upload-module__input--heading-uploading, .vf-file-upload-module__input--details-quota{
-				display: none;
-
-			}
-
-			.vf-file-upload-module__input--details-percentage{
-
-				display: block;
-				color: $vattenfall-dark-green;
-
-			}
-		}
-	}
-
-	&.is-error{
-
-		.vf-file-upload-module__input-container{
-
-			.vf-file-upload-module__input--details-error, .vf-file-upload-module__input--heading-uploading{
-				display: block;
-				
-			}
-
-			.vf-file-upload-module__input--details-error{
-				color: $vattenfall-dark-red;
-				
-			}
-
-			.vf-file-upload-module__input--details-percentage, .vf-file-upload-module__input--details-quota, .vf-file-upload-module__input--heading-files, .vf-file-upload-module__input--heading-drag{
-				display: none;
-			}
-
-		}
-
-	}
-
-	&:not(.has-advanced-upload){
-
-		.vf-file-upload-module__input-container{
-
-			.vf-file-upload-module__input--details-percentage{
-				
-				display: none;
-
-			}
 		}
 	}
 
@@ -144,37 +47,36 @@
 			height: 80px;
 
 			#vf-upload-icon--fill{
+
 				y: 100%;
+
 			}
 		}
 	}
 
 	.vf-file-upload-module__input-container{
 
+		padding: 0 12px;
+
 		label{
 
 			width: 100%;
-			padding: 0 10px;
 			cursor: pointer;
 			text-align: center;
 			margin-bottom: 0;
 
-			.vf-file-upload-module__input--heading{
+			color: #1964A3;
+			text-decoration: none;
+			background-color: transparent;
 
-				color: #1964A3;
-				text-decoration: none;
-				background-color: transparent;
+			&:hover{
 
-				&:hover{
-
-					text-decoration: underline;
-					color: #05131e;
-
-				}
+				text-decoration: underline;
+				color: #05131e;
 
 			}
 
-			input[type="file"] {
+			input[type="file"] { //Remove button; use the label as a link instead
 
 				width: 0.1px;
 				height: 0.1px;
@@ -184,11 +86,6 @@
 				z-index: -1;
 
 			}
-
-		}
-
-		.vf-file-upload-module__input--heading-files{
-			padding: 0 10px;
 		}
 
 		.vf-file-upload-module__input--heading{
@@ -211,27 +108,25 @@
 			line-height: 24px;
 			text-align: center;
 
-		}
+			.vf-file-upload-module__input--details-error{
 
-		.vf-file-upload-module__input--label-no-drag,
-		.vf-file-upload-module__input--heading-uploading,
-		.vf-file-upload-module__input--heading-success,
-		.vf-file-upload-module__input--details-error,
-		.vf-file-upload-module__input--details-percentage,
-		.vf-file-upload-module__input--heading-files{
-			display: none;
+				color: $vattenfall-dark-red;
+
+			}
+
+			.vf-file-upload-module__input--details-success{
+
+				display: block;
+				color: $vattenfall-dark-green;
+
+			}
 		}
 	}
 
 	.vf-file-upload-module__button{
 
 		padding: 14px 0 40px 0;
-		color: $vattenfall-mid-blue;
-		font-size: 14px;
-		font-weight: 500;
-		letter-spacing: 0px;
 		text-align: center;
 
 	}
-
 }

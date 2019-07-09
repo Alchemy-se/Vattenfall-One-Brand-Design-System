@@ -11207,11 +11207,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   width: 264px;
 }
 
-.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag {
-  display: block;
-}
-
-.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-no-drag {
+.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label-no-drag {
   display: none;
 }
 
@@ -11222,47 +11218,6 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-file-upload-module.is-dragover .vf-file-upload-module__input-container .vf-file-upload-module__button button {
   color: #767676;
   border-color: #eeeeee;
-}
-
-.vf-file-upload-module.has-dropped .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files {
-  display: block;
-}
-
-.vf-file-upload-module.has-dropped .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag {
-  display: none;
-}
-
-.vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
-  display: block;
-}
-
-.vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag, .vf-file-upload-module.is-uploading .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
-  display: none;
-}
-
-.vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading, .vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota {
-  display: none;
-}
-
-.vf-file-upload-module.is-success .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
-  display: block;
-  color: #3DC07C;
-}
-
-.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading {
-  display: block;
-}
-
-.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error {
-  color: #F93B18;
-}
-
-.vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--details-quota, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files, .vf-file-upload-module.is-error .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-drag {
-  display: none;
-}
-
-.vf-file-upload-module:not(.has-advanced-upload) .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage {
-  display: none;
 }
 
 .vf-file-upload-module .vf-file-upload-module__icon {
@@ -11279,21 +11234,21 @@ a.vf-badge:hover, a.vf-badge:focus {
   y: 100%;
 }
 
+.vf-file-upload-module .vf-file-upload-module__input-container {
+  padding: 0 12px;
+}
+
 .vf-file-upload-module .vf-file-upload-module__input-container label {
   width: 100%;
-  padding: 0 10px;
   cursor: pointer;
   text-align: center;
   margin-bottom: 0;
-}
-
-.vf-file-upload-module .vf-file-upload-module__input-container label .vf-file-upload-module__input--heading {
   color: #1964A3;
   text-decoration: none;
   background-color: transparent;
 }
 
-.vf-file-upload-module .vf-file-upload-module__input-container label .vf-file-upload-module__input--heading:hover {
+.vf-file-upload-module .vf-file-upload-module__input-container label:hover {
   text-decoration: underline;
   color: #05131e;
 }
@@ -11305,10 +11260,6 @@ a.vf-badge:hover, a.vf-badge:focus {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-}
-
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files {
-  padding: 0 10px;
 }
 
 .vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading {
@@ -11329,21 +11280,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   text-align: center;
 }
 
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--label-no-drag,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-uploading,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-success,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details-error,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details-percentage,
-.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--heading-files {
-  display: none;
+.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details .vf-file-upload-module__input--details-error {
+  color: #F93B18;
+}
+
+.vf-file-upload-module .vf-file-upload-module__input-container .vf-file-upload-module__input--details .vf-file-upload-module__input--details-success {
+  display: block;
+  color: #3DC07C;
 }
 
 .vf-file-upload-module .vf-file-upload-module__button {
   padding: 14px 0 40px 0;
-  color: #2071b5;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0px;
   text-align: center;
 }
 
