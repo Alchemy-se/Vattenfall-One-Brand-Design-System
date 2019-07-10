@@ -11207,7 +11207,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   width: 264px;
 }
 
-.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label-no-drag {
+.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label, .vf-file-upload-module.vf-file-upload-module--custom-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label {
   display: none;
 }
 

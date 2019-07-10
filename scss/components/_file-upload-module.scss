@@ -6,11 +6,11 @@
 	border: 1px solid rgb(214, 218, 219);
 	width: 264px;
 
-	&.has-advanced-upload{
+	&.has-advanced-upload, &.vf-file-upload-module--custom-upload{
 
 		.vf-file-upload-module__input-container{
 
-			.vf-file-upload-module__input--label-no-drag{
+			.vf-file-upload-module__input--label{
 
 				display: none;
 
