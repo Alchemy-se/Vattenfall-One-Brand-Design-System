@@ -11207,7 +11207,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   width: 264px;
 }
 
-.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label, .vf-file-upload-module.vf-file-upload-module--custom-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label {
+.vf-file-upload-module.has-advanced-upload .vf-file-upload-module__input-container .vf-file-upload-module__input--label {
   display: none;
 }
 
@@ -11292,6 +11292,11 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-file-upload-module .vf-file-upload-module__button {
   padding: 14px 0 40px 0;
   text-align: center;
+}
+
+.vf-file-upload-module .vf-file-upload-module__button button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
 }
 
 .news-outer-container {

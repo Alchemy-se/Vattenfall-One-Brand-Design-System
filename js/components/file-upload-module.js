@@ -28,13 +28,15 @@
 		$moduleHeading.text($headingDrag);
 		$moduleDetails.text($detailQuota);
 
-		if(!$uploadModule.hasClass("vf-file-upload-module--custom-upload")){
+		if($uploadModule.hasClass("vf-file-upload-module--example-upload")){
 
 			//Check required browser features are supported for advanced upload (drag and drop)
 			var isAdvancedUpload = function() {
 				var div = document.createElement('div');
 				return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 'FormData' in window && 'FileReader' in window;
 			}();
+
+			$moduleSubmitButton.attr('disabled','disabled'); //disable submit button unless file added.
 
 			if (isAdvancedUpload && !$uploadModule.hasClass("vf-file-upload-module--select-file")) {
 
@@ -71,7 +73,6 @@
 				$moduleSubmitButton.attr('disabled','disabled');
 
 				if ($(this).hasClass('is-uploading')){
-					console.log("Still uploading...");
 					return false;
 				} 
 
@@ -132,13 +133,13 @@
 					success: function(data) {
 						$(this).addClass( data.success ? 'is-success' : 'is-error' );
 						if (!data.success){
-
+							
 							$moduleDetails.html('<span class="vf-file-upload-module__input--details-error">' + $detailError + '</span>');
 							$moduleIcon.find('svg #vf-upload-icon--fill').css('y', "100%"); //Reset
 
 						}
 						else{
-
+							
 							$moduleHeading.text( $input.attr('data-text-number-of-files') > 1 ? $input.attr('data-text-number-of-files') + " " + $headingMultipleUploaded : $moduleHeading.attr('data-single-filename') + " " + $headingSingleUploaded);
 							$moduleDetails.html('<span class="vf-file-upload-module__input--details-success">100%</span>');
 						}
@@ -146,6 +147,7 @@
 					error: function(data) {
 						$(this).addClass('is-error');
 						$moduleDetails.html('<span class="vf-file-upload-module__input--details-error">' + $detailError + '</span>');
+						$moduleIcon.find('svg #vf-upload-icon--fill').css('y', "100%"); //Reset 
 
 					}
 				});

@@ -6,7 +6,7 @@
 	border: 1px solid rgb(214, 218, 219);
 	width: 264px;
 
-	&.has-advanced-upload, &.vf-file-upload-module--custom-upload{
+	&.has-advanced-upload{
 
 		.vf-file-upload-module__input-container{
 
@@ -127,6 +127,13 @@
 
 		padding: 14px 0 40px 0;
 		text-align: center;
+
+		button:disabled {
+
+			cursor: not-allowed;
+			pointer-events: all !important;
+			
+		}
 
 	}
 }
