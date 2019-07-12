@@ -4,3 +4,4 @@ require("./components/input-field.js");
 require("./components/tab-bar.js");
 require("./components/preloader.js");
 require("./components/tooltip.js");
+require("./components/notification-module.js");
