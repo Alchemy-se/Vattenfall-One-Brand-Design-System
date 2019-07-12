@@ -2,10 +2,6 @@ Click on the icon in the blue circle to reveal the notification module. The icon
 
 The settings icon should link to a page where users can control settings.
 
-
-
-### Nodfgjidlfgjdlfgnlk
-
 ```html
 showSource: true
 plain: false
