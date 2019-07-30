@@ -19,6 +19,12 @@
 		});
 
 		if($(this).attr('type') == 'number'){
+
+			//stepUp() & stepDown() errors on IE11 - get Step value. Default 1.
+			var stepValue = 1;
+			if(this.getAttribute('step')){
+				stepValue = this.getAttribute('step');
+			}			
 			
 			if (!$(this).siblings().hasClass('vf-input--number-decrement')) {
 				$('<div class="vf-input--number-decrement vf-icon-down"></div>').insertAfter(this);
@@ -40,11 +46,11 @@
 				if($(this).hasClass("vf-input--number-increment")){
 
 					if($.isNumeric(this.parentNode.querySelector('.vf-input').value)){
-
-						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) + Number(1);
+					
+						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) + Number(stepValue);
 					}
 					else{
-						this.parentNode.querySelector('.vf-input').value = 1;
+						this.parentNode.querySelector('.vf-input').value = stepValue;
 					}
 
 				}
@@ -53,11 +59,11 @@
 
 					if($.isNumeric(this.parentNode.querySelector('.vf-input').value)){
 
-						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) - Number(1);
+						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) - Number(stepValue);
 
 					}
 					else{
-						this.parentNode.querySelector('.vf-input').value = -1;
+						this.parentNode.querySelector('.vf-input').value = -Math.abs(stepValue);
 					}
 				}
 
