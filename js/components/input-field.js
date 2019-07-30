@@ -40,7 +40,8 @@
 				if($(this).hasClass("vf-input--number-increment")){
 
 					if($.isNumeric(this.parentNode.querySelector('.vf-input').value)){
-						this.parentNode.querySelector('.vf-input').stepUp();
+
+						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) + Number(1);
 					}
 					else{
 						this.parentNode.querySelector('.vf-input').value = 1;
@@ -51,7 +52,9 @@
 				else if($(this).hasClass("vf-input--number-decrement")){
 
 					if($.isNumeric(this.parentNode.querySelector('.vf-input').value)){
-						this.parentNode.querySelector('.vf-input').stepDown();
+
+						this.parentNode.querySelector('.vf-input').value = Number(this.parentNode.querySelector('.vf-input').value) - Number(1);
+
 					}
 					else{
 						this.parentNode.querySelector('.vf-input').value = -1;
