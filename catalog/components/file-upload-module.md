@@ -1,10 +1,14 @@
-In addition to design implementation, this module contains an example method to upload to a server for the sake of demonstration and testing. All strings can be edited via html `data-` attributes, and are applied according to the UI state. No security considerations are included in this method, as it is beyond the scope of the design system.
+In addition to design implementation, this module contains an example method to upload to a server for the sake of demonstration and testing. This method is included when the `vf-file-upload-module--example-upload` class is added to the form. No security considerations are included in this example method, as it is beyond the scope of the design system.
+
+To use the example, simply add your server to the `action` attribute of the form. The expected response is either *success* or *error* in json format.
 
 ### Icon
 
-When a file is uploaded, the document icon is animated to reflect the amount that has uploaded. If you wish to use a different icon, simply remove the `vf-file-upload-module__icon` class. If you wish to animate your custom icon in the same way, give the desired svg element (*rect*, *mask*, etc) an ID of `#vf-upload-icon--fill`.
+When a file is uploaded, the document icon is animated to reflect the amount that has uploaded. If you wish to use a different icon, simply replace the `vf-file-upload-module__icon` class. If you wish to animate your custom icon in the same way, give the desired svg element (*rect*, *mask*, etc) an ID of `#vf-upload-icon--fill`.
 
 ### Strings
+
+All strings can be edited via html `data-` attributes, and are applied according to the UI state when using the example method.
 
 The following strings can be edited to suit your language/UI requirements:
 
