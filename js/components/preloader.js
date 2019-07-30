@@ -6,7 +6,9 @@
 
 	}
 
-	document.querySelectorAll('.vf-preloader').forEach(function(preloader) {
+	var preloaders = document.getElementsByClassName("vf-preloader");
+
+	for (var i = 0; i < preloaders.length; i++) {
 
 		//Create initial svg with path and text.
 		var vfSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -23,30 +25,30 @@
 		vfSvgTextElement.setAttributeNS(null,"x","50%");
 		vfSvgTextElement.setAttributeNS(null,"y","50%");
 		
-		preloader.appendChild(vfSvg);
+		preloaders[i].appendChild(vfSvg);
 
 		//Get percentage and display it. If not available, set to 0.
-		var displayPercentage = preloader.getAttribute('data-vf-preloader-percentage');
+		var displayPercentage = preloaders[i].getAttribute('data-vf-preloader-percentage');
 		if(!displayPercentage){
 			displayPercentage = 0;
 		}
 
-		preloader.getElementsByTagName('svg')[0].getElementsByTagName('text')[0].textContent = displayPercentage + "%";
-		updateArrayOffset(preloader.getElementsByClassName('vf-preloader-circle')[0], displayPercentage);
+		preloaders[i].getElementsByTagName('svg')[0].getElementsByTagName('text')[0].textContent = displayPercentage + "%";
+		updateArrayOffset(preloaders[i].getElementsByClassName('vf-preloader-circle')[0], displayPercentage);
 
 		var config = { attributes: true};
 
 		// Callback function to execute when mutations are observed
 		var callback = function(mutationsList, observer) {
 
-		    for(var mutation of mutationsList) {
+			for(var j = 0; j < mutationsList.length; j++){
 
-		        if (mutation.type == 'attributes') {
+		        if (mutationsList[j].type == 'attributes') {
 
-		            if(mutation.attributeName == "data-vf-preloader-percentage"){         	
+		            if(mutationsList[j].attributeName == "data-vf-preloader-percentage"){         	
 
-		            	mutation.target.getElementsByTagName('svg')[0].getElementsByTagName('text')[0].textContent= mutation.target.getAttribute('data-vf-preloader-percentage') + '%';
-			            updateArrayOffset(mutation.target.getElementsByClassName('vf-preloader-circle')[0], mutation.target.getAttribute('data-vf-preloader-percentage'));
+		            	mutationsList[j].target.getElementsByTagName('svg')[0].getElementsByTagName('text')[0].textContent= mutationsList[j].target.getAttribute('data-vf-preloader-percentage') + '%';
+			            updateArrayOffset(mutationsList[j].target.getElementsByClassName('vf-preloader-circle')[0], mutationsList[j].target.getAttribute('data-vf-preloader-percentage'));
 
 		            }
 		        }
@@ -57,8 +59,8 @@
 		var observer = new MutationObserver(callback);
 
 		// Start observing the target node for configured mutations
-		observer.observe(preloader, config);
+		observer.observe(preloaders[i], config);
 
-	});
+	}
 
 })(jQuery);
