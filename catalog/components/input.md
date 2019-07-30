@@ -25,7 +25,7 @@ showSource: true
 
 <div class="vf-row">
   <div class="vf-input-container">
-    <input type="number" id="vf_number_input" class="vf-input" min="-100000" max="100000" step="1">
+    <input type="number" id="vf_number_input" class="vf-input">
     <label for="vf_number_input">Number Label</label>
   </div>
 </div>
