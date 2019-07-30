@@ -17,7 +17,7 @@ showSource: true
 
 ### Number
 
-To use a number input, change the `input type` to `number`:
+To use a number input, change the `input type` to `number`. The de/increment will be controlled by the step value, if given.
 
 ```html
 showSource: true
