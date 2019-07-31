@@ -1,10 +1,10 @@
-In addition to design implementation, this module contains an example method to upload to a server for the sake of demonstration and testing. This method is included when the `vf-file-upload-module--example-upload` class is added to the `form` element. No security considerations are included in this example method, as it is beyond the scope of the design system. It is not recommended to use the example method in a production setting.
+In addition to design implementation, this module contains an example method to upload to a server for the sake of demonstration and testing. This method is included when the `vf-file-upload-module--example-upload` class is added to the `form` element. No security considerations are included in this example method, as it is beyond the scope of the design system. **It is not recommended to use the example method in a production setting.**
 
 To use the example, simply add your server to the `action` attribute of the form. The expected response is either *success* or *error* in json format.
 
 ### Icon
 
-When a file is uploaded in the example, the document icon is animated to reflect the amount that has uploaded. If you wish to use a different icon, simply remove the `vf-file-upload-module__icon` class. If you wish to animate your icon in the same way as the example, give the desired svg element (*rect*, *mask*, etc) an ID of `#vf-upload-icon--fill` and update the *y* value of this element via AJAX and XMLHttpRequest. Example jQuery method:
+When a file is uploaded in the example, the document icon is animated and the percentage displayed is updated to reflect the amount that has uploaded. If you wish to use a different icon, simply remove the `vf-file-upload-module__icon` class. If you wish to animate your icon in the same way as the example, give the desired svg element (`rect`, `mask`, etc) an ID of `#vf-upload-icon--fill` and update the `y` value of this element as well as the percentage displayed via AJAX and XMLHttpRequest. Example jQuery method:
 
 
 	$.ajax({
@@ -19,8 +19,9 @@ When a file is uploaded in the example, the document icon is animated to reflect
 
 					var percentComplete = (data.loaded / data.total) * 100;
 
+					//Update .vf-file-upload-module__input--details
 					$moduleDetails.text((Math.round( (percentComplete) * 1 ) / 1) + '%');
-					$moduleDetails.attr("data-number-percent-uploaded", percentComplete);
+					$moduleDetails.attr("data-number-percent-uploaded", percentComplete); 
 
 					var vfUploadIconFill = 100 - percentComplete;
 
