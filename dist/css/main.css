@@ -11213,6 +11213,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-file-upload-module.is-dragover {
   border: 1px dashed #2071b5;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
 .vf-file-upload-module.is-dragover .vf-file-upload-module__input-container .vf-file-upload-module__button button {

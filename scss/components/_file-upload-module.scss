@@ -21,6 +21,7 @@
 	&.is-dragover{
 
 		border: 1px dashed rgb(32, 113, 181);
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.60);
 
 		.vf-file-upload-module__input-container{
 
