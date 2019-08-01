@@ -43,7 +43,9 @@
     "@alchemy-se/catalog": "^4.4.3",
     "babel-loader": "7",
     "catalog": "^3.6.0",
+    "daterangepicker": "^3.0.5",
     "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },

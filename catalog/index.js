@@ -5,12 +5,15 @@ import moleculesNavigation from './molecules/navigation';
 import organismsNavigation from './organisms/navigation';
 import layoutsNavigation from './layouts/navigation';
 
-
 //All this needed?
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 global.jQuery = $;
+
+//Calendar
+import moment from 'moment';
+import daterangepicker from 'daterangepicker';
 
 import Welcome from './WELCOME';
 import Designers from './designers/getting-started-designers';
@@ -128,6 +131,10 @@ const pages = [
         path: "/css/notification-module",
         title: "- Notification Module",
         content: pageLoader(() => import("./components/notification-module.md"))
+      }, {
+        path: "/css/calendar",
+        title: "- Calendar",
+        content: pageLoader(() => import("./components/calendar.md"))
       },
     
       ...moleculesNavigation,

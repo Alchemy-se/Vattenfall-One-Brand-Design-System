@@ -1,0 +1,218 @@
+//import default styles for daterangepicker
+@import 'node_modules/daterangepicker/daterangepicker';
+
+
+.vf-calendar{
+
+  position: relative;
+
+  .daterangepicker{
+
+    font-family: "Vattenfall Hall"!important;
+    color: $dark!important;
+    border-radius: 4px;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.1);
+
+    &.opensright:before{
+      left: 15px;
+    }
+
+    &.opensright:after{
+      left: 16px;
+    }
+
+    td{
+
+      &.off, &.off.in-range, &.off.start-date, &.off.end-date{
+        color: #888888;
+      }
+
+    }
+
+    .drp-calendar{
+
+      max-width: none;
+
+      &.left{
+        padding: 37px 0 37px 37px;
+
+        .calendar-table {
+          border-right: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      &.right{
+        padding: 37px;
+
+        .calendar-table {
+          border-left: none;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+
+    .drp-buttons .btn{
+      font-family: "Vattenfall Hall Bold"!important;
+    }
+
+    .drp-buttons{
+
+      padding: 18px;
+
+      .drp-selected{
+        font-size: 16px;
+        padding-right: 18px;
+      }
+
+      button{
+        cursor: pointer;
+
+        &.cancelBtn{
+          color: $vattenfall-dark-red;
+        }
+
+        &.applyBtn{
+          color: $vattenfall-dark-green;
+        }
+
+        &.btn{
+          margin-left: 18px;
+          padding: 4px 8px;
+        }
+      }
+    }
+
+    .calendar-table{
+
+      border-radius: 18px;
+
+      th, td{
+        min-width: 42px;
+        width: 42px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        border-radius: 18px;
+        border: 1px solid transparent;
+        letter-spacing: -0.05px;
+
+      }
+
+      th{
+        font-family: "Vattenfall Hall Bold"!important;
+      }
+
+      td{
+
+        &.in-range{
+
+          border-radius: 0;
+
+          &:hover{
+            //border-radius: 18px;
+
+          }
+        }
+
+        &.start-date{ //,  &.in-range:first-of-type
+          /*border-top-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;*/
+
+          border-radius: 18px 0 0 18px;
+
+
+        }
+
+        &.end-date{ //, &.in-range:last-of-type
+         /* border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;*/
+
+          border-radius: 0 18px 18px 0;
+        }
+
+        &.active, &.active:hover, &.in-range{
+          background-color: $link-color;
+          color: $white;
+        }
+
+        &.available:hover{
+          //border-radius: 18px;
+        }
+
+      }
+
+      .next span, .prev span{
+        border: none!important;
+        padding: 0;
+        color: $dark;
+        transform: none;
+
+        &:before{
+          font-family: 'vf-icons' !important;
+          font-size: 18px;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          vertical-align: middle;
+
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+      }
+
+      .prev{
+        padding-right: 18px;
+
+        &:hover{
+          background:none;
+          
+        }
+
+        span:before{
+          content: "\e904";
+
+        }
+      } 
+
+      .next{
+        padding-left: 18px;
+
+        &:hover{
+          background:none;
+          
+        }
+
+        span:before{
+          content: "\e905";
+
+        }
+      }
+
+      .month{
+
+        font-size: 18px;
+        font-family: "Vattenfall Hall Bold"!important;
+        letter-spacing: 0px;
+        line-height: 24px;
+        padding: 18px 0;
+
+      }
+
+    }
+
+  }
+
+}
