@@ -1,8 +1,7 @@
 //import default styles for daterangepicker
 @import 'node_modules/daterangepicker/daterangepicker';
 
-
-.vf-calendar{
+div[class*="vf-calendar"]{
 
   position: relative;
 
@@ -126,6 +125,10 @@
 
           border-radius: 18px 0 0 18px;
 
+          &.end-date{
+            border-radius: 18px;
+          }
+
 
         }
 
@@ -137,6 +140,8 @@
 
           border-radius: 0 18px 18px 0;
         }
+
+
 
         &.active, &.active:hover, &.in-range{
           background-color: $link-color;

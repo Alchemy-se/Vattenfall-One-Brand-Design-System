@@ -11729,11 +11729,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   }
 }
 
-.vf-calendar {
+div[class*="vf-calendar"] {
   position: relative;
 }
 
-.vf-calendar .daterangepicker {
+div[class*="vf-calendar"] .daterangepicker {
   font-family: "Vattenfall Hall" !important;
   color: #222222 !important;
   border-radius: 4px;
@@ -11742,77 +11742,77 @@ a.vf-badge:hover, a.vf-badge:focus {
   box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.1);
 }
 
-.vf-calendar .daterangepicker.opensright:before {
+div[class*="vf-calendar"] .daterangepicker.opensright:before {
   left: 15px;
 }
 
-.vf-calendar .daterangepicker.opensright:after {
+div[class*="vf-calendar"] .daterangepicker.opensright:after {
   left: 16px;
 }
 
-.vf-calendar .daterangepicker td.off, .vf-calendar .daterangepicker td.off.in-range, .vf-calendar .daterangepicker td.off.start-date, .vf-calendar .daterangepicker td.off.end-date {
+div[class*="vf-calendar"] .daterangepicker td.off, div[class*="vf-calendar"] .daterangepicker td.off.in-range, div[class*="vf-calendar"] .daterangepicker td.off.start-date, div[class*="vf-calendar"] .daterangepicker td.off.end-date {
   color: #888888;
 }
 
-.vf-calendar .daterangepicker .drp-calendar {
+div[class*="vf-calendar"] .daterangepicker .drp-calendar {
   max-width: none;
 }
 
-.vf-calendar .daterangepicker .drp-calendar.left {
+div[class*="vf-calendar"] .daterangepicker .drp-calendar.left {
   padding: 37px 0 37px 37px;
 }
 
-.vf-calendar .daterangepicker .drp-calendar.left .calendar-table {
+div[class*="vf-calendar"] .daterangepicker .drp-calendar.left .calendar-table {
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.vf-calendar .daterangepicker .drp-calendar.right {
+div[class*="vf-calendar"] .daterangepicker .drp-calendar.right {
   padding: 37px;
 }
 
-.vf-calendar .daterangepicker .drp-calendar.right .calendar-table {
+div[class*="vf-calendar"] .daterangepicker .drp-calendar.right .calendar-table {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.vf-calendar .daterangepicker .drp-buttons .btn {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons .btn {
   font-family: "Vattenfall Hall Bold" !important;
 }
 
-.vf-calendar .daterangepicker .drp-buttons {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons {
   padding: 18px;
 }
 
-.vf-calendar .daterangepicker .drp-buttons .drp-selected {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons .drp-selected {
   font-size: 16px;
   padding-right: 18px;
 }
 
-.vf-calendar .daterangepicker .drp-buttons button {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons button {
   cursor: pointer;
 }
 
-.vf-calendar .daterangepicker .drp-buttons button.cancelBtn {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons button.cancelBtn {
   color: #F93B18;
 }
 
-.vf-calendar .daterangepicker .drp-buttons button.applyBtn {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons button.applyBtn {
   color: #3DC07C;
 }
 
-.vf-calendar .daterangepicker .drp-buttons button.btn {
+div[class*="vf-calendar"] .daterangepicker .drp-buttons button.btn {
   margin-left: 18px;
   padding: 4px 8px;
 }
 
-.vf-calendar .daterangepicker .calendar-table {
+div[class*="vf-calendar"] .daterangepicker .calendar-table {
   border-radius: 18px;
 }
 
-.vf-calendar .daterangepicker .calendar-table th, .vf-calendar .daterangepicker .calendar-table td {
+div[class*="vf-calendar"] .daterangepicker .calendar-table th, div[class*="vf-calendar"] .daterangepicker .calendar-table td {
   min-width: 42px;
   width: 42px;
   height: 36px;
@@ -11823,15 +11823,15 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: -0.05px;
 }
 
-.vf-calendar .daterangepicker .calendar-table th {
+div[class*="vf-calendar"] .daterangepicker .calendar-table th {
   font-family: "Vattenfall Hall Bold" !important;
 }
 
-.vf-calendar .daterangepicker .calendar-table td.in-range {
+div[class*="vf-calendar"] .daterangepicker .calendar-table td.in-range {
   border-radius: 0;
 }
 
-.vf-calendar .daterangepicker .calendar-table td.start-date {
+div[class*="vf-calendar"] .daterangepicker .calendar-table td.start-date {
   /*border-top-left-radius: 12px;
           border-bottom-left-radius: 12px;
           border-top-right-radius: 0;
@@ -11839,7 +11839,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-radius: 18px 0 0 18px;
 }
 
-.vf-calendar .daterangepicker .calendar-table td.end-date {
+div[class*="vf-calendar"] .daterangepicker .calendar-table td.start-date.end-date {
+  border-radius: 18px;
+}
+
+div[class*="vf-calendar"] .daterangepicker .calendar-table td.end-date {
   /* border-top-left-radius: 0;
           border-bottom-left-radius: 0;
           border-top-right-radius: 12px;
@@ -11847,12 +11851,12 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-radius: 0 18px 18px 0;
 }
 
-.vf-calendar .daterangepicker .calendar-table td.active, .vf-calendar .daterangepicker .calendar-table td.active:hover, .vf-calendar .daterangepicker .calendar-table td.in-range {
+div[class*="vf-calendar"] .daterangepicker .calendar-table td.active, div[class*="vf-calendar"] .daterangepicker .calendar-table td.active:hover, div[class*="vf-calendar"] .daterangepicker .calendar-table td.in-range {
   background-color: #1964A3;
   color: #fff;
 }
 
-.vf-calendar .daterangepicker .calendar-table .next span, .vf-calendar .daterangepicker .calendar-table .prev span {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .next span, div[class*="vf-calendar"] .daterangepicker .calendar-table .prev span {
   border: none !important;
   padding: 0;
   color: #222222;
@@ -11860,7 +11864,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   transform: none;
 }
 
-.vf-calendar .daterangepicker .calendar-table .next span:before, .vf-calendar .daterangepicker .calendar-table .prev span:before {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .next span:before, div[class*="vf-calendar"] .daterangepicker .calendar-table .prev span:before {
   font-family: 'vf-icons' !important;
   font-size: 18px;
   speak: none;
@@ -11875,31 +11879,31 @@ a.vf-badge:hover, a.vf-badge:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.vf-calendar .daterangepicker .calendar-table .prev {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .prev {
   padding-right: 18px;
 }
 
-.vf-calendar .daterangepicker .calendar-table .prev:hover {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .prev:hover {
   background: none;
 }
 
-.vf-calendar .daterangepicker .calendar-table .prev span:before {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .prev span:before {
   content: "\e904";
 }
 
-.vf-calendar .daterangepicker .calendar-table .next {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .next {
   padding-left: 18px;
 }
 
-.vf-calendar .daterangepicker .calendar-table .next:hover {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .next:hover {
   background: none;
 }
 
-.vf-calendar .daterangepicker .calendar-table .next span:before {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .next span:before {
   content: "\e905";
 }
 
-.vf-calendar .daterangepicker .calendar-table .month {
+div[class*="vf-calendar"] .daterangepicker .calendar-table .month {
   font-size: 18px;
   font-family: "Vattenfall Hall Bold" !important;
   letter-spacing: 0px;
