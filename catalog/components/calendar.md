@@ -1,8 +1,3 @@
-//To Do:
-//-buttons?
-//-dropdown - vf version too big?
-
-
 The calendar module utilises [Date Range Picker](http://www.daterangepicker.com). There are many settings that can be customised, and so if anything is not covered here, please consult the documentation there.
 
 ## Date Range
@@ -133,7 +128,7 @@ plain: false
 
 ## Single Date Selector
 
-If you wish to have a single date selector, rather than a date range, simply add `singleDatePicker: true` to your jQuery. For ease of use, `showDropdowns: true` can also be added.
+If you wish to have a single date selector, rather than a date range, simply add `singleDatePicker: true` to your jQuery.
 
 ```html
 showSource: true
@@ -148,44 +143,44 @@ plain: false
 
 ```
 
-    $('input[name="vf-daterange-localised-svenska"]').daterangepicker({
+    $('input[name="vf-daterange-single"]').daterangepicker({
+      "singleDatePicker": true,
       "autoApply": true,
-      "showWeekNumbers": true,
       "locale": {
-        "format": "YYYY/MM/DD",
+        "format": "DD/MM/YYYY",
         "separator": " - ",
-        "applyLabel": "Godkänn",
-        "cancelLabel": "Rensa",
-        "fromLabel": "Från",
-        "toLabel": "Till",
+        "applyLabel": "Apply",
+        "cancelLabel": "Cancel",
+        "fromLabel": "From",
+        "toLabel": "To",
         "customRangeLabel": "Custom",
-        "weekLabel": "V",
+        "weekLabel": "W",
         "daysOfWeek": [
-          "Sö",
-          "Må",
-          "Ti",
-          "On",
-          "To",
-          "Fr",
-          "Lö"
+          "S",
+          "M",
+          "T",
+          "W",
+          "T",
+          "F",
+          "S"
         ],
         "monthNames": [
-          "Januari",
-          "Februari",
-          "Mars",
+          "January",
+          "February",
+          "March",
           "April",
-          "Maj",
-          "Juni",
-          "Juli",
-          "Augusti",
+          "May",
+          "June",
+          "July",
+          "August",
           "September",
-          "Oktober",
+          "October",
           "November",
           "December"
         ],
         "firstDay": 1
       },
-      "parentEl": ".vf-calendar-svenska",
+      "parentEl": ".vf-calendar-single",
       "startDate": "01/08/2019",
       "endDate": "07/08/2019"
       }, function(start, end, label) {

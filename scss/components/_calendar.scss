@@ -5,8 +5,26 @@ div[class*="vf-calendar"]{
 
   position: relative;
 
+  .vf-input{
+    padding: 16px 40px 16px 20px; //allow for icon
+  }
+
+  .vf-input-tooltip-icon{
+    &.vf-icon-calendar{
+      position: relative;
+      &:before{
+        position: absolute;
+        top: calc(50% - 13px);
+        right: 15px;
+        color: #222;
+        pointer-events: none;
+      }
+    }
+  }
+
   .daterangepicker{
 
+    cursor: initial;
     font-family: "Vattenfall Hall"!important;
     color: $dark!important;
     border-radius: 4px;
@@ -34,53 +52,99 @@ div[class*="vf-calendar"]{
       max-width: none;
 
       &.left{
+
         padding: 37px 0 37px 37px;
+        @include media-breakpoint-down(md) {
+          padding: 37px 8px;
+          text-align: center;
+          display: flex;
+          float: none;
+        }
+        
 
         .calendar-table {
           border-right: none;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
+
+          @include media-breakpoint-down(md) {
+            margin: 0 auto;
+          }
+        }
+
+        &.single{
+          padding: 37px;
+
+          .calendar-table{
+            padding-right: 0;
+          }
         }
       }
 
       &.right{
-        padding: 37px;
+        //padding: 37px 0 37px 37px;
+        padding: 37px 37px 37px 37px;
+        @include media-breakpoint-down(md) {
+          padding: 0 8px 37px 8px;
+          display: flex;
+          float: none;
+        }
 
         .calendar-table {
           border-left: none;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
+          @include media-breakpoint-down(md) {
+          
+            margin: 0 auto;
+          }
         }
       }
     }
 
     .drp-buttons .btn{
-      font-family: "Vattenfall Hall Bold"!important;
+      //font-family: "Vattenfall Hall Bold"!important;
+
+      font-weight: 500;
+      font-size: 14px;
     }
 
     .drp-buttons{
 
-      padding: 18px;
+      //padding: 37px 0 37px 37px;
+      padding: 37px;
+      @include media-breakpoint-down(md) {
+        padding: 37px 8px;
+        text-align: center;
+      }
 
       .drp-selected{
         font-size: 16px;
         padding-right: 18px;
+        vertical-align: middle;
+        @include media-breakpoint-down(md) {
+          padding-right: 0;
+          display: block;
+        }
       }
 
       button{
         cursor: pointer;
 
         &.cancelBtn{
-          color: $vattenfall-dark-red;
+          //color: $vattenfall-dark-red;
         }
 
         &.applyBtn{
-          color: $vattenfall-dark-green;
+          //color: $vattenfall-dark-green;
         }
 
         &.btn{
           margin-left: 18px;
-          padding: 4px 8px;
+          @include media-breakpoint-down(md) {
+            margin: 27px 8px 0;
+          }
+          //padding: 4px 8px;
         }
       }
     }
@@ -90,12 +154,20 @@ div[class*="vf-calendar"]{
       border-radius: 18px;
 
       th, td{
-        min-width: 42px;
-        width: 42px;
-        height: 36px;
-        line-height: 36px;
-        font-size: 16px;
-        border-radius: 18px;
+
+        @include media-breakpoint-up(sm) {
+
+          min-width: 42px;
+          width: 42px;
+          height: 36px;
+          line-height: 36px;
+          font-size: 16px;
+          border-radius: 18px;
+          border: 1px solid transparent;
+          letter-spacing: -0.05px;
+
+        }
+
         border: 1px solid transparent;
         letter-spacing: -0.05px;
 

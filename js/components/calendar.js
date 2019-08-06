@@ -89,7 +89,6 @@
 
 	$('input[name="vf-daterange-single"]').daterangepicker({
 		"singleDatePicker": true,
-    	"showDropdowns": true,
 		"autoApply": true,
 		"locale": {
 			"format": "DD/MM/YYYY",
@@ -129,6 +128,23 @@
 		"startDate": "01/08/2019",
 		"endDate": "07/08/2019"
 		}, function(start, end, label) {
+
+	});
+
+	//Add Calendar icon
+	$("[class^=vf-calendar]").find('input').each(function(){
+		$('<div class="vf-input-tooltip-icon vf-icon-calendar"></div>').insertAfter(this);
+
+	});
+
+	//Add classes to each cancel and apply button
+	$( ".vf-calendar .applyBtn" ).each(function() {
+		$(this).addClass("vf-btn vf-btn--primary");
+
+	});
+
+	$( ".vf-calendar .cancelBtn" ).each(function() {
+		$(this).addClass("vf-btn  vf-btn--outline-secondary");
 
 	});
 
