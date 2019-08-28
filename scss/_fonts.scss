@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-Light.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-Light.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-Light.eot");
+    src: url($fontPath + "/VattenfallHall-Light.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Light.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-Light.woff") format("woff");
     font-weight: 300;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-LightItalic.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-LightItalic.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-LightItalic.eot");
+    src: url($fontPath + "/VattenfallHall-LightItalic.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-LightItalic.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-LightItalic.woff") format("woff");
     font-weight: 300;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-Regular.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-Regular.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-Regular.eot");
+    src: url($fontPath + "/VattenfallHall-Regular.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Regular.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-Regular.woff") format("woff");
     font-weight: 400;
@@ -30,8 +30,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-RegularItalic.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-RegularItalic.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-RegularItalic.eot");
+    src: url($fontPath + "/VattenfallHall-RegularItalic.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-RegularItalic.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-RegularItalic.woff") format("woff");
     font-weight: 400;
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-Medium.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-Medium.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-Medium.eot");
+    src: url($fontPath + "/VattenfallHall-Medium.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Medium.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-Medium.woff") format("woff");
     font-weight: 500;
@@ -50,8 +50,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-MediumItalic.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-MediumItalic.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-MediumItalic.eot");
+    src: url($fontPath + "/VattenfallHall-MediumItalic.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-MediumItalic.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-MediumItalic.woff") format("woff");
     font-weight: 500;
@@ -60,8 +60,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall Display";
-    src:     url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix");
-    src: url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHallDisplay-Bold.eot");
+    src: url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHallDisplay-Bold.woff2") format("woff2"),
          url($fontPath + "/VattenfallHallDisplay-Bold.woff") format("woff");
     font-weight: 600;
@@ -70,8 +70,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall Bold";
-    src:     url($fontPath + "/VattenfallHall-Bold.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-Bold.eot");
+    src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Bold.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-Bold.woff") format("woff");
     font-weight: 600;
@@ -80,8 +80,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-BoldItalic.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-BoldItalic.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-BoldItalic.eot");
+    src: url($fontPath + "/VattenfallHall-BoldItalic.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-BoldItalic.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-BoldItalic.woff") format("woff");
     font-weight: 600;
@@ -90,8 +90,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-Heavy.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-Heavy.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-Heavy.eot");
+    src: url($fontPath + "/VattenfallHall-Heavy.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Heavy.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-Heavy.woff") format("woff");
     font-weight: 700;
@@ -100,8 +100,8 @@
 
 @font-face {
     font-family: "Vattenfall Hall";
-    src:     url($fontPath + "/VattenfallHall-HeavyItalic.eot?#iefix");
-    src: url($fontPath + "/VattenfallHall-HeavyItalic.eot?#iefix") format("eot"),
+    src:     url($fontPath + "/VattenfallHall-HeavyItalic.eot");
+    src: url($fontPath + "/VattenfallHall-HeavyItalic.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-HeavyItalic.woff2") format("woff2"),
          url($fontPath + "/VattenfallHall-HeavyItalic.woff") format("woff");
     font-weight: 700;
