@@ -29,7 +29,6 @@ Specific icons are automatically added to the following filetypes if the `href` 
 * `.ppt`
 * `.pdf`
 * `.doc, .docx`
-* or if you use `target="_blank"`
 
 And the following modifier classes are available:
 
@@ -74,7 +73,7 @@ showSource: true
     <span class="vf-file-list__item-description">(DOC, 520 kB)</span>
   </li>
   <li class="vf-file-list__item">
-    <a class="vf-file-list__link" target="_blank" href="#">This one opens in a new window</a>
+    <a class="vf-file-list__link vf-file-list__link--type-new-window" target="_blank" href="#">This one opens in a new window</a>
   </li>
     <li class="vf-file-list__item">
     <a class="vf-file-list__link vf-file-list__link--type-arrow-right" href="#">Just a link with an arrow</a>
