@@ -65,6 +65,11 @@
 
 }
 
+.vf-file-list {
+	.vf-file-list__link:hover{
+		color: $link-hover-color;
+	}
+}
 
 .vf-linked-list-block {
 
@@ -87,6 +92,7 @@
 				.vf-file-list {
 					.vf-file-list__link {
 						@include typo-paragraph-primary-mobile();
+						font-weight: 500;
 					}
 				}
 			}

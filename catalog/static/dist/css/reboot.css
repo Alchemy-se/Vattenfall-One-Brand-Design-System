@@ -130,10 +130,12 @@ a {
   color: #1964A3;
   text-decoration: none;
   background-color: transparent;
+  font-family: "Vattenfall Hall";
+  font-weight: 500;
+  font-style: normal;
 }
 
 a:hover {
-  color: #05131e;
   text-decoration: underline;
 }
 
