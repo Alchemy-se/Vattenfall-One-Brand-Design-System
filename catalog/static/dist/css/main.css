@@ -11409,18 +11409,113 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 @media (min-width: 768px) {
-  .vf-subscribe .vf-subscribe__content .vf-subscribe__input .vf-input-container {
+  .vf-subscribe .vf-subscribe__content .vf-subscribe__input form {
     min-width: 80%;
   }
 }
 
 @media (min-width: 992px) {
-  .vf-subscribe .vf-subscribe__content .vf-subscribe__input .vf-input-container {
+  .vf-subscribe .vf-subscribe__content .vf-subscribe__input form {
     min-width: 60%;
   }
 }
 
 .vf-subscribe .vf-subscribe__content .vf-subscribe__input .vf-btn {
+  margin-top: 28px;
+}
+
+.vf-form {
+  position: relative;
+  background: #fff;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1700px;
+  border-left: 20px white solid;
+  border-right: 20px white solid;
+}
+
+@media (max-width: 991.98px) {
+  .vf-form {
+    border-left: 30px white solid;
+    border-right: 30px white solid;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vf-form {
+    font-size: 44px;
+    min-height: 370px;
+    border-left: 20px white solid;
+    border-right: 20px white solid;
+  }
+}
+
+.vf-form .vf-form__content {
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 88px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+@media (min-width: 576px) {
+  .vf-form .vf-form__content {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+}
+
+.vf-form .vf-form__content .vf-form__headline {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-bottom: 28px;
+}
+
+@media (min-width: 576px) {
+  .vf-form .vf-form__content .vf-form__headline {
+    padding-bottom: 32px;
+  }
+}
+
+.vf-form .vf-form__content .vf-preamble {
+  font-weight: normal;
+}
+
+.vf-form .vf-form__content .vf-form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .vf-form .vf-form__content .vf-form__input form {
+    min-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .vf-form .vf-form__content .vf-form__input form {
+    min-width: 60%;
+  }
+}
+
+.vf-form .vf-form__content .vf-form__input .vf-input-container {
+  margin-top: 28px;
+}
+
+.vf-form .vf-form__content .vf-form__input .vf-btn {
   margin-top: 28px;
 }
 
