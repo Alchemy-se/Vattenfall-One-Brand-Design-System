@@ -5,7 +5,6 @@ Email Subscription.
 
 ```html
 showSource: true
-responsive: true
 ---
 
 <section class="vf-subscribe">
