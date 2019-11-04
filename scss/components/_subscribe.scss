@@ -1,0 +1,75 @@
+.vf-subscribe {
+	position: relative;
+	background: $vattenfall-light-blue;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $bleed-container-max-width + 20px; // To add the borders
+	border-left: 20px white solid;
+	border-right: 20px white solid;
+
+	@include media-breakpoint-down(md) {
+		border-left: 30px white solid;
+		border-right: 30px white solid;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 44px;
+		min-height: 370px;
+		border-left: 20px white solid;
+		border-right: 20px white solid;
+	}
+
+	.vf-subscribe__content {
+		width: 100%;
+
+		padding-top: $spacing-md;
+		padding-bottom:$spacing-xl;
+
+		text-align: center;
+		@include typo-paragraph-secondary-mobile();
+
+		@include media-breakpoint-up(sm) {
+			@include typo-paragraph-primary-desktop();
+		}
+
+		.vf-subscribe__headline {
+
+			margin: 0 auto;
+			max-width: 90%;
+			padding-bottom: $spacing-sm;
+
+			@include media-breakpoint-up(sm) { 
+				padding-bottom: 32px;
+			}
+		}
+
+		.vf-preamble{
+			font-weight: normal;
+		}
+
+		.vf-subscribe__input{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding-top: $spacing-sm;
+
+			@include media-breakpoint-up(md){
+				.vf-input-container{
+					min-width:80%;
+				}
+			}
+
+			@include media-breakpoint-up(lg){
+				.vf-input-container{
+					min-width:60%;
+				}
+			}
+
+			.vf-btn{
+				margin-top: $spacing-sm;
+			}
+		}
+	}
+}
