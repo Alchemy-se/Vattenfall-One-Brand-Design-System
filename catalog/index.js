@@ -128,6 +128,10 @@ const pages = [
         path: "/css/notification-module",
         title: "- Notification Module",
         content: pageLoader(() => import("./components/notification-module.md"))
+      }, {
+        path: "/css/subscribe",
+        title: "- Subscribe",
+        content: pageLoader(() => import("./components/subscribe.md"))
       },
     
       ...moleculesNavigation,
