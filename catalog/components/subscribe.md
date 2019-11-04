@@ -5,10 +5,9 @@ Email Subscription.
 
 ```html
 showSource: true
-responsive: true
 ---
 
-<section class="vf-subscribe">
+<section class="vf-subscribe vf-input">
 
     <div class="vf-container vf-container--tight vf-text--center">
 
