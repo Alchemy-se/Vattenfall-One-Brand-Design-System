@@ -7,7 +7,7 @@ Email Subscription.
 showSource: true
 ---
 
-<section class="vf-subscribe vf-input">
+<section class="vf-subscribe">
 
     <div class="vf-container vf-container--tight vf-text--center">
 
