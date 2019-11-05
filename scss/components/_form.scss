@@ -1,27 +1,18 @@
-.vf-subscribe {
+.vf-form {
 	position: relative;
-	background: $vattenfall-light-blue;
+	background: $white;
 	background-size: cover;
 	background-position: center center;
 	margin: 0 auto;
 	width: 100%;
 	max-width: $bleed-container-max-width + 20px; // To add the borders
-	border-left: 20px white solid;
-	border-right: 20px white solid;
-
-	@include media-breakpoint-down(md) {
-		border-left: 30px white solid;
-		border-right: 30px white solid;
-	}
 
 	@include media-breakpoint-down(sm) {
 		font-size: 44px;
 		min-height: 370px;
-		border-left: 20px white solid;
-		border-right: 20px white solid;
 	}
 
-	.vf-subscribe__content {
+	.vf-form__content {
 		width: 100%;
 
 		padding-top: $spacing-md;
@@ -34,7 +25,7 @@
 			@include typo-paragraph-primary-desktop();
 		}
 
-		.vf-subscribe__headline {
+		.vf-form__headline {
 
 			margin: 0 auto;
 			max-width: 90%;
@@ -49,25 +40,21 @@
 			font-weight: normal;
 		}
 
-		.vf-subscribe__input{
+		.vf-form__input{
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			padding-top: $spacing-sm;
 
-/*
-			@include media-breakpoint-up(md){
-				form{
-					min-width:80%;
-				}
+			.vf-form{
+				width: 100%;
 			}
 
-			@include media-breakpoint-up(lg){
-				form{
-					min-width:60%;
-				}
+			.vf-input-container{
+
+				margin-top: $spacing-sm;
+
 			}
-*/
+
 			.vf-btn{
 				margin-top: $spacing-sm;
 			}
