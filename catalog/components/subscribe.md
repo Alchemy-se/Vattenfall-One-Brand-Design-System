@@ -22,7 +22,7 @@ showSource: true
         </p>
 
         <div class="vf-subscribe__input">
-				  <form action="">
+				  <form action="" class="vf-col-lg-8">
             <div class="vf-input-container">
             
     					<input type="text" class="vf-input vf-input--underline">

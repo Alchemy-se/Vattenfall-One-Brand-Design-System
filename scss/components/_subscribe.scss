@@ -8,11 +8,12 @@
 	max-width: $bleed-container-max-width + 20px; // To add the borders
 	border-left: 20px white solid;
 	border-right: 20px white solid;
-	border-top: 20px white solid;
+	border-bottom: 20px white solid;
 
 	@include media-breakpoint-down(md) {
 		border-left: 30px white solid;
 		border-right: 30px white solid;
+		border-bottom: 30px white solid;
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -20,6 +21,7 @@
 		min-height: 370px;
 		border-left: 20px white solid;
 		border-right: 20px white solid;
+		border-bottom: 20px white solid;
 	}
 
 	.vf-subscribe__content {
