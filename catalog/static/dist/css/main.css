@@ -11406,18 +11406,19 @@ a.vf-badge:hover, a.vf-badge:focus {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 28px;
-}
+  /*
+			@include media-breakpoint-up(md){
+				form{
+					min-width:80%;
+				}
+			}
 
-@media (min-width: 768px) {
-  .vf-subscribe .vf-subscribe__content .vf-subscribe__input form {
-    min-width: 80%;
-  }
-}
-
-@media (min-width: 992px) {
-  .vf-subscribe .vf-subscribe__content .vf-subscribe__input form {
-    min-width: 60%;
-  }
+			@include media-breakpoint-up(lg){
+				form{
+					min-width:60%;
+				}
+			}
+*/
 }
 
 .vf-subscribe .vf-subscribe__content .vf-subscribe__input .vf-btn {
@@ -11497,18 +11498,19 @@ a.vf-badge:hover, a.vf-badge:focus {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 28px;
-}
+  /*
+			@include media-breakpoint-up(md){
+				form{
+					min-width:80%;
+				}
+			}
 
-@media (min-width: 768px) {
-  .vf-form .vf-form__content .vf-form__input form {
-    min-width: 80%;
-  }
-}
-
-@media (min-width: 992px) {
-  .vf-form .vf-form__content .vf-form__input form {
-    min-width: 60%;
-  }
+			@include media-breakpoint-up(lg){
+				form{
+					min-width:60%;
+				}
+			}
+*/
 }
 
 .vf-form .vf-form__content .vf-form__input .vf-input-container {
