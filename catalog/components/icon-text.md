@@ -1,4 +1,4 @@
-Icon with Text. 
+Icon with Text.
 
 ### Standard
 
