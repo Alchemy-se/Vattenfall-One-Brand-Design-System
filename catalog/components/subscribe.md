@@ -17,12 +17,12 @@ showSource: true
        		Stay updated
         </h2>
 
-        <div class="vf-preamble">
+        <p class="vf-preamble">
         	Subscribe to our regular updates about Investor Relations. We are striving for providing all necessary figures and detailed reports.
-        </div>
+        </p>
 
         <div class="vf-subscribe__input">
-				  <form action="">
+				  <form action="" class="vf-col-lg-8">
             <div class="vf-input-container">
             
     					<input type="text" class="vf-input vf-input--underline">
