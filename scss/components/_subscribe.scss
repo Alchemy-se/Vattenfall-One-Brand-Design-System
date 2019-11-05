@@ -8,6 +8,7 @@
 	max-width: $bleed-container-max-width + 20px; // To add the borders
 	border-left: 20px white solid;
 	border-right: 20px white solid;
+	border-top: 20px white solid;
 
 	@include media-breakpoint-down(md) {
 		border-left: 30px white solid;
@@ -53,21 +54,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			padding-top: $spacing-sm;
 
-/*
-			@include media-breakpoint-up(md){
-				form{
-					min-width:80%;
-				}
-			}
-
-			@include media-breakpoint-up(lg){
-				form{
-					min-width:60%;
-				}
-			}
-*/
 			.vf-btn{
 				margin-top: $spacing-sm;
 			}
