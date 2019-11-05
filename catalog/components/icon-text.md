@@ -2,6 +2,7 @@ Icon with Text.
 
 ### Standard
 
+
 ```html
 showSource: true,
 responsive: true
