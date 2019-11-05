@@ -11,6 +11,8 @@ Simply add one of the below classes to the element:
 * `vf-icon-left`
 * `vf-icon-right`
 * `vf-icon-question`
+* `vf-icon-map-tag`
+* `vf-icon-time`
 
 # Examples
 
@@ -45,6 +47,14 @@ showSource: true
 
 	<div class="vf-icon-question">
 		Question
+	</div>
+
+	<div class="vf-icon-map-tag">
+		Map Tag
+	</div>
+
+	<div class="vf-icon-time">
+		Time
 	</div>
 
 </div>

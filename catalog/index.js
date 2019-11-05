@@ -132,6 +132,10 @@ const pages = [
         path: "/css/subscribe",
         title: "- Subscribe",
         content: pageLoader(() => import("./components/subscribe.md"))
+      }, {
+        path: "/css/icon-text",
+        title: "- Icon Text",
+        content: pageLoader(() => import("./components/icon-text.md"))
       },
     
       ...moleculesNavigation,
