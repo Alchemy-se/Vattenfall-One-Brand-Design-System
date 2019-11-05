@@ -4,12 +4,13 @@ Contact form
 
 
 ```html
-showSource: true
+showSource: true,
+responsive: true
 ---
 
 <section class="vf-form">
 
-    <div class="vf-container vf-container--tight vf-text--center">
+    <div class="vf-container vf-text--center">
 
       <div class="vf-form__content">
 
@@ -17,12 +18,12 @@ showSource: true
        		Participate
         </h2>
 
-        <div class="vf-preamble">
+        <div class="vf-preamble vf-col-lg-8 vf-offset-lg-2">
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis non nisl ac lacinia. Sed euismod ante sit amet tellus porta efficitur. 
         </div>
 
-        <div class="vf-form__input">
-			<form action="">
+        <div class="vf-form__input vf-col-lg-8 vf-offset-lg-2">
+			<form class="vf-form" action="">
 
 				<div class="vf-input-container">
 					<input type="text" class="vf-input vf-input--underline">
