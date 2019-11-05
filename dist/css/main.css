@@ -198,6 +198,14 @@ html.sr .reveal {
   color: #1964a3;
 }
 
+.vf-icon-map-tag:before {
+  content: "\e908";
+}
+
+.vf-icon-time:before {
+  content: "\e909";
+}
+
 .vf-container {
   width: 100%;
   padding-right: 20px;
@@ -11487,6 +11495,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-form .vf-form__content .vf-form__input .vf-btn {
   margin-top: 28px;
+}
+
+.vf-icon-text [class^="vf-icon-"]:before, .vf-icon-text [class*=" vf-icon-"]:before {
+  font-size: 60px;
 }
 
 .news-outer-container {

@@ -109,7 +109,7 @@
 }
 
 
-// Icons
+// Icons - https://icomoon.io/app
 
 @font-face {
   font-family: 'vf-icons';
@@ -172,4 +172,10 @@
       color: #1964a3;
     }
   }
+}
+.vf-icon-map-tag:before {
+  content: "\e908";
+}
+.vf-icon-time:before {
+  content: "\e909";
 }
