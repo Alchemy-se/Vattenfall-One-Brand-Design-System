@@ -11343,13 +11343,14 @@ a.vf-badge:hover, a.vf-badge:focus {
   max-width: 1700px;
   border-left: 20px white solid;
   border-right: 20px white solid;
-  border-top: 20px white solid;
+  border-bottom: 20px white solid;
 }
 
 @media (max-width: 991.98px) {
   .vf-subscribe {
     border-left: 30px white solid;
     border-right: 30px white solid;
+    border-bottom: 30px white solid;
   }
 }
 
@@ -11359,6 +11360,7 @@ a.vf-badge:hover, a.vf-badge:focus {
     min-height: 370px;
     border-left: 20px white solid;
     border-right: 20px white solid;
+    border-bottom: 20px white solid;
   }
 }
 
