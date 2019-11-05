@@ -11433,23 +11433,12 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin: 0 auto;
   width: 100%;
   max-width: 1700px;
-  border-left: 20px white solid;
-  border-right: 20px white solid;
-}
-
-@media (max-width: 991.98px) {
-  .vf-form {
-    border-left: 30px white solid;
-    border-right: 30px white solid;
-  }
 }
 
 @media (max-width: 767.98px) {
   .vf-form {
     font-size: 44px;
     min-height: 370px;
-    border-left: 20px white solid;
-    border-right: 20px white solid;
   }
 }
 
@@ -11497,20 +11486,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 28px;
-  /*
-			@include media-breakpoint-up(md){
-				form{
-					min-width:80%;
-				}
-			}
+}
 
-			@include media-breakpoint-up(lg){
-				form{
-					min-width:60%;
-				}
-			}
-*/
+.vf-form .vf-form__content .vf-form__input .vf-form {
+  width: 100%;
 }
 
 .vf-form .vf-form__content .vf-form__input .vf-input-container {
