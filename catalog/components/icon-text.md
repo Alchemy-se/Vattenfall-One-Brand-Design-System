@@ -2,12 +2,10 @@ Icon with Text.
 
 ### Standard
 
-
 ```html
 showSource: true,
 responsive: true
 ---
-
 
 <section class="vf-icon-text p-4 vf-border-top-gray-200 vf-border-bottom-gray-200">
 
