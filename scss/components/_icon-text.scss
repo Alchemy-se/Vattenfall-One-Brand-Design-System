@@ -1,0 +1,10 @@
+.vf-icon-text {
+
+	[class^="vf-icon-"], [class*=" vf-icon-"] {
+
+		&:before{
+			font-size: 60px; // MAKE VAR
+		}
+	}
+
+}
