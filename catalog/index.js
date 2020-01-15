@@ -136,6 +136,10 @@ const pages = [
         path: "/css/icon-text",
         title: "- Icon Text",
         content: pageLoader(() => import("./components/icon-text.md"))
+      }, {
+        path: "/css/gdpr-consent-module",
+        title: "- GDPR Consent Module",
+        content: pageLoader(() => import("./components/gdpr-consent-module.md"))
       },
     
       ...moleculesNavigation,
