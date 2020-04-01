@@ -5,6 +5,8 @@ import moleculesNavigation from './molecules/navigation';
 import organismsNavigation from './organisms/navigation';
 import layoutsNavigation from './layouts/navigation';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-159160070-1');
 
 //All this needed?
 import $ from 'jquery';
