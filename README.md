@@ -3,7 +3,7 @@
 A shared component library based on the Vattenfall Design System.
 
 This README is about how to work on the Vattenfall Design System, if you are looking for the technical documentation of how to use this in your own application, head to:
-http://vattenfall.alchemystudio.se/
+https://digitaldesign.vattenfall.com
 
 ## Quick start
 
@@ -36,55 +36,6 @@ The source for the documentation is in the folder `./catalog`.
 
 The documentation for Catalog is available at https://docs.catalog.style/configuration/pages
 
-## Deployment
-
-You can run this repo as a docker image. 
-
-Build the docker image: 
-```sh
-docker build -t vattenfallds .
-```
-
-Start a docker container with the previously built image, binding port 4040
-```sh
-docker run -p 4040:80 vattenfallds
-```
-
-~~Now you should be able to login with the following details:~~
-
-~~- user: `vf-test` pass: `v4tt3nf4ll`~~
-
-and see the design system documentation on `http://localhost:4040`
-
-
-### Connecting to Google Container Cloud 
-
-Make sure you have `gcloud` command line tools installed.
-
-Login to google cloud
-```sh
-gcloud auth login
-```
-
-Select the project `vattenfall-design-system`
-```sh
-gcloud config set project vattenfall-design-system
-```
-
-Tag a docker image to be able to upload it to the continer registry.
-
-```sh
-docker tag vattenfallds eu.gcr.io/vattenfall-design-system/vattenfallds
-```
-
-The first `vattenfallds` is the local docker image name. The second argument is made up from the `[HOST]/[PROJECT]/[docker-tag]`
-
-Upload the tagged image to google container registry
-
-```sh
-docker push eu.gcr.io/vattenfall-design-system/vattenfallds
-```
-
 ## Contributing
 
 This requires you to have [node](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/lang/en/) installed on your machine. 
@@ -108,5 +59,34 @@ This will start a server on `http://localhost:4000` with the documentation site,
 
 All source SCSS files for the CSS Library are available in the `/scss` folder.
 
+## Deployment
+
+### Connecting to Google Container Cloud - digitaldesign.vattenfall.com
+
+Make sure you have `gcloud` command line tools installed.
+
+Login to google cloud and configure the project
+```sh
+gcloud auth login
+```
+
+Run the deployment script (you will need the Private SSL key):
+```sh
+./deploy.sh
+```
+
+### Docker 
+
+You can also run this repo as a docker image. 
+
+Build the docker image: 
+```sh
+docker build -t vattenfallds .
+```
+
+Start a docker container with the previously built image, binding port 4040
+```sh
+docker run -p 4040:80 vattenfallds
+```
 
 
