@@ -45,7 +45,8 @@
     "catalog": "^3.6.0",
     "jquery": "^3.4.1",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "react-ga": "^2.7.0"
   },
   "release": {
     "plugins": [
