@@ -10232,7 +10232,15 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip[class*="vf-icon-"] .vf-tooltip-message {
-  top: calc(-100% - 18px);
+  margin-bottom: 10px;
+}
+
+.vf-tooltip[class*="vf-icon-"][class*="vf-tooltip--right"] .vf-tooltip-message {
+  margin-bottom: -10px !important;
+}
+
+.vf-tooltip[class*="vf-icon-"][class*="vf-tooltip--left"] .vf-tooltip-message {
+  margin-bottom: -10px !important;
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message {
@@ -10244,13 +10252,13 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message, .vf-tooltip--left .vf-tooltip-message {
-  top: 50% !important;
-  -webkit-transform: translate(0, -50%) !important;
-  transform: translate(0, -50%) !important;
+  margin-bottom: -15px;
+  -webkit-transform: translate(0, 50%) !important;
+  transform: translate(0, 50%) !important;
 }
 
 .vf-tooltip--left ~ .vf-tooltip-message:before, .vf-tooltip--left ~ .vf-tooltip-message:after, .vf-tooltip--left .vf-tooltip-message:before, .vf-tooltip--left .vf-tooltip-message:after {
-  top: 0;
+  top: calc(50% - 15px);
   left: auto;
   bottom: 0;
   -webkit-transform: translate(0, 100%) rotate(-45deg);
@@ -10280,14 +10288,14 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message, .vf-tooltip--right .vf-tooltip-message {
-  top: 50% !important;
-  -webkit-transform: translate(0, -50%) !important;
-  transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, 50%) !important;
+  transform: translate(0, 50%) !important;
   right: auto !important;
+  margin-bottom: -15px;
 }
 
 .vf-tooltip--right ~ .vf-tooltip-message:before, .vf-tooltip--right ~ .vf-tooltip-message:after, .vf-tooltip--right .vf-tooltip-message:before, .vf-tooltip--right .vf-tooltip-message:after {
-  top: 0;
+  top: calc(50% - 15px);
   right: auto;
   bottom: 0;
   -webkit-transform: translate(0, 100%) rotate(-45deg);
@@ -10313,7 +10321,9 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--bottom ~ .vf-tooltip-message, .vf-tooltip--bottom .vf-tooltip-message {
-  top: auto !important;
+  bottom: -3px;
+  -webkit-transform: translate(50%, 100%);
+  transform: translate(50%, 100%);
 }
 
 .vf-tooltip--bottom ~ .vf-tooltip-message:before, .vf-tooltip--bottom ~ .vf-tooltip-message:after, .vf-tooltip--bottom .vf-tooltip-message:before, .vf-tooltip--bottom .vf-tooltip-message:after {
@@ -10334,7 +10344,9 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip--bottom[class*="vf-icon-"] ~ .vf-tooltip-message, .vf-tooltip--bottom[class*="vf-icon-"] .vf-tooltip-message {
-  bottom: calc(-100% - 18px);
+  bottom: -100%;
+  -webkit-transform: translate(50%, 100%);
+  transform: translate(50%, 100%);
 }
 
 .vf-tooltip--blue ~ .vf-tooltip-message, .vf-tooltip--blue .vf-tooltip-message {
@@ -10422,9 +10434,15 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tooltip-message {
+  width: 180px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 180px;
+  bottom: 100%;
+  min-height: 31px;
   opacity: 0;
   position: absolute;
-  top: -100%;
   right: 50%;
   -webkit-transform: translate(50%, 0);
   transform: translate(50%, 0);
@@ -10434,12 +10452,12 @@ a.vf-badge:hover, a.vf-badge:focus {
   font-weight: normal;
   letter-spacing: 0px;
   line-height: 20px;
-  white-space: nowrap;
   pointer-events: none;
   background: #EDF9F3;
   border: 1px solid #c5eecc;
   border-radius: 4px 4px 4px 4px;
   color: #3DC07C;
+  text-align: center;
 }
 
 .vf-tooltip-message:before, .vf-tooltip-message:after {
@@ -11041,7 +11059,6 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
   line-height: 24px;
   font-weight: normal;
-  width: 100%;
 }
 
 .vf-input-container .vf-input:hover {
@@ -11057,13 +11074,27 @@ a.vf-badge:hover, a.vf-badge:focus {
   left: 16.5px;
   padding: 0 7px;
   color: #1964a3;
-  background-color: #fff;
   font-weight: 500;
   letter-spacing: 0px;
   -webkit-transform: scale(0.7);
   transform: scale(0.7);
   -webkit-transform-origin: top left;
   transform-origin: top left;
+}
+
+.vf-input-container .vf-input:focus ~ label label:after, .vf-input-container .vf-input.vf-input--data ~ label label:after {
+  content: '';
+  display: block;
+  top: -12px;
+  width: 100%;
+  position: relative;
+  /* position: absolute; */
+  /* padding-right: 100px; */
+  -webkit-transform: scaleX(1.05);
+  transform: scaleX(1.05);
+  z-index: -1;
+  height: 2px;
+  background: white;
 }
 
 .vf-input-container .vf-input.vf-input--underline {
@@ -11078,6 +11109,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   background-color: transparent;
   left: 0;
   padding: 0;
+}
+
+.vf-input-container .vf-input.vf-input--underline ~ label:after {
+  background: transparent;
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--error {
@@ -11140,6 +11175,20 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #f5a623;
 }
 
+.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message, .vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
+  margin-bottom: 0;
+  -webkit-transform: translate(0, -50%) !important;
+  transform: translate(0, -50%) !important;
+  top: 50%;
+  bottom: auto;
+}
+
+.vf-input-container .vf-input.vf-tooltip--bottom ~ .vf-tooltip-message {
+  margin-bottom: 0;
+  bottom: auto;
+  top: calc(100% - 8px);
+}
+
 .vf-input-container label {
   position: absolute;
   top: 17px;
@@ -11155,13 +11204,26 @@ a.vf-badge:hover, a.vf-badge:focus {
   transition: top .2s ease-in-out;
 }
 
+.vf-input-container label:after {
+  content: '';
+  display: block;
+  top: -12.43666px;
+  width: 100%;
+  position: relative;
+  -webkit-transform: scaleX(1.05);
+  transform: scaleX(1.05) scaleY(1.1);
+  z-index: -1;
+  height: 2.6px;
+  background: white;
+}
+
 .vf-input-container .vf-tooltip-message {
   opacity: 0;
   position: absolute;
-  top: -26px;
   right: 27px;
   -webkit-transform: translate(50%, 0);
   transform: translate(50%, 0);
+  bottom: calc(100% - 8px);
 }
 
 .vf-input-container .vf-input-tooltip-icon {
