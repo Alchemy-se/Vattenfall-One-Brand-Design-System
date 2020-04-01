@@ -10457,6 +10457,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   border: 1px solid #c5eecc;
   border-radius: 4px 4px 4px 4px;
   color: #3DC07C;
+  text-align: center;
 }
 
 .vf-tooltip-message:before, .vf-tooltip-message:after {
@@ -11174,6 +11175,20 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #f5a623;
 }
 
+.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message, .vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
+  margin-bottom: 0;
+  -webkit-transform: translate(0, -50%) !important;
+  transform: translate(0, -50%) !important;
+  top: 50%;
+  bottom: auto;
+}
+
+.vf-input-container .vf-input.vf-tooltip--bottom ~ .vf-tooltip-message {
+  margin-bottom: 0;
+  bottom: auto;
+  top: calc(100% - 8px);
+}
+
 .vf-input-container label {
   position: absolute;
   top: 17px;
@@ -11208,6 +11223,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   right: 27px;
   -webkit-transform: translate(50%, 0);
   transform: translate(50%, 0);
+  bottom: calc(100% - 8px);
 }
 
 .vf-input-container .vf-input-tooltip-icon {
