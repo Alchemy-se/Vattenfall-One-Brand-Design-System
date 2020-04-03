@@ -1,6 +1,6 @@
 {
   "name": "@vf-alchemy/vattenfall-design-system",
-  "version": "7.16.3",
+  "version": "7.16.2",
   "main": "index.js",
   "scripts": {
     "test": "yarn build",
@@ -40,7 +40,7 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "@alchemy-se/catalog": "^4.4.4",
+    "@alchemy-se/catalog": "^4.4.5",
     "babel-loader": "7",
     "catalog": "^3.6.0",
     "jquery": "^3.4.1",
