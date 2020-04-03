@@ -11484,13 +11484,16 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-top: 28px;
 }
 
+.vf-subscribe .vf-subscribe__content .vf-subscribe__input .vf-input {
+  width: 100%;
+}
+
 .vf-form {
   position: relative;
   background: #fff;
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
-  width: 100%;
   max-width: 1700px;
 }
 
@@ -11547,16 +11550,16 @@ a.vf-badge:hover, a.vf-badge:focus {
   justify-content: center;
 }
 
-.vf-form .vf-form__content .vf-form__input .vf-form {
-  width: 100%;
-}
-
 .vf-form .vf-form__content .vf-form__input .vf-input-container {
   margin-top: 28px;
 }
 
 .vf-form .vf-form__content .vf-form__input .vf-btn {
   margin-top: 28px;
+}
+
+.vf-form .vf-form__content .vf-form__input .vf-input {
+  width: 100%;
 }
 
 .vf-icon-text [class^="vf-icon-"]:before, .vf-icon-text [class*=" vf-icon-"]:before {
