@@ -62,3 +62,6 @@ typings/
 
 # Private key file - should never be added to git!
 conf/certs/digitaldesign.vattenfall.com.key
+
+# IML file from intellij
+*.iml
