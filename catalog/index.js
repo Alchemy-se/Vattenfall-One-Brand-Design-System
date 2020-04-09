@@ -4,6 +4,7 @@ import { Catalog, pageLoader } from '@alchemy-se/catalog';
 import moleculesNavigation from './molecules/navigation';
 import organismsNavigation from './organisms/navigation';
 import layoutsNavigation from './layouts/navigation';
+const PACKAGE = require("../package.json");
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-159160070-1');
@@ -228,12 +229,18 @@ const menuFooterLinkStyle = {
   lineHeight: '32px',
   padding: '5px 0',
   textDecoration: 'none',
-}
+};
 
 const menuFooterLinkIconStyle = {
   verticalAlign: 'baseline',
   marginRight: '5px'
-}
+};
+
+const versionTextStle = {
+  color: "#222222",
+  fontSize: "12px",
+  marginBottom: 0
+};
 
 const menuFooter = () => (
   <div style={{ padding: '40px 42px', fontFamily: 'Vattenfall Hall' }}>
@@ -243,6 +250,7 @@ const menuFooter = () => (
     <a href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" style={menuFooterLinkStyle}>
       <img style={menuFooterLinkIconStyle} src="/img/docs/github.svg" /> Github
     </a>
+    <p style={versionTextStle}>{"Version "+PACKAGE.version}</p>
   </div>
 )
 

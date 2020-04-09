@@ -120,8 +120,8 @@ const Examples = () => (
 
       <div className="vf-col">
         <h4 className="examples__image-header">Consumption</h4>
-        <a href="./img/use-cases/App/ZählerstandAblesen.jpg">
-          <img className="examples__ios-image" src="./img/use-cases/App/ZählerstandAblesen.jpg" />
+        <a href="./img/use-cases/App/ZahlerstandAblesen.jpg">
+          <img className="examples__ios-image" src="./img/use-cases/App/ZahlerstandAblesen.jpg" />
         </a>
       </div>
 
