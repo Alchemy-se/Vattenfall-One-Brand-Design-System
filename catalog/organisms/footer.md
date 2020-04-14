@@ -31,25 +31,25 @@ showSource: true
           <h4 class="vf-u--sm-hidden">Follow Us</h4>
           
           <a href="#">
-            <img src="/img/footer/facebook.png" class="vf-footer__social-link" />
+            <img src="/img/footer/facebook.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/facebook.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/linkedin.png" class="vf-footer__social-link" />
+            <img src="/img/footer/linkedin.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/linkedin.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/instagram.png" class="vf-footer__social-link" />
+            <img src="/img/footer/instagram.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/instagram.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/slideshare.png" class="vf-footer__social-link" />
+            <img src="/img/footer/slideshare.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/slideshare.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/twitter.png" class="vf-footer__social-link" />
+            <img src="/img/footer/twitter.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/twitter.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/youtube.png" class="vf-footer__social-link" />
+            <img src="/img/footer/youtube.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/youtube.png'" />
           </a>
           <a href="#">
-            <img src="/img/footer/flickr.png" class="vf-footer__social-link" />
+            <img src="/img/footer/flickr.svg" class="vf-footer__social-link" onerror="this.onerror=null; this.src='/img/footer/flickr.png'" />
           </a>
         </div>
       </div>
