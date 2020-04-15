@@ -1,6 +1,6 @@
 # Stage 0, "build-stage", based on Node.js, to build and compile the frontend
 FROM node:10.18 as build-stage
-
+ARG mode
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
@@ -16,8 +16,8 @@ FROM nginx:1.15
 COPY --from=build-stage /app/build/build /usr/share/nginx/html
 # Copy the default nginx.conf provided by tiangolo/node-frontend
 # COPY --from=build-stage /nginx.conf /etc/nginx/conf.d/default.conf
+COPY if [ "x$mode" = "xdev" ] ; then --from=build-stage /app/conf/nginx/stage.nginx.conf /etc/nginx/conf.d/default.conf ; else --from=build-stage /app/conf/nginx/nginx.conf /etc/nginx/conf.d/default.conf ; fi
 
-COPY --from=build-stage /app/conf/nginx/nginx.conf /etc/nginx/conf.d/default.conf  
 
 # Add the Certificates
 
