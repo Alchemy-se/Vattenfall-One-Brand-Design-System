@@ -14,7 +14,7 @@ if [ ! -f ./conf/certs/digitaldesign.vattenfall.com.key ]; then
     exit 1
 fi
 
-docker build -t vattenfallds .
+docker build -t vattenfallds --build-arg mode=prod .
 docker tag vattenfallds eu.gcr.io/vattenfall-design-system/vattenfallds
 docker push eu.gcr.io/vattenfall-design-system/vattenfallds
 
