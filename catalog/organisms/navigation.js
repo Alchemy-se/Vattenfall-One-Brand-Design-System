@@ -1,5 +1,4 @@
 import { pageLoader } from "@alchemy-se/catalog";
-
 const nav = [
   {
     path: "/css/organisms",
@@ -23,5 +22,5 @@ const nav = [
     content: pageLoader(() => import("./navigation.md"))
 
   },
-]
-export default nav
+];
+export default [];
