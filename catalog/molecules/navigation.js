@@ -63,4 +63,4 @@ const nav = [
     content: pageLoader(() => import("./progress.md"))
   }
 ]
-export default nav
+export default [];

@@ -5,9 +5,9 @@ const Designers = () => (
   <div style= {{ 
     margin:'10px 20px 0 40px',
     width: '70%'}}>
-    <link href="/dist/css/reboot.css" rel="stylesheet" type="text/css" />
-    <link href="/dist/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="/dist/css/documentation.css" rel="stylesheet" type="text/css" />
+    <link href="/css/reboot.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/documentation.css" rel="stylesheet" type="text/css" />
 
     <div style={{
       background: 'transparent'
