@@ -1,0 +1,11 @@
+.container {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
