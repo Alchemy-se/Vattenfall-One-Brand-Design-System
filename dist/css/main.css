@@ -12412,3 +12412,10 @@ a.vf-text--light-grey:hover, a.vf-text--light-grey:focus {
   white-space: normal;
 }
 /*# sourceMappingURL=main.css.map */
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
