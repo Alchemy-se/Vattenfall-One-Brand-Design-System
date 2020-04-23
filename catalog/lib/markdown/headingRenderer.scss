@@ -1,0 +1,27 @@
+.headingContainer {
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: normal;
+  color: rgb(0, 59, 92);
+  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+  font-size: 1.44rem;
+  line-height: 1.2;
+  position: relative;
+  flex-basis: 100%;
+  margin: 48px 0px 0px;
+
+  .anchorWrapper {
+    display: none;
+  }
+  .anchor {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+  }
+  &:hover {
+    .anchorWrapper {
+      display: inline;
+    }
+  }
+}
