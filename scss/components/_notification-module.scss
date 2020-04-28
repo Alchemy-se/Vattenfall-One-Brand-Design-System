@@ -24,7 +24,7 @@
 		top: 76px;
 		background: $white;
 		border-radius: 4px;
-		border: 1px solid rgb(188, 188, 188);
+		border: 1px solid $vattenfall-dark-border-grey;
 		transform: scaleY(0);
 		opacity: 0; 
 		//transform-origin: top;
@@ -40,12 +40,12 @@
 			position: relative;
 			color: $white;
 			background-color: $link-color;
-			font-family: Vattenfall Hall Display;
 			font-size: 18px;
 			letter-spacing: 0px;
 			line-height: 24px;
 			padding: 18px 20px;
 			border-radius: 4px 4px 0 0;
+			font-weight: 800;
 
 			&:before{
 				content: '';
@@ -83,7 +83,7 @@
 			.vf-notification-module-body-item{
 
 				padding: 20px 0;
-				border-bottom: 1px solid #e8e8e9;
+				border-bottom: 1px solid $vattenfall-light-border-grey;
 				display: flex;
 
 				.vf-notification-module-body-item-col1{
@@ -125,7 +125,7 @@
 
 					.vf-notification-module-body-item-time{
 
-						color: rgb(136, 136, 136);
+						color: $vattenfall-metadata-grey;
 						font-weight: 400;
 						letter-spacing: 0px;
 						line-height: 24px;

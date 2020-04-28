@@ -102,7 +102,23 @@ html.sr .reveal {
 }
 
 @font-face {
+  font-family: "Vattenfall Hall";
+  src: url("../fonts/VattenfallHallDisplay-Bold.eot");
+  src: url("../fonts/VattenfallHallDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHallDisplay-Bold.woff2") format("woff2"), url("../fonts/VattenfallHallDisplay-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Vattenfall Hall Bold";
+  src: url("../fonts/VattenfallHall-Bold.eot");
+  src: url("../fonts/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../fonts/VattenfallHall-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vattenfall Hall";
   src: url("../fonts/VattenfallHall-Bold.eot");
   src: url("../fonts/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHall-Bold.woff2") format("woff2"), url("../fonts/VattenfallHall-Bold.woff") format("woff");
   font-weight: 600;
@@ -7173,7 +7189,6 @@ p {
 .vf-btn {
   display: inline-block;
   font-weight: 500;
-  font-family: "Vattenfall Hall";
   color: #222222;
   text-align: center;
   vertical-align: middle;
@@ -7256,7 +7271,7 @@ fieldset:disabled a.vf-btn {
 
 .vf-btn--primary {
   color: #111111;
-  background: #FFDA00;
+  background: #ffda00;
 }
 
 .vf-btn--primary:hover {
@@ -7274,13 +7289,13 @@ fieldset:disabled a.vf-btn {
 }
 
 .vf-btn--secondary {
-  color: white;
+  color: #fff;
   background: #1964A3;
 }
 
 .vf-btn--secondary:hover {
   color: white;
-  background: #2071B5;
+  background: #2071b5;
 }
 
 .vf-btn--secondary:focus, .vf-btn--secondary:active, .vf-btn--secondary.focus {
@@ -7296,17 +7311,17 @@ fieldset:disabled a.vf-btn {
 .vf-btn--tertiary {
   color: #222222;
   background: transparent;
-  border: 2px #CDD1D4 solid;
+  border: 2px #cdd1d4 solid;
 }
 
 .vf-btn--tertiary:hover {
-  color: white;
+  color: #fff;
   background: #1964A3;
   border-color: #1964A3;
 }
 
 .vf-btn--tertiary:focus, .vf-btn--tertiary:active, .vf-btn--tertiary.focus {
-  color: white;
+  color: #fff;
   background: #1E324F;
   border-color: #1E324F;
 }
@@ -7320,17 +7335,17 @@ fieldset:disabled a.vf-btn {
 .vf-btn--outline-secondary {
   color: #1964A3;
   background: transparent;
-  border: 2px #2071B5 solid;
+  border: 2px #2071b5 solid;
 }
 
 .vf-btn--outline-secondary:hover {
-  color: white;
+  color: #fff;
   background: #1964A3;
   border-color: #1964A3;
 }
 
 .vf-btn--outline-secondary:focus, .vf-btn--outline-secondary:active, .vf-btn--outline-secondary.focus {
-  color: white;
+  color: #fff;
   background: #1E324F;
   border-color: #1E324F;
 }
@@ -7344,17 +7359,17 @@ fieldset:disabled a.vf-btn {
 .vf-btn--outline-dark {
   color: #222222;
   background: transparent;
-  border: 2px #222222 solid;
+  border: 2px #222222 solid solid;
 }
 
 .vf-btn--outline-dark:hover {
-  color: white;
+  color: #fff;
   background: #222222;
   border-color: #222222;
 }
 
 .vf-btn--outline-dark:focus, .vf-btn--outline-dark:active, .vf-btn--outline-dark.focus {
-  color: white;
+  color: #fff;
   background: #4E4B48;
   border-color: #4E4B48;
 }
@@ -7741,7 +7756,7 @@ a.vf-card:hover {
 }
 
 .vf-footer__social-link:hover .vf-footer__social-link-hover-color {
-  fill: #2071B5;
+  fill: #2071b5;
 }
 
 @media (min-width: 576px) {
@@ -7896,8 +7911,8 @@ a.vf-card:hover {
   height: 48px;
   border-radius: 50%;
   display: block;
-  background: white;
-  color: #222;
+  background: #fff;
+  color: #222222;
   font-size: 0;
   overflow: hidden;
   text-indent: 200px;
@@ -7988,7 +8003,7 @@ a.vf-card:hover {
   border-radius: 50%;
   display: block;
   background: white;
-  color: #222;
+  color: #222222;
   font-size: 0;
   overflow: hidden;
   text-indent: 200px;
@@ -9138,7 +9153,7 @@ a.vf-card:hover {
   color: #222222;
   padding: 48px 0px 48px;
   margin: 0 21px 0 0;
-  background: white;
+  background: #fff;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: -0.1px;
@@ -9661,7 +9676,7 @@ a.vf-card:hover {
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: -0.1px;
-  color: #ffffff;
+  color: #fff;
   padding: 0.75rem 1.25rem;
 }
 
@@ -9684,8 +9699,8 @@ a.vf-card:hover {
   padding: 3px 10px;
   line-height: 28px;
   color: #222222;
-  background-color: white;
-  border: 1px solid #E8E8E9;
+  background-color: #fff;
+  border: 1px solid #e8e8e9;
   margin: 0 3px;
   min-width: 36px;
   text-align: center;
@@ -9736,7 +9751,7 @@ a.vf-card:hover {
   display: -ms-flexbox;
   display: flex;
   height: 4px;
-  background-color: #E8E8E9;
+  background-color: #e8e8e9;
 }
 
 .vf-progress-bar {
@@ -9795,14 +9810,14 @@ a.vf-card:hover {
   flex: 1;
   display: inline-block;
   vertical-align: middle;
-  background: white;
+  text-align: center;
+  background: #fff;
   color: #1964A3;
   font-size: 16px;
   border: none;
   border-radius: 34px;
   position: relative;
   font-weight: 500;
-  text-align: left;
   letter-spacing: -0.05px;
   line-height: 28px;
   padding: 20px 30px;
@@ -10518,8 +10533,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   padding: 22px;
-  background-color: white;
-  border-right: 1px solid #edf1f6;
+  background-color: #fff;
+  border-right: 1px solid #EDF1F6;
   -webkit-box-shadow: 0 0px 0 0 transparent;
   box-shadow: 0 0px 0 0 transparent;
   -webkit-transition: -webkit-box-shadow .3s ease-in-out;
@@ -10546,7 +10561,7 @@ a.vf-badge:hover, a.vf-badge:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #1964a3;
+    color: #1964A3;
   }
   .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:before {
     position: relative;
@@ -10600,8 +10615,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1964a3;
-  font-family: "Vattenfall Hall";
+  color: #1964A3;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05px;
@@ -10641,7 +10655,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: none;
   top: 94px;
   color: #222222;
-  font-family: "Vattenfall Hall Bold";
+  font-weight: 600;
   font-size: 18px;
   letter-spacing: 0px;
   line-height: 24px;
@@ -10781,7 +10795,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown .vf-dropdown-label:hover {
-  border: 1px solid #69788c;
+  border: 1px solid #69788C;
 }
 
 .vf-dropdown .vf-dropdown-label:after {
@@ -10815,7 +10829,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item:hover, .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item.checked {
-  background-color: #1964a3;
+  background-color: #1964A3;
   color: #fff;
 }
 
@@ -10823,7 +10837,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: white;
+  background: #fff;
   border-radius: 4px 4px 4px 4px;
   border: 1px solid #a4a9ac;
   height: 28px;
@@ -10856,8 +10870,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item input:checked:before {
   -webkit-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
-  border-bottom: 3px solid #4e4b48;
-  border-right: 3px solid #4e4b48;
+  border-bottom: 3px solid #4E4B48;
+  border-right: 3px solid #4E4B48;
 }
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item input:hover:before {
@@ -10907,7 +10921,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown.vf-dropdown--underline .vf-dropdown-label:hover {
-  border-color: #69788c;
+  border-color: #69788C;
 }
 
 .vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-label, .vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-list {
@@ -10921,7 +10935,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown.on .vf-dropdown-label {
-  border: 1px solid #69788c;
+  border: 1px solid #69788C;
   border-bottom: none;
   border-radius: 4px 4px 0 0;
   color: #767676;
@@ -10937,7 +10951,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown.on .vf-dropdown-list {
   border-radius: 0 0 4px 4px;
-  border: 1px solid #69788c;
+  border: 1px solid #69788C;
   border-top: none;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
@@ -11050,7 +11064,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input {
   position: relative;
   min-width: 264px;
-  background-color: white;
+  background-color: #fff;
   color: #222222;
   padding: 16px 20px;
   border-radius: 4px 4px 4px 4px;
@@ -11066,14 +11080,14 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-input-container .vf-input:focus, .vf-input-container .vf-input.vf-input--data {
-  border: 1px solid #1964a3;
+  border: 1px solid #1964A3;
 }
 
 .vf-input-container .vf-input:focus ~ label, .vf-input-container .vf-input.vf-input--data ~ label {
   top: -9px;
   left: 16.5px;
   padding: 0 7px;
-  color: #1964a3;
+  color: #1964A3;
   font-weight: 500;
   letter-spacing: 0px;
   -webkit-transform: scale(0.7);
@@ -11116,13 +11130,13 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--error {
-  -webkit-box-shadow: 0 0 #f93b18;
-  box-shadow: 0 0 #f93b18;
+  -webkit-box-shadow: 0 0 #F93B18;
+  box-shadow: 0 0 #F93B18;
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--error:focus {
-  -webkit-box-shadow: 0 1px #f93b18;
-  box-shadow: 0 1px #f93b18;
+  -webkit-box-shadow: 0 1px #F93B18;
+  box-shadow: 0 1px #F93B18;
   -webkit-transition: -webkit-box-shadow .2s ease-in-out;
   transition: -webkit-box-shadow .2s ease-in-out;
   transition: box-shadow .2s ease-in-out;
@@ -11148,19 +11162,19 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-input-container .vf-input.vf-input--error:hover {
-  border-color: #f93b18;
+  border-color: #F93B18;
 }
 
 .vf-input-container .vf-input.vf-input--error:focus {
-  border-color: #f93b18;
+  border-color: #F93B18;
 }
 
 .vf-input-container .vf-input.vf-input--error ~ label {
-  color: #f93b18;
+  color: #F93B18;
 }
 
 .vf-input-container .vf-input.vf-input--warning {
-  border-color: #ffdea8;
+  border-color: #ffb2a4;
 }
 
 .vf-input-container .vf-input.vf-input--warning:hover {
@@ -11244,7 +11258,6 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 [class*="vf-utility-typo--"] {
-  font-family: Vattenfall Hall;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0px;
@@ -11319,12 +11332,12 @@ a.vf-badge:hover, a.vf-badge:focus {
   position: relative;
   color: #fff;
   background-color: #1964A3;
-  font-family: Vattenfall Hall Display;
   font-size: 18px;
   letter-spacing: 0px;
   line-height: 24px;
   padding: 18px 20px;
   border-radius: 4px 4px 0 0;
+  font-weight: 800;
 }
 
 .vf-notification-module-container .vf-notification-module .vf-notification-module-header:before {

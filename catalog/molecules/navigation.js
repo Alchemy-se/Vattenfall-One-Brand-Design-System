@@ -2,13 +2,13 @@ import { pageLoader } from "@alchemy-se/catalog";
 
 const nav = [
   {
-    path: "/css/card",
-    title: "- Card",
-    content: pageLoader(() => import("./card.md"))
-  }, {
     path: "/css/button-group",
     title: "- Button Group",
     content: pageLoader(() => import("./button-group.md"))
+  }, {
+    path: "/css/card",
+    title: "- Card",
+    content: pageLoader(() => import("./card.md"))
   }, {
     path: "/css/cookie-banner",
     title: "- Cookie Banner",
@@ -22,25 +22,33 @@ const nav = [
     title: "- Image with Caption",
     content: pageLoader(() => import("./image-with-caption.md"))
   }, {
-    path: "/css/shareable-image",
-    title: "- Shareable Image",
-    content: pageLoader(() => import("./shareable-image.md"))
-  }, {
-    path: "/css/media-block",
-    title: "- Media Block",
-    content: pageLoader(() => import("./media-block.md"))
+    path: "/css/large-quote",
+    title: "- Large Quote",
+    content: pageLoader(() => import("./large-quote.md"))
   }, {
     path: "/css/linked-list-block",
     title: "- Linked List Block",
     content: pageLoader(() => import("./linked-list-block.md"))
   }, {
+    path: "/css/media-block",
+    title: "- Media Block",
+    content: pageLoader(() => import("./media-block.md"))
+  }, {
+    path: "/css/pagination",
+    title: "- Pagination",
+    content: pageLoader(() => import("./pagination.md"))
+  }, {
     path: "/css/parallax-image-block",
     title: "- Parallax Image Block",
     content: pageLoader(() => import("./parallax-image-block.md"))
   }, {
-    path: "/css/large-quote",
-    title: "- Large Quote",
-    content: pageLoader(() => import("./large-quote.md"))
+    path: "/css/progress",
+    title: "- Progress",
+    content: pageLoader(() => import("./progress.md"))
+  }, {
+    path: "/css/shareable-image",
+    title: "- Shareable Image",
+    content: pageLoader(() => import("./shareable-image.md"))
   }, {
     path: "/css/small-quote",
     title: "- Small Quote",
@@ -53,14 +61,6 @@ const nav = [
     path: "/css/topbar",
     title: "- Top bar",
     content: pageLoader(() => import("./topbar.md"))
-  }, {
-    path: "/css/pagination",
-    title: "- Pagination",
-    content: pageLoader(() => import("./pagination.md"))
-  }, {
-    path: "/css/progress",
-    title: "- Progress",
-    content: pageLoader(() => import("./progress.md"))
-  }
+  },
 ]
 export default nav

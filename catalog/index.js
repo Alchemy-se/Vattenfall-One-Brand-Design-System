@@ -56,6 +56,10 @@ const pages = [
     title: 'Components',
     pages: [
       {
+        path: "/colors",
+        title: "Colors & borders",
+        content: pageLoader(() => import("./colors.md"))
+      }, {
         path: "/grid",
         title: "Grid",
         content: pageLoader(() => import("./grid.md"))
@@ -68,82 +72,78 @@ const pages = [
         title: "Sizing",
         content: pageLoader(() => import("./sizing.md"))
       }, {
-        path: "/colors",
-        title: "Colors & borders",
-        content: pageLoader(() => import("./colors.md"))
-      }, {
         path: "/spacing",
         title: "Spacing",
         content: pageLoader(() => import("./spacing.md"))
       }, {
         path: "/components-intro",
         title: "Atoms",
-        content: pageLoader(() => import("./components/intro.md"))
-      }, {
-        path: "/css/text",
-        title: "- Text",
-        content: pageLoader(() => import("./components/text.md"))
-      }, {
-        path: "/css/utility-typography",
-        title: "- Utility Typography",
-        content: pageLoader(() => import("./components/utility-typography.md"))
-      }, {
-        path: "/css/button",
-        title: "- Button",
-        content: pageLoader(() => import("./components/button.md"))
-      }, {
-        path: "/css/list",
-        title: "- Lists",
-        content: pageLoader(() => import("./components/list.md"))
-      }, {
-        path: "/css/numbered-list",
-        title: "- Numbered List",
-        content: pageLoader(() => import("./components/numbered-list.md"))
+        content: pageLoader(() => import("./components/intro.md")) 
       }, {
         path: "/css/badge",
         title: "- Badge",
         content: pageLoader(() => import("./components/badge.md"))
       }, {
-        path: "/css/preloader",
-        title: "- Preloader",
-        content: pageLoader(() => import("./components/preloader.md"))
-      }, {
-        path: "/css/table",
-        title: "- Table",
-        content: pageLoader(() => import("./components/table.md"))
-      }, {
-        path: "/css/tab-bar",
-        title: "- Tab Bar",
-        content: pageLoader(() => import("./components/tab-bar.md"))
-      }, {
-        path: "/css/tooltip",
-        title: "- Tooltip",
-        content: pageLoader(() => import("./components/tooltip.md"))
+        path: "/css/button",
+        title: "- Button",
+        content: pageLoader(() => import("./components/button.md"))
       }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => import("./components/drop-down.md"))
       }, {
-        path: "/css/input",
-        title: "- Input",
-        content: pageLoader(() => import("./components/input.md"))
-      }, {
-        path: "/css/notification-module",
-        title: "- Notification Module",
-        content: pageLoader(() => import("./components/notification-module.md"))
-      }, {
-        path: "/css/subscribe",
-        title: "- Subscribe",
-        content: pageLoader(() => import("./components/subscribe.md"))
+        path: "/css/gdpr-consent-module",
+        title: "- GDPR Consent Module",
+        content: pageLoader(() => import("./components/gdpr-consent-module.md"))
       }, {
         path: "/css/icon-text",
         title: "- Icon Text",
         content: pageLoader(() => import("./components/icon-text.md"))
       }, {
-        path: "/css/gdpr-consent-module",
-        title: "- GDPR Consent Module",
-        content: pageLoader(() => import("./components/gdpr-consent-module.md"))
-      },
+        path: "/css/input",
+        title: "- Input",
+        content: pageLoader(() => import("./components/input.md"))
+      }, {
+        path: "/css/list",
+        title: "- Lists",
+        content: pageLoader(() => import("./components/list.md"))
+      }, {
+        path: "/css/notification-module",
+        title: "- Notification Module",
+        content: pageLoader(() => import("./components/notification-module.md"))
+      }, {
+        path: "/css/numbered-list",
+        title: "- Numbered List",
+        content: pageLoader(() => import("./components/numbered-list.md"))
+      },  {
+        path: "/css/preloader",
+        title: "- Preloader",
+        content: pageLoader(() => import("./components/preloader.md"))
+      }, {
+        path: "/css/subscribe",
+        title: "- Subscribe",
+        content: pageLoader(() => import("./components/subscribe.md"))
+      }, {
+        path: "/css/tab-bar",
+        title: "- Tab Bar",
+        content: pageLoader(() => import("./components/tab-bar.md"))
+      }, {
+        path: "/css/table",
+        title: "- Table",
+        content: pageLoader(() => import("./components/table.md"))
+      }, {
+        path: "/css/text",
+        title: "- Text",
+        content: pageLoader(() => import("./components/text.md"))
+      }, {
+        path: "/css/tooltip",
+        title: "- Tooltip",
+        content: pageLoader(() => import("./components/tooltip.md"))
+      }, {
+        path: "/css/utility-typography",
+        title: "- Utility Typography",
+        content: pageLoader(() => import("./components/utility-typography.md"))
+      }, 
     
       ...moleculesNavigation,
       ...organismsNavigation,

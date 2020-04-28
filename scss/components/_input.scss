@@ -30,7 +30,7 @@
 		right: 1px;
 		height: 48%;
 		width: 40px;
-		border-left: 1px solid rgb(232, 232, 233);
+		border-left: 1px solid $vattenfall-light-border-grey;
 		background-repeat: no-repeat;
 		background-size: 16px;
 		background-position: 50%;
@@ -56,7 +56,7 @@
 	}
 
 	.vf-input--number-decrement{
-		border-top: 1px solid rgb(232, 232, 233);
+		border-top: 1px solid $vattenfall-light-border-grey;
 		bottom: 1px;
 
 		&.vf-icon-down{
@@ -76,11 +76,11 @@
 
 		position: relative;
 		min-width: 264px;
-		background-color: rgb(255, 255, 255);
-		color: rgb(34, 34, 34);
+		background-color: $white;
+		color: $dark;
 		padding: 16px 20px;
 		border-radius: 4px 4px 4px 4px;
-		border: 1px solid rgb(204, 204, 204);
+		border: 1px solid $vattenfall-input-grey;
 		font-size: 20px;
 		letter-spacing: 0px;
 		line-height: 24px;
@@ -88,21 +88,20 @@
 
 		&:hover{
 
-			border: 1px solid rgb(153, 153, 153);
+			border: 1px solid $vattenfall-border-dark-grey;
 
 		}
 
 		&:focus, &.vf-input--data{
 
-			border: 1px solid rgb(25, 100, 163);
+			border: 1px solid $vattenfall-button-blue;
 
 			& ~ label{				
 
 				top: -9px;
 				left: 16.5px;
 				padding: 0 7px;
-				color: rgb(25, 100, 163);
-				// background-color: #fff;
+				color: $vattenfall-button-blue;
 				font-weight: 500;
 				letter-spacing: 0px;
 
@@ -129,7 +128,7 @@
 
 			background-color: transparent;
 			border:none;
-			border-bottom: 1px solid rgb(204, 204, 204);
+			border-bottom: 1px solid $vattenfall-input-grey;
 			padding-left: 0;
 			border-radius: 0;
 
@@ -144,11 +143,11 @@
 
 			&.vf-input--error{
 
-				box-shadow: 0 0 rgb(249, 59, 24);
+				box-shadow: 0 0 $vattenfall-dark-red;
 
 				&:focus{
 
-					box-shadow: 0 1px rgb(249, 59, 24);
+					box-shadow: 0 1px $vattenfall-dark-red;
 					transition: box-shadow .2s ease-in-out;
 				}
 
@@ -156,11 +155,11 @@
 
 			&.vf-input--warning{
 
-				box-shadow: 0 0 rgb(245, 166, 35);
+				box-shadow: 0 0 $vattenfall-warning-yellow;
 
 				&:focus{
 
-					box-shadow: 0 1px rgb(245, 166, 35);
+					box-shadow: 0 1px $vattenfall-warning-yellow;
 					transition: box-shadow .2s ease-in-out;
 
 				}
@@ -171,42 +170,42 @@
 
 		&.vf-input--error{
 
-			border-color: rgb(255, 178, 164);
+			border-color: $vattenfall-error-red-border;
 
 			&:hover{
 
-				border-color: rgb(249, 59, 24);
+				border-color: $vattenfall-dark-red;
 			}
 
 			&:focus{
 
-				border-color: rgb(249, 59, 24);
+				border-color: $vattenfall-dark-red;
 			}
 
 			& ~ label{
 
-				color: rgb(249, 59, 24);
+				color: $vattenfall-dark-red;
 			}
 		}
 
 		&.vf-input--warning{
 
-			border-color: rgb(255, 222, 168);
+			border-color: $vattenfall-warning-yellow-border;
 
 			&:hover{
 
-				border-color: rgb(245, 166, 35);
+				border-color: $vattenfall-warning-yellow;
 			}
 
 			&:focus{
 
-				border-color: rgb(245, 166, 35);
+				border-color: $vattenfall-warning-yellow;
 
 			}
 
 			& ~ label{
 
-				color: rgb(245, 166, 35);
+				color: $vattenfall-warning-yellow;
 			}
 		}
 
@@ -234,7 +233,7 @@
 		top: 17px;
 		left: 20px;
 		margin-bottom: 0;
-		color: rgb(118, 118, 118);
+		color: $btn-disabled-color;
 		line-height: 25px;
 		font-size: 20px;
 		letter-spacing: 0px;
