@@ -7,7 +7,6 @@
 .vf-btn {
   display: inline-block;
   font-weight: 500;
-  font-family: "Vattenfall Hall";
   color: $body-color;
   text-align: center;
   vertical-align: middle;
@@ -83,129 +82,130 @@ fieldset:disabled a.vf-btn {
   pointer-events: none;
 }
 
+
 .vf-btn--primary {
-  color: #111111;
-  background: #FFDA00;
+  color: $btn-primary-color;
+  background: $btn-primary-bg;
 
   @include hover {
-    color: #111111;
-    background: #FFE85B;
+    color: $btn-primary-color;
+    background: $btn-primary-bg-hover;
   }
 
   &:focus,
   &.focus {
-    background: #F1C50B;
+    background: $btn-primary-bg-focus;
   }
 
   &.disabled,
   &:disabled {
-    color: #767676;
-    background-color: #EEEEEE;
+    color: $btn-primary-color-disabled;
+    background-color: $btn-primary-bg-disabled;
   }
 }
 
 .vf-btn--secondary {
-  color: white;
-  background: #1964A3;
+  color: $white;
+  background: $btn-secondary-bg;
 
   @include hover {
     color: white;
-    background: #2071B5;
+    background: $btn-secondary-bg-hover;
   }
 
   &:focus,
   &:active,
   &.focus {
     color: white;
-    background: #1E324F;
+    background: $btn-secondary-bg-focus;
   }
 
   &.disabled,
   &:disabled {
-    color: #767676;
-    background-color: #EEEEEE;
+    color: $btn-secondary-color-disabled;
+    background-color: $btn-secondary-bg-disabled;
   }
 }
 
 .vf-btn--tertiary {
-  color: #222222;
-  background: transparent;
-  border: 2px #CDD1D4 solid;
+  color: $btn-tertiary-color;
+  background: $btn-tertiary-bg;
+  border: 2px $btn-tertiary-border solid;
 
   @include hover {
-    color: white;
-    background: #1964A3;
-    border-color: #1964A3;
+    color: $white;
+    background: $btn-tertiary-bg-hover;
+    border-color: $btn-tertiary-border-hover;
   }
 
   &:focus,
   &:active,
   &.focus {
-    color: white;
-    background: #1E324F;
-    border-color: #1E324F;
+    color: $white;
+    background: $btn-tertiary-bg-focus;
+    border-color: $btn-tertiary-border-focus;
   }
 
   &.disabled,
   &:disabled {
-    color: #767676;
-    background-color: #EEEEEE;
-    border-color: #EEEEEE;
+    color: $btn-tertiary-color-disabled;
+    background-color: $btn-tertiary-bg-disabled ;
+    border-color: $btn-tertiary-border-disabled;
   }
 
 }
 
 .vf-btn--outline-secondary {
-  color: #1964A3;
-  background: transparent;
-  border: 2px #2071B5 solid;
+  color: $btn-outline-secondary-color;
+  background: $btn-outline-secondary-bg;
+  border: 2px $btn-outline-secondary-border;
 
   @include hover {
-    color: white;
-    background: #1964A3;
-    border-color: #1964A3;
+    color: $white;
+    background: $btn-outline-secondary-bg-hover;
+    border-color: $btn-outline-secondary-border-hover;
   }
 
   &:focus,
   &:active,
   &.focus {
-    color: white;
-    background: #1E324F;
-    border-color: #1E324F;
+    color: $white;
+    background: $btn-outline-secondary-bg-focus;
+    border-color: $btn-outline-secondary-border-focus;
   }
 
   &.disabled,
   &:disabled {
-    color: #767676;
-    background-color: #EEEEEE;
-    border-color: #EEEEEE;
+    color: $btn-outline-secondary-color-disabled;
+    background-color: $btn-outline-secondary-bg-disabled;
+    border-color: $btn-outline-secondary-border-disabled;
   }
 }
 
 .vf-btn--outline-dark {
-  color: #222222;
-  background: transparent;
-  border: 2px #222222 solid;
+  color: $btn-outline-dark-color;
+  background: $btn-outline-dark-bg;
+  border: 2px $btn-outline-dark-border solid;
 
   @include hover {
-    color: white;
-    background: #222222;
-    border-color: #222222;
+    color: $white;
+    background: $btn-outline-dark-bg-hover;
+    border-color: $btn-outline-dark-border-hover;
   }
 
   &:focus,
   &:active,
   &.focus {
-    color: white;
-    background: #4E4B48;
-    border-color: #4E4B48;
+    color: $white;
+    background: $btn-outline-dark-bg-focus;
+    border-color: $btn-outline-dark-border-focus;
   }
 
   &.disabled,
   &:disabled {
-    color: #767676;
-    background-color: #EEEEEE;
-    border-color: #EEEEEE;
+    color: $btn-outline-dark-color-disabled;
+    background-color: $btn-outline-dark-bg-disabled;
+    border-color: $btn-outline-dark-border-disabled;
   }
 }
 
@@ -239,7 +239,7 @@ fieldset:disabled a.vf-btn {
 
   @include typo-paragraph-primary();
   font-weight: 500;
-  color: #222222;
+  color: $dark;
 
   &:before {
     content: '\2192';
@@ -263,7 +263,7 @@ fieldset:disabled a.vf-btn {
   }
 
   &:active:before {
-    color: #1E324F;
+    color: $vattenfall-dark-blue;
   }
 
   // For the arrow
@@ -288,7 +288,7 @@ fieldset:disabled a.vf-btn {
   }
 
   &:active {
-    color: #1E324F;
+    color: $vattenfall-dark-blue;
     text-decoration: none;
   }
 }

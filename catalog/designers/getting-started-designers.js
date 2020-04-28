@@ -1,6 +1,8 @@
 
 import React from "react";
 
+//<img className="is-content" src="https://clients.alchemy.se/vattenfall/wp-content/uploads/2018/12/structure-1.png" width="70%" alt="structure" caption="" data-width="original" data-scaling="no"></img>
+
 const Designers = () => (
   <div style= {{ 
     margin:'10px 20px 0 40px',
@@ -64,8 +66,7 @@ const Designers = () => (
       We use a simplified version of the Atomic Design methodology, which we have adapted to suit our design process and our team culture. The main difference with Atomic Design is that all modules are either an atom or a molecule, categorised by purpose. Our approach to defining modules and naming them is function-directed, rather than presentational. It is based on evolving a shared design language collaboratively and empowering all designers and engineers on the team to contribute to the system.
       </p>
 
-   
-       <img className="is-content" src="https://clients.alchemy.se/vattenfall/wp-content/uploads/2018/12/structure-1.png" width="70%" alt="structure" caption="" data-width="original" data-scaling="no"></img></div>
+       </div>
      
        <br></br> 
         </div> 
