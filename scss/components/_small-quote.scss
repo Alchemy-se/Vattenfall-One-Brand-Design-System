@@ -33,10 +33,10 @@
 
 /* Colors */
 .vf-small-quote {
-  background-color: #faf9dc; 
+  background-color: $vattenfall-lighter-yellow; 
 
   &:after {
-    border-top-color: #faf9dc;
+    border-top-color: $vattenfall-lighter-yellow;
   }
 }
 

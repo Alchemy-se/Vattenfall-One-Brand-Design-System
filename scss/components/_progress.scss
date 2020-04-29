@@ -4,7 +4,7 @@ $progress-height: 4px;
   margin: $spacing-sm 0;
   display: flex;
   height: $progress-height;
-  background-color: #E8E8E9;
+  background-color: $vattenfall-light-border-grey;
 }
 
 .vf-progress-bar {
@@ -14,7 +14,7 @@ $progress-height: 4px;
   color: white;
   text-align: center;
   white-space: nowrap;
-  background-color: #1964A3;
+  background-color: $vattenfall-button-blue;
 }
 
 .vf-progress--small {
