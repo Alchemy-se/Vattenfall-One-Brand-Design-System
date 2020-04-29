@@ -38,7 +38,10 @@ module.exports = {
 const Markdown = ({source}) => {
 	return (
 		<div className={`${styles.container} ${"markdown-body"}` }>
-			<ReactMarkdown source={source} renderers={{heading: Heading}}/>
+			<ReactMarkdown
+				source={source}
+				renderers={{heading: Heading}}
+			/>
 		</div>
 	)
 };
