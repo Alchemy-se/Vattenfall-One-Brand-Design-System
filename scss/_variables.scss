@@ -37,9 +37,9 @@ $grays: map-merge(
   $grays
 );
 
-
 $vattenfall-black: #343434;
 $vattenfall-mid-blue: #2071b5;
+$vattenfall-button-blue: #1964A3;
 $vattenfall-sunflower-yellow: #ffda00;
 $vattenfall-blue-grey: #69788C;
 
@@ -61,6 +61,25 @@ $vattenfall-light-blue: #EDF1F6;
 $vattenfall-light-red: #FEF0EA;
 $vattenfall-light-grey: #F2F2F2;
 
+$vattenfall-metadata-grey: #888888;
+$vattenfall-dark-border-grey: #bcbcbc;
+$vattenfall-border-grey: #cdd1d4;
+$vattenfall-light-border-grey: #e8e8e9;
+$vattenfall-lighter-yellow: #faf9dc;
+$vattenfall-warning-yellow: #f5a623;
+$vattenfall-input-grey: #cccccc;
+$vattenfall-dropdown-item-border: #a4a9ac;
+$vattenfall-dropdown-item-border-before: #d8d8d8;
+$vattenfall-border-dark-grey: #999999;
+$vattenfall-error-red-border: #ffb2a4;
+$vattenfall-warning-yellow-border: #ffb2a4;
+$vattenfall-tooltip-green: #c5eecc;
+$vattenfall-tooltip-blue-bg: #f1f8ff;
+$vattenfall-tooltip-blue-border: #c5dcee;
+$vattenfall-tooltip-red-bg: #fff5f1;
+$vattenfall-tooltip-red-border: #eec8c5;
+$vattenfall-dropdown-input-disabled: #f1f1f1;
+$vattenfall-dropdown-underline-border: #869bad;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -119,7 +138,7 @@ $theme-colors: map-merge(
 
     "blue-grey":        $vattenfall-blue-grey,
 
-    "dark-moss":       $vattenfall-dark-moss,
+    "dark-moss":        $vattenfall-dark-moss,
     "dark-blue":        $vattenfall-dark-blue,
     "dark-pink":        $vattenfall-dark-pink,
     "dark-green":       $vattenfall-dark-green,
@@ -453,6 +472,57 @@ $btn-border-radius-lg:        26px;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+$btn-disabled-color: #767676;
+$btn-disabled-bg: #EEEEEE;
+
+$btn-primary-color: #111111;
+$btn-primary-bg: $vattenfall-sunflower-yellow;
+$btn-primary-bg-hover: #FFE85B;
+$btn-primary-bg-focus: #F1C50B;
+$btn-primary-bg-disabled: $btn-disabled-bg;
+$btn-primary-color-disabled: $btn-disabled-color;
+
+$btn-secondary-bg: $vattenfall-button-blue;
+$btn-secondary-bg-hover: $vattenfall-mid-blue;
+$btn-secondary-bg-focus: $vattenfall-dark-blue;
+$btn-secondary-color-disabled: $btn-disabled-color;
+$btn-secondary-bg-disabled: $btn-disabled-bg;
+
+$btn-tertiary-color: $dark;
+$btn-tertiary-bg: transparent;
+$btn-tertiary-border: $vattenfall-border-grey;
+$btn-tertiary-bg-hover: $vattenfall-button-blue;
+$btn-tertiary-border-hover: $vattenfall-button-blue;
+$btn-tertiary-bg-focus: $vattenfall-dark-blue;
+$btn-tertiary-border-focus: $vattenfall-dark-blue;
+$btn-tertiary-color-disabled: $btn-disabled-color;
+$btn-tertiary-bg-disabled: $btn-disabled-bg;
+$btn-tertiary-border-disabled: $btn-disabled-bg;
+
+$btn-outline-secondary-color: $vattenfall-button-blue;
+$btn-outline-secondary-bg: transparent;
+$btn-outline-secondary-border: $vattenfall-mid-blue solid;
+$btn-outline-secondary-bg-hover: $vattenfall-button-blue;
+$btn-outline-secondary-border-hover: $vattenfall-button-blue;
+$btn-outline-secondary-bg-focus: $vattenfall-dark-blue;
+$btn-outline-secondary-border-focus: $vattenfall-dark-blue;
+$btn-outline-secondary-color-disabled: $btn-disabled-color;
+$btn-outline-secondary-bg-disabled: $btn-disabled-bg;
+$btn-outline-secondary-border-disabled: $btn-disabled-bg;
+
+$btn-outline-dark-color: $dark;
+$btn-outline-dark-bg: transparent;
+$btn-outline-dark-border: $dark solid;
+$btn-outline-dark-bg-hover: $dark;
+$btn-outline-dark-border-hover: $dark;
+$btn-outline-dark-bg-focus: #4E4B48;
+$btn-outline-dark-border-focus: #4E4B48;
+$btn-outline-dark-color-disabled: $btn-disabled-color;
+$btn-outline-dark-bg-disabled: $btn-disabled-bg;
+$btn-outline-dark-border-disabled: $btn-disabled-bg;
+
+$button-group-box-shadow: rgba(0,0,0,0.5);
 
 
 // Forms

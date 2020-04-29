@@ -10,9 +10,9 @@
   padding: $pagination-padding-y $pagination-padding-x;
 
   line-height: 28px;
-  color: #222222;
-  background-color: white;
-  border: 1px solid #E8E8E9;
+  color: $dark;
+  background-color: $white;
+  border: 1px solid $vattenfall-light-border-grey;
   margin: 0 3px;
   min-width: 36px;
   text-align: center;

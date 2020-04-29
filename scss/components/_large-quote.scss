@@ -25,8 +25,8 @@ $cutout-height-desktop: 85px;
   position: absolute;
   top: 70px;
   text-align: center;
-  color: #cdd1d4;
-  border: 2px #cdd1d4 solid;
+  color: $vattenfall-border-grey;
+  border: 2px $vattenfall-border-grey solid;
   width: 48px;
   height: 48px;
   line-height: 72px;
@@ -61,11 +61,11 @@ $cutout-height-desktop: 85px;
 }
 
 .vf-large-quote__quote {
-  color: #222222;
+  color: $dark;
   padding: 48px 0px 48px;
   margin: 0 21px 0 0;
 
-  background: white;
+  background: $white;
   
   @include typo-quote-mobile();
 

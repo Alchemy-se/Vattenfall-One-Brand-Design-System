@@ -82,8 +82,8 @@
 				bottom: 0;
 				transform: translate(0, 100%)rotate(-45deg);
 				border-left: none;
-				border-bottom: 1px solid rgb(197, 238, 204);
-				border-right: 1px solid rgb(197, 238, 204);
+				border-bottom: 1px solid $vattenfall-tooltip-green;
+				border-right: 1px solid $vattenfall-tooltip-green;
 				border-top: none;
 
 			} @else if $position == right {
@@ -92,17 +92,17 @@
 				right: auto;
 				bottom: 0;
 				transform: translate(0, 100%)rotate(-45deg);
-				border-left: 1px solid rgb(197, 238, 204);
+				border-left: 1px solid $vattenfall-tooltip-green;
 				border-bottom: none;
 				border-right: none;
-				border-top: 1px solid rgb(197, 238, 204);
+				border-top: 1px solid $vattenfall-tooltip-green;
 
 			} @else if $position == bottom {
 
 				border-left: none;
 				border-bottom: none;
-				border-right: 1px solid rgb(197, 238, 204);
-				border-top: 1px solid rgb(197, 238, 204);
+				border-right: 1px solid $vattenfall-tooltip-green;
+				border-top: 1px solid $vattenfall-tooltip-green;
 
 			}
 
@@ -234,13 +234,13 @@
 
 .vf-tooltip--blue{
 
-	@include tooltip-color(rgb(241, 248, 255), rgb(197, 220, 238), $vattenfall-mid-blue);
+	@include tooltip-color($vattenfall-tooltip-blue-bg, $vattenfall-tooltip-blue-border, $vattenfall-mid-blue);
 	
 }
 
 .vf-tooltip--red{
 
-	@include tooltip-color(rgb(255, 245, 241), rgb(238, 200, 197), $vattenfall-dark-red);
+	@include tooltip-color($vattenfall-tooltip-red-bg, $vattenfall-tooltip-red-border, $vattenfall-dark-red);
 	
 }
 
@@ -287,7 +287,7 @@
 	line-height: 20px;    
 	pointer-events: none;
 	background: $vattenfall-light-green;
-	border: 1px solid rgb(197, 238, 204);
+	border: 1px solid $vattenfall-tooltip-green;
 	border-radius: 4px 4px 4px 4px;
 	color: $vattenfall-dark-green;
 	text-align: center;
@@ -304,8 +304,8 @@
 		bottom: 0;
 		width: 10px;
 		height: 10px; 
-		border-left:1px solid rgb(197, 238, 204);
-		border-bottom:1px solid rgb(197, 238, 204);
+		border-left:1px solid $vattenfall-tooltip-green;
+		border-bottom:1px solid $vattenfall-tooltip-green;
 		border-radius: 3px;
 		transform: rotate(-45deg);
     
