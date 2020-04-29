@@ -34,10 +34,6 @@ module.exports = {
   virtualHtml: VirtualHtml,
   parsedHtml: ParsedHtml
 }; */
-setTimeout(() => {
-	console.log("#DEBUG 1 #")
-	location.hash = "#autoprefixer";
-}, 3000);
 
 const Markdown = ({source}) => {
 	return (
