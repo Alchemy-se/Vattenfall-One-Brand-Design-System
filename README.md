@@ -75,6 +75,9 @@ Run the deployment script (you will need the Private SSL key):
 ./deploy.sh
 ```
 
+The disk may occassionally fill up due to old Docker images. This can cause unexpected behaviour, and is hard to debug as no error messages may appear on Google Cloud. 
+To prevent this, be sure to occasionally prune the unused Docker images by ssh (use the command displayed on the "VM instance details" page, under remote access) into the instance and running: ```sh docker image prune -a ``` . If the disk happens to already be full, just increase the disk space temporarily on Google Cloud, (Left menu -> Disks -> vf-docker-instance -> Edit -> [increase size] ), then prune the images.
+
 ### Docker 
 
 You can also run this repo as a docker image. 
