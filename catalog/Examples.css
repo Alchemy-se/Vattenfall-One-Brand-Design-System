@@ -11,11 +11,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.examples__image-header {
+.examples__image_header {
     margin-top: 30px;
 }
 
-.examples__ios-image {
+.examples__ios_image {
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

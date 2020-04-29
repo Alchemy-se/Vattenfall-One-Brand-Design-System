@@ -1,6 +1,5 @@
 var path = require('path');
 
-console.log(path.join(__dirname, 'dist/js'));
 module.exports = {
 	mode: "development",
 	entry: path.join(__dirname, 'catalog/index.js'),

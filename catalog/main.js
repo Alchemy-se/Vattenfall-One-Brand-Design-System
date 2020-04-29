@@ -1,32 +1,44 @@
-import React, {Component} from "react";
+import React, {Component, useEffect} from "react";
 import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link
+	BrowserRouter as Router
 } from "react-router-dom";
 
-import Designers from './designers/getting-started-designers';
-import Developers from './developers/getting-started-developers';
-import Examples from "./EXAMPLES";
+import Routes from "routes";
+
 import Hamburger from "./lib/hamburger";
-import Drawer from "./lib/drawer";
+import Drawer from "./lib/drawer/drawer";
+import Header from "./lib/header";
 
 // TODO verify if can place this somewhere else.
-import 'antd/dist/antd.css';
 import styles from "./main.scss";
 
-import Welcome from "./WELCOME"
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-159160070-1');
 
+// Used at mount to highlight correct menu item.
+const getCurrentLocation = (full) => {
+	if(full) {
+		return window.location.pathname;
+	}
+	const splitted = window.location.pathname.split("/");
+	let path = "/"+splitted[1];
+	return path;
+};
+
+function trackPageView(path) {
+	ReactGA.pageview(path);
+}
 
 export default class App extends Component {
 	state = {
 		drawerOpen: window.innerWidth >= 1000,
-		closable: window.innerWidth <= 999
+		closable: window.innerWidth <= 999,
+		selectedKeysMenu: [getCurrentLocation()],
+		selectedKeysSubmenu: [getCurrentLocation(true)],
+		currentPath: getCurrentLocation(true)
 	};
 
 	resize = () => {
-		console.log("#DEBUG window #", window.innerWidth);
 		if(window.innerWidth >= 1000 && this.state.closable === true) {
 			this.setState({
 				closable: false,
@@ -41,8 +53,8 @@ export default class App extends Component {
 
 	};
 
-	componentWillMount() {
-		window.addEventListener('resize', this.resize)
+	componentDidMount() {
+		window.addEventListener('resize', this.resize);
 	}
 
 	componentWillUnmount() {
@@ -61,33 +73,45 @@ export default class App extends Component {
 		});
 	};
 
+	onClickMenu = () => {
+		// this.setState({selectedKeysSubmenu: [getCurrentLocation(true)]})
+	};
+
+	onClickHeader = ({keyPath}) => {
+		this.setState({
+			selectedKeysMenu: [keyPath[0]]
+		})
+	};
+
+	onRouteChange = (pathname) => {
+		useEffect(() => {
+			// Path changed, ok to update state.
+			if(this.state.currentPath !== pathname) {
+				const newSelectedKeysSubmenu = [pathname];
+				this.setState({
+					selectedKeysSubmenu: newSelectedKeysSubmenu,
+					currentPath: pathname
+				});
+				trackPageView(pathname);
+			}
+		});
+	};
+
 	render() {
 		return (
 			<Router>
+				<Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu}/>
 				<div className={styles.container}>
 					<Hamburger onClick={this.openDrawer}/>
-					<Drawer closeDrawer={this.closeDrawer} drawerOpen={this.state.drawerOpen} closable={this.state.closable}/>
+					<Drawer
+						closeDrawer={this.closeDrawer}
+						drawerOpen={this.state.drawerOpen}
+						closable={this.state.closable}
+						onClick={this.onClickMenu}
+						selectedKeys={this.state.selectedKeysSubmenu}
+					/>
 					<div className={styles.innerContainer}>
-						<Switch>
-							<Route path="/examples">
-								<Examples />
-							</Route>
-							<Route path="/design">
-								<Designers />
-							</Route>
-							<Route path="/getting-started">
-								<Developers />
-							</Route>
-							<Route path="/grid">
-								<span>grid</span>
-							</Route>
-							<Route path="/responsive">
-								<span>responsive</span>
-							</Route>
-							<Route path="/">
-								<Welcome />
-							</Route>
-						</Switch>
+						<Routes onRouteChange={this.onRouteChange}/>
 					</div>
 				</div>
 			</Router>

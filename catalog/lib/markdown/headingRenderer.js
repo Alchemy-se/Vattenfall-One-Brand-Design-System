@@ -11,7 +11,6 @@ const HeadingHashLink = (rawValue) => {
 };
 
 const Heading = (props) => {
-	console.log("#DEBUG props #", props);
 	switch(props.level) {
 		case 1: {
 			return props.children.map(child =>
