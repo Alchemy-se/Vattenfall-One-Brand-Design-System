@@ -22,12 +22,12 @@
 	.vf-dropdown-label{
 
 		display: block;
-		background: #fff;
+		background: $white;
 		padding: 12px 114px 12px 20px;
 		margin-bottom: 0;
 		border-radius: 4px 4px 4px 4px;
-		border: 1px solid rgb(232, 232, 233);
-		color: rgb(34, 34, 34);
+		border: 1px solid $vattenfall-light-border-grey;
+		color: $dark;
 		font-size: 20px;
 		line-height: 24px;
 		font-weight: normal;
@@ -39,7 +39,7 @@
 
 		&:hover{
 
-			border: 1px solid rgb(105, 120, 140);
+			border: 1px solid $vattenfall-blue-grey;
 
 		}
 
@@ -81,7 +81,7 @@
 
 			&:hover, &.checked{
 
-				background-color: rgb(25, 100, 163);
+				background-color: $vattenfall-button-blue;
 				color: #fff;
 
 			}
@@ -89,9 +89,9 @@
 			input{
 
 				appearance: none;
-				background: rgb(255, 255, 255);
+				background: $white;
 				border-radius: 4px 4px 4px 4px;
-				border: 1px solid rgb(164, 169, 172);
+				border: 1px solid $vattenfall-dropdown-item-border;
 				height: 28px;
 				width: 28px;
 				line-height: 1;
@@ -105,8 +105,8 @@
 					content: "";
 					position: absolute;
 					transition: transform .2s ease-in-out;
-					border-bottom: 3px solid rgb(216, 216, 216);
-					border-right: 3px solid rgb(216, 216, 216);
+					border-bottom: 3px solid $vattenfall-dropdown-item-border-before;
+					border-right: 3px solid $vattenfall-dropdown-item-border-before;
 					height: 16px;
 					width: 8px;
 					margin: auto;
@@ -122,8 +122,8 @@
 					&:before{
 
 						transform: rotate(45deg) scale(1);
-						border-bottom: 3px solid rgb(78, 75, 72);
-						border-right: 3px solid rgb(78, 75, 72);
+						border-bottom: 3px solid $btn-outline-dark-border-focus;
+						border-right: 3px solid $btn-outline-dark-border-focus;
 
 					}
 				}
@@ -139,7 +139,7 @@
 
 				&:disabled{
 
-					background: rgb(241, 241, 241);
+					background: $vattenfall-dropdown-input-disabled;
 
 					&:before{
 
@@ -152,8 +152,8 @@
 						&:before{
 
 							transform: rotate(45deg) scale(1);
-							border-bottom: 3px solid rgb(216, 216, 216);
-							border-right: 3px solid rgb(216, 216, 216);
+							border-bottom: 3px solid $vattenfall-dropdown-item-border-before;
+							border-right: 3px solid $vattenfall-dropdown-item-border-before;
 
 						}
 
@@ -189,11 +189,11 @@
 			background: none;
 			border-radius: 0px 0px 0px 0px;
 			border: none;
-			border-bottom: 1px solid rgb(134, 155, 173);
+			border-bottom: 1px solid $vattenfall-dropdown-underline-border;
 
 			&:hover{
 
-				border-color: rgb(105, 120, 140);
+				border-color: $vattenfall-blue-grey;
 
 			}
 		}
@@ -202,9 +202,9 @@
 
 			.vf-dropdown-label, .vf-dropdown-list {
 
-				color: rgb(118, 118, 118);
+				color: $btn-disabled-color;
 				background: none;
-				border-color: rgb(134, 155, 173);
+				border-color: $vattenfall-dropdown-underline-border;
 
 			}
 		}
@@ -224,11 +224,11 @@
 
 		.vf-dropdown-label{
 
-			border: 1px solid rgb(105, 120, 140);
+			border: 1px solid $vattenfall-blue-grey;
 			border-bottom: none;
 			border-radius: 4px 4px 0 0;
 
-			color: rgb(118, 118, 118);
+			color: $btn-disabled-color;
 			//font-size: 18px; //Resizes the dropdown
 
 			&:after {
@@ -245,7 +245,7 @@
 		.vf-dropdown-list {
 
 			border-radius: 0 0 4px 4px;
-			border: 1px solid rgb(105, 120, 140);
+			border: 1px solid $vattenfall-blue-grey;
 			border-top: none;
 			transform: scale(1, 1);
 			transition-delay: 0s;
@@ -279,7 +279,7 @@
 			.vf-dropdown-label {
 
 				background: #fff;
-				color: rgb(118, 118, 118);
+				color: $btn-disabled-color;
 				font-size: 18px;
 
 			}
@@ -287,7 +287,7 @@
 			.vf-dropdown-list {
 
 				background: #fff;
-				color: rgb(34, 34, 34);
+				color: $dark;
 
 			}
 		}
@@ -306,9 +306,9 @@
 
 		.vf-dropdown-label, .vf-dropdown-list {
 
-			color: rgb(118, 118, 118);
-			background: rgb(241, 241, 241);
-			border-color: rgb(188, 188, 188);
+			color: $btn-disabled-color;
+			background: $vattenfall-dropdown-input-disabled;
+			border-color: $vattenfall-dark-border-grey;
 
 			.vf-dropdown-list-item{
 
