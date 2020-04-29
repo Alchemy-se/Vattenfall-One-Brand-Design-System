@@ -60,6 +60,10 @@ const pages = [
     title: 'Components',
     pages: [
       {
+        path: "/colors",
+        title: "Colors & borders",
+        content: pageLoader(() => {trackPage("/colors");return import("./colors.md")})
+      }, {
         path: "/grid",
         title: "Grid",
         content: pageLoader(() => {trackPage("/grid"); return import("./grid.md")})
@@ -72,10 +76,6 @@ const pages = [
         title: "Sizing",
         content: pageLoader(() => {trackPage("/sizing");return import("./sizing.md")})
       }, {
-        path: "/colors",
-        title: "Colors & borders",
-        content: pageLoader(() => {trackPage("/colors");return import("./colors.md")})
-      }, {
         path: "/spacing",
         title: "Spacing",
         content: pageLoader(() => {trackPage("/spacing");return import("./spacing.md")})
@@ -84,69 +84,69 @@ const pages = [
         title: "Atoms",
         content: pageLoader(() => {trackPage("/components-intro");return import("./components/intro.md")})
       }, {
-        path: "/css/text",
-        title: "- Text",
-        content: pageLoader(() => {trackPage("/css/text"); return import("./components/text.md")})
-      }, {
-        path: "/css/utility-typography",
-        title: "- Utility Typography",
-        content: pageLoader(() => {trackPage("/css/utility-typography"); return import("./components/utility-typography.md")})
+        path: "/css/badge",
+        title: "- Badge",
+        content: pageLoader(() => {trackPage("/css/badge"); return import("./components/badge.md")})
       }, {
         path: "/css/button",
         title: "- Button",
         content: pageLoader(() => {trackPage("/css/button"); return import("./components/button.md")})
       }, {
-        path: "/css/list",
-        title: "- Lists",
-        content: pageLoader(() => {trackPage("/css/list"); return import("./components/list.md")})
-      }, {
-        path: "/css/numbered-list",
-        title: "- Numbered List",
-        content: pageLoader(() => {trackPage("/css/numbered-list"); return import("./components/numbered-list.md")})
-      }, {
-        path: "/css/badge",
-        title: "- Badge",
-        content: pageLoader(() => {trackPage("/css/badge"); return import("./components/badge.md")})
-      }, {
-        path: "/css/preloader",
-        title: "- Preloader",
-        content: pageLoader(() => {trackPage("/css/preloader"); return import("./components/preloader.md")})
-      }, {
-        path: "/css/table",
-        title: "- Table",
-        content: pageLoader(() => {trackPage("/css/table"); return import("./components/table.md")})
-      }, {
-        path: "/css/tab-bar",
-        title: "- Tab Bar",
-        content: pageLoader(() => {trackPage("/css/tab-bar"); return import("./components/tab-bar.md")})
-      }, {
-        path: "/css/tooltip",
-        title: "- Tooltip",
-        content: pageLoader(() => {trackPage("/css/tooltip"); return import("./components/tooltip.md")})
-      }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
         content: pageLoader(() => {trackPage("/css/drop-down"); return import("./components/drop-down.md")})
       }, {
-        path: "/css/input",
-        title: "- Input",
-        content: pageLoader(() => {trackPage("/css/input"); return import("./components/input.md")})
-      }, {
-        path: "/css/notification-module",
-        title: "- Notification Module",
-        content: pageLoader(() => {trackPage("/css/notification-module"); return import("./components/notification-module.md")})
-      }, {
-        path: "/css/subscribe",
-        title: "- Subscribe",
-        content: pageLoader(() => {trackPage("/css/subscribe"); return import("./components/subscribe.md")})
+        path: "/css/gdpr-consent-module",
+        title: "- GDPR Consent Module",
+        content: pageLoader(() => {trackPage("/css/gdpr-consent-module"); return import("./components/gdpr-consent-module.md")})
       }, {
         path: "/css/icon-text",
         title: "- Icon Text",
         content: pageLoader(() => {trackPage("/css/icon-text"); return import("./components/icon-text.md")})
       }, {
-        path: "/css/gdpr-consent-module",
-        title: "- GDPR Consent Module",
-        content: pageLoader(() => {trackPage("/css/gdpr-consent-module"); return import("./components/gdpr-consent-module.md")})
+        path: "/css/input",
+        title: "- Input",
+        content: pageLoader(() => {trackPage("/css/input"); return import("./components/input.md")})
+      }, {
+        path: "/css/list",
+        title: "- Lists",
+        content: pageLoader(() => {trackPage("/css/list"); return import("./components/list.md")})
+      }, {
+        path: "/css/notification-module",
+        title: "- Notification Module",
+        content: pageLoader(() => {trackPage("/css/notification-module"); return import("./components/notification-module.md")})
+      }, {
+        path: "/css/numbered-list",
+        title: "- Numbered List",
+        content: pageLoader(() => {trackPage("/css/numbered-list"); return import("./components/numbered-list.md")})
+      },  {
+        path: "/css/preloader",
+        title: "- Preloader",
+        content: pageLoader(() => {trackPage("/css/preloader"); return import("./components/preloader.md")})
+      }, {
+        path: "/css/subscribe",
+        title: "- Subscribe",
+        content: pageLoader(() => {trackPage("/css/subscribe"); return import("./components/subscribe.md")})
+      }, {
+        path: "/css/tab-bar",
+        title: "- Tab Bar",
+        content: pageLoader(() => {trackPage("/css/tab-bar"); return import("./components/tab-bar.md")})
+      }, {
+        path: "/css/table",
+        title: "- Table",
+        content: pageLoader(() => {trackPage("/css/table"); return import("./components/table.md")})
+      }, {
+        path: "/css/text",
+        title: "- Text",
+        content: pageLoader(() => {trackPage("/css/text"); return import("./components/text.md")})
+      }, {
+        path: "/css/tooltip",
+        title: "- Tooltip",
+        content: pageLoader(() => {trackPage("/css/tooltip"); return import("./components/tooltip.md")})
+      }, {
+        path: "/css/utility-typography",
+        title: "- Utility Typography",
+        content: pageLoader(() => {trackPage("/css/utility-typography"); return import("./components/utility-typography.md")})
       },
 
       ...moleculesNavigation,

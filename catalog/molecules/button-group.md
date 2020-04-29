@@ -1,14 +1,15 @@
 ## Example
 
-Wrap a series of buttons with `.btn` in `.btn-group`. Add on optional JavaScript radio and checkbox style behavior with [our buttons plugin]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#button-plugin).
+Wrap a series of buttons with `.vf-btn` in `.vf-btn-group`.
 
 ```html
 showSource: true
 ---
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+<div class="vf-btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="vf-btn-group__btn vf-btn vf-btn--secondary">Left</button>
+  <button type="button" class="vf-btn-group__btn vf-btn vf-btn--secondary">Middle</button>
+  <button type="button" class="vf-btn-group__btn vf-btn vf-btn--secondary">Middle</button>
+  <button type="button" class="vf-btn-group__btn vf-btn vf-btn--secondary">Right</button>
 </div>
 ```
 
