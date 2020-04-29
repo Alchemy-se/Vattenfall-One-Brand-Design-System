@@ -30,24 +30,28 @@ const scripts = [
   '/dist/js/horizon.min.js'
 ]
 
+const trackPage = (page) => {
+  ReactGA.pageview(page);
+};
+
 const pages = [
   {
     path: "/",
     title: "Digital Design System",
-    content: Welcome 
+    content: () => {trackPage("/"); return <Welcome/>}
   },
   {
     title: 'Get started',
     pages: [
-      { 
+      {
         path: "/design",
         title: "Designers",
-        content: Designers
+        content: () => {trackPage("/design"); return <Designers/>}
       },
       {
         title: 'Developers',
         path: "/getting-started",
-        content: pageLoader(() => import("./getting-started.md"))
+        content: pageLoader(() => {trackPage("/getting-started"); return import("./getting-started.md")})
       },
     ]
   },
@@ -58,122 +62,122 @@ const pages = [
       {
         path: "/colors",
         title: "Colors & borders",
-        content: pageLoader(() => import("./colors.md"))
+        content: pageLoader(() => {trackPage("/colors");return import("./colors.md")})
       }, {
         path: "/grid",
         title: "Grid",
-        content: pageLoader(() => import("./grid.md"))
+        content: pageLoader(() => {trackPage("/grid"); return import("./grid.md")})
       }, {
         path: "/responsive",
         title: "Responsive",
-        content: pageLoader(() => import("./responsive.md"))
+        content: pageLoader(() => {trackPage("/responsive"); return import("./responsive.md")})
       }, {
         path: "/sizing",
         title: "Sizing",
-        content: pageLoader(() => import("./sizing.md"))
+        content: pageLoader(() => {trackPage("/sizing");return import("./sizing.md")})
       }, {
         path: "/spacing",
         title: "Spacing",
-        content: pageLoader(() => import("./spacing.md"))
+        content: pageLoader(() => {trackPage("/spacing");return import("./spacing.md")})
       }, {
         path: "/components-intro",
         title: "Atoms",
-        content: pageLoader(() => import("./components/intro.md")) 
+        content: pageLoader(() => {trackPage("/components-intro");return import("./components/intro.md")})
       }, {
         path: "/css/badge",
         title: "- Badge",
-        content: pageLoader(() => import("./components/badge.md"))
+        content: pageLoader(() => {trackPage("/css/badge"); return import("./components/badge.md")})
       }, {
         path: "/css/button",
         title: "- Button",
-        content: pageLoader(() => import("./components/button.md"))
+        content: pageLoader(() => {trackPage("/css/button"); return import("./components/button.md")})
       }, {
         path: "/css/drop-down",
         title: "- Drop-down List",
-        content: pageLoader(() => import("./components/drop-down.md"))
+        content: pageLoader(() => {trackPage("/css/drop-down"); return import("./components/drop-down.md")})
       }, {
         path: "/css/gdpr-consent-module",
         title: "- GDPR Consent Module",
-        content: pageLoader(() => import("./components/gdpr-consent-module.md"))
+        content: pageLoader(() => {trackPage("/css/gdpr-consent-module"); return import("./components/gdpr-consent-module.md")})
       }, {
         path: "/css/icon-text",
         title: "- Icon Text",
-        content: pageLoader(() => import("./components/icon-text.md"))
+        content: pageLoader(() => {trackPage("/css/icon-text"); return import("./components/icon-text.md")})
       }, {
         path: "/css/input",
         title: "- Input",
-        content: pageLoader(() => import("./components/input.md"))
+        content: pageLoader(() => {trackPage("/css/input"); return import("./components/input.md")})
       }, {
         path: "/css/list",
         title: "- Lists",
-        content: pageLoader(() => import("./components/list.md"))
+        content: pageLoader(() => {trackPage("/css/list"); return import("./components/list.md")})
       }, {
         path: "/css/notification-module",
         title: "- Notification Module",
-        content: pageLoader(() => import("./components/notification-module.md"))
+        content: pageLoader(() => {trackPage("/css/notification-module"); return import("./components/notification-module.md")})
       }, {
         path: "/css/numbered-list",
         title: "- Numbered List",
-        content: pageLoader(() => import("./components/numbered-list.md"))
+        content: pageLoader(() => {trackPage("/css/numbered-list"); return import("./components/numbered-list.md")})
       },  {
         path: "/css/preloader",
         title: "- Preloader",
-        content: pageLoader(() => import("./components/preloader.md"))
+        content: pageLoader(() => {trackPage("/css/preloader"); return import("./components/preloader.md")})
       }, {
         path: "/css/subscribe",
         title: "- Subscribe",
-        content: pageLoader(() => import("./components/subscribe.md"))
+        content: pageLoader(() => {trackPage("/css/subscribe"); return import("./components/subscribe.md")})
       }, {
         path: "/css/tab-bar",
         title: "- Tab Bar",
-        content: pageLoader(() => import("./components/tab-bar.md"))
+        content: pageLoader(() => {trackPage("/css/tab-bar"); return import("./components/tab-bar.md")})
       }, {
         path: "/css/table",
         title: "- Table",
-        content: pageLoader(() => import("./components/table.md"))
+        content: pageLoader(() => {trackPage("/css/table"); return import("./components/table.md")})
       }, {
         path: "/css/text",
         title: "- Text",
-        content: pageLoader(() => import("./components/text.md"))
+        content: pageLoader(() => {trackPage("/css/text"); return import("./components/text.md")})
       }, {
         path: "/css/tooltip",
         title: "- Tooltip",
-        content: pageLoader(() => import("./components/tooltip.md"))
+        content: pageLoader(() => {trackPage("/css/tooltip"); return import("./components/tooltip.md")})
       }, {
         path: "/css/utility-typography",
         title: "- Utility Typography",
-        content: pageLoader(() => import("./components/utility-typography.md"))
-      }, 
-    
+        content: pageLoader(() => {trackPage("/css/utility-typography"); return import("./components/utility-typography.md")})
+      },
+
       ...moleculesNavigation,
       ...organismsNavigation,
-      
+
       {
         path: "/components/utilities",
         title: "Utilities",
-        content: pageLoader(() => import("./utilities/utilities.md"))
+        content: pageLoader(() => {trackPage("/components/utilities"); return import("./utilities/utilities.md")})
       }, {
         path: "/utilities/favicon",
         title: "- Favicon",
-        content: pageLoader(() => import("./utilities/favicon.md"))
+        content: pageLoader(() => {trackPage("/utilities/favicon"); return import("./utilities/favicon.md")})
       }, {
         path: "/utilities/icons",
         title: "- Icons",
-        content: pageLoader(() => import("./utilities/icons.md"))
+        content: pageLoader(() => {trackPage("/utilities/icons"); return import("./utilities/icons.md")})
       },
     ]
   },
   {
     path: "/guidelines",
     title: 'Design guidelines',
-    content: Guidelines
+    content: () => {trackPage("/guidelines"); return <Guidelines/>}
   },
-  
- /* {
-    path: "/contribute",
-    title: "Contributing",
-    content: pageLoader(() => import("./contribute.md"))
-  }*/
+
+  /* {
+	 path: "/contribute",
+	 title: "Contributing",
+	 content: pageLoader(() => {return import("./contribute.md")})
+   }*/
 ];
 
 const theme = {
@@ -236,35 +240,35 @@ const menuFooterLinkIconStyle = {
   marginRight: '5px'
 };
 
-const versionTextStle = {
+const versionTextStyle = {
   color: "#222222",
   fontSize: "12px",
   marginBottom: 0
 };
 
 const menuFooter = () => (
-  <div style={{ padding: '40px 42px', fontFamily: 'Vattenfall Hall' }}>
-    <a href="https://app.goabstract.com/organizations/2776932d-ce7d-4fc3-8c46-0da875d726d3/projects" style={menuFooterLinkStyle}>
-      <img style={menuFooterLinkIconStyle} src="/img/docs/abstract.svg" /> Abstract
-    </a>
-    <a href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" style={menuFooterLinkStyle}>
-      <img style={menuFooterLinkIconStyle} src="/img/docs/github.svg" /> Github
-    </a>
-    <p style={versionTextStle}>{"Version "+PACKAGE.version}</p>
-  </div>
+    <div style={{ padding: '40px 42px', fontFamily: 'Vattenfall Hall' }}>
+      <a href="https://app.goabstract.com/organizations/2776932d-ce7d-4fc3-8c46-0da875d726d3/projects" style={menuFooterLinkStyle}>
+        <img style={menuFooterLinkIconStyle} src="/img/docs/abstract.svg" /> Abstract
+      </a>
+      <a href="https://github.com/Alchemy-se/Vattenfall-One-Brand-Design-System" style={menuFooterLinkStyle}>
+        <img style={menuFooterLinkIconStyle} src="/img/docs/github.svg" /> Github
+      </a>
+      <p style={versionTextStyle}>{"Version "+PACKAGE.version}</p>
+    </div>
 )
 
 ReactDOM.render(
-  <Catalog 
-    title="Vattenfall Design System" 
-    useBrowserHistory 
-    responsiveSizes={responsiveSizes}
-    pages={pages} 
-    logoSrc={'/img/docs/logo.svg'}
-    theme={theme} 
-    menuFooter={menuFooter}
-    styles={[]}
-    globalStyles={styles}
-    scripts={scripts} />,
-  document.getElementById("catalog")
+    <Catalog
+        title="Vattenfall Design System"
+        useBrowserHistory
+        responsiveSizes={responsiveSizes}
+        pages={pages}
+        logoSrc={'/img/docs/logo.svg'}
+        theme={theme}
+        menuFooter={menuFooter}
+        styles={[]}
+        globalStyles={styles}
+        scripts={scripts} />,
+    document.getElementById("catalog")
 );

@@ -1,26 +1,31 @@
 import { pageLoader } from "@alchemy-se/catalog";
+import ReactGA from "react-ga";
+
+const trackPage = (page) => {
+  ReactGA.pageview(page);
+};
 
 const nav = [
   {
     path: "/css/organisms",
     title: "Organisms",
-    content: pageLoader(() => import("./index.md"))
+    content: pageLoader(() => {trackPage("/css/organisms"); return import("./index.md")})
   }, {
     path: "/css/footer",
     title: "- Footer",
-    content: pageLoader(() => import("./footer.md"))
+    content: pageLoader(() => {trackPage("/css/footer"); return import("./footer.md")})
   }, {
     path: "/css/form",
     title: "- Form",
-    content: pageLoader(() => import("./form.md"))
+    content: pageLoader(() => {trackPage("/css/form"); return import("./form.md")})
   }, {    
     path: "/css/hero",
     title: "- Hero",
-    content: pageLoader(() => import("./hero.md"))
+    content: pageLoader(() => {trackPage("/css/hero"); return import("./hero.md")})
   }, {
     path: "/css/navigation",
     title: "- Navigation",
-    content: pageLoader(() => import("./navigation.md"))
+    content: pageLoader(() => {trackPage("/css/navigation"); return import("./navigation.md")})
 
   },
 ]
