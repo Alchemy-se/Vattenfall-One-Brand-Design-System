@@ -35,12 +35,30 @@ module.exports = {
   parsedHtml: ParsedHtml
 }; */
 
+
+const Code = (props) => {
+	console.log("#DEBUG props #",props);
+	return (
+		<div className={styles.htmlContainer}>
+			<div className={styles.htmlInnerContainer}>
+				<div className={styles.toggle}>{"<>"}</div>
+				<div className={styles.html}>
+					<div dangerouslySetInnerHTML={{__html: props.value}} />
+				</div>
+				<div className={styles.code}>
+					<pre><code>{props.value}</code></pre>
+				</div>
+			</div>
+		</div>
+	);
+}
+
 const Markdown = ({source}) => {
 	return (
 		<div className={`${styles.container} ${"markdown-body"}` }>
 			<ReactMarkdown
 				source={source}
-				renderers={{heading: Heading}}
+				renderers={{heading: Heading, code: Code}}
 			/>
 		</div>
 	)
