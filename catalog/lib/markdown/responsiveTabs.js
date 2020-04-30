@@ -51,6 +51,7 @@ class Frame extends Component {
 export default class CodeRenderer extends Component {
 	state = {
 		selectedTab: responsiveSizes[0].name,
+		selectedWidth: responsiveSizes[0].width,
 		iframeRef: React.createRef()
 	};
 
@@ -58,6 +59,7 @@ export default class CodeRenderer extends Component {
 		super(props);
 		this.iframe = React.createRef();
 		this.iframeWrapper = React.createRef();
+		this.containerRef = React.createRef();
 	}
 
 	componentDidMount() {
@@ -101,10 +103,11 @@ export default class CodeRenderer extends Component {
 		}
 	};
 
-	selectTab = (name) => {
+	selectTab = (name, width) => {
 		if(this.state.selectedTab === name) return;
 		this.setState({
-			selectedTab: name
+			selectedTab: name,
+			selectedWidth: width
 		});
 	};
 
@@ -112,7 +115,7 @@ export default class CodeRenderer extends Component {
 		return responsiveSizes.map((item) => {
 			const tabClasses = item.name === this.state.selectedTab ? styles.tabSelected : styles.tab;
 			return (
-				<div className={tabClasses} onClick={() => this.selectTab(item.name)}>
+				<div className={tabClasses} onClick={() => this.selectTab(item.name, item.width)}>
 					<div className={styles.iconContainer}>
 						{this.renderSizeIcon(item.name)}
 					</div>
@@ -137,6 +140,18 @@ export default class CodeRenderer extends Component {
 		}
 	}
 
+	getStyle() {
+		if(this.iframeWrapper && this.iframeWrapper.current){
+			const scale = Math.min(1, this.iframeWrapper.current.offsetWidth / this.state.selectedWidth);
+			return {transform: "scale("+scale+")"};
+		}
+		return {};
+	}
+
+	getContainerStyle = () => {
+		// TODO add logic to calc height so that it's not larger then necessary.
+		return {width: "100%", height: "100%"};
+	};
 
 	render() {
 		return (
@@ -144,11 +159,13 @@ export default class CodeRenderer extends Component {
 				<div className={styles.menuContainer}>
 					{this.renderTabs()}
 				</div>
-				<div className={styles.html} ref={this.iframeWrapper}>
-					<div className={this.getFrameContainerClassName()}>
+				<div className={styles.html} ref={this.containerRef}>
+					<div style={this.getContainerStyle()} ref={this.iframeWrapper}>
+					<div className={this.getFrameContainerClassName()} style={this.getStyle()}>
 						<Frame>
 							<div dangerouslySetInnerHTML={{__html: this.props.children}}/>
 						</Frame>
+					</div>
 					</div>
 				</div>
 			</div>
