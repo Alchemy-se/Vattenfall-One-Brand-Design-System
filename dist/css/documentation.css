@@ -39,4 +39,9 @@ p {
 .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected, .ant-menu-horizontal > .ant-menu-item:hover {
   border-bottom-color: rgb(25, 100, 163);
 }
+
+/* github-markdown overrides */
+.markdown-body .border {
+  border: none !important;
+}
 /*# sourceMappingURL=documentation.css.map */
