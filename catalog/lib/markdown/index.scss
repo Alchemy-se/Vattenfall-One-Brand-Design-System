@@ -125,6 +125,16 @@
     code {
       font-family: 'Roboto Mono',monospace;
       font-weight: 400;
+      font-size: 1em;
+
+      line-height: 1.44;
     }
+  }
+}
+
+.prismToken {
+  color: #FF5555;
+  .punctuation {
+    color: #535353;
   }
 }
