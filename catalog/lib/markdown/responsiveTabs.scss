@@ -136,8 +136,8 @@
 }
 
 .iframePhone {
-  //width: 375px;
-  max-width: 375px;
+  width: 375px;
+  //max-width: 375px;
   height: 667px;
   transform-origin: 0% 0%;
   transform: scale(1);
@@ -145,8 +145,8 @@
 }
 
 .iframeTablet {
-  //width: 768px;
-  max-width: 768px;
+  width: 768px;
+  //max-width: 768px;
   height: 1024px;
   transform-origin: 0% 0%;
   transform: scale(0.960795);
@@ -154,8 +154,8 @@
 }
 
 .iframeDesktop {
-  max-width: 1920px;
-  //width: 1920px;
+  //max-width: 1920px;
+  width: 1920px;
   height: 1080px;
   transform-origin: 0% 0%;
   transform: scale(0.384318);
