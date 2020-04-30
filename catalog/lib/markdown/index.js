@@ -1,8 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Heading from "./headingRenderer";
-import Prism from "prismjs";
-console.log("#DEBUG prism #", Prism);
+import Code from "./codeRenderer"
 import styles from "./index.scss";
 
 /*
@@ -35,40 +34,6 @@ module.exports = {
   virtualHtml: VirtualHtml,
   parsedHtml: ParsedHtml
 }; */
-
-const isToken = (t) => {
-	return t instanceof Prism.Token;
-}
-
-const renderPrismTokens = (tokens) => {
-	return tokens.map((t,i) => {
-		console.log("#DEBUG t #", t.type);
-		if(isToken(t)) {
-			return <span className={`${styles.prismToken} ${styles[t.type]}` }>{ Array.isArray(t.content) ? renderPrismTokens(t.content, styles) : t.content}</span>
-		} else {
-			return t;
-		}
-	});
-}
-// https://prismjs.com/
-const Code = (props) => {
-	// var lang = Prism.languages.hasOwnProperty(props.language) ? props.language : null;
-	// console.log(Prism.tokenize(props.value, Prism.languages.markup));
-	const tokens = Prism.tokenize(props.value, Prism.languages.markup);
-	return (
-		<div className={styles.htmlContainer}>
-			<div className={styles.htmlInnerContainer}>
-				<div className={styles.toggle}>{"<>"}</div>
-				<div className={styles.html}>
-					<div dangerouslySetInnerHTML={{__html: props.value}} />
-				</div>
-				<div className={styles.code}>
-					<pre><code>{renderPrismTokens(tokens)}</code></pre>
-				</div>
-			</div>
-		</div>
-	);
-}
 
 const Markdown = ({source}) => {
 	return (

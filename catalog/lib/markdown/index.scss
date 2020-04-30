@@ -22,6 +22,37 @@
   @media(min-width: 1000px) {
     margin: 0 30px 0 40px;
   }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    letter-spacing: normal;
+    color: #222222;
+    font-family: Vattenfall Hall;
+    font-size: 1rem;
+    line-height: 1.44;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 16px 0 0 0;
+  }
+  a {
+    color: #1964A3;
+    -webkit-transition: none;
+    transition: none;
+    border: none;
+    background: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-family: "Vattenfall Hall";
+    font-weight: 500;
+    font-style: normal;
+  }
 }
 
 .htmlContainer {
@@ -129,6 +160,9 @@
 
       line-height: 1.44;
     }
+  }
+  &.noBorder {
+    border: none;
   }
 }
 
