@@ -36,16 +36,10 @@ var splitText = function splitText(text) {
 };
 
 var parseYaml = function parseYaml(str, imports) {
-	console.log("#DEBUG str #", str);
-	console.log("#DEBUG imports #", imports);
 	var parsed = void 0;
 	try {
 		var ImportType = new Type("!import", {
 			kind: "scalar",
-			// TODO: Gracefully handle missing imports
-			// resolve(key) {
-			//   return imports.hasOwnProperty(key);
-			// },
 			construct: function construct(key) {
 				return imports[key];
 			}
@@ -147,7 +141,6 @@ export default class CodeRenderer extends Component {
 	render() {
 		const parsed = parseSpecimenBody(this.props.value);
 		const data = Object.assign({children: null, showSource: false, responsive: false}, parsed);
-		console.log("#DEBUG data #", data);
 		const tokens = Prism.tokenize(data.children, Prism.languages.markup);
 		const isHTML = stringIsHTML(data.children);
 		const codeClassNames = !isHTML ? `${styles.code} ${styles.noBorder}` : styles.code;

@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
-import raf from 'raf';
 import styles from "./responsiveTabs.scss";
 
 const responsiveSizes =  [
@@ -15,9 +14,9 @@ class Frame extends Component {
 	}
 
 	renderFrameContent() {
-		var doc = ReactDOM.findDOMNode(this).contentDocument;
+		let doc = ReactDOM.findDOMNode(this).contentDocument;
 		if(doc.readyState === 'complete') {
-			var contents = React.createElement(
+			let contents = React.createElement(
 				"div",
 				null,
 				this.props.head,
@@ -25,10 +24,10 @@ class Frame extends Component {
 			);
 			doc.body.innerHTML = "<div></div>";
 			doc.head.innerHTML = "";
-			var base = doc.createElement("base");
+			let base = doc.createElement("base");
 			base.setAttribute("href", window.location.href);
 			doc.head.appendChild(base);
-			var pageStyles = Array.from(document.querySelectorAll('head > style, link[rel="stylesheet"]'));
+			let pageStyles = Array.from(document.querySelectorAll('head > style, link[rel="stylesheet"]'));
 			pageStyles.forEach(function (s) {
 				doc.head.appendChild(s.cloneNode(true));
 			});
@@ -149,8 +148,11 @@ export default class CodeRenderer extends Component {
 	}
 
 	getContainerStyle = () => {
-		// TODO add logic to calc height so that it's not larger then necessary.
-		return {width: "100%", height: "100%"};
+		if(this.iframeWrapper && this.iframeWrapper.current) {
+			const scale = Math.min(1, this.iframeWrapper.current.offsetWidth / this.state.selectedWidth);
+			return {width: "100%", height: "100%", maxHeight: "calc(1080px * " + scale + ")"};
+		}
+		return {width: "100%", height: "100%", maxHeight: "1080px"};
 	};
 
 	render() {
