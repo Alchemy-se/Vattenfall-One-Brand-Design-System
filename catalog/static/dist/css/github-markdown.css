@@ -727,7 +727,23 @@
 }
 
 .markdown-body h5 {
-    font-size: .875em;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    letter-spacing: normal;
+    color: #003B5C;
+    font-family: 'Vattenfall Hall Display',Helvetica,sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    position: relative;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 48px 0 0 0;
 }
 
 .markdown-body h6 {
@@ -842,25 +858,15 @@
 }
 
 .markdown-body code {
-    /*padding: .2em .4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(27,31,35,.05);
-    border-radius: 3px;*/
-
-    display: inline-block;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.912871em;
-    line-height: 1;
-    text-indent: 0px;
-    background: rgb(255, 255, 255);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(238, 238, 238);
-    -o-border-image: initial;
-    border-image: initial;
+    background: #ffffff;
+    border: 1px solid #eee;
     border-radius: 1px;
+    display: inline-block;
+    font-family: 'Roboto Mono',monospace;
+    font-size: 0.9128709291752769em;
+    line-height: 1;
     padding: 0.12em 0.2em;
+    text-indent: 0;
 }
 
 .markdown-body pre {
@@ -1072,5 +1078,4 @@
     margin: 0 .2em .25em -1.6em;
     vertical-align: middle;
 }
-
 /*# sourceMappingURL=github-markdown.css.map */

@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from "./main.js";
 
-//All this needed?
-console.log("#DEBUG 1 #");
+// jquery is required to be global
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
