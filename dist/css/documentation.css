@@ -14,34 +14,4 @@ p {
   letter-spacing: 0;
   line-height: 32px;
 }
-
-/*ANT overrides*/
-.ant-menu-item > a:active, a:hover {
-  text-decoration: none;
-  outline: 0;
-}
-.ant-menu-item > a:focus {
-  text-decoration: none;
-  outline: 0;
-}
-.ant-menu-horizontal > .ant-menu-item > a, .ant-menu-item > a {
-  color: rgb(25, 100, 163);
-}
-.ant-menu-horizontal > .ant-menu-item > a:hover, .ant-menu-item > a:hover {
-  color: rgb(34, 34, 34);
-}
-.ant-menu-item.ant-menu-item-selected a {
-  color: rgb(34, 34, 34);
-}
-.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
-  border-right-color: rgb(25, 100, 163);
-}
-.ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected, .ant-menu-horizontal > .ant-menu-item:hover {
-  border-bottom-color: rgb(25, 100, 163);
-}
-
-/* github-markdown overrides */
-.markdown-body .border {
-  border: none !important;
-}
 /*# sourceMappingURL=documentation.css.map */

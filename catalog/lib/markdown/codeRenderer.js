@@ -6,24 +6,6 @@ import styles from "./index.scss";
 
 const stringIsHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 
-const responsiveSizes =  [
-	{name: 'Phone', width: 375, height: 667},
-	{name: 'Tablet', width: 768, height: 1024},
-	{name: 'Desktop', width: 1920, height: 1080},
-]
-
-var objectWithoutProperties = function (obj, keys) {
-	var target = {};
-
-	for (var i in obj) {
-		if (keys.indexOf(i) >= 0) continue;
-		if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-		target[i] = obj[i];
-	}
-
-	return target;
-};
-
 var INITIAL_SEPARATOR = /[ \t]*---[ \t]*\n/;
 var SEPARATOR = /\n[ \t]*---[ \t]*\n/;
 var splitText = function splitText(text) {
@@ -56,16 +38,6 @@ var parseYaml = function parseYaml(str, imports) {
 	return typeof parsed === "string" ? void 0 : parsed;
 };
 
-/*var parseSpecimenYamlBody = function parseSpecimenYamlBody(_mapBodyToProps) {
-	return function () {
-		var body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-		var imports = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-		var mapBodyToProps = _mapBodyToProps || defaultMapBodyToProps;
-		return mapBodyToProps(parseYaml(body, imports), body);
-	};
-};*/
-
 var _extends = Object.assign || function (target) {
 	for (var i = 1; i < arguments.length; i++) {
 		var source = arguments[i];
@@ -85,7 +57,6 @@ var defaultMapBodyToProps = function defaultMapBodyToProps(parsedBody, rawBody) 
 };
 
 var parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
-	// return function () {
 		var body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
 		var imports = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
@@ -95,7 +66,6 @@ var parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
 			children = splitBody[1];
 
 		return mapBodyToProps(_extends({}, parseYaml(props, imports), { children: children }), body);
-	// };
 };
 
 export default class CodeRenderer extends Component {
@@ -108,10 +78,10 @@ export default class CodeRenderer extends Component {
 	};
 
 	static renderPrismTokens = (tokens) => {
-		return tokens.map((t) => {
+		return tokens.map((t, i) => {
 			if(CodeRenderer.isToken(t)) {
 				return (
-					<span className={`${styles.prismToken} ${styles[t.type]}` }>
+					<span className={`${styles.prismToken} ${styles[t.type]}` } key={"coderenderer-"+i+"-"+t.tag}>
 					{ Array.isArray(t.content) ? CodeRenderer.renderPrismTokens(t.content, styles) : t.content}
 				</span>
 				);

@@ -1,5 +1,4 @@
 import React from "react";
-import Code from "./codeRenderer"
 import styles from "./headingRenderer.scss";
 
 const HeadingHashLink = (rawValue) => {
