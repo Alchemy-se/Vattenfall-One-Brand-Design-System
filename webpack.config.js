@@ -6,7 +6,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'dist/js/'),
 		publicPath: "/js/",
-		filename: 'horizon.min.js'
+		filename: 'main.min.js'
 	},
 	stats: {
 		colors: true
