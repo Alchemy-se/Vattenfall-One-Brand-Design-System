@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="8 19 23.4481752 19 17.4343066 25.3426477 19.040146 27 27.8 17.9958772 19.040146 9 17.4343066 10.6491067 23.4481752 17 8 17"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button-/-Text-/-Medium-/-Default" transform="translate(0.000000, -17.000000)">
+            <g id="Icon-/-Symbol-/-Arrow-/-Primary-/-Right" transform="translate(-8.000000, 8.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="white" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Color-/-Primary-/-Blue-/-Default" mask="url(#mask-2)" fill="white" fill-rule="nonzero">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
