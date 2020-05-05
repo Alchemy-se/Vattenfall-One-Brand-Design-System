@@ -109,20 +109,6 @@ const VFDrawer = ({closeDrawer, drawerOpen, closable, onClick, selectedKeys}) =>
 				selectedKeys={selectedKeys}
 			>
 				{renderMenuContent(pathname)}
-				{/*{renderMenuContent(pathname)}*/}
-				{/*<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>*/}
-				{/*<Menu.Item key="/"><Link to={"/"}>Digital Design System</Link></Menu.Item>*/}
-				{/*<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>*/}
-				{/*<SubMenu*/}
-				{/*	className={styles.subMenu}*/}
-				{/*	key="sub5"*/}
-				{/*	title={*/}
-				{/*		<span><span>Components</span></span>*/}
-				{/*	}*/}
-				{/*>*/}
-				{/*	<Menu.Item key="/grid"><Link to={"/grid"}>Grid</Link></Menu.Item>*/}
-				{/*	<Menu.Item key="/responsive"><Link to={"/responsive"}>Responsive</Link></Menu.Item>*/}
-				{/*</SubMenu>*/}
 			</Menu>
 		</Drawer>
 	)
