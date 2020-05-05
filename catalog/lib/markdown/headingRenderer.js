@@ -78,8 +78,8 @@ const Heading = (props) => {
 			);
 		}
 		default: {
-			throw new Error("Handle case: " + props.level )
-			return <p>TEST</p>
+			console.error("HeadingRenderer missing case for level: ", props.level);
+			return null;
 		}
 	}
 }
