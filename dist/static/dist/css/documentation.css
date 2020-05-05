@@ -1,0 +1,17 @@
+p {
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+  color: #222222;
+}
+
+#main h2 {
+  color: #222222;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+/*# sourceMappingURL=documentation.css.map */

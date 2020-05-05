@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
 	mode: "development",
@@ -18,6 +19,7 @@ module.exports = {
 	devServer: {
 		inline: true,
 		hot: true,
+		writeToDisk: true,
 		contentBase: path.join(__dirname, 'dist'),
 		historyApiFallback: true
 	},
@@ -49,5 +51,8 @@ module.exports = {
 	},
 	resolve: {
 		modules: ["node_modules", path.resolve(__dirname, "catalog")],
-	}
+	},
+	plugins: [
+		new CopyPlugin([{ from: "catalog/static", to: "../static" }])
+	]
 };

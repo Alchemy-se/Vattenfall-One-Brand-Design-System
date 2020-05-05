@@ -18,7 +18,7 @@ const Examples = () => (
             <img className={styles.examples__image} src="./img/use-cases/Web/Homepage-Desktop.jpg" />
           </a>
           <p style={{marginTop: "20px" }}>
-            <a href="/start.html" target="_blank" rel="noopener">See the coded page</a>
+            <a href="/static/start.html" target="_blank" rel="noopener">See the coded page</a>
           </p>
           <p>
             <a href="https://share.goabstract.com/6f85c042-9b71-4bcd-96a5-9c27a2b2a581" target="_blank" rel="noopener">
@@ -33,7 +33,7 @@ const Examples = () => (
             <img className={styles.examples__image} src="./img/use-cases/Web/Article-Desktop.jpg" />
           </a>
           <p style={{marginTop: "20px"}}>
-            <a href="./article.html" target="_blank" rel="noopener">See the coded page</a>
+            <a href="/static/article.html" target="_blank" rel="noopener">See the coded page</a>
           </p>
           <p>
             <a href="https://share.goabstract.com/cb9164a3-976c-474d-a351-72906a7f4c13" target="_blank" rel="noopener">
@@ -50,7 +50,7 @@ const Examples = () => (
             <img className={styles.examples__image} src="./img/use-cases/Web/Investors-Desktop.jpg" />
           </a>
           <p style={{marginTop: "20px"}}>
-            <a href="./investors.html" target="_blank" rel="noopener">
+            <a href="/static/investors.html" target="_blank" rel="noopener">
               See the coded page
             </a>
           </p>
