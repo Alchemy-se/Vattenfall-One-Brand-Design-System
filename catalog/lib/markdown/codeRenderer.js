@@ -69,9 +69,12 @@ var parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
 };
 
 export default class CodeRenderer extends Component {
-	state = {
-		showCode: false
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			showCode: false
+		};
+	}
 
 	static isToken = (t) => {
 		return t instanceof Prism.Token;

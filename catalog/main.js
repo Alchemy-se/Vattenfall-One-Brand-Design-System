@@ -3,7 +3,7 @@ import {
 	BrowserRouter as Router
 } from "react-router-dom";
 
-import Routes from "routes";
+import Routes from "./routes";
 
 import Hamburger from "./lib/hamburger";
 import Drawer from "./lib/drawer/drawer";
@@ -30,13 +30,17 @@ function trackPageView(path) {
 }
 
 export default class App extends Component {
-	state = {
-		drawerOpen: window.innerWidth >= 1000,
-		closable: window.innerWidth <= 999,
-		selectedKeysMenu: [getCurrentLocation()],
-		selectedKeysSubmenu: [getCurrentLocation(true)],
-		currentPath: getCurrentLocation(true)
-	};
+
+	constructor(props){
+		super(props);
+		this.state = {
+			drawerOpen: window.innerWidth >= 1000,
+			closable: window.innerWidth <= 999,
+			selectedKeysMenu: [getCurrentLocation()],
+			selectedKeysSubmenu: [getCurrentLocation(true)],
+			currentPath: getCurrentLocation(true)
+		};
+	}
 
 	resize = () => {
 		if(window.innerWidth >= 1000 && this.state.closable === true) {
