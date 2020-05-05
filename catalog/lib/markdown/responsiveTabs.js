@@ -48,17 +48,16 @@ class Frame extends Component {
 }
 
 export default class CodeRenderer extends Component {
-	state = {
-		selectedTab: responsiveSizes[0].name,
-		selectedWidth: responsiveSizes[0].width,
-		iframeRef: React.createRef()
-	};
-
 	constructor(props){
 		super(props);
 		this.iframe = React.createRef();
 		this.iframeWrapper = React.createRef();
 		this.containerRef = React.createRef();
+		this.state = {
+			selectedTab: responsiveSizes[0].name,
+			selectedWidth: responsiveSizes[0].width,
+			iframeRef: React.createRef()
+		};
 	}
 
 	componentDidMount() {
