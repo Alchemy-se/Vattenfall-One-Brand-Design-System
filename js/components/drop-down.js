@@ -97,7 +97,6 @@
   var checkboxesDropdowns = document.querySelectorAll(
     '[data-control="vf-dropdown-data"]'
   );
-  console.log("#DEBUG checkboxesDropdowns #", checkboxesDropdowns);
   for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
     new CheckboxDropdown(checkboxesDropdowns[i]);
   }

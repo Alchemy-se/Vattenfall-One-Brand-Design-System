@@ -4,8 +4,6 @@ import { safeLoad, CORE_SCHEMA, Type, Schema } from 'js-yaml';
 import ResponsiveTabs from "./responsiveTabs";
 import styles from "./index.scss";
 
-const stringIsHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
-
 var INITIAL_SEPARATOR = /[ \t]*---[ \t]*\n/;
 var SEPARATOR = /\n[ \t]*---[ \t]*\n/;
 var splitText = function splitText(text) {
@@ -52,27 +50,27 @@ var _extends = Object.assign || function (target) {
 	return target;
 };
 
-var defaultMapBodyToProps = function defaultMapBodyToProps(parsedBody, rawBody) {
+const defaultMapBodyToProps = function defaultMapBodyToProps(parsedBody, rawBody) {
 	return parsedBody || rawBody;
 };
 
-var parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
+const parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
 		var body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
 		var imports = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
 		var mapBodyToProps = defaultMapBodyToProps;
 		var splitBody = splitText(body);
 		var props = splitBody[0],
 			children = splitBody[1];
-
 		return mapBodyToProps(_extends({}, parseYaml(props, imports), { children: children }), body);
 };
 
 export default class CodeRenderer extends Component {
 	constructor(props) {
 		super(props);
+		const parsed = parseSpecimenBody(props.value);
+		const data = Object.assign({children: null, showSource: false, responsive: false}, parsed);
 		this.state = {
-			showCode: false
+			showCode: data.showSource
 		};
 	}
 
@@ -112,17 +110,18 @@ export default class CodeRenderer extends Component {
 	};
 
 	render() {
-		const parsed = parseSpecimenBody(this.props.value);
+		const {value, language} = this.props;
+		const isHTML = language === "html";
+		const parsed = parseSpecimenBody(value);
 		const data = Object.assign({children: null, showSource: false, responsive: false}, parsed);
 		const tokens = Prism.tokenize(data.children, Prism.languages.markup);
-		const isHTML = stringIsHTML(data.children);
 		const codeClassNames = !isHTML ? `${styles.code} ${styles.noBorder}` : styles.code;
 		return (
 			<div className={styles.htmlContainer}>
 				<div className={styles.htmlInnerContainer}>
 					{!isHTML ? null : <div className={styles.toggle} onClick={this.onToggle}>{"<>"}</div>}
 					{!isHTML ? null : this.renderHTML(data)}
-					{this.state.showCode || !isHTML || data.showSource ?
+					{this.state.showCode || !isHTML ?
 						<div className={codeClassNames}>
 							<pre><code>{CodeRenderer.renderPrismTokens(tokens)}</code></pre>
 						</div>
