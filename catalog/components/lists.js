@@ -7,7 +7,7 @@ export default class Lists extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<PageHeader title={"- Lists"}/>
+				<PageHeader title={"Lists"}/>
 				<Markdown source={mdText} />
 			</React.Fragment>
 		)

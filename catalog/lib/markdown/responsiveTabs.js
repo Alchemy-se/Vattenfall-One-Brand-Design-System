@@ -47,7 +47,7 @@ class Frame extends Component {
 	}
 }
 
-export default class CodeRenderer extends Component {
+export default class ResponsiveTabs extends Component {
 	constructor(props){
 		super(props);
 		this.iframe = React.createRef();
@@ -110,10 +110,10 @@ export default class CodeRenderer extends Component {
 	};
 
 	renderTabs = () => {
-		return responsiveSizes.map((item) => {
+		return responsiveSizes.map((item, index) => {
 			const tabClasses = item.name === this.state.selectedTab ? styles.tabSelected : styles.tab;
 			return (
-				<div className={tabClasses} onClick={() => this.selectTab(item.name, item.width)}>
+				<div className={tabClasses} onClick={() => this.selectTab(item.name, item.width)} key={index}>
 					<div className={styles.iconContainer}>
 						{this.renderSizeIcon(item.name)}
 					</div>

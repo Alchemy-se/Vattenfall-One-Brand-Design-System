@@ -55,11 +55,11 @@ const defaultMapBodyToProps = function defaultMapBodyToProps(parsedBody, rawBody
 };
 
 const parseSpecimenBody = function parseSpecimenBody(_mapBodyToProps) {
-		var body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-		var imports = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-		var mapBodyToProps = defaultMapBodyToProps;
-		var splitBody = splitText(body);
-		var props = splitBody[0],
+		let body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+		let imports = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+		let mapBodyToProps = defaultMapBodyToProps;
+		let splitBody = splitText(body);
+		let props = splitBody[0],
 			children = splitBody[1];
 		return mapBodyToProps(_extends({}, parseYaml(props, imports), { children: children }), body);
 };

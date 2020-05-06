@@ -19,7 +19,7 @@ module.exports = {
 	devServer: {
 		inline: true,
 		hot: true,
-		writeToDisk: true,
+		// writeToDisk: true,
 		contentBase: path.join(__dirname, 'dist'),
 		historyApiFallback: true
 	},

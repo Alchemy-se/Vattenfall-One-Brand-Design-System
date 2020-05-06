@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./hamburger.scss";
 
-const Hamburger = ({onClick}) => {
+const Hamburger = ({onClick, className}) => {
+	const classes = className ? `${styles.container} ${className}` : styles.container;
 	return (
-		<div className={styles.container} onClick={onClick}>
+		<div className={classes} onClick={onClick}>
 			<svg viewBox="64 64 896 896" focusable="false" className="" data-icon="menu" width="1em" height="1em"
 				 fill="currentColor" aria-hidden="true">
 				<path

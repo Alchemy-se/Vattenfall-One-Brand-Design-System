@@ -1,12 +1,9 @@
-import {Link} from "react-router-dom";
 import React from "react";
 import {Drawer, Menu} from "antd";
 import {useLocation} from "react-router-dom";
 import GetStartedMenu from "./getStartedMenu";
 import ComponentsMenu from "./componentsMenu";
 import styles from "./drawer.scss";
-
-const { SubMenu } = Menu;
 
 const PACKAGE = require("../../../package.json");
 
@@ -86,6 +83,7 @@ const renderMenuContent = (_path) => {
 const VFDrawer = ({closeDrawer, drawerOpen, closable, onClick, selectedKeys}) => {
 	const location = useLocation();
 	const pathname = location.pathname;
+	const onClickMenu = onClick || function() {};
 	return (
 		<Drawer
 			className={styles.container}
@@ -99,11 +97,11 @@ const VFDrawer = ({closeDrawer, drawerOpen, closable, onClick, selectedKeys}) =>
 			visible={drawerOpen}
 			footer={renderFooter()}
 			closable={closable}
-			mask={false}
+			mask={closable}
 			width={250}
 		>
 			<Menu
-				onClick={onClick}
+				onClick={onClickMenu}
 			  	style={{ background: "rgb(237, 241, 246" }}
 				mode="inline"
 				selectedKeys={selectedKeys}
