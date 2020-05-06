@@ -7,7 +7,7 @@ export default class UtilityTypography extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<PageHeader title={"- Utility Typography"}/>
+				<PageHeader title={"Utility Typography"}/>
 				<Markdown source={mdText} />
 			</React.Fragment>
 		)

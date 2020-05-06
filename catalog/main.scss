@@ -3,10 +3,26 @@
   height: calc(100vh - 64px);
   position: relative;
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow: scroll;
   top: 64px;
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
+  transition: -webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
+  transition: transform .3s cubic-bezier(.78,.14,.15,.86);
+  transition: transform .3s cubic-bezier(.78,.14,.15,.86),-webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
+  &.drawerOpen {
+      @media(max-width: 999px) {
+        transform: translateX(250px);
+      }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+
 }
 
 .innerContainer {

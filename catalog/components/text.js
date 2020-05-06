@@ -7,7 +7,7 @@ export default class Text extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<PageHeader title={"- Text"}/>
+				<PageHeader title={"Text"}/>
 				<Markdown source={mdText} />
 			</React.Fragment>
 		)

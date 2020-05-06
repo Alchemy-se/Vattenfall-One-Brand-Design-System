@@ -26,6 +26,8 @@ const getCurrentLocation = (full) => {
 };
 
 function trackPageView(path) {
+	console.warn("GA DISABLED");
+	return;
 	ReactGA.pageview(path);
 }
 
@@ -77,10 +79,6 @@ export default class App extends Component {
 		});
 	};
 
-	onClickMenu = () => {
-		// this.setState({selectedKeysSubmenu: [getCurrentLocation(true)]})
-	};
-
 	onClickHeader = ({keyPath}) => {
 		this.setState({
 			selectedKeysMenu: [keyPath[0]]
@@ -102,16 +100,16 @@ export default class App extends Component {
 	};
 
 	render() {
+		const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
 		return (
 			<Router>
 				<Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu}/>
-				<div className={styles.container}>
-					<Hamburger onClick={this.openDrawer}/>
+				<div className={classes}>
+					<Hamburger onClick={this.openDrawer} className={styles.hamburger}/>
 					<Drawer
 						closeDrawer={this.closeDrawer}
 						drawerOpen={this.state.drawerOpen}
 						closable={this.state.closable}
-						onClick={this.onClickMenu}
 						selectedKeys={this.state.selectedKeysSubmenu}
 					/>
 					<div className={styles.innerContainer}>

@@ -7,7 +7,7 @@ export default class Button extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<PageHeader title={"- Button"}/>
+				<PageHeader title={"Button"}/>
 				<Markdown source={mdText} />
 			</React.Fragment>
 		)
