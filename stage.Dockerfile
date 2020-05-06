@@ -11,9 +11,6 @@ COPY . .
 RUN yarn build
 RUN cp -r ./dist /app/build
 
-# RUN yarn catalog-build
-# RUN mv ./catalog/build /app/build
-
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.15
 COPY --from=build-stage /app/build/dist /usr/share/nginx/html

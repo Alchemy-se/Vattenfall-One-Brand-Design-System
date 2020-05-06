@@ -8,8 +8,8 @@ RUN yarn install
 COPY . .
 
 # RUN CI=true yarn test
-RUN yarn catalog-build
-RUN mv ./catalog/build /app/build
+RUN yarn build
+RUN cp -r ./dist /app/build
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.15
