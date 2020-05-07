@@ -32,10 +32,8 @@
 	    	flex-basis: 0; //Equal length
 
 	    	padding: 22px;
-	    	background-color: rgb(255,255,255);
-	    	border-right: 1px solid rgb(237, 241, 246);
-
-	    	//box-shadow: 0 0 0 0 rgb(32, 113, 181);
+	    	background-color: $white;
+	    	border-right: 1px solid $vattenfall-light-blue;
 	    	box-shadow: 0 0px 0 0 transparent;
 	    	transition: box-shadow .3s ease-in-out;;
 
@@ -50,7 +48,7 @@
 	    	@include media-breakpoint-down(lg) {
 
 					align-items: center;
-					color: rgb(25, 100, 163);
+					color: $vattenfall-button-blue;
 
 
 					&:before{
@@ -67,19 +65,17 @@
 
 	    	&.vf-tab-bar-item--active{
 
-	    		//border-bottom: 3px solid rgb(32, 113, 181);
-
-	    		box-shadow: 0 3px 0 0 rgb(32, 113, 181);
+	    		box-shadow: 0 3px 0 0 $vattenfall-mid-blue;
 
 	    		@include media-breakpoint-down(lg) {
 
-	    			color: rgb(34, 34, 34);
+	    			color: $dark;
 
 	    		}
 
 	    		.vf-tab-bar-link{
 
-					color: rgb(34, 34, 34);
+					color: $dark;
 
 				}
 	    		
@@ -91,14 +87,14 @@
 
 	    		@include media-breakpoint-down(lg) {
 
-	    			color: rgb(118, 118, 118);
+	    			color: $btn-disabled-color;
 
 	    		}
 
 		   		.vf-tab-bar-link{
 
 		   			pointer-events: none;
-		    		color: rgb(118, 118, 118);
+		    		color: $btn-disabled-color;
 
 		    	}
 	    		
@@ -110,7 +106,7 @@
 
 	    			&:hover{
 						
-						color: rgb(32, 113, 181);
+						color: $vattenfall-mid-blue;
 
 					}
 		    		
@@ -120,7 +116,7 @@
 
 		    		&:hover{
 						
-						color: rgb(32, 113, 181);
+						color: $vattenfall-mid-blue;
 
 					}
 				}
@@ -140,8 +136,7 @@
 	    		}
 
 	    		display: flex;
-		    	color: rgb(25, 100, 163);
-				font-family: "Vattenfall Hall";
+		    	color: $vattenfall-button-blue;
 				font-size: 16px;
 				font-weight: 500;
 				letter-spacing: -0.05px;
@@ -175,8 +170,8 @@
 			display: none;
 			top: 94px;
 
-			color: rgb(34, 34, 34);
-			font-family: "Vattenfall Hall Bold";
+			color: $dark;
+			font-weight: 600;
 			font-size: 18px;
 			letter-spacing: 0px;
 			line-height: 24px;

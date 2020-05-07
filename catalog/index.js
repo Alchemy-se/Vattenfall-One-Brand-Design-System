@@ -8,8 +8,7 @@ window.jQuery = $;
 window.$ = $;
 global.jQuery = $;
 
-import Video from './Video'
-
+// import Video from './Video'
 
 ReactDOM.render(
 	<Main />,
