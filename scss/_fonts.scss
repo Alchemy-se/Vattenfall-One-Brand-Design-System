@@ -69,7 +69,27 @@
 }
 
 @font-face {
+    font-family: "Vattenfall Hall";
+    src:     url($fontPath + "/VattenfallHallDisplay-Bold.eot");
+    src: url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+         url($fontPath + "/VattenfallHallDisplay-Bold.woff2") format("woff2"),
+         url($fontPath + "/VattenfallHallDisplay-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Vattenfall Hall Bold";
+    src:     url($fontPath + "/VattenfallHall-Bold.eot");
+    src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"),
+         url($fontPath + "/VattenfallHall-Bold.woff2") format("woff2"),
+         url($fontPath + "/VattenfallHall-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vattenfall Hall";
     src:     url($fontPath + "/VattenfallHall-Bold.eot");
     src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"),
          url($fontPath + "/VattenfallHall-Bold.woff2") format("woff2"),
