@@ -1,0 +1,14 @@
+#catalog .__articles p {
+    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 36px
+}
+#catalog .__articles h2 {
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 72px;
+    letter-spacing: -0.2px;
+}
+

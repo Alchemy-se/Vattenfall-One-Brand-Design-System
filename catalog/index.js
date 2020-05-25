@@ -18,6 +18,7 @@ global.jQuery = $;
 import Welcome from './WELCOME';
 import Designers from './designers/getting-started-designers';
 import Guidelines from './Guidelines';
+import Articles from "./articles/articles";
 import Video from './Video'
 
 const styles = [
@@ -31,7 +32,7 @@ const scripts = [
 ]
 
 const trackPage = (page) => {
-  ReactGA.pageview(page);
+  // ReactGA.pageview(page);
 };
 
 const pages = [
@@ -39,6 +40,11 @@ const pages = [
     path: "/",
     title: "Digital Design System",
     content: () => {trackPage("/"); return <Welcome/>}
+  },
+  {
+    title: "Articles",
+    path: "/articles",
+    content: () => {trackPage("/articles"); return <Articles/>}
   },
   {
     title: 'Get started',
