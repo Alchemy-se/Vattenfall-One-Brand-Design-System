@@ -12,7 +12,7 @@ const Header = ({onClick, selectedKeys}) => {
 				</Link>
 			</div>
 			<Menu mode={"horizontal"} className={styles.menuContainer} onClick={onClick} selectedKeys={selectedKeys}>
-				<Menu.Item key="/"><Link to={"/"}>Digital Design System</Link></Menu.Item>
+				<Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
 				<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 				<Menu.Item key="/components"><Link to={"/components/grid"}>Components</Link></Menu.Item>
 				<Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>

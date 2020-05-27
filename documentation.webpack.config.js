@@ -41,16 +41,20 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				loaders: [
+				loader: [
 					"style-loader?sourceMap",
 					"css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]",
 					"sass-loader?sourceMap"
 				]
-			}
+			},
+		   {
+			   test: /\.(png|svg|jpg|gif)$/,
+			   loader: ['file-loader']
+	       },
 		],
 	},
 	resolve: {
-		modules: ["node_modules", path.resolve(__dirname, "catalog")],
+		modules: ["node_modules", path.resolve(__dirname, "catalog")]
 	},
 	plugins: [
 		new CopyPlugin([{ from: "catalog/static", to: "../static" }])
