@@ -112,7 +112,7 @@ export default class App extends Component {
 						closable={this.state.closable}
 						selectedKeys={this.state.selectedKeysSubmenu}
 					/>
-					<div className={styles.innerContainer}>
+					<div className={styles.innerContainer} style={{backgroundColor: "#f2f2f2"}}>
 						<Routes onRouteChange={this.onRouteChange}/>
 					</div>
 				</div>

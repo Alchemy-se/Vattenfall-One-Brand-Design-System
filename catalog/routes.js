@@ -19,6 +19,8 @@ import Lists from "./components/lists";
 
 import Welcome from "./WELCOME";
 import Intro from "./components/intro";
+import Articles from "./articles/articles";
+import ArticlesOverview from "./articles/articlesOverview";
 
 import DynamicView from "./components/dynamicView";
 
@@ -82,6 +84,7 @@ const COMPONENTS_ROUTES = [
 
 const Routes = ({onRouteChange}) => {
 	usePageViews(onRouteChange);
+	let location = useLocation();
 	return (
 		<Switch>
 			<Route path="/examples">
@@ -111,6 +114,10 @@ const Routes = ({onRouteChange}) => {
 			<Route path={"/guidelines"}>
 				<Guidelines />
 			</Route>
+			<Route path={"/articles"}>
+				<ArticlesOverview />
+			</Route>
+			<Route exact path={"/article/:articleId"} component={Articles}/>
 			<Route path="/">
 				<Welcome />
 			</Route>
