@@ -42,8 +42,10 @@ const MENU_GROUP_ITEMS = {
 		{path: "/css/shareable-image", name: "Shareable Image"},
 		{path: "/css/small-quote", name: "Small Quote"},
 		{path: "/css/three-column", name: "Three Column"},
-		{path: "/css/topbar", name: "Top Bar"},
-		{path: "/css/organisms", name: "Organisms"},
+		{path: "/css/topbar", name: "Top Bar"}
+	],
+	organisms: [
+		{path: "/css/organisms", name: "Intro"},
 		{path: "/css/footer", name: "Footer"},
 		{path: "/css/form", name: "Form"},
 		{path: "/css/hero", name: "Hero"},
@@ -59,6 +61,7 @@ const MENU_GROUP_ITEMS = {
 const MENU_GROUPS = [
 	"Components",
 	"Atoms",
+	"Organisms",
 	"Utilities"
 ];
 
@@ -66,8 +69,8 @@ const renderGroupContent = (group) => {
 	const lowercaseGroup = group.toLowerCase();
 	return MENU_GROUP_ITEMS[lowercaseGroup].map((item) => {
 		return (
-			<Menu.Item key={"/components"+item.path}>
-				<Link to={"/components"+item.path}>{item.name}</Link>
+			<Menu.Item key={"/components" + item.path}>
+				<Link to={"/components" + item.path}>{item.name}</Link>
 			</Menu.Item>
 		);
 	});
