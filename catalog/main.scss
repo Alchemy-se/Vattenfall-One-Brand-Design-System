@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  //height: calc(100vh - 64px);
+  height: calc(100vh - 64px);
   position: relative;
   display: flex;
   margin: 0;
@@ -29,7 +29,7 @@
   box-sizing: border-box;
   display: flex;
   font-family: "Vattenfall Hall";
-  min-height: 100vh;
+  min-height: 100%;
   line-height: 32px;
   width: 100%;
   flex-direction: column;

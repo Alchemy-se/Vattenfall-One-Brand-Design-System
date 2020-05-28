@@ -15,6 +15,10 @@ p {
   line-height: 32px;
 }
 
+.documentation-container a {
+  transition: none;
+}
+
 .ant-drawer-body {
   padding-left: 0;
   padding-right: 0;
