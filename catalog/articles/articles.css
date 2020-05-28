@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-figure {
+.newsitem figure {
     position: relative;
     width: 100%;
     display: block;
@@ -54,14 +54,14 @@ figure {
     overflow: hidden;
 }
 
-picture {
+.newsitem picture {
     position: relative;
     width: 100%;
     display: block;
     height: auto;
 }
 
-picture img {
+.newsitem picture img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,55 +71,18 @@ picture img {
     min-height: 100%;
 }
 
-picture img {
+.newsitem picture img {
     position: absolute;
 }
 
-img {
+.newsitem img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-@media screen and (min-width: 48em) {
-    figure[data-hascopyright=true] .attribution {
-        font-size: .9rem;
-    }
-}
-
 .date {
     padding-left: 3px;
-}
-
-figure .attribution {
-    color: #fff;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    line-height: 23px;
-    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    cursor: pointer;
-    min-height: 22px;
-    min-width: 22px;
-    left: calc(100% - 22px);
-    -webkit-transition: background .2s, left .2s;
-    -o-transition: background .2s, left .2s;
-    transition: background .2s, left .2s;
-}
-
-span {
-    display: none;
-    position: relative;
-    opacity: 0;
-    -webkit-transition: opacity .1s;
-    -o-transition: opacity .1s;
-    transition: opacity .1s;
-    -webkit-transition-delay: .3s;
-    -o-transition-delay: .3s;
-    transition-delay: .3s;
-    white-space: nowrap;
 }
 
 .attribution::after {
@@ -172,7 +135,7 @@ span {
 }
 
 @media (min-width: 576px) {
-    h3 {
+    .heading h3 {
         font-weight: 700;
         font-size: 28px;
         line-height: 1.33;
@@ -180,7 +143,7 @@ span {
     }
 }
 
-h3 {
+.heading h3 {
     font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 24px;
@@ -188,7 +151,7 @@ h3 {
     line-height: 28px;
 }
 
-h1, h2, h3, h4 {
+.heading h1 h2 h3 h4 {
     margin-bottom: 1rem;
     color: inherit;
 }
@@ -201,7 +164,7 @@ h1, h2, h3, h4 {
     padding: 0 0 .3333333333rem;
 }
 
-a {
+.keywords .share-links a {
     text-decoration: none;
     color: #000;
 }
@@ -301,7 +264,7 @@ a {
     }
 }
 
-button input[type=button] {
+.share-wrapper button input[type=button] {
     background: 0 0;
     border: 0;
     padding: 0;
@@ -421,7 +384,7 @@ button input[type=button] {
     }
 }
 
-p {
+.abstract p {
     padding-top: 0 !important;
     margin: 0;
 }
