@@ -34,8 +34,25 @@ module.exports = {
   virtualHtml: VirtualHtml,
   parsedHtml: ParsedHtml
 }; */
+import { useEffect } from 'react';
+
+const useScript = url => {
+	useEffect(() => {
+		const script = document.createElement('script');
+
+		script.src = url;
+		script.async = true;
+
+		document.body.appendChild(script);
+
+		return () => {
+			document.body.removeChild(script);
+		}
+	}, [url]);
+};
 
 const Markdown = ({source}) => {
+	useScript("/js/horizon.min.js");
 	return (
 		<div className={`${styles.container} ${"markdown-body"}` }>
 			<ReactMarkdown
