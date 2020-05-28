@@ -6,9 +6,10 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(237, 241, 246);
+  //background: rgb(237, 241, 246);
   z-index: 2;
   display: flex;
+  border-bottom: 1px solid #f0f0f0;
 }
 .logoContainer {
   margin-right: auto;
@@ -24,5 +25,5 @@
 
 .menuContainer {
   display: flex;
-  background: rgb(237, 241, 246);
+  //background: rgb(237, 241, 246);
 }

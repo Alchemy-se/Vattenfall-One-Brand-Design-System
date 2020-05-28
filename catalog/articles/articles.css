@@ -1,10 +1,3 @@
-/*.__articles p {*/
-/*    font-family: "Vattenfall Hall", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-/*    font-size: 1.2rem;*/
-/*    letter-spacing: 0;*/
-/*    line-height: 36px*/
-/*}*/
-
 .__articles h2 {
     font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
     font-weight: 600;
@@ -15,6 +8,10 @@
 
 .__articles .pagelistblock_list > div {
     margin-bottom: 32px;
+}
+
+.articlesCardWrapper {
+    padding: 0 20px;
 }
 
 .newsitem {
@@ -31,7 +28,7 @@
     flex-grow: 1;
     cursor: pointer;
     position: relative;
-    background-color: #fff;
+    background-color: #f2f2f2;
     overflow: hidden;
     line-height: 1.2em;
     max-height: 40em;
@@ -394,3 +391,40 @@
         font-size: .9rem;
     }
 }
+
+.vf_container_custom {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: left;
+}
+@media (min-width: 576px) {
+    .vf_container_custom {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .vf_container_custom {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .vf_container_custom {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vf_container_custom {
+        max-width: 1160px;
+    }
+}
+
+
+
+
+
