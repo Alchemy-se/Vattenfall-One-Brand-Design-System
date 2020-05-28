@@ -11,7 +11,7 @@ function ArticlesOverview(props) {
 
 	return (
 		<div className={styles.__articles}>
-			<div className="vf-container">
+			<div className={styles.vf_container_custom}>
 				<div
 					className={`${styles.pagelistblock_list} pagelistblock-list pt-3 pb-3 light-blue vf-row pagelist-item-count-6`}>
 					<FirstArticle/>

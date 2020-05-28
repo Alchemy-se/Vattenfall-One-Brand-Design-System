@@ -64,9 +64,7 @@ class Articles extends Component {
 
 	render() {
 		return (
-			<div className={styles.__articles}>
-				{this.renderArticle(this.props.match)}
-			</div>
+			this.renderArticle(this.props.match)
 		);
 	}
 }
