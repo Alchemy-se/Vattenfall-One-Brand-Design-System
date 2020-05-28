@@ -133,6 +133,7 @@
     line-height: inherit;
 }
 
+/*##DELETED
 .markdown-body a {
     color: #0366d6;
     text-decoration: none;
@@ -141,10 +142,11 @@
     font-weight: 500;
     font-style: normal;
 }
+*/
 
-.markdown-body a:hover {
+/*##DELETED.markdown-body a:hover {
     text-decoration: underline;
-}
+}*/
 
 .markdown-body strong {
     font-weight: 600;
@@ -280,12 +282,12 @@
     margin: 0;
 }
 
-.markdown-body ol,
+/*##DELETED.markdown-body ol,
 .markdown-body ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
+}*/
 
 .markdown-body ol ol,
 .markdown-body ul ol {
@@ -660,8 +662,9 @@
 .markdown-body ol,
 .markdown-body p,
 .markdown-body pre,
-.markdown-body table,
-.markdown-body ul {
+.markdown-body table
+/*##DELETED,
+.markdown-body ul*/ {
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -763,8 +766,9 @@
     color: #6a737d;
 }
 
-.markdown-body ol,
-.markdown-body ul {
+.markdown-body ol
+/*##DELETED,
+.markdown-body ul*/ {
     width: 100%;
     margin-left: 0;
     padding-left: 2rem;
@@ -773,9 +777,9 @@
     list-style: disc;
 }
 
-.markdown-body ul li a {
+/*##DELETED.markdown-body ul li a {
     color: #1964A3;
-}
+}*/
 
 .markdown-body ol ol,
 .markdown-body ol ul,
@@ -785,7 +789,7 @@
     margin-bottom: 0;
 }
 
-.markdown-body li {
+/*##DELETED.markdown-body li {
     word-wrap: break-all;
     font-style: normal;
     font-weight: 400;
@@ -802,15 +806,15 @@
     line-height: 1.44;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .markdown-body li>p {
     margin-top: 16px;
 }
 
-.markdown-body li+li {
+/*##DELETED.markdown-body li+li {
     margin-top: .25em;
-}
+}*/
 
 .markdown-body dl {
     padding: 0;
