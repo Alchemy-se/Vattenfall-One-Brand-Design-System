@@ -35,11 +35,10 @@
   flex-direction: column;
   position: relative;
   z-index: 0;
-  padding-left: 251px;
+  padding-left: 250px;
 
   @media(max-width: 999px) {
     width: 100%;
-    padding-left: 32px;
-    padding-top: 32px;
+    padding-left: 0;
   }
 }
