@@ -28,14 +28,14 @@ const Article_1 = () => {
 					of building relationships with current and future customers.
 				</p>
 				<div className="clearfix"></div>
-				<section className="clearfix">
-					<div className="vf-row pt-4">
-						<div className="vf-col-md-7">
-							<h3>Calculating the ROI</h3>
-						</div>
+				<div className="vf-row pt-4">
+					<div className="vf-col-md-7">
+						<h3>Calculating the ROI</h3>
 					</div>
+				</div>
 
-					<div className="vf-row pt-2">
+				<div className="vf-row pt-2">
+					<div className="vf-col-md-7">
 						<p>
 							Done right, brand consistency on a global level increases perceived quality, which in turn
 							increases sales likelihood. In fact, brand consistency muffles price sensitivity and
@@ -47,7 +47,7 @@ const Article_1 = () => {
 							therefore sales, while also requiring less cost of producing those same assets locally.
 						</p>
 					</div>
-				</section>
+				</div>
 			</div>
 
 		</React.Fragment>

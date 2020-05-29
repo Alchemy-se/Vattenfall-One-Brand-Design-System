@@ -7,22 +7,25 @@
   padding: 0;
   overflow: scroll;
   top: 64px;
-  -webkit-transition: -webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
-  transition: -webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
-  transition: transform .3s cubic-bezier(.78,.14,.15,.86);
-  transition: transform .3s cubic-bezier(.78,.14,.15,.86),-webkit-transform .3s cubic-bezier(.78,.14,.15,.86);
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.78, .14, .15, .86);
+  transition: -webkit-transform .3s cubic-bezier(.78, .14, .15, .86);
+  transition: transform .3s cubic-bezier(.78, .14, .15, .86);
+  transition: transform .3s cubic-bezier(.78, .14, .15, .86), -webkit-transform .3s cubic-bezier(.78, .14, .15, .86);
+
+  .hamburger {
+    position: fixed;
+    top: 75px;
+  }
+
   &.drawerOpen {
-      @media(max-width: 999px) {
-        transform: translateX(250px);
-      }
+    @media(max-width: 999px) {
+      transform: translateX(250px);
+    }
+
     .hamburger {
       display: none;
     }
   }
-}
-
-.hamburger {
-
 }
 
 .innerContainer {

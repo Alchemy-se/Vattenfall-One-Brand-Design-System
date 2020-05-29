@@ -18,7 +18,7 @@ const Article_2 = () => {
 					Enhancements and new features to the DDS are conducted in a systematic phased approach and updates are released continuously in batches. The new design system will be taken beyond Sketch and Abstract to work for everyone.
 				</p>
 				<div className="clearfix"/>
-				<section className="clearfix">
+				{/*<section className="clearfix">*/}
 					<div className="vf-row pt-4">
 						<div className="vf-col-md-7">
 							<h3>A collaborative approach</h3>
@@ -26,11 +26,13 @@ const Article_2 = () => {
 					</div>
 
 					<div className="vf-row pt-2">
-						<p>
-							While global brand consistency is important, it’s also important to acknowledge local needs in different markets. We’re working on a list of requirements and would love feedback and/or questions from all users on what would help them most to make this a truly collaborative Design System. Thank you for your input!
-						</p>
+						<div className="vf-col-md-7">
+							<p>
+								While global brand consistency is important, it’s also important to acknowledge local needs in different markets. We’re working on a list of requirements and would love feedback and/or questions from all users on what would help them most to make this a truly collaborative Design System. Thank you for your input!
+							</p>
+						</div>
 					</div>
-				</section>
+				{/*</section>*/}
 			</div>
 
 		</React.Fragment>

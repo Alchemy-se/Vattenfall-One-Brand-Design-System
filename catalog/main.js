@@ -80,6 +80,7 @@ export default class App extends Component {
 	};
 
 	onClickHeader = ({keyPath}) => {
+		console.log("#DEBUG keyPath #", keyPath);
 		this.setState({
 			selectedKeysMenu: [keyPath[0]]
 		})

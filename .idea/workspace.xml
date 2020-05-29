@@ -36,10 +36,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1072" y="246" width="988" height="733" key="find.popup" timestamp="1590681368216">
-      <screen x="-2560" y="23" width="2560" height="1417" />
+    <state x="1431" y="518" width="1199" height="1217" key="dock-window-1" timestamp="1590745528854">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1431" y="518" width="1199" height="1217" key="dock-window-1/-2560.23.2560.1417/2560.563.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1590745528854" />
+    <state x="1513" y="246" width="988" height="733" key="find.popup" timestamp="1590746939896">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="-1072" y="246" width="988" height="733" key="find.popup/-2560.23.2560.1417/2560.563.1440.877/0.23.2560.1417@-2560.23.2560.1417" timestamp="1590681368216" />
-    <state x="1488" y="246" width="988" height="733" key="find.popup/-2560.23.2560.1417/2560.563.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1590680658334" />
+    <state x="1513" y="246" width="988" height="733" key="find.popup/-2560.23.2560.1417/2560.563.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1590746939896" />
   </component>
 </project>

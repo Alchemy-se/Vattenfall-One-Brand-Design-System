@@ -6,11 +6,11 @@
   top: 0;
   left: 0;
   right: 0;
-  //background: rgb(237, 241, 246);
   z-index: 2;
   display: flex;
   border-bottom: 1px solid #f0f0f0;
 }
+
 .logoContainer {
   margin-right: auto;
   width: 200px;
@@ -25,5 +25,44 @@
 
 .menuContainer {
   display: flex;
-  //background: rgb(237, 241, 246);
+}
+
+.dropDownContainer {
+  opacity: 0;
+}
+
+.hamburger {
+  opacity: 0;
+}
+
+.dropdown {
+  width: 30%;
+}
+
+@media (max-width: 999px) {
+  .menuContainer {
+    display: none;
+  }
+  .dropDownContainer {
+    opacity: 1;
+  }
+  .hamburger {
+    opacity: 1;
+    background-color: #fff;
+    height: 63px;
+    line-height: 38px;
+
+    svg {
+      fill: #000;
+      //  width: 30px;
+      //  height: 22px;
+    }
+  }
+  .logoContainer {
+    margin-left: auto;
+
+    img {
+      margin-left: 20px;
+    }
+  }
 }

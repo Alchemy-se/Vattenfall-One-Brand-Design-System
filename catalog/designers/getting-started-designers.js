@@ -5,8 +5,8 @@ const Designers = () => (
     <React.Fragment>
         <PageHeader title={"Designers"}/>
           <div style= {{
-            margin:'10px 20px 0 40px',
-            width: '70%'}}>
+            margin:'0 20px',
+            padding: '48px 0'}}>
 
             <div style={{
               background: 'transparent'
