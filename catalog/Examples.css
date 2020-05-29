@@ -1,21 +1,85 @@
+/*.examples {*/
+/*    margin: 10px 30px;*/
+/*}*/
+
+/*.examples__header{*/
+/*    margin-top: 100px;*/
+/*    }*/
+
+/*.examples__image {*/
+/*    width: 450px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.examples__image_header {*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/*.examples__ios_image {*/
+/*    width: 150px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
 .examples {
-    margin: 10px 30px;
+    margin: 10px 20px 60px 40px;
 }
 
-.examples__header{
+.examples__header {
     margin-top: 100px;
-    }
+}
 
 .examples__image {
     width: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.examples__image_header {
+.examples__image-modal {
+    width: 650px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: zoom-in 600ms ease-out;
+}
+
+@-webkit-keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-o-keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.examples__image-header {
     margin-top: 30px;
 }
 
-.examples__ios_image {
+.examples__ios-image {
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
