@@ -80,7 +80,6 @@ export default class App extends Component {
 	};
 
 	onClickHeader = ({keyPath}) => {
-		console.log("#DEBUG keyPath #", keyPath);
 		this.setState({
 			selectedKeysMenu: [keyPath[0]]
 		})
@@ -102,11 +101,12 @@ export default class App extends Component {
 
 	render() {
 		const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
+		const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;
 		return (
 			<Router>
+				<Hamburger onClick={this.openDrawer} className={hamburgerClasses}/>
 				<Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu}/>
 				<div className={classes}>
-					<Hamburger onClick={this.openDrawer} className={styles.hamburger}/>
 					<Drawer
 						closeDrawer={this.closeDrawer}
 						drawerOpen={this.state.drawerOpen}
