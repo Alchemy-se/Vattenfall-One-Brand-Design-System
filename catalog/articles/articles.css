@@ -405,6 +405,14 @@
     margin-left: auto;
     clear: left;
 }
+
+@media (max-width: 999px) {
+    .vf_container_custom {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
 @media (min-width: 576px) {
     .vf_container_custom {
         max-width: 540px;

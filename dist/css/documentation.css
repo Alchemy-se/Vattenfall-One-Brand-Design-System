@@ -98,4 +98,36 @@ p {
 .justify-content-md-center {
   margin: 0 -12px;
 }
+
+.ant-dropdown {
+  width: 30%;
+}
+
+.ant-dropdown-menu-vertical > .ant-dropdown-menu-item:hover {
+  border-right: 3px solid #1964A3;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #fff;
+}
+
+.ant-dropdown-menu-item > a {
+  color: #2071B5;
+  text-decoration: none;
+}
+
+.ant-dropdown-menu-item > a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+.ant-dropdown-menu-vertical > .ant-dropdown-menu-item-selected {
+  border-right: 3px solid #1964A3;
+  background-color: #fff;
+}
+
+.ant-dropdown-menu-item-selected > a {
+  color: #222222;
+  background-color: #fff;
+}
 /*# sourceMappingURL=documentation.css.map */
