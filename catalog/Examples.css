@@ -29,11 +29,11 @@
 }
 
 .examples__image {
-    width: 450px;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.examples__image-modal {
+.examples__image_modal {
     width: 650px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: zoom-in 600ms ease-out;
@@ -75,11 +75,11 @@
     }
 }
 
-.examples__image-header {
+.examples__image_header {
     margin-top: 30px;
 }
 
-.examples__ios-image {
+.examples__ios_image {
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

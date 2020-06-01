@@ -8,13 +8,13 @@
     left: 0;
     right: 0;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.modal__button-close {
+.modal__button_close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -24,8 +24,8 @@
     transition: 0.3s;
 }
 
-.modal__button-close:hover,
-.modal__button-close:focus {
+.modal__button_close:hover,
+.modal__button_close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
