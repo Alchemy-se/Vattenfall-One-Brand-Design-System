@@ -1,0 +1,40 @@
+.Modal {
+    position: absolute;
+    z-index: 5000;
+    background-color: black;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__button_close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal__button_close:hover,
+.modal__button_close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 100vw;
+    }
+}
