@@ -82,13 +82,13 @@ const COMPONENTS_ROUTES = [
 
 ]
 
-const Routes = ({onRouteChange}) => {
+const Routes = ({onRouteChange, openModal}) => {
 	usePageViews(onRouteChange);
 	let location = useLocation();
 	return (
 		<Switch>
 			<Route path="/examples">
-				<Examples />
+				<Examples openModal={openModal}/>
 			</Route>
 			{
 				COMPONENTS_ROUTES.map(item => (
