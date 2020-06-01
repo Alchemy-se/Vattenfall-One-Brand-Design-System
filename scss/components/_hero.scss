@@ -16,7 +16,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    font-size: 44px;
+    font-size: 2.75rem;
     height: 370px;
     min-height: 370px;
 
@@ -30,14 +30,14 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  
+
   text-align: center;
   @include typo-paragraph-secondary-mobile();
-  
+
   @include media-breakpoint-up(sm) {
     @include typo-paragraph-primary-desktop();
   }
-  
+
   color: white;
 
   a {
@@ -50,7 +50,7 @@
   margin: 0 auto;
   max-width: 90%;
   padding-bottom: 10px;
-  @include media-breakpoint-up(sm) { 
+  @include media-breakpoint-up(sm) {
     padding-bottom: 32px;
   }
 }

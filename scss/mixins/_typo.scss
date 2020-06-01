@@ -27,10 +27,10 @@
   @include headline-base();
   letter-spacing: 0;
 
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 48px;
   @include media-breakpoint-up(sm) {
-    font-size: 72px;
+    font-size: 4.5rem;
     line-height: 84px;
   }
 }
@@ -42,14 +42,14 @@
 
 @mixin typo-secondary-mobile {
   @include headline-base();
-  font-size: 36px;
+  font-size: 2.25rem;
   letter-spacing: 0;
   line-height: 40px;
 }
 
 @mixin typo-secondary-desktop {
   @include headline-base();
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 72px;
   letter-spacing: -0.2px;
 }
@@ -80,7 +80,7 @@
 
 @mixin typo-tetriary-desktop {
   @include typo-tetriary-base();
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.33;
   letter-spacing: -0.2px;
 }
@@ -163,7 +163,7 @@
 
 @mixin typo-intro-in-caps {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 22px;
@@ -181,14 +181,14 @@
 }
 
 @mixin typo-quote-mobile {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: -0.1px;
   line-height: 40px;
 }
 
 @mixin typo-quote-desktop {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.15px;
   line-height: 60px;

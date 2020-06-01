@@ -8,7 +8,7 @@
   text-align: left;
   padding: 10px 20px 10px 30px;
 
-  @include media-breakpoint-up(sm) { 
+  @include media-breakpoint-up(sm) {
     padding: 10px 0;
     text-align: center;
   }
@@ -23,10 +23,10 @@
   font-weight: 300;
 
   right: 5px;
-  font-size: 30px;
-  
-  @include media-breakpoint-up(sm) { 
+  font-size: 1.875rem;
+
+  @include media-breakpoint-up(sm) {
     right: 15px;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
