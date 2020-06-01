@@ -1,7 +1,9 @@
+@import "../../scss/variables";
+
 .vf-pagination {
   display: flex;
   @include list-unstyled();
-  font-size: 16px;
+  font-size: $font-size-base;
 }
 
 .vf-page-link {

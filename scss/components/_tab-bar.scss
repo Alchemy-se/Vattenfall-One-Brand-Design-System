@@ -1,215 +1,217 @@
-.vf-tab-bar-container{
+@import "../../scss/variables";
 
-	*[hidden] {
-		display: none;
-	}
+.vf-tab-bar-container {
 
-	*:focus {
-		outline: none;
-	}
+  *[hidden] {
+    display: none;
+  }
 
-	.vf-tab-bar{
+  *:focus {
+    outline: none;
+  }
 
-		position: relative;
-		display: flex;
-		justify-content: center;
+  .vf-tab-bar {
 
-		//padding: 16px 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
-		list-style: none;
-		padding: 0;
-		margin: 0;
+    //padding: 16px 22px;
 
-		.vf-tab-bar-item{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-			position: relative;
-			flex-grow: 1;
+    .vf-tab-bar-item {
 
-			@include media-breakpoint-down(lg) {
-	    		flex-grow: 0;
-	    	}
+      position: relative;
+      flex-grow: 1;
 
-	    	flex-basis: 0; //Equal length
+      @include media-breakpoint-down(lg) {
+        flex-grow: 0;
+      }
 
-	    	padding: 22px;
-	    	background-color: $white;
-	    	border-right: 1px solid $vattenfall-light-blue;
-	    	box-shadow: 0 0px 0 0 transparent;
-	    	transition: box-shadow .3s ease-in-out;;
+      flex-basis: 0; //Equal length
 
-			cursor: pointer;
+      padding: 22px;
+      background-color: $white;
+      border-right: 1px solid $vattenfall-light-blue;
+      box-shadow: 0 0px 0 0 transparent;
+      transition: box-shadow .3s ease-in-out;;
 
-	    	&:last-of-type{
+      cursor: pointer;
 
-	    		border: none;
+      &:last-of-type {
 
-	    	}
+        border: none;
 
-	    	@include media-breakpoint-down(lg) {
+      }
 
-					align-items: center;
-					color: $vattenfall-button-blue;
+      @include media-breakpoint-down(lg) {
 
+        align-items: center;
+        color: $vattenfall-button-blue;
 
-					&:before{
 
-						//content is supplied by class as font icon. See _fonts.scss
-						position: relative;
-						width: 24px;
-						height: 24px;
-						font-size: 24px;
+        &:before {
 
-					}
+          //content is supplied by class as font icon. See _fonts.scss
+          position: relative;
+          width: 24px;
+          height: 24px;
+          font-size: $font-size-xl;
 
-				}
+        }
 
-	    	&.vf-tab-bar-item--active{
+      }
 
-	    		box-shadow: 0 3px 0 0 $vattenfall-mid-blue;
+      &.vf-tab-bar-item--active {
 
-	    		@include media-breakpoint-down(lg) {
+        box-shadow: 0 3px 0 0 $vattenfall-mid-blue;
 
-	    			color: $dark;
+        @include media-breakpoint-down(lg) {
 
-	    		}
+          color: $dark;
 
-	    		.vf-tab-bar-link{
+        }
 
-					color: $dark;
+        .vf-tab-bar-link {
 
-				}
-	    		
-	    	}
+          color: $dark;
 
-	    	&.vf-tab-bar-item--disabled{
+        }
 
-	    		cursor: not-allowed;
+      }
 
-	    		@include media-breakpoint-down(lg) {
+      &.vf-tab-bar-item--disabled {
 
-	    			color: $btn-disabled-color;
+        cursor: not-allowed;
 
-	    		}
+        @include media-breakpoint-down(lg) {
 
-		   		.vf-tab-bar-link{
+          color: $btn-disabled-color;
 
-		   			pointer-events: none;
-		    		color: $btn-disabled-color;
+        }
 
-		    	}
-	    		
-	    	}
+        .vf-tab-bar-link {
 
-	    	&:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active){
+          pointer-events: none;
+          color: $btn-disabled-color;
 
-	    		@include media-breakpoint-down(lg) {
+        }
 
-	    			&:hover{
-						
-						color: $vattenfall-mid-blue;
+      }
 
-					}
-		    		
-	    		}
+      &:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active) {
 
-	    		.vf-tab-bar-link{
+        @include media-breakpoint-down(lg) {
 
-		    		&:hover{
-						
-						color: $vattenfall-mid-blue;
+          &:hover {
 
-					}
-				}
-	    	}
+            color: $vattenfall-mid-blue;
 
-	    	.vf-tab-bar-link{
+          }
 
-	    		@include media-breakpoint-down(lg) {
+        }
 
-	    			//(display:none;
-	    			font-size: 0;
+        .vf-tab-bar-link {
 
-	    			&:before{
-	    				left: 0!important;
-	    			}
+          &:hover {
 
-	    		}
+            color: $vattenfall-mid-blue;
 
-	    		display: flex;
-		    	color: $vattenfall-button-blue;
-				font-size: 16px;
-				font-weight: 500;
-				letter-spacing: -0.05px;
-				line-height: 28px;
-				justify-content: center;
-				align-items: center;
+          }
+        }
+      }
 
-				&:hover{
-					
-					text-decoration: none;
+      .vf-tab-bar-link {
 
-				}
+        @include media-breakpoint-down(lg) {
 
-				&:before{
-					//content is supplied by class as font icon. See _fonts.scss
-					position: relative;
-					width: 24px;
-					height: 24px;
-					left: -20px;
-					top: 2px;
-					font-size: 24px;
+          //(display:none;
+          font-size: 0;
 
-				}
+          &:before {
+            left: 0 !important;
+          }
 
-		    }
-		}
+        }
 
-		.vf-tab-bar-link-mobile {
+        display: flex;
+        color: $vattenfall-button-blue;
+        font-size: $font-size-base;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 28px;
+        justify-content: center;
+        align-items: center;
 
-			position: absolute;
-			display: none;
-			top: 94px;
+        &:hover {
 
-			color: $dark;
-			font-weight: 600;
-			font-size: 18px;
-			letter-spacing: 0px;
-			line-height: 24px;
-			text-align: center;
+          text-decoration: none;
 
-			&.vf-tab-bar-link-mobile--active{
+        }
 
-				@include media-breakpoint-down(lg) {
+        &:before {
+          //content is supplied by class as font icon. See _fonts.scss
+          position: relative;
+          width: 24px;
+          height: 24px;
+          left: -20px;
+          top: 2px;
+          font-size: $font-size-xl;
 
-					display: block;
-					cursor: default;
+        }
 
-					&:hover{
-					
-						text-decoration: none;
+      }
+    }
 
-					}
-				}
-			}
+    .vf-tab-bar-link-mobile {
 
-			&:before{
+      position: absolute;
+      display: none;
+      top: 94px;
 
-				content: none!important;
+      color: $dark;
+      font-weight: 600;
+      font-size: $font-size-md;
+      letter-spacing: 0px;
+      line-height: 24px;
+      text-align: center;
 
-			}
+      &.vf-tab-bar-link-mobile--active {
 
-		}
-	}
+        @include media-breakpoint-down(lg) {
 
-	.vf-tab-bar-panels{
+          display: block;
+          cursor: default;
 
-		padding-top: 35px;
+          &:hover {
 
-		@include media-breakpoint-down(lg){
+            text-decoration: none;
 
-			padding-top: 55px;
+          }
+        }
+      }
 
-		}
+      &:before {
 
-	}
+        content: none !important;
+
+      }
+
+    }
+  }
+
+  .vf-tab-bar-panels {
+
+    padding-top: 35px;
+
+    @include media-breakpoint-down(lg) {
+
+      padding-top: 55px;
+
+    }
+
+  }
 }

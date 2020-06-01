@@ -1,3 +1,5 @@
+@import "../../scss/variables";
+
 $component-height-mobile: 330px;
 $cutout-height-mobile: 50px;
 
@@ -10,7 +12,7 @@ $cutout-height-desktop: 85px;
 
   @include make-container();
   @include make-container-max-widths($container-max-widths-except-sm);
-  
+
   padding: 70px 0 70px 0;
   //height: 550px;
 
@@ -66,29 +68,29 @@ $cutout-height-desktop: 85px;
   margin: 0 21px 0 0;
 
   background: $white;
-  
+
   @include typo-quote-mobile();
 
   @include media-breakpoint-down(sm) {
     padding-right: 12px;
   }
-  
+
   @include media-breakpoint-up(sm) {
     @include typo-quote-desktop();
     padding: 40px 90px 0px 0;
   }
 }
 
-.vf-large-quote__byline { 
+.vf-large-quote__byline {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 36px;
-  
-  font-size: 20px;
+
+  font-size: $font-size-lg;
   @include media-breakpoint-up(sm) {
     padding-left: 21px;
     padding-left: 0;
-    font-size: 20px;
+    font-size: $font-size-lg;
   }
 }
 
@@ -96,8 +98,8 @@ $cutout-height-desktop: 85px;
   font-weight: normal;
   letter-spacing: -0.05px;
   line-height: 28px;
-  
-  font-size: 16px;
+
+  font-size: $font-size-base;
   @include media-breakpoint-up(sm) {
     padding-left: 21px;
     padding-left: 0;
@@ -141,7 +143,7 @@ $cutout-height-desktop: 85px;
   height: $component-height-mobile;
   left: 155px;
   width: 100%;
-  
+
   @include media-breakpoint-up(sm) {
     height: $component-height-desktop;
     width: 68%;
