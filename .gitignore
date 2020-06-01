@@ -68,3 +68,5 @@ conf/certs/digitaldesign.vattenfall.com.key
 
 #WEBPACK DEV SERVER
 dist/js/*.hot-update.*
+
+.idea/
