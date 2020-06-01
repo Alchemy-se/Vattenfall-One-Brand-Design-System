@@ -51,11 +51,11 @@
     background-color: #fff;
     height: 63px;
     line-height: 38px;
-
+    &:focus {
+      outline: none;
+    }
     svg {
       fill: #000;
-      //  width: 30px;
-      //  height: 22px;
     }
   }
   .logoContainer {

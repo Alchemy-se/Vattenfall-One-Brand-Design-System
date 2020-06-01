@@ -15,7 +15,10 @@ function Header(props) {
 		return (
 			<Menu
 				className={styles.dropDownContainer}
-				onClick={props.onClick}
+				onClick={(event) => {
+					toggleDropDownHandler();
+					props.onClick(event);
+				}}
 				selectedKeys={props.selectedKeys}
 			>
 				<Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
@@ -27,6 +30,10 @@ function Header(props) {
 		)
 	}
 
+	function onBlur() {
+		setToggleDropdown(false);
+	}
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.logoContainer}>
@@ -34,16 +41,18 @@ function Header(props) {
 					<img src={'/img/docs/logo.svg'}/>
 				</Link>
 			</div>
-			<Dropdown
-				visible={toggleDropdown}
-				overlayClassName={"dropdown"}
-				overlay={dropDownMenu}
-				trigger={["click"]}
-			>
-				<Hamburger className={styles.hamburger} onClick={() => {
-					toggleDropDownHandler();
-				}}/>
-			</Dropdown>
+			<div onBlur={onBlur} tabIndex="0" style={{outline: "none"}}>
+				<Dropdown
+					visible={toggleDropdown}
+					overlayClassName={"dropdown"}
+					overlay={dropDownMenu}
+					trigger={["click"]}
+				>
+					<Hamburger className={styles.hamburger} onClick={() => {
+						toggleDropDownHandler();
+					}}/>
+				</Dropdown>
+			</div>
 			<Menu mode={"horizontal"} className={styles.menuContainer} onClick={props.onClick}
 				  selectedKeys={props.selectedKeys}>
 				<Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
