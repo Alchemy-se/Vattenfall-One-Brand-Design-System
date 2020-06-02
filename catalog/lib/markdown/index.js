@@ -35,6 +35,7 @@ module.exports = {
   parsedHtml: ParsedHtml
 }; */
 import { useEffect } from 'react';
+import TableOfContents from "../tableOfContents";
 
 const useScript = url => {
 	useEffect(() => {
@@ -51,16 +52,42 @@ const useScript = url => {
 	}, [url]);
 };
 
+const rootRenderer = ({children}) => {
+	// Extract all toc content.
+	const TOCLines = children.reduce((acc, { key, props }) => {
+		// Skip non-headings
+		if (key.indexOf('heading') !== 0) {
+			return acc;
+		}
+
+		// Indent by two spaces per heading level after h1
+		let indent = '';
+		for (let idx = 1; idx < props.level; idx++) {
+			indent = `${indent}  `;
+		}
+
+		return acc.concat(props.children);
+	}, []);
+
+	return (
+		<React.Fragment>
+			<TableOfContents content={TOCLines}/>
+			{children}
+		</React.Fragment>
+	);
+};
+
 const Markdown = ({source}) => {
+	// Reload js.
 	useScript("/js/horizon.min.js");
 	return (
 		<div className={`${styles.container} ${"markdown-body"}` }>
 			<ReactMarkdown
 				source={source}
-				renderers={{heading: Heading, code: Code}}
+				renderers={{heading: Heading, code: Code, root: rootRenderer}}
 			/>
 		</div>
-	)
+	);
 };
 
 export default Markdown;

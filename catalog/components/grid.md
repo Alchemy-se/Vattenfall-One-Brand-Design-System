@@ -573,7 +573,7 @@ The regular container for all standard content.
 
 Used for content heavy pages etc.
 
-### Tight container
+### Bleed container
 
 `.vf-container-bleed`
 
