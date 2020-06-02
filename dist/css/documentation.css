@@ -151,4 +151,31 @@ p {
   cursor: pointer;
   /* Add a pointer on hover */
 }
+
+.ant-anchor-link {
+  padding-left: 0;
+}
+
+/*
+.ant-anchor-ink-ball {
+  height: 16px;
+  width: 2px;
+  background: #1964A3;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}*/
+.markdown-body > :last-child {
+  padding-bottom: calc(80vh - 400px);
+}
+
+.ant-anchor-ink-ball {
+  border-color: #1964A3;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: #222222;
+  font-weight: 500;
+}
 /*# sourceMappingURL=documentation.css.map */

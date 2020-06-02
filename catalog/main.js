@@ -154,7 +154,7 @@ export default class App extends Component {
 				{this.renderModal()}
 				<Hamburger onClick={this.openDrawer} className={hamburgerClasses}/>
 				<Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu}/>
-				<div className={classes}>
+				<div className={classes} id="content-container">
 					<Drawer
 						closeDrawer={this.closeDrawer}
 						drawerOpen={this.state.drawerOpen}
