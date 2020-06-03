@@ -316,7 +316,7 @@ function Examples() {
 			{/*</div>*/}
 		</div>
 	)
-};
+}
 
 export default Examples;
 

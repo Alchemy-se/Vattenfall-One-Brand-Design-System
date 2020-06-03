@@ -130,4 +130,52 @@ p {
   color: #222222;
   background-color: #fff;
 }
+
+.semantic_dropdown_container {
+  position: relative;
+  width: 300px;
+  height: 50px;
+}
+
+.vf-dropdown-v2 {
+  border: 1px solid #E8E8E9;
+  height: 50px;
+  width: 300px;
+  border-radius: 4px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 12px 114px 12px 20px;
+  color: #222222;
+  font-size: 1.25rem;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.vf-dropdown-v2:hover {
+  border: 1px solid #000;
+}
+
+.vf-dropdown-v2:focus {
+  outline: none;
+}
+
+.arrow {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border-width 150ms ease-in-out;
+  transition: border-width 150ms ease-in-out;
+  right: 18px;
+  bottom: 0;
+  top: 16px;
+  pointer-events: none;
+}
 /*# sourceMappingURL=documentation.css.map */

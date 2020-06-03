@@ -3,7 +3,7 @@
   "version": "7.16.6",
   "main": "index.js",
   "scripts": {
-    "start-webpack": "webpack-dev-server --port 3213 --hot --host 192.168.86.76 --config documentation.webpack.config.js",
+    "start-webpack": "webpack-dev-server --port 3213 --hot --config documentation.webpack.config.js",
     "build-webpack": "webpack --mode=production --config documentation.webpack.config.js",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
@@ -48,7 +48,7 @@
     "semantic-release": "^15.13.3",
     "shx": "^0.3.2",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {

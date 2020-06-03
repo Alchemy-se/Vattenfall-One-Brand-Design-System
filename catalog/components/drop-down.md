@@ -6,40 +6,45 @@ Various drop-down lists.
 showSource: true
 ---
 
-<main class="vf-row">
-  <select class="vf-dropdown" data-control="vf-dropdown-data">
-        <option selected disabled class="vf-dropdown-label">Select option</option>
-        <section class="vf-dropdown-list">
-            <article class="vf-dropdown-list-item">
-                <option value="Winter">
-                    <label class="vf-dropdown-option">
-                        Winter
-                    </label>
-                </option>
-            </article>
-            <article class="vf-dropdown-list-item">
-                <option value="Spring">
-                    <label class="vf-dropdown-option">
-                        Spring
-                    </label>
-                </option>
-            </article>
-            <article class="vf-dropdown-list-item">
-                <option value="Summer">
-                    <label class="vf-dropdown-option">
-                        Summer
-                    </label>
-                </option>
-            </article>
-            <article class="vf-dropdown-list-item">
-                <option value="Autumn">
-                    <label class="vf-dropdown-option">
-                        Autumn
-                    </label>
-                </option>
-            </article>
-        </section>
-  </section>
+<main class="vf-row custom_selectWrapper">
+    <section class="semantic_dropdown_container">
+        <select class="vf-dropdown-v2" data-control="vf-dropdown-data">
+            <option selected disabled>
+                <label class="vf-dropdown-label">Select option</label>
+            </option>
+            <section class="vf-dropdown-list">
+                <article class="vf-dropdown-list-item">
+                    <option value="Winter">
+                        <label class="vf-dropdown-option">
+                            Winter
+                        </label>
+                    </option>
+                </article>
+                <article class="vf-dropdown-list-item">
+                    <option value="Spring">
+                        <label class="vf-dropdown-option">
+                            Spring
+                        </label>
+                    </option>
+                </article>
+                <article class="vf-dropdown-list-item">
+                    <option value="Summer">
+                        <label class="vf-dropdown-option">
+                            Summer
+                        </label>
+                    </option>
+                </article>
+                <article class="vf-dropdown-list-item">
+                    <option value="Autumn">
+                        <label class="vf-dropdown-option">
+                            Autumn
+                        </label>
+                    </option>
+                </article>
+            </section>
+        </select>
+        <section class="arrow" />
+    </section>
 </main>
 ```
 
