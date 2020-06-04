@@ -41,7 +41,7 @@
 
 .navbar-brand {
   display: inline-block;
-  flex: 0 0 100%; 
+  flex: 0 0 100%;
   text-align: center;
 
   padding-top: $navbar-brand-padding-y;
@@ -69,7 +69,7 @@
   list-style: none;
   justify-content: space-between; // space out brand from logo
 
-  font-size: 20px;
+  font-size: $font-size-lg;
   font-weight: 500;
 
   .nav-link {

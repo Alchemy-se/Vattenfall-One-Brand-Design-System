@@ -147,7 +147,7 @@
 
   &:before{
     font-family: 'vf-icons' !important;
-    font-size: 24px;
+    font-size: $font-size-xl;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -169,11 +169,11 @@
 }
 .vf-icon-up:before {
   content: "\e902";
-  font-size: 7px;
+  font-size: 0.4375rem;
 }
 .vf-icon-down:before {
   content: "\e903";
-  font-size: 7px;
+  font-size: 0.4375rem;
 }
 .vf-icon-left:before {
   content: "\e904";

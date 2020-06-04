@@ -17,7 +17,7 @@
 	}
 
 	@include media-breakpoint-down(sm) {
-		font-size: 44px;
+		font-size: 2.75rem;
 		min-height: 370px;
 		border-left: 20px white solid;
 		border-right: 20px white solid;
@@ -43,7 +43,7 @@
 			max-width: 90%;
 			padding-bottom: $spacing-sm;
 
-			@include media-breakpoint-up(sm) { 
+			@include media-breakpoint-up(sm) {
 				padding-bottom: 32px;
 			}
 		}
