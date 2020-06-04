@@ -346,12 +346,10 @@
   font-size: 1.25rem;
   line-height: 24px;
   cursor: pointer;
-}
-
-.vf-dropdown-semantic:hover {
-  border: 1px solid #000;
-}
-
-.vf-dropdown-semantic:focus {
-  outline: none;
+  &:hover {
+    border: 1px solid #000;
+  }
+  &:focus {
+    outline: none;
+  }
 }

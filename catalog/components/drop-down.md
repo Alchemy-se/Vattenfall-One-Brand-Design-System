@@ -7,8 +7,8 @@ showSource: true
 ---
 
 <main class="vf-row">
-    <section class="vf-dropdown semantic-arrow">
-        <select class="vf-dropdown-semantic" data-control="vf-dropdown-data">
+    <section class="vf-dropdown semantic-arrow disabled" >
+        <select class="vf-dropdown-semantic disabled" data-control="vf-dropdown-data-disabled" >
             <option selected disabled class="vf-dropdown-semantic-option">
                 <label class="vf-dropdown-label">Select option</label>
             </option>
