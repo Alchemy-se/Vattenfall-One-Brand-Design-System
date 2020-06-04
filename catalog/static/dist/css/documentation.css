@@ -131,18 +131,11 @@ p {
   background-color: #fff;
 }
 
-.semantic_dropdown_container {
-  position: relative;
-  width: 300px;
-  height: 50px;
-}
-
-.vf-dropdown-v2 {
+/*.vf-dropdown-v2 {
   border: 1px solid #E8E8E9;
   height: 50px;
   width: 300px;
   border-radius: 4px;
-  -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
   padding: 12px 114px 12px 20px;
@@ -158,8 +151,7 @@ p {
 
 .vf-dropdown-v2:focus {
   outline: none;
-}
-
+}*/
 .arrow {
   position: absolute;
   -webkit-box-sizing: border-box;

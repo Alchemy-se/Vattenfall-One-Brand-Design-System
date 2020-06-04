@@ -10999,6 +10999,42 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: inherit;
 }
 
+.semantic-arrow:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: right center;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzMzMzMzO30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  padding: 18px;
+}
+
+.vf-dropdown-semantic {
+  border: 1px solid #E8E8E9;
+  height: 50px;
+  width: 300px;
+  border-radius: 4px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 12px 114px 12px 20px;
+  color: #222222;
+  font-size: 1.25rem;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.vf-dropdown-semantic:hover {
+  border: 1px solid #000;
+}
+
+.vf-dropdown-semantic:focus {
+  outline: none;
+}
+
 .vf-input-container {
   position: relative;
   cursor: pointer;

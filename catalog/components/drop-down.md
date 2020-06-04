@@ -6,10 +6,10 @@ Various drop-down lists.
 showSource: true
 ---
 
-<main class="vf-row custom_selectWrapper">
-    <section class="semantic_dropdown_container">
-        <select class="vf-dropdown-v2" data-control="vf-dropdown-data">
-            <option selected disabled>
+<main class="vf-row">
+    <section class="vf-dropdown semantic-arrow">
+        <select class="vf-dropdown-semantic" data-control="vf-dropdown-data">
+            <option selected disabled class="vf-dropdown-semantic-option">
                 <label class="vf-dropdown-label">Select option</label>
             </option>
             <section class="vf-dropdown-list">
@@ -43,7 +43,7 @@ showSource: true
                 </article>
             </section>
         </select>
-        <section class="arrow" />
+        <!--<section class="arrow" />-->
     </section>
 </main>
 ```
