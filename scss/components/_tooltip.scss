@@ -38,7 +38,7 @@
 	}
 
 	.vf-tooltip-message{
-		
+
 		@if $position == left {
 
 			right: calc(100% + 10px);
@@ -61,13 +61,13 @@
 				// top: 50%!important;
 				margin-bottom: -15px;
 	    	transform: translate(0, 50%)!important;
-		
-		} @else if $position == right {			
+
+		} @else if $position == right {
 			transform: translate(0, 50%)!important;
-			right: auto!important;			
+			right: auto!important;
 			margin-bottom: -15px;
 
-		} @else if $position == bottom {			
+		} @else if $position == bottom {
 			bottom: -3px;
 			transform: translate(50%, 100%);
 
@@ -107,7 +107,7 @@
 			}
 
 		}
-			
+
 		&:before {
 
 			@if $position == left {
@@ -117,7 +117,7 @@
 			} @else if $position == right {
 
 				left: -6px;
-				
+
 			} @else if $position == bottom {
 
 				top: -6px;
@@ -151,7 +151,7 @@
 	}
 }
 
-.vf-tooltip{	
+.vf-tooltip{
 	position: relative;
 	display: inline-flex;
 	cursor: pointer;
@@ -170,7 +170,7 @@
 	}
 
 	//&.vf-icon-question{
-	
+
 	&[class*="vf-icon-"]{
 
 		color: inherit;
@@ -185,14 +185,14 @@
 		.vf-tooltip-message{
 
 			// top: calc(-100% - 18px);
-			margin-bottom: 10px;		
+			margin-bottom: 10px;
 		}
 		&[class*="vf-tooltip--right"] {
 			.vf-tooltip-message {
 				margin-bottom: -10px !important;
 			}
 		}
-		
+
 		&[class*="vf-tooltip--left"] {
 			.vf-tooltip-message {
 				margin-bottom: -10px !important;
@@ -205,7 +205,7 @@
 .vf-tooltip--left{
 
 	@include tooltip-alignment(left);
-	
+
 }
 
 .vf-tooltip--right{
@@ -225,7 +225,7 @@
 
 			// bottom: calc(-100% - 18px);
 			bottom: -100%;
-			
+
 			transform: translate(50%, 100%);
 
 		}
@@ -235,31 +235,31 @@
 .vf-tooltip--blue{
 
 	@include tooltip-color($vattenfall-tooltip-blue-bg, $vattenfall-tooltip-blue-border, $vattenfall-mid-blue);
-	
+
 }
 
 .vf-tooltip--red{
 
 	@include tooltip-color($vattenfall-tooltip-red-bg, $vattenfall-tooltip-red-border, $vattenfall-dark-red);
-	
+
 }
 
 .vf-tooltip--blue-solid{
 
 	@include tooltip-color($vattenfall-mid-blue, $vattenfall-mid-blue, $white);
-	
+
 }
 
 .vf-tooltip--green-solid{
 
 	@include tooltip-color($vattenfall-dark-green, $vattenfall-dark-green, $white);
-	
+
 }
 
 .vf-tooltip--red-solid{
 
 	@include tooltip-color($vattenfall-dark-red, $vattenfall-dark-red, $white);
-	
+
 }
 
 .vf-tooltip--yellow-solid{
@@ -281,10 +281,10 @@
 	transform: translate(50%, 0);
 	padding: 4px 10px;
 	z-index: 999;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: normal;
 	letter-spacing: 0px;
-	line-height: 20px;    
+	line-height: 20px;
 	pointer-events: none;
 	background: $vattenfall-light-green;
 	border: 1px solid $vattenfall-tooltip-green;
@@ -303,12 +303,12 @@
 		right: 0;
 		bottom: 0;
 		width: 10px;
-		height: 10px; 
+		height: 10px;
 		border-left:1px solid $vattenfall-tooltip-green;
 		border-bottom:1px solid $vattenfall-tooltip-green;
 		border-radius: 3px;
 		transform: rotate(-45deg);
-    
+
 	}
 
 	&:before {

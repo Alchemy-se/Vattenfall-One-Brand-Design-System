@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Examples.css'
+import styles from './Examples.css';
 import PageHeader from "./lib/pageHeader";
 
 const Examples = ({openModal}) => (
