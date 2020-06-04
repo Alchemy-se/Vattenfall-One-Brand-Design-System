@@ -66,9 +66,17 @@ const rootRenderer = ({children}) => {
 			indent = `${indent}  `;
 		}
 
+		if(props.children.length !== 1) {
+			let joinedValue = "";
+			for(let i = 0; i < props.children.length; i++) {
+				joinedValue+= props.children[i].props.value
+			}
+			joinedValue = joinedValue.replace(/ /g, " ");
+			const newChild = {props:{value: joinedValue}};
+			return acc.concat([newChild]);
+		}
 		return acc.concat(props.children);
 	}, []);
-
 	return (
 		<React.Fragment>
 			<TableOfContents content={TOCLines}/>

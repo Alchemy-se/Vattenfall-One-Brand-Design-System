@@ -1,6 +1,16 @@
 import React from "react";
 import styles from "./headingRenderer.scss";
 
+const getValueFromArray = (children) => {
+  const mapped = children.map(child => {
+    if(child.props.inline) {
+      return <code>{child.props.value}</code>
+    }
+    return child.props.value
+  });
+  return mapped.join(" ");
+};
+
 const HeadingHashLink = (rawValue) => {
 	if(Array.isArray(rawValue)) {
 		let value = "";
@@ -71,7 +81,7 @@ const Heading = (props) => {
 		}
 		case 5: {
 			return (
-				<h5 id={getId(child.props.value)} key={"heading-" + props.children[0].key} className={styles.headingContainer}>
+				<h5 id={getId(props.children)} key={"heading-" + props.children[0].key} className={styles.headingContainer}>
 					{
 						props.children.map(child => {
 							if(child.props.inline) {
@@ -81,12 +91,6 @@ const Heading = (props) => {
 						})
 					}
 					{HeadingHashLink(props.children)}
-				</h5>
-			);
-			return props.children.map(child =>
-				<h5 id={getId(child.props.value)} key={"heading-"+child.key} className={styles.headingContainer}>
-					{child.props.value}
-					{HeadingHashLink(child.props.value)}
 				</h5>
 			);
 		}

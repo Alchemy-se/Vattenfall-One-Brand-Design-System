@@ -83,8 +83,8 @@ export default class CodeRenderer extends Component {
 			if(CodeRenderer.isToken(t)) {
 				return (
 					<span className={`${styles.prismToken} ${styles[t.type]}` } key={"coderenderer-"+i+"-"+t.tag}>
-					{ Array.isArray(t.content) ? CodeRenderer.renderPrismTokens(t.content, styles) : t.content}
-				</span>
+						{ Array.isArray(t.content) ? CodeRenderer.renderPrismTokens(t.content, styles) : t.content}
+					</span>
 				);
 			} else {
 				return t;
