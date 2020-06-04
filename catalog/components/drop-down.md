@@ -7,9 +7,9 @@ showSource: true
 ---
 
 <main class="vf-row">
-    <section class="vf-dropdown semantic-arrow disabled" >
-        <select class="vf-dropdown-semantic disabled" data-control="vf-dropdown-data-disabled" >
-            <option selected disabled class="vf-dropdown-semantic-option">
+    <section class="vf-semantic-dropdown-wrapper">
+        <select class="vf-dropdown vf-dropdown--semantic" data-control="vf-dropdown-data" >
+            <option selected>
                 <label class="vf-dropdown-label">Select option</label>
             </option>
             <section class="vf-dropdown-list">
@@ -43,7 +43,6 @@ showSource: true
                 </article>
             </section>
         </select>
-        <!--<section class="arrow" />-->
     </section>
 </main>
 ```
@@ -122,7 +121,6 @@ showSource: true
 ### Disabled
 
 To disable a drop-down, simply add the modifier class `disabled` to the `vf-dropdown` element, and change the `data-control` attribute to `vf-dropdown-data-disabled`
-
 ```html
 showSource: true
 ---

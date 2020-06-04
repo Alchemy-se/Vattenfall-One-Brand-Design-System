@@ -10934,6 +10934,42 @@ a.vf-badge:hover, a.vf-badge:focus {
   background: #fff;
 }
 
+.vf-dropdown.vf-dropdown--semantic {
+  border: 1px solid #E8E8E9;
+  height: 50px;
+  width: 300px;
+  border-radius: 4px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 12px 114px 12px 20px;
+  color: #222222;
+  font-size: 1.25rem;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.vf-dropdown.vf-dropdown--semantic:hover {
+  border: 1px solid #000;
+}
+
+.vf-dropdown.vf-dropdown--semantic:focus {
+  outline: none;
+}
+
+.vf-dropdown.vf-dropdown--semantic.disabled {
+  color: #767676;
+  background: #f1f1f1;
+  border-color: #bcbcbc;
+  pointer-events: none;
+}
+
+.vf-dropdown.vf-dropdown--semantic:disabled {
+  color: #767676;
+  background: #f1f1f1;
+  border-color: #bcbcbc;
+}
+
 .vf-dropdown.on .vf-dropdown-label {
   border: 1px solid #69788C;
   border-bottom: none;
@@ -10999,7 +11035,11 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: inherit;
 }
 
-.semantic-arrow:after {
+.vf-semantic-dropdown-wrapper {
+  position: relative;
+}
+
+.vf-semantic-dropdown-wrapper:after {
   content: "";
   background-repeat: no-repeat;
   background-size: 36px;
@@ -11010,29 +11050,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   bottom: 0;
   right: 8px;
   padding: 18px;
-}
-
-.vf-dropdown-semantic {
-  border: 1px solid #E8E8E9;
-  height: 50px;
-  width: 300px;
-  border-radius: 4px;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-appearance: none;
-  padding: 12px 114px 12px 20px;
-  color: #222222;
-  font-size: 1.25rem;
-  line-height: 24px;
-  cursor: pointer;
-}
-
-.vf-dropdown-semantic:hover {
-  border: 1px solid #000;
-}
-
-.vf-dropdown-semantic:focus {
-  outline: none;
+  pointer-events: none;
 }
 
 .vf-input-container {
