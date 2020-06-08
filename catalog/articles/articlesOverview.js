@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import FirstArticle from "./firstArticle";
 import SecondArticle from "./secondArticle";
 import ThirdArticle from "./thirdArticle";
+import Articles from "./index";
 import styles from "./articles.css";
 
 ArticlesOverview.propTypes = {};
@@ -19,6 +20,7 @@ function ArticlesOverview(props) {
 					<ThirdArticle/>
 				</div>
 			</div>
+			<Articles/>
 		</div>
 	);
 }
