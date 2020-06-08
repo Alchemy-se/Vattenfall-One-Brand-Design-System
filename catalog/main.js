@@ -40,7 +40,9 @@ export default class App extends Component {
 			closable: window.innerWidth <= 999,
 			selectedKeysMenu: [getCurrentLocation()],
 			selectedKeysSubmenu: [getCurrentLocation(true)],
-			currentPath: getCurrentLocation(true)
+			currentPath: getCurrentLocation(true),
+			modalOpen: false,
+			modalImageUrl: null
 		};
 	}
 
@@ -61,10 +63,12 @@ export default class App extends Component {
 
 	componentDidMount() {
 		window.addEventListener('resize', this.resize);
+		document.addEventListener("keydown", this.onKeyDown, false);
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('resize', this.resize)
+		window.removeEventListener('resize', this.resize);
+		document.removeEventListener("keydown", this.onKeyDown, false);
 	}
 
 	closeDrawer = () => {
@@ -99,21 +103,67 @@ export default class App extends Component {
 		});
 	};
 
+	onKeyDown = (event) => {
+		if(event.keyCode === 27) {
+			this.triggerModal(false, null);
+		}
+	};
+
+	triggerModal = (open, imageUrl) => {
+		if(!open) {
+			this.setState({
+				modalOpen: false,
+				imageUrl: null
+			})
+			return;
+		}
+		this.setState({
+			modalOpen: open,
+			modalImageUrl: imageUrl
+		});
+	};
+
+	renderModal = () => {
+		if(this.state.modalOpen) {
+			return (
+				<div id={"modal-overlay"} style={{display: "block"}}>
+					<div
+						style={{
+							opacity: 1
+						}}
+						className={styles.modal}>
+						<span className={styles.close} onClick={() => this.triggerModal(false, null)}>&times;</span>
+						<img
+							alt={"image"}
+							src={this.state.modalImageUrl}/>
+
+					</div>
+				</div>
+			)
+		}
+		return null;
+	};
+
+
+
 	render() {
 		const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
+		const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;
 		return (
 			<Router>
+				{this.renderModal()}
+				<Hamburger onClick={this.openDrawer} className={hamburgerClasses}/>
 				<Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu}/>
-				<div className={classes}>
-					<Hamburger onClick={this.openDrawer} className={styles.hamburger}/>
+				<div className={classes} id="content-container">
 					<Drawer
 						closeDrawer={this.closeDrawer}
 						drawerOpen={this.state.drawerOpen}
 						closable={this.state.closable}
 						selectedKeys={this.state.selectedKeysSubmenu}
 					/>
-					<div className={styles.innerContainer}>
-						<Routes onRouteChange={this.onRouteChange}/>
+					{/*<div className={styles.innerContainer} >*/}
+					<div className={`${styles.innerContainer} documentation-container`}>
+						<Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal}/>
 					</div>
 				</div>
 			</Router>

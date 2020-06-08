@@ -5,7 +5,7 @@ import PageHeader from "./lib/pageHeader";
 const Guidelines = () => (
     <React.Fragment>
         <PageHeader title={"Design guidelines"}/>
-        <div style={{ margin: '10px 20px 0 40px' }}>
+        <div style={{ margin: '10px 30px' }}>
             <div style={{height: '50vh', maxWidth: '750px', background: 'transparent'}}>
                 <p className="guidelines_text">In order to set the components in context here are a few examples of designs you can create with the Digital Design system.</p>
 

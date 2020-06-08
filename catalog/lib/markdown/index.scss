@@ -19,8 +19,9 @@
   @media(min-width: 640px) {
     margin: 0 10px 0 20px;
   }
-  @media(min-width: 1000px) {
-    margin: 0 30px 0 40px;
+  @media(min-width: 999px) {
+    margin: 0 170px 0 40px;
+    padding-bottom: 400px;
   }
   p {
     font-style: normal;
@@ -41,7 +42,7 @@
     flex-basis: 100%;
     margin: 16px 0 0 0;
   }
-  a {
+  /*a {
     color: #1964A3;
     -webkit-transition: none;
     transition: none;
@@ -52,7 +53,7 @@
     font-family: "Vattenfall Hall";
     font-weight: 500;
     font-style: normal;
-  }
+  }*/
 }
 
 .htmlContainer {

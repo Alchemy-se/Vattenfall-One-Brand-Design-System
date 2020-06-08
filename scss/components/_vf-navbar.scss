@@ -24,7 +24,7 @@
 
   display: none;
   height: 56px;
-  
+
   @include media-breakpoint-up(lg) {
     height: auto;
     display: flex;
@@ -45,15 +45,15 @@
   text-align: center;
   padding: 0;
   line-height: 64px;
-  
+
   @include media-breakpoint-up(lg) {
-    font-size: 1rem;
+    font-size: $font-size-base;
     line-height: 4rem; // 64px
     display: inline-block;
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 1.25rem;
+    font-size: $font-size-lg;
   }
 
   &:hover {
@@ -63,7 +63,7 @@
     & .svg-text-color {
       fill: $vattenfall-mid-blue !important;
     }
-  }   
+  }
 }
 
   .vf-navbar__nav-item--active {
@@ -88,7 +88,7 @@
   }
 
 .vf-navbar__nav--subnav .vf-navbar__nav-item {
-  font-size: 1rem;
+  font-size: $font-size-base;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;

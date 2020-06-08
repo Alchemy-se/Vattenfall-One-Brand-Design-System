@@ -1,10 +1,10 @@
 import React from "react";
-import styles from './Examples.css'
+import styles from './Examples.css';
 import PageHeader from "./lib/pageHeader";
 
-const Examples = () => (
-    <React.Fragment>
-      <PageHeader title={"Examples"}/>
+const Examples = ({openModal}) => (
+  <React.Fragment>
+    <PageHeader title={"Examples"}/>
     <div className={styles.examples}>
       <p style={{ fontSize: '16px', width: '50%', lineHeight: '32px' }}>
         Here are a few examples of designs you can create with the Digital Design system.
@@ -14,9 +14,9 @@ const Examples = () => (
       <div className="vf-row">
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Homepage</h4>
-          <a href="./img/use-cases/Web/Homepage-Desktop.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Web/Homepage-Desktop.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Web/Homepage-Desktop.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Web/Homepage-Desktop.jpg")
+          }}/>
           <p style={{marginTop: "20px" }}>
             <a href="/static/start.html" target="_blank" rel="noopener">See the coded page</a>
           </p>
@@ -29,9 +29,9 @@ const Examples = () => (
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Article</h4>
-          <a href="./img/use-cases/Web/Article-Desktop.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Web/Article-Desktop.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Web/Article-Desktop.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Web/Article-Desktop.jpg")
+          }}/>
           <p style={{marginTop: "20px"}}>
             <a href="/static/article.html" target="_blank" rel="noopener">See the coded page</a>
           </p>
@@ -46,9 +46,9 @@ const Examples = () => (
       <div className="vf-row">
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Secondary page</h4>
-          <a href="./img/use-cases/Web/Investors-Desktop.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Web/Investors-Desktop.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Web/Investors-Desktop.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Web/Investors-Desktop.jpg")
+          }}/>
           <p style={{marginTop: "20px"}}>
             <a href="/static/investors.html" target="_blank" rel="noopener">
               See the coded page
@@ -68,32 +68,32 @@ const Examples = () => (
       <div className="vf-row">
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Log in</h4>
-          <a href="./img/use-cases/Service/Login.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Service/Login.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Service/Login.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Service/Login.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Dashboard</h4>
-          <a href="./img/use-cases/Service/Home.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Service/Home.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Service/Home.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Service/Home.jpg")
+          }}/>
         </div>
       </div>
 
       <div className="vf-row">
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Comparison</h4>
-          <a href="./img/use-cases/Service/Compare.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Service/Compare.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Service/Compare.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Service/Compare.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Dashboard</h4>
-          <a href="./img/use-cases/Service/Invoices.jpg">
-            <img className={styles.examples__image} src="./img/use-cases/Service/Invoices.jpg" />
-          </a>
+          <img className={styles.examples__image} src="./img/use-cases/Service/Invoices.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/Service/Invoices.jpg")
+          }}/>
         </div>
       </div>
 
@@ -102,41 +102,41 @@ const Examples = () => (
       <div className="vf-row">
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Log In</h4>
-          <a href="./img/use-cases/App/Login.jpg">
-            <img className={styles.examples__ios_image} src="./img/use-cases/App/Login.jpg" />
-          </a>
+          <img className={styles.examples__ios_image} src="./img/use-cases/App/Login.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/App/Login.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Homescreen</h4>
-          <a href="./img/use-cases/App/Home.jpg">
-            <img className={styles.examples__ios_image} src="./img/use-cases/App/Home.jpg" />
-          </a>
+          <img className={styles.examples__ios_image} src="./img/use-cases/App/Home.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/App/Home.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Overview</h4>
-          <a href="./img/use-cases/App/Tarif.jpg">
-            <img className={styles.examples__ios_image} src="./img/use-cases/App/Tarif.jpg" />
-          </a>
+          <img className={styles.examples__ios_image} src="./img/use-cases/App/Tarif.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/App/Tarif.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Consumption</h4>
-          <a href="./img/use-cases/App/ZahlerstandAblesen.jpg">
-            <img className={styles.examples__ios_image} src="./img/use-cases/App/ZahlerstandAblesen.jpg" />
-          </a>
+          <img className={styles.examples__ios_image} src="./img/use-cases/App/ZahlerstandAblesen.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/App/ZahlerstandAblesen.jpg")
+          }}/>
         </div>
 
         <div className="vf-col">
           <h4 className={styles.examples__image_header}>Products</h4>
-          <a href="./img/use-cases/App/Details.jpg">
-            <img className={styles.examples__ios_image} src="./img/use-cases/App/Details.jpg" />
-          </a>
+          <img className={styles.examples__ios_image} src="./img/use-cases/App/Details.jpg" onClick={() => {
+            openModal(true, "./img/use-cases/App/Details.jpg")
+          }}/>
         </div>
       </div>
     </div>
   </React.Fragment>
-)
+);
 
 export default Examples;

@@ -1,3 +1,5 @@
+@import "../../scss/variables";
+
 // stylelint-disable selector-no-qualifying-type
 
 //
@@ -15,7 +17,7 @@
   border: $btn-border-width solid transparent;
 
   padding: 9px 48px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 18px;
   border-radius: 20px;
 
@@ -29,7 +31,7 @@
     transform-origin: top left;
     transform: translate(-220%, 0);
     font-weight: normal;
-    font-size: 20px;
+    font-size: $font-size-lg;
     opacity: 0;
     transition-property: opacity, transform;
     transition-duration: 300ms;
@@ -215,13 +217,13 @@ fieldset:disabled a.vf-btn {
 
 .vf-btn--lg {
   padding: 12px 48px;
-  font-size: 18px;
+  font-size: $font-size-md;
   line-height: 24px;
   border-radius: 26px;
   min-width: 240px;
 
   &:before {
-    font-size: 24px;
+    font-size: $font-size-xl;
     transform: translate(-220%, 0);
   }
 
@@ -247,8 +249,8 @@ fieldset:disabled a.vf-btn {
     position: absolute;
     top: 0;
     left: 0;
-    
-    font-size: 28px;
+
+    font-size: 1.75rem;
     font-weight: normal;
     color: $vattenfall-mid-blue;
 
@@ -293,7 +295,7 @@ fieldset:disabled a.vf-btn {
   }
 }
   .vf-link-with-arrow--small {
-    font-size: 16px;
+    font-size: $font-size-base;
   }
 
 //
