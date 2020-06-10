@@ -1,26 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import FirstArticle from "./firstArticle";
-import SecondArticle from "./secondArticle";
-import ThirdArticle from "./thirdArticle";
 import Articles from "./index";
-import styles from "./articles.css";
+import styles from "./articles.scss";
 
 ArticlesOverview.propTypes = {};
 
-function ArticlesOverview(props) {
+function ArticlesOverview() {
 
 	return (
 		<div className={styles.__articles}>
 			<div className={styles.vf_container_custom}>
 				<div
 					className={`${styles.pagelistblock_list} pagelistblock-list pt-3 pb-3 light-blue vf-row pagelist-item-count-6`}>
-					<FirstArticle/>
-					<SecondArticle/>
-					<ThirdArticle/>
+					<Articles/>
 				</div>
 			</div>
-			<Articles/>
 		</div>
 	);
 }
