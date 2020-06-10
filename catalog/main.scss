@@ -44,7 +44,8 @@
   box-sizing: border-box;
   display: flex;
   font-family: "Vattenfall Hall", sans-serif;
-  min-height: 100vh;
+  //min-height: 100vh;
+  min-height: calc(100vh - 64px);
   line-height: 32px;
   width: 100%;
   flex-direction: column;

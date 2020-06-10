@@ -1,24 +1,23 @@
 import React, {Component} from "react";
-// import Markdown from "../lib/markdown";
-import ReactMarkdown from "react-markdown/with-html";
-import styles from "./index.scss";
+import ArticleCard from "./articleCard";
 const API_URL = "http://localhost:1337";
 
 
 export default class Articles extends Component {
   state = {
     isLoaded: false,
-    articles: []
+    articles: [],
+    newsItems: []
   };
 
   componentDidMount() {
-    fetch(API_URL+"/articles")
+    fetch(API_URL+"/articles?category=news")
       .then(res => res.json())
       .then(
-        (result) => {
+        (articles) => {
           this.setState({
             isLoaded: true,
-            articles: result
+            articles: articles
           });
         },
         // Note: it's important to handle errors here
@@ -33,15 +32,21 @@ export default class Articles extends Component {
       )
   }
 
+  renderArticles = () => {
+    if(this.state.articles.length === 0) return null;
+    return this.state.articles.map(article => {
+      return (
+        <ArticleCard article={article} key={article.id}/>
+      );
+    });
+  };
+
   render() {
     if(!this.state.articles || this.state.articles.length === 0) return null;
     return (
-      <div className={styles.container}>
-        <ReactMarkdown
-          source={this.state.articles[4].content}
-          escapeHtml={false}
-        />
-      </div>
+      <React.Fragment>
+        {this.renderArticles()}
+      </React.Fragment>
     )
   }
 };
