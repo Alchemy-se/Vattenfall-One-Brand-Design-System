@@ -1,7 +1,7 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 @mixin headline-base {
-  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -18,12 +18,12 @@
   @include media-breakpoint-up(sm) {
     font-size: 24px;
     line-height: 40px;
-  }  
+  }
 }
 
 @mixin typo-primary {
   @include headline-base();
-  letter-spacing: 0; 
+  letter-spacing: 0;
 
   font-size: 44px;
   line-height: 48px;
@@ -65,7 +65,7 @@
 //
 
 @mixin typo-tetriary-base {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-weight: 600;
 }
 
@@ -78,7 +78,7 @@
 
 @mixin typo-tetriary-desktop {
   @include typo-tetriary-base();
-  font-size: 28px; 
+  font-size: 28px;
   line-height: 1.33;
   letter-spacing: -0.2px;
 }
@@ -90,19 +90,19 @@
   }
 }
 
-// 
+//
 // h4 - headline quarternary
-// 
+//
 
 @mixin typo-quaternary-desktop {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
 }
 
 @mixin typo-quaternary-mobile {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -110,7 +110,7 @@
 
 @mixin typo-quaternary {
   @include typo-quaternary-mobile();
-  
+
   @include media-breakpoint-up(sm) {
     @include typo-quaternary-desktop();
   }
@@ -133,7 +133,7 @@
 
 @mixin typo-paragraph-primary {
   @include typo-paragraph-primary-mobile();
-  
+
   @include media-breakpoint-up(sm) {
     @include typo-paragraph-primary-desktop();
   }
@@ -153,7 +153,7 @@
 
 @mixin typo-paragraph-secondary {
   @include typo-paragraph-secondary-mobile();
-  
+
   @include media-breakpoint-up(sm) {
     @include typo-paragraph-secondary-desktop();
   }
