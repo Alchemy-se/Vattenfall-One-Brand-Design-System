@@ -6,10 +6,10 @@ function SecondArticle() {
 	const [redirect, setRedirect] = useState(false);
 
 	function getDate() {
-		var today = new Date();
-		var dd = today.getDate();
-		var mm = today.getMonth() + 1;
-		var yyyy = today.getFullYear();
+		let today = new Date();
+		let dd = today.getDate();
+		let mm = today.getMonth() + 1;
+		let yyyy = today.getFullYear();
 		if(dd < 10) {
 			dd = '0' + dd;
 		}
@@ -30,7 +30,7 @@ function SecondArticle() {
 	}
 
 	if(redirect) {
-		return <Redirect push to={"/article/a-digital-design-system-for-the-future"} />
+		return <Redirect push to={"/articles/a-digital-design-system-for-the-future"} />
 	}
 
 	return (
@@ -42,7 +42,7 @@ function SecondArticle() {
 							<picture className="image-col-1"
 									 style={{paddingBottom: "calc(100% * 1080 / 1920)"}}>
 								<img
-									src="./img/articles/kriegers-flak.jpg"
+									src="./img/articles/article_02_small.jpg"
 									alt="Rooftop meadow"
 									className="loaded"/>
 							</picture>

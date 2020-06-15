@@ -114,10 +114,10 @@ const Routes = ({onRouteChange, openModal}) => {
 			<Route path={"/guidelines"}>
 				<Guidelines />
 			</Route>
+			<Route exact path={"/articles/:articleId"} component={Articles}/>
 			<Route path={"/articles"}>
 				<ArticlesOverview />
 			</Route>
-			<Route exact path={"/article/:articleId"} component={Articles}/>
 			<Route path="/">
 				<Welcome />
 			</Route>

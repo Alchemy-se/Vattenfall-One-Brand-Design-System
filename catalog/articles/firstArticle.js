@@ -2,19 +2,14 @@ import React, {useState} from 'react';
 import {Redirect} from "react-router-dom";
 import styles from "./articles.css";
 
-function FirstArticle(props) {
-	// const [share, setShare] = useState(false);
+function FirstArticle() {
 	const [redirect, setRedirect] = useState(false);
 
-	// function toggleShareButton() {
-	// 	setShare(!share)
-	// }
-
 	function getDate() {
-		var today = new Date();
-		var dd = today.getDate();
-		var mm = today.getMonth() + 1;
-		var yyyy = today.getFullYear();
+		let today = new Date();
+		let dd = today.getDate();
+		let mm = today.getMonth() + 1;
+		let yyyy = today.getFullYear();
 		if(dd < 10) {
 			dd = '0' + dd;
 		}
@@ -35,7 +30,7 @@ function FirstArticle(props) {
 	}
 
 	if(redirect) {
-		return <Redirect push to={"/article/boosting-returns-through-brand-consistency"}/>
+		return <Redirect push to={"/articles/boosting-returns-through-brand-consistency"}/>
 	}
 
 	return (
@@ -47,7 +42,7 @@ function FirstArticle(props) {
 							<picture className="image-col-1"
 									 style={{paddingBottom: "calc(100% * 1080 / 1920)"}}>
 								<img
-									src="./img/articles/roof-flowers.jpg"
+									src="./img/articles/article_01_small.jpg"
 									alt="Rooftop meadow"
 									className="loaded"/>
 							</picture>

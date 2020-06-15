@@ -64,7 +64,9 @@ class Articles extends Component {
 
 	render() {
 		return (
-			this.renderArticle(this.props.match)
+			<div style={{paddingBottom: "200px"}}>
+				{this.renderArticle(this.props.match)}
+			</div>
 		);
 	}
 }

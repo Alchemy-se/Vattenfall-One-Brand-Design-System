@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import FirstArticle from "./firstArticle";
 import SecondArticle from "./secondArticle";
 import ThirdArticle from "./thirdArticle";
@@ -7,8 +6,7 @@ import styles from "./articles.css";
 
 ArticlesOverview.propTypes = {};
 
-function ArticlesOverview(props) {
-
+function ArticlesOverview() {
 	return (
 		<div className={styles.__articles}>
 			<div className={styles.vf_container_custom}>
