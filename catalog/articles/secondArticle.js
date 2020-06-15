@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Redirect} from "react-router-dom";
 import styles from "./articles.css";
 
-function SecondArticle(props) {
+function SecondArticle() {
 	const [redirect, setRedirect] = useState(false);
 
 	function getDate() {

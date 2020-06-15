@@ -68,61 +68,6 @@ function FirstArticle(props) {
 							</div>
 						</div>
 					</div>
-					{/*<div className={styles.keywords}>*/}
-					{/*	<a href="https://group.vattenfall.com/press-and-media/news--press-releases#search=Biodiversity"*/}
-					{/*	   className="keyword"*/}
-					{/*	   data-keyword="Biodiversity">#Biodiversity</a>*/}
-					{/*	<a href="https://group.vattenfall.com/press-and-media/news--press-releases#search=Sustainability"*/}
-					{/*	   className="keyword"*/}
-					{/*	   data-keyword="Sustainability">#Sustainability</a>*/}
-					{/*</div>*/}
-					{/*<div className="pagelist-item-tools">*/}
-					{/*	<div className="share-wrapper">*/}
-					{/*		<button onClick={() => {*/}
-					{/*			toggleShareButton()*/}
-					{/*		}} data-content-id="115681"*/}
-					{/*				className="share-toggle" title="Share">Share*/}
-					{/*		</button>*/}
-					{/*		{!share ? null : (*/}
-					{/*			<div className="share-links">*/}
-					{/*				<ul>*/}
-					{/*					<li>*/}
-					{/*						<a href="#">*/}
-					{/*							<img src="/img/footer/facebook.svg" className="vf-footer__social-link"*/}
-					{/*								 onError="this.onerror=null; this.src='/img/footer/facebook.png'"/>*/}
-					{/*							Facebook*/}
-					{/*						</a>*/}
-					{/*						<a*/}
-					{/*							href="https://www.facebook.com/share.php?u=https://group.vattenfall.com/press-and-media/news--press-releases/newsroom/2020/vattenfall-shares-ideas-for-biodiversity-enhancement"*/}
-					{/*							className="facebook" target="_blank" rel="noopener">Facebook</a>*/}
-					{/*					</li>*/}
-					{/*					<li>*/}
-					{/*						<a href="https://www.linkedin.com/shareArticle?url=https://group.vattenfall.com/press-and-media/news--press-releases/newsroom/2020/vattenfall-shares-ideas-for-biodiversity-enhancement"*/}
-					{/*						   className="linkedin" target="_blank"*/}
-					{/*						   rel="noopener">LinkedIn</a>*/}
-					{/*					</li>*/}
-					{/*					<li>*/}
-					{/*						<a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fgroup.vattenfall.com%2fpress-and-media%2fnews--press-releases%2fnewsroom%2f2020%2fvattenfall-shares-ideas-for-biodiversity-enhancement"*/}
-					{/*						   className="twitter" target="_blank"*/}
-					{/*						   rel="noopener">Twitter</a>*/}
-					{/*					</li>*/}
-					{/*					<li>*/}
-					{/*						<a href="mailto:?subject=Vattenfall%20shares%20ideas%20for%20biodiversity%20enhancement&amp;body=https%3A%2F%2Fgroup.vattenfall.com%2Fpress-and-media%2Fnews--press-releases%2Fnewsroom%2F2020%2Fvattenfall-shares-ideas-for-biodiversity-enhancement"*/}
-					{/*						   className="mail">E-mail</a>*/}
-					{/*					</li>*/}
-					{/*					<li>*/}
-					{/*						<label className="copy-label">Copy url*/}
-					{/*							https://group.vattenfall.com/press-and-media/news--press-releases/newsroom/2020/vattenfall-shares-ideas-for-biodiversity-enhancement<input*/}
-					{/*								type="text"*/}
-					{/*								value="https://group.vattenfall.com/press-and-media/news--press-releases/newsroom/2020/vattenfall-shares-ideas-for-biodiversity-enhancement"/></label>*/}
-					{/*						<button className="copy success" data-content-id="115681">Copy url*/}
-					{/*						</button>*/}
-					{/*					</li>*/}
-					{/*				</ul>*/}
-					{/*			</div>*/}
-					{/*		)}*/}
-					{/*	</div>*/}
-					{/*</div>*/}
 				</div>
 			</div>
 		</div>

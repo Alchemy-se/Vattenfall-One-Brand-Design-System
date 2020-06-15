@@ -9,10 +9,11 @@
 .innerContainer {
   position: absolute;
   bottom: 21px;
-  left: 21px;
-  @media(min-width: 1000px) {
-    left: 42px;
+  margin: 0 170px 0 40px;
+  @media(max-width: 999px) {
+    margin: 0 10px 0 20px;
   }
+
   h1 {
     font-style: normal;
     font-weight: bold;
