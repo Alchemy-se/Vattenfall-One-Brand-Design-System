@@ -43,7 +43,7 @@
 .innerContainer {
   box-sizing: border-box;
   display: flex;
-  font-family: "Vattenfall Hall", sans-serif;
+  font-family: "Vattenfall Hall NORDx", "Vattenfall Hall", sans-serif;;
   min-height: 100vh;
   line-height: 32px;
   width: 100%;
@@ -78,7 +78,6 @@
     max-width: 1080px;
   }
 }
-
 .close {
   position: absolute;
   top: 15px;
