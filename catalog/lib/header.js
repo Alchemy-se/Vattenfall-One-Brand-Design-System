@@ -8,8 +8,7 @@ function Header(props) {
 	const [toggleDropdown, setToggleDropdown] = useState(false);
 
 	const wrapperRef = useRef(null);
-
-	// below is the same as componentDidMount and componentDidUnmount
+	
 	useEffect(() => {
 		document.addEventListener("click", handleClickOutside, false);
 		return () => {
@@ -46,7 +45,7 @@ function Header(props) {
 			</Menu>
 		)
 	}
-	
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.logoContainer}>
