@@ -30,7 +30,7 @@ function SecondArticle() {
 	}
 
 	if(redirect) {
-		return <Redirect push to={"/articles/a-digital-design-system-for-the-future"} />
+		return <Redirect push to={"/articles/creating-a-more-consistent-ui-ux-for-the-future"} />
 	}
 
 	return (
@@ -43,7 +43,7 @@ function SecondArticle() {
 									 style={{paddingBottom: "calc(100% * 1080 / 1920)"}}>
 								<img
 									src="./img/articles/article_02_small.jpg"
-									alt="Rooftop meadow"
+									alt=""
 									className="loaded"/>
 							</picture>
 						</figure>
@@ -54,11 +54,11 @@ function SecondArticle() {
 									<div className={styles.date}>{getDate()}</div>
 								</div>
 								<h3 className={styles.heading}>
-									A Digital Design System for the future
+									Creating a more consistent UI/UX for the future
 								</h3>
 							</div>
 							<div className={styles.abstract}>
-								<p>{truncateText("The decision to build our own DDS was based on the realization that meeting specific organizational needs is required to achieve economies of scale. Our internal review and the very valuable user feedback we've received so far form the basis for our mission to create a better system and user experience going forward. Furthermore, building our own DDS enables us to support regional initiatives whilst retaining control over the development roadmap. All in all, this means building for the future and being able to excel in creating high return on marketing efforts.")}
+								<p>{truncateText("The DDS is built on the overarching goal of achieving brand consistency while meeting specific organisational and regional needs for design elements and code. Over time, we generate a growing library of cost-saving solutions. A win-win-win type of set up that benefits the brand, serves our users, and has a positive impact on finances.Over the past months, an internal review and the very valuable user feedback we've received so far have formed the basis for our mission to create a better system and user experience going forward.")}
 								</p>
 							</div>
 						</div>

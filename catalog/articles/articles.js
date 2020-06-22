@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
 import Article_1 from "./article_1";
 import Article_2 from "./article_2";
+import Article_3 from "./article_3";
 import styles from "./articles.css";
 import ArticlesOverview from "./articlesOverview";
 
@@ -53,10 +54,12 @@ class Articles extends Component {
 
 	renderArticle(match) {
 		const articleId = match.params && match.params.articleId ? match.params.articleId : null;
-		if(articleId === "boosting-returns-through-brand-consistency") {
+		if(articleId === "on-a-mission-to-keep-our-brand-consistent") {
 			return <Article_1/>
-		} else if(articleId === "a-digital-design-system-for-the-future") {
+		} else if(articleId === "creating-a-more-consistent-ui-ux-for-the-future") {
 			return <Article_2/>;
+		} else if(articleId === "conversion-rate-optimisation-in-action") {
+			return <Article_3/>;
 		} else {
 			return <Redirect to={"/articles"}/>
 		}

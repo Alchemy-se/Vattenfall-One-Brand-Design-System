@@ -30,7 +30,7 @@ function ThirdArticle() {
 	}
 
 	if(redirect) {
-		return <Redirect push to={"/articles/boosting-returns-through-brand-consistency"}/>
+		return <Redirect push to={"/articles/conversion-rate-optimisation-in-action"}/>
 	}
 	return (
 		<div className="vf-col-md-4">
@@ -53,12 +53,11 @@ function ThirdArticle() {
 									<div className={styles.date}>{getDate()}</div>
 								</div>
 								<h3 className={styles.heading}>
-									Boosting returns through brand
-									consistency
+									Conversion rate optimisation in action
 								</h3>
 							</div>
 							<div className={styles.abstract}>
-								<p>{truncateText("The Digital Design System (DDS) exists to help us create user-focused digital experiences that are distinctly Vattenfall. The goal is to ensure brand consistency – to present a cohesive and compliant experience of Vattenfall to the world through all digital channels which in the end will generate more sales.")}</p>
+								<p>{truncateText("Optimising conversion through motion and social media is an effective way to make your marketing more fruitful without raising marketing spend. Being a fast-moving medium with very little patience or viewing time, we need to balance and prioritise between message (clarity) and sender (identification).")}</p>
 							</div>
 						</div>
 					</div>

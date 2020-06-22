@@ -30,7 +30,7 @@ function FirstArticle() {
 	}
 
 	if(redirect) {
-		return <Redirect push to={"/articles/boosting-returns-through-brand-consistency"}/>
+		return <Redirect push to={"/articles/on-a-mission-to-keep-our-brand-consistent"}/>
 	}
 
 	return (
@@ -43,7 +43,7 @@ function FirstArticle() {
 									 style={{paddingBottom: "calc(100% * 1080 / 1920)"}}>
 								<img
 									src="./img/articles/article_01_small.jpg"
-									alt="Rooftop meadow"
+									alt=""
 									className="loaded"/>
 							</picture>
 						</figure>
@@ -54,12 +54,11 @@ function FirstArticle() {
 									<div className={styles.date}>{getDate()}</div>
 								</div>
 								<h3 className={styles.heading}>
-									Boosting returns through brand
-									consistency
+									On a mission to keep our brand consistent
 								</h3>
 							</div>
 							<div className={styles.abstract}>
-								<p>{truncateText("The Digital Design System (DDS) exists to help us create user-focused digital experiences that are distinctly Vattenfall. The goal is to ensure brand consistency – to present a cohesive and compliant experience of Vattenfall to the world through all digital channels which in the end will generate more sales.")}</p>
+								<p>{truncateText("The Digital Design System (DDS) exists to help us create user-focused digital experiences that are recognisably Vattenfall. The goal is to ensure we present a cohesive and consistent experience of Vattenfall to the world through all digital channels.")}</p>
 							</div>
 						</div>
 					</div>
