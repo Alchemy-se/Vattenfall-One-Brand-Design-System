@@ -69,6 +69,9 @@ class Articles extends Component {
 		return (
 			<div style={{paddingBottom: "200px"}}>
 				{this.renderArticle(this.props.match)}
+				<div className="vf-container vf-container--tight pt-4">
+					<p><a href={"/articles"} style={{fontWeight: "normal"}} className={"vf-btn vf-btn--tertiary"}>More articles</a></p>
+				</div>
 			</div>
 		);
 	}
