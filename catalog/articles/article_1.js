@@ -31,8 +31,8 @@ const Article_1 = () => {
 					<h2>Increased effectiveness and returns</h2>
 				</div>
 				<p>
-					Done right, brand consistency on a global level increases perceived quality, which in turn increases sales likelihood. In fact, brand consistency muffles price sensitivity and increases marketing effectiveness – <a href={"https://www.mckinsey.com/industries/retail/our-insights/the-three-cs-of-customer-satisfaction-consistency-consistency-consistency#"} style={{fontWeight: "normal"}}>brand consistency throughout the customer journey is proved to have the potential to lift revenue by 15% and save costs for serving customers with 20%.</a>
-					(McKinsey, 2014) In Vattenfall’s business, it basically comes down to this: Economies of scale. Using the assets that are produced centrally will mean increased brand consistency globally and therefore sales, while also requiring less cost of producing those same assets locally.
+					Done right, brand consistency on a global level increases perceived quality, which in turn increases sales likelihood. In fact, brand consistency muffles price sensitivity and increases marketing effectiveness – <a href={"https://www.mckinsey.com/industries/retail/our-insights/the-three-cs-of-customer-satisfaction-consistency-consistency-consistency#"} style={{fontWeight: "normal"}}>brand consistency throughout the customer journey is proved to have the potential to lift revenue by 15% and save costs for serving customers with 20% </a>
+					 (McKinsey, 2014). In Vattenfall’s business, it basically comes down to this: Economies of scale. Using the assets that are produced centrally will mean increased brand consistency globally and therefore sales, while also requiring less cost of producing those same assets locally.
 				</p>
 				<div className="clearfix"></div>
 				<div className="pt-4">
