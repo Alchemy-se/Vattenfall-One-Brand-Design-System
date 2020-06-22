@@ -3,7 +3,8 @@ import {Redirect} from "react-router-dom";
 import ReactMarkdown from "react-markdown/with-html";
 import styles from "./article.scss"
 
-const API_URL = "http://localhost:1337";
+// const API_URL = "https://vattenfall-design-system.ew.r.appspot.com";
+const API_URL = "http://localhost:1338";
 
 const ParagraphRenderer = (props) => {
   // Special handling for image wrapper.

@@ -6,7 +6,7 @@ function ArticleCard(props) {
   const [redirect, setRedirect] = useState(false);
 
   function getDate() {
-    var today = new Date(props.article.createdAt);
+    var today = new Date(props.article.created_at);
     var dd = today.getDate();
     var mm = today.getMonth() + 1;
     var yyyy = today.getFullYear();
@@ -58,7 +58,7 @@ function ArticleCard(props) {
                   <div className={styles.date}>{getDate()}</div>
                 </div>
                 <h3 className={styles.heading}>
-                  {article.title}
+                  {article.cardTitle}
                 </h3>
               </div>
               <div className={styles.abstract}>

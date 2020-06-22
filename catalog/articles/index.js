@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ArticleCard from "./articleCard";
-const API_URL = "http://localhost:1337";
-
+// const API_URL = "https://vattenfall-design-system.ew.r.appspot.com";
+const API_URL = "http://localhost:1338";
 
 export default class Articles extends Component {
   state = {
@@ -9,6 +9,7 @@ export default class Articles extends Component {
     articles: [],
     newsItems: []
   };
+
 
   componentDidMount() {
     fetch(API_URL+"/articles?category=news")
@@ -33,7 +34,7 @@ export default class Articles extends Component {
   }
 
   renderArticles = () => {
-    if(this.state.articles.length === 0) return null;
+    if(!Array.isArray(this.state.articles) || this.state.articles.length === 0) return null;
     return this.state.articles.map(article => {
       return (
         <ArticleCard article={article} key={article.id}/>
