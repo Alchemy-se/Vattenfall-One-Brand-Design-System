@@ -26,8 +26,6 @@ const getCurrentLocation = (full) => {
 };
 
 function trackPageView(path) {
-	console.warn("GA DISABLED");
-	return;
 	ReactGA.pageview(path);
 }
 
