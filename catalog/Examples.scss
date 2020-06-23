@@ -1,0 +1,24 @@
+.container {
+  margin: 0 170px 0 40px;
+  @media(max-width: 999px) {
+    margin: 0 10px 0 20px;
+  }
+}
+
+.examples__header {
+  margin-top: 100px;
+}
+
+.examples__image {
+  width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.examples__image_header {
+  margin-top: 30px;
+}
+
+.examples__ios_image {
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

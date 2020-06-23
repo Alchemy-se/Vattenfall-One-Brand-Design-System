@@ -65,3 +65,8 @@ conf/certs/digitaldesign.vattenfall.com.key
 
 # IML file from intellij
 *.iml
+
+#WEBPACK DEV SERVER
+dist/js/*.hot-update.*
+
+.idea/

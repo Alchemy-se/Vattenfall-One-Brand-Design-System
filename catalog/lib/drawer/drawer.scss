@@ -1,0 +1,13 @@
+.container {
+  top: 64px;
+  height: calc(100vh - 64px);
+
+  div:first-of-type {
+    box-shadow: none !important;
+  }
+}
+.subMenu {
+  ul {
+    background: rgb(237, 241, 246) !important;
+  }
+}

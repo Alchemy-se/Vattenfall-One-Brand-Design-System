@@ -1,0 +1,18 @@
+.container {
+  top: 16px;
+  z-index: 1;
+  border-left: none;
+  background-color: #2071B5;
+  padding: 12px 8px 13px 8px;
+  border-radius: 0 4px 4px 0;
+  height: 40px;
+  position: sticky;
+  left: 0;
+  line-height: 14px;
+
+  svg {
+    fill: #fff;
+    width: 24px;
+    height: 16px;
+  }
+}

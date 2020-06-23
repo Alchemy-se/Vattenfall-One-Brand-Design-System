@@ -1,0 +1,443 @@
+/*.__articles {*/
+/*    background-color: #f2f2f2;*/
+/*    height: 100%;*/
+/*}*/
+
+.__articles h2 {
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 72px;
+    letter-spacing: -0.2px;
+}
+
+.__articles .pagelistblock_list > div {
+    margin-bottom: 32px;
+}
+
+.articlesCardWrapper {
+    padding: 0 20px;
+}
+
+.newsitem {
+    height: 100%;
+    min-height: 450px;
+    font-weight: 400;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.newsitem_boxshadow {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    line-height: 1.2em;
+    max-height: 40em;
+    text-align: initial;
+}
+
+.clickable_card {
+    cursor: pointer;
+}
+
+.newsitem figure {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.pagelistblock .pagelistblock_list picture {
+    padding-bottom: 60% !important;
+    overflow: hidden;
+}
+
+.newsitem picture {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.newsitem picture img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.newsitem picture img {
+    position: absolute;
+}
+
+.newsitem img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.date {
+    padding-left: 3px;
+}
+
+.attribution::after {
+    display: block;
+    background: white;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+}
+
+.newsitem_content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.info {
+    line-height: 23px;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #595959;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+.type {
+    font-weight: 400;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+}
+
+.type::after {
+    display: inline-block;
+    content: "\2022";
+    font-size: 1.25rem;
+    line-height: .7em;
+    font-family: monospace;
+    margin-left: .2em;
+}
+
+.heading {
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 26px;
+    margin: 0;
+    padding: 2px 0 .3333333333rem;
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    .heading h3 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.33;
+        letter-spacing: -.2px;
+    }
+}
+
+.heading h3 {
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.heading h1 h2 h3 h4 {
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.heading a {
+    color: #000;
+    font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 0 .3333333333rem;
+}
+
+.keywords .share-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.abstract {
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 23px;
+    font-weight: 400;
+    /*-webkit-box-orient: vertical;*/
+    /*overflow: hidden;*/
+    /*-o-text-overflow: ellipsis;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    padding: 0 0 .3333333333rem !important;
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 48em) {
+    .abstract {
+        display: block;
+        font-size: 1rem;
+    }
+}
+
+.keywords {
+    padding: 0 1rem 4rem 1rem;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.keywords a {
+    color: #000;
+    line-height: 23px;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.keywords a:hover {
+    color: #1964A3;
+}
+
+@media screen and (min-width: 48em) {
+    .keywords a {
+        font-size: .9rem;
+    }
+}
+
+.pagelist-item-tools {
+    border-top: 1px solid #ddd;
+    display: flex;
+    padding: 0 1rem 0;
+    height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 48em) {
+    .pagelist-item-tools {
+        padding: 0 1rem 0;
+    }
+}
+
+.share-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.share-toggle {
+    border: none;
+    outline: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 23px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.share-toggle:hover {
+    color: #1964A3;
+}
+
+@media screen and (min-width: 48em) {
+    .share-toggle {
+        font-size: 1rem;
+    }
+}
+
+.share-wrapper button input[type=button] {
+    background: 0 0;
+    border: 0;
+    padding: 0;
+    color: #000;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+}
+
+.share-links {
+    position: absolute;
+    margin-left: -20px;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 10px 20px 4px rgba(100, 100, 100, .4);
+    z-index: 1000;
+    bottom: 50px;
+    color: #000;
+}
+
+.share-links::after {
+    content: " ";
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 8px 8px 0 8px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 28px;
+}
+
+.share-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.share-links li {
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.share-links ul li .facebook .linkedin .mail .twitter .xing {
+    padding-left: 15px;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 23px;
+    font-size: .75rem;
+    color: #000;
+    position: relative;
+}
+
+@media screen and (min-width: 48em) {
+    .share-links ul li {
+        font-size: 1rem;
+    }
+}
+
+.share-links .copy-label {
+    width: 10px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.share-links .copy {
+    line-height: 23px;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+}
+
+.copy::after {
+    border: none;
+    line-height: 23px;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+}
+
+.success::after {
+    display: inline-block;
+    content: "success";
+}
+
+@media screen and (min-width: 48em) {
+    .copy {
+        font-size: .9rem;
+    }
+}
+
+.share-toggle::before {
+    /*background: url(./img/share.svg) no-repeat;*/
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    background-size: 20px;
+    width: 21px;
+    margin-right: 5px;
+    height: 21px;
+}
+
+@media screen and (min-width: 64em) {
+    .heading {
+        font-size: 1.4rem;
+        line-height: 28px;
+        padding-bottom: .6666666667rem;
+    }
+}
+
+.abstract p {
+    padding-top: 0 !important;
+    margin: 0;
+}
+
+@media screen and (min-width: 48em) {
+    .newsitem .info {
+        font-size: .9rem;
+    }
+}
+
+.vf_container_custom {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: left;
+}
+
+@media (max-width: 999px) {
+    .vf_container_custom {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .vf_container_custom {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .vf_container_custom {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .vf_container_custom {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vf_container_custom {
+        max-width: 1160px;
+    }
+}
+
+
+
+
+

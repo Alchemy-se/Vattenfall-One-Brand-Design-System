@@ -1,0 +1,175 @@
+.container {
+  box-sizing: border-box;
+  max-width: 64em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 48px 0;
+
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+
+  @media(min-width: 640px) {
+    margin: 0 10px 0 20px;
+  }
+  @media(min-width: 999px) {
+    margin: 0 170px 0 40px;
+    padding-bottom: 400px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    letter-spacing: normal;
+    color: #222222;
+    font-family: Vattenfall Hall;
+    font-size: 1rem;
+    line-height: 1.44;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 16px 0 0 0;
+  }
+  /*a {
+    color: #1964A3;
+    -webkit-transition: none;
+    transition: none;
+    border: none;
+    background: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-family: "Vattenfall Hall NORDx","Vattenfall Hall";
+    font-weight: 500;
+    font-style: normal;
+  }*/
+}
+
+.htmlContainer {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 24px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.htmlInnerContainer {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.toggle {
+  border: 3px solid transparent;
+  color: #D6D6D6;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Mono',monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px;
+  position: absolute;
+  right: -3px;
+  top: -26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.html {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAF0lEQVQI12P4BAI/QICBFCaYBPNJYQIAkUZftTbC4sIAAAAASUVORK5CYII=);
+  box-sizing: border-box;
+  display: block;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.code {
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  pre {
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    letter-spacing: normal;
+    color: #00263E;
+    font-family: Vattenfall Hall;
+    font-size: 0.9128709291752769rem;
+    line-height: 1.44;
+    background: #fff;
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
+    white-space: pre;
+    width: 100%;
+    code {
+      font-family: 'Roboto Mono',monospace;
+      font-weight: 400;
+      font-size: 1em;
+
+      line-height: 1.44;
+    }
+  }
+  &.noBorder {
+    border: none;
+  }
+}
+
+.prismToken {
+  color: #FF5555;
+  .punctuation {
+    color: #535353;
+  }
+}

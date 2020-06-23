@@ -14,7 +14,7 @@ if [ ! -f ./conf/certs/digitaldesign.vattenfall.com.key ]; then
     exit 1
 fi
 
-docker build -t stage-vattenfallds --build-arg mode=dev -f stage.Dockerfile .
+docker build --no-cache -t stage-vattenfallds --build-arg mode=dev -f stage.Dockerfile .
 docker tag stage-vattenfallds eu.gcr.io/vattenfall-design-system/stage-vattenfallds
 docker push eu.gcr.io/vattenfall-design-system/stage-vattenfallds
 
