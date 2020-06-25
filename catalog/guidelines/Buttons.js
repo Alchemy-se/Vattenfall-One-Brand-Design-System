@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PageHeader from '../lib/pageHeader';
+import Columns from "./Columns";
 import styles from '../Guidelines.scss';
 
 import Description from './Description';
@@ -24,6 +25,7 @@ const Button = () => {
           <h3>&nbsp;</h3>
         </div>
       </div>
+        <Columns/>
       <section className="p-2 vf-border-bottom-gray-200"></section>
     </Fragment>
   );

@@ -7,7 +7,7 @@ const Guidelines = () => (
   <React.Fragment>
     <PageHeader title={'Design guidelines'} />
     <div className={styles.guidelinesContainer}>
-      <div style={{ height: '50vh', maxWidth: '750px', background: 'transparent' }}>
+      <div>
         <p className={styles.guidelinesText}>
           In order to set the components in context here are a few examples of designs you can create with the Digital
           Design system.
