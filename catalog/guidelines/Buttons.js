@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageHeader from '../lib/pageHeader';
+import PageHeader from './pageHeader';
 import Column from "./Column";
 import YellowButtons from "./buttons/yellow";
 import styles from '../Guidelines.scss';
