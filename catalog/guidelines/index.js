@@ -1,7 +1,13 @@
 import React from 'react';
-import styles from '../Guidelines.scss';
+import styles from './Guidelines.scss';
 import PageHeader from '../lib/pageHeader';
-import Buttons from './Buttons';
+import Buttons from './buttons/Buttons';
+import Forms from './forms/Forms';
+import Colors from './colors/Colors';
+import Illustrations from './illustrations/Illustrations';
+import Motion from './motion/Motion';
+import Typography from './typography/Typography';
+import Grid from './grid/Grid';
 
 const Guidelines = () => (
   <React.Fragment>
@@ -12,9 +18,14 @@ const Guidelines = () => (
           In order to set the components in context here are a few examples of designs you can create with the Digital
           Design system.
         </p>
-
         <Buttons />
-        <h2 className={styles.guidelinesHeader}>Color</h2>
+        <Forms />
+        <Colors />
+        <Illustrations />
+        <Motion />
+        <Typography />
+        <Grid />
+        {/* <h2 className={styles.guidelinesHeader}>Color</h2>
         <p className={styles.guidelinesText}>
           In order to comply with Digital Design System, always stick to brand’s palettes. It is necessary to use only
           brand approved colors in order to follow general brand expression.
@@ -48,7 +59,7 @@ const Guidelines = () => (
           transitions that are included to it. Watch over the purpose of each effect and do not combine several
           components with heavy animations at once: the digital behaviour of such should bring liveliness and subtle
           motion rather than chaotic movement.
-        </p>
+        </p> */}
       </div>
     </div>
   </React.Fragment>

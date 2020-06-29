@@ -1,0 +1,122 @@
+.disableHover {
+  pointer-events: none;
+}
+
+.yellowButtonHover {
+  pointer-events: none;
+  color: #111111;
+  background: #ffe85b;
+  &:before {
+    opacity: 1;
+    transform: translate(-150%, 0);
+  }
+}
+
+.yellowButtonActive {
+  composes: yellowButtonHover;
+  background: #f1c50b;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+}
+
+.blueButtonHover {
+  pointer-events: none;
+  color: #ffffff;
+  background: #2071b5;
+  &:before {
+    opacity: 1;
+    transform: translate(-150%, 0);
+  }
+}
+
+.blueButtonActive {
+  composes: blueButtonHover;
+  background: #1e324f;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+}
+
+.tertiaryBlackButton {
+  border-color: #222222;
+}
+
+.tertiaryBlackButtonHover {
+  pointer-events: none;
+  color: #ffffff;
+  background: #222222;
+  &:before {
+    opacity: 1;
+    transform: translate(-150%, 0);
+  }
+}
+
+.tertiaryBlackButtonActive {
+  composes: tertiaryBlackButtonHover;
+  color: #fff;
+  background: #4e4b48;
+  border-color: #4e4b48;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+}
+
+.tertiaryBlueButtonHover {
+  pointer-events: none;
+  color: #fff;
+  background: #1964a3;
+  border-color: #1964a3;
+  &:before {
+    opacity: 1;
+    transform: translate(-150%, 0);
+  }
+}
+
+.tertiaryBlueButtonActive {
+  composes: tertiaryBlackButtonHover;
+  color: #fff;
+  background: #1e324f;
+  border-color: #1e324f;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+}
+
+.textButtonHover {
+  pointer-events: none;
+  color: #2071b5;
+  &:before {
+    opacity: 1;
+    transform: translate(40%, 0);
+  }
+}
+
+.textButtonSmallHover {
+  pointer-events: none;
+  color: #111111;
+  &:before {
+    opacity: 1;
+    transform: translate(40%, 0);
+  }
+}
+
+.textButtonActive {
+  pointer-events: none;
+  color: #1e324f;
+  &:before {
+    color: #1e324f;
+    opacity: 1;
+    transform: translate(40%, 0);
+  }
+}
+
+.textButtonSmallActive {
+  pointer-events: none;
+  color: #111111;
+  &:before {
+    color: #1e324f;
+    opacity: 1;
+    transform: translate(40%, 0);
+  }
+}

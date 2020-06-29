@@ -1,0 +1,44 @@
+import React, { Fragment } from 'react';
+import ElementSpeifications from './ElementSpecification';
+
+const BodyTextSmall = () => {
+  return (
+    <Fragment>
+      <div className="vf-row">
+        <h4>Intro in caps</h4>
+      </div>
+      <div className="vf-row">
+        <p className="vf-intro-in-caps">This is our</p>
+        <p>
+          intro in caps and is used on the three first words together with <br />
+          body text large.
+        </p>
+      </div>
+      <div className="vf-row">
+        <ElementSpeifications
+          screenSize="Dektop"
+          fontName="Vattenfall Hall"
+          fontWeight="Bold"
+          fontSize="16px"
+          lineHeight="36px"
+        />
+        <ElementSpeifications
+          screenSize="Tablet"
+          fontName="Vattenfall Hall"
+          fontWeight="Bold"
+          fontSize="16px"
+          lineHeight="36px"
+        />
+        <ElementSpeifications
+          screenSize="Mobile"
+          fontName="Vattenfall Hall"
+          fontWeight="Regular"
+          fontSize="12px"
+          lineHeight="22px"
+        />
+      </div>
+    </Fragment>
+  );
+};
+
+export default BodyTextSmall;
