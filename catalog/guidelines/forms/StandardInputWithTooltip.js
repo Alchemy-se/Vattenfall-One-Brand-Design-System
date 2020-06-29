@@ -7,7 +7,7 @@ const StandardInputWithTooltip = ({ title, label }) => {
     <Fragment>
       <div className="vf-row">
         <div style={{ margin: '0' }} className="vf-col">
-          <h3>{title}</h3>
+          <h4>{title}</h4>
         </div>
       </div>
       <div className="vf-row">

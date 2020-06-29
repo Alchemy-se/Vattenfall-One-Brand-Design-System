@@ -26,18 +26,20 @@ const Forms = () => {
     <Fragment>
       <PageHeader title="Forms" />
       <section className="p-2 vf-border-top-gray-200"></section>
-      <Description
-        title="Standard Forms"
-        leftText={`Forms and input fields are 52px height and the spacing between Input
-                   fields should always be 28px when stacked on top of each other`}
-        rightText={`Standard Forms are used for 3 or more inputfields. If 3 or less, then use
-                    the underline input. All inputfieldson white background`}
-      />
+        <div className="vf-row w-75">
+            <div className="vf-col">
+              <p>Input text are the most commently use form control. Input fields are suitable for getting textual data from the user.</p>
+              <p>Behaviour<br/>Input text contain a label above the input field.</p>
+              <p>Error messages are displayed below the input field. When the users input isn’t valid the error message will be displayed. The application wich implements the input fields is responsible for validation and display of the error message. </p>
+            </div>
+        </div>
+      <div className="vf-mt-lg"/>
       <StandardInput title="Standard" label="Input label" />
       <StandardInputWithTooltip title="Standard With Tooltip" label="Input label" />
       <StandardInputWarning title="Standard Warning" label="Warning state label" />
       <StandardInputError title="Standard Error" label="Error state label" />
-      <Description title="Dropdown menu" leftText={`Dropdown menu is always 52px in height.`} rightText={``} />
+      <div className="vf-mt-lg"/>
+      <Description title="Dropdown" text="Dropdown is an element that allows you to make a particular choice within compact area which is very useful, especially for the mobile devices. Only one item can be chosen at the time. Advice is to use this element when the amount of items to be chosen from exceeds 3 options. "/>
       <StandardDropdown title="Standard" />
       <StandardDropdownWithCheckboxes title="Standard with checkboxes" />
       <Description
@@ -52,17 +54,21 @@ const Forms = () => {
       <UnderlineDropbox title="Underline Dropbox" />
       <Description
         title="Number"
-        leftText={`Number input should always be 52px in height. Like dropdowns, numbers include an ever-present label in order to be visible.`}
-        rightText={``}
+        text="Number input should alwasy be 52px in height. Like dropdowns, numbers include an ever-present label in order to be accessible."
       />
       <NumericInput title="Standard" />
       <Description
         title="Textarea"
-        leftText={`Like dropdowns, text fields include an ever-present label in order to be accessible.`}
-        rightText={``}
+        text="Textarea provides the possibility for the custom input from the user. Use this element when personal feedback from the user is needed or the situation itself is not specific enough to support pre-definied option for the user to choose from."
       />
       <Textarea title="Standard" />
       <TextareaError title="Textarea Error" />
+      <div className="vf-mt-lg"/>
+      <Description
+        title="Tooltip"
+        text="Tooltips appear on hover and provide an additional layer of information for the user. They are filled with different colors in order to generate maximum contrast with the page beneath. Carets are positioned in the top center, bottom center, right center and left center "
+      />
+
     </Fragment>
   );
 };
