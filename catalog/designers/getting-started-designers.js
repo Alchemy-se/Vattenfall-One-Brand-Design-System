@@ -59,7 +59,7 @@ const Designers = () => (
         </p>
 
         <p>
-          We're currently in the process of making some larges updates grouped into releases throughout the year, the latest update was completed by the end of June 2020. You will find the latest file by following the VDK the link below.
+          We're currently in the process of making some larger updates grouped into releases throughout the year, the latest update was completed by the end of June 2020. You will find the latest file by following the link below.
         </p>
 
         <div className="vf-row">
