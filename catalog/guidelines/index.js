@@ -8,6 +8,7 @@ import Illustrations from './illustrations/Illustrations';
 import Motion from './motion/Motion';
 import Typography from './typography/Typography';
 import Grid from './grid/Grid';
+import Logotype from './logotype/Logotype';
 
 const Guidelines = () => (
   <React.Fragment>
@@ -19,12 +20,13 @@ const Guidelines = () => (
           Design system.
         </p>
         <Buttons />
-        {/* <Forms />
+        <Forms />
         <Colors />
         <Illustrations />
         <Motion />
-        <Typography /> */}
-        {/*<Grid />*/}
+        <Typography />
+        <Grid />
+        <Logotype />
         {/* <h2 className={styles.guidelinesHeader}>Color</h2>
         <p className={styles.guidelinesText}>
           In order to comply with Digital Design System, always stick to brand’s palettes. It is necessary to use only
