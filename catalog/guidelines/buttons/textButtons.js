@@ -4,17 +4,17 @@ import React, { Fragment } from 'react';
 
 const TextButtons = ({ title, label }) => (
   <Fragment>
-    <div className="vf-row">
+    {title && <div className="vf-row">
       <div style={{ margin: '0' }} className="vf-col">
         <p style={{ fontSize: '24px' }}>{title}</p>
       </div>
-    </div>
+    </div>}
     <div className="vf-row">
       <Column title={'Default'}>
         <a href="#" className="vf-link-with-arrow">
           {label}
         </a>
-        <div className="pb-2" />
+        <div className="vf-pb-sm" />
         <a href="#" className="vf-link-with-arrow vf-link-with-arrow--small">
           {label}
         </a>
@@ -23,7 +23,7 @@ const TextButtons = ({ title, label }) => (
         <a href="#" className={`vf-link-with-arrow ${styles.textButtonHover}`}>
           {label}
         </a>
-        <div className="pb-2" />
+        <div className="vf-pb-sm" />
         <a href="#" className={`vf-link-with-arrow vf-link-with-arrow--small ${styles.textButtonSmallHover}`}>
           {label}
         </a>
@@ -32,7 +32,7 @@ const TextButtons = ({ title, label }) => (
         <a href="#" className={`vf-link-with-arrow ${styles.textButtonActive}`}>
           {label}
         </a>
-        <div className="pb-2" />
+        <div className="vf-pb-sm" />
         <a href="#" className={`vf-link-with-arrow vf-link-with-arrow--small ${styles.textButtonSmallActive}`}>
           {label}
         </a>

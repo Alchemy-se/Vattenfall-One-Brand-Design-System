@@ -7,7 +7,9 @@ const Description = ({ title, text, leftText, rightText }) => {
       <div className="vf-row w-75">
         <div className="vf-col ">
           {title && <h2>{title}</h2>}
-          <p className={styles.guidelinesText}>{text}</p>
+          <p className={styles.guidelinesText}>
+            {text}
+          </p>
         </div>
       </div>
     );
@@ -15,11 +17,11 @@ const Description = ({ title, text, leftText, rightText }) => {
   return (
     <div className="vf-row">
       <div className="vf-col">
-        {title && <h3>{title}</h3>}
+        {title && <h2>{title}</h2>}
         {leftText && <p className={styles.guidelinesText}>{leftText}</p>}
       </div>
       <div className="vf-col">
-        {title && <h3>&nbsp;</h3>}
+        {title && <h2>&nbsp;</h2>}
         {rightText && <p className={styles.guidelinesText}>{rightText}</p>}
       </div>
     </div>

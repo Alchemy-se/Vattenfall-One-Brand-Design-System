@@ -18,13 +18,13 @@ const Guidelines = () => (
           In order to set the components in context here are a few examples of designs you can create with the Digital
           Design system.
         </p>
-        {/* <Buttons />
-        <Forms />
+        <Buttons />
+        {/* <Forms />
         <Colors />
         <Illustrations />
         <Motion />
         <Typography /> */}
-        <Grid />
+        {/*<Grid />*/}
         {/* <h2 className={styles.guidelinesHeader}>Color</h2>
         <p className={styles.guidelinesText}>
           In order to comply with Digital Design System, always stick to brand’s palettes. It is necessary to use only
