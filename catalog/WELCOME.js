@@ -16,7 +16,7 @@ const Welcome = () => (
           </p>
 
           <div className="vf-pb-3">
-            <a href="/design" className="vf-btn vf-btn--primary vf-btn--lg vf-mr-sm">Getting started</a>
+            <a href="/get-started/design" className="vf-btn vf-btn--primary vf-btn--lg vf-mr-sm">Getting started</a>
             <a href="/examples" className="vf-btn vf-btn--secondary vf-btn--lg">View examples</a>
           </div>
         </div>
@@ -26,11 +26,11 @@ const Welcome = () => (
 
         <h4>Brand Styleguide</h4>
         <p>
-          Are you rather looking for the Vattenfall Brand Styleguide with information about how to use Vattenfalls logotype, colors and such? Then you will find everything you need over at <a href="https://vattenfall.frontify.com/hub/1">Frontify</a>.
+          Are you rather looking for the Vattenfall Brand Styleguide with information about how to use Vattenfalls logotype, colors and such?  Then you will find everything you need over at <a href="https://brandtoolbox.vattenfall.com/login/">Brand toolbox</a>.
         </p>
         </div>
       </div>
   </React.Fragment>
-)
+);
 
 export default Welcome;

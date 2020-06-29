@@ -58,10 +58,14 @@ const Designers = () => (
           in Sketch format and connected to your working design documents as a Sketch Library source.
         </p>
 
+        <p>
+          We're currently in the process of making some larges updates grouped into releases throughout the year, the latest update was completed by the end of June 2020. You will find the latest file by following the VDK the link below.
+        </p>
+
         <div className="vf-row">
           <div className="vf-col">
             <a className="vf-link-with-arrow vf-link-with-arrow--small"
-               href="https://app.goabstract.com/organizations/2776932d-ce7d-4fc3-8c46-0da875d726d3/projects"
+               href="https://app.abstract.com/projects/1669dae0-736a-4420-92c6-4bdf4b3384d4/branches/master/files/4110c76a-e10b-413d-a20c-02662a4d766f"
                target="_blank" rel="noopener">Vattenfall Design Kit on Abstract</a>
           </div>
           <div className="vf-col">
@@ -85,9 +89,10 @@ const Designers = () => (
         </p>
 
 
-        <img className="is-content"
+        {/*<img className="is-content"
              src="https://clients.alchemy.se/vattenfall/wp-content/uploads/2018/12/structure-1.png" width="70%"
-             alt="structure" caption="" data-width="original" data-scaling="no"></img></div>
+             alt="structure" caption="" data-width="original" data-scaling="no"></img>*/}
+      </div>
 
       <br></br>
     </div>
