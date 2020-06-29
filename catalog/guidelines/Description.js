@@ -7,7 +7,7 @@ const Description = ({ title, text, leftText, rightText }) => {
       <div className="vf-row w-75">
         <div className="vf-col ">
           {title && <h2>{title}</h2>}
-          <p className={styles.guidelinesText}>
+          <p className={styles.guidelinesText} style={{letterSpacing:0}}>
             {text}
           </p>
         </div>
@@ -18,11 +18,11 @@ const Description = ({ title, text, leftText, rightText }) => {
     <div className="vf-row">
       <div className="vf-col">
         {title && <h2>{title}</h2>}
-        {leftText && <p className={styles.guidelinesText}>{leftText}</p>}
+        {leftText && <p className={styles.guidelinesText} style={{letterSpacing: 0}}>{leftText}</p>}
       </div>
       <div className="vf-col">
         {title && <h2>&nbsp;</h2>}
-        {rightText && <p className={styles.guidelinesText}>{rightText}</p>}
+        {rightText && <p className={styles.guidelinesText} style={{letterSpacing: 0}}>{rightText}</p>}
       </div>
     </div>
   );

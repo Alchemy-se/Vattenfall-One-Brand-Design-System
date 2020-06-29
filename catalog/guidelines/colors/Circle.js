@@ -10,12 +10,14 @@ const Circle = ({ color, colorName, border, percentage }) => {
             position: 'relative',
             backgroundColor: color,
             borderRadius: '50%',
-            border: border,
+            border: border
           }}
         ></div>
         <p>&nbsp;</p>
-        {colorName && <p style={{ textAlign: 'center', fontWeight: 'bold' }}>{colorName}</p>}
-        {color && <p style={{ textAlign: 'center' }}>{percentage ? percentage : color}</p>}
+        <div>
+          {colorName && <p style={{ textAlign: 'center', fontWeight: 'bold', letterSpacing: 0 }} className="mb-0">{colorName}</p>}
+          {color && <p style={{ textAlign: 'center', letterSpacing: 0 }} className="mb-0">{percentage ? percentage : color}</p>}
+        </div>
       </div>
     </Fragment>
   );

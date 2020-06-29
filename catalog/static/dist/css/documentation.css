@@ -8,7 +8,7 @@ p {
   color: #222222;
 }
 
-#main h2:not(.vf-*) {
+#main h2 {
   color: #222222;
   font-size: 36px;
   letter-spacing: 0;

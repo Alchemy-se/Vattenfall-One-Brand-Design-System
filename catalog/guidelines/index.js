@@ -20,9 +20,9 @@ const Guidelines = () => (
           Design system.
         </p>
         {/*<Buttons />*/}
-        <Forms />
-        {/*<Colors />
-        <Illustrations />
+        {/*<Forms />*/}
+        <Colors />
+        {/*<Illustrations />
         <Motion />
         <Typography />
         <Grid />
