@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import Column from '../Column';
 import styles from './Forms.scss';
 
-import blueBottomOutlined from './blueBottomOutlined.png';
-import greenBottomOutlined from './greenBottomOutlined.png';
-import redBottomOutlined from './redBottomOutlined.png';
-import blueLeftOutlined from './blueLeftOutlined.png';
-import greenLeftOutlined from './greenLeftOutlined.png';
-import redLeftOutlined from './redLeftOutlined.png';
-import blueRightOutlined from './blueRightOutlined.png';
-import greenRightOutlined from './greenRightOutlined.png';
-import redRightOutlined from './redRightOutlined.png';
-import blueTopOutlined from './blueTopOutlined.png';
-import greenTopOutlined from './greenTopOutlined.png';
-import redTopOutlined from './redTopOutlined.png';
+const blueBottomOutlined = '/img/guidelines/forms/blueBottomOutlined.png';
+const greenBottomOutlined = '/img/guidelines/forms/greenBottomOutlined.png';
+const redBottomOutlined = '/img/guidelines/forms/redBottomOutlined.png';
+const blueLeftOutlined = '/img/guidelines/forms/blueLeftOutlined.png';
+const greenLeftOutlined = '/img/guidelines/forms/greenLeftOutlined.png';
+const redLeftOutlined = '/img/guidelines/forms/redLeftOutlined.png';
+const blueRightOutlined = '/img/guidelines/forms/blueRightOutlined.png';
+const greenRightOutlined = '/img/guidelines/forms/greenRightOutlined.png';
+const redRightOutlined = '/img/guidelines/forms/redRightOutlined.png';
+const blueTopOutlined = '/img/guidelines/forms/blueTopOutlined.png';
+const greenTopOutlined = '/img/guidelines/forms/greenTopOutlined.png';
+const redTopOutlined = '/img/guidelines/forms/redTopOutlined.png';
 
 const TooltipsOutlined = ({ title, label }) => {
   return (

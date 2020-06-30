@@ -1,26 +1,20 @@
 import Column from '../Column';
-import styles from './Buttons.scss';
 import React, { Fragment } from 'react';
-
-import ToggleDefault from './ToggleDefault.png';
-import ToggleHover from './ToggleHover.png';
-import TogglePressed from './TogglePressed.png';
-import ToggleDisabled from './ToggleDisabled.png';
 
 const SelectToggle = ({ label }) => (
   <Fragment>
     <div className="vf-row">
       <Column title={'Default'}>
-        <img style={{ width: '58px', display: 'block' }} src={ToggleDefault} />
+        <img style={{ width: '58px', display: 'block' }} src={'/img/guidelines/buttons/ToggleDefault.png'} />
       </Column>
       <Column title={'Hover'}>
-        <img style={{ width: '58px', display: 'block' }} src={ToggleHover} />
+        <img style={{ width: '58px', display: 'block' }} src={'/img/guidelines/buttons/ToggleHover.png'} />
       </Column>
       <Column title={'Active'}>
-        <img style={{ width: '58px', display: 'block' }} src={TogglePressed} />
+        <img style={{ width: '58px', display: 'block' }} src={'/img/guidelines/buttons/TogglePressed.png'} />
       </Column>
       <Column title={'Disabled'}>
-        <img style={{ width: '58px', display: 'block' }} src={ToggleDisabled} />
+        <img style={{ width: '58px', display: 'block' }} src={'/img/guidelines/buttons/ToggleDisabled.png'} />
       </Column>
     </div>
   </Fragment>

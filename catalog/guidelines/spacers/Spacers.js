@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import styles from '../Guidelines.scss';
 
-import Group4 from './Group 4.png';
-import Group5 from './Group 5.png';
-import Group6 from './Group 6.png';
-import Group7 from './Group 7.png';
-import Group16 from './Group 16.png';
-import Group17 from './Group 17.png';
-import desktopModule01 from './01_Group 18.png';
-import desktopModule02 from './02_double88spacer.png';
-import desktopModule03 from './03_Group 19.png';
-import desktopModule04 from './04_spacer_Group 4 Copy 2.png';
-import desktopModule05 from './05_Group 15.png';
-import modulesCombined from './modules-combined.jpg';
+const Group4 = '/img/guidelines/spacers/Group4.png';
+const Group5 = '/img/guidelines/spacers/Group5.png';
+const Group6 = '/img/guidelines/spacers/Group6.png';
+const Group7 = '/img/guidelines/spacers/Group7.png';
+const Group16 = '/img/guidelines/spacers/Group16.png';
+const Group17 = '/img/guidelines/spacers/Group17.png';
+// const desktopModule01 = '/img/guidelines/spacers/01_Group18.png';
+// const desktopModule02 = '/img/guidelines/spacers/02_double88spacer.png';
+// const desktopModule03 = '/img/guidelines/spacers/03_Group19.png';
+// const desktopModule04 = '/img/guidelines/spacers/04_spacer_Group4Copy2.png';
+// const desktopModule05 = '/img/guidelines/spacers/05_Group15.png';
+const modulesCombined = '/img/guidelines/spacers/modules-combined.jpg';
 
 const Spacers = () => {
   return (

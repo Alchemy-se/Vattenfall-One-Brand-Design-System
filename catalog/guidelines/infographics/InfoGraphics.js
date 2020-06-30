@@ -4,25 +4,25 @@ import ColourSpec from './ColourSpecs';
 
 import styles from '../Guidelines.scss';
 
-import examples from './examples.png';
-import types1 from './types1.png';
-import types2 from './types2.png';
-import types3 from './types3.png';
-import graphColors1 from './graphColors1.png';
-import graphColors2 from './graphColors2.png';
-import graphColors3 from './graphColors3.png';
-import energySourceColours from './energySourceColours.png';
-import primaryColours from './primaryColours.png';
-import secondaryColours from './secondaryColours.png';
-import examplePrimary from './examplePrimary.png';
-import exampleEnergy from './exampleEnergy.png';
-import exampleSecondary from './exampleSecondary.png';
-import avoid1 from './avoid1.png';
-import avoid2 from './avoid2.png';
-import avoid3 from './avoid3.png';
-import backgroundOk from './backgroundOk.png';
-import backgroundBad from './backgroundBad.png';
-import bestPractise from './best-practise.jpg';
+const examples = '/img/guidelines/infographics/examples.png';
+const types1 = '/img/guidelines/infographics/types1.png';
+const types2 = '/img/guidelines/infographics/types2.png';
+const types3 = '/img/guidelines/infographics/types3.png';
+const graphColors1 = '/img/guidelines/infographics/graphColors1.png';
+const graphColors2 = '/img/guidelines/infographics/graphColors2.png';
+const graphColors3 = '/img/guidelines/infographics/graphColors3.png';
+const energySourceColours = '/img/guidelines/infographics/energySourceColours.png';
+const primaryColours = '/img/guidelines/infographics/primaryColours.png';
+const secondaryColours = '/img/guidelines/infographics/secondaryColours.png';
+const examplePrimary = '/img/guidelines/infographics/examplePrimary.png';
+const exampleEnergy = '/img/guidelines/infographics/exampleEnergy.png';
+const exampleSecondary = '/img/guidelines/infographics/exampleSecondary.png';
+const avoid1 = '/img/guidelines/infographics/avoid1.png';
+const avoid2 = '/img/guidelines/infographics/avoid2.png';
+const avoid3 = '/img/guidelines/infographics/avoid3.png';
+const backgroundOk = '/img/guidelines/infographics/backgroundOk.png';
+const backgroundBad = '/img/guidelines/infographics/backgroundBad.png';
+const bestPractise = '/img/guidelines/infographics/best-practise.jpg';
 
 const InfoGraphics = () => {
   return (

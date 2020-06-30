@@ -4,13 +4,13 @@ import PageHeader from '../PageHeader';
 import styles from '../Guidelines.scss';
 import illustrationStyles from './Illustrations.scss';
 
-import whitebg from './whitebg.png';
-import lightbg from './lightbg.png';
-import notonred from './notonred.png';
-import isometric from './isometric.png';
-import lightbluebg from './lightbluebg.png';
-import Frontperspective from './Frontperspective.png';
-import IsometricGrid from './Isometric Grid – Illustrations.png';
+const whitebg = '/img/guidelines/illustrations/whitebg.png';
+const lightbg = '/img/guidelines/illustrations/lightbg.png';
+const notonred = '/img/guidelines/illustrations/notonred.png';
+const isometric = '/img/guidelines/illustrations/isometric.png';
+const lightbluebg = '/img/guidelines/illustrations/lightbluebg.png';
+const Frontperspective = '/img/guidelines/illustrations/Frontperspective.png';
+const IsometricGrid = '/img/guidelines/illustrations/IsometricGrid–Illustrations.png';
 
 const Illustrations = () => {
   return (

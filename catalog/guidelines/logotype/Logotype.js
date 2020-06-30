@@ -4,24 +4,24 @@ import PageHeader from '../PageHeader';
 
 import styles from '../Guidelines.scss';
 
-import TextPrimary from './Group12.png';
-import LogoPrimary from './Group14.png';
-import wordmarkAndSymbol from './wordmarkAndSymbol.png';
-import placedCentered from './placedCentered.png';
-import boldInPlacement from './boldInPlacement.png';
-import avatarSymbol from './avatarSymbol.png';
-import centeredOnTheSetting from './centeredOnTheSetting.png';
-import clearspace from './clearspace.png';
-import Group22 from './Group22.png';
-import Group23 from './Group23.png';
-import Group24 from './Group24.png';
-import Group25 from './Group25.png';
-import Group26 from './Group26.png';
-import Group27 from './Group27.png';
-import Group28 from './Group28.png';
-import Group29 from './Group29.png';
-import Group30 from './Group30.png';
-import Group31 from './Group31.png';
+const TextPrimary = '/img/guidelines/logotype/Group12.png';
+const LogoPrimary = '/img/guidelines/logotype/Group14.png';
+const wordmarkAndSymbol = '/img/guidelines/logotype/wordmarkAndSymbol.png';
+const placedCentered = '/img/guidelines/logotype/placedCentered.png';
+const boldInPlacement = '/img/guidelines/logotype/boldInPlacement.png';
+const avatarSymbol = '/img/guidelines/logotype/avatarSymbol.png';
+const centeredOnTheSetting = '/img/guidelines/logotype/centeredOnTheSetting.png';
+const clearspace = '/img/guidelines/logotype/clearspace.png';
+const Group22 = '/img/guidelines/logotype/Group22.png';
+const Group23 = '/img/guidelines/logotype/Group23.png';
+const Group24 = '/img/guidelines/logotype/Group24.png';
+const Group25 = '/img/guidelines/logotype/Group25.png';
+const Group26 = '/img/guidelines/logotype/Group26.png';
+const Group27 = '/img/guidelines/logotype/Group27.png';
+const Group28 = '/img/guidelines/logotype/Group28.png';
+const Group29 = '/img/guidelines/logotype/Group29.png';
+const Group30 = '/img/guidelines/logotype/Group30.png';
+const Group31 = '/img/guidelines/logotype/Group31.png';
 
 const Logotype = () => {
   return (

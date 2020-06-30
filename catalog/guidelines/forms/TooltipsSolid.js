@@ -2,22 +2,22 @@ import React, { Fragment } from 'react';
 import Column from '../Column';
 import styles from './Forms.scss';
 
-import blueBottom from './blueBottom.png';
-import blueLeft from './blueLeft.png';
-import blueRight from './blueRight.png';
-import blueTop from './blueTop.png';
-import greenBottom from './greenBottom.png';
-import greenTop from './greenTop.png';
-import greenLeft from './greenLeft.png';
-import greenRight from './greenRight.png';
-import redBottom from './redBottom.png';
-import redLeft from './redLeft.png';
-import redRight from './redRight.png';
-import redTop from './redTop.png';
-import yellowBottom from './yellowBottom.png';
-import yellowLeft from './yellowLeft.png';
-import yellowRight from './yellowRight.png';
-import yellowTop from './yellowTop.png';
+const blueBottom = '/img/guidelines/forms/blueBottom.png';
+const blueLeft = '/img/guidelines/forms/blueLeft.png';
+const blueRight = '/img/guidelines/forms/blueRight.png';
+const blueTop = '/img/guidelines/forms/blueTop.png';
+const greenBottom = '/img/guidelines/forms/greenBottom.png';
+const greenTop = '/img/guidelines/forms/greenTop.png';
+const greenLeft = '/img/guidelines/forms/greenLeft.png';
+const greenRight = '/img/guidelines/forms/greenRight.png';
+const redBottom = '/img/guidelines/forms/redBottom.png';
+const redLeft = '/img/guidelines/forms/redLeft.png';
+const redRight = '/img/guidelines/forms/redRight.png';
+const redTop = '/img/guidelines/forms/redTop.png';
+const yellowBottom = '/img/guidelines/forms/yellowBottom.png';
+const yellowLeft = '/img/guidelines/forms/yellowLeft.png';
+const yellowRight = '/img/guidelines/forms/yellowRight.png';
+const yellowTop = '/img/guidelines/forms/yellowTop.png';
 
 const TooltipsSolid = ({ title, label }) => {
   return (

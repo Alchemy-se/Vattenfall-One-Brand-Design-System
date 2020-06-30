@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import GridSpecification from './GridSpecification';
 
-import Grid1440 from './1440.png';
-import Grid1024 from './1024.png';
-import Grid375 from './375.png';
+const Grid1440 = '/img/guidelines/grid1440.png';
+const Grid1024 = '/img/guidelines/grid1024.png';
+const Grid375 = '/img/guidelines/grid/375.png';
 
 let style = { border: '2px rgba(255,0,0,0.3) solid', padding: '10px', height: '400px' };
 

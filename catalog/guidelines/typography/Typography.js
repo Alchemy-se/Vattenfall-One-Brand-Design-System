@@ -13,7 +13,7 @@ import IntroInCaps from './IntroInCaps';
 import styles from '../Guidelines.scss';
 import typographyStyles from './Typography.scss';
 
-import Abc123 from './Abc123.png';
+const Abc123 = '/img/guidelines/typography/Abc123.png';
 
 const Typography = () => {
   return (

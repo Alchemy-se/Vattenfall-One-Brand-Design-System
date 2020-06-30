@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 
-import Group4 from './Group4.png';
-import ActionIcons from './Action Icons.png';
-import InChargeIcons from './InCharge Icons.png';
-import IdentificationIcons from './Identification Icons.png';
-import NavigationIcons from './Navigation Icons.png';
-import SmartHomeIcons from './Smart Home Icons.png';
-import SocialMediaIcons from './Social Media Icons.png';
+const Group4 = '/img/guidelines/icons/Group4.png';
+const ActionIcons = '/img/guidelines/icons/ActionIcons.png';
+const InChargeIcons = '/img/guidelines/icons/InChargeIcons.png';
+const IdentificationIcons = '/img/guidelines/icons/IdentificationIcons.png';
+const NavigationIcons = '/img/guidelines/icons/NavigationIcons.png';
+const SmartHomeIcons = '/img/guidelines/icons/SmartHomeIcons.png';
+const SocialMediaIcons = '/img/guidelines/icons/SocialMediaIcons.png';
 
 const Icons = () => {
   return (

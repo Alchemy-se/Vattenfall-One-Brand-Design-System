@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import styles from '../Guidelines.scss';
 import motionStyles from './Motion.scss';
-import motion from './Motion.png';
+const motion = '/img/guidelines/motion/Motion.png';
 
 const Motion = () => {
   return (
