@@ -17,6 +17,9 @@
     font-size: 0.75rem;
     //border-left: 1px solid #f0f0f0;
     color: #222222;
+    &:hover {
+      text-decoration: none;
+    }
   }
   @media(max-width: 999px) {
     display: none;

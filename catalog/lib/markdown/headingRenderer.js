@@ -20,8 +20,8 @@ const HeadingHashLink = (rawValue) => {
 		value = value.toLowerCase().replace(/ /g, "-");
 		return (
 			<span className={styles.anchorWrapper}>
-			&nbsp;<a className={styles.anchor} href={"#"+value}>#</a>
-		</span>
+				&nbsp;<a className={styles.anchor} href={"#"+value}>#</a>
+			</span>
 		);
 	}
 	const value = rawValue.toLowerCase().replace(/ /g, "-");
