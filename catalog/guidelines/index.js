@@ -22,7 +22,7 @@ const Guidelines = () => (
           In order to set the components in context here are a few examples of designs you can create with the Digital
           Design system.
         </p>
-        {/* <Buttons />
+        <Buttons />
         <Forms />
         <Colors />
         <Illustrations />
@@ -31,7 +31,7 @@ const Guidelines = () => (
         <Grid />
         <Logotype />
         <Icons />
-        <Spacers /> */}
+        <Spacers />
         <InfoGraphics />
         {/* <h2 className={styles.guidelinesHeader}>Color</h2>
         <p className={styles.guidelinesText}>
