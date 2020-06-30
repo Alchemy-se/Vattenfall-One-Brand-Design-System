@@ -24,6 +24,20 @@ import ArticlesOverview from './articles/articlesOverview';
 
 import DynamicView from './components/dynamicView';
 
+// Guidelines
+import GuidelinesWrapper from "./guidelines/wrapper";
+import GuidelinesButtons from './guidelines/buttons/Buttons';
+import GuidelinesForms from './guidelines/forms/Forms';
+import GuidelinesColors from './guidelines/colors/Colors';
+import GuidelinesIllustrations from './guidelines/illustrations/Illustrations';
+import GuidelinesMotion from './guidelines/motion/Motion';
+import GuidelinesTypography from './guidelines/typography/Typography';
+import GuidelinesGrid from './guidelines/grid/Grid';
+import GuidelinesLogotype from './guidelines/logotype/Logotype';
+import GuidelinesIcons from './guidelines/icons/Icons';
+import GuidelinesSpacers from './guidelines/spacers/Spacers';
+import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
+
 function usePageViews(onRouteChange) {
   let location = useLocation();
   onRouteChange(location.pathname);
@@ -92,6 +106,19 @@ const COMPONENTS_ROUTES = [
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
 ];
+const GUIDELINES_ROUTES = [
+  { path: '/guidelines/buttons', name: 'Buttons', component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper> },
+  { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
+  { path: '/guidelines/colors', name: 'Colors', component: <GuidelinesWrapper><GuidelinesColors /></GuidelinesWrapper> },
+  { path: '/guidelines/illustrations', name: 'Illustrations', component: <GuidelinesWrapper><GuidelinesIllustrations /></GuidelinesWrapper> },
+  { path: '/guidelines/motion', name: 'Motion', component: <GuidelinesWrapper><GuidelinesMotion /></GuidelinesWrapper> },
+  { path: '/guidelines/typography', name: 'Typography', component: <GuidelinesWrapper><GuidelinesTypography /></GuidelinesWrapper> },
+  { path: '/guidelines/grid', name: 'Grid', component: <GuidelinesWrapper><GuidelinesGrid /></GuidelinesWrapper> },
+  { path: '/guidelines/logotype', name: 'Logotype', component: <GuidelinesWrapper><GuidelinesLogotype /></GuidelinesWrapper> },
+  { path: '/guidelines/icons', name: 'Icons', component: <GuidelinesWrapper><GuidelinesIcons /></GuidelinesWrapper> },
+  { path: '/guidelines/spacers', name: 'Spacers', component: <GuidelinesWrapper><GuidelinesSpacers /></GuidelinesWrapper> },
+  { path: '/guidelines/info-graphics', name: 'Info Graphics', component: <GuidelinesWrapper><GuidelinesInfoGraphics /></GuidelinesWrapper> }
+]
 
 const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange);
@@ -115,6 +142,11 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/get-started'}>
         <Redirect to={'/get-started/design'} />
       </Route>
+      {GUIDELINES_ROUTES.map((item) => (
+        <Route key={item.path} path={item.path}>
+          {item.component}
+        </Route>
+      ))}
       <Route path={'/guidelines'}>
         <Guidelines />
       </Route>

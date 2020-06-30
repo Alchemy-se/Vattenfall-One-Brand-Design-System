@@ -10,8 +10,8 @@ const DottedDescription = ({ title, text, dottedLines }) => {
             {text}
           </p>
           <ul className="vf-ul">
-            {dottedLines.map(dottedLine => {
-              return (<li style={{paddingTop: 0, paddingBottom: 0}}>{dottedLine}</li>);
+            {dottedLines.map((dottedLine, index) => {
+              return (<li style={{paddingTop: 0, paddingBottom: 0}} key={"dottedline-" + index}>{dottedLine}</li>);
             })}
           </ul>
         </div>
