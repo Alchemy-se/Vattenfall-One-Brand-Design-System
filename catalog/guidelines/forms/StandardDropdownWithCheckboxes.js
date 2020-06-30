@@ -12,7 +12,7 @@ const StandardDropdownWithCheckboxes = ({ title, label }) => {
       </div>
       <div className={`vf-row ${styles.openDropdownMinHeight}`}>
         <Column title={'Default'}>
-          <div className="vf-dropdown" data-control="vf-dropdown-data">
+          <div className={`vf-dropdown ${styles.fullWidth}`} data-control="vf-dropdown-data">
             <label className="vf-dropdown-label">Select option</label>
             <div className="vf-dropdown-list">
               <div className="vf-dropdown-list-item">
@@ -35,7 +35,7 @@ const StandardDropdownWithCheckboxes = ({ title, label }) => {
           </div>
         </Column>
         <Column title={'Hover'}>
-          <div className="vf-dropdown" data-control="vf-dropdown-data">
+          <div className={`vf-dropdown ${styles.fullWidth}`} data-control="vf-dropdown-data">
             <label className={`vf-dropdown-label ${styles.dropdownHover}`}>Select option</label>
             <div className="vf-dropdown-list">
               <div className="vf-dropdown-list-item">
@@ -58,7 +58,7 @@ const StandardDropdownWithCheckboxes = ({ title, label }) => {
           </div>
         </Column>
         <Column title={'Focus'}>
-          <div className={`vf-dropdown on ${styles.disableHover}`} data-control="vf-dropdown-data">
+          <div className={`vf-dropdown on ${styles.disableHover} ${styles.fullWidth}`} style={{height: "275px"}} data-control="vf-dropdown-data">
             <label className="vf-dropdown-label">Select option</label>
             <div className={`vf-dropdown-list ${styles.disableHover}`}>
               <div className="vf-dropdown-list-item">
@@ -81,7 +81,7 @@ const StandardDropdownWithCheckboxes = ({ title, label }) => {
           </div>
         </Column>
         <Column title={'Selected'}>
-          <div className={`vf-dropdown ${styles.disableHover}`} data-control="vf-dropdown-data">
+          <div className={`vf-dropdown ${styles.disableHover} ${styles.fullWidth}`} data-control="vf-dropdown-data">
             <label className="vf-dropdown-label">2 Selected</label>
             <div className={`vf-dropdown-list ${styles.disableHover}`}>
               <div className="vf-dropdown-list-item">
