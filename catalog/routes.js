@@ -2,7 +2,7 @@ import React from "react";
 import {Switch, Route, Redirect, useLocation} from "react-router-dom";
 
 import Examples from "./EXAMPLES";
-import Guidelines from "./Guidelines";
+import Guidelines from "./guidelines";
 import Designers from "./designers/getting-started-designers";
 import Developers from "./developers/getting-started-developers";
 
