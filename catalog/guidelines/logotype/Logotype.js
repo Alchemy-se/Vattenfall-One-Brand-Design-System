@@ -90,27 +90,27 @@ const Logotype = () => {
       <div className="vf-row w-75">
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={wordmarkAndSymbol} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>1. Wordmark and symbol</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>1. Wordmark and symbol</p>
         </div>
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={placedCentered} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>2. Placed centered</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>2. Placed centered</p>
         </div>
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={boldInPlacement} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>3. Bold in placement</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>3. Bold in placement</p>
         </div>
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={avatarSymbol} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>4. Avatar symbol</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>4. Avatar symbol</p>
         </div>
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={centeredOnTheSetting} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>5. Centered on the setting</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>5. Centered on the setting</p>
         </div>
         <div className="vf-col-lg-3">
           <img style={{ width: '100%' }} src={clearspace} />
-          <p style={{ fontWeight: 'bold', textAlign: 'center' }}>6. Clearspace</p>
+          <p className="pt-2" style={{ fontWeight: 'bold', textAlign: 'center' }}>6. Clearspace</p>
         </div>
       </div>
       <div className="row align-items-start">
@@ -127,7 +127,7 @@ const Logotype = () => {
         </p>
       </div>
       <div className="row align-items-start">
-        <h4>Linear - Logos / Horizontal / Medium</h4>
+        <h4>Linear – Logos / Horizontal / Medium</h4>
         <p className={styles.guidelinesText}>
           The clearspace around the linear logotype is defined by the Vattenfall Symbol. The symbol is 1X, and the
           clearspace is 1x <br />
@@ -152,7 +152,7 @@ const Logotype = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h4>Stacked - Logos / Stacked</h4>
+        <h4>Stacked – Logos / Stacked</h4>
         <p className={styles.guidelinesText}>
           The clearspace around the logotype is half of the symbols height (1X). The clearspace is 1X around all sides
           of <br />

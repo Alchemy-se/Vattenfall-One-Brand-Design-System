@@ -16,8 +16,8 @@
   composes: yellowButtonHover;
   background: #f1c50b;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .blueButtonHover {
@@ -34,8 +34,8 @@
   composes: blueButtonHover;
   background: #1e324f;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .tertiaryBlackButton {
@@ -58,8 +58,8 @@
   background: #4e4b48;
   border-color: #4e4b48;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .tertiaryBlueButtonHover {
@@ -79,8 +79,8 @@
   background: #1e324f;
   border-color: #1e324f;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .textButtonHover {

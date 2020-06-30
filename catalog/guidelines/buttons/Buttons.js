@@ -90,7 +90,6 @@ const Button = () => {
         text="Checkboxes can be used when a desired items needs to be selected. Depending on the context it can be one or multiple items."
       />
       <Checkbox label={placeholder} />
-      <section className="p-2 vf-border-bottom-gray-200"></section>
     </Fragment>
   );
 };

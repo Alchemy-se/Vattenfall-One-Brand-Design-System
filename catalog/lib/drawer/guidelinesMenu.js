@@ -3,17 +3,17 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 const MENU_GROUP_ITEMS = [
+    {path: "/logotype", name: "Logotype"},
+    {path: "/colors", name: "Colors"},
+    {path: "/typography", name: "Typography"},
+    {path: "/grid", name: "The Grid"},
+    {path: "/icons", name: "Icons"},
     {path: "/buttons", name: "Buttons"},
     {path: "/forms", name: "Forms"},
-    {path: "/colors", name: "Colors"},
-    {path: "/illustrations", name: "Illustrations"},
-    {path: "/typography", name: "Typography"},
-    {path: "/grid", name: "Grid"},
-    {path: "/logotype", name: "Logotype"},
-    {path: "/icons", name: "Icons"},
     {path: "/spacers", name: "Spacers"},
     {path: "/info-graphics", name: "Info Graphics"},
-    {path: "/motion", name: "Motion"}
+    {path: "/illustrations", name: "Illustrations"},
+    {path: "/motion", name: "Motions"}
 ];
 
 const ComponentsMenu = () => {
