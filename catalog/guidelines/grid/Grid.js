@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import GridSpecification from './GridSpecification';
 
 import Grid1440 from './1440.png';

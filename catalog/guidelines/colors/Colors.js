@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import Description from '../Description';
 
 import PrimaryColors from './PrimaryColors';

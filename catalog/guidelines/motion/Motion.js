@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import styles from '../Guidelines.scss';
 import motionStyles from './Motion.scss';
 import motion from './Motion.png';

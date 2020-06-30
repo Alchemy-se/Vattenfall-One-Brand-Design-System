@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 
 import Group4 from './Group4.png';
 import ActionIcons from './Action Icons.png';

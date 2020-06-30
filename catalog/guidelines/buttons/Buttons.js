@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import YellowButtons from './yellow';
 import BlueButtons from './blue';
 import TertiaryBlackButtons from './tertiaryBlack';

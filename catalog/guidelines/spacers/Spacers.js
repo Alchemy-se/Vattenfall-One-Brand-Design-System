@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import styles from '../Guidelines.scss';
 
 import Group4 from './Group 4.png';

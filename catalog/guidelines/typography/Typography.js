@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 import HeaderH1 from './HeaderH1';
 import HeaderH2 from './HeaderH2';
 import HeaderH3 from './HeaderH3';

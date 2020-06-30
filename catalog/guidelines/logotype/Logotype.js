@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import PageHeader from '../pageHeader';
+import PageHeader from '../PageHeader';
 
 import styles from '../Guidelines.scss';
 
