@@ -6,10 +6,14 @@ const BodyTextLarge = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h4>Body text large</h4>
+        <div className="vf-col">
+          <h4>Body text large</h4>
+        </div>
       </div>
       <div className="vf-row">
-        <p className={styles.bodyTextLarge}>This is a large body copy. This is our main body text used on the website.</p>
+        <div className="vf-col">
+          <p className={styles.bodyTextLarge}>This is a large body copy. This is our main body text used on the website.</p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications

@@ -5,12 +5,16 @@ const HeaderH2 = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h2 style={{fontSize: "3.25rem"}}>Header H2</h2>
+        <div className="vf-col">
+          <h2 style={{fontSize: "3.25rem"}}>Header H2</h2>
+        </div>
       </div>
       <div className="vf-row">
-        <p>
-          Primarily used for secondary sections inside content area.
-        </p>
+        <div className="vf-col">
+          <p>
+            Primarily used for secondary sections inside content area.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications

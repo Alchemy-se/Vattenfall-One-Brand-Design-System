@@ -5,10 +5,14 @@ const HeaderH1 = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h1>Header H1</h1>
+        <div className="vf-col">
+          <h1>Header H1</h1>
+        </div>
       </div>
       <div className="vf-row">
-        <p>Should always be used for titles of top-level sections of a screen. Primarily used for Marquee/Hero sections.</p>
+        <div className="vf-col">
+          <p>Should always be used for titles of top-level sections of a screen. Primarily used for Marquee/Hero sections.</p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications
