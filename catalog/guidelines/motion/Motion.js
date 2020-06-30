@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PageHeader from '../pageHeader';
 import styles from '../Guidelines.scss';
 import motionStyles from './Motion.scss';
-import placeholderImg from '../Untitled.png';
+import motion from './Motion.png';
 
 const Motion = () => {
   return (
@@ -39,7 +39,7 @@ const Motion = () => {
             Duration: 0.3s <br />
             Easee: cubic-bezier(.6,0,0,1)
           </p>
-          <img src={placeholderImg} style={{ width: '100%' }} />
+          <img src={motion} style={{ width: '100%' }} />
         </div>
         <div className="vf-col">&nbsp;</div>
         <div className="vf-col">&nbsp;</div>

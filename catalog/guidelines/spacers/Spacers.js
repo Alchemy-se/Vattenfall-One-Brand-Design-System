@@ -13,6 +13,7 @@ import desktopModule02 from './02_double88spacer.png';
 import desktopModule03 from './03_Group 19.png';
 import desktopModule04 from './04_spacer_Group 4 Copy 2.png';
 import desktopModule05 from './05_Group 15.png';
+import modulesCombined from './modules-combined.jpg';
 
 const Spacers = () => {
   return (
@@ -81,12 +82,8 @@ const Spacers = () => {
         </p>
       </div>
       <div className="vf-row">
-        <div className="vf-col-lg-12">
-          <img style={{ width: '100%' }} src={desktopModule01} />
-          <img style={{ width: '100%' }} src={desktopModule02} />
-          <img style={{ width: '100%' }} src={desktopModule03} />
-          <img style={{ width: '100%' }} src={desktopModule04} />
-          <img style={{ width: '100%' }} src={desktopModule05} />
+        <div className="vf-col">
+          <img style={{ width: '100%' }} src={modulesCombined} />
         </div>
       </div>
     </Fragment>

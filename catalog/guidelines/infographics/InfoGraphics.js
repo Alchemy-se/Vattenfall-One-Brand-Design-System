@@ -22,9 +22,7 @@ import avoid2 from './avoid2.png';
 import avoid3 from './avoid3.png';
 import backgroundOk from './backgroundOk.png';
 import backgroundBad from './backgroundBad.png';
-import vattenfallInBrief from './vattenfallInBrief.png';
-import drivingValue from './drivingValue.png';
-import ytterligare from './ytterligare.png';
+import bestPractise from './best-practise.jpg';
 
 const InfoGraphics = () => {
   return (
@@ -342,39 +340,31 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-md-4 vf-offset-md-4">
-          <img style={{ width: '100%' }} src={vattenfallInBrief} />
-        </div>
-        <div className="vf-col-md-6 vf-offset-md-3">
-          <img style={{ width: '100%' }} src={drivingValue} />
-        </div>
-        <div className="vf-col-md-6 vf-offset-md-3">
-          <img style={{ width: '100%' }} src={ytterligare} />
+        <div className="vf-col">
+          <img style={{ width: '100%' }} src={bestPractise} />
         </div>
       </div>
       <div className="row align-items-start">
         <div className="vf-col-md-8 vf-offset-md-2">
           <h2>Infographics - Motion</h2>
+          <p className={`${styles.guidelinesText}`}>Infographics – Motion</p>
           <p className={`${styles.guidelinesText}`}>
-            Infographics – Motion <p />
-            <p className={`${styles.guidelinesText}`}>
-              Infographics is of course the visualization of data in graphs, tables and numbers. Through our <br />
-              motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples
-              <br />
-              of our identity in motion as we here allow a graph or number to develop in a smooth, controlled <br />
-              “easing” movement with a high-quality perception. We have developed the following examples <br />
-              of motion infographics, as a reference, but of course need to be created on their own for your <br />
-              specific purposes and usageareas/channels.
-            </p>
-            <p className={`${styles.guidelinesText}`}>
-              To read more about the “ease-in-out” motion ID philosophy, please see the description in the
-              <br />
-              Video &amp; Motion guidelines chapter
-            </p>
-            <a href="https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25">
-              "https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25"
-            </a>
+            Infographics is of course the visualization of data in graphs, tables and numbers. Through our <br />
+            motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples
+            <br />
+            of our identity in motion as we here allow a graph or number to develop in a smooth, controlled <br />
+            “easing” movement with a high-quality perception. We have developed the following examples <br />
+            of motion infographics, as a reference, but of course need to be created on their own for your <br />
+            specific purposes and usageareas/channels.
           </p>
+          <p className={`${styles.guidelinesText}`}>
+            To read more about the “ease-in-out” motion ID philosophy, please see the description in the
+            <br />
+            Video &amp; Motion guidelines chapter
+          </p>
+          <a href="https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25">
+            "https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25"
+          </a>
         </div>
       </div>
     </Fragment>
