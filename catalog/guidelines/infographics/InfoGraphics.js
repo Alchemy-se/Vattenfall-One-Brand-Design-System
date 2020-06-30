@@ -27,7 +27,7 @@ const bestPractise = '/img/guidelines/infographics/best-practise.jpg';
 const InfoGraphics = () => {
   return (
     <Fragment>
-      <PageHeader title="Info Grphics" />
+      <PageHeader title="Info Graphics" />
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="row align-items-start">
         <h2>Information graphics style</h2>
@@ -48,14 +48,16 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={examples} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <h2>Types of graphs</h2>
-        <p className={`${styles.guidelinesText}`}>
-          There are ifferent types of charts and graphs to be used - pie charts, bar graphs and lines <br />
-          graphs. They are generally used for different things. Pie charts show how a whole is divided into <br />
-          different parts, bar graphs show numbers that are independent of each other and line graphs <br />
-          show numbers that have changed over time.
-        </p>
+      <div className="vf-row w-75">
+        <div className="vf-col">
+          <h2>Types of graphs</h2>
+          <p className={`${styles.guidelinesText}`}>
+            There are ifferent types of charts and graphs to be used - pie charts, bar graphs and lines <br />
+            graphs. They are generally used for different things. Pie charts show how a whole is divided into <br />
+            different parts, bar graphs show numbers that are independent of each other and line graphs <br />
+            show numbers that have changed over time.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
@@ -71,8 +73,8 @@ const InfoGraphics = () => {
           <h4 style={{ textAlign: 'center' }}>Example of a line graph</h4>
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <h2>Colours for graphs</h2>
           <p className={`${styles.guidelinesText}`}>
             When creating information graphics mainly use the secondary colours, but the primary colours <br />
@@ -96,8 +98,8 @@ const InfoGraphics = () => {
           <h4 style={{ textAlign: 'center' }}>Energy source colours</h4>
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col ">
           <h2>Colour codes</h2>
         </div>
       </div>
@@ -120,8 +122,8 @@ const InfoGraphics = () => {
         <ColourSpec name="Vattenfall Purple" hex="#9365BC" rgb="147, 101, 188" />
         <ColourSpec name="Vattenfall Dark Purple" hex="#7A2B49" rgb="122, 43, 73" />
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col ">
           <h2>Energy source colours</h2>
           <p className={`${styles.guidelinesText}`}>
             Recomended colours for specific energy sources has been developed mainly to be used for <br />
@@ -148,8 +150,8 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={energySourceColours} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col ">
           <h2>Colour usage</h2>
           <p className={`${styles.guidelinesText}`}>
             When creating information graphics mainly use the secondary colours, but the primary colours
@@ -169,8 +171,8 @@ const InfoGraphics = () => {
           <h4 style={{ textAlign: 'center' }}>Primary colours</h4>
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <p className={`${styles.guidelinesText}`}>
             Always make sure that the colours used harmonize with each other. Use as few colours as <br />
             possible, to make graphs visibly balanced and keep the graphics in the blue needscope, not to <br />
@@ -210,8 +212,8 @@ const InfoGraphics = () => {
           </h4>
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <p className={`${styles.guidelinesText}`}>
             Avoid mixing colours from different categories. Also avoid creating graphs with colours that <br />
             have too much contrast against each other.
@@ -229,8 +231,8 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={avoid3} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <h2>Colour tones for web</h2>
           <p className={`${styles.guidelinesText}`}>
             When creating 1-coloured graphs, you should primarily use these percent-values to differentiate
@@ -303,12 +305,11 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#F5F1F9" rgb="245, 241, 249" />
         <div className="vf-col"></div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <h2>Background colours</h2>
           <p className={`${styles.guidelinesText}`}>
-            Always place information graphics on white or Vattenfall Light Grey background. Do not place <br />
-            multi-coloured graphs on coloured backgrounds.
+            Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.
           </p>
         </div>
       </div>
@@ -330,12 +331,11 @@ const InfoGraphics = () => {
           </h4>
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
-          <h2>Background colours</h2>
+      <div className="vf-row w-75">
+        <div className="vf-col">
+          <h2>Best practice</h2>
           <p className={`${styles.guidelinesText}`}>
-            Always place information graphics on white or Vattenfall Light Grey background. Do not place <br />
-            multi-coloured graphs on coloured backgrounds.
+            Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.
           </p>
         </div>
       </div>
@@ -344,26 +344,22 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={bestPractise} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <div className="vf-col-md-8 vf-offset-md-2">
+      <div className="vf-row w-75">
+        <div className="vf-col">
           <h2>Infographics - Motion</h2>
-          <p className={`${styles.guidelinesText}`}>Infographics – Motion</p>
           <p className={`${styles.guidelinesText}`}>
-            Infographics is of course the visualization of data in graphs, tables and numbers. Through our <br />
-            motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples
-            <br />
-            of our identity in motion as we here allow a graph or number to develop in a smooth, controlled <br />
-            “easing” movement with a high-quality perception. We have developed the following examples <br />
-            of motion infographics, as a reference, but of course need to be created on their own for your <br />
+            Infographics is of course the visualization of data in graphs, tables and numbers.
+            Through our motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples
+            of our identity in motion as we here allow a graph or number to develop in a smooth, controlled
+            “easing” movement with a high-quality perception. We have developed the
+            following examples of motion infographics, as a reference, but of course need to be created on their own for your
             specific purposes and usageareas/channels.
           </p>
           <p className={`${styles.guidelinesText}`}>
-            To read more about the “ease-in-out” motion ID philosophy, please see the description in the
-            <br />
-            Video &amp; Motion guidelines chapter
+            To read more about the “ease-in-out” motion ID philosophy, please see the description in the Video &amp; Motion guidelines chapter
           </p>
           <a href="https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25">
-            "https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25"
+            https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25
           </a>
         </div>
       </div>

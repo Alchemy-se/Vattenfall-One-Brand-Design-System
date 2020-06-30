@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
+import styles from "./Typography.scss";
 
 const ElementSpeifications = ({ screenSize, fontName, fontWeight, fontSize, lineHeight }) => {
   return (
     <Fragment>
       <div className="vf-col">
         <h4>{screenSize}</h4>
-        <div className="vf-row">
-          <div className="vf-col-3">
+        <div className={`vf-row ${styles.elementSpecifications}`}>
+          <div className="vf-col-3" style={{minWidth: "118px"}}>
             <p>Font</p>
             <p>Font-Weight</p>
             <p>Font-size</p>

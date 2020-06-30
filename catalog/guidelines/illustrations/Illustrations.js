@@ -43,24 +43,16 @@ const Illustrations = () => {
             colors in a <br />
             single illustration, this for not be percived as childish or too colorful.
           </p>
-          <p className={`${styles.guidelinesText}`}>
-            1. Always apply the illustrations on white, <br />
-            2. Vattenfall Light Blue or Vattenfall Light Grey background. <br />
-            3. Do not place illustrations on thebackground <br />
-            colors, like Vattenfall Ligt Red.
-          </p>
-          <p className={`${styles.guidelinesText}`}>
-            1. The illustrations are available in two different
-            <br />
-            perspectives - font and isometric.
-            <br />
-            2.Keep the stroke light and consistent throughout
-            <br />
-            the full illustration. <br />
-            3. Functional style can be used both as still
-            <br />
-            illustrations and animated.
-          </p>
+          <ol className={`vf-ol ${illustrationStyles.orderedList}`}>
+            <li>Always apply the illustrations on white.</li>
+            <li>Vattenfall Light Blue or Vattenfall Light Grey background.</li>
+            <li>Do not place illustrations on the background colors, like Vattenfall Light Red.</li>
+          </ol>
+          <ol className={`vf-ol ${illustrationStyles.orderedList}`}>
+            <li>The illustrations are available in two different perspectives - font and isometric.</li>
+            <li>Keep the stroke light and consistent throughout the full illustration.</li>
+            <li>Functional style can be used both as still illustrations and animated.</li>
+          </ol>
         </div>
       </div>
       <div className="vf-row">

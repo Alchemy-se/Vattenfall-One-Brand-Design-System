@@ -6,22 +6,22 @@ const GridSpecification = ({ device, width, totalWidth, offset, columns, gutterW
   return (
     <Fragment>
       <div className="vf-col">
-        <div style={{ width: '150px', paddingRight: '24px', display: 'inline-block' }}>
+        <div style={{ width: '150px', paddingRight: '24px', display: 'inline-block' }} className={styles.gridSpecification}>
           <h4>{device}</h4>
-          <p style={{ marginBottom: '10px' }}>Total width</p>
-          <p style={{ marginBottom: '10px' }}>Offset</p>
-          <p style={{ marginBottom: '10px' }}>Columns</p>
-          <p style={{ marginBottom: '10px' }}>Gutter width</p>
-          <p style={{ marginBottom: '10px' }}>Column width</p>
+          <p>Total width</p>
+          <p>Offset</p>
+          <p>Columns</p>
+          <p>Gutter width</p>
+          <p>Column width</p>
         </div>
 
-        <div style={{ display: 'inline-block' }}>
+        <div style={{ display: 'inline-block' }} className={styles.gridSpecification}>
           <h4>{width}</h4>
-          <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{totalWidth}</p>
-          <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{offset}</p>
-          <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{columns}</p>
-          <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{gutterWidth}</p>
-          <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{columnsWidth}</p>
+          <p style={{ fontWeight: 'bold' }}>{totalWidth}</p>
+          <p style={{ fontWeight: 'bold' }}>{offset}</p>
+          <p style={{ fontWeight: 'bold' }}>{columns}</p>
+          <p style={{ fontWeight: 'bold' }}>{gutterWidth}</p>
+          <p style={{ fontWeight: 'bold' }}>{columnsWidth}</p>
         </div>
       </div>
     </Fragment>

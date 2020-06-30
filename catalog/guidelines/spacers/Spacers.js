@@ -47,7 +47,7 @@ const Spacers = () => {
       </div>
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="row align-items-start">
-        <h2>Example - Desktop</h2>
+        <h2>Example – Desktop</h2>
         <p className={`${styles.guidelinesText}`}>
           Example of applied spacers in the Image block Module. To visually see the spacers, turn on eye symbol inside
           of "Utility / <br />
@@ -60,7 +60,7 @@ const Spacers = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h2>Example - Mobile</h2>
+        <h2>Example – Mobile</h2>
         <p className={`${styles.guidelinesText}`}>
           Example of applied spacers in the Image block Mobile Module. To visually see the spacers, turn on eye symbol
           inside
@@ -74,7 +74,7 @@ const Spacers = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h2>Distance Between modules - Desktop</h2>
+        <h2>Distance Between modules – Desktop</h2>
         <p className={`${styles.guidelinesText}`}>
           Important to note is that all distances between individual modules are 88px ka the "Spacer - Extra Large" on
           desktop <br />

@@ -11,7 +11,7 @@ const BodyTextSmall = () => {
       </div>
       <div className="vf-row">
         <div className="vf-col">
-          <p>
+          <p style={{fontSize: "20px"}}>
             <strong className="vf-intro-in-caps">This is our </strong>
             intro in caps and is used on the three first words together with body text large.
           </p>
