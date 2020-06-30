@@ -92,7 +92,9 @@ export default class App extends Component {
 			// Path changed, ok to update state.
 			if(this.state.currentPath !== pathname) {
 				const newSelectedKeysSubmenu = [pathname];
+				const newSelectedKeysMenu = pathname === "/" ? [] : this.state.selectedKeysMenu;
 				this.setState({
+					selectedKeysMenu: newSelectedKeysMenu,
 					selectedKeysSubmenu: newSelectedKeysSubmenu,
 					currentPath: pathname
 				});
