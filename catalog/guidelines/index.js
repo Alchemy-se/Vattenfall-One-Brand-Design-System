@@ -21,12 +21,12 @@ const Guidelines = () => (
         </p>
         {/*<Buttons />*/}
         {/*<Forms />*/}
-        <Colors />
-        {/*<Illustrations />
-        <Motion />
+        {/*<Colors />*/}
+        {/*<Illustrations />*/}
+        {/*<Motion />*/}
         <Typography />
-        <Grid />
-        <Logotype />*/}
+        {/*<Grid />*/}
+        {/*<Logotype />*/}
         {/* <h2 className={styles.guidelinesHeader}>Color</h2>
         <p className={styles.guidelinesText}>
           In order to comply with Digital Design System, always stick to brand’s palettes. It is necessary to use only

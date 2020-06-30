@@ -22,25 +22,18 @@ const Typography = () => {
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
         <p className={styles.guidelinesText}>
-          Typografic set in UI Kit is following overll 4x4 rule (se UI Grids). All type size values are a multiple of 4.
-          It is vital to <br />
-          keep these numbers straight in order to comply with original grids &amp; measurements and create harmonious,
-          structured <br />
-          design. At all times avoid creating new text styles, which will clutter up the Sketch documents and are not
-          shareable
-          <br />
-          between different documents. Instead, always use the Text Symbols provided in the UI Kit under section 'Text'.
-        </p>
-        <p className={styles.guidelinesText}>
-          All Text Symbols have certain constraints in resizing for your convinience. They are also set up with a
-          Footprint for you <br />
-          to be able to place the symbol on the vertical grid correctly at all times.
-        </p>
-        <p className={styles.guidelinesText}>
-          In case you are looking for a specific type combinatins, paragrph design styles etc. please refer to the
-          section 'Text-
-          <br />
-          Compositions'.
+          Hall is a bespoke typeface that mirrors and embodies the qualities of a true market leader – as expected by our target group: confident, competent and determined.
+          <br/>
+          <br/>
+          Yet, it should feel stable, organic, and personable and at the same time emphasise our engineering and functional capacity. Being bold without being arrogant, it creates credibility for our capability to act on on a broader scale. Developed together with the wordmark and icons, it creates a strong, recognisable and coherent identity.
+          <br/>
+          <br/>
+          <strong>Rules for headings</strong>
+          <br/>
+          Always use Hall Display Bold for 30px and above
+          <br/>
+          Always use Hall Bold for under 30px
+
         </p>
       </div>
       <HeaderH1 />
