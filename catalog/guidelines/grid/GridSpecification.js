@@ -7,7 +7,7 @@ const GridSpecification = ({ device, width, totalWidth, offset, columns, gutterW
     <Fragment>
       <div className="vf-col">
         <div className="vf-row">
-          <div className={`vf-col-md-4 ${styles.autoWidth}`}>
+          <div className={`vf-col-md-4 vf-col-lg-3 ${styles.autoWidth}`}>
             <h4>{device}</h4>
             <p>Total width</p>
             <p>Offset</p>

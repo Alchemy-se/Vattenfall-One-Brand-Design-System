@@ -39,7 +39,7 @@ const Article_1 = () => {
 					<h2>Spread the word</h2>
 				</div>
 				<p>
-					We’re happy to have you here! Please let anyone who can benefit from Digital Design News know that they can get on the list by e-mailing branding@vattenfall.com.
+					We’re happy to have you here! Please let anyone who can benefit from Digital Design News know that they can get on the list by e-mailing <a href="mailto:branding@vattenfall.com.">branding@vattenfall.com</a>.
 				</p>
 			</div>
 		</React.Fragment>

@@ -13,7 +13,7 @@ import IntroInCaps from './IntroInCaps';
 import styles from '../Guidelines.scss';
 import typographyStyles from './Typography.scss';
 
-import placeholderImg from '../Untitled.png';
+import Abc123 from './Abc123.png';
 
 const Typography = () => {
   return (
@@ -21,20 +21,30 @@ const Typography = () => {
       <PageHeader title="Typography" />
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
-        <p className={styles.guidelinesText}>
-          Hall is a bespoke typeface that mirrors and embodies the qualities of a true market leader – as expected by our target group: confident, competent and determined.
-          <br/>
-          <br/>
-          Yet, it should feel stable, organic, and personable and at the same time emphasise our engineering and functional capacity. Being bold without being arrogant, it creates credibility for our capability to act on on a broader scale. Developed together with the wordmark and icons, it creates a strong, recognisable and coherent identity.
-          <br/>
-          <br/>
-          <strong>Rules for headings</strong>
-          <br/>
-          Always use Hall Display Bold for 30px and above
-          <br/>
-          Always use Hall Bold for under 30px
-
-        </p>
+        <div className="vf-col">
+          <p className={styles.guidelinesText}>
+            Hall is a bespoke typeface that mirrors and embodies the qualities of a true market leader – as expected by
+            our target group: confident, competent and determined.
+            <br />
+            <br />
+            Yet, it should feel stable, organic, and personable and at the same time emphasise our engineering and
+            functional capacity. Being bold without being arrogant, it creates credibility for our capability to act on
+            on a broader scale. Developed together with the wordmark and icons, it creates a strong, recognisable and
+            coherent identity.
+            <br />
+            <br />
+            <strong>Rules for headings</strong>
+            <br />
+            Always use Hall Display Bold for 30px and above
+            <br />
+            Always use Hall Bold for under 30px
+          </p>
+        </div>
+      </div>
+      <div className="vf-row">
+        <div className="vf-col">
+          <img style={{ width: '100%' }} src={Abc123} />
+        </div>
       </div>
       <HeaderH1 />
       <section className="p-2 vf-border-top-gray-200"></section>

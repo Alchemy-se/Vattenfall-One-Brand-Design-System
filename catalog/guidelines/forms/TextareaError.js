@@ -13,7 +13,7 @@ const TextareaError = ({ title, label }) => {
       <div className="vf-row">
         <Column title={'Default'}>
           <div className="vf-input-container">
-            <textarea rows="3" cols="25" id="vf_textarea_input" className="vf-input vf-input--error"></textarea>
+            <textarea rows="3" cols="10" id="vf_textarea_input" className="vf-input vf-input--error"></textarea>
             <label for="vf_textarea_input">Textarea Label</label>
           </div>
         </Column>
@@ -21,7 +21,7 @@ const TextareaError = ({ title, label }) => {
           <div className="vf-input-container">
             <textarea
               rows="3"
-              cols="25"
+              cols="10"
               id="vf_textarea_input"
               className={`vf-input vf-input--error vf-input--data ${styles.standardErrorHover}`}
               defaultValue="Textarea label filled in"

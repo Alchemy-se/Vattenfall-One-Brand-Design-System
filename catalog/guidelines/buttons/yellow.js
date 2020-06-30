@@ -1,5 +1,5 @@
 import Column from '../Column';
-import styles from '../Guidelines.scss';
+import styles from './Buttons.scss';
 import React, { Fragment } from 'react';
 
 const YellowButtons = ({ title, label }) => (

@@ -5,13 +5,16 @@ const PreambleText = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h4>Preamble Text</h4>
+        <div className="vf-col">
+          <h4>Preamble Text</h4>
+        </div>
       </div>
       <div className="vf-row">
-        <p className="vf-preamble">
-          This is preamble copy. It is used for introducing the content <br />
-          after the Headline.
-        </p>
+        <div className="vf-col">
+          <p className="vf-preamble">
+            This is Preamble copy. Used for introducing the content after a Headline.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications

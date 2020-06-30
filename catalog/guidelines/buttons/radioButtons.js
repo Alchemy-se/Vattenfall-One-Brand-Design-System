@@ -2,28 +2,25 @@ import Column from '../Column';
 import styles from './Buttons.scss';
 import React, { Fragment } from 'react';
 
+import RadioDefault from './RadioDefault.png';
+import RadioDisabled from './RadioDisabled.png';
+import RadioHover from './RadioHover.png';
+import RadioPressed from './RadioPressed.png';
+
 const RadioButtons = ({ label }) => (
   <Fragment>
     <div className="vf-row">
       <Column title={'Default'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px', display: 'block' }} src={RadioDefault} />
       </Column>
       <Column title={'Hover'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px', display: 'block' }} src={RadioHover} />
       </Column>
       <Column title={'Active'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px', display: 'block' }} src={RadioPressed} />
       </Column>
       <Column title={'Disabled'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px', display: 'block' }} src={RadioDisabled} />
       </Column>
     </div>
   </Fragment>

@@ -5,14 +5,17 @@ const BodyTextSmall = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h4>Intro in caps</h4>
+        <div className="vf-col">
+          <h4>Intro in caps</h4>
+        </div>
       </div>
       <div className="vf-row">
-        <p className="vf-intro-in-caps">This is our</p>
-        <p>
-          intro in caps and is used on the three first words together with <br />
-          body text large.
-        </p>
+        <div className="vf-col">
+          <p>
+            <strong className="vf-intro-in-caps">This is our </strong>
+            intro in caps and is used on the three first words together with body text large.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications

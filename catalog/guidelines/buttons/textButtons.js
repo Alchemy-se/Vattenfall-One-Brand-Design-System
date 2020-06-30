@@ -24,7 +24,7 @@ const TextButtons = ({ title, label }) => (
           {label}
         </a>
         <div className="vf-pb-sm" />
-        <a href="#" className={`vf-link-with-arrow vf-link-with-arrow--small ${styles.textButtonSmallHover}`}>
+        <a href="#" className={`vf-link-with-arrow vf-link-with-arrow--small ${styles.textButtonHover}`}>
           {label}
         </a>
       </Column>

@@ -92,15 +92,6 @@
   }
 }
 
-.textButtonSmallHover {
-  pointer-events: none;
-  color: #111111;
-  &:before {
-    opacity: 1;
-    transform: translate(40%, 0);
-  }
-}
-
 .textButtonActive {
   pointer-events: none;
   color: #1e324f;

@@ -5,13 +5,16 @@ const HeaderH4 = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h4>Header H4</h4>
+        <div className="vf-col">
+          <h4>Header H4</h4>
+        </div>
       </div>
       <div className="vf-row">
-        <p>
-          Header H4 is primarily used for quartrnary sections inside content area. It is always set to Vattenfall Hall
-          Bold.
-        </p>
+        <div className="vf-col">
+          <p>
+            Primarily used for quarternary sections inside content area.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications

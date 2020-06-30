@@ -50,7 +50,7 @@ const StandardDropdown = ({ title, label }) => {
           </div>
         </Column>
         <Column title={'Focus'}>
-          <div className={`vf-dropdown on ${styles.disableHover} ${styles.fullWidth}`} data-control="vf-dropdown-data">
+          <div className={`vf-dropdown on ${styles.disableHover} ${styles.fullWidth}`} style={{height: "275px"}} data-control="vf-dropdown-data">
             <label className="vf-dropdown-label">Select option</label>
             <div className={`vf-dropdown-list ${styles.disableHover}`}>
               <div className="vf-dropdown-list-item">

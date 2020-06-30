@@ -21,25 +21,42 @@ import NumericInput from './NumericInput';
 import Textarea from './Textarea';
 import TextareaError from './TextareaError';
 
+import TooltipsOutlined from './TooltipsOutlined';
+import TooltipsSolid from './TooltipsSolid';
+
 const Forms = () => {
   return (
     <Fragment>
       <PageHeader title="Forms" />
       <section className="p-2 vf-border-top-gray-200"></section>
-        <div className="vf-row w-75">
-            <div className="vf-col">
-              <p>Input text are the most commently use form control. Input fields are suitable for getting textual data from the user.</p>
-              <p>Behaviour<br/>Input text contain a label above the input field.</p>
-              <p>Error messages are displayed below the input field. When the users input isn’t valid the error message will be displayed. The application wich implements the input fields is responsible for validation and display of the error message. </p>
-            </div>
+      <div className="vf-row w-75">
+        <div className="vf-col">
+          <p>
+            Input text are the most commently use form control. Input fields are suitable for getting textual data from
+            the user.
+          </p>
+          <p>
+            Behaviour
+            <br />
+            Input text contain a label above the input field.
+          </p>
+          <p>
+            Error messages are displayed below the input field. When the users input isn’t valid the error message will
+            be displayed. The application wich implements the input fields is responsible for validation and display of
+            the error message.{' '}
+          </p>
         </div>
-      <div className="vf-mt-lg"/>
+      </div>
+      <div className="vf-mt-lg" />
       <StandardInput title="Standard" label="Input label" />
       <StandardInputWithTooltip title="Standard With Tooltip" label="Input label" />
       <StandardInputWarning title="Standard Warning" label="Warning state label" />
       <StandardInputError title="Standard Error" label="Error state label" />
-      <div className="vf-mt-lg"/>
-      <Description title="Dropdown" text="Dropdown is an element that allows you to make a particular choice within compact area which is very useful, especially for the mobile devices. Only one item can be chosen at the time. Advice is to use this element when the amount of items to be chosen from exceeds 3 options. "/>
+      <div className="vf-mt-lg" />
+      <Description
+        title="Dropdown"
+        text="Dropdown is an element that allows you to make a particular choice within compact area which is very useful, especially for the mobile devices. Only one item can be chosen at the time. Advice is to use this element when the amount of items to be chosen from exceeds 3 options. "
+      />
       <StandardDropdown title="Standard" />
       <StandardDropdownWithCheckboxes title="Standard with checkboxes" />
       <Description
@@ -63,12 +80,13 @@ const Forms = () => {
       />
       <Textarea title="Standard" />
       <TextareaError title="Textarea Error" />
-      <div className="vf-mt-lg"/>
+      <div className="vf-mt-lg" />
       <Description
         title="Tooltip"
         text="Tooltips appear on hover and provide an additional layer of information for the user. They are filled with different colors in order to generate maximum contrast with the page beneath. Carets are positioned in the top center, bottom center, right center and left center "
       />
-
+      <TooltipsSolid title="Solid" />
+      <TooltipsOutlined title="Outlined" />
     </Fragment>
   );
 };

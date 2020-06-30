@@ -5,12 +5,16 @@ const HeaderH3 = () => {
   return (
     <Fragment>
       <div className="vf-row">
-        <h3>Header H3</h3>
+        <div className="vf-col">
+          <h3>Header H3</h3>
+        </div>
       </div>
       <div className="vf-row">
-        <p>
-          Header H3 is primarily used for tetiary sections inside content area.It is always set to Vattenfall Hall Bold.
-        </p>
+        <div className="vf-col">
+          <p>
+            Primarily used for tetriary sections inside content area.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <ElementSpeifications
