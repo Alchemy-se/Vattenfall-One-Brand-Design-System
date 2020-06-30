@@ -9,8 +9,7 @@ const PreambleText = () => {
       </div>
       <div className="vf-row">
         <p className="vf-preamble">
-          This is preamble copy. It is used for introducing the content <br />
-          after the Headline.
+          This is Preamble copy. Used for introducing the content after a Headline.
         </p>
       </div>
       <div className="vf-row">

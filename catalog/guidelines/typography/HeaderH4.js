@@ -9,8 +9,7 @@ const HeaderH4 = () => {
       </div>
       <div className="vf-row">
         <p>
-          Header H4 is primarily used for quartrnary sections inside content area. It is always set to Vattenfall Hall
-          Bold.
+          Primarily used for quarternary sections inside content area.
         </p>
       </div>
       <div className="vf-row">

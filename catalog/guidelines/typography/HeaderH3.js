@@ -9,7 +9,7 @@ const HeaderH3 = () => {
       </div>
       <div className="vf-row">
         <p>
-          Header H3 is primarily used for tetiary sections inside content area.It is always set to Vattenfall Hall Bold.
+          Primarily used for tetriary sections inside content area.
         </p>
       </div>
       <div className="vf-row">

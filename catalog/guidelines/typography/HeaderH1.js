@@ -8,29 +8,29 @@ const HeaderH1 = () => {
         <h1>Header H1</h1>
       </div>
       <div className="vf-row">
-        <p>Header H1 is primarily used for MArquee/Hero sections. It is always set to Vattenfall Hall Display.</p>
+        <p>Should always be used for titles of top-level sections of a screen. Primarily used for Marquee/Hero sections.</p>
       </div>
       <div className="vf-row">
         <ElementSpeifications
           screenSize="Dektop"
-          fontName="Vatenfall Hall"
+          fontName="Vatenfall Hall Display"
           fontWeight="Bold"
-          fontSize="28px"
-          lineHeight="36px"
+          fontSize="72px"
+          lineHeight="84px"
         />
         <ElementSpeifications
           screenSize="Tablet"
-          fontName="Vatenfall Hall"
+          fontName="Vatenfall Hall Display"
           fontWeight="Bold"
-          fontSize="28px"
-          lineHeight="36px"
+          fontSize="60px"
+          lineHeight="75px"
         />
         <ElementSpeifications
           screenSize="Mobile"
-          fontName="Vatenfall Hall"
+          fontName="Vatenfall Hall Display"
           fontWeight="Bold"
-          fontSize="28px"
-          lineHeight="36px"
+          fontSize="44px"
+          lineHeight="48px"
         />
       </div>
     </Fragment>

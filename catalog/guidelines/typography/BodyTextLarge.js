@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import ElementSpeifications from './ElementSpecification';
+import styles from "./Typography.scss";
 
 const BodyTextLarge = () => {
   return (
@@ -8,7 +9,7 @@ const BodyTextLarge = () => {
         <h4>Body text large</h4>
       </div>
       <div className="vf-row">
-        <p>This is a large body copy. This is our main body text used on the website.</p>
+        <p className={styles.bodyTextLarge}>This is a large body copy. This is our main body text used on the website.</p>
       </div>
       <div className="vf-row">
         <ElementSpeifications
