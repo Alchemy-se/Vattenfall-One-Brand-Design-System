@@ -2,28 +2,25 @@ import Column from '../Column';
 import styles from './Buttons.scss';
 import React, { Fragment } from 'react';
 
+import ToggleDefault from './ToggleDefault.png';
+import ToggleHover from './ToggleHover.png';
+import TogglePressed from './TogglePressed.png';
+import ToggleDisabled from './ToggleDisabled.png';
+
 const SelectToggle = ({ label }) => (
   <Fragment>
     <div className="vf-row">
       <Column title={'Default'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '58px', display: 'block' }} src={ToggleDefault} />
       </Column>
       <Column title={'Hover'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '58px', display: 'block' }} src={ToggleHover} />
       </Column>
       <Column title={'Active'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '58px', display: 'block' }} src={TogglePressed} />
       </Column>
       <Column title={'Disabled'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '58px', display: 'block' }} src={ToggleDisabled} />
       </Column>
     </div>
   </Fragment>

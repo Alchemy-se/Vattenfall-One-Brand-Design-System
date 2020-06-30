@@ -2,28 +2,25 @@ import Column from '../Column';
 import styles from './Buttons.scss';
 import React, { Fragment } from 'react';
 
-const Checkbox = ({ label }) => (
+import CheckboxDefault from './CheckboxDefault.png';
+import CheckboxDisabled from './CheckboxDisabled.png';
+import CheckboxHover from './CheckboxHover.png';
+import CheckboxPressed from './CheckboxPressed.png';
+
+const Checkbox = () => (
   <Fragment>
     <div className="vf-row">
       <Column title={'Default'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px', display: 'block' }} src={CheckboxDefault} />
       </Column>
       <Column title={'Hover'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px' }} src={CheckboxHover} />
       </Column>
       <Column title={'Active'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px' }} src={CheckboxPressed} />
       </Column>
       <Column title={'Disabled'}>
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--primary ${styles.disableHover}`} disabled>
-          {label}
-        </button>
+        <img style={{ width: '28px' }} src={CheckboxDisabled} />
       </Column>
     </div>
   </Fragment>
