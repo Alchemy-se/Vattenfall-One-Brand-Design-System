@@ -12,7 +12,7 @@ let style = { border: '2px rgba(255,0,0,0.3) solid', padding: '10px', height: '4
 const Grid = () => {
   return (
     <Fragment>
-      <PageHeader title="Grid" />
+      <PageHeader title="The Grid" />
       <section className="p-2 vf-border-top-gray-200">
         <GridSpecification
           device="Desktop"
@@ -29,6 +29,7 @@ const Grid = () => {
           </div>
         </div>
       </section>
+      <div className="vf-mt-lg"></div>
       <section className="p-2 vf-border-top-gray-200">
         <GridSpecification
           device="Tablet"
@@ -45,6 +46,7 @@ const Grid = () => {
           </div>
         </div>
       </section>
+      <div className="vf-mt-lg"></div>
       <section className="p-2 vf-border-top-gray-200">
         <GridSpecification
           device="Tablet"
@@ -62,6 +64,7 @@ const Grid = () => {
           </div>
         </div>
       </section>
+      <div className="vf-mt-lg"></div>
       <section className="p-2 vf-border-top-gray-200">
         <GridSpecification
           device="Mobile"
