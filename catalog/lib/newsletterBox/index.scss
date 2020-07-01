@@ -3,12 +3,10 @@
   height: 170px;
   border-radius: 50%;
   background-color: #ffda00;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
-  //margin-left: auto;
-  //margin-right: 200px;
-  //margin-top: -4px;
+  @media(min-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   h4 {
     max-width: 140px;
     text-align: center;
