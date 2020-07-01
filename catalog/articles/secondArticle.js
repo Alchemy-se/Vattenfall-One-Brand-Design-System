@@ -54,7 +54,7 @@ function SecondArticle() {
 									<div className={styles.date}>{getDate()}</div>
 								</div>
 								<h3 className={styles.heading}>
-									Creating a more consistent UI/UX for the future
+									e consistent UI/UX for the future
 								</h3>
 							</div>
 							<div className={styles.abstract}>

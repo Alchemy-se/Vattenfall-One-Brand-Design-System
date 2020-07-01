@@ -53,18 +53,10 @@ const Article_2 = () => {
 				</p>
 				<div className="clearfix"/>
 				<div className="pt-4">
-					<h2>Bring your expertise to the table!</h2>
-				</div>
-				<p>
-					While global brand consistency is important, it’s also important to acknowledge your local needs in different markets. To set the DDS up for long-term success and create a helpful resource, we want to involve you as well as other users and stakeholders as much as possible in the workflow. The goal is to achieve a living toolbox where we take varying needs into account, support collaboration, and engage in shared activities. Therefore, we would love your feedback, requirements and/or questions on what would help you most. Please take a couple of minutes to complete our short survey. Thanks!
-				</p>
-				<p><a href={"https://forms.office.com/Pages/ResponsePage.aspx?id=F2zl7uECe0eOLajgeZu-WlvDc0_bQn5MpJmWVDxaVYpUQ1ZGSjBFUkQ3QUI2MEE2TEZFTzk1VE9FVS4u"} style={{fontWeight: "normal"}}>Share your ideas</a></p>
-				<div className="clearfix"/>
-				<div className="pt-4">
 					<h2>Spread the word</h2>
 				</div>
 				<p>
-					We’re happy to have you here! Please let anyone who can benefit from Digital Design News know that they can get on the list by e-mailing <a href="mailto:branding@vattenfall.com.">branding@vattenfall.com</a>.
+					We’re happy to have you here! Please let anyone who can benefit from Digital Design News know that they can get on the list by e-mailing <a href="mailto:branding@vattenfall.com">branding@vattenfall.com</a>.
 				</p>
 			</div>
 

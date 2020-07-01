@@ -21,16 +21,13 @@ const Illustrations = () => {
         <div className="vf-col">
           <h2>Functional</h2>
           <p className={`${styles.guidelinesText}`}>
-            Functional - our main illustration style and most frequently used. The inspiration comes from technical
+            Functional – our main illustration style and most frequently used. The inspiration comes from technical
             drawings and <br />
-            blueprints. It is a simplified illustration style where the main task is to support the bussines - looking
+            blueprints. It is a simplified illustration style where the main task is to support the business – looking
             inside the energy <br />
-            techniques , explaning complex detailed system of our product and services. And this by only using line
+            techniques, explaining complex detailed system of our product and services. And this by only using line
             illustrations <br />
             with a few colors and details. The style does not compete with, but complements our bold icons and typeface.
-          </p>
-          <p className={`${styles.guidelinesText}`}>
-            Login to Vattenfall-Frontify to get access to all of Vattenfalls illustrations.
           </p>
         </div>
       </div>
@@ -90,7 +87,7 @@ const Illustrations = () => {
           <p className={`${styles.guidelinesText}`}>
             To illustrate new isometric illustrations you can use the grid bellow.
             <br />
-            You find it under Utility / Isometric Grid - Illustrations
+            You find it under Utility / Isometric Grid - Illustrations in our Ui Kit.
           </p>
         </div>
       </div>
