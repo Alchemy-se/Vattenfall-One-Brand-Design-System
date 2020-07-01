@@ -8,7 +8,6 @@ const Welcome = () => (
       <PageHeader title={"Digital Design System"}/>
       <div style={{ margin: '10px 20px 0 40px' }}>
         <div style={{
-          height: '50vh',
           maxWidth: '750px',
           background: 'transparent'
         }}>
