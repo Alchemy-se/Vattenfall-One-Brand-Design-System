@@ -1,0 +1,22 @@
+.guidelinesContainer {
+  margin: 0 40px 0 40px;
+  @media (max-width: 999px) {
+    margin: 0 10px 0 20px;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  padding-bottom: 200px;
+}
+
+.guidelinesHeader {
+  margin-bottom: 40px;
+}
+
+.guidelinesText {
+  margin-bottom: 30px;
+}
+
+.textFontWeight {
+  font-weight: normal;
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import PageHeader from "./lib/pageHeader";
+import NewsletterBox from "./lib/newsletterBox";
+import styles from "./welcome.scss";
 
 const Welcome = () => (
   <React.Fragment>
       <PageHeader title={"Digital Design System"}/>
       <div style={{ margin: '10px 20px 0 40px' }}>
         <div style={{
-          height: '50vh',
           maxWidth: '750px',
           background: 'transparent'
         }}>
@@ -18,8 +19,8 @@ const Welcome = () => (
             <a href="/get-started/design" className="vf-btn vf-btn--primary vf-btn--lg vf-mr-sm">Getting started</a>
             <a href="/examples" className="vf-btn vf-btn--secondary vf-btn--lg">View examples</a>
           </div>
+          <div className={styles.signUpContainer}><NewsletterBox/></div>
         </div>
-
         <img src="/img/docs/illustration.png" style={{ position: 'fixed', right: 0, top: 0, zIndex: -1, height: '100%', objectFit: 'contain', maxWidth: '30%' }} />
         <div style={{width: '70%'}}>
 

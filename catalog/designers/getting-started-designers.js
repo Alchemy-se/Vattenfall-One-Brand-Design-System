@@ -91,7 +91,6 @@ const Designers = () => (
              src="https://clients.alchemy.se/vattenfall/wp-content/uploads/2018/12/structure-1.png" width="70%"
              alt="structure" caption="" data-width="original" data-scaling="no"></img>*/}
       </div>
-
       <br></br>
     </div>
   </React.Fragment>

@@ -1,0 +1,86 @@
+.fullWidth {
+  width: 100% !important;
+}
+
+.disableHover {
+  pointer-events: none;
+}
+
+.standardHover {
+  pointer-events: none !important;
+  border: 1px solid #999999 !important;
+}
+
+.standardWithTooltipHover {
+  pointer-events: none !important;
+  border: 1px solid #999999 !important;
+  &:before {
+    pointer-events: none !important;
+  }
+}
+
+.standardWarningHover {
+  pointer-events: none !important;
+  border-color: #f5a623 !important;
+}
+
+.standardErrorHover {
+  pointer-events: none !important;
+  border-color: #f93b18 !important;
+}
+
+.openDropdownMinHeight {
+  min-height: 400px;
+}
+
+.dropdownHover {
+  pointer-events: none !important;
+  border: 1px solid #69788c !important;
+}
+
+.dropdownSelectedOption {
+  pointer-events: none !important;
+  background-color: #1964a3;
+  color: #fff;
+}
+
+.underlineInputHover {
+  pointer-events: none !important;
+  border-bottom: 1px solid #222222 !important;
+}
+
+.underlineInputFocus {
+  pointer-events: none !important;
+  border-bottom: 2px solid #2071b5 !important;
+}
+
+.underlineInputHoverWarning {
+  pointer-events: none !important;
+  border-bottom: 1px solid #f5a623 !important;
+}
+
+.underlineInputFocusWarning {
+  pointer-events: none !important;
+  border-bottom: 2px solid #f5a623 !important;
+}
+
+.underlineInputHoverWarning {
+  pointer-events: none !important;
+  border-bottom: 1px solid #f93b18 !important;
+}
+
+.underlineInputFocusWarning {
+  pointer-events: none !important;
+  border-bottom: 2px solid #f93b18 !important;
+}
+
+.underlineDropboxHover {
+  pointer-events: none !important;
+  border-bottom: 1px solid #69788c !important;
+}
+
+.underlineDropboxSelectedOption {
+  pointer-events: none !important;
+  background-color: #1964a3;
+  color: #fff;
+}
