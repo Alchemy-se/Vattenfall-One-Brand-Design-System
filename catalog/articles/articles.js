@@ -3,6 +3,7 @@ import {Redirect} from "react-router-dom";
 import Article_1 from "./article_1";
 import Article_2 from "./article_2";
 import Article_3 from "./article_3";
+import Article_4 from "./article_4";
 import styles from "./articles.css";
 import ArticlesOverview from "./articlesOverview";
 
@@ -60,6 +61,8 @@ class Articles extends Component {
 			return <Article_2/>;
 		} else if(articleId === "conversion-rate-optimisation-in-action") {
 			return <Article_3/>;
+		} else if(articleId === "bring-your-expertise-to-the-table") {
+			return <Article_4/>
 		} else {
 			return <Redirect to={"/articles"}/>
 		}

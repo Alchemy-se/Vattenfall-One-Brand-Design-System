@@ -10942,7 +10942,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
-  padding: 12px 114px 12px 20px;
+  padding: 11px 114px 11px 20px;
   color: #222222;
   font-size: 1.25rem;
   line-height: 24px;
@@ -11129,8 +11129,54 @@ a.vf-badge:hover, a.vf-badge:focus {
   font-weight: normal;
 }
 
+.vf-input-container .vf-input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.vf-input-container .vf-input::-moz-placeholder {
+  color: transparent;
+}
+
+.vf-input-container .vf-input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.vf-input-container .vf-input::placeholder {
+  color: transparent;
+}
+
 .vf-input-container .vf-input:hover {
   border: 1px solid #999999;
+}
+
+.vf-input-container .vf-input.vf-input--css-placeholder:focus, .vf-input-container .vf-input.vf-input--css-placeholder:not(:placeholder-shown), .vf-input-container .vf-input.vf-input--css-placeholder.vf-input--data {
+  border: 1px solid #1964A3;
+}
+
+.vf-input-container .vf-input.vf-input--css-placeholder:focus ~ label, .vf-input-container .vf-input.vf-input--css-placeholder:not(:placeholder-shown) ~ label, .vf-input-container .vf-input.vf-input--css-placeholder.vf-input--data ~ label {
+  top: -9px;
+  left: 16.5px;
+  padding: 0 7px;
+  color: #1964A3;
+  font-weight: 500;
+  letter-spacing: 0px;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.vf-input-container .vf-input.vf-input--css-placeholder:focus ~ label label:after, .vf-input-container .vf-input.vf-input--css-placeholder:not(:placeholder-shown) ~ label label:after, .vf-input-container .vf-input.vf-input--css-placeholder.vf-input--data ~ label label:after {
+  content: '';
+  display: block;
+  top: -12px;
+  width: 100%;
+  position: relative;
+  -webkit-transform: scaleX(1.05);
+  transform: scaleX(1.05);
+  z-index: -1;
+  height: 2px;
+  background: white;
 }
 
 .vf-input-container .vf-input:focus, .vf-input-container .vf-input.vf-input--data {

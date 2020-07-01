@@ -1,0 +1,46 @@
+.container {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #ffda00;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  //margin-left: auto;
+  //margin-right: 200px;
+  //margin-top: -4px;
+  h4 {
+    max-width: 140px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 auto;
+    padding-top: 28px;
+    letter-spacing: 0px;
+  }
+  .arrowContainer {
+    max-width: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    a {
+      color: #222222;
+      &:hover {
+        text-decoration: none;
+        color: #2071b5;
+      }
+    }
+    a::before {
+      content: '';
+      display: inline-block;
+      width: 19px;
+      height: 23px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 18px 21px;
+      margin-right: 5px;
+      vertical-align: middle;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMjAgMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgICA8cG9seWdvbiBpZD0icGF0aC0xIiBwb2ludHM9IjggMTkgMjMuNDQ4MTc1MiAxOSAxNy40MzQzMDY2IDI1LjM0MjY0NzcgMTkuMDQwMTQ2IDI3IDI3LjggMTcuOTk1ODc3MiAxOS4wNDAxNDYgOSAxNy40MzQzMDY2IDEwLjY0OTEwNjcgMjMuNDQ4MTc1MiAxNyA4IDE3Ij48L3BvbHlnb24+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkNvbXBvbmVudHMtLy1JY29ucy0vLVN5bWJvbC0vLUFyQ29tcG9uZW50cy0vLVRhYmxlLS8tUm93LS8tUHJpbWFyeS0vLVJpZ2h0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOC4wMDAwMDAsIC05LjAwMDAwMCkiPgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDx1c2UgaWQ9Ik1hc2siIGZpbGw9IiMyMjIyMjIiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+    }
+  }
+}

@@ -7252,8 +7252,6 @@ p {
 
 .vf-btn:focus, .vf-btn.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 218, 0, 0.25);
 }
 
 .vf-btn.disabled, .vf-btn:disabled {

@@ -2,6 +2,7 @@ import React from 'react';
 import FirstArticle from "./firstArticle";
 import SecondArticle from "./secondArticle";
 import ThirdArticle from "./thirdArticle";
+import FourthArticle from "./fourthArticle";
 import styles from "./articles.css";
 
 ArticlesOverview.propTypes = {};
@@ -15,6 +16,7 @@ function ArticlesOverview() {
 					<FirstArticle/>
 					<SecondArticle/>
 					<ThirdArticle/>
+					<FourthArticle/>
 				</div>
 			</div>
 		</div>
