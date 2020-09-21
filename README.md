@@ -41,6 +41,8 @@ The documentation for Catalog is available at https://docs.catalog.style/configu
 This requires you to have [node](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/lang/en/) installed on your machine. 
 All commands are run in this folder.
 
+### NodeJS 10.18.0
+
 Install all dependencies:
 
 ```sh
