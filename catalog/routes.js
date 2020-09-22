@@ -6,11 +6,11 @@ import Guidelines from './guidelines';
 import Designers from './designers/getting-started-designers';
 import Developers from './developers/getting-started-developers';
 
-import Grid from './components/grid';
-import Responsive from './components/responsive';
-import Sizing from './components/sizing';
-import Colors from './components/colors';
-import Spacing from './components/spacing';
+import Grid from './components/grid/grid';
+import Responsive from './components/responsive/responsive';
+import Sizing from './components/sizing/sizing';
+import Colors from './components/colors/colors';
+import Spacing from './components/spacing/spacing';
 
 import Text from './components/text';
 import UtilityTypography from './components/utilityTypography';

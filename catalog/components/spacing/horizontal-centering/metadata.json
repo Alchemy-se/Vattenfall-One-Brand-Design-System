@@ -1,0 +1,35 @@
+{
+  "id": "horizontal-centering",
+  "uri": "#horizontal-centering",
+  "name": "Horizontal centering",
+  "description": "Additionally, VF Design System also includes an .mx-auto class for horizontally centering fixed-width block level content—that is, content that has display: block and a width set—by setting the horizontal margins to auto.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}

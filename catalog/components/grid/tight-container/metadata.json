@@ -1,0 +1,35 @@
+{
+  "id": "tight-container",
+  "uri": "#tight-container",
+  "name": "Tight container",
+  "description": "Used for content heavy pages etc.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}

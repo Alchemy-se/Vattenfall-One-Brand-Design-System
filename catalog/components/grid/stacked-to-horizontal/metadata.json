@@ -1,0 +1,35 @@
+{
+  "id": "stacked-to-horizontal",
+  "uri": "#stacked-to-horizontal",
+  "name": "Stacked to horizontal",
+  "description": "Using a single set of .vf-col-sm-* classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (sm).",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}

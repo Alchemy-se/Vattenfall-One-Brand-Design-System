@@ -1,0 +1,35 @@
+{
+  "id": "column-wrapping",
+  "uri": "#column-wrapping",
+  "name": "Column wrapping",
+  "description": "If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}

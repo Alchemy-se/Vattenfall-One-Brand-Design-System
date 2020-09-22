@@ -1,0 +1,35 @@
+{
+  "id": "column-breaks",
+  "uri": "#column-breaks",
+  "name": "Column breaks",
+  "description": "Breaking columns to a new line in flexbox requires a small hack: add an element with width: 100% wherever you want to wrap your columns to a new line. Normally this is accomplished with multiple .rows, but not every implementation method can account for this.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}

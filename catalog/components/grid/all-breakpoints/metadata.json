@@ -1,0 +1,35 @@
+{
+  "id": "all-breakpoints",
+  "uri": "#all-breakpoints",
+  "name": "All breakpoints",
+  "description": "For grids that are the same from the smallest of devices to the largest, use the .vf-col and .vf-col-* classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to .vf-col.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": false,
+    "otherSupport": []
+  },
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXDUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
+}
