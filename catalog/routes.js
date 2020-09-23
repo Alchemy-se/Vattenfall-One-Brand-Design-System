@@ -43,6 +43,7 @@ function usePageViews(onRouteChange) {
   onRouteChange(location.pathname);
 }
 
+
 const COMPONENTS_ROUTES = [
   { path: '/grid', name: 'Grid', component: <Grid /> },
   { path: '/responsive', name: 'Responsive', component: <Responsive /> },
