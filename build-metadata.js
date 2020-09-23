@@ -2,7 +2,8 @@
  * File for mapping all metadata.json files and join values from parent to respective
  * child/component and save a new components-overview-metadata.json file.
  *
- * run with 'node build-metadata.js'
+ * run with 'yarn build-metadata'
+ * should probably be included in build script later
  */
 
 const glob = require('glob');

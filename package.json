@@ -20,7 +20,7 @@
     "js-main": "npm-run-all --sequential js-build js-copy",
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
-    "yo": "node build-metadata.js"
+    "build-metadata": "node build-metadata.js"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
@@ -78,8 +78,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "browser": {
-    "fs": false
   }
 }
