@@ -42,6 +42,8 @@ function Header(props) {
 				<Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
 				<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 				<Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
+				<Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
+
 			</Menu>
 		)
 	}

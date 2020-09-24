@@ -10,22 +10,25 @@ const glob = require('glob');
 const fs = require('fs');
 const componentsPath = 'catalog/components/*';
 const metadataFileName = 'components-overview-metadata.json'
-const jsonObject = {
-  components: []
-};
+
 
 // delete file first if it exists as sometimes it concatenate
 // the new and old .json data in the components-overview-metadata.json file
 // instead of overwriting it
-fs.stat(metadataFileName, ((err, stats) => {
+fs.stat(metadataFileName, ((err) => {
     if (err) {
       return console.log("fs Stat err", err);
     }
+    console.log("deleted");
     fs.unlinkSync(metadataFileName)
   })
 );
 
-
+let jsonObject = {
+  components: []
+};
+let allComponents;
+let componentMetadata;
 glob(componentsPath, (err, directories) => {
   directories.map(topLevelFolderPath => {
 
@@ -34,6 +37,16 @@ glob(componentsPath, (err, directories) => {
 
       // All content in each directory (folders/.js etc)
       const folderContents = fs.readdirSync(topLevelFolderPath);
+      let parentMetadata = fs.readFileSync(topLevelFolderPath + '/' + 'metadata.json', 'utf8')
+      parentMetadata = JSON.parse(parentMetadata);
+
+
+      const parentData = {
+        name: parentMetadata.name,
+        uri: parentMetadata.uri,
+        description: parentMetadata.description,
+        children: []
+      };
 
       // content is the name of the files and folders from the topLevelFolderPath directory
       folderContents.map(content => {
@@ -48,26 +61,26 @@ glob(componentsPath, (err, directories) => {
           // build the component metadata path and get the metadata.
           // catalog/components/spacing/vattenfall-spacings/metadata.json
           let componentPath = secondLevelPath + '/' + 'metadata.json';
-          let componentMetadata = fs.readFileSync(componentPath, 'utf8');
+          componentMetadata = fs.readFileSync(componentPath, 'utf8');
           componentMetadata = JSON.parse(componentMetadata);
 
-          // get parent metadata for current component by path e.g catalog/components/sizing
-          let parentMetadata = fs.readFileSync(topLevelFolderPath + '/' + 'metadata.json', 'utf8')
-          parentMetadata = JSON.parse(parentMetadata);
+          // add the component data to respective parent
+          parentData.children.push(componentMetadata);
 
           // add uri from parent to component
           componentMetadata.uri = parentMetadata.uri + '/' + componentMetadata.uri
-
-          // create new .json file with and array of object containing all of the components
-          jsonObject.components.push(componentMetadata);
-          const obj = JSON.stringify(jsonObject);
-          fs.writeFile(metadataFileName, obj, 'utf8', function (error) {
-            if (err) {
-              console.log('writefile error: ', error);
-            }
-          })
         }
-      })
+      });
+
+      // add all components to one array
+      jsonObject.components.push(parentData);
+
+      // needs to be a .json format to be saved
+      allComponents = JSON.stringify(jsonObject)
     }
-  })
+  });
+
+
+  fs.writeFileSync(metadataFileName, allComponents, 'utf8')
+
 })
