@@ -23,6 +23,7 @@ import Articles from './articles/articles';
 import ArticlesOverview from './articles/articlesOverview';
 
 import DynamicView from './components/dynamicView';
+import ComponentOverview from "./components/componentOverview";
 
 // Guidelines
 import GuidelinesWrapper from "./guidelines/wrapper";
@@ -136,6 +137,8 @@ const Routes = ({ onRouteChange, openModal }) => {
       ))}
       <Route path="/get-started/design">
         <Designers />
+      </Route>  <Route path="/get-started/design">
+        <Designers />
       </Route>
       <Route path="/get-started/developer">
         <Developers />
@@ -154,6 +157,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route exact path={'/articles/:articleId'} component={Articles} />
       <Route path={'/articles'}>
         <ArticlesOverview />
+      </Route>
+      <Route path={'/overview'}>
+        <ComponentOverview />
       </Route>
       <Route path="/">
         <Welcome />

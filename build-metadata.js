@@ -9,9 +9,22 @@
 const glob = require('glob');
 const fs = require('fs');
 const componentsPath = 'catalog/components/*';
+const metadataFileName = 'components-overview-metadata.json'
 const jsonObject = {
   components: []
 };
+
+// delete file first if it exists as sometimes it concatenate
+// the new and old .json data in the components-overview-metadata.json file
+// instead of overwriting it
+fs.stat(metadataFileName, ((err, stats) => {
+    if (err) {
+      return console.log("fs Stat err", err);
+    }
+    fs.unlinkSync(metadataFileName)
+  })
+);
+
 
 glob(componentsPath, (err, directories) => {
   directories.map(topLevelFolderPath => {
@@ -48,7 +61,7 @@ glob(componentsPath, (err, directories) => {
           // create new .json file with and array of object containing all of the components
           jsonObject.components.push(componentMetadata);
           const obj = JSON.stringify(jsonObject);
-          fs.writeFile('components-overview-metadata.json', obj, 'utf8', function (error) {
+          fs.writeFile(metadataFileName, obj, 'utf8', function (error) {
             if (err) {
               console.log('writefile error: ', error);
             }
