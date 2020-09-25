@@ -927,7 +927,7 @@
           "html": {
             "exists": true,
             "status": 0,
-            "globalUse": false,
+            "globalUse": true,
             "otherSupport": []
           },
           "figmaUrl": null,
@@ -963,7 +963,7 @@
             "exists": true,
             "status": 0,
             "globalUse": false,
-            "otherSupport": []
+            "otherSupport": ["SV", "NL"]
           },
           "figmaUrl": null,
           "photoshopUrl": null,

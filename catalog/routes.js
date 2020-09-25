@@ -23,7 +23,7 @@ import Articles from './articles/articles';
 import ArticlesOverview from './articles/articlesOverview';
 
 import DynamicView from './components/dynamicView';
-import ComponentOverview from "./components/componentOverview";
+import ComponentOverview from "./overview/componentOverview";
 
 // Guidelines
 import GuidelinesWrapper from "./guidelines/wrapper";

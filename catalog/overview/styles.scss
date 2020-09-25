@@ -1,0 +1,78 @@
+
+.tableContainer {
+  margin: 50px;
+
+  table {
+    font-family: 'Vattenfall Hall', Helvetica, sans-serif;
+    line-height: normal;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    tr, td, th {
+      padding: 0.5rem;
+      border: 1px #808080 solid;
+      word-wrap: break-word;
+    }
+
+    thead {
+      text-align: center;
+
+      tr:nth-child(2) th {
+        font-size: 0.6rem;
+      }
+
+    }
+
+    .row {
+      .desc {
+        font-size: 16px;
+        width: 230px;
+      }
+    }
+
+    .expandedRow {
+      font-size: 0.7rem;
+      line-height: normal;
+      padding-left: 2rem;
+
+      td {
+        text-align: center;
+      }
+
+      .name {
+        padding-left: 2rem;
+        font-size: 0.8rem;
+        line-height: normal;
+        text-align: left;
+      }
+
+      .desc {
+        font-size: 0.8rem;
+        text-align: left;
+
+        span {
+          margin-top: 2px;
+          color: #1964A3;
+          display: block;
+          cursor: pointer;
+
+          &:hover {
+            color: #40a9ff;
+
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .expand {
+    cursor: pointer;
+  }
+}
+
+
+
+
