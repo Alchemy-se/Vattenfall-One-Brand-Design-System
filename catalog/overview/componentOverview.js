@@ -5,10 +5,12 @@ import OverviewItem from "./overviewItem";
 
 const ComponentOverview = () => {
 
+
   const renderOverview = () => {
     return overviewJSON.components.map(item => {
       return <OverviewItem item={item} key={item.name} />
     })
+
   }
   return (
     <div className={styles.tableContainer}>

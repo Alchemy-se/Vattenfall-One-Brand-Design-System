@@ -24,7 +24,7 @@ const OverviewItem = ({ item }) => {
   const showExpand = (children) => {
     return children.map(child => {
       return (
-        <tr key={child.name}>
+        <tr className={styles.expandedRow} key={child.name}>
 
           <td className={styles.name} colSpan="4"><Link to={child.uri}>{child.name}</Link></td>
           <DescriptionItem description={child.description} />
@@ -44,10 +44,12 @@ const OverviewItem = ({ item }) => {
   };
 
   const countChildren = (type) => {
+    console.log('item: ', item)
     const languages = item.children.filter(lang => lang[type].exists);
     return <td style={{ textAlign: "center" }}> {languages.length} </td>
   }
 
+  console.log('item: ', item)
   return (
     <React.Fragment>
       <tr onClick={() => setIsExpanded(!isExpanded)} className={styles.row}>
@@ -62,7 +64,7 @@ const OverviewItem = ({ item }) => {
         <td />
         <td />
         <td />
-        <td className={styles.expand}>
+        <td className={styles.expand} >
           {isExpanded ? 'Close' : 'Open'}
         </td>
       </tr>
