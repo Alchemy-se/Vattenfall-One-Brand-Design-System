@@ -2,34 +2,41 @@
   "id": "vh-classes",
   "uri": "#vh-classes",
   "name": "VH classes",
+  "guidelineUri": false,
   "description": "These classes for using percentages of the current window height are available:",
   "react": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
   },
   "vue": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": []
   },
   "angular": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
   },
   "html": {
     "exists": true,
     "status": 0,
-    "globalUse": false,
-    "otherSupport": []
+    "globalUse": true,
+    "support": []
   },
-  "figmaUrl": null,
-  "photoshopUrl": null,
-  "adobeXDUrl": null,
-  "sketchUrl": null,
-  "abstractUrl": null
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
 }

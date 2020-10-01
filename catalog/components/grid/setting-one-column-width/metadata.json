@@ -2,34 +2,41 @@
   "id": "setting-one-column-width",
   "uri": "#setting-one-column-width",
   "name": "Setting one column width",
+  "guidelineUri": false,
   "description": "Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.",
   "react": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
   },
   "vue": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": []
   },
   "angular": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
   },
   "html": {
     "exists": true,
     "status": 0,
-    "globalUse": false,
-    "otherSupport": []
+    "globalUse": true,
+    "support": []
   },
-  "figmaUrl": null,
-  "photoshopUrl": null,
-  "adobeXDUrl": null,
-  "sketchUrl": null,
-  "abstractUrl": null
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
 }

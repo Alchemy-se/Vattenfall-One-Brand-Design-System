@@ -1,5 +1,12 @@
 {
   "name": "Sizing",
   "uri": "/components/sizing",
-  "description": ""
+  "description": "",
+  "guidelineUri": false,
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXdUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
 }
+

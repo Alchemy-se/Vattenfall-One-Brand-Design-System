@@ -1,5 +1,11 @@
 {
   "name": "Colors",
   "uri": "/components/colors",
-  "description": ""
+  "description": "",
+  "guidelineUri": "/guidelines/colors",
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXdUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
 }

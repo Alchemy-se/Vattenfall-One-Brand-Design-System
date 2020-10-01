@@ -1,5 +1,12 @@
 {
   "name": "Grid",
   "uri": "/components/grid",
-  "description": ""
+  "guidelineUri": "/guidelines/grid",
+  "description": "",
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXdUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
 }
+

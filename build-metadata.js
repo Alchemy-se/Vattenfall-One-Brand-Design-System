@@ -25,12 +25,31 @@ fs.stat(metadataFileName, ((err) => {
 );
 
 let jsonObject = {
+  amount: {},
   components: []
 };
 let allComponents;
 let componentMetadata;
+
+let amount = {
+  html: { global: 0 },
+  angular: { global: 0, NL: 0 },
+  react: { global: 0, SV: 0 },
+  design: {
+    figma: 0,
+    adobeXd: 0,
+    sketch: 0
+  }
+};
+
 glob(componentsPath, (err, directories) => {
+  if (err) {
+    console.log('glob err: ', err)
+  }
   directories.map(topLevelFolderPath => {
+    if (topLevelFolderPath === 'catalog/components/exlude-not-done') {
+      return
+    }
 
     const stats = fs.statSync(topLevelFolderPath);
     if (stats.isDirectory()) {
@@ -42,12 +61,9 @@ glob(componentsPath, (err, directories) => {
 
 
       const parentData = {
-        name: parentMetadata.name,
-        uri: parentMetadata.uri,
-        description: parentMetadata.description,
+        ...parentMetadata,
         children: []
       };
-
       // content is the name of the files and folders from the topLevelFolderPath directory
       folderContents.map(content => {
 
@@ -63,15 +79,58 @@ glob(componentsPath, (err, directories) => {
           let componentPath = secondLevelPath + '/' + 'metadata.json';
           componentMetadata = fs.readFileSync(componentPath, 'utf8');
           componentMetadata = JSON.parse(componentMetadata);
+          const { html, angular, react, figma, sketch, adobeXd } = componentMetadata
+
+          if (html.exists) {
+
+
+            if (html.globalUse && html.status === 0) {
+              amount.html.global++
+            }
+          }
+          if (angular.exists) {
+            if (angular.globalUse && angular.status === 0) {
+              amount.angular.global++
+
+            }
+            if (angular.support.every(item => item.status === 0 && item.region === 'NL')) {
+              amount.angular.NL++
+            }
+
+          }
+          if (react.exists) {
+            if (react.globalUse && react.status === 0) {
+              amount.react.global++
+            }
+            if (react.support.every(item => item.status === 0 && item.region === 'SV')) {
+              amount.react.SV++
+            }
+          }
+
+          if (figma) {
+            amount.design.figma++
+          }
+          if (sketch) {
+            amount.design.sketch++
+          }
+          if (adobeXd) {
+            amount.design.adobeXd++
+
+          }
+
 
           // add the component data to respective parent
           parentData.children.push(componentMetadata);
 
-          // add uri from parent to component
-          componentMetadata.uri = parentMetadata.uri + '/' + componentMetadata.uri
+          // add data from parent to component
+          componentMetadata.uri = parentMetadata.uri + '/' + componentMetadata.uri;
+          if (parentMetadata.guidelineUri && componentMetadata.guidelineUri) {
+            componentMetadata.guidelineUri = parentMetadata.guidelineUri + componentMetadata.guidelineUri
+          }
         }
       });
 
+      jsonObject.amount = amount
       // add all components to one array
       jsonObject.components.push(parentData);
 

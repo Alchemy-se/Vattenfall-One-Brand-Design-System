@@ -1,5 +1,11 @@
 {
   "name": "Spacing",
   "uri": "/components/spacing",
-  "description": ""
+  "guidelineUri": "/guidelines/spacers",
+  "description": "",
+  "figmaUrl": null,
+  "photoshopUrl": null,
+  "adobeXdUrl": null,
+  "sketchUrl": null,
+  "abstractUrl": null
 }

@@ -2,34 +2,41 @@
   "id": "variable-width-content",
   "uri": "#variable-width-content",
   "name": "Variable width content",
+  "guidelineUri": false,
   "description": "Use col-{breakpoint}-auto classes to size columns based on the natural width of their content.",
   "react": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
   },
   "vue": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": []
   },
   "angular": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-    "otherSupport": []
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
   },
   "html": {
     "exists": true,
     "status": 0,
-    "globalUse": false,
-    "otherSupport": []
+    "globalUse": true,
+    "support": []
   },
-  "figmaUrl": null,
-  "photoshopUrl": null,
-  "adobeXDUrl": null,
-  "sketchUrl": null,
-  "abstractUrl": null
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
 }

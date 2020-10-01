@@ -1,70 +1,144 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.scss'
-import { HashLink as Link } from 'react-router-hash-link';
-import DescriptionItem from "./descriptionItem";
+import { HashLink } from 'react-router-hash-link';
+
+const FIGMA = 'figma';
+const SKETCH = 'sketch';
+const ADOBE_XD = 'adobeXd';
+const ANGULAR = 'angular';
+const HTML = 'html';
+const REACT = 'react';
+const SV = 'SV';
+const NL = 'NL';
 
 const OverviewItem = ({ item }) => {
-  const { name, children } = item;
+  const { name, children, figmaUrl, adobeXdUrl, sketchUrl } = item;
   const [isExpanded, setIsExpanded] = useState(false);
 
-
-  const supportedRegion = (language) => {
-    if (language.exists) {
-      if (language.globalUse) {
-        return 'Global'
-      } else if (language.otherSupport.length >= 1) {
-        return language.otherSupport.join(", ")
-      }
-      return 'Yes'
-    }
-    return "Coming soon"
+  const countDesign = (program) => {
+    const designs = children.filter(design => design[program])
+    return <td style={{ textAlign: "center" }}> {designs.length} </td>
   };
 
+  const renderDesignLink = (child, type, url) => {
+    if (child[type] && url) {
+      return <td className={styles.ready}><a style={{color:'black'}} target='_blank' href={url}>Link</a></td>
+    }
+    return <td className={styles.noData} />
+  };
 
+  const renderGuidelineUri = (uri) => {
+    if (uri) {
+      return <HashLink to={uri}>Guideline</HashLink>
+    }
+    return "---"
+  };
+
+  const countLanguages = (type, region) => {
+    let languages = [];
+    // Region specific
+    if (region) {
+      children.forEach(lang => {
+        if (lang[type].exists) {
+          lang[type].support.forEach(item => {
+            if (item.status === 0) {
+              languages.push(item)
+            }
+          })
+        }
+      });
+    } else {
+      // Global use
+      languages = children.filter(lang => {
+        return lang[type].exists &&
+          lang[type].globalUse &&
+          lang[type].status === 0;
+      });
+    }
+    return <td style={{ textAlign: "center" }}> {languages.length} </td>
+  };
+
+  const renderStatus = (child, type, region) => {
+
+    let status = child[type].status;
+    if (child[type].globalUse) {
+
+      if (child[type].status !== 0) {
+
+        if (child[type].status === 1) {
+          status = 3
+        }
+        if (child[type].status === 2) {
+          status = 4
+        }
+      } else {
+        status = child[type].status
+      }
+    }
+
+    if (region) {
+      status = child[type].support.map(supportItem => {
+        if (supportItem.region === region) {
+          return supportItem.status
+        }
+      });
+      status = status[0]
+    }
+
+    switch (status) {
+      case -1:
+        return <td className={styles.noData} />;
+      case 0:
+        return <td className={styles.ready} />
+      case 1:
+        return <td className={styles.inProgress} />
+      case 2:
+        return <td className={styles.declined} />
+      case 3:
+        return <td className={styles.slantedReadyInProgress} />
+      case 4:
+        return <td className={styles.slantedReadyDeclined} />
+      default:
+        return <td />
+    }
+  };
   const showExpand = (children) => {
     return children.map(child => {
       return (
         <tr className={styles.expandedRow} key={child.name}>
+          <td className={styles.name} colSpan="4"><HashLink to={child.uri}>{child.name}</HashLink></td>
+          <td className={styles.guideline} colSpan="4">{renderGuidelineUri(child.guidelineUri)}</td>
 
-          <td className={styles.name} colSpan="4"><Link to={child.uri}>{child.name}</Link></td>
-          <DescriptionItem description={child.description} />
-          <td>{supportedRegion(child.html)}</td>
-          <td>{supportedRegion(child.react)}</td>
-          <td>{supportedRegion(child.vue)}</td>
-          <td>{supportedRegion(child.angular)}</td>
+          {renderStatus(child, HTML)}
+          {renderStatus(child, ANGULAR)}
+          {renderStatus(child, ANGULAR, NL)}
+          {renderStatus(child, REACT)}
+          {renderStatus(child, REACT, SV)}
 
-          <td>{child.figmaUrl}</td>
-          <td>{child.photoshopUrl}</td>
-          <td>{child.abstractUrl}</td>
-          <td>{child.adobeXDUrl}</td>
-          <td>{child.sketchUrl}</td>
+          {renderDesignLink(child, SKETCH, sketchUrl)}
+          {renderDesignLink(child, FIGMA, figmaUrl)}
+          {renderDesignLink(child, ADOBE_XD, adobeXdUrl)}
 
         </tr>)
     })
   };
 
-  const countChildren = (type) => {
-    console.log('item: ', item)
-    const languages = item.children.filter(lang => lang[type].exists);
-    return <td style={{ textAlign: "center" }}> {languages.length} </td>
-  }
-
-  console.log('item: ', item)
   return (
     <React.Fragment>
       <tr onClick={() => setIsExpanded(!isExpanded)} className={styles.row}>
-        <td colSpan="4"><Link to={item.uri}>{name}</Link></td>
-        <td className={styles.desc} colSpan="4">General info. No data yet.</td>
-        {countChildren('html')}
-        {countChildren('react')}
-        {countChildren('vue')}
-        {countChildren('angular')}
-        <td />
-        <td />
-        <td />
-        <td />
-        <td />
-        <td className={styles.expand} >
+        <td colSpan="4"><HashLink to={item.uri}>{name}</HashLink></td>
+        <td colSpan="4">{renderGuidelineUri(item.guidelineUri)}</td>
+        {countLanguages(HTML)}
+        {countLanguages(ANGULAR)}
+        {countLanguages(ANGULAR, NL)}
+        {countLanguages(REACT)}
+        {countLanguages(REACT, SV)}
+
+        {countDesign(SKETCH)}
+        {countDesign(FIGMA)}
+        {countDesign(ADOBE_XD)}
+
+        <td className={styles.expand}>
           {isExpanded ? 'Close' : 'Open'}
         </td>
       </tr>
