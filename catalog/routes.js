@@ -42,6 +42,17 @@ import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
 import Navbar from "./components/exlude-not-done/navbar/navbar";
 import Preloader from "./components/preloader/preloader";
 import Tooltip from "./components/tooltip/tooltip";
+import Card from "./components/card/card";
+import ImageBlock from "./components/image-block/image-block";
+import ImageWithCaptions from "./components/image-with-captions/image-with-captions";
+import LargeQuote from "./components/large-quote/large-quote";
+import LinkedListBlock from "./components/linked-list-block/linked-list-block";
+import MediaBlock from "./components/media-block/media-block";
+import Pagination from "./components/pagination/pagination";
+import Progress from "./components/progress/progress";
+import SharableImage from "./components/shareable-image/sharable-image";
+import SmallQuote from "./components/small-qoute/small-quote";
+import ThreeColumn from "./components/three-column/three-column";
 
 
 function usePageViews(onRouteChange) {
@@ -91,29 +102,37 @@ const COMPONENTS_ROUTES = [
   { path: '/css/subscribe', name: 'Subscribe', mdFile: require('./components/subscribe/standard/html/standard.md') },
   { path: '/css/icon-text', name: 'Icon Text', mdFile: require('./components/icon-text/standard/html/standard.md') },
 
-  { path: '/css/card', name: 'Card', mdFile: require('./molecules/card.md') },
-  { path: '/css/button-group', name: 'Button Group', mdFile: require('./molecules/button-group.md') },
-  { path: '/css/cookie-banner', name: 'Cookie Banner', mdFile: require('./molecules/cookie-banner.md') },
-  { path: '/css/image-block', name: 'Image Block', mdFile: require('./molecules/image-block.md') },
-  { path: '/css/image-with-caption', name: 'Image with Caption', mdFile: require('./molecules/image-with-caption.md') },
-  { path: '/css/shareable-image', name: 'Shareable Image', mdFile: require('./molecules/shareable-image.md') },
-  { path: '/css/media-block', name: 'Media Block', mdFile: require('./molecules/media-block.md') },
-  { path: '/css/linked-list-block', name: 'Linked List Block', mdFile: require('./molecules/linked-list-block.md') },
+  { path: '/css/card', name: 'Card', component: <Card /> },
+  {
+    path: '/css/button-group',
+    name: 'Button Group',
+    mdFile: require('./components/button-group/example/html/example.md')
+  },
+  {
+    path: '/css/cookie-banner',
+    name: 'Cookie Banner',
+    mdFile: require('./components/cookie-banner/cookie-banner/html/cookie-banner.md')
+  },
+  { path: '/css/image-block', name: 'Image Block', component: <ImageBlock /> },
+  { path: '/css/image-with-caption', name: 'Image with Caption', component: <ImageWithCaptions /> },
+  { path: '/css/shareable-image', name: 'Shareable Image', component: <SharableImage /> },
+  { path: '/css/media-block', name: 'Media Block', component: <MediaBlock /> },
+  { path: '/css/linked-list-block', name: 'Linked List Block', component: <LinkedListBlock /> },
   {
     path: '/css/parallax-image-block',
     name: 'Parallax Image Block',
-    mdFile: require('./molecules/parallax-image-block.md'),
+    mdFile: require('./components/parallax-image-block/parallax-image-block/html/parallax-image-block.md'),
   },
-  { path: '/css/large-quote', name: 'Large Quote', mdFile: require('./molecules/large-quote.md') },
-  { path: '/css/small-quote', name: 'Small Quote', mdFile: require('./molecules/small-quote.md') },
-  { path: '/css/three-column', name: 'Three Column', mdFile: require('./molecules/three-column.md') },
-  { path: '/css/topbar', name: 'Top Bar', mdFile: require('./molecules/topbar.md') },
-  { path: '/css/pagination', name: 'Pagination', mdFile: require('./molecules/pagination.md') },
-  { path: '/css/progress', name: 'Progress', mdFile: require('./molecules/progress.md') },
+  { path: '/css/large-quote', name: 'Large Quote', component: <LargeQuote /> },
+  { path: '/css/small-quote', name: 'Small Quote', component: <SmallQuote /> },
+  { path: '/css/three-column', name: 'Three Column', component: <ThreeColumn /> },
+  { path: '/css/topbar', name: 'Top Bar', mdFile: require('./components/topbar/topbar/html/topbar.md') },
+  { path: '/css/pagination', name: 'Pagination', component: <Pagination /> },
+  { path: '/css/progress', name: 'Progress', component: <Progress /> },
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
-  { path: '/css/footer', name: 'Footer', mdFile: require('./organisms/footer.md') },
-  { path: '/css/form', name: 'Form', mdFile: require('./organisms/form.md') },
-  { path: '/css/hero', name: 'Hero', mdFile: require('./organisms/hero.md') },
+  { path: '/css/footer', name: 'Footer', mdFile: require('./components/footer/basic-example/html/basic-example.md') },
+  { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
+  { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon', mdFile: require('./utilities/favicon.md') },
   { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
