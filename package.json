@@ -19,7 +19,9 @@
     "semantic-release": "semantic-release",
     "js-main": "npm-run-all --sequential js-build js-copy",
     "js-build": "webpack",
-    "js-copy": "shx cp -r dist/js/ catalog/static/dist/"
+    "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
+    "build-metadata": "node metadata/build-metadata.js",
+    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
@@ -39,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "clean-css-cli": "^4.2.1",
+    "dotenv": "^8.2.0",
     "file-loader": "^6.0.0",
     "node-sass": "^4.13.1",
     "nodemon": "^1.18.10",
@@ -53,17 +56,24 @@
   },
   "dependencies": {
     "@alchemy-se/catalog": "^4.4.5",
+    "algoliasearch": "^4.5.1",
     "antd": "^4.1.3",
     "catalog": "^3.6.0",
     "copy-webpack-plugin": "^5.1.1",
+    "glob": "^7.1.6",
+    "instantsearch.css": "^7.4.5",
     "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
     "prismjs": "^1.20.0",
     "react": "^16.5.1",
+    "react-autosuggest": "^10.0.2",
     "react-dom": "^16.5.1",
     "react-ga": "^2.7.0",
+    "react-instantsearch": "^6.7.0",
+    "react-instantsearch-dom": "^6.7.0",
     "react-markdown": "^4.3.1",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^2.1.0"
   },
   "release": {
     "plugins": [

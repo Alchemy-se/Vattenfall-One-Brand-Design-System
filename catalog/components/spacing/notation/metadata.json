@@ -1,0 +1,42 @@
+{
+  "id": "notation",
+  "uri": "#notation",
+  "name": "Notation",
+  "guidelineUri": false,
+  "description": "Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

@@ -1,0 +1,154 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+
+.tableContainer {
+  margin: 30px;
+
+
+  .slantedReadyInProgress {
+    background-image: linear-gradient(
+                    to top left,
+                    #FFDA00 48%,
+                    #2DA55D 52%
+    );
+  }
+
+  .slantedReadyDeclined {
+    background-image: linear-gradient(
+                    to top left,
+                    #F93B18 48%,
+                    #2DA55D 52%
+    );
+
+  }
+
+  .legend {
+    width: 400px;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+    border: 1px solid black;
+
+  }
+
+  .noData {
+    background-color: #CCCCCC;
+  }
+
+  .ready {
+    background-color: #2DA55D;
+  }
+
+  .inProgress {
+    background-color: #FFDA00;
+  }
+
+  .declined {
+    background-color: #F93B18;
+  }
+
+  table {
+    font-family: 'Vattenfall Hall', Helvetica, sans-serif;
+    line-height: normal;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    tr, td, th {
+      padding: 0.3rem;
+    //  border: 1px #808080 solid;
+      border: 1px #3b3b3b solid;
+      word-wrap: break-word;
+    }
+
+    thead {
+      text-align: center;
+
+      &:first-child > tr:first-child > th:last-child {
+        font-size: 0.7rem;
+      }
+
+      tr:nth-child(2) th {
+        font-size: 0.6rem;
+      }
+
+      tr > th > img {
+        height: 30px;
+        width: auto;
+      }
+
+    }
+
+    .row {
+      cursor: pointer;
+
+      .desc {
+        font-size: 14px;
+        width: 230px;
+      }
+    }
+
+    .expandedRow {
+      font-size: 0.7rem;
+      line-height: normal;
+      padding-left: 2rem;
+
+      td {
+        text-align: center;
+
+
+      }
+
+      .name {
+        padding-left: 2rem;
+        font-size: 0.8rem;
+        line-height: normal;
+        text-align: left;
+      }
+
+      .guideline {
+        text-align: left;
+      }
+
+      .desc {
+        font-size: 0.8rem;
+        text-align: left;
+
+        span {
+          margin-top: 2px;
+          color: #1964A3;
+          display: block;
+          cursor: pointer;
+
+          &:hover {
+            color: #40a9ff;
+
+          }
+        }
+      }
+
+    }
+
+    tfoot {
+      .totalName {
+        padding: 0.5rem;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      text-align: center;
+
+    }
+  }
+
+  .expand {
+    cursor: pointer;
+  }
+}
+
+
+
+

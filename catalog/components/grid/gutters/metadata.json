@@ -1,0 +1,42 @@
+{
+  "id": "gutters",
+  "uri": "#gutters",
+  "name": "Gutters",
+  "guidelineUri": false,
+  "description": "Gutters can be responsively adjusted by breakpoint-specific padding and negative margin utility classes. To change the gutters in a given row, pair a negative margin utility on the .row and matching padding utilities on the .vf-cols.\n\nHere's an example of customizing the VF Design System grid at the large (lg) breakpoint and above. We've increased the .vf-col padding with .px-lg-5 and then counteracted that with .mx-lg-n5 on the parent .row.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

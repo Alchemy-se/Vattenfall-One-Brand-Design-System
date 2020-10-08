@@ -1,0 +1,42 @@
+{
+  "id": "how-it-works",
+  "uri": "#how-it-works",
+  "name": "How it works",
+  "guidelineUri": false,
+  "description": "Vattenfall's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

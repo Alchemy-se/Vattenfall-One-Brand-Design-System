@@ -1,0 +1,46 @@
+{
+  "id": "elements",
+  "uri": "#elements",
+  "name": "Elements",
+  "guidelineUri":false,
+  "description": "The parts that make up the component. For example the modal window title, close button etc.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "SV",
+	        "status": -1
+	      }
+	    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "NL",
+	        "status": -1
+	      }
+	    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
+}

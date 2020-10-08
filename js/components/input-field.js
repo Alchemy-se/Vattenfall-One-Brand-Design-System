@@ -1,5 +1,4 @@
 (function($){
-
 	$('.vf-input').each(function( index ) {
 
 		$(this).on('keyup',function(){

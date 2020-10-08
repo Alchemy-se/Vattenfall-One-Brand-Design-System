@@ -1,0 +1,42 @@
+{
+  "id": "mix-and-match",
+  "uri": "#mix-and-match",
+  "name": "Mix and match",
+  "guidelineUri": false,
+  "description": "Don't want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

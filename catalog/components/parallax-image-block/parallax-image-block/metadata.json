@@ -1,0 +1,46 @@
+{
+  "id": "parallax-image-block",
+  "uri": "#",
+  "name": "Parallax image block",
+  "guidelineUri":false,
+  "description": null,
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "SV",
+	        "status": -1
+	      }
+	    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "NL",
+	        "status": -1
+	      }
+	    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
+}

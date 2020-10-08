@@ -1,0 +1,42 @@
+{
+  "id": "order-classes",
+  "uri": "#order-classes",
+  "name": "Order classes",
+  "guidelineUri": false,
+  "description": "Use .order- classes for controlling the visual order of your content. These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "NL",
+      "status": -1
+    }]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

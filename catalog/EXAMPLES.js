@@ -1,11 +1,11 @@
 import React from "react";
-import styles from './Examples.css';
+import styles from './Examples.scss';
 import PageHeader from "./lib/pageHeader";
 
 const Examples = ({openModal}) => (
   <React.Fragment>
     <PageHeader title={"Examples"}/>
-    <div className={styles.examples}>
+    <div className={styles.container}>
       <p style={{ fontSize: '16px', width: '50%', lineHeight: '32px' }}>
         Here are a few examples of designs you can create with the Digital Design system.
       </p>

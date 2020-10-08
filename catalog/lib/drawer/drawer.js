@@ -3,6 +3,7 @@ import {Drawer, Menu} from "antd";
 import {useLocation} from "react-router-dom";
 import GetStartedMenu from "./getStartedMenu";
 import ComponentsMenu from "./componentsMenu";
+import GuidelinesMenu from "./guidelinesMenu";
 import styles from "./drawer.scss";
 
 const PACKAGE = require("../../../package.json");
@@ -73,6 +74,9 @@ const renderMenuContent = (_path) => {
 		}
 		case "/get-started": {
 			return GetStartedMenu();
+		}
+		case "/guidelines": {
+			return GuidelinesMenu();
 		}
 		default: {
 			return null;

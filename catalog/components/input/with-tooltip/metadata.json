@@ -1,0 +1,46 @@
+{
+  "id": "with-tooltip",
+  "uri": "#with-tooltip",
+  "name": "With tooltip",
+  "guidelineUri":false,
+  "description": "To add a Tooltip icon and text, simply add a data-tooltip data attribute with the required text to the input element. Tooltip styling classes must be applied to the input element. Available options",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "SV",
+	        "status": -1
+	      }
+	    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "NL",
+	        "status": -1
+	      }
+	    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
+}

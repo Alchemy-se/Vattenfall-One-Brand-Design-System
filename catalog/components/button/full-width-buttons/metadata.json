@@ -1,0 +1,46 @@
+{
+  "id": "full-width-buttons",
+  "uri": "#full-width-buttons",
+  "name": "Full width buttons",
+  "guidelineUri":false,
+  "description": "Create block level buttons—those that span the full width of a parent—by adding .vf-btn--block.",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "SV",
+	        "status": -1
+	      }
+	    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "NL",
+	        "status": -1
+	      }
+	    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
+}

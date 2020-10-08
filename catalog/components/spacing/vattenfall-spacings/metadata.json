@@ -1,0 +1,44 @@
+{
+  "id": "vattenfall-spacings",
+  "uri": "#vattenfall-spacings",
+  "name": "Vattenfall spacings",
+  "guidelineUri": null,
+  "description": "Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties.\n\n Vattenfall uses four default custom spacers, called Small, Medium, Large and Extra Large.\n\n",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [ {
+      "region": "SV",
+      "status": -1
+    }]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [
+      {
+        "region": "NL",
+        "status": -1
+      }
+    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figma": false,
+  "photoshop": false,
+  "adobeXd": false,
+  "sketch": false,
+  "abstract": false
+}

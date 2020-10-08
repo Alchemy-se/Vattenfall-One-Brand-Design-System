@@ -1,0 +1,46 @@
+{
+  "id": "warning-state",
+  "uri": "#warning-state",
+  "name": "Warning state",
+  "guidelineUri":false,
+  "description": "To display a warning state, simply add the modifier class vf-input--warning to the input element",
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "SV",
+	        "status": -1
+	      }
+	    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+	"support": [
+	      {
+	        "region": "NL",
+	        "status": -1
+	      }
+	    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
+}

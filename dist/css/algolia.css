@@ -1,0 +1,186 @@
+.main-search-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.suggestion-result-category {
+    text-transform: capitalize;
+    width: 80px
+}
+
+.suggestion-header hr {
+    margin: 0
+}
+
+.suggestion-header {
+    color: black;
+    line-height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 15px;
+    z-index: 1;
+}
+
+.no-suggestions {
+    padding-left: 20px;
+    display: block;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 45px;
+    position: absolute;
+    width: 250%;
+    left: 10px;
+    color:black;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 3;
+    -webkit-box-shadow: 4px 6px 28px -10px rgba(0, 0, 0, 0.79);
+    box-shadow: 4px 6px 28px -10px rgba(0, 0, 0, 0.79);
+}
+
+.highlight-container {
+    display: flex;
+}
+
+.highlight-container .subtitle {
+    color: black;
+    margin-right: 5px;
+    font-size: 0.7rem;
+}
+
+
+.suggestion-result-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+
+.suggestion-result-container .group {
+    border-right: 1px black solid;
+
+}
+
+.react-autosuggest__container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.react-autosuggest__input {
+    width: 300%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 3rem;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+}
+
+.react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 45px;
+    position: absolute;
+    width: 250%;
+    left: 10px;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+    -webkit-box-shadow: 4px 6px 28px -10px rgba(0, 0, 0, 0.79);
+    box-shadow: 4px 6px 28px -10px rgba(0, 0, 0, 0.79);
+}
+
+.react-autosuggest__section-title {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+
+.react-autosuggest__suggestions-list {
+    margin: 5px 0 0 !important; ;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.suggestion-result-container > .vertical-divider {
+    border: 1px solid #E6E6E6;
+    height: 2rem;
+    margin: auto 10px;
+}
+
+.react-autosuggest__suggestion:hover {
+    background-color: #EDF1F6;
+}
+
+.react-autosuggest__suggestion strong {
+    background-color: #EBF2F3;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #EDF1F6;
+}
+
+.ais-PoweredBy {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.ais-PoweredBy-text {
+    font-size: 15px;
+}
+
+.ais-PoweredBy-logo {
+    height: 20px;
+}
+
+
+/*# sourceMappingURL=algolia.css.map */

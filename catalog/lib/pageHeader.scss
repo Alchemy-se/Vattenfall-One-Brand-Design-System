@@ -9,10 +9,11 @@
 .innerContainer {
   position: absolute;
   bottom: 21px;
-  left: 21px;
-  @media(min-width: 1000px) {
-    left: 42px;
+  margin: 0 170px 0 40px;
+  @media(max-width: 999px) {
+    margin: 0 10px 0 20px;
   }
+
   h1 {
     font-style: normal;
     font-weight: bold;
@@ -20,7 +21,7 @@
     -webkit-font-smoothing: antialiased;
     letter-spacing: normal;
     color: rgb(34, 34, 34);
-    font-family: "Vattenfall Hall";
+    font-family: "Vattenfall Hall NORDx", "Vattenfall Hall";
     font-size: 48px;
     line-height: 1.2;
     position: relative;

@@ -11,7 +11,7 @@ p {
     color: #222222;
   }
 
-  h2 {
+  h2:not(.vf-*) {
     color: #222222;
     font-size: 36px;
     letter-spacing: 0;

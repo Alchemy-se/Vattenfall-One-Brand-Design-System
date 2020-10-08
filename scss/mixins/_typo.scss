@@ -3,7 +3,7 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 @mixin headline-base {
-  font-family: "Vattenfall Hall Display", Helvetica, sans-serif;
+  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@
 //
 
 @mixin typo-tetriary-base {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-weight: 600;
 }
 
@@ -97,14 +97,14 @@
 //
 
 @mixin typo-quaternary-desktop {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-size: $font-size-xl;
   line-height: 36px;
   font-weight: 600;
 }
 
 @mixin typo-quaternary-mobile {
-  font-family: "Vattenfall Hall Display";
+  font-family: "Vattenfall Hall Display NORDx";
   font-size: $font-size-base;
   line-height: 24px;
   font-weight: 600;

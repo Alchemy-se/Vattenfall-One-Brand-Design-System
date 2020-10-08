@@ -1,68 +1,100 @@
-import React, {useState} from "react"
-import {Menu, Dropdown} from "antd";
+import React, { useEffect, useRef, useState } from "react"
+import { Dropdown, Menu } from "antd";
 import styles from "./header.scss";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Hamburger from "./hamburger";
+import Search from './search/search'
 
 function Header(props) {
-	const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [toggleDropdown, setToggleDropdown] = useState(false);
+  const wrapperRef = useRef(null);
 
-	function toggleDropDownHandler() {
-		setToggleDropdown(!toggleDropdown);
-	}
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, false);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, false);
+    };
+  }, []);
 
-	function dropDownMenu() {
-		return (
-			<Menu
-				className={styles.dropDownContainer}
-				onClick={(event) => {
-					toggleDropDownHandler();
-					props.onClick(event);
-				}}
-				selectedKeys={props.selectedKeys}
-			>
-				<Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
-				<Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
-				<Menu.Item key="/guidelines"><Link to={"/guidelines"}>Guidelines</Link></Menu.Item>
-				<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
-				<Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
-			</Menu>
-		)
-	}
+  const handleClickOutside = event => {
+    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+      setToggleDropdown(false);
+    }
+  };
 
-	function onBlur() {
-		setToggleDropdown(false);
-	}
 
-	return (
-		<div className={styles.container}>
-			<div className={styles.logoContainer}>
-				<Link to={"/"}>
-					<img src={'/img/docs/logo.svg'}/>
-				</Link>
-			</div>
-			<div onBlur={onBlur} tabIndex="0" style={{outline: "none"}}>
-				<Dropdown
-					visible={toggleDropdown}
-					overlayClassName={"dropdown"}
-					overlay={dropDownMenu}
-					trigger={["click"]}
-				>
-					<Hamburger className={styles.hamburger} onClick={() => {
-						toggleDropDownHandler();
-					}}/>
-				</Dropdown>
-			</div>
-			<Menu mode={"horizontal"} className={styles.menuContainer} onClick={props.onClick}
-				  selectedKeys={props.selectedKeys}>
-				<Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
-				<Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
-				<Menu.Item key="/guidelines"><Link to={"/guidelines"}>Guidelines</Link></Menu.Item>
-				<Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
-				<Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
-			</Menu>
-		</div>
-	);
+  function toggleDropDownHandler() {
+    setToggleDropdown(!toggleDropdown);
+  }
+
+  function dropDownMenu() {
+    return (
+      <Menu
+        className={styles.dropDownContainer}
+        onClick={(event) => {
+          toggleDropDownHandler();
+          props.onClick(event);
+        }}
+        selectedKeys={props.selectedKeys}
+      >
+
+        <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+        <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
+        <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+        <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
+        <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
+        <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
+
+      </Menu>
+    )
+  }
+
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.logoContainer}>
+        <Link to={"/"}>
+          <img src={'/img/docs/logo.svg'} />
+        </Link>
+      </div>
+      <div ref={wrapperRef} tabIndex="0" style={{ outline: "none" }}>
+        <Dropdown
+          visible={toggleDropdown}
+          overlayClassName={"dropdown"}
+          overlay={dropDownMenu}
+          trigger={["click"]}
+        >
+          <Hamburger className={styles.hamburger} onClick={() => {
+            toggleDropDownHandler();
+          }} />
+        </Dropdown>
+      </div>
+
+      <Menu mode={"horizontal"} onClick={props.onClick}
+            selectedKeys={props.selectedKeys}
+            className={[styles.menuContainer, styles.leftAlign]}
+      >
+
+        <Menu.Item>
+          <Search />
+        </Menu.Item>
+      </Menu>
+
+      <Menu mode={"horizontal"} onClick={props.onClick}
+            selectedKeys={props.selectedKeys}
+            className={styles.menuContainer}
+      >
+
+        <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+        <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
+        <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+        <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
+        <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
+        <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
+      </Menu>
+
+    </div>
+  );
 };
 
 export default Header;
