@@ -117,7 +117,6 @@ class AutoComplete extends Component {
     const { hits } = this.props;
     const { value } = this.state;
 
-    console.log('this.state.noSuggestions: ', this.state.noSuggestions)
 
     const inputProps = {
       placeholder: 'Search...',
