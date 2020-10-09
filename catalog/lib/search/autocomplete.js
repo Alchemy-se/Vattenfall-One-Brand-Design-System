@@ -139,6 +139,7 @@ class AutoComplete extends Component {
           renderSuggestion={this.renderSuggestion}
           focusFirstSuggestion={true}
           inputProps={inputProps}
+          highlightFirstSuggestion={true}
           renderSuggestionsContainer={this.renderSuggestionsContainer}
         />
         {
