@@ -6,7 +6,7 @@ const HeaderH2 = () => {
     <Fragment>
       <div className="vf-row">
         <div className="vf-col">
-          <h2 style={{fontSize: "3.25rem"}}>Header H2</h2>
+          <h2 className="use-in-toc" style={{fontSize: "3.25rem"}}>Header H2</h2>
         </div>
       </div>
       <div className="vf-row">

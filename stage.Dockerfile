@@ -2,10 +2,14 @@
 FROM node:10.18 as build-stage
 ARG mode
 WORKDIR /app
+
 COPY package.json yarn.lock ./
 RUN yarn install
 
 COPY . .
+
+# Build and upload metadata for algolia search and component overview
+#RUN yarn build-and-upload-metadata
 
 # RUN CI=true yarn test
 RUN yarn build

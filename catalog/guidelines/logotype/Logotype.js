@@ -57,7 +57,7 @@ const Logotype = () => {
       </div>
 
       <div className="row align-items-start">
-        <h2>Key Principles</h2>
+        <h2 className="use-in-toc">Key Principles</h2>
         <p className={styles.guidelinesText}>
           1. The Vattenfall logotype consists of two parts, the wordmark "Vattenfall" and the yellow / blue symbol.
         </p>
@@ -114,7 +114,7 @@ const Logotype = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h2>Color Version</h2>
+        <h2 className="use-in-toc">Color Version</h2>
         <p className={styles.guidelinesText}>
           The Vattenfall linear logotype and the Vattenfall stacked logotype are available in two different versions;
           the primary <br />
@@ -127,7 +127,7 @@ const Logotype = () => {
         </p>
       </div>
       <div className="row align-items-start">
-        <h4>Linear – Logos / Horizontal / Medium</h4>
+        <h4 className="use-in-toc">Linear – Logos / Horizontal / Medium</h4>
         <p className={styles.guidelinesText}>
           The clearspace around the linear logotype is defined by the Vattenfall Symbol. The symbol is 1X, and the
           clearspace is 1x <br />
@@ -152,7 +152,7 @@ const Logotype = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h4>Stacked – Logos / Stacked</h4>
+        <h4 className="use-in-toc">Stacked – Logos / Stacked</h4>
         <p className={styles.guidelinesText}>
           The clearspace around the logotype is half of the symbols height (1X). The clearspace is 1X around all sides
           of <br />

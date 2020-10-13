@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Spacers",
+    "description": "The Spacers come in four sizes, Small 28px, Medium 44px, Large 56px and Extra Large 88px. You'll find them under Utility in the library. Important to note is that all distances between individual modules are 88px aka the \"Spacer - Extra Large\" on the desktop and 28ps on Mobile.",
+    "type": "guideline",
+    "uri": "/guidelines/spacers",
+    "objectID": "spacers-guideline",
+    "children": [
+      {
+        "name": "Spacer - Extra large - 88px"
+      },
+      {
+        "name": "Spacer - Large - 56px"
+      },
+      {
+        "name": "Spacer - Medium - 44px"
+      },
+      {
+        "name": "Spacer - Small - 28px"
+      },
+      {
+        "name": "Example – Desktop"
+      },
+      {
+        "name": "Example – Mobile"
+      },
+      {
+        "name": "Distance Between modules – Desktop"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#spacer---extra-large---88px",
+    "description": "",
+    "objectID": "spacer---extra-large---88px-guideline",
+    "name": "Spacer - extra-large - 88px",
+    "id": "spacer---extra-large---88px"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#spacer---large---56px",
+    "description": "",
+    "objectID": "spacer---large---56px-guideline",
+    "name": "Spacer - large - 56px",
+    "id": "spacer---large---56px"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#spacer---medium---44px",
+    "description": "",
+    "objectID": "spacer---medium---44px-guideline",
+    "name": "Spacer -medium - 44px",
+    "id": "spacer---medium---44px"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#spacer---small---28px",
+    "description": "",
+    "objectID": "spacer---small---28px-guideline",
+    "name": "Spacer - small -28px",
+    "id": "spacer---small---28px"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#example--desktop",
+    "description": "Example of applied spacers in the Image block Module. To visually see the spacers, turn on eye symbol inside of \"Utility /Spacers\"",
+    "objectID": "example--desktop-guideline",
+    "name": "Example - desktop",
+    "id": "spacer-example--desktop"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#example--mobile",
+    "description": "Example of applied spacers in the Image block Mobile Module. To visually see the spacers, turn on eye symbol inside of \"Utility / Spacers\"",
+    "objectID": "example--mobile-guideline",
+    "name": "Example - mobile",
+    "id": "spacer-example--mobile"
+  },
+  {
+    "parent": [
+      {
+        "name": "Spacers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spacers#distance-between-modules--desktop",
+    "description": "Important to note is that all distances between individual modules are 88px ka the \"Spacer - Extra Large\" on desktop. Exception is for the modules named \"media block\" with image that hangs down,then use 2 of the 88px spacers.",
+    "objectID": "distance-between-modules--desktop-guideline",
+    "name": "Distance between modules - desktop",
+    "id": "spacer-distance-between-modules--desktop"
+  }
+]

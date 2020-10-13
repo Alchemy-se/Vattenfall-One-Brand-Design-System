@@ -1,5 +1,7 @@
 .guidelinesContainer {
   margin: 0 40px 0 40px;
+  max-width: 80%;
+
   @media (max-width: 999px) {
     margin: 0 10px 0 20px;
   }
@@ -19,4 +21,32 @@
 
 .textFontWeight {
   font-weight: normal;
+}
+
+.tableOfContentContainer {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 2;
+  a {
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 110px;
+    padding-left: 16px;
+    font-size: 0.75rem;
+    //border-left: 1px solid #f0f0f0;
+    color: #222222;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @media(max-width: 999px) {
+    display: none;
+  }
 }

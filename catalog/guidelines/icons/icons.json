@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Icons",
+    "description": "The icons mirror our typeface – engineered and human, confident and determined.\n",
+    "type": "guideline",
+    "uri": "/guidelines/icons",
+    "objectID": "icons-guideline",
+    "children": [
+      {
+        "name": "Action Icons"
+      },
+      {
+        "name": "InCharge Icons"
+      },
+      {
+        "name": "Identification Icons"
+      },
+      {
+        "name": "Navigation Icons"
+      },
+      {
+        "name": "Smart Home Icons"
+      },
+      {
+        "name": "Social Media Icons"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#action-icons",
+    "description": "Action icons are used to signal and describe interaction.",
+    "objectID": "action-icons-guideline",
+    "name": "Action icons",
+    "id": "icons-action-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#incharge-icons",
+    "description": "These are specific Icons for InCharge.",
+    "objectID": "#incharge-icons-guideline",
+    "name": "Incharge icons",
+    "id": "icons-incharge-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#identification-icons",
+    "description": "Identification icons are used to identify a service or product.",
+    "objectID": "identification-icons-guideline",
+    "name": "Identification icons",
+    "id": "icons-identification-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#navigation-icons",
+    "description": "Identification icons are used to identify a service or product.",
+    "objectID": "navigation-icons-guideline",
+    "name": "Navigation icons",
+    "id": "icons-navigation-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#smart-home-icons",
+    "description": "Smart home icons are used to identify products and services for the home.",
+    "objectID": "smart-home-icons-guideline",
+    "name": "Smart home icons",
+    "id": "icons-smart-home-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/icons#social-media-icons",
+    "description": "Social media icons do not adhere to our icon style since they are logotypes and symbol of other platforms and services.",
+    "objectID": "#social-media-icons-guideline",
+    "name": "Social media icons",
+    "id": "icons-social-media-icons"
+  }
+]

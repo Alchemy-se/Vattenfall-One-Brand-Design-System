@@ -1,0 +1,152 @@
+[ {
+  "name": "Info Graphics",
+  "description": "",
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics",
+  "objectID": "info-graphics-guideline",
+  "children": [
+    {
+      "name": "Information graphics style"
+    },{
+      "name": "Types of graphs"
+    },{
+      "name": "Colours for graphs"
+    },{
+      "name": "Colour codes"
+    },{
+      "name": "Energy source colours"
+    },{
+      "name": "Colour usage"
+    },{
+      "name": "Colour tones for web"
+    },{
+      "name": "Background colours"
+    },{
+      "name": "Best practice"
+    },{
+      "name": "Infographics - Motion"
+    }
+
+  ]
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#information-graphics-style",
+  "description": "Sharing information and data in a clear and confident wy is part of the Vettenfall overall tonality, and graphs are a key graphics elements to make data come alive. Vattenfall has a style for information graphics that is bold, simple and clear To create the graphics, the Vattenfall colours can be used in different ways - please read more regarding color usage below.",
+  "objectID": "information-graphics-style-guideline",
+  "name": "Information graphics style",
+  "id": "info-graphics-information-graphics-style"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#types-of-graphs",
+  "description": "There are different types of charts and graphs to be used - pie charts, bar graphs and lines graphs. They are generally used for different things. Pie charts show how a whole is divided into different parts, bar graphs show numbers that are independent of each other and line graphs show numbers that have changed over time.",
+  "objectID": "types-of-graphs-guideline",
+  "name": "Types of graphs",
+  "id": "info-graphics-types-of-graphs"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#colours-for-graphs",
+  "description": "When creating information graphics mainly use the secondary colours, but the primary colours are also allowed. There is also a colour palette specifically made for the different energy sources. Please look further down on this page to see how to use these colors and to find the colour codes. The color black is only used in text an lines, not as a color in the graph or chart.",
+  "objectID": "colours-for-graphs-guideline",
+  "name": "Colours for graphs",
+  "id": "info-graphics-colours-for-graphs"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#colour-codes",
+  "description": "",
+  "objectID": "colour-codes-guideline",
+  "name": "colour-codes",
+  "id": "info-graphics-colour-codes"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#energy-source-colours",
+  "description": "Recommended colours for specific energy sources has been developed mainly to be used for information graphs. Please note that this is a recommendation and not a rule. Colour coding for refulation compliance. The categories are: Renewable, Nuclear, District heating and Fossil.",
+  "objectID": "energy-source-colours-guideline",
+  "name": "Energy source colours",
+  "id": "info-graphics-energy-source-colours"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#colour-usage",
+  "description": "When creating information graphics mainly use the secondary colours, but the primary colours are also allowed.Either create graphics using colours tones in the same colour range or use colours in the same category: secondary, primary or energy source colours.",
+  "objectID": "colour-usage-guideline",
+  "name": "Colour usage",
+  "id": "info-graphics-colour-usage"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#colour-tones-for-web",
+  "description": "When creating 1-coloured graphs, you should primarily use these percent-values to differentiate sections of the graph. This is exemplified below but you can use any primary or secondary colours as a base.",
+  "objectID": "colour-tones-for-web-guideline",
+  "name": "Colour tones for web",
+  "id": "info-graphics-colour-tones-for-web"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#background-colours",
+  "description": "Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.",
+  "objectID": "background-colours-guideline",
+  "name": "Background colours",
+  "id": "info-graphics-background-colours"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#best-practice",
+  "description": "Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.",
+  "objectID": "best-practice-guideline",
+  "name": "Best practice",
+  "id": "info-graphics-best-practice"
+}, {
+  "parent": [
+    {
+      "name": "Info Graphics"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/info-graphics#infographics---motion",
+  "description": "Infographics is of course the visualization of data in graphs, tables and numbers. Through our motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples of our identity in motion as we here allow a graph or number to develop in a smooth, controlled “easing” movement with a high-quality perception.",
+  "objectID": "infographics-motion-guideline",
+  "name": "Infographics motion",
+  "id": "info-graphics-infographics-motion"
+}
+]

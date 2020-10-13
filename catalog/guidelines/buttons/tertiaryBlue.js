@@ -6,7 +6,7 @@ const BlueButtons = ({ title, label }) => (
   <Fragment>
     <div className="vf-row">
       <div style={{ margin: '0' }} className="vf-col">
-        <h4>{title}</h4>
+        <h4 className="use-in-toc">{title}</h4>
         <p>{"Blue outlined buttons are used in combination with the blue primary buttons."}</p>
       </div>
     </div>

@@ -1,0 +1,54 @@
+[ {
+  "name": "Illustrations",
+  "description": "",
+  "type": "guideline",
+  "uri": "/guidelines/illustrations",
+  "objectID": "illustrations-guideline",
+  "children": [
+    {
+      "name": "Functional"
+    },{
+      "name": "Key Principles"
+    },{
+      "name": "Grid"
+    }
+
+  ]
+}, {
+  "parent": [
+    {
+      "name": "Illustrations"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/illustrations#functional",
+  "description": "Functional – our main illustration style and most frequently used. The inspiration comes from technical drawings and blueprints.",
+  "objectID": "functional-guideline",
+  "name": "Functional",
+  "id": "illustrations-functional"
+}, {
+  "parent": [
+    {
+      "name": "Illustrations"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/illustrations#key-principles",
+  "description": "In illustrations the full scale of colors may be used, but in a moderate way. Try not to use more than three colors in a single illustration, this for not be percived as childish or too colorful.",
+  "objectID": "key-principles-guideline",
+  "name": "Key principles",
+  "id": "illustrations-#key-principles"
+}, {
+  "parent": [
+    {
+      "name": "Illustrations"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/illustrations#grid",
+  "description": "To illustrate new isometric illustrations you can use the grid bellow. You find it under Utility / Isometric Grid - Illustrations in our Ui Kit.",
+  "objectID": "grid-guideline",
+  "name": "Grid",
+  "id": "illustrations-grid"
+}
+]

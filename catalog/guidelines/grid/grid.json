@@ -1,0 +1,70 @@
+[ {
+  "name": "Grid",
+  "description": "",
+  "type": "guideline",
+  "uri": "/guidelines/grid",
+  "objectID": "grid-guideline",
+  "children": [
+    {
+      "name": "Desktop 1440px"
+    },
+    {
+      "name": "Tablet 1024px"
+    },
+    {
+      "name": "Tablet 768px"
+    },
+    {
+      "name": "Mobile 375px"
+    }
+  ]
+}, {
+  "parent": [
+    {
+      "name": "Grid"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/grid#Desktop-1440px",
+  "description": "",
+  "objectID": "grid-desktop-1440px-guideline",
+  "name": "Desktop-1440px",
+  "id": "grid-Desktop-1440px"
+}, {
+  "parent": [
+    {
+      "name": "Grid"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/grid#Tablet-1024px",
+  "description": "",
+  "objectID": "grid-tablet-1024px-guideline",
+  "name": "Tablet-1024px",
+  "id": "grid-Tablet-1024px"
+}, {
+  "parent": [
+    {
+      "name": "Grid"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/grid#Tablet-768px",
+  "description": "",
+  "objectID": "grid-tablet-768px-guideline",
+  "name": "Tablet-768px",
+  "id": "grid-Tablet-768px"
+}, {
+  "parent": [
+    {
+      "name": "Grid"
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/grid#Mobile-375px",
+  "description": "",
+  "objectID": "grid-mobile-375px-guideline",
+  "name": "Mobile-375px",
+  "id": "grid-mobile-375px"
+}
+]

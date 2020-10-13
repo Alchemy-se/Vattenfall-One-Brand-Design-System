@@ -6,8 +6,9 @@ const GridSpecification = ({ device, width, totalWidth, offset, columns, gutterW
   return (
     <Fragment>
       <div className="vf-col">
-        <div style={{ width: '150px', paddingRight: '24px', display: 'inline-block' }} className={styles.gridSpecification}>
-          <h4>{device}</h4>
+        <div style={{ width: '150px', paddingRight: '24px', display: 'inline-block' }}
+             className={styles.gridSpecification}>
+          <h4 className="use-in-toc-grid" id={device + "-" + width}>{device}</h4>
           <p>Total width</p>
           <p>Offset</p>
           <p>Columns</p>

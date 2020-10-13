@@ -6,7 +6,7 @@ const PreambleText = () => {
     <Fragment>
       <div className="vf-row">
         <div className="vf-col">
-          <h4>Preamble Text</h4>
+          <h4 className="use-in-toc">Preamble Text</h4>
         </div>
       </div>
       <div className="vf-row">

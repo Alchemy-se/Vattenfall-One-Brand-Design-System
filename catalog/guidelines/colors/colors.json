@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Colors",
+    "description": "We lead with white to reflect confidence, transparency and premiumness. It provides air and space as well as allows the eye to focus on what is important.",
+    "type": "guideline",
+    "uri": "/guidelines/colors",
+    "objectID": "colors-guideline",
+    "children": [
+      {
+        "name": "Primary colors"
+      },
+      {
+        "name": "Secondary Colors"
+      },
+      {
+        "name": "Color tones"
+      },
+      {
+        "name": "Background colors"
+      },
+      {
+        "name": "Tertiary"
+      },
+      {
+        "name": "Energy source colors"
+      },
+      {
+        "name": "lines"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#primary-colors",
+    "description": "The primary colors define our brand expression and our brand core is white, blue and yellow.\nThe balance between our primary and secondary colors are 80/20, and we always lead with our primary colors.",
+    "objectID": "primary-colors",
+    "name": "Primary colors",
+    "id": "primary-colors"
+  },{
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#secondary-colors",
+    "description": "These colors are to be used in graphs, illustrations and infographics only. Some are allowed to be used as UX color; for example green an red.",
+    "objectID": "secondary-colors",
+    "name": "Secondary colors",
+    "id": "secondary-colors"
+  },{
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#color-tones",
+    "description": "When creating 1-coloured graphs, you should primarily use these percent-values to differentiate sections of the graph. This is exemplified below in Vattenfall Pink, but you can use any of the primary or secondary colors as a base.",
+    "objectID": "color-tones",
+    "name": "Color tones",
+    "id": "color-tones"
+  },{
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#tertiary",
+    "description": "The tertiary colors are mainly grey tints. We use ‘Lighter Grey’ for 1px horizontal borders and the ‘Light Grey’ for inputfield borders.",
+    "objectID": "tertiary",
+    "name": "Tertiary",
+    "id": "tertiary"
+  },{
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#energy-source-colors",
+    "description": "Recommended colours for specific energy sources has been developed mainly to be used for information graphs. Please note that this is a recommendation and not a rule. Colour coding for regulation compliance. The categories are: Renewable, Nuclear, District heating and Fossil.",
+    "objectID": "energy-source-colors",
+    "name": "Energy source colors",
+    "id": "energy-source-colors"
+  },{
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#what-color-do-lines-get?",
+    "description": "Sometimes lines are used to seperate planes from eachother. Depending on the background the following colors are used for lines",
+    "objectID": "what-color-do-lines-get?s",
+    "name": "Lines",
+    "id": "what-color-do-lines-get?"
+  }
+]

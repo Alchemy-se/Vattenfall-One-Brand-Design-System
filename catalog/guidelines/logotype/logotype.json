@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Logotype",
+    "description": "The logotype consists of two parts, the wordmark \"Vattenfall\" and the yellow/blue symbol. The wordmark has been modernised, but kept in capital letters to reflect the confident leadership that Vattenfall takes towards a fossil free future. The symbol balances the wordmark with the organic, round shape, visually enhancing a global aspiration to be a rolemodel for sustainable change.",
+    "type": "guideline",
+    "uri": "/guidelines/logotype",
+    "objectID": "logotype-guideline",
+    "children": [
+      {
+        "name": "Key Principles"
+      },
+      {
+        "name": "Color Version"
+      },
+      {
+        "name": "Linear – Logos / Horizontal / Medium"
+      },
+      {
+        "name": "Stacked – Logos / Stacked"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#key-principles",
+    "description": "The Vattenfall logotype consists of two parts, the wordmark \"Vattenfall\" and the yellow / blue symbol.",
+    "objectID": "key-principles-guideline",
+    "name": "Key principles",
+    "id": "logotype-key-principles"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#color-version",
+    "description": "The Vattenfall linear logotype and the Vattenfall stacked logotype are available in two different versions; the primary logotype and the 1-colored logotype. The primary logotype has colored symbol and is available wit grey, black or negative wordmark. The 1-colored logotype has both symbol and wordmark in one color, either black or negative.",
+    "objectID": "color-version-guideline",
+    "name": "Color version",
+    "id": "logotype-color-version"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#linear--logos-/-horizontal-/-medium",
+    "description": "The clearspace around the linear logotype is defined by the Vattenfall Symbol. The symbol is 1X, and the clearspace is 1x around all sides of the logotype.",
+    "objectID": "linear--logos-/-horizontal-/-medium-guideline",
+    "name": "Linear - logos / horizontal / medium",
+    "id": "logotype-linear--logos-/-horizontal-/-medium"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#stacked--logos-/-stacked",
+    "description": "The clearspace around the logotype is half of the symbols height (1X). The clearspace is 1X around all sides of the logotype.",
+    "objectID": "stacked--logos-/-stacked-guideline",
+    "name": "Stacked - logos / stacked",
+    "id": "logotype-stacked--logos-/-stacked"
+  }
+]

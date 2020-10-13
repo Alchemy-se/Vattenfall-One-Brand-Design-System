@@ -6,7 +6,7 @@ const BodyTextSmall = () => {
     <Fragment>
       <div className="vf-row">
         <div className="vf-col">
-          <h4>Body text small</h4>
+          <h4 className="use-in-toc">Body text small</h4>
         </div>
       </div>
       <div className="vf-row">

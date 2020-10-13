@@ -7,7 +7,7 @@ const BodyTextLarge = () => {
     <Fragment>
       <div className="vf-row">
         <div className="vf-col">
-          <h4>Body text large</h4>
+          <h4 className="use-in-toc">Body text large</h4>
         </div>
       </div>
       <div className="vf-row">

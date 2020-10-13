@@ -46,7 +46,7 @@ const Icons = () => {
         </div>
       </div>
       <div className="row align-items-start">
-        <h4>Action Icons</h4>
+        <h4 className="use-in-toc">Action Icons</h4>
         <p>Action icons are used to signal and describe interaction.</p>
         <div className="vf-col vf-p-0">
           <img src={ActionIcons} style={{ width: '100%' }} />
@@ -54,7 +54,7 @@ const Icons = () => {
       </div>
       <div className="vf-mt-md" />
       <div className="row align-items-start">
-        <h4>InCharge Icons</h4>
+        <h4 className="use-in-toc">InCharge Icons</h4>
         <p>These are specific Icons for InCharge.</p>
         <div className="vf-col vf-p-0">
           <img src={InChargeIcons} style={{ width: '100%' }} />
@@ -62,7 +62,7 @@ const Icons = () => {
       </div>
       <div className="vf-mt-md" />
       <div className="row align-items-start">
-        <h4>Identification Icons</h4>
+        <h4 className="use-in-toc">Identification Icons</h4>
         <p>Identification icons are used to identify a service or product.</p>
         <div className="vf-col vf-p-0">
           <img src={IdentificationIcons} style={{ width: '100%' }} />
@@ -70,7 +70,7 @@ const Icons = () => {
       </div>
       <div className="vf-mt-md" />
       <div className="row align-items-start">
-        <h4>Navigation Icons</h4>
+        <h4 className="use-in-toc">Navigation Icons</h4>
         <p>Navigation icons are used as part of the UI.</p>
         <div className="vf-col vf-p-0">
           <img src={NavigationIcons} style={{ width: '100%' }} />
@@ -78,7 +78,7 @@ const Icons = () => {
       </div>
       <div className="vf-mt-md" />
       <div className="row align-items-start">
-        <h4>Smart Home Icons</h4>
+        <h4 className="use-in-toc">Smart Home Icons</h4>
         <p>Smart home icons are used to identify products and services for the home.</p>
         <div className="vf-col vf-p-0">
           <img src={SmartHomeIcons} style={{ width: '100%' }} />
@@ -86,7 +86,7 @@ const Icons = () => {
       </div>
       <div className="vf-mt-md" />
       <div className="row align-items-start">
-        <h4>Social Media Icons</h4>
+        <h4 className="use-in-toc">Social Media Icons</h4>
         <p>Social media icons do not adhere to our icon style since they are logotypes and symbol of other platforms and services.</p>
         <div className="vf-col vf-p-0">
           <img src={SocialMediaIcons} style={{ width: '100%' }} />

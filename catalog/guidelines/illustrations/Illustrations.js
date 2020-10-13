@@ -19,7 +19,7 @@ const Illustrations = () => {
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
         <div className="vf-col">
-          <h2>Functional</h2>
+          <h2 className="use-in-toc">Functional</h2>
           <p className={`${styles.guidelinesText}`}>
             Functional – our main illustration style and most frequently used. The inspiration comes from technical
             drawings and <br />
@@ -34,7 +34,7 @@ const Illustrations = () => {
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
         <div className="vf-col">
-          <h2>Key Principles</h2>
+          <h2 className="use-in-toc">Key Principles</h2>
           <p className={`${styles.guidelinesText}`}>
             In illustrations the full scale of colors may be used, but in a moderate way. Try not to use more than three
             colors in a <br />
@@ -83,7 +83,7 @@ const Illustrations = () => {
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
         <div className="vf-col">
-          <h2>Grid</h2>
+          <h2 className="use-in-toc">Grid</h2>
           <p className={`${styles.guidelinesText}`}>
             To illustrate new isometric illustrations you can use the grid bellow.
             <br />

@@ -5,7 +5,7 @@ const DottedDescription = ({ title, text, dottedLines }) => {
     return (
       <div className="vf-row w-75">
         <div className="vf-col">
-          {title && <h2>{title}</h2>}
+          {title && <h2 className="use-in-toc" >{title}</h2>}
           <p className={styles.guidelinesText} style={{margin: 0}}>
             {text}
           </p>

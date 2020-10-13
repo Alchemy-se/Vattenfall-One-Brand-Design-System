@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Motion",
+    "description": "When designing with Vttenfall Digital Design System,make sure to think trough th motion effects and transitions that are included to it. Watch over the purpose of ech effect and do not combine several components with heavy animations at once: the digitl behaviour of such should bring liveliness and sbtle motion rather than chaotic movement",
+    "type": "guideline",
+    "uri": "/guidelines/motion",
+    "objectID": "motion-guideline"
+  }
+]

@@ -33,7 +33,7 @@ const Typography = () => {
             coherent identity.
             <br />
             <br />
-            <strong>Rules for headings</strong>
+            <strong className="use-in-toc">Rules for headings</strong>
             <br />
             Always use Hall Display Bold for 30px and above
             <br />

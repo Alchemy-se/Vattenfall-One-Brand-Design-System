@@ -1,14 +1,16 @@
 const fs = require('fs');
 const jsonOverview = require('./components-overview-metadata');
+const glob = require("glob");
 const algoliaSearchMetadata = 'metadata/algolia-search-metadata.json';
+const guidelineMetadata = 'metadata/guideline.json';
 const metadataFileName = 'metadata/components-overview-metadata.json';
-
+const guidelineRootPath = './catalog/guidelines/*/*.json'
 
 let childArr = [];
 let parentArr = [];
 let componentArr = [];
 let guidelineArr = [];
-
+let mergedArr = [];
 fs.stat(metadataFileName, ((err) => {
   if (err) {
     return console.log("fs Stat err", err);
@@ -42,38 +44,27 @@ fs.stat(metadataFileName, ((err) => {
 
   });
 
-  // we need the same data but mark it with type: guideline
-  // if the component has a guideline
-  jsonOverview.components.forEach(component => {
-    if (component.guidelineUri) {
 
-      const parent = { children: [] };
+  // Get metadata paths for guidelines
+  const guidelinePaths = glob.sync(guidelineRootPath, {})
 
-      parent.name = component.name;
-      parent.type = 'guideline';
-      parent.description = component.description;
-      parent.objectID = component.name.toLowerCase().replace(/\s/g, '-') + "-" + "guideline";
-      parent.uri = component.guidelineUri;
+  guidelinePaths.forEach(dir => {
+    let data = fs.readFileSync(dir, 'utf8')
+    const tmpData = JSON.parse(data)
 
-      component.children.forEach(childItem => {
-        const child = { parent: [] };
-        child.type = 'guideline';
-        child.uri = childItem.guidelineUri;
-        child.description = childItem.description;
-        child.objectID = childItem.name.toLowerCase().replace(/\s/g, '-') + "-" + "guideline";
-        child.name = childItem.name;
-        child.id = childItem.id;
-        child.parent.push({ name: component.name });
-        parent.children.push({ name: childItem.name });
-        childArr.push(child);
-      });
-      parentArr.push(parent);
-      guidelineArr = parentArr.concat(childArr)
-    }
+    // Make a more unique id for guideline records
+    data = tmpData.map(item => {
+      const prefix = item.id ? item.id : "parent";
+      item.objectID = prefix + "_" + item.objectID;
+      return item
+    });
+    data = JSON.stringify(data)
+    componentArr = componentArr.concat(JSON.parse(data))
+
   });
 
-  const mergedArr = componentArr.concat(guidelineArr)
-  fs.writeFileSync(algoliaSearchMetadata, JSON.stringify(mergedArr), 'utf8')
+  fs.writeFileSync(algoliaSearchMetadata, JSON.stringify(componentArr), 'utf8')
+
 
 }));
 

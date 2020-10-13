@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Buttons",
+    "description": "Buttons indicate actions on the page. Each of our button types have specific purposes that are used consistently. Individual button types are documented below, but the following guidelines will help you understand basic functionality for all of our buttons.",
+    "type": "guideline",
+    "uri": "/guidelines/buttons",
+    "objectID": "buttons-guideline",
+    "children": [
+      {
+        "name": "Primary buttons"
+      },
+      {
+        "name": "Blue"
+      },
+      {
+        "name": "Yellow"
+      },
+      {
+        "name": "Secondary buttons"
+      },
+      {
+        "name": "Checkbox"
+      },
+      {
+        "name": "Radio buttons"
+      },
+      {
+        "name": "Toggle"
+      },
+      {
+        "name": "Tertiary black"
+      },
+      {
+        "name": "Tertiary blue"
+      },
+      {
+        "name": "Text Buttons"
+      },
+      {
+        "name": "Text links"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#primary-buttons",
+    "description": "Primary buttons should be used for primary calls to action",
+    "objectID": "primary-buttons-guideline",
+    "name": "Primary Buttons",
+    "id": "primary-buttons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#blue",
+    "description": "The yellow button indicated our main focus action. There is only one yellow button per component. If you need more buttons in one component, use secondary buttons",
+    "objectID": "primary-buttons-blue-guideline",
+    "name": "Primary Buttons - blue",
+    "id": "primary-buttons-blue"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#yellow",
+    "description": "The yellow button indicated our main focus action. There is only one yellow button per component. If you need more buttons in one component, use secondary buttons",
+    "objectID": "primary-buttons-yellow-guideline",
+    "name": "Primary Buttons - yellow",
+    "id": "primary-buttons-yellow"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#secondary-buttons",
+    "description": "Outlined buttons (often called “ghost” buttons) are a step up in complexity and emphasis from a text button in button design. They typically indicate actions that are important but not the primary action on a page. Outlined buttons should be exactly that: an outline with no fill surrounding text that indicates an action.",
+    "objectID": "secondary-buttons",
+    "name": "Secondary Buttons",
+    "id": "secondary-buttons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#tertiary-black-(outlined-button)",
+    "description": "Black outlined buttons are used in combination with the yellow primary buttons.",
+    "objectID": "secondary-buttons-tertiary-black-(outlined-button)",
+    "name": "Tertiary black - (outlined-button)",
+    "id": "tertiary-black-(outlined-button)"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#tertiary-blue-(outlined-button)",
+    "description": "Blue outlined buttons are used in combination with the blue primary buttons.\n\n",
+    "objectID": "secondary-buttons-tertiary-blue-(outlined-button)",
+    "name": "Tertiary blue - (outlined-button)",
+    "id": "tertiary-blue-(outlined-button)"
+  } ,{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#tertiary-blue-(outlined-button)",
+    "description": "Blue outlined buttons are used in combination with the blue primary buttons.\n\n",
+    "objectID": "secondary-buttons-tertiary-blue-(outlined-button)",
+    "name": "Tertiary blue - (outlined-button)",
+    "id": "tertiary-blue-(outlined-button)"
+  } ,{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#text-buttons-and-links",
+    "description": "Text buttons are text labels that fall outside of a block of text. The text should describe the action that will occur if a user clicks or taps a button. Text buttons have a low level of emphasis and are typically used for less important actions. Because text buttons don’t have a container, they don’t distract from nearby content. When you want to use a tertiairy button as a return button, point the arrow to the left.",
+    "objectID": "text-buttons-and-links",
+    "name": "Text buttons and links",
+    "id": "text-buttons-and-links"
+  },{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#text-buttons-and-links",
+    "description": "Text buttons are text labels that fall outside of a block of text. The text should describe the action that will occur if a user clicks or taps a button. Text buttons have a low level of emphasis and are typically used for less important actions. Because text buttons don’t have a container, they don’t distract from nearby content. When you want to use a tertiairy button as a return button, point the arrow to the left.",
+    "objectID": "text-buttons-and-links",
+    "name": "Text buttons and links",
+    "id": "text-buttons-and-links"
+  },{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#text-links",
+    "description": "For usage in bodytext when links are needed",
+    "objectID": "text-links",
+    "name": "Text links",
+    "id": "text-links"
+  },{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#toggle",
+    "description": "Mostly used to indicate engaging / disengaging certain feature within the context.",
+    "objectID": "toggle",
+    "name": "Toggle",
+    "id": "toggle"
+  },{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#radio-button",
+    "description": "Used in the situation when desired state of preference needs to be selected. Only one selection can be made at all times. When mutiple preferences need to be chosen use checkboxes instead.",
+    "objectID": "radio-button",
+    "name": "Radio button",
+    "id": "radio-button"
+  },{
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#checkbox",
+    "description": "Checkboxes can be used when a desired items needs to be selected. Depending on the context it can be one or multiple items.",
+    "objectID": "checkbox",
+    "name": "Checkbox",
+    "id": "Checkbox"
+  }
+]

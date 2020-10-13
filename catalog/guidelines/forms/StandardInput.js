@@ -7,7 +7,7 @@ const StandardInput = ({ title, label }) => {
     <Fragment>
       <div className="vf-row">
         <div style={{ margin: '0' }} className="vf-col">
-          <h2>{title}</h2>
+          <h2 className="use-in-toc">{title}</h2>
         </div>
       </div>
       <div className="vf-row">

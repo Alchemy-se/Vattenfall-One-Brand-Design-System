@@ -6,7 +6,7 @@ const HeaderH3 = () => {
     <Fragment>
       <div className="vf-row">
         <div className="vf-col">
-          <h3>Header H3</h3>
+          <h3 className="use-in-toc">Header H3</h3>
         </div>
       </div>
       <div className="vf-row">

@@ -99,6 +99,7 @@ class AutoComplete extends Component {
   );
 
   onSuggestionSelected = (_, { suggestion }) => {
+    this.setState({ hasBeenBlured: true })
     window.location.href = suggestion.uri
   };
 
@@ -116,7 +117,6 @@ class AutoComplete extends Component {
   render() {
     const { hits } = this.props;
     const { value } = this.state;
-
 
     const inputProps = {
       placeholder: 'Search...',

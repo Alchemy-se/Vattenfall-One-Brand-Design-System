@@ -56,6 +56,8 @@
 }
 
 .highlight-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -71,6 +73,8 @@
     display: -ms-flexbox;
     display: flex;
     height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -168,7 +172,11 @@
 }
 
 .ais-PoweredBy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: -10px;
     margin-bottom: -10px;
@@ -181,6 +189,4 @@
 .ais-PoweredBy-logo {
     height: 20px;
 }
-
-
 /*# sourceMappingURL=algolia.css.map */

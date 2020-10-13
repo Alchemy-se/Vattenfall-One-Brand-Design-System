@@ -1,0 +1,26 @@
+[ {
+  "name": "",
+  "description": "",
+  "type": "guideline",
+  "uri": "/guidelines/",
+  "objectID": "-guideline",
+  "children": [
+    {
+      "name": ""
+    }
+
+  ]
+}, {
+  "parent": [
+    {
+      "name": ""
+    }
+  ],
+  "type": "guideline",
+  "uri": "/guidelines/",
+  "description": "",
+  "objectID": "-guideline",
+  "name": "",
+  "id": ""
+}
+]

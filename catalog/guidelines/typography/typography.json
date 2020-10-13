@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Typography",
+    "description": "Hall is a bespoke typeface that mirrors and embodies the qualities of a true market leader – as expected by our target group: confident, competent and determined. Yet, it should feel stable, organic, and personable and at the same time emphasise our engineering and functional capacity. Being bold without being arrogant, it creates credibility for our capability to act on on a broader scale. Developed together with the wordmark and icons, it creates a strong, recognisable and coherent identity.",
+    "type": "guideline",
+    "uri": "/guidelines/typography",
+    "objectID": "typography-guideline",
+    "children": [
+      {
+        "name": "Rules for headings"
+      },
+      {
+        "name": "Header H1"
+      },
+      {
+        "name": "Header H2"
+      },
+      {
+        "name": "Header H3"
+      },
+      {
+        "name": "Header H4"
+      },
+      {
+        "name": "Preamble Text"
+      },
+      {
+        "name": "Body text large"
+      },
+      {
+        "name": "Body text small"
+      },
+      {
+        "name": "Intro in caps"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#rules-for-headings",
+    "description": "Always use Hall Display Bold for 30px and above. Always use Hall Bold for under 30px",
+    "objectID": "rules-for-headings-guideline",
+    "name": "Rules for headings",
+    "id": "typography-rules-for-headings"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#header-h1",
+    "description": "Should always be used for titles of top-level sections of a screen. Primarily used for Marquee/Hero sections.",
+    "objectID": "header-h1-guideline",
+    "name": "Header H1",
+    "id": "typography-header-h1"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#header-h2",
+    "description": "Primarily used for secondary sections inside content area.",
+    "objectID": "header-h2-guideline",
+    "name": "Header H2",
+    "id": "typography-header-h2"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#header-h3",
+    "description": "Primarily used for tetriary sections inside content area.",
+    "objectID": "header-h3-guideline",
+    "name": "Header H3",
+    "id": "typography-header-h3"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#header-h4",
+    "description": "Primarily used for quarternary sections inside content area.",
+    "objectID": "header-h4-guideline",
+    "name": "Header H4",
+    "id": "typography-header-h4"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#preamble-text",
+    "description": "This is Preamble copy. Used for introducing the content after a Headline.",
+    "objectID": "preamble-text-guideline",
+    "name": "Preamble text",
+    "id": "typography-preamble-text"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#body-text-large",
+    "description": "This is a large body copy. This is our main body text used on the website.",
+    "objectID": "body-text-large-guideline",
+    "name": "Body text large",
+    "id": "typography-body-text-large"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#body-text-small",
+    "description": "This is body text small and is used in all of vattenfalls modules as bodttext.",
+    "objectID": "body-text-small-guideline",
+    "name": "Body text small",
+    "id": "typography-body-text-small"
+  },
+  {
+    "parent": [
+      {
+        "name": "Typography"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/typography#intro-in-caps",
+    "description": "THIS IS OUR intro in caps and is used on the three first words together with body text large.",
+    "objectID": "intro-in-caps-guideline",
+    "name": "Intro in caps",
+    "id": "typography-intro-in-caps"
+  }
+]
