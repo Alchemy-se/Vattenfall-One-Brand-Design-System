@@ -1,0 +1,151 @@
+{
+  "sketchUrl": "https://app.abstract.com/share/5f7cc374-e267-4834-bab6-daa0d9a70bac",
+  "photoshopUrl": null,
+  "name": "Colors",
+  "uri": "/components/colors",
+  "abstractUrl": null,
+  "adobeXdUrl": null,
+  "figmaUrl": null,
+  "guidelineUri": "/guidelines/colors",
+  "description": "",
+  "children": [
+    {
+      "angular": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "NL",
+            "status": -1
+          }
+        ]
+      },
+      "sketchUrl": true,
+      "vue": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": []
+      },
+      "photoshopUrl": false,
+      "name": "Background color",
+      "html": {
+        "exists": true,
+        "status": 0,
+        "globalUse": true,
+        "support": []
+      },
+      "uri": "/components/colors/#background-color",
+      "abstractUrl": false,
+      "adobeXDUrl": false,
+      "figmaUrl": false,
+      "id": "background-color",
+      "guidelineUri": "/guidelines/colors#background-colors",
+      "description": "Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities do not set color, so in some cases you'll want to use .text-* utilities.",
+      "react": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "SV",
+            "status": -1
+          }
+        ]
+      }
+    },
+    {
+      "angular": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "NL",
+            "status": -1
+          }
+        ]
+      },
+      "sketchUrl": true,
+      "vue": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": []
+      },
+      "photoshopUrl": false,
+      "name": "Borders",
+      "html": {
+        "exists": true,
+        "status": 0,
+        "globalUse": true,
+        "support": []
+      },
+      "uri": "/components/colors/#borders",
+      "abstractUrl": false,
+      "adobeXDUrl": false,
+      "figmaUrl": false,
+      "id": "borders",
+      "guidelineUri": "/guidelines/colors#borders",
+      "description": "Borders can be used to separate sections of a site or service.",
+      "react": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "SV",
+            "status": -1
+          }
+        ]
+      }
+    },
+    {
+      "angular": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "NL",
+            "status": -1
+          }
+        ]
+      },
+      "sketchUrl": true,
+      "vue": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": []
+      },
+      "photoshopUrl": false,
+      "name": "Colors",
+      "html": {
+        "exists": true,
+        "status": 0,
+        "globalUse": true,
+        "support": []
+      },
+      "uri": "/components/colors/#colors",
+      "abstractUrl": false,
+      "adobeXDUrl": false,
+      "figmaUrl": false,
+      "id": "colors",
+      "guidelineUri": "/guidelines/colors#colors",
+      "description": null,
+      "react": {
+        "exists": false,
+        "status": -1,
+        "globalUse": false,
+        "support": [
+          {
+            "region": "SV",
+            "status": -1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Routes from "./routes";
@@ -9,6 +9,10 @@ import Header from "./lib/header";
 import styles from "./main.scss";
 
 import ReactGA from 'react-ga';
+import AuthContext from "../helpers/authContext";
+import { checkLoggedIn } from "../helpers/apiCalls/authentication";
+
+
 
 ReactGA.initialize('UA-159160070-1');
 
@@ -26,6 +30,7 @@ function trackPageView(path) {
   ReactGA.pageview(path);
 }
 
+
 export default class App extends Component {
 
 
@@ -38,7 +43,8 @@ export default class App extends Component {
       selectedKeysSubmenu: [getCurrentLocation(true)],
       currentPath: getCurrentLocation(true),
       modalOpen: false,
-      modalImageUrl: null
+      modalImageUrl: null,
+      authenticated: checkLoggedIn()
     };
   }
 
@@ -59,13 +65,13 @@ export default class App extends Component {
   componentDidMount() {
     window.addEventListener('resize', this.resize);
     document.addEventListener("keydown", this.onKeyDown, false);
+
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.resize);
     document.removeEventListener("keydown", this.onKeyDown, false);
   }
-
 
 
   closeDrawer = () => {
@@ -87,6 +93,8 @@ export default class App extends Component {
   };
 
   onRouteChange = (pathname) => {
+
+
     useEffect(() => {
       // Path changed, ok to update state.
       if (this.state.currentPath !== pathname) {
@@ -144,26 +152,36 @@ export default class App extends Component {
   };
 
 
+
   render() {
+
+    const setAuthenticated = (value)=> this.setState({authenticated: value})
+    const authenticated = this.state.authenticated
+
+
+
     const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
     const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;
     return (
       <Router>
-        {this.renderModal()}
-        <Hamburger onClick={this.openDrawer} className={hamburgerClasses} />
-        <Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu} />
-        <div className={classes} id="content-container">
-          <Drawer
-            closeDrawer={this.closeDrawer}
-            drawerOpen={this.state.drawerOpen}
-            closable={this.state.closable}
-            selectedKeys={this.state.selectedKeysSubmenu}
-          />
-          {/*<div className={styles.innerContainer} >*/}
-          <div className={`${styles.innerContainer} documentation-container`}>
-            <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
+        <AuthContext.Provider value={{ authenticated, setAuthenticated}}>
+
+          {this.renderModal()}
+          <Hamburger onClick={this.openDrawer} className={hamburgerClasses} />
+          <Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu} />
+          <div className={classes} id="content-container">
+            <Drawer
+              closeDrawer={this.closeDrawer}
+              drawerOpen={this.state.drawerOpen}
+              closable={this.state.closable}
+              selectedKeys={this.state.selectedKeysSubmenu}
+            />
+            {/*<div className={styles.innerContainer} >*/}
+            <div className={`${styles.innerContainer} documentation-container`}>
+              <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
+            </div>
           </div>
-        </div>
+        </AuthContext.Provider>
       </Router>
     )
   }

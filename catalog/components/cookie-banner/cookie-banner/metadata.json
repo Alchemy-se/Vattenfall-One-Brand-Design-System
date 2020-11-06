@@ -41,6 +41,6 @@
   "figmaUrl": false,
   "photoshopUrl": false,
   "adobeXDUrl": false,
-  "sketchUrl": false,
+  "sketchUrl": true,
   "abstractUrl": false
 }

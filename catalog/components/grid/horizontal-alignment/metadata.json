@@ -34,9 +34,9 @@
     "globalUse": true,
     "support": []
   },
-  "figma": false,
-  "photoshop": false,
-  "adobeXd": false,
-  "sketch": false,
-  "abstract": false
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": false,
+  "abstractUrl": false
 }

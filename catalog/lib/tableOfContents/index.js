@@ -23,10 +23,13 @@ const TableOfContents = ({content}) => {
     return null;
   }
 
+
   const links = content.map(item => {
-      const value = item.props.value;
+    /*  const value = item.props.value;
       const id = getId(item.props.value);
-      return (<Link href={id} title={value} key={"anchor-"+id}/>);
+      return (<Link href={id} title={value} key={"anchor-"+id}/>);*/
+    return  null
+
   });
   const targetOffset = 100;
   return (

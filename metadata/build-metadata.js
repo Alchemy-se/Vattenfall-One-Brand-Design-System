@@ -79,7 +79,15 @@ glob(componentsPath, (err, directories) => {
           let componentPath = secondLevelPath + '/' + 'metadata.json';
           componentMetadata = fs.readFileSync(componentPath, 'utf8');
           componentMetadata = JSON.parse(componentMetadata);
-          const { html, angular, react, figma, sketch, adobeXd } = componentMetadata
+
+
+          // TODO remove this after demo. Or handle it when/if we get indivduall designlink
+          if (parentData.sketchUrl) {
+            componentMetadata.sketchUrl = true
+          }
+
+          const { html, angular, react, figmaUrl, sketchUrl, adobeXdUrl } = componentMetadata
+
 
           if (html.exists) {
 
@@ -107,13 +115,13 @@ glob(componentsPath, (err, directories) => {
             }
           }
 
-          if (figma) {
+          if (figmaUrl) {
             amount.design.figma++
           }
-          if (sketch) {
+          if (sketchUrl) {
             amount.design.sketch++
           }
-          if (adobeXd) {
+          if (adobeXdUrl) {
             amount.design.adobeXd++
 
           }

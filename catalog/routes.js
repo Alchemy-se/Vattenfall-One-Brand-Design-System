@@ -22,6 +22,8 @@ import Welcome from './WELCOME';
 import Intro from './components/intro/intro';
 import Articles from './articles/articles';
 import ArticlesOverview from './articles/articlesOverview';
+import Favicon from './components/favicon/favicon'
+import Icons from './components/icons/icons'
 
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
@@ -65,7 +67,7 @@ const COMPONENTS_ROUTES = [
   { path: '/grid', name: 'Grid', component: <Grid /> },
   { path: '/responsive', name: 'Responsive', component: <Responsive /> },
   { path: '/sizing', name: 'Sizing', component: <Sizing /> },
-  { path: '/colors', name: 'Colors', component: <Colors /> },
+  { path: '/colors', name: 'Colors', component: <Colors uri={"/components/colors"} /> },
   { path: '/spacing', name: 'Spacing', component: <Spacing /> },
   { path: '/intro', name: 'Atoms', component: <Intro /> },
   // components/css
@@ -134,8 +136,8 @@ const COMPONENTS_ROUTES = [
   { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
   { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
   // components/utilities
-  { path: '/utilities/favicon', name: 'Favicon', mdFile: require('./utilities/favicon.md') },
-  { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
+  { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
+  { path: '/utilities/icons', name: 'Icons',  component: <Icons />  },
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },

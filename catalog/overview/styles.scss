@@ -1,53 +1,226 @@
+
 body {
   font-family: sans-serif;
   padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+  }
+
+  .border {
+    border: 1px solid;
+  }
+
+
+  .modalContent {
+    background-color: white;
+    height: auto; // set to auto?
+    display: flex;
+    //  flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+
+    form {
+      display: flex;
+      flex-direction: row;
+
+      .textInformation {
+        display: flex;
+        flex-direction: column
+      }
+
+      .supportInformation {
+        display: flex;
+        flex-direction: column;
+
+        .supportItem {
+          border-bottom: 1px solid black;
+          display: flex;
+          flex-direction: column;
+
+
+
+          .radioButtonsContainer {
+            display: flex;
+            flex-direction: column;
+
+
+            .radioButtons {
+              display: flex;
+
+              .group {
+                margin-right: 10px;
+
+                label {
+                  margin-left: 3px;
+                }
+              }
+
+            }
+          }
+
+
+        }
+      }
+
+      label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 14px;
+      }
+
+      textarea {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 
 .tableContainer {
   margin: 30px;
 
-
-  .slantedReadyInProgress {
-    background-image: linear-gradient(
-                    to top left,
-                    #FFDA00 48%,
-                    #2DA55D 52%
-    );
-  }
-
-  .slantedReadyDeclined {
-    background-image: linear-gradient(
-                    to top left,
-                    #F93B18 48%,
-                    #2DA55D 52%
-    );
-
+  .topContainer {
+    display: flex;
+    justify-content: space-between;
   }
 
   .legend {
-    width: 400px;
     font-size: 0.8rem;
-    margin-bottom: 50px;
-    border: 1px solid black;
+    margin-bottom: 18px;
+    display: flex;
+
+    > div {
+      flex-direction: column;
+    }
 
   }
 
-  .noData {
-    background-color: #CCCCCC;
+  .legendText {
+    color: rgb(0, 0, 0);
+    font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.04px;
   }
 
-  .ready {
-    background-color: #2DA55D;
+  .circleContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    // the circle
+    div:first-child {
+      margin-right: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline;
+    }
   }
 
-  .inProgress {
-    background-color: #FFDA00;
+  .circleTD {
+    display: flex;
+    justify-content: center;
+    border: none;
+
+    //circle in table
+    div:first-child {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline;
+    }
+
+    //design circle
+    .designLink {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline;
+      background-color: #3dc07c;
+
+      &:hover {
+        width: 18px !important;
+        height: 18px !important;;
+        top: 2px !important;;
+        position: absolute !important;;
+      }
+    }
   }
 
-  .declined {
-    background-color: #F93B18;
+  .unknown {
+    background-color: #e6e6e6;
   }
+
+  .awaitingReview {
+    background-image: linear-gradient(
+                    to top left,
+                    #ffda01 50%,
+                    #e6e6e6 50%
+    );
+  }
+
+  .inReview {
+    background-color: #ffda01;
+  }
+
+  .canBeUsedIf {
+    background-image: linear-gradient(
+                    to top left,
+                    #3dc07c 50%,
+                    #ffda01 50%
+    );
+  }
+
+  .canBeUsed {
+    background-color: #3dc07c;
+  }
+
+  .canBeUsedSoon {
+    background-image: linear-gradient(
+                    to top left,
+                    #E6652B 50%,
+                    #3dc07c 50%
+    );
+  }
+
 
   table {
     font-family: 'Vattenfall Hall', Helvetica, sans-serif;
@@ -55,99 +228,192 @@ body {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+    border: 1px solid rgb(223, 226, 229);
 
     tr, td, th {
       padding: 0.3rem;
-    //  border: 1px #808080 solid;
-      border: 1px #3b3b3b solid;
+      border: 1px solid rgb(223, 226, 229);
       word-wrap: break-word;
+    }
+
+    tr:nth-child(even) {
+      background: #F6F8FA
     }
 
     thead {
       text-align: center;
 
-      &:first-child > tr:first-child > th:last-child {
-        font-size: 0.7rem;
+      .tableHeader {
+        color: rgb(0, 0, 0);
+        font-family: "Vattenfall Hall Bold NORDx", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        height: 20px;
+        letter-spacing: -0.05px;
+        text-align: center;
+
+
+        //1 & child.
+        th:nth-child(-n+2) {
+          height: 60px;
+        }
+
+        // 3-5 child
+        th:nth-child(n+3):nth-child(-n+5) {
+          height: 40px;
+        }
+
+        // 6-8 child. Logos
+        th:nth-child(n+6):nth-child(-n+8) {
+          width: 80px;
+
+          img {
+            height: 35px;
+            width: auto;
+
+          }
+        }
+
+        // read more text cell
+        th:last-child {
+          font-size: 12px;
+          font-weight: bold;
+          height: 60px;
+          width: 80px;
+          letter-spacing: -0.04px;
+          text-align: center;
+        }
       }
 
+      //global/region cell
       tr:nth-child(2) th {
-        font-size: 0.6rem;
+        height: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: -0.04px;
+        background: white;
       }
-
-      tr > th > img {
-        height: 30px;
-        width: auto;
-      }
-
     }
 
+    // parent row
     .row {
+      td {
+        height: 42px;
+      }
+
       cursor: pointer;
 
-      .desc {
-        font-size: 14px;
-        width: 230px;
+      //Target 1 & 2 child.
+      // Component name & guideline text
+      td:nth-child(-n+2) {
+        padding-left: 16px;
+      }
+
+      a {
+        color: rgb(0, 0, 0);
+        font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.05px;
+
+        &:hover {
+          color: rgb(0, 93, 141);
+          text-decoration: none !important;
+
+        }
+      }
+
+      .count {
+        text-align: center;
+        font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: -0.05px;
+      }
+
+      .isOpen {
+        a {
+          color: rgb(0, 93, 141);
+        }
+      }
+
+      //open close button/expand row
+      .expand {
+        cursor: pointer;
+        text-align: center;
+
+        img:first-child {
+          height: 15px;
+          width: auto;
+        }
       }
     }
 
     .expandedRow {
       font-size: 0.7rem;
       line-height: normal;
-      padding-left: 2rem;
+      padding-left: 28px;
 
-      td {
-        text-align: center;
-
-
+      .editIcon {
+        height: 12px;
+        width: 12px;
       }
 
-      .name {
-        padding-left: 2rem;
+      // component name
+      td:first-child {
+        padding-left: 28px;
         font-size: 0.8rem;
         line-height: normal;
         text-align: left;
       }
 
-      .guideline {
-        text-align: left;
+      //Guideline text
+      td:nth-child(2) {
+        padding-left: 16px;
       }
 
-      .desc {
-        font-size: 0.8rem;
-        text-align: left;
+      td > a {
+        color: rgb(0, 0, 0);
+        font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
 
-        span {
-          margin-top: 2px;
-          color: #1964A3;
-          display: block;
-          cursor: pointer;
+        &:hover {
+          color: rgb(0, 93, 141);
+          text-decoration: none !important;
 
-          &:hover {
-            color: #40a9ff;
 
-          }
         }
       }
+
 
     }
 
     tfoot {
-      .totalName {
-        padding: 0.5rem;
+      // total components text
+      tr > td:first-child {
+        font-family: "Vattenfall Hall Bold NORDx", Helvetica, sans-serif;
+        padding-left: 16px;
+        padding-top: 0.3rem;
+        height: 42px;
+        padding-bottom: 0.3rem;
         font-size: 16px;
         font-weight: 700;
         text-align: left;
       }
 
-      text-align: center;
+      tr > td:nth-child(n+2) {
+        font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
 
+      }
+
+      text-align: center;
     }
   }
-
-  .expand {
-    cursor: pointer;
-  }
 }
+
+
 
 
 

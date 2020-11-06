@@ -26,6 +26,15 @@
   url($fontPath + "/VattenfallHall-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+
+}@font-face {
+  font-family: "VattenfallHall-Regular";
+  src: url($fontPath + "/VattenfallHall-Regular.eot");
+  src: url($fontPath + "/VattenfallHall-Regular.eot?#iefix") format("embedded-opentype"),
+  url($fontPath + "/VattenfallHall-Regular.woff2") format("woff2"),
+  url($fontPath + "/VattenfallHall-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {

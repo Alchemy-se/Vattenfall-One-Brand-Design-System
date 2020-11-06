@@ -146,7 +146,8 @@ class AutoComplete extends Component {
           this.state.noSuggestions && !this.state.hasBeenBlured &&
 
           <div className="no-suggestions">
-            No results found for {this.state.value}
+            No results found for {this.state.value}. Make a request
+            <span style={{color: "rgb(32, 113, 181)" }}> here</span>
           </div>
         }
       </div>

@@ -1,26 +1,76 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="stylesheet" href="/css/antd.css">
-  <link rel="stylesheet" href="/css/markdown.css">
-  <link rel="stylesheet" href="/css/reboot.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/documentation.css">
-  <link rel="stylesheet" href="/css/algolia.css">
-  <title>Vattenfall Design System - Technical Documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/antd.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+    <link rel="stylesheet" href="/css/reboot.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/documentation.css">
+    <link rel="stylesheet" href="/css/algolia.css">
+    <title>Vattenfall Design System - Technical Documentation</title>
 </head>
 <body class="preload">
-  <div id="main"></div>
-  <script>
-    setTimeout(function(){
-      document.body.className="";
-    }, 500);
-  </script>
-  <script src="/js/main.min.js"></script>
-  <script src="/js/horizon.min.js"></script>
+<div id="main"></div>
+
+<script>
+  setTimeout(function () {
+    document.body.className = "";
+  }, 500);
+</script>
+<script src="/js/main.min.js"></script>
+<script src="/js/horizon.min.js"></script>
+<!-- Start of rhymehelp Zendesk Widget script -->
+<script id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=6d396cbf-2310-439c-b54d-701076e82026"></script>
+<script type="text/javascript">
+  zE(function() {
+    zE.setLocale('en-US');
+  });
+</script>
+
+
+<script type="text/javascript">
+
+  var h = window.location.href
+  console.log('h: ', h)
+  window.zESettings = {
+    webWidget: {
+
+      // color: { theme: '#0003a3' },
+      color: {
+        theme: '#FF69B4',
+        launcher: '#CC3A83', // This will also update the badge
+        launcherText: '#E589B7',
+        button: '#8A0648',
+        resultLists: '#691840',
+        header: '#009d0b',
+        articleLinks: '#FF4500'
+      },
+
+
+      launcher: {
+        label: {
+          '*': 'Need help?',
+        },
+      },
+      contactForm: {
+
+        title: {
+          '*': 'Make a request'
+        },
+        fields: [
+          { id: 360054430033, prefill: { '*': h }, label: {'*': 'Make a request'}  },
+        ]
+      },
+    }
+  };
+</script>
+
+<!-- End of rhymehelp Zendesk Widget script -->
 </body>
 </html>
+

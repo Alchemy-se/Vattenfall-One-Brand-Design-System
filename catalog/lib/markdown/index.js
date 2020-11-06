@@ -86,6 +86,7 @@ const rootRenderer = ({children}) => {
 };
 
 const Markdown = ({source}) => {
+
 	// Reload js.
 	useScript("/js/horizon.min.js");
 	return (
@@ -93,7 +94,7 @@ const Markdown = ({source}) => {
 			<ReactMarkdown
 				source={source}
 				renderers={{heading: Heading, code: Code, root: rootRenderer}}
-			/>
+						/>
 		</div>
 	);
 };

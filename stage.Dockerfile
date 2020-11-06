@@ -9,7 +9,7 @@ RUN yarn install
 COPY . .
 
 # Build and upload metadata for algolia search and component overview
-#RUN yarn build-and-upload-metadata
+RUN yarn build-and-upload-metadata
 
 # RUN CI=true yarn test
 RUN yarn build

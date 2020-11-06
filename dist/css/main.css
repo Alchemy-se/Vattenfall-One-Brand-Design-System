@@ -70,6 +70,14 @@ html.sr .reveal {
 }
 
 @font-face {
+  font-family: "VattenfallHall-Regular";
+  src: url("../fonts/VattenfallHall-Regular.eot");
+  src: url("../fonts/VattenfallHall-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHall-Regular.woff2") format("woff2"), url("../fonts/VattenfallHall-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Vattenfall Hall NORDx";
   src: url("../fonts/VattenfallHall-RegularItalic.eot");
   src: url("../fonts/VattenfallHall-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHall-RegularItalic.woff2") format("woff2"), url("../fonts/VattenfallHall-RegularItalic.woff") format("woff");

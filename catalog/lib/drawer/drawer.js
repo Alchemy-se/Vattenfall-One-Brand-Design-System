@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Drawer, Menu} from "antd";
 import {useLocation} from "react-router-dom";
 import GetStartedMenu from "./getStartedMenu";
@@ -25,6 +25,7 @@ const DRAWER_STYLE = {
 };
 
 const renderFooter = () => {
+
 	const menuFooterLinkStyle = {
 		color: '#1964A3',
 		fontSize: '16px',

@@ -1,29 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styles from './styles.scss'
+import authContext from "../../helpers/authContext";
 
-const FIGMA = 'figma';
-const SKETCH = 'sketch';
-const ADOBE_XD = 'adobeXd';
+const FIGMA = 'figmaUrl';
+const SKETCH = 'sketchUrl';
+const ADOBE_XD = 'adobeXdUrl';
 const ANGULAR = 'angular';
 const HTML = 'html';
 const REACT = 'react';
 const SV = 'SV';
 const NL = 'NL';
 
-const OverviewItem = ({ item }) => {
+const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
   const { name, children, figmaUrl, adobeXdUrl, sketchUrl } = item;
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { authenticated } = useContext(authContext);
+
+
+  const [isExpanded, setIsExpanded] = useState(true); //todo ändra till tom
+  const [hasBeenClicked, setHasBeenClicked] = useState(false)
+  const more = require('../../assets/icons/More.svg').default;
+  const close = require('../../assets/icons/Close.svg').default;
+  const edit = require('../../assets/icons/edit-icon.png').default;
 
   const countDesign = (program) => {
     const designs = children.filter(design => design[program])
-    return <td style={{ textAlign: "center" }}> {designs.length} </td>
+    return <td className={styles.count}> {designs.length} </td>
   };
 
   const renderDesignLink = (child, type, url) => {
+
     if (child[type] && url) {
-      return <td className={styles.ready}><a style={{color:'black'}} target='_blank' href={url}>Link</a></td>
+      return (
+        <td style={{ position: "relative" }}>
+          <a target='_blank' href={url}>
+            <div className={styles.circleTD}>
+              <div className={styles.designLink}>
+              </div>
+            </div>
+          </a>
+        </td>)
+
+
     }
-    return <td className={styles.noData} />
+    return (<td>
+      <div className={styles.circleTD}>
+        <div className={styles.unknown} />
+      </div>
+    </td>)
   };
 
   const renderGuidelineUri = (uri) => {
@@ -54,7 +77,7 @@ const OverviewItem = ({ item }) => {
           lang[type].status === 0;
       });
     }
-    return <td style={{ textAlign: "center" }}> {languages.length} </td>
+    return <td className={styles.count}> {languages.length} </td>
   };
 
   const renderStatus = (child, type, region) => {
@@ -86,27 +109,74 @@ const OverviewItem = ({ item }) => {
 
     switch (status) {
       case -1:
-        return <td className={styles.noData} />;
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.unknown} />
+          </div>
+        </td>;
       case 0:
-        return <td className={styles.ready} />
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.canBeUsed} />
+          </div>
+        </td>
       case 1:
-        return <td className={styles.inProgress} />
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.inReview} />
+          </div>
+        </td>
       case 2:
-        return <td className={styles.declined} />
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.canBeUsedSoon} />
+          </div>
+        </td>
       case 3:
-        return <td className={styles.slantedReadyInProgress} />
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.awaitingReview} />
+          </div>
+        </td>
       case 4:
-        return <td className={styles.slantedReadyDeclined} />
+        return <td>
+          <div className={styles.circleTD}>
+            <div className={styles.canBeUsedIf} />
+          </div>
+        </td>
       default:
         return <td />
     }
   };
+
+  const onEditClick = (name) => {
+    const selected = item.children.filter(child => {
+      if (child.name === name) {
+        return true
+      }
+    })
+    setSelectedParentID(id)
+    setSelectedChild(selected[0])
+
+
+  };
+
+
   const showExpand = (children) => {
     return children.map(child => {
       return (
         <tr className={styles.expandedRow} key={child.name}>
-          <td className={styles.name} colSpan="4"><a href={child.uri}>{child.name}</a></td>
-          <td className={styles.guideline} colSpan="4">{renderGuidelineUri(child.guidelineUri)}</td>
+          <td colSpan="4">
+            <a href={child.uri}>{child.name}</a>
+
+            {authenticated &&
+            <img onClick={() => onEditClick(child.name)
+
+            } className={styles.editIcon} src={edit} alt="" />}
+
+
+          </td>
+          <td colSpan="4">{renderGuidelineUri(child.guidelineUri)}</td>
 
           {renderStatus(child, HTML)}
           {renderStatus(child, ANGULAR)}
@@ -124,8 +194,13 @@ const OverviewItem = ({ item }) => {
 
   return (
     <React.Fragment>
-      <tr onClick={() => setIsExpanded(!isExpanded)} className={styles.row}>
-        <td colSpan="4"><a href={item.uri}>{name}</a></td>
+
+      <tr onClick={() => {
+        setIsExpanded(!isExpanded);
+        setHasBeenClicked(true)
+      }} className={styles.row}>
+        <td className={`${isExpanded ? styles.isOpen : ""}`} colSpan="4"><a
+          href={item.uri}>{name}</a></td>
         <td colSpan="4">{renderGuidelineUri(item.guidelineUri)}</td>
         {countLanguages(HTML)}
         {countLanguages(ANGULAR)}
@@ -138,7 +213,8 @@ const OverviewItem = ({ item }) => {
         {countDesign(ADOBE_XD)}
 
         <td className={styles.expand}>
-          {isExpanded ? 'Close' : 'Open'}
+          <img
+            src={isExpanded ? close : more} alt="btn" />
         </td>
       </tr>
       {isExpanded && showExpand(children)}
