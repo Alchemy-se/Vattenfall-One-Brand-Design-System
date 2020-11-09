@@ -9,7 +9,8 @@ export const fetchAllMetadata = async () => {
   return res.data
 }
 
-export const updateChild = async (data) => {
+export const updateMetadata = async (data) => {
+  console.log('data: ', data)
   try {
     const res = await axios({
       method: 'PUT',
@@ -19,9 +20,12 @@ export const updateChild = async (data) => {
         "metadata": data.metadata
       }
     })
-    console.log('res: ', res)
+    console.log("updateMetadata res", res);
+
+
+    return res.status;
   } catch (e) {
-    console.log("updateChild error", e);
+    console.log("updateMetadata error", e);
 
 
   }
@@ -33,6 +37,8 @@ export const fetchAmount = async () => {
     url: `http://localhost:1338/collection-metadata/amount`,
 
   })
-  console.log('res: ', res)
+  console.log("metadatacall fetchAmount körs");
+
+
   return res.data
 }

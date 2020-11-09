@@ -4,8 +4,10 @@ import styles from './styles.scss'
 import OverviewItem from "./overviewItem";
 import { login, logout } from "../../helpers/apiCalls/authentication";
 import authContext from "../../helpers/authContext";
-import { fetchAllMetadata, fetchAmount, updateChild } from "../../helpers/apiCalls/metadataCalls";
-import Modal from "./modal/Modal";
+import { fetchAllMetadata, fetchAmount, updateMetadata } from "../../helpers/apiCalls/metadataCalls";
+import ChildModal from "./modal/ChildModal";
+import { set } from "react-ga";
+import ParentModal from "./modal/parentModal";
 
 const ComponentOverview = () => {
   const { setAuthenticated, authenticated } = useContext(authContext);
@@ -17,6 +19,7 @@ const ComponentOverview = () => {
   const [password, setPassword] = useState("")
   const [metadata, setMetadata] = useState()
   const [displayModal, setDisplayModal] = useState(false)
+  const [displayModalParent, setDisplayModalParent] = useState(false)
   const [amount, setAmount] = useState({
     "html": {
       "global": 0
@@ -38,98 +41,89 @@ const ComponentOverview = () => {
 
   const [selectedChild, setSelectedChild] = useState();
   const [selectedParentID, setSelectedParentID] = useState();
-  const [sup, setSup] = useState([])
+  const [selectedParent, setSelectedParent] = useState()
 
 
   useEffect(() => {
     const fetchData = async () => {
-      const metadata = await fetchAllMetadata()
-      setMetadata(metadata)
-      const amount = await fetchAmount();
-      setAmount(amount)
+      setMetadata(await fetchAllMetadata())
+      setAmount(await fetchAmount())
     };
-
-
     fetchData()
-  }, [])
+  }, []);
+
+  console.log('selectedChild: ', selectedChild)
 
   useEffect(() => {
     if (selectedChild) {
       setDisplayModal(true)
     }
-  }, [selectedChild])
+  }, [selectedChild]);
 
-  const saveNewMetadata = async () => {
+  useEffect(() => {
+    if (selectedParent) {
+      setDisplayModalParent(true)
+    }
+  }, [selectedParent])
 
-    console.log("ändrat state!!", selectedChild);
-    console.log('SUP!!: ', sup)
-    //TODO TA BORT RETURN
-    return
-
+  const saveNewMetadata = async (type) => {
+    let data;
     // Find the parent by id in all of the metadata
-    const parent = metadata.filter(x => x.id === selectedParentID)[0]
+    data = metadata.filter(x => x.id === selectedParentID)[0]
 
-    // replace current child with  updatedChild
-    parent.metadata.children.forEach((item) => {
-      if (item.name === selectedChild.name) {
-        Object.assign(item, selectedChild)
-      }
-    })
+    if (type === "child") {
+      // replace current child with updatedChild.
+      data.metadata.children.forEach((item) => {
+        if (item.name === selectedChild.name) {
+          // this will update state so we dont need to refetch the data to se the users changes
+          Object.assign(item, selectedChild)
+        }
+      })
+    } else {
+      // same as above Object.assign.
+      Object.assign(data.metadata, selectedParent)
+    }
 
-    // make a put request to strapi to save updated child
-    await updateChild(parent)
-    setDisplayModal(false)
-
+    // make a put request to strapi to save updated data
+    const status = await updateMetadata(data)
+    if (status === 200) {
+      // refetch amount on success
+      setAmount(await fetchAmount())
+    }
+    closeModal()
   };
 
-  let support = []
-  let supportObj = {}
-  const updateChildData = (e) => {
 
+  const updateChildData = (e) => {
 
     const type = e.target.type;
     let value = e.target.value;
-    const name = e.target.name;
 
-    let language = e.target.getAttribute('language')
+    // NL, SV
+    let supportForRegion = e.target.getAttribute('supportforregion')
 
+    // split name of element eg. "exists-html" -> ["exists", "html"] for using when setting state
+    let nameLanguages = e.target.name.split("-");
+    let name = nameLanguages[0];
+    let language = nameLanguages[1];
 
-    if (type === "radio" || (type === 'select-one' && value !== 'noUse')) {
+    // parse "true/false" -> true/false || "1" -> 1
+    if (type === "radio" || type === 'select-one') {
       value = JSON.parse(value)
     }
 
-
-    if (type === 'select-one') {
-
-      let selectListId = e.target.id
-      let supportForRegion = e.target.getAttribute('supportforregion')
-
-      if (selectListId === "region-support") {
-
-        if (value !== 'noUse') {
-          supportObj = {
-            region: supportForRegion,
-            status: parseInt(value)
-          }
-          support.push(supportObj)
-
-
-        } else {
-          support = support.filter((s) => s.region !== supportForRegion)
-        }
-        value = support
-      }
+    // select list for region specific status
+    if (supportForRegion) {
+      let support = []
+      const supportObj = {
+        region: supportForRegion,
+        status: value
+      };
+      support.push(supportObj)
+      value = support
     }
 
-
     setSelectedChild((prevState) => {
-
-
-      console.log("In setter [Name]", name);
-      console.log("In setter value", value);
-      console.log("In setter language", language);
-
-
       // Update "first level" props in the state. Eg. description, URLS
       if (!language) {
         return ({
@@ -147,75 +141,45 @@ const ComponentOverview = () => {
         })
       }
     });
+  };
 
-
-    console.log('selectedChild: ', selectedChild)
-
-    /*  setSelectedChild((prevState) => ({
+  const updateParentData = (e) => {
+    const name = e.target.name;
+    const value = e.target.value
+    setSelectedParent((prevState) => ({
       ...prevState,
-      [name]: value,
-      [language]: {
-        ...prevState[language],
-        [name]: value
-      }
-    }));*/
-
-
-    /*if (type === "radio") {
-
-      if (value === 'true' || value === 'false') {
-        value = JSON.parse(value)
-      }
-
-      const language = e.target.language;
-
-
-
-
-
-      setSelectedChild((prevState) => ({
-        ...prevState,
-        [language]: {
-          ...prevState[language],
-          [name]: value
-        }
-      }));
-
-    }*/
-
-    /*setSelectedChild((prevState) => ({
-      ...prevState,
-      [name]: value,
-      html: {
-        ...prevState,
-        [key]: "lol"
-      }
-    }));*/
-    /* child: {
-     ...prevState.child,
-         [name]: value
-     }*/
-
-    /*setSelectedChild((prevState) => ({
-      ...prevState,
-      [name]: value,
-      html: {
-        exists: "lol"
-      }
-    }));*/
-
-
+      [name]: value
+    }))
   }
 
+  // close modal and clear states
+  const closeModal = () => {
+    setDisplayModal(false)
+    setDisplayModalParent(false)
+    setSelectedParentID(null)
+    setSelectedChild(null)
+    setSelectedParent(null)
+  };
+
   const renderModal = () => {
-
-
     return (
-      <Modal
+      <ChildModal
         child={selectedChild}
-        setDisplayModal={setDisplayModal}
         saveNewMetadata={saveNewMetadata}
         updateChildData={updateChildData}
+        closeModal={closeModal}
+      />
+    )
+  };
+
+  const renderModalParent = () => {
+    return (
+      <ParentModal
+        updateParentData={updateParentData}
+        parent={selectedParent}
+        saveNewMetadata={saveNewMetadata}
+        closeModal={closeModal}
+
       />
     )
   }
@@ -229,10 +193,9 @@ const ComponentOverview = () => {
             id={item.id}
             item={item.metadata}
             key={item.id}
-
-
             setSelectedParentID={setSelectedParentID}
             setSelectedChild={setSelectedChild}
+            setSelectedParent={setSelectedParent}
           />
         )
       })
@@ -242,13 +205,13 @@ const ComponentOverview = () => {
 
   const submitLogin = async (e) => {
     e.preventDefault();
-    const loggedIn = await login(identifier, password)
+    const loggedIn = await login(identifier, password);
     setAuthenticated(loggedIn)
   }
 
   const submitLogout = async (e) => {
     e.preventDefault();
-    const loggedIn = await logout()
+    const loggedIn = await logout();
     setAuthenticated(loggedIn)
   };
 
@@ -274,7 +237,6 @@ const ComponentOverview = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
 
         <button onClick={submitLogin} type="submit">Login
         </button>
@@ -330,13 +292,14 @@ const ComponentOverview = () => {
 
         </div>
 
-        <div className={styles.loginContainer}>
+        <div>
           {renderFields()}
 
         </div>
       </div>
 
       {displayModal && renderModal()}
+      {displayModalParent && renderModalParent()}
 
       <table>
         <thead>

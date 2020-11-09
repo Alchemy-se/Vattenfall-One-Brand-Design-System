@@ -6,7 +6,7 @@ The parts that make up the component. For example the modal window title, close 
 <div class="vattenfall-modal-window">
   <!-- An element example -->
   <h1 class="vattenfall-modal-window__title">
-    Modal title
+    ChildModal title
   </h1>
 
   <!-- Another element example -->

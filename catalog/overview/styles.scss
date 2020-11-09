@@ -41,7 +41,28 @@ a {
 
       .textInformation {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+
+      }
+
+      .radioButtonsContainer {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+
+
+        .radioButtons {
+          display: flex;
+
+          .group {
+            margin-right: 10px;
+
+            label {
+              margin-left: 3px;
+            }
+          }
+
+        }
       }
 
       .supportInformation {
@@ -49,32 +70,19 @@ a {
         flex-direction: column;
 
         .supportItem {
-          border-bottom: 1px solid black;
+
           display: flex;
           flex-direction: column;
 
-
-
-          .radioButtonsContainer {
-            display: flex;
-            flex-direction: column;
-
-
-            .radioButtons {
-              display: flex;
-
-              .group {
-                margin-right: 10px;
-
-                label {
-                  margin-left: 3px;
-                }
-              }
-
-            }
+          .headerTitle {
+            text-transform: capitalize;
           }
 
 
+        }
+
+        .regionSupportContainer {
+          border: 1px solid black;
         }
       }
 
@@ -350,18 +358,26 @@ a {
       }
     }
 
+    .editIcon {
+      height: 12px;
+      margin-right: 4px;
+      width: 12px;
+      align-self: center;
+    }
+
+    .nameContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
     .expandedRow {
       font-size: 0.7rem;
       line-height: normal;
       padding-left: 28px;
 
-      .editIcon {
-        height: 12px;
-        width: 12px;
-      }
 
       // component name
-      td:first-child {
+      .nameContainer:first-child {
         padding-left: 28px;
         font-size: 0.8rem;
         line-height: normal;
@@ -373,7 +389,7 @@ a {
         padding-left: 16px;
       }
 
-      td > a {
+      .nameContainer > a {
         color: rgb(0, 0, 0);
         font-family: "VattenfallHall-Regular", Helvetica, sans-serif;
         font-size: 12px;

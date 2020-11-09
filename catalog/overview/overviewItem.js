@@ -4,19 +4,19 @@ import authContext from "../../helpers/authContext";
 
 const FIGMA = 'figmaUrl';
 const SKETCH = 'sketchUrl';
-const ADOBE_XD = 'adobeXdUrl';
+const ADOBE_XD = 'adobeXDUrl';
 const ANGULAR = 'angular';
 const HTML = 'html';
 const REACT = 'react';
 const SV = 'SV';
 const NL = 'NL';
 
-const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
+const OverviewItem = ({ item, id, setSelectedChild, setSelectedParentID, setSelectedParent }) => {
   const { name, children, figmaUrl, adobeXdUrl, sketchUrl } = item;
   const { authenticated } = useContext(authContext);
 
 
-  const [isExpanded, setIsExpanded] = useState(true); //todo ändra till tom
+  const [isExpanded, setIsExpanded] = useState();
   const [hasBeenClicked, setHasBeenClicked] = useState(false)
   const more = require('../../assets/icons/More.svg').default;
   const close = require('../../assets/icons/Close.svg').default;
@@ -157,8 +157,6 @@ const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
     })
     setSelectedParentID(id)
     setSelectedChild(selected[0])
-
-
   };
 
 
@@ -167,13 +165,14 @@ const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
       return (
         <tr className={styles.expandedRow} key={child.name}>
           <td colSpan="4">
+            <div className={styles.nameContainer}>
             <a href={child.uri}>{child.name}</a>
 
             {authenticated &&
-            <img onClick={() => onEditClick(child.name)
-
-            } className={styles.editIcon} src={edit} alt="" />}
-
+            <img onClick={() => onEditClick(child.name)}
+                 className={styles.editIcon} src={edit} alt="" />
+            }
+            </div>
 
           </td>
           <td colSpan="4">{renderGuidelineUri(child.guidelineUri)}</td>
@@ -196,11 +195,24 @@ const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
     <React.Fragment>
 
       <tr onClick={() => {
-        setIsExpanded(!isExpanded);
         setHasBeenClicked(true)
       }} className={styles.row}>
-        <td className={`${isExpanded ? styles.isOpen : ""}`} colSpan="4"><a
-          href={item.uri}>{name}</a></td>
+        <td className={`${isExpanded ? styles.isOpen : ""}`} colSpan="4">
+          <div className={styles.nameContainer}>
+            <a
+              href={item.uri}>{name}
+            </a>
+
+            {authenticated &&
+            <img onClick={() => {
+              setSelectedParentID(id)
+              setSelectedParent(item)
+            }
+            }
+                 className={styles.editIcon} src={edit} alt="" />
+            }</div>
+
+        </td>
         <td colSpan="4">{renderGuidelineUri(item.guidelineUri)}</td>
         {countLanguages(HTML)}
         {countLanguages(ANGULAR)}
@@ -212,7 +224,7 @@ const OverviewItem = ({ item, id, setSelectedChild,setSelectedParentID }) => {
         {countDesign(FIGMA)}
         {countDesign(ADOBE_XD)}
 
-        <td className={styles.expand}>
+        <td onClick={() => setIsExpanded(!isExpanded)} className={styles.expand}>
           <img
             src={isExpanded ? close : more} alt="btn" />
         </td>

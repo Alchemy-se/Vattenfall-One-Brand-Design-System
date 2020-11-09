@@ -6,7 +6,7 @@ Handles different stylistic or functional variants of the same element. Example
 ```
 <div class="vattenfall-modal-window">
   <h1 class="vattenfall-modal-window__title">
-    Modal title
+    ChildModal title
   </h1>
 
   

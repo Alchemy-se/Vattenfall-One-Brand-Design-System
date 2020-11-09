@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "../styles.scss";
 import SupportItem from "./supportItem";
 
-const Modal = ({ child, closeModal, saveNewMetadata, updateChildData }) => {
+const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => {
   return (
     <div className={styles.modalContainer}>
 
@@ -155,7 +155,7 @@ const Modal = ({ child, closeModal, saveNewMetadata, updateChildData }) => {
                 className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
         </button>
 
-        <button onClick={() => saveNewMetadata()} type="button"
+        <button onClick={() => saveNewMetadata('child')} type="button"
                 className="vf-btn vf-btn--md vf-btn--primary">Save
         </button>
 
@@ -168,4 +168,4 @@ const Modal = ({ child, closeModal, saveNewMetadata, updateChildData }) => {
     ;
 };
 
-export default Modal;
+export default ChildModal;
