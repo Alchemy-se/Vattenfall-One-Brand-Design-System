@@ -11,7 +11,7 @@ import styles from "./main.scss";
 import ReactGA from 'react-ga';
 import AuthContext from "../helpers/authContext";
 import { checkLoggedIn } from "../helpers/apiCalls/authentication";
-
+import LoggedInBanner from "./lib/LoggedInBanner";
 
 
 ReactGA.initialize('UA-159160070-1');
@@ -152,19 +152,18 @@ export default class App extends Component {
   };
 
 
-
   render() {
 
-    const setAuthenticated = (value)=> this.setState({authenticated: value})
+    const setAuthenticated = (value) => this.setState({ authenticated: value })
     const authenticated = this.state.authenticated
-
 
 
     const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
     const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;
     return (
       <Router>
-        <AuthContext.Provider value={{ authenticated, setAuthenticated}}>
+        <AuthContext.Provider value={{ authenticated, setAuthenticated }}>
+          <LoggedInBanner />
 
           {this.renderModal()}
           <Hamburger onClick={this.openDrawer} className={hamburgerClasses} />
@@ -177,7 +176,8 @@ export default class App extends Component {
               selectedKeys={this.state.selectedKeysSubmenu}
             />
             {/*<div className={styles.innerContainer} >*/}
-            <div className={`${styles.innerContainer} documentation-container`}>
+            <div style={{ marginTop: authenticated ? "30px" : 0 }}
+                 className={`${styles.innerContainer} documentation-container`}>
               <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
             </div>
           </div>

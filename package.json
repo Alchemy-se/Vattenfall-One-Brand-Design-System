@@ -3,8 +3,8 @@
   "version": "7.16.6",
   "main": "index.js",
   "scripts": {
-    "start-webpack": "webpack-dev-server --port 3213 --hot --config documentation.webpack.config.js",
-    "build-webpack": "webpack --mode=production --config documentation.webpack.config.js",
+    "start-webpack": "NODE_ENV=development webpack-dev-server --port 3213 --hot --config documentation.webpack.config.js",
+    "build-webpack": "NODE_ENV=production webpack --mode=production  --config documentation.webpack.config.js",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
     "build": "npm-run-all --sequential js-main css-main build-webpack",
@@ -43,6 +43,7 @@
     "clean-css-cli": "^4.2.1",
     "dotenv": "^8.2.0",
     "file-loader": "^6.0.0",
+    "imports-loader": "^1.2.0",
     "node-sass": "^4.13.1",
     "nodemon": "^1.18.10",
     "npm-run-all": "^4.1.3",

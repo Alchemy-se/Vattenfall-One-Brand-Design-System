@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Navigation / Close</title>
+    <defs>
+        <polygon id="path-1" points="19.5901408 1.57746479 18.3647887 0 9.9915493 6.51408451 1.62535211 0 0.4 1.57746479 8.36478873 7.77464789 0.4 13.9788732 1.62535211 15.5492958 9.9915493 9.04225352 18.3647887 15.5492958 19.5901408 13.9788732 11.6183099 7.77464789"></polygon>
+    </defs>
+    <g id="✨-WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VF-Portal-–-Overview-–-Table-overview" transform="translate(-1361.000000, -228.000000)">
+            <g id="Icons-/-Navigation-/-Close" transform="translate(1361.000000, 226.000000)">
+                <g id="Group" transform="translate(0.000000, 2.200000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colors-/-Grayscale-/-Black" mask="url(#mask-2)" fill="#000000" fill-rule="nonzero">
+                        <g transform="translate(0.000000, -2.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

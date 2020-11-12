@@ -11,8 +11,10 @@ import authContext from "../../../helpers/authContext";
 const markdown = colors + backgroundColor + borders
 
 
+
 export default class Colors extends Component {
 
+/*
   constructor(props) {
     super(props);
     this.state = {
@@ -20,10 +22,11 @@ export default class Colors extends Component {
 
     }
   }
+*/
 
 
   //Hämta ut id/data fråm strapi
-  componentDidMount() {
+/*  componentDidMount() {
 
     const that = this
     Array.from(document.getElementsByClassName("find_by_header")).forEach(function (item) {
@@ -57,8 +60,8 @@ export default class Colors extends Component {
         that.setState({ zendeskData: selectedChild[0] })
       })
     });
-  }
-
+  }*/
+/*
   send = async () => {
     const h = await axios({
       method: 'POST',
@@ -69,14 +72,14 @@ export default class Colors extends Component {
       data: {
         "request": {
           "requester": { "name": "albin" },
-          "subject": "Ändring av colors!",
+          "subject": ":) !",
           "comment": { "body": "Ser att det är fel färgkod på den röda färgen" },
           "custom_fields": [{ "id": 360054430033, "value": "React." }]
         }
       }
     })
-  }
-
+  }*/
+/*
   renderZendesk() {
     if (!this.state.zendeskData) {
       return null
@@ -91,17 +94,16 @@ export default class Colors extends Component {
       </div>
     )
 
-  }
+  }*/
 
   render() {
-    console.log("state", this.state);
 
 
     return (
       <React.Fragment>
         <PageHeader title={"Colors"} />
-        <Markdown metadata={"test"} source={markdown} />
-        {this.renderZendesk()}
+        <Markdown source={markdown} />
+       {/* {this.renderZendesk()}*/}
       </React.Fragment>
     )
   }

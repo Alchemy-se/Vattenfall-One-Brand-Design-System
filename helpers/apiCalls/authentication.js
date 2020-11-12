@@ -2,52 +2,50 @@ import axios from "axios";
 import React from "react";
 
 
-const IS_LOGGED_IN = 'isLoggedIn';
-
-
 export const login = async (identifier, password) => {
+  let baseUrl = process.env.LOCAL_BASE_URL;
+  if (process.env.NODE_ENV === "production") {
+    baseUrl = process.env.PROD_STRAPI_BASE_URL
+  }
+
+
   try {
     const res = await axios({
       method: 'POST',
-      url: `http://localhost:1338/auth/local`,
+      url: `${baseUrl}/auth/local`,
       withCredentials: true,
       data: {
         identifier,
         password,
       }
     })
-    if (res.status === 200 && res.data.status === "Authenticated") {
-      localStorage.setItem(IS_LOGGED_IN, 'true');
-      return true
+    if (res.status === 200 && res.data.jwt) {
+      localStorage.setItem("jwt", res.data.jwt);
+      return { success: true }
     }
-    console.log('data: ', res)
 
-  } catch (e) {
-    console.log("login error", e);
-    //TODO hantera fel inlogg
-    return false
+  } catch (error) {
+    if (error.response) {
+      return {
+        success: false,
+        message: error.response.data.message[0].messages[0].message,
+      }
+    }
   }
 
 };
 
 export const checkLoggedIn = () => {
-  return !!localStorage.getItem(IS_LOGGED_IN);
+  return !!localStorage.getItem("jwt");
 }
 
 
 export const logout = async () => {
   try {
-    const response = await axios({
-      method: 'POST',
-      url: `http://localhost:1338/logout`,
-      withCredentials: true,
-      data: {}
-    })
-    console.log('logut respones: ', response)
-    if (response.status === 200 && response.data.isLoggedOut) {
-      localStorage.removeItem(IS_LOGGED_IN);
-      return false // return false as the user is NOT authenticated
-    }
+
+    localStorage.removeItem('jwt');
+    return false // return false as the user is NOT authenticated
+
   } catch (e) {
     console.log("logut error", e);
     // TODO hantera error

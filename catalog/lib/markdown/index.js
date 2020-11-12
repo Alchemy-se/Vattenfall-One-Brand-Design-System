@@ -84,6 +84,7 @@ const rootRenderer = ({children}) => {
 		</React.Fragment>
 	);
 };
+window.process = { cwd: () => '' };
 
 const Markdown = ({source}) => {
 

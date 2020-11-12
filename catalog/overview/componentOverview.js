@@ -1,22 +1,20 @@
-import React, { Context, useContext, useEffect, useRef, useState } from 'react';
-import axios from "axios";
+import React, {  useEffect, useState } from 'react';
 import styles from './styles.scss'
 import OverviewItem from "./overviewItem";
-import { login, logout } from "../../helpers/apiCalls/authentication";
-import authContext from "../../helpers/authContext";
+
 import { fetchAllMetadata, fetchAmount, updateMetadata } from "../../helpers/apiCalls/metadataCalls";
 import ChildModal from "./modal/ChildModal";
-import { set } from "react-ga";
+
 import ParentModal from "./modal/parentModal";
 
 const ComponentOverview = () => {
-  const { setAuthenticated, authenticated } = useContext(authContext);
   const figmaLogo = require('../../assets/icons/figma-logo.png').default;
   const sketchLogo = require('../../assets/icons/sketch-logo.png').default;
   const psXDLogo = require('../../assets/icons/photshop-xd-logo.jpg').default;
 
-  const [identifier, setIdentifier] = useState("")
-  const [password, setPassword] = useState("")
+  const [selectedChild, setSelectedChild] = useState();
+  const [selectedParentID, setSelectedParentID] = useState();
+  const [selectedParent, setSelectedParent] = useState()
   const [metadata, setMetadata] = useState()
   const [displayModal, setDisplayModal] = useState(false)
   const [displayModalParent, setDisplayModalParent] = useState(false)
@@ -39,10 +37,6 @@ const ComponentOverview = () => {
     }
   })
 
-  const [selectedChild, setSelectedChild] = useState();
-  const [selectedParentID, setSelectedParentID] = useState();
-  const [selectedParent, setSelectedParent] = useState()
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,7 +46,6 @@ const ComponentOverview = () => {
     fetchData()
   }, []);
 
-  console.log('selectedChild: ', selectedChild)
 
   useEffect(() => {
     if (selectedChild) {
@@ -75,7 +68,7 @@ const ComponentOverview = () => {
       // replace current child with updatedChild.
       data.metadata.children.forEach((item) => {
         if (item.name === selectedChild.name) {
-          // this will update state so we dont need to refetch the data to se the users changes
+          // this will update state so we dont need to refetch the data to see the users changes
           Object.assign(item, selectedChild)
         }
       })
@@ -200,49 +193,7 @@ const ComponentOverview = () => {
         )
       })
     }
-  }
-
-
-  const submitLogin = async (e) => {
-    e.preventDefault();
-    const loggedIn = await login(identifier, password);
-    setAuthenticated(loggedIn)
-  }
-
-  const submitLogout = async (e) => {
-    e.preventDefault();
-    const loggedIn = await logout();
-    setAuthenticated(loggedIn)
   };
-
-
-  const renderFields = () => {
-    if (authenticated) {
-      return (<form>
-        <button onClick={submitLogout}>logga ut</button>
-      </form>)
-    }
-    return (
-      <form>
-        <input type="text"
-               id="username"
-               placeholder="Enter username"
-               value={identifier}
-               onChange={(e) => setIdentifier(e.target.value)}
-        />
-        <input
-          type="text" //TODO ändra till password
-          id="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-
-        <button onClick={submitLogin} type="submit">Login
-        </button>
-      </form>
-    )
-  }
 
   return (
     <div className={styles.tableContainer}>
@@ -292,10 +243,6 @@ const ComponentOverview = () => {
 
         </div>
 
-        <div>
-          {renderFields()}
-
-        </div>
       </div>
 
       {displayModal && renderModal()}

@@ -3,9 +3,9 @@ import algoliasearch from 'algoliasearch';
 import Autocomplete from './autocomplete';
 import React from "react";
 
-const APPLICATION_KEY = "TR5Z03YJ0Q";
-const PUBLIC_SEARCH_KEY = "fa1fd3376fd7bdd9ae89013cb7208a18";
-
+const APPLICATION_KEY = process.env.APPLICATION_KEY;
+const PUBLIC_SEARCH_KEY = process.env.PUBLIC_SEARCH_KEY
+const INDEX_NAME = process.env.INDEX_NAME
 
 const algoliaClient = algoliasearch(APPLICATION_KEY, PUBLIC_SEARCH_KEY);
 
@@ -33,7 +33,7 @@ const searchClient = {
 
 const Search = () => {
   return (
-    <InstantSearch searchClient={searchClient} indexName="vf_components">
+    <InstantSearch searchClient={searchClient} indexName={INDEX_NAME}>
       <Configure hitsPerPage={5} />
       <Autocomplete />
     </InstantSearch>)

@@ -1,8 +1,14 @@
 import axios from "axios";
+
+let baseUrl = process.env.LOCAL_BASE_URL;
+if (process.env.NODE_ENV === "production") {
+  baseUrl = process.env.PROD_STRAPI_BASE_URL
+}
+
 export const fetchAllMetadata = async () => {
   const res = await axios({
     method: 'GET',
-    url: `http://localhost:1338/collection-metadata`,
+    url: `${baseUrl}/collection-metadata`,
 
   })
   console.log('res: ', res)
@@ -10,17 +16,20 @@ export const fetchAllMetadata = async () => {
 }
 
 export const updateMetadata = async (data) => {
-  console.log('data: ', data)
   try {
+    const token = localStorage.getItem('jwt')
     const res = await axios({
       method: 'PUT',
-      url: `http://localhost:1338/collection-metadata/${data.id}`,
-      withCredentials: true,
+      url: `${baseUrl}/collection-metadata/${data.id}`,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json; charset=utf-8'
+      },
+
       data: {
         "metadata": data.metadata
       }
     })
-    console.log("updateMetadata res", res);
 
 
     return res.status;
@@ -34,10 +43,9 @@ export const updateMetadata = async (data) => {
 export const fetchAmount = async () => {
   const res = await axios({
     method: 'GET',
-    url: `http://localhost:1338/collection-metadata/amount`,
+    url: `${baseUrl}/collection-metadata/amount`,
 
   })
-  console.log("metadatacall fetchAmount körs");
 
 
   return res.data

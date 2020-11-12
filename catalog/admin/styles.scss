@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.outerContainer {
+  width: 365px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+
+  .innerContainer {
+    border: 1px #C8CBCF solid;
+    width: 100%;
+    padding: 30px 30px 50px;
+
+
+    .inputContainer {
+      // password input container
+      &:nth-child(2) > div {
+        margin-top: 10px;
+      }
+
+      input {
+        width: 300px;
+        border-color: #899199;
+        border-radius: 3px;
+        background-color: #FAFAFA;
+        box-sizing: border-box;
+        outline: none;
+        border-style: solid;
+        border-width: thin;
+      }
+    }
+  }
+
+  .error {
+    position: absolute;
+    color: darkred;
+    font-size: 13px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .bottomContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+
+    button {
+      background-color: #1370B0;
+      border-color: #3D7CB5;
+      color: #F9FDFF;
+      border-radius: 3px;
+      border-style: solid;
+      border-width: thin;
+      width: 80px;
+      cursor: pointer;
+    }
+  }
+
+
+}

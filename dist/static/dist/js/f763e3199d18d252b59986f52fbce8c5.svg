@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Navigation / More</title>
+    <defs>
+        <polygon id="path-1" points="19.9647887 8.98591549 10.9788732 8.98591549 10.9788732 1 8.98591549 1 8.98591549 8.98591549 0 8.98591549 0 10.9788732 8.98591549 10.9788732 8.98591549 18.9647887 10.9788732 18.9647887 10.9788732 10.9788732 19.9647887 10.9788732"></polygon>
+    </defs>
+    <g id="✨-WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VF-Portal-–-Overview-–-Table-overview" transform="translate(-1361.000000, -186.000000)">
+            <g id="Icons-/-Navigation-/-More" transform="translate(1361.000000, 185.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Colors-/-Grayscale-/-Black" mask="url(#mask-2)" fill="#000000" fill-rule="nonzero">
+                    <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
