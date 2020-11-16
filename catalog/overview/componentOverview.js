@@ -200,7 +200,6 @@ const ComponentOverview = () => {
       <div className={styles.topContainer}>
         <div className={styles.legend}>
 
-
           <div>
             <div className={styles.circleContainer}>
               <div className={styles.unknown} />

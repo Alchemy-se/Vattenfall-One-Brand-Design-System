@@ -180,12 +180,12 @@
 
 .vf-icon-up:before {
   content: "\e902";
-  font-size: 0.4375rem;
+  //font-size: 0.4375rem;
 }
 
 .vf-icon-down:before {
   content: "\e903";
-  font-size: 0.4375rem;
+  //font-size: 0.4375rem;
 }
 
 .vf-icon-left:before {
@@ -211,6 +211,10 @@
   }
 }
 
+.vf-icon-calendar:before {
+  content: "\e907";
+}
+
 .vf-icon-map-tag:before {
   content: "\e908";
 }
@@ -218,3 +222,1515 @@
 .vf-icon-time:before {
   content: "\e909";
 }
+
+// NEW
+
+.vf-icon-clock:before {
+  content: "\e909";
+}
+
+.vf-icon-help:before {
+  content: "\e906";
+}
+
+.vf-icon-pin:before {
+  content: "\e908";
+}
+
+.vf-icon-calendar-31:before {
+  content: "\e907";
+}
+
+.vf-icon-twitter:before {
+  content: "\e90a";
+}
+
+.vf-icon-vimeo:before {
+  content: "\e90b";
+}
+
+.vf-icon-whatsapp:before {
+  content: "\e90c";
+}
+
+.vf-icon-xing:before {
+  content: "\e90d";
+}
+
+.vf-icon-youtube:before {
+  content: "\e90e";
+}
+
+.vf-icon-alarm:before {
+  content: "\e90f";
+}
+
+.vf-icon-cloudy:before {
+  content: "\e910";
+}
+
+.vf-icon-coffee-maker:before {
+  content: "\e911";
+}
+
+.vf-icon-console:before {
+  content: "\e912";
+}
+
+.vf-icon-desklamp:before {
+  content: "\e913";
+}
+
+.vf-icon-desktop-computer:before {
+  content: "\e914";
+}
+
+.vf-icon-dishwasher:before {
+  content: "\e915";
+}
+
+.vf-icon-door-closed:before {
+  content: "\e916";
+}
+
+.vf-icon-door-open:before {
+  content: "\e917";
+}
+
+.vf-icon-dryer:before {
+  content: "\e918";
+}
+
+.vf-icon-electric-kettle:before {
+  content: "\e919";
+}
+
+.vf-icon-electric-stove:before {
+  content: "\e91a";
+}
+
+.vf-icon-electric-tooth-brush:before {
+  content: "\e91b";
+}
+
+.vf-icon-espresso-machine:before {
+  content: "\e91c";
+}
+
+.vf-icon-extractor-hood:before {
+  content: "\e91d";
+}
+
+.vf-icon-fairy-lights:before {
+  content: "\e91e";
+}
+
+.vf-icon-freezer:before {
+  content: "\e91f";
+}
+
+.vf-icon-fridge-freezer:before {
+  content: "\e920";
+}
+
+.vf-icon-fridge:before {
+  content: "\e921";
+}
+
+.vf-icon-gas-stove:before {
+  content: "\e922";
+}
+
+.vf-icon-hair-straightener:before {
+  content: "\e923";
+}
+
+.vf-icon-hairdryer:before {
+  content: "\e924";
+}
+
+.vf-icon-indution-stove:before {
+  content: "\e925";
+}
+
+.vf-icon-kettle:before {
+  content: "\e926";
+}
+
+.vf-icon-kitchen-machine:before {
+  content: "\e927";
+}
+
+.vf-icon-laptop:before {
+  content: "\e928";
+}
+
+.vf-icon-light-switch:before {
+  content: "\e929";
+}
+
+.vf-icon-lightbulb-step-1:before {
+  content: "\e92a";
+}
+
+.vf-icon-lightbulb-step-2:before {
+  content: "\e92b";
+}
+
+.vf-icon-lightbulb-step-3:before {
+  content: "\e92c";
+}
+
+.vf-icon-lightbulb-step-4:before {
+  content: "\e92d";
+}
+
+.vf-icon-lightbulb-step-5:before {
+  content: "\e92e";
+}
+
+.vf-icon-microwave:before {
+  content: "\e92f";
+}
+
+.vf-icon-moon:before {
+  content: "\e930";
+}
+
+.vf-icon-outdoor-lamp:before {
+  content: "\e931";
+}
+
+.vf-icon-patio-heater:before {
+  content: "\e932";
+}
+
+.vf-icon-phone-charging:before {
+  content: "\e933";
+}
+
+.vf-icon-pressing-iron:before {
+  content: "\e934";
+}
+
+.vf-icon-radiator:before {
+  content: "\e935";
+}
+
+.vf-icon-rain:before {
+  content: "\e936";
+}
+
+.vf-icon-router:before {
+  content: "\e937";
+}
+
+.vf-icon-smart-plug:before {
+  content: "\e938";
+}
+
+.vf-icon-smart-thermostat:before {
+  content: "\e939";
+}
+
+.vf-icon-smoke-alarm:before {
+  content: "\e93a";
+}
+
+.vf-icon-snow:before {
+  content: "\e93b";
+}
+
+.vf-icon-stove-with-grill:before {
+  content: "\e93c";
+}
+
+.vf-icon-sun:before {
+  content: "\e93d";
+}
+
+.vf-icon-surveillance:before {
+  content: "\e93e";
+}
+
+.vf-icon-table-lamp-two:before {
+  content: "\e93f";
+}
+
+.vf-icon-table-lamp:before {
+  content: "\e940";
+}
+
+.vf-icon-thunder:before {
+  content: "\e941";
+}
+
+.vf-icon-tv-remote:before {
+  content: "\e942";
+}
+
+.vf-icon-vacuum-cleaner:before {
+  content: "\e943";
+}
+
+.vf-icon-ventilator:before {
+  content: "\e944";
+}
+
+.vf-icon-washing-machine:before {
+  content: "\e945";
+}
+
+.vf-icon-window-blinds:before {
+  content: "\e946";
+}
+
+.vf-icon-window-closed:before {
+  content: "\e947";
+}
+
+.vf-icon-window-open:before {
+  content: "\e948";
+}
+
+.vf-icon-window:before {
+  content: "\e949";
+}
+
+.vf-icon-calendar-1:before {
+  content: "\e94a";
+}
+
+.vf-icon-calendar-2:before {
+  content: "\e94b";
+}
+
+.vf-icon-calendar-3:before {
+  content: "\e94c";
+}
+
+.vf-icon-calendar-4:before {
+  content: "\e94d";
+}
+
+.vf-icon-calendar-5:before {
+  content: "\e94e";
+}
+
+.vf-icon-calendar-6:before {
+  content: "\e94f";
+}
+
+.vf-icon-calendar-7:before {
+  content: "\e950";
+}
+
+.vf-icon-calendar-8:before {
+  content: "\e951";
+}
+
+.vf-icon-calendar-9:before {
+  content: "\e952";
+}
+
+.vf-icon-calendar-10:before {
+  content: "\e953";
+}
+
+.vf-icon-calendar-11:before {
+  content: "\e954";
+}
+
+.vf-icon-calendar-12:before {
+  content: "\e955";
+}
+
+.vf-icon-calendar-13:before {
+  content: "\e956";
+}
+
+.vf-icon-calendar-14:before {
+  content: "\e957";
+}
+
+.vf-icon-calendar-15:before {
+  content: "\e958";
+}
+
+.vf-icon-calendar-16:before {
+  content: "\e959";
+}
+
+.vf-icon-calendar-17:before {
+  content: "\e95a";
+}
+
+.vf-icon-calendar-18:before {
+  content: "\e95b";
+}
+
+.vf-icon-calendar-19:before {
+  content: "\e95c";
+}
+
+.vf-icon-calendar-20:before {
+  content: "\e95d";
+}
+
+.vf-icon-calendar-21:before {
+  content: "\e95e";
+}
+
+.vf-icon-calendar-22:before {
+  content: "\e95f";
+}
+
+.vf-icon-calendar-23:before {
+  content: "\e960";
+}
+
+.vf-icon-calendar-24:before {
+  content: "\e961";
+}
+
+.vf-icon-calendar-25:before {
+  content: "\e962";
+}
+
+.vf-icon-calendar-26:before {
+  content: "\e963";
+}
+
+.vf-icon-calendar-27:before {
+  content: "\e964";
+}
+
+.vf-icon-calendar-28:before {
+  content: "\e965";
+}
+
+.vf-icon-calendar-29:before {
+  content: "\e966";
+}
+
+.vf-icon-calendar-30:before {
+  content: "\e967";
+}
+
+.vf-icon-skype:before {
+  content: "\e968";
+}
+
+.vf-icon-check:before {
+  content: "\e969";
+}
+
+.vf-icon-close:before {
+  content: "\e96a";
+}
+
+.vf-icon-flickr:before {
+  content: "\e96b";
+}
+
+.vf-icon-home:before {
+  content: "\e96c";
+}
+
+.vf-icon-instagram:before {
+  content: "\e96d";
+}
+
+.vf-icon-less-info:before {
+  content: "\e96e";
+}
+
+.vf-icon-link:before {
+  content: "\e96f";
+}
+
+.vf-icon-menu:before {
+  content: "\e970";
+}
+
+.vf-icon-more:before {
+  content: "\e971";
+}
+
+.vf-icon-qr-code:before {
+  content: "\e972";
+}
+
+.vf-icon-linkedin:before {
+  content: "\e973";
+}
+
+.vf-icon-rss:before {
+  content: "\e974";
+}
+
+.vf-icon-search:before {
+  content: "\e975";
+}
+
+.vf-icon-facebook:before {
+  content: "\e976";
+}
+
+.vf-icon-card-and-tag:before {
+  content: "\e977";
+}
+
+.vf-icon-charge-smart-and-safe-at-home:before {
+  content: "\e978";
+}
+
+.vf-icon-charge-up-multihome:before {
+  content: "\e979";
+}
+
+.vf-icon-charge-up-your-business:before {
+  content: "\e97a";
+}
+
+.vf-icon-charging-wall-box:before {
+  content: "\e97b";
+}
+
+.vf-icon-e-bike:before {
+  content: "\e97c";
+}
+
+.vf-icon-fuse-box:before {
+  content: "\e97d";
+}
+
+.vf-icon-history-of-charge-session:before {
+  content: "\e97e";
+}
+
+.vf-icon-move-with-existing-contract:before {
+  content: "\e97f";
+}
+
+.vf-icon-move-with-new-contract:before {
+  content: "\e980";
+}
+
+.vf-icon-parking-meter:before {
+  content: "\e981";
+}
+
+.vf-icon-partner:before {
+  content: "\e982";
+}
+
+.vf-icon-private-charging:before {
+  content: "\e983";
+}
+
+.vf-icon-public-business-charging:before {
+  content: "\e984";
+}
+
+.vf-icon-public-charging:before {
+  content: "\e985";
+}
+
+.vf-icon-scooter-2:before {
+  content: "\e986";
+}
+
+.vf-icon-scooter:before {
+  content: "\e987";
+}
+
+.vf-icon-smart-charging-poles:before {
+  content: "\e988";
+}
+
+.vf-icon-h:before {
+  content: "\e989";
+}
+
+.vf-icon-advent-calendar:before {
+  content: "\e98a";
+}
+
+.vf-icon-airplane:before {
+  content: "\e98b";
+}
+
+.vf-icon-apartment-house:before {
+  content: "\e98c";
+}
+
+.vf-icon-assortment:before {
+  content: "\e98d";
+}
+
+.vf-icon-balance:before {
+  content: "\e98e";
+}
+
+.vf-icon-battery:before {
+  content: "\e98f";
+}
+
+.vf-icon-beauty-personal-care:before {
+  content: "\e990";
+}
+
+.vf-icon-behaviour:before {
+  content: "\e991";
+}
+
+.vf-icon-benchmark-cockpit:before {
+  content: "\e992";
+}
+
+.vf-icon-benchmark-temperature:before {
+  content: "\e993";
+}
+
+.vf-icon-benchmark-two:before {
+  content: "\e994";
+}
+
+.vf-icon-benchmark:before {
+  content: "\e995";
+}
+
+.vf-icon-benefit:before {
+  content: "\e996";
+}
+
+.vf-icon-billing:before {
+  content: "\e997";
+}
+
+.vf-icon-bio-diesel-generator:before {
+  content: "\e998";
+}
+
+.vf-icon-biofuel-biomass:before {
+  content: "\e999";
+}
+
+.vf-icon-book-room:before {
+  content: "\e99a";
+}
+
+.vf-icon-books-magazines:before {
+  content: "\e99b";
+}
+
+.vf-icon-brain:before {
+  content: "\e99c";
+}
+
+.vf-icon-brainstorm:before {
+  content: "\e99d";
+}
+
+.vf-icon-calculator:before {
+  content: "\e99e";
+}
+
+.vf-icon-call-center:before {
+  content: "\e99f";
+}
+
+.vf-icon-callback:before {
+  content: "\e9a0";
+}
+
+.vf-icon-career-and-development:before {
+  content: "\e9a1";
+}
+
+.vf-icon-central-heating:before {
+  content: "\e9a2";
+}
+
+.vf-icon-certificate:before {
+  content: "\e9a3";
+}
+
+.vf-icon-chart:before {
+  content: "\e9a4";
+}
+
+.vf-icon-city:before {
+  content: "\e9a5";
+}
+
+.vf-icon-climate-mix:before {
+  content: "\e9a6";
+}
+
+.vf-icon-climate-neutral:before {
+  content: "\e9a7";
+}
+
+.vf-icon-snapchat:before {
+  content: "\e9a8";
+}
+
+.vf-icon-cloud-storage:before {
+  content: "\e9a9";
+}
+
+.vf-icon-co2-reducation:before {
+  content: "\e9aa";
+}
+
+.vf-icon-co2:before {
+  content: "\e9ab";
+}
+
+.vf-icon-coal:before {
+  content: "\e9ac";
+}
+
+.vf-icon-cockpit:before {
+  content: "\e9ad";
+}
+
+.vf-icon-cold:before {
+  content: "\e9ae";
+}
+
+.vf-icon-combined-heat-and-power:before {
+  content: "\e9af";
+}
+
+.vf-icon-conclusion:before {
+  content: "\e9b0";
+}
+
+.vf-icon-consumption:before {
+  content: "\e9b1";
+}
+
+.vf-icon-contract-details:before {
+  content: "\e9b2";
+}
+
+.vf-icon-cooperation-area:before {
+  content: "\e9b3";
+}
+
+.vf-icon-cost-saving:before {
+  content: "\e9b4";
+}
+
+.vf-icon-cottage:before {
+  content: "\e9b5";
+}
+
+.vf-icon-defence-soldier:before {
+  content: "\e9b6";
+}
+
+.vf-icon-defence:before {
+  content: "\e9b7";
+}
+
+.vf-icon-delivery:before {
+  content: "\e9b8";
+}
+
+.vf-icon-discussion-two:before {
+  content: "\e9b9";
+}
+
+.vf-icon-discussion:before {
+  content: "\e9ba";
+}
+
+.vf-icon-distribution:before {
+  content: "\e9bb";
+}
+
+.vf-icon-district-cooling:before {
+  content: "\e9bc";
+}
+
+.vf-icon-district-heat-and-power:before {
+  content: "\e9bd";
+}
+
+.vf-icon-district-heating-two:before {
+  content: "\e9be";
+}
+
+.vf-icon-district-heating:before {
+  content: "\e9bf";
+}
+
+.vf-icon-doing-good:before {
+  content: "\e9c0";
+}
+
+.vf-icon-dont:before {
+  content: "\e9c1";
+}
+
+.vf-icon-economize:before {
+  content: "\e9c2";
+}
+
+.vf-icon-eko-hourly-spot:before {
+  content: "\e9c3";
+}
+
+.vf-icon-electricity-gas:before {
+  content: "\e9c4";
+}
+
+.vf-icon-electricity:before {
+  content: "\e9c5";
+}
+
+.vf-icon-electronic-payment-euro:before {
+  content: "\e9c6";
+}
+
+.vf-icon-energy-mix:before {
+  content: "\e9c7";
+}
+
+.vf-icon-energy-service:before {
+  content: "\e9c8";
+}
+
+.vf-icon-energy-solution:before {
+  content: "\e9c9";
+}
+
+.vf-icon-euro:before {
+  content: "\e9ca";
+}
+
+.vf-icon-euros:before {
+  content: "\e9cb";
+}
+
+.vf-icon-evaluation:before {
+  content: "\e9cc";
+}
+
+.vf-icon-eye:before {
+  content: "\e9cd";
+}
+
+.vf-icon-face-mask:before {
+  content: "\e9ce";
+}
+
+.vf-icon-farm:before {
+  content: "\e9cf";
+}
+
+.vf-icon-fixed:before {
+  content: "\e9d0";
+}
+
+.vf-icon-flexible:before {
+  content: "\e9d1";
+}
+
+.vf-icon-full-water-quartal:before {
+  content: "\e9d2";
+}
+
+.vf-icon-gas:before {
+  content: "\e9d3";
+}
+
+.vf-icon-geothermal-heat-pump:before {
+  content: "\e9d4";
+}
+
+.vf-icon-globe:before {
+  content: "\e9d5";
+}
+
+.vf-icon-going-out:before {
+  content: "\e9d6";
+}
+
+.vf-icon-group-discussion:before {
+  content: "\e9d7";
+}
+
+.vf-icon-guide:before {
+  content: "\e9d8";
+}
+
+.vf-icon-handshake:before {
+  content: "\e9d9";
+}
+
+.vf-icon-heat-load-curve:before {
+  content: "\e9da";
+}
+
+.vf-icon-heat-pump:before {
+  content: "\e9db";
+}
+
+.vf-icon-heating:before {
+  content: "\e9dc";
+}
+
+.vf-icon-home-garden:before {
+  content: "\e9dd";
+}
+
+.vf-icon-home-security:before {
+  content: "\e9de";
+}
+
+.vf-icon-hot:before {
+  content: "\e9df";
+}
+
+.vf-icon-hourly-spot-mix:before {
+  content: "\e9e0";
+}
+
+.vf-icon-house:before {
+  content: "\e9e1";
+}
+
+.vf-icon-hydro:before {
+  content: "\e9e2";
+}
+
+.vf-icon-in-queue:before {
+  content: "\e9e3";
+}
+
+.vf-icon-industry:before {
+  content: "\e9e4";
+}
+
+.vf-icon-insight:before {
+  content: "\e9e5";
+}
+
+.vf-icon-insulation:before {
+  content: "\e9e6";
+}
+
+.vf-icon-invoice-euro:before {
+  content: "\e9e7";
+}
+
+.vf-icon-invoice-pound:before {
+  content: "\e9e8";
+}
+
+.vf-icon-kids-toys:before {
+  content: "\e9e9";
+}
+
+.vf-icon-knowledge:before {
+  content: "\e9ea";
+}
+
+.vf-icon-large-battery:before {
+  content: "\e9eb";
+}
+
+.vf-icon-lecture:before {
+  content: "\e9ec";
+}
+
+.vf-icon-life-events:before {
+  content: "\e9ed";
+}
+
+.vf-icon-lightbulb:before {
+  content: "\e9ee";
+}
+
+.vf-icon-manage-my-team:before {
+  content: "\e9ef";
+}
+
+.vf-icon-map:before {
+  content: "\e9f0";
+}
+
+.vf-icon-meter:before {
+  content: "\e9f1";
+}
+
+.vf-icon-mobility:before {
+  content: "\e9f2";
+}
+
+.vf-icon-modules:before {
+  content: "\e9f3";
+}
+
+.vf-icon-move-with-existing-contract1:before {
+  content: "\e9f4";
+}
+
+.vf-icon-move-with-new-contract1:before {
+  content: "\e9f5";
+}
+
+.vf-icon-movie-music-theatre:before {
+  content: "\e9f6";
+}
+
+.vf-icon-multi-home-box:before {
+  content: "\e9f7";
+}
+
+.vf-icon-my-cases:before {
+  content: "\e9f8";
+}
+
+.vf-icon-my-documents:before {
+  content: "\e9f9";
+}
+
+.vf-icon-nature-and-bioversity:before {
+  content: "\e9fa";
+}
+
+.vf-icon-need:before {
+  content: "\e9fb";
+}
+
+.vf-icon-nighttime-electricity-metering:before {
+  content: "\e9fc";
+}
+
+.vf-icon-not-visible:before {
+  content: "\e9fd";
+}
+
+.vf-icon-nuclear:before {
+  content: "\e9fe";
+}
+
+.vf-icon-ocean-energy:before {
+  content: "\e9ff";
+}
+
+.vf-icon-offshore:before {
+  content: "\ea00";
+}
+
+.vf-icon-oil-condensing-gas-turbine:before {
+  content: "\ea01";
+}
+
+.vf-icon-open-area:before {
+  content: "\ea02";
+}
+
+.vf-icon-operation-central:before {
+  content: "\ea03";
+}
+
+.vf-icon-peat:before {
+  content: "\ea04";
+}
+
+.vf-icon-phone-sound-off:before {
+  content: "\ea05";
+}
+
+.vf-icon-pin-two:before {
+  content: "\ea06";
+}
+
+.vf-icon-planned-outage:before {
+  content: "\ea07";
+}
+
+.vf-icon-policies:before {
+  content: "\ea08";
+}
+
+.vf-icon-power-gas:before {
+  content: "\ea09";
+}
+
+.vf-icon-power-grid:before {
+  content: "\ea0a";
+}
+
+.vf-icon-power-plant:before {
+  content: "\ea0b";
+}
+
+.vf-icon-premium:before {
+  content: "\ea0c";
+}
+
+.vf-icon-present:before {
+  content: "\ea0d";
+}
+
+.vf-icon-prices-equal-alt:before {
+  content: "\ea0e";
+}
+
+.vf-icon-prices-equal:before {
+  content: "\ea0f";
+}
+
+.vf-icon-prices-fall-alt:before {
+  content: "\ea10";
+}
+
+.vf-icon-prices-fall:before {
+  content: "\ea11";
+}
+
+.vf-icon-prices-rise-alt:before {
+  content: "\ea12";
+}
+
+.vf-icon-prices-rise:before {
+  content: "\ea13";
+}
+
+.vf-icon-private-end-user:before {
+  content: "\ea14";
+}
+
+.vf-icon-public-transport:before {
+  content: "\ea15";
+}
+
+.vf-icon-purpose-profit:before {
+  content: "\ea16";
+}
+
+.vf-icon-quote:before {
+  content: "\ea17";
+}
+
+.vf-icon-reach:before {
+  content: "\ea18";
+}
+
+.vf-icon-recommendation:before {
+  content: "\ea19";
+}
+
+.vf-icon-recycling:before {
+  content: "\ea1a";
+}
+
+.vf-icon-reimburse:before {
+  content: "\ea1b";
+}
+
+.vf-icon-renewable-energy:before {
+  content: "\ea1c";
+}
+
+.vf-icon-road:before {
+  content: "\ea1d";
+}
+
+.vf-icon-salary-time-and-benefits:before {
+  content: "\ea1e";
+}
+
+.vf-icon-sales-of-electric-heat-gas:before {
+  content: "\ea1f";
+}
+
+.vf-icon-savings:before {
+  content: "\ea20";
+}
+
+.vf-icon-semi-detached-house:before {
+  content: "\ea21";
+}
+
+.vf-icon-ship-docking:before {
+  content: "\ea22";
+}
+
+.vf-icon-silent-area:before {
+  content: "\ea23";
+}
+
+.vf-icon-smart-home:before {
+  content: "\ea24";
+}
+
+.vf-icon-smart-meter:before {
+  content: "\ea25";
+}
+
+.vf-icon-smartphone-text:before {
+  content: "\ea26";
+}
+
+.vf-icon-smiley-neutral:before {
+  content: "\ea27";
+}
+
+.vf-icon-smiley-sad:before {
+  content: "\ea28";
+}
+
+.vf-icon-smiley:before {
+  content: "\ea29";
+}
+
+.vf-icon-solar-back:before {
+  content: "\ea2a";
+}
+
+.vf-icon-solar-panel:before {
+  content: "\ea2b";
+}
+
+.vf-icon-spread-purchases:before {
+  content: "\ea2c";
+}
+
+.vf-icon-standard-contact-continuous:before {
+  content: "\ea2d";
+}
+
+.vf-icon-standard-energy:before {
+  content: "\ea2e";
+}
+
+.vf-icon-strategy:before {
+  content: "\ea2f";
+}
+
+.vf-icon-street-light:before {
+  content: "\ea30";
+}
+
+.vf-icon-summary:before {
+  content: "\ea31";
+}
+
+.vf-icon-sun-two:before {
+  content: "\ea32";
+}
+
+.vf-icon-support:before {
+  content: "\ea33";
+}
+
+.vf-icon-tap-water-cold:before {
+  content: "\ea34";
+}
+
+.vf-icon-tap-water-warm:before {
+  content: "\ea35";
+}
+
+.vf-icon-temperature:before {
+  content: "\ea36";
+}
+
+.vf-icon-tender-multiple:before {
+  content: "\ea37";
+}
+
+.vf-icon-thumbs-down:before {
+  content: "\ea38";
+}
+
+.vf-icon-thumbs-up:before {
+  content: "\ea39";
+}
+
+.vf-icon-to-dos:before {
+  content: "\ea3a";
+}
+
+.vf-icon-tool:before {
+  content: "\ea3b";
+}
+
+.vf-icon-train:before {
+  content: "\ea3c";
+}
+
+.vf-icon-transformer:before {
+  content: "\ea3d";
+}
+
+.vf-icon-tv:before {
+  content: "\ea3e";
+}
+
+.vf-icon-variable:before {
+  content: "\ea3f";
+}
+
+.vf-icon-ventilation:before {
+  content: "\ea40";
+}
+
+.vf-icon-vf-benchmark-co2:before {
+  content: "\ea41";
+}
+
+.vf-icon-voice-search:before {
+  content: "\ea42";
+}
+
+.vf-icon-wind:before {
+  content: "\ea43";
+}
+
+.vf-icon-activity-log:before {
+  content: "\ea44";
+}
+
+.vf-icon-add-contact:before {
+  content: "\ea45";
+}
+
+.vf-icon-alert:before {
+  content: "\ea46";
+}
+
+.vf-icon-align-center:before {
+  content: "\ea47";
+}
+
+.vf-icon-align-left:before {
+  content: "\ea48";
+}
+
+.vf-icon-app-settings:before {
+  content: "\ea49";
+}
+
+.vf-icon-arrow-down-left:before {
+  content: "\ea4a";
+}
+
+.vf-icon-arrow-down-right:before {
+  content: "\ea4b";
+}
+
+.vf-icon-arrow-down:before {
+  content: "\ea4c";
+}
+
+.vf-icon-arrow-left:before {
+  content: "\ea4d";
+}
+
+.vf-icon-arrow-right:before {
+  content: "\ea4e";
+}
+
+.vf-icon-arrow-up-left:before {
+  content: "\ea4f";
+}
+
+.vf-icon-arrow-up-right:before {
+  content: "\ea50";
+}
+
+.vf-icon-arrow-up:before {
+  content: "\ea51";
+}
+
+.vf-icon-autostart:before {
+  content: "\ea52";
+}
+
+.vf-icon-blog:before {
+  content: "\ea53";
+}
+
+.vf-icon-call:before {
+  content: "\ea54";
+}
+
+.vf-icon-camera:before {
+  content: "\ea55";
+}
+
+.vf-icon-change-availability:before {
+  content: "\ea56";
+}
+
+.vf-icon-chat:before {
+  content: "\ea57";
+}
+
+.vf-icon-checkbox:before {
+  content: "\ea58";
+}
+
+.vf-icon-download-pdf:before {
+  content: "\ea59";
+}
+
+.vf-icon-download:before {
+  content: "\ea5a";
+}
+
+.vf-icon-edit:before {
+  content: "\ea5b";
+}
+
+.vf-icon-elipsis:before {
+  content: "\ea5c";
+}
+
+.vf-icon-favourite:before {
+  content: "\ea5d";
+}
+
+.vf-icon-filter:before {
+  content: "\ea5e";
+}
+
+.vf-icon-gallery:before {
+  content: "\ea5f";
+}
+
+.vf-icon-pinterest:before {
+  content: "\ea60";
+}
+
+.vf-icon-in-progress:before {
+  content: "\ea61";
+}
+
+.vf-icon-information:before {
+  content: "\ea62";
+}
+
+.vf-icon-list-view:before {
+  content: "\ea63";
+}
+
+.vf-icon-locked:before {
+  content: "\ea64";
+}
+
+.vf-icon-mail:before {
+  content: "\ea65";
+}
+
+.vf-icon-news:before {
+  content: "\ea66";
+}
+
+.vf-icon-off:before {
+  content: "\ea67";
+}
+
+.vf-icon-open-new-window:before {
+  content: "\ea68";
+}
+
+.vf-icon-pause:before {
+  content: "\ea69";
+}
+
+.vf-icon-phone:before {
+  content: "\ea6a";
+}
+
+.vf-icon-play:before {
+  content: "\ea6c";
+}
+
+.vf-icon-power-outage:before {
+  content: "\ea6d";
+}
+
+.vf-icon-print:before {
+  content: "\ea6e";
+}
+
+.vf-icon-request:before {
+  content: "\ea6f";
+}
+
+.vf-icon-restart:before {
+  content: "\ea70";
+}
+
+.vf-icon-send:before {
+  content: "\ea71";
+}
+
+.vf-icon-dropbox:before {
+  content: "\ea72";
+}
+
+.vf-icon-share:before {
+  content: "\ea73";
+}
+
+.vf-icon-shop:before {
+  content: "\ea74";
+}
+
+.vf-icon-sign-in:before {
+  content: "\ea75";
+}
+
+.vf-icon-sign-out:before {
+  content: "\ea76";
+}
+
+.vf-icon-sort:before {
+  content: "\ea77";
+}
+
+.vf-icon-tag:before {
+  content: "\ea78";
+}
+
+.vf-icon-trash:before {
+  content: "\ea79";
+}
+
+.vf-icon-turn-device:before {
+  content: "\ea7a";
+}
+
+.vf-icon-unlocked:before {
+  content: "\ea7b";
+}
+
+.vf-icon-user:before {
+  content: "\ea7c";
+}
+
+.vf-icon-zoom-in:before {
+  content: "\ea7d";
+}
+
+.vf-icon-zoom-out:before {
+  content: "\ea7e";
+}
+
+.vf-icon-slidehare:before {
+  content: "\ea6b5";
+}
+
+// NEW END

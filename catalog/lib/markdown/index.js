@@ -84,18 +84,16 @@ const rootRenderer = ({children}) => {
 		</React.Fragment>
 	);
 };
-window.process = { cwd: () => '' };
 
-const Markdown = ({source}) => {
-
+const Markdown = ({source, noPaddingBottom}) => {
 	// Reload js.
 	useScript("/js/horizon.min.js");
 	return (
-		<div className={`${styles.container} ${"markdown-body"}` }>
+		<div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}` }>
 			<ReactMarkdown
 				source={source}
 				renderers={{heading: Heading, code: Code, root: rootRenderer}}
-						/>
+			/>
 		</div>
 	);
 };

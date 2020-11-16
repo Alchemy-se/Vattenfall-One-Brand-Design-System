@@ -170,6 +170,14 @@ p {
   padding-bottom: calc(80vh - 400px);
 }
 
+.markdown-body.no-padding-bottom {
+  padding-bottom: initial;
+}
+
+.markdown-body.no-padding-bottom > :last-child {
+  padding-bottom: initial;
+}
+
 .ant-anchor-ink-ball {
   border-color: #1964A3;
 }

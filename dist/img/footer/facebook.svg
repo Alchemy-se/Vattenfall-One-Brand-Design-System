@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon / Social / Facebook</title>
-    <desc>Created with Sketch.</desc>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Action / Sort</title>
     <defs>
-        <path d="M32,8.6663374 C32,6.21463346 29.7873421,4 27.3336626,4 L8.66436181,4 C6.21265787,4 4,6.21463346 4,8.6663374 L4,27.3356382 C4,29.7814154 6.21265787,32 8.6663374,32 L18,32 L18,21.4227051 L14.5772949,21.4227051 L14.5772949,16.7563677 L18,16.7563677 L18,14.9378396 C18,11.8015946 20.3549002,8.97848021 23.2501235,8.97848021 L27.0215198,8.97848021 L27.0215198,13.6448176 L23.2501235,13.6448176 C22.8372257,13.6448176 22.3551824,14.145629 22.3551824,14.8963522 L22.3551824,16.7563677 L27.0215198,16.7563677 L27.0215198,21.4227051 L22.3551824,21.4227051 L22.3551824,32 L27.3336626,32 C29.7873421,32 32,29.7853665 32,27.3336626 L32,8.6663374 Z" id="path-1"></path>
+        <path d="M15.7535211,5.5067062e-14 L15.7464789,16.1478873 L18.5492958,13.3521127 L19.9647887,14.7605634 L14.7535211,19.9647887 L9.54225352,14.7605634 L10.9577465,13.3450704 L13.7535211,16.1408451 L13.7535211,5.5067062e-14 L15.7535211,5.5067062e-14 Z M6.52112676,14 L6.52112676,16 L-2.71782596e-13,16 L-2.71782596e-13,14 L6.52112676,14 Z M10.5211268,7.97183099 L10.5211268,9.97183099 L-2.72670775e-13,9.97183099 L-2.72670775e-13,7.97183099 L10.5211268,7.97183099 Z M10.4788732,1.98591549 L10.4788732,3.98591549 L-5.6754601e-13,3.98591549 L-5.6754601e-13,1.98591549 L10.4788732,1.98591549 Z" id="path-1"></path>
     </defs>
-    <g id="Icon-/-Social-/-Facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Icons-/-Action-/-Sort" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <mask id="mask-2" fill="white">
             <use xlink:href="#path-1"></use>
         </mask>
         <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
-        <g id="Color-/-Primary-/-Blue-/-Default" mask="url(#mask-2)" fill="#1964A3" fill-rule="nonzero">
-            <g transform="translate(2.000000, 2.000000)" id="Rectangle">
-                <rect x="0" y="0" width="32" height="32"></rect>
+        <g id="Group" mask="url(#mask-2)">
+            <g transform="translate(0.000000, 0.000000)" id="Colors-/-Grayscale-/-Black">
+                <rect id="Rectangle" fill="#000000" fill-rule="nonzero" x="0" y="0" width="20" height="20"></rect>
             </g>
         </g>
     </g>

@@ -138,7 +138,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
-  { path: '/utilities/icons', name: 'Icons',  component: <Icons />  },
+  { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
