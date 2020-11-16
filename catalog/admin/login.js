@@ -26,7 +26,7 @@ const Login = () => {
     <div className={styles.logoContainer}><img src={logo} alt="vf-logo" /></div>
     <div className={styles.innerContainer}>
       <div className={styles.inputContainer}>
-        <div>Username or password</div>
+        <div>Username or email</div>
         <input type="text"
                id="username"
                value={identifier}
