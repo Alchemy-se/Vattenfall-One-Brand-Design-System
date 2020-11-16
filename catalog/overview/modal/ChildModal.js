@@ -9,11 +9,11 @@ const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => 
       <div className={styles.modalContent}>
 
         <form>
-          <div className={styles.textInformation}>
+          <div className={`${styles.textInformation} ${styles.childModal}`}>
             <label> Component name</label>
             <span>{child.name}</span>
 
-            <label>Description</label>
+            <label style={{ fontWeight: "normal" }}>Description</label>
             <textarea rows={5}
                       value={child.description}
                       name="description"
@@ -110,24 +110,28 @@ const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => 
               </div>
             </div>
 
-            <label> Guideline URI</label>
+            <label style={{ fontWeight: "normal" }}> Guideline URI</label>
             <input
               value={!child.guidelineUri ? "" : child.guidelineUri}
               name="guidelineUri"
               onChange={(e) => updateChildData(e)} />
 
 
-            <label>URI</label>
+            <label style={{ fontWeight: "normal" }}>URI</label>
             <input
               disabled={true}
               defaultValue={child.uri}
             />
+
+            <div className={styles.divider} />
+
             <SupportItem
               updateChildData={updateChildData}
               language="html"
               child={child.html}
 
             />
+            <div className={styles.divider} />
           </div>
 
 
@@ -138,12 +142,14 @@ const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => 
               regionSupportCode="NL"
               child={child.angular}
             />
+            <div className={styles.divider} />
             <SupportItem
               updateChildData={updateChildData}
               language="react"
               regionSupportCode="SV"
               child={child.react}
             />
+            <div className={styles.divider} />
           </div>
 
         </form>

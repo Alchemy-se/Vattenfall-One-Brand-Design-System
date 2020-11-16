@@ -166,12 +166,12 @@ const OverviewItem = ({ item, id, setSelectedChild, setSelectedParentID, setSele
         <tr className={styles.expandedRow} key={child.name}>
           <td colSpan="4">
             <div className={styles.nameContainer}>
-            <a href={child.uri}>{child.name}</a>
+              <a href={child.uri}>{child.name}</a>
 
-            {authenticated &&
-            <img onClick={() => onEditClick(child.name)}
-                 className={styles.editIcon} src={edit} alt="" />
-            }
+              {authenticated &&
+              <img onClick={() => onEditClick(child.name)}
+                   className={styles.editIcon} src={edit} alt="" />
+              }
             </div>
 
           </td>

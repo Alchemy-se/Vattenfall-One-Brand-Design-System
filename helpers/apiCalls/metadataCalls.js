@@ -11,7 +11,6 @@ export const fetchAllMetadata = async () => {
     url: `${baseUrl}/collection-metadata`,
 
   })
-  console.log('res: ', res)
   return res.data
 }
 

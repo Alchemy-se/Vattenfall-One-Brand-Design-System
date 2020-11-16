@@ -9,6 +9,9 @@ https://digitaldesign.vattenfall.com
 
 - Clone the repo: `git clone git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git`
 
+### Cms
+For handling metadata and also login in the /overview table when developing we have an cms for that. Its located in bitbucket 
+vf-dds-cms repo. You need .envs located in the 1password vault for vattenfall.  
 ## What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
