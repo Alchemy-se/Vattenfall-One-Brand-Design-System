@@ -1,0 +1,77 @@
+body {
+    background: rgb(237, 241, 246);
+}
+#vf-carousel-container {
+    display: flex;
+    margin-top: 100px;
+   // overflow: hidden;
+    white-space: nowrap;
+}
+.vf-carousel-card-container {
+    height: 484px;
+    background-color: white;
+    width: 360px ;
+    margin-right: 25px;
+    transition: transform .2s;
+    transform-origin: bottom center;
+}
+
+.vf-carousel-card-container:hover {
+    transform: scale(1.05);
+
+
+}
+.vf-carousel-arrows {
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.vf-carousel-image {
+    height: 232px;
+    width: 360px;
+}
+.vf-carousel-body-container {
+    padding-left: 32px;
+    padding-right: 35px;
+    padding-top: 27px;
+}
+
+.vf-carousel-header {
+    color: rgb(0, 0, 0);
+    font-family: "Vattenfall Hall Bold NORDx", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 36px;
+    width: 292px;
+    margin-bottom: 13px;
+}
+
+.vf-carousel-subtitle {
+    color: rgb(0, 0, 0);
+    font-family: "VattenfallHall-Regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    height: 84px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    width: 294px;
+    margin-bottom: 25px;
+}
+.vf-carousel-dots-container {
+    display: block;
+}
+.vf-carousel-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #ff0000;
+    //opacity: 0.3;
+}
+.vf-carousel-dot-active {
+    background-color: #6f42c1;
+}
