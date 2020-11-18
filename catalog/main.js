@@ -180,7 +180,9 @@ export default class App extends Component {
                  className={`${styles.innerContainer} documentation-container`}>
               <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
             </div>
+
           </div>
+
         </AuthContext.Provider>
       </Router>
     )
