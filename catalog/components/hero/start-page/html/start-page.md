@@ -1,24 +1,22 @@
-The Hero component is used for large areas in top of pages to convey a message or describe what the page is about.
-
-### Basic example
-
+### Startpage (only)
 ```html
 responsive: true
 showSource: true
 ---
 <section 
-  class="vf-hero"
+  class="vf-hero vf-hero-startpage"
   style="background-image: url(/img/example-startpage/hero-bg-beach.jpg);"
   >
   <div class="vf-hero__content">
     <h1 class="vf-hero__headline">
-      Fossil-free within <br class="vf-u--sm-hidden" />
-      one generation
+      Hero headline goes <br class="vf-u--sm-hidden" />
+      in two lines here
     </h1>
     <a href="#" class="">
       <img src="/img/example-startpage/play.svg" width="14" style="margin-right: 8px" />
-      Button label
+      Watch now
     </a>
+    <img src=/img/vf-logo-vertical.svg class="vf-hero__vf_logo_vertical" />
   </div>
 </section>
 ```

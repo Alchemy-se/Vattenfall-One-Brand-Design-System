@@ -24,6 +24,7 @@ import Articles from './articles/articles';
 import ArticlesOverview from './articles/articlesOverview';
 import Favicon from './components/favicon/favicon'
 import Icons from './components/icons/icons'
+import Hero from './components/hero/hero';
 
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
@@ -135,7 +136,8 @@ const COMPONENTS_ROUTES = [
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
   { path: '/css/footer', name: 'Footer', mdFile: require('./components/footer/basic-example/html/basic-example.md') },
   { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
-  { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
+  { path: '/css/hero', name: 'Hero', component: <Hero/>},
+  // { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
   { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },

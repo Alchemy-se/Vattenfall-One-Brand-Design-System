@@ -85,9 +85,9 @@ function Header(props) {
               className={[styles.menuContainer, styles.leftAlign]}
         >
 
-          <Menu.Item>
+          {/* <Menu.Item>
             <Search />
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu>
 
         <Menu mode={"horizontal"} onClick={props.onClick}
