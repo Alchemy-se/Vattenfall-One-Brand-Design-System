@@ -90,7 +90,7 @@ const Carusel = () => {
       </div>
 
       <div className="vf-carousel-controllers">
-        <div className="vf-carousel-dots" />
+        <div className="vf-carousel-indicator-container" />
         <div className="vf-carousel-arrows">
           <span className="vf-icon-arrow-left arrow" id="left-arrow" />
           <span className="vf-icon-arrow-right arrow" id="right-arrow" />

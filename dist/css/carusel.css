@@ -55,13 +55,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.vf-carousel-dots {
+.vf-carousel-indicator-container {
     display: flex;
     width: 110px;
     border: 1px solid;
     justify-content: space-between;
 }
-.vf-carousel-dot {
+.vf-carousel-indicator {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -69,7 +69,7 @@ body {
     background-color: #ff0000;
 }
 
-.vf-carousel-dot-active {
+.vf-carousel-indicator-active {
     background-color: #6f42c1;
 }
 
