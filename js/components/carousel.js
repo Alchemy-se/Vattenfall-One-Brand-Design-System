@@ -1,6 +1,43 @@
 $(document).ready(function () {
-
   (function ($) {
+
+    let isOver = false
+    $("#vf-carousel-container").mouseover(function () {
+      isOver = true
+      console.log("mouse over");
+      $("#vf-carousel-container").on('wheel', function (event) {
+        if (event.originalEvent.deltaX < 0 || event.originalEvent.deltaX > 0) {
+          //console.log('event.originalEvent.deltaX: ', event.originalEvent.deltaX)
+          // add or remove overlay on horizontal scroll
+
+          $("#vf-carousel-container").scroll(
+            function () {
+              console.log("körs ej vid click");
+              /*  console.log('event.originalEvent.deltaX: ', event.originalEvent.deltaX)*/
+              if (isOver) {
+                console.log('isOver: ', isOver)
+                console.log("körs ej vid click");
+
+
+                $().handleOverlay();
+              }
+            })
+
+        }
+
+      });
+
+    });
+
+    $('#vf-carousel-container').mouseleave(function () {
+      console.log("LEAVE");
+
+      isOver = false
+
+      console.log('isOver: ', isOver)
+
+
+    })
 
 
     // checks if the current (this) element is in viewport and within the bounds
@@ -38,8 +75,6 @@ $(document).ready(function () {
 
     // add or remove initial overlay when scrolling.
     $.fn.handleOverlay = function () {
-      console.log("denna ska ej köras!");
-
 
       $('#vf-carousel-container').children('.vf-carousel-card-container').each(function () {
 
@@ -67,17 +102,11 @@ $(document).ready(function () {
     }
 
     // run on load to set initial overlay
-    $().handleOverlay();
-
-    // add or remove overlay on horizontal scroll
-    $("#vf-carousel-container").scroll(function () {
-      $().handleOverlay();
-    })
+   // $().handleOverlay();
 
 
     $('#left-arrow').click(previousSlide);
     $('#right-arrow').click(nextSlide);
-
 
     function nextSlide() {
       const $currentSlide = $('#vf-carousel-container').find('div:first');
@@ -104,22 +133,22 @@ $(document).ready(function () {
     }
 
 
-      const cardContainer = $('.vf-carousel-card-container');
-      console.log('l: ', cardContainer);
+    const cardContainer = $('.vf-carousel-card-container');
+    console.log('l: ', cardContainer);
 
-      const dotsContainer = $('.vf-carousel-dots');
+    const dotsContainer = $('.vf-carousel-dots');
 
-      for (let i = 0; i < cardContainer.length; i++) {
+    for (let i = 0; i < cardContainer.length; i++) {
 
 
-        // create dots
-        dotsContainer.append('<div class="vf-carousel-dot"></div>');
-        if(i === 3){
-          console.log('dotsContainer.index(): ', dotsContainer.index())
-
-        }
+      // create dots
+      dotsContainer.append('<div class="vf-carousel-dot"></div>');
+      if (i === 3) {
+        console.log('dotsContainer.index(): ', dotsContainer.index())
 
       }
+
+    }
 
 
   })(jQuery);

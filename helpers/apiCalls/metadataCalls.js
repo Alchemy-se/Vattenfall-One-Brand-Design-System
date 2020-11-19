@@ -10,8 +10,9 @@ export const fetchAllMetadata = async () => {
     method: 'GET',
     url: `${baseUrl}/collection-metadata`,
 
-  })
-  return res.data
+  });
+
+  return res.data;
 }
 
 export const updateMetadata = async (data) => {
