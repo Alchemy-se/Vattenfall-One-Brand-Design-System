@@ -176,7 +176,7 @@ export default class App extends Component {
               selectedKeys={this.state.selectedKeysSubmenu}
             />
             {/*<div className={styles.innerContainer} >*/}
-            <div style={{ marginTop: authenticated ? "30px" : 0 }}
+            <div style={{ marginTop: authenticated ? "30px" : 0}}
                  className={`${styles.innerContainer} documentation-container`}>
               <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
             </div>

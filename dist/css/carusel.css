@@ -5,13 +5,14 @@ body {
 #vf-carousel-container {
     display: flex;
     margin-top: 100px;
-   // border: 1px solid black;
+    border: 1px solid black;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     padding-top: 25px;
+    box-sizing: border-box;
 }
 .vf-carousel-card-overlay {
     width: 300px;
@@ -43,28 +44,58 @@ body {
     position:relative;
 
 }
-.m-fadeIn {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 300ms;
-}
+
 
 
 /*.vf-carousel-card-container:hover {
     transform: scale(1.05);
 }*/
 
+.vf-carousel-controllers {
+    display: flex;
+    justify-content: space-between;
+}
+.vf-carousel-dots {
+    display: flex;
+    width: 110px;
+    border: 1px solid;
+    justify-content: space-between;
+}
+.vf-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #ff0000;
+}
+
+.vf-carousel-dot-active {
+    background-color: #6f42c1;
+}
+
 .vf-carousel-arrows {
     display: flex;
-    position: fixed;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+   // position: fixed;
+   // width: 300px;
+   // margin-left: auto;
+    //margin-right: auto;
+    //justify-content: space-between;
+    //left: 50%;
+   // right: 50%;
     border: 1px solid black;
-    left: 50%;
-    right: 50%;
+    cursor: pointer;
 }
+
+.vf-carousel-arrows .arrow:hover {
+   color: #2071b5;
+
+}.vf-carousel-arrows .arrow {
+    color: #1964a3;
+
+}
+
+
+
 
 .vf-carousel-image {
     height: 232px;
@@ -101,19 +132,5 @@ body {
     margin-bottom: 25px;
 }
 
-.vf-carousel-dots-container {
-    display: block;
-}
 
-.vf-carousel-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    border: 1px solid;
-    background-color: #ff0000;
-/ / opacity: 0.3;
-}
 
-.vf-carousel-dot-active {
-    background-color: #6f42c1;
-}

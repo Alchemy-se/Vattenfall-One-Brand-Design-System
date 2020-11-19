@@ -7,7 +7,6 @@ const Carusel = () => {
     <div>
 
 
-
       <div id="vf-carousel-container">
 
         <div id="1" className="vf-carousel-card-container">
@@ -90,13 +89,14 @@ const Carusel = () => {
 
       </div>
 
-      <div className="vf-carousel-dots" />
-      <div className="vf-carousel-arrows">
-        <div id="left-arrow">left</div>
-        <div id="right-arrow">right</div>
+      <div className="vf-carousel-controllers">
+        <div className="vf-carousel-dots" />
+        <div className="vf-carousel-arrows">
+          <span className="vf-icon-arrow-left arrow" id="left-arrow" />
+          <span className="vf-icon-arrow-right arrow" id="right-arrow" />
+        </div>
       </div>
     </div>
-
 
 
   )
