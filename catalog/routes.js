@@ -30,6 +30,7 @@ import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
 
 // Guidelines
+import GuidelinesHero from "./guidelines/hero/Hero";
 import GuidelinesWrapper from "./guidelines/wrapper";
 import GuidelinesButtons from './guidelines/buttons/Buttons';
 import GuidelinesForms from './guidelines/forms/Forms';
@@ -137,7 +138,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/footer', name: 'Footer', mdFile: require('./components/footer/basic-example/html/basic-example.md') },
   { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
   { path: '/css/hero', name: 'Hero', component: <Hero/>},
-  // { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
+
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
   { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
@@ -188,6 +189,11 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/info-graphics',
     name: 'Info Graphics',
     component: <GuidelinesWrapper><GuidelinesInfoGraphics /></GuidelinesWrapper>
+  },
+  {
+    path: '/guidelines/hero',
+    name: 'Hero',
+    component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
   }
 ]
 

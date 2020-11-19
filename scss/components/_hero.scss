@@ -1,6 +1,5 @@
 .vf-hero {
   position: relative;
-  background: $vattenfall-blue-grey;
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
@@ -34,9 +33,11 @@
 }
 
 .vf-hero-oneline {
-  height: 303px;
-  min-height: 303px;
+  height: 310px;
   border: none;
+  @include media-breakpoint-down(sm) {
+    height: 302px;
+  } 
 }
  
 .vf-hero-twoline-button {
@@ -65,7 +66,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: none;
   border: none;
   margin: 40px 0;
 }
@@ -115,6 +115,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 130px;
+    width: 100%;
   }
 }
  

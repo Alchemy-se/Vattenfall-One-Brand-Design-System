@@ -9,7 +9,7 @@ import twoTextlineHero from './two-textlines/html/two-textlines.md';
 import twoTextlineAndButtonHero from './two-textline-button/html/two-textline-button.md';
 import textIntroButtonsHero from './intro-buttons/html/intro-buttons.md';
  
-const markdown = basicHero + startPageHero + oneTextlineHero + oneTextlineAndButtonHero + twoTextlineHero + twoTextlineAndButtonHero + textIntroButtonsHero;
+const markdown = basicHero + startPageHero + twoTextlineAndButtonHero + oneTextlineAndButtonHero + twoTextlineHero + oneTextlineHero + textIntroButtonsHero;
  
 export default class Hero extends Component {
   render() {

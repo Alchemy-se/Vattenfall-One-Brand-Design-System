@@ -14,8 +14,8 @@ showSource: true
       in two lines here
     </h1>
     <div class="vf-hero-button-container">
-    <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Yellow button</button>
-  </div>
+      <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Button label</button>
+    </div>
   </div>
 </section>
 ```
