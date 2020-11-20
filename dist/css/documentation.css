@@ -91,6 +91,7 @@ p {
 }
 
 .ant-drawer-left.ant-drawer-open .ant-drawer-content-wrapper {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -185,5 +186,4 @@ p {
   color: #222222;
   font-weight: 500;
 }
-
 /*# sourceMappingURL=documentation.css.map */

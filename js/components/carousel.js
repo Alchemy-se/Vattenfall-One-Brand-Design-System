@@ -19,11 +19,10 @@ $(document).ready(function () {
       delay: 50 //delay in milliseconds
     };
 
-
-
-
     // create indicator dots
     for (let i = 0; i < cardContainer.length; i++) {
+
+
       if (i === 0) {
         // add active class to first indicator
         indicatorContainer.append('<div class="vf-carousel-indicator vf-carousel-indicator-active"></div>');
@@ -34,10 +33,22 @@ $(document).ready(function () {
     // creat attribute index to every card
     carouselContainer.children(cardContainer).each(function (i) {
       $(this).attr("index", i)
+      console.log('i: ', i)
+      if (i === 1) {
+        console.log("ifff");
+
+
+        $(this).addClass('vf-carousel-next-slide-overlay')
+      }
+
     });
 
     // detect if mouse is inside the carousel container div
     carouselContainer.mouseover(function () {
+      if (windowWidth < 600) {
+        return
+
+      }
 
       hoverCarousel = true;
       // mousewheel/scroll button on mouse
@@ -65,40 +76,24 @@ $(document).ready(function () {
 
     carouselContainer.mouseleave(() => hoverCarousel = false);
 
+
     // mobile screen
     if (windowWidth < 576) {
-      carouselContainer.scroll(() => {
+      carouselContainer.scroll(function () {
         carouselContainer.children('.vf-carousel-card-container').each(async function (i, object) {
+
+
+          observer.observe(object)
 
           // find index of the active card and pass it down to handleActiveIndicator which
           // highlight respective indicator dot
           const index = await findActiveCard(object);
-          handleActiveIndicator(index)
+          handleActiveIndicator(index);
+
+
         });
       })
     }
-
-
-    // checks if the current (this) element is in viewport and within the bounds
-    // used when scrolling horizontal.
-    $.fn.isOnScreen = function () {
-
-      const horizontalOffset = 120
-      const win = $(window);
-      const bounds = this.offset();
-      const viewport = {
-        left: win.scrollLeft()
-      };
-
-      viewport.right = viewport.left + win.width();
-      viewport.right = viewport.right - horizontalOffset;
-      viewport.left = viewport.left + horizontalOffset;
-      bounds.right = bounds.left + this.outerWidth();
-
-      return (!(viewport.right < bounds.left || viewport.left > bounds.right));
-
-    };
-
 
     const findActiveCard = (entries) => {
       return new Promise((resolve) => {
@@ -116,17 +111,56 @@ $(document).ready(function () {
         observer.observe(entries);
 
       });
-    }
+    };
 
 
-    function yo() {
-      console.log("yo körs");
+    const centerOfWindow = windowWidth / 2
+    const find = (entries, observer) => {
 
 
+      entries.forEach(entry => {
 
-    }
+        if (centerOfWindow < entry.intersectionRect.right) {
 
 
+          if (entry.isIntersecting) {
+            if (entry.intersectionRatio < 0.25) {
+              entry.target.classList.add('vf-carousel-next-slide-overlay')
+            } else {
+              entry.target.classList.remove('vf-carousel-next-slide-overlay')
+            }
+            observer.unobserve(entry.target)
+
+          }
+        }
+
+
+      })
+
+    };
+
+
+    let observer = new IntersectionObserver(find);
+
+    // checks if the current (this) element is in viewport and within the bounds
+    // used when scrolling horizontal.
+    $.fn.isOnScreen = function () {
+
+      const horizontalOffset = 10
+      const win = $(window);
+      const bounds = this.offset();
+      const viewport = {
+        left: win.scrollLeft()
+      };
+
+      viewport.right = viewport.left + win.width();
+      viewport.right = viewport.right - horizontalOffset;
+      viewport.left = viewport.left + horizontalOffset;
+      bounds.right = bounds.left + this.outerWidth();
+
+      return (!(viewport.right < bounds.left || viewport.left > bounds.right));
+
+    };
 
 
     /**
@@ -153,7 +187,7 @@ $(document).ready(function () {
     };
 
     // run on load to set initial overlay
-    $().handleOverlay();
+    //$().handleOverlay();
 
     // add or remove overlay when clicking the arrows
     function checkBoundsOnClick() {
