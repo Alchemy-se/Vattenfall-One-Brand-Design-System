@@ -1,6 +1,10 @@
 $(document).ready(function () {
   (function ($) {
 
+    const windowWidth = $(window).width()
+    const cardContainer = $('.vf-carousel-card-container');
+    const indicatorContainer = $('.vf-carousel-indicator-container');
+    let carouselContainer = $('#vf-carousel-container');
 
     // Used for controlling if the scroll event should be allowed to run.
     // If we omit this the scroll event will fire on the arrow right/left buttin press
@@ -15,34 +19,64 @@ $(document).ready(function () {
       delay: 50 //delay in milliseconds
     };
 
-    let carouselContainer = $('#vf-carousel-container');
+
+
+
+    // create indicator dots
+    for (let i = 0; i < cardContainer.length; i++) {
+      if (i === 0) {
+        // add active class to first indicator
+        indicatorContainer.append('<div class="vf-carousel-indicator vf-carousel-indicator-active"></div>');
+      } else {
+        indicatorContainer.append('<div class="vf-carousel-indicator"></div>');
+      }
+    }
+    // creat attribute index to every card
+    carouselContainer.children(cardContainer).each(function (i) {
+      $(this).attr("index", i)
+    });
 
     // detect if mouse is inside the carousel container div
     carouselContainer.mouseover(function () {
+
       hoverCarousel = true;
       // mousewheel/scroll button on mouse
       carouselContainer.on('wheel', function (event) {
         // fire only if the scroll is horizontal
         if (event.originalEvent.deltaX < 0 || event.originalEvent.deltaX > 0) {
           carouselContainer.scroll(() => {
-              if (!hoverCarousel) {
-                return
+
+            if (!hoverCarousel) {
+              return
+            }
+            // Only run function if the mouse is hovering the carousel container div
+            if (hoverCarousel) {
+              if (scrollHandling.allow) {
+
+                $().handleOverlay();
+                scrollHandling.allow = false;
+                setTimeout(scrollHandling.reAllow, scrollHandling.delay);
               }
-              // Only run function if the mouse is hovering the carousel container div
-              if (hoverCarousel) {
-                if (scrollHandling.allow) {
-                  $().handleOverlay();
-                  scrollHandling.allow = false;
-                  setTimeout(scrollHandling.reAllow, scrollHandling.delay);
-                }
-              }
-            })
+            }
+          })
         }
       });
     });
 
     carouselContainer.mouseleave(() => hoverCarousel = false);
 
+    // mobile screen
+    if (windowWidth < 576) {
+      carouselContainer.scroll(() => {
+        carouselContainer.children('.vf-carousel-card-container').each(async function (i, object) {
+
+          // find index of the active card and pass it down to handleActiveIndicator which
+          // highlight respective indicator dot
+          const index = await findActiveCard(object);
+          handleActiveIndicator(index)
+        });
+      })
+    }
 
 
     // checks if the current (this) element is in viewport and within the bounds
@@ -66,6 +100,33 @@ $(document).ready(function () {
     };
 
 
+    const findActiveCard = (entries) => {
+      return new Promise((resolve) => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              if (entry.intersectionRatio === 1) {
+                const visibleIndex = entry.target.getAttribute('index')
+                resolve(visibleIndex)
+              }
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(entries);
+
+      });
+    }
+
+
+    function yo() {
+      console.log("yo körs");
+
+
+
+    }
+
+
 
 
     /**
@@ -75,17 +136,18 @@ $(document).ready(function () {
     function HorizontallyBound($parentDiv, $childDiv) {
       const parentRect = $parentDiv[0].getBoundingClientRect();
       const childRect = $childDiv[0].getBoundingClientRect();
-      return /*parentRect.left >= childRect.right || */parentRect.right <= childRect.left;
+      return parentRect.right <= childRect.left;
     }
 
     // add or remove initial overlay when scrolling.
     $.fn.handleOverlay = function () {
-      carouselContainer.children('.vf-carousel-card-container').each(function () {
+
+      carouselContainer.children('.vf-carousel-card-container').each(function (index) {
         const currentElement = $(this);
         if (currentElement.isOnScreen()) {
-          $(currentElement).removeClass('vf-carousel-card-overlay')
+          $(currentElement).removeClass('vf-carousel-next-slide-overlay')
         } else {
-          $(currentElement).addClass('vf-carousel-card-overlay')
+          $(currentElement).addClass('vf-carousel-next-slide-overlay')
         }
       })
     };
@@ -96,16 +158,16 @@ $(document).ready(function () {
     // add or remove overlay when clicking the arrows
     function checkBoundsOnClick() {
       carouselContainer.children('.vf-carousel-card-container').each(function () {
+
         const currentElement = $(this);
         const inViewPort = HorizontallyBound(carouselContainer, currentElement)
         if (inViewPort) {
-          $(currentElement).addClass('vf-carousel-card-overlay')
+          $(currentElement).addClass('vf-carousel-next-slide-overlay')
         } else {
-          $(currentElement).removeClass('vf-carousel-card-overlay')
+          $(currentElement).removeClass('vf-carousel-next-slide-overlay')
         }
       })
     }
-
 
 
     $('#left-arrow').click(previousSlide);
@@ -138,22 +200,16 @@ $(document).ready(function () {
     }
 
 
-    const cardContainer = $('.vf-carousel-card-container');
-    console.log('l: ', cardContainer);
-
-    const indicatorContainer = $('.vf-carousel-indicator-container');
-
-    for (let i = 0; i < cardContainer.length; i++) {
-
-
-      // create dots
-      indicatorContainer.append('<div class="vf-carousel-indicator"></div>');
-      if (i === 3) {
-        console.log('dotsContainer.index(): ',indicatorContainer.index())
-        $('.vf-carousel-indicator').addClass("vf-carousel-indicator-active")
-
-      }
-
+    // adds or remove class to indicator if the carousel card is in viewport
+    function handleActiveIndicator(index) {
+      $(".vf-carousel-indicator").each(function (i, object) {
+        let activeIndicator = $(this)
+        if (parseInt(index) === i) {
+          activeIndicator.addClass('vf-carousel-indicator-active')
+        } else {
+          activeIndicator.removeClass('vf-carousel-indicator-active')
+        }
+      });
     }
 
 
