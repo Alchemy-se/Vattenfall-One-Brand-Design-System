@@ -56,7 +56,7 @@ import SharableImage from "./components/shareable-image/sharable-image";
 import SmallQuote from "./components/small-qoute/small-quote";
 import ThreeColumn from "./components/three-column/three-column";
 import Login from "./admin/login";
-import Carusel from "./test/carusel";
+import Carousel from "./development/carousel";
 
 
 function usePageViews(onRouteChange) {
@@ -234,8 +234,8 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/login'}>
         <Login />
       </Route>
-      <Route path={'/test'}>
-        <Carusel />
+      <Route path={'/development/carousel'}>
+        <Carousel />
       </Route>
       <Route path="/">
         <Welcome />

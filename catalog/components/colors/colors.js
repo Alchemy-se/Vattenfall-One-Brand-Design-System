@@ -88,7 +88,7 @@ export default class Colors extends Component {
       <div>
         <div
           style={{ position: "absolute", top: 0, left: 500, right: 0 }}
-          onClick={() => this.send()}>test
+          onClick={() => this.send()}>development
         </div>
         <input type="file" />
       </div>

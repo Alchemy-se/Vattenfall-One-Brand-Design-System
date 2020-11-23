@@ -7,7 +7,7 @@ RUN yarn install
 
 COPY . .
 
-# RUN CI=true yarn test
+# RUN CI=true yarn development
 RUN yarn build
 RUN cp -r ./dist /app/build
 

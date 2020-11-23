@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const Carusel = () => {
+const Carousel = () => {
   return (
 
 
@@ -97,4 +97,4 @@ const Carusel = () => {
   )
 };
 
-export default Carusel;
+export default Carousel;
