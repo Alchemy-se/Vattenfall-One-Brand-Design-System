@@ -50,6 +50,7 @@ const MENU_GROUP_ITEMS = {
 		{path: "/css/form", name: "Form"},
 		{path: "/css/hero", name: "Hero"},
 		{path: "/css/navigation", name: "Navigation"},
+		{path: "/css/carousel", name: "Carousel"},
 	],
 	utilities: [
 		{path: "/utilities", name: "Intro"},

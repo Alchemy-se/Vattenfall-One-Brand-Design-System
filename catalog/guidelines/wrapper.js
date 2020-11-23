@@ -65,6 +65,7 @@ class GuidelinesWrapper extends Component {
       return null;
     }
     const tocData = this.state.tocData
+
     const links = tocData.map(item => {
       const value = item.name;
       const id = item.id
@@ -85,6 +86,8 @@ class GuidelinesWrapper extends Component {
 
 
   render() {
+
+
     return (
       <div className={styles.guidelinesContainer} ref={this.containerRef}>
         {this.tableOfContents()}

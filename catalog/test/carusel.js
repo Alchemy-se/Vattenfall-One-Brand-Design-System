@@ -5,16 +5,13 @@ const Carusel = () => {
 
 
     <div>
-      <div style={{ marginLeft: '100px' }}id="test"/>
-
-
       <div id="vf-carousel-container">
 
-        <div id="1" className="vf-carousel-card-container">
+        <div  className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
             <div className="vf-carousel-header">1 news title goes here news title goes</div>
-            <div className="vf-carousel-subtitle">Here you can see your electricity price and sign electricity contracts sign electricity contractssign
+            <div className="vf-carousel-subtitle">Cum sociis natoque penatibus et magnis dis parturient. Donec sed odio operae, eu vulputate felis rhoncus. Nec dubitamus multa iter quae et nos invenerat. Quisque ut dolor gravida, placerat libero vel, euismod. Tu quoque, Brute, fili mi, nihil timor populi, nihil!
             </div>
             <a href="#" className="vf-link-with-arrow vf-carousel-cta">Button label</a>
           </div>
@@ -88,9 +85,7 @@ const Carusel = () => {
 
 
       </div>
-
         <div className="vf-carousel-indicator-container" />
-
         <div className="vf-carousel-arrows">
           <span className="vf-icon-arrow-left arrow" id="left-arrow" />
           <span className="vf-icon-arrow-right arrow" id="right-arrow" />

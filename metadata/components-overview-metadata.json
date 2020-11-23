@@ -1,7 +1,7 @@
 {
   "amount": {
     "html": {
-      "global": 130
+      "global": 131
     },
     "angular": {
       "global": 0,
@@ -623,6 +623,65 @@
         {
           "id": "example",
           "uri": "/components/css/card/#example",
+          "name": "Example",
+          "guidelineUri": false,
+          "description": null,
+          "react": {
+            "exists": false,
+            "status": -1,
+            "globalUse": false,
+            "support": [
+              {
+                "region": "SV",
+                "status": -1
+              }
+            ]
+          },
+          "vue": {
+            "exists": false,
+            "status": -1,
+            "globalUse": false,
+            "support": []
+          },
+          "angular": {
+            "exists": false,
+            "status": -1,
+            "globalUse": false,
+            "support": [
+              {
+                "region": "NL",
+                "status": -1
+              }
+            ]
+          },
+          "html": {
+            "exists": true,
+            "status": 0,
+            "globalUse": true,
+            "support": []
+          },
+          "figmaUrl": false,
+          "photoshopUrl": false,
+          "adobeXDUrl": false,
+          "sketchUrl": false,
+          "abstractUrl": false
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "uri": "/components/css/carousel",
+      "guidelineUri": false,
+      "description": "",
+      "figmaUrl": null,
+      "photoshopUrl": null,
+      "adobeXDUrl": null,
+      "sketchUrl": null,
+      "abstractUrl": null,
+      "children": [
+        {
+          "id": "example",
+          "uri": "/components/css/carousel/#example",
           "name": "Example",
           "guidelineUri": false,
           "description": null,

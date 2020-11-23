@@ -79,6 +79,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/drop-down', name: 'Drop-down List', component: <DropdownList /> },
   { path: '/css/input', name: 'Input', component: <Input /> },
 
+
   {
     path: '/css/gdpr-consent-module',
     name: 'GDPR Consent Module',
@@ -137,6 +138,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/footer', name: 'Footer', mdFile: require('./components/footer/basic-example/html/basic-example.md') },
   { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
   { path: '/css/hero', name: 'Hero', mdFile: require('./components/hero/basic-example/html/basic-example.md') },
+  { path: '/css/carousel', name: 'Carousel', mdFile: require('./components/carousel/standard/html/carousel.md') },
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
   { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
