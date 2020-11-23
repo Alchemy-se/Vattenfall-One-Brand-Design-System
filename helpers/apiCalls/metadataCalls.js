@@ -43,9 +43,17 @@ export const fetchAmount = async () => {
   const res = await axios({
     method: 'GET',
     url: `${baseUrl}/collection-metadata/amount`,
-
   })
+  return res.data
+}
 
-
+export const fetchDataByUri = async (uri) => {
+  const res = await axios({
+    method: 'POST',
+    url: `${baseUrl}/collection-metadata/getByUri`,
+    data: {
+      "uri": uri
+    }
+  })
   return res.data
 }

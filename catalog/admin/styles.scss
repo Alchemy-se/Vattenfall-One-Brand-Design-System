@@ -72,3 +72,23 @@
 
 
 }
+
+.modalContainer {
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 20px;
+  background-color: white;
+
+  .modalContent {
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+  }
+}
