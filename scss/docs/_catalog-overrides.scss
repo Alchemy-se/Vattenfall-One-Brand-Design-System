@@ -177,7 +177,8 @@ p {
 }*/
 
 .markdown-body>:last-child {
-  padding-bottom: calc(80vh - 400px);
+  // padding-bottom: calc(80vh - 400px);
+  padding-bottom: 100px;
 }
 .markdown-body.no-padding-bottom {
   padding-bottom: initial;

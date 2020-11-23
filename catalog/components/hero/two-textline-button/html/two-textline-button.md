@@ -1,5 +1,4 @@
- 
-### Two text lines and button
+### 2 text lines and button
 ```html
 responsive: true
 showSource: true

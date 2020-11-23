@@ -1,4 +1,4 @@
-### Two text lines
+### 2 text lines
  
 ```html
 responsive: true

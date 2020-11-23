@@ -1,7 +1,7 @@
 {
-  "id": "two-textline-button",
-  "uri": "#two-textline-button",
-  "name": "Two text lines and button",
+  "id": "2-text-lines-button",
+  "uri": "#2-text-lines-button",
+  "name": "2 text lines and button",
   "guidelineUri":false,
   "description": null,
   "react": {

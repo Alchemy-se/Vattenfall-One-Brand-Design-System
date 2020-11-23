@@ -1,7 +1,7 @@
 {
-  "id": "intro-buttons",
-  "uri": "#intro-buttons",
-  "name": "Intro buttons",
+  "id": "text-intro-buttons",
+  "uri": "#text-intro-buttons",
+  "name": "Text intro buttons",
   "guidelineUri":false,
   "description": null,
   "react": {

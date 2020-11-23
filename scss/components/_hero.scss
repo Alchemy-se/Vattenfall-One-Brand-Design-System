@@ -92,14 +92,6 @@
 .vf-hero-intro-buttons {
   height: auto;
 }
- 
-// .vf-hero__content-center {
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .vf-hero-button-container {
   margin: 20px 0;
@@ -120,12 +112,30 @@
 }
  
 .vf-hero__headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  font-weight: bold;
+  max-height: 171px;
+  letter-spacing: 0px;  
+  line-height: 84px;
+  text-align: center;
+  width: 744px;
   color: $white;
   margin: 0 auto;
   max-width: 90%;
-  padding-bottom: 32px;
+  // padding-bottom: 32px;
+  @include media-breakpoint-down(md) {
+    font-size: 60px;
+    line-height: 75px;
+  }
   @include media-breakpoint-down(sm) {
-    padding-bottom: 32px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    height: 144px;
+    font-size: 2.75rem;
     padding-bottom: 10px;
     width: 300px;
   }
@@ -149,4 +159,5 @@
  
 .vf-hero__text-buttons {
   position: relative;
+  // margin-top: 20px;
 }

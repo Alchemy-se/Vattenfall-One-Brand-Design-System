@@ -1,4 +1,5 @@
-### One text line
+### 1 text line
+
 ```html
 responsive: true
 showSource: true

@@ -1,7 +1,4 @@
-The Hero component is used for large areas in top of pages to convey a message or describe what the page is about.
-
-### Basic example
-
+### Hero with video
 ```html
 responsive: true
 showSource: true

@@ -1,4 +1,4 @@
-### Intro and buttons
+### Text intro buttons
  
 ```html
 responsive: true

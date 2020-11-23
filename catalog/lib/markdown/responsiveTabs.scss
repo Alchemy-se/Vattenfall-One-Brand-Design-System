@@ -133,6 +133,9 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
+  @media(max-width: 640px) {
+   padding: 0;
+  }
 }
 
 .iframePhone {

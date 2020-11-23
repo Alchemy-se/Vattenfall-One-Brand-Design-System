@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Hero",
+    "description": "The Hero component is used for large blocks at the top of webpages to convey a key message or describe what the page is about.",
+    "type": "guideline",
+    "uri": "/guidelines/hero",
+    "objectID": "hero-guideline",
+    "children": [
+      {
+        "name": "Hero with video"
+      },
+      {
+        "name": "Startpage"
+      },
+      {
+        "name": "One textLine"
+      },
+      {
+        "name": "One textline button"
+      },
+      {
+        "name": "2 text lines"
+      },
+      {
+        "name": "2 text lines button"
+      },
+      {
+        "name": "Introtext buttons"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#hero-with-video",
+    "description": "",
+    "objectID": "hero-with-video-guideline",
+    "name": "Hero with video",
+    "id": "hero-with-video-example"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#startpage",
+    "description": "",
+    "objectID": "startpage-guideline",
+    "name": "Startpage",
+    "id": "hero-startpage"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#one-text-line",
+    "description": "",
+    "objectID": "one-text-line-guideline",
+    "name": "One text line",
+    "id": "one-text-line"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#one-textline-button",
+    "description": "",
+    "objectID": "one-textline-button-guideline",
+    "name": "One text line button",
+    "id": "one-text-line-button"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#2-text-lines-button",
+    "description": "",
+    "objectID": "2-text-lines-button-guideline",
+    "name": "2 text lines button",
+    "id": "2-text-lines-button"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#two-textlines",
+    "description": "",
+    "objectID": "two-textlines-guideline",
+    "name": "Two text line",
+    "id": "two-text-lines"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#intro-text-buttons",
+    "description": "",
+    "objectID": "intro-text-buttons-guideline",
+    "name": "Intro text buttons",
+    "id": "intro-text-buttons"
+  }
+]

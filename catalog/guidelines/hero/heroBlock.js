@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroBlock = ({title, text, textlineTwo}) => {
+const HeroBlock = ({title, text, textlineTwo, children}) => {
   return (
     <div className="vf-row w-100" style={{ margin: '100px 0 0 0' }}>
       <div className="vf-col">
@@ -9,6 +9,7 @@ const HeroBlock = ({title, text, textlineTwo}) => {
         {textlineTwo && 
           <p>{textlineTwo}</p>
         }
+        {children}
       </div>
     </div>
   );
