@@ -167,6 +167,8 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: center;
+        margin-top: 30px;
 
     }
 
@@ -175,16 +177,13 @@ body {
         height: 8px;
         border-radius: 50%;
         border: 1px solid;
-        background-color: gray;
+        background-color: #999999;
+        margin-left: 9px;
     }
 
     .vf-carousel-indicator-active {
-        background-color: #fff;
+        background-color: #1964a3;
     }
 
 }
-
-
-
-
 /*# sourceMappingURL=carusel.css.map */

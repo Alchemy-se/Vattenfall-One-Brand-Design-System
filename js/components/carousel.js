@@ -134,6 +134,9 @@ $(document).ready(function () {
           }
         }
 
+        // todo måndag refaktorisera do gamla scroll sakerna och kolla o an kan använda observern
+        // styling på indikatorer
+
 
       })
 
