@@ -64,131 +64,78 @@ showSource: false
 
 ```
 
-# All icons
-
-```html
+# Action Icons
+````html
 showSource: false
 ---
 <div class="vf-container">
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-placeholder" data-tooltip="vf-icon-placeholder"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-settings" data-tooltip="vf-icon-settings"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-up "" data-tooltip="vf-icon-up ""></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-down" data-tooltip="vf-icon-down"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-left" data-tooltip="vf-icon-left"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-right" data-tooltip="vf-icon-right"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-help" data-tooltip="vf-icon-help"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-31" data-tooltip="vf-icon-calendar-31"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pin" data-tooltip="vf-icon-pin"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-clock" data-tooltip="vf-icon-clock"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-twitter" data-tooltip="vf-icon-twitter"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vimeo" data-tooltip="vf-icon-vimeo"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-whatsapp" data-tooltip="vf-icon-whatsapp"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-xing" data-tooltip="vf-icon-xing"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-youtube" data-tooltip="vf-icon-youtube"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-alarm" data-tooltip="vf-icon-alarm"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-cloudy" data-tooltip="vf-icon-cloudy"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-coffee-maker" data-tooltip="vf-icon-coffee-maker"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-console" data-tooltip="vf-icon-console"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-desklamp" data-tooltip="vf-icon-desklamp"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-desktop-computer" data-tooltip="vf-icon-desktop-computer"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-dishwasher" data-tooltip="vf-icon-dishwasher"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-door-closed" data-tooltip="vf-icon-door-closed"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-door-open" data-tooltip="vf-icon-door-open"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-dryer" data-tooltip="vf-icon-dryer"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-kettle" data-tooltip="vf-icon-electric-kettle"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-stove" data-tooltip="vf-icon-electric-stove"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-tooth-brush" data-tooltip="vf-icon-electric-tooth-brush"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-espresso-machine" data-tooltip="vf-icon-espresso-machine"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-extractor-hood" data-tooltip="vf-icon-extractor-hood"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fairy-lights" data-tooltip="vf-icon-fairy-lights"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-freezer" data-tooltip="vf-icon-freezer"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fridge-freezer" data-tooltip="vf-icon-fridge-freezer"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fridge" data-tooltip="vf-icon-fridge"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-gas-stove" data-tooltip="vf-icon-gas-stove"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-hair-straightener" data-tooltip="vf-icon-hair-straightener"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-hairdryer" data-tooltip="vf-icon-hairdryer"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-indution-stove" data-tooltip="vf-icon-indution-stove"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-kettle" data-tooltip="vf-icon-kettle"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-kitchen-machine" data-tooltip="vf-icon-kitchen-machine"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-laptop" data-tooltip="vf-icon-laptop"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-light-switch" data-tooltip="vf-icon-light-switch"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-1" data-tooltip="vf-icon-lightbulb-step-1"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-2" data-tooltip="vf-icon-lightbulb-step-2"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-3" data-tooltip="vf-icon-lightbulb-step-3"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-4" data-tooltip="vf-icon-lightbulb-step-4"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-5" data-tooltip="vf-icon-lightbulb-step-5"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-microwave" data-tooltip="vf-icon-microwave"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-moon" data-tooltip="vf-icon-moon"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-outdoor-lamp" data-tooltip="vf-icon-outdoor-lamp"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-patio-heater" data-tooltip="vf-icon-patio-heater"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-phone-charging" data-tooltip="vf-icon-phone-charging"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pressing-iron" data-tooltip="vf-icon-pressing-iron"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-radiator" data-tooltip="vf-icon-radiator"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-rain" data-tooltip="vf-icon-rain"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-router" data-tooltip="vf-icon-router"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smart-plug" data-tooltip="vf-icon-smart-plug"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smart-thermostat" data-tooltip="vf-icon-smart-thermostat"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smoke-alarm" data-tooltip="vf-icon-smoke-alarm"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-snow" data-tooltip="vf-icon-snow"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-stove-with-grill" data-tooltip="vf-icon-stove-with-grill"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sun" data-tooltip="vf-icon-sun"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-surveillance" data-tooltip="vf-icon-surveillance"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-table-lamp-two" data-tooltip="vf-icon-table-lamp-two"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-table-lamp" data-tooltip="vf-icon-table-lamp"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-thunder" data-tooltip="vf-icon-thunder"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-tv-remote" data-tooltip="vf-icon-tv-remote"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vacuum-cleaner" data-tooltip="vf-icon-vacuum-cleaner"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-ventilator" data-tooltip="vf-icon-ventilator"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-washing-machine" data-tooltip="vf-icon-washing-machine"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-blinds" data-tooltip="vf-icon-window-blinds"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-closed" data-tooltip="vf-icon-window-closed"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-open" data-tooltip="vf-icon-window-open"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window" data-tooltip="vf-icon-window"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-1" data-tooltip="vf-icon-calendar-1"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-2" data-tooltip="vf-icon-calendar-2"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-3" data-tooltip="vf-icon-calendar-3"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-4" data-tooltip="vf-icon-calendar-4"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-5" data-tooltip="vf-icon-calendar-5"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-6" data-tooltip="vf-icon-calendar-6"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-7" data-tooltip="vf-icon-calendar-7"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-8" data-tooltip="vf-icon-calendar-8"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-9" data-tooltip="vf-icon-calendar-9"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-10" data-tooltip="vf-icon-calendar-10"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-11" data-tooltip="vf-icon-calendar-11"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-12" data-tooltip="vf-icon-calendar-12"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-13" data-tooltip="vf-icon-calendar-13"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-14" data-tooltip="vf-icon-calendar-14"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-15" data-tooltip="vf-icon-calendar-15"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-16" data-tooltip="vf-icon-calendar-16"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-17" data-tooltip="vf-icon-calendar-17"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-18" data-tooltip="vf-icon-calendar-18"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-19" data-tooltip="vf-icon-calendar-19"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-20" data-tooltip="vf-icon-calendar-20"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-21" data-tooltip="vf-icon-calendar-21"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-22" data-tooltip="vf-icon-calendar-22"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-23" data-tooltip="vf-icon-calendar-23"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-24" data-tooltip="vf-icon-calendar-24"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-25" data-tooltip="vf-icon-calendar-25"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-26" data-tooltip="vf-icon-calendar-26"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-27" data-tooltip="vf-icon-calendar-27"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-28" data-tooltip="vf-icon-calendar-28"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-29" data-tooltip="vf-icon-calendar-29"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-30" data-tooltip="vf-icon-calendar-30"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-skype" data-tooltip="vf-icon-skype"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-check" data-tooltip="vf-icon-check"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-close" data-tooltip="vf-icon-close"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-flickr" data-tooltip="vf-icon-flickr"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-home" data-tooltip="vf-icon-home"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-instagram" data-tooltip="vf-icon-instagram"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-less-info" data-tooltip="vf-icon-less-info"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-link" data-tooltip="vf-icon-link"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-menu" data-tooltip="vf-icon-menu"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-more" data-tooltip="vf-icon-more"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-qr-code" data-tooltip="vf-icon-qr-code"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-linkedin" data-tooltip="vf-icon-linkedin"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-rss" data-tooltip="vf-icon-rss"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-search" data-tooltip="vf-icon-search"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-facebook" data-tooltip="vf-icon-facebook"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-activity-log" data-tooltip="vf-icon-activity-log"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-add-contact" data-tooltip="vf-icon-add-contact"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-alert" data-tooltip="vf-icon-alert"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-align-center" data-tooltip="vf-icon-align-center"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-align-left" data-tooltip="vf-icon-align-left"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-app-settings" data-tooltip="vf-icon-app-settings"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down-left" data-tooltip="vf-icon-arrow-down-left"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down-right" data-tooltip="vf-icon-arrow-down-right"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down" data-tooltip="vf-icon-arrow-down"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-left" data-tooltip="vf-icon-arrow-left"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-right" data-tooltip="vf-icon-arrow-right"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up-left" data-tooltip="vf-icon-arrow-up-left"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up-right" data-tooltip="vf-icon-arrow-up-right"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up" data-tooltip="vf-icon-arrow-up"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-autostart" data-tooltip="vf-icon-autostart"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-blog" data-tooltip="vf-icon-blog"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-call" data-tooltip="vf-icon-call"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-camera" data-tooltip="vf-icon-camera"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-change-availability" data-tooltip="vf-icon-change-availability"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-chat" data-tooltip="vf-icon-chat"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-checkbox" data-tooltip="vf-icon-checkbox"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-download" data-tooltip="vf-icon-download"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-download-pdf" data-tooltip="vf-icon-download-pdf"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-edit" data-tooltip="vf-icon-edit"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-elipsis" data-tooltip="vf-icon-elipsis"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-favourite" data-tooltip="vf-icon-favourite"></span> 
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-filter" data-tooltip="vf-icon-filter"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-gallery" data-tooltip="vf-icon-gallery"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-help" data-tooltip="vf-icon-help"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-in-progress" data-tooltip="vf-icon-in-progress"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-information" data-tooltip="vf-icon-information"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-list-view" data-tooltip="vf-icon-list-view"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-locked" data-tooltip="vf-icon-locked"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-mail" data-tooltip="vf-icon-mail"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-news" data-tooltip="vf-icon-news"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-off" data-tooltip="vf-icon-off"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-open-new-window" data-tooltip="vf-icon-open-new-window"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pause" data-tooltip="vf-icon-pause"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-phone" data-tooltip="vf-icon-phone"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pin" data-tooltip="vf-icon-pin"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-play" data-tooltip="vf-icon-play"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-power-outage" data-tooltip="vf-icon-power-outage"></span>
+
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-request" data-tooltip="vf-icon-request"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-restart" data-tooltip="vf-icon-restart"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-send" data-tooltip="vf-icon-send"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-settings" data-tooltip="vf-icon-settings"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-share" data-tooltip="vf-icon-share"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-shop" data-tooltip="vf-icon-shop"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sign-in" data-tooltip="vf-icon-sign-in"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sign-out" data-tooltip="vf-icon-sign-out"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sort" data-tooltip="vf-icon-sort"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-tag" data-tooltip="vf-icon-tag"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-trash" data-tooltip="vf-icon-trash"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-turn-device" data-tooltip="vf-icon-turn-device"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-unlocked" data-tooltip="vf-icon-unlocked"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-user" data-tooltip="vf-icon-user"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-zoom-in" data-tooltip="vf-icon-zoom-in"></span>
+        <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-zoom-out" data-tooltip="vf-icon-zoom-out"></span>      
+</div>
+````
+
+# InCharge Icons
+````html
+showSource: false
+---
+<div class="vf-container">
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-card-and-tag" data-tooltip="vf-icon-card-and-tag"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-charge-smart-and-safe-at-home" data-tooltip="vf-icon-charge-smart-and-safe-at-home"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-charge-up-multihome" data-tooltip="vf-icon-charge-up-multihome"></span>
@@ -207,6 +154,14 @@ showSource: false
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-scooter-2" data-tooltip="vf-icon-scooter-2"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-scooter" data-tooltip="vf-icon-scooter"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smart-charging-poles" data-tooltip="vf-icon-smart-charging-poles"></span>
+</div>
+````
+
+# Identification Icons
+````html
+showSource: false
+---
+<div class="vf-container">
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-h" data-tooltip="vf-icon-h"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-advent-calendar" data-tooltip="vf-icon-advent-calendar"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-airplane" data-tooltip="vf-icon-airplane"></span>
@@ -216,6 +171,7 @@ showSource: false
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-battery" data-tooltip="vf-icon-battery"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-beauty-personal-care" data-tooltip="vf-icon-beauty-personal-care"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-behaviour" data-tooltip="vf-icon-behaviour"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vf-benchmark-co2" data-tooltip="vf-icon-vf-benchmark-co2"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-benchmark-cockpit" data-tooltip="vf-icon-benchmark-cockpit"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-benchmark-temperature" data-tooltip="vf-icon-benchmark-temperature"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-benchmark-two" data-tooltip="vf-icon-benchmark-two"></span>
@@ -238,7 +194,7 @@ showSource: false
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-city" data-tooltip="vf-icon-city"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-climate-mix" data-tooltip="vf-icon-climate-mix"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-climate-neutral" data-tooltip="vf-icon-climate-neutral"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-snapchat" data-tooltip="vf-icon-snapchat"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-clock" data-tooltip="vf-icon-clock"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-cloud-storage" data-tooltip="vf-icon-cloud-storage"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-co2-reducation" data-tooltip="vf-icon-co2-reducation"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-co2" data-tooltip="vf-icon-co2"></span>
@@ -317,7 +273,6 @@ showSource: false
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-move-with-existing-contract1" data-tooltip="vf-icon-move-with-existing-contract1"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-move-with-new-contract1" data-tooltip="vf-icon-move-with-new-contract1"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-movie-music-theatre" data-tooltip="vf-icon-movie-music-theatre"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-multi-home-box" data-tooltip="vf-icon-multi-home-box"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-my-cases" data-tooltip="vf-icon-my-cases"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-my-documents" data-tooltip="vf-icon-my-documents"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-nature-and-bioversity" data-tooltip="vf-icon-nature-and-bioversity"></span>
@@ -391,67 +346,169 @@ showSource: false
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-tv" data-tooltip="vf-icon-tv"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-variable" data-tooltip="vf-icon-variable"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-ventilation" data-tooltip="vf-icon-ventilation"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vf-benchmark-co2" data-tooltip="vf-icon-vf-benchmark-co2"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-voice-search" data-tooltip="vf-icon-voice-search"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-wind" data-tooltip="vf-icon-wind"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-activity-log" data-tooltip="vf-icon-activity-log"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-add-contact" data-tooltip="vf-icon-add-contact"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-alert" data-tooltip="vf-icon-alert"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-align-center" data-tooltip="vf-icon-align-center"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-align-left" data-tooltip="vf-icon-align-left"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-app-settings" data-tooltip="vf-icon-app-settings"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down-left" data-tooltip="vf-icon-arrow-down-left"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down-right" data-tooltip="vf-icon-arrow-down-right"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-down" data-tooltip="vf-icon-arrow-down"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-left" data-tooltip="vf-icon-arrow-left"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-right" data-tooltip="vf-icon-arrow-right"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up-left" data-tooltip="vf-icon-arrow-up-left"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up-right" data-tooltip="vf-icon-arrow-up-right"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-arrow-up" data-tooltip="vf-icon-arrow-up"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-autostart" data-tooltip="vf-icon-autostart"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-blog" data-tooltip="vf-icon-blog"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-call" data-tooltip="vf-icon-call"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-camera" data-tooltip="vf-icon-camera"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-change-availability" data-tooltip="vf-icon-change-availability"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-chat" data-tooltip="vf-icon-chat"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-checkbox" data-tooltip="vf-icon-checkbox"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-download-pdf" data-tooltip="vf-icon-download-pdf"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-download" data-tooltip="vf-icon-download"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-edit" data-tooltip="vf-icon-edit"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-elipsis" data-tooltip="vf-icon-elipsis"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-favourite" data-tooltip="vf-icon-favourite"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-filter" data-tooltip="vf-icon-filter"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-gallery" data-tooltip="vf-icon-gallery"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pinterest" data-tooltip="vf-icon-pinterest"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-in-progress" data-tooltip="vf-icon-in-progress"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-information" data-tooltip="vf-icon-information"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-list-view" data-tooltip="vf-icon-list-view"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-locked" data-tooltip="vf-icon-locked"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-mail" data-tooltip="vf-icon-mail"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-news" data-tooltip="vf-icon-news"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-off" data-tooltip="vf-icon-off"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-open-new-window" data-tooltip="vf-icon-open-new-window"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pause" data-tooltip="vf-icon-pause"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-phone" data-tooltip="vf-icon-phone"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-play" data-tooltip="vf-icon-play"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-power-outage" data-tooltip="vf-icon-power-outage"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-print" data-tooltip="vf-icon-print"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-request" data-tooltip="vf-icon-request"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-restart" data-tooltip="vf-icon-restart"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-send" data-tooltip="vf-icon-send"></span>
+    
+</div>
+````
+
+# Navigation Icons
+````html
+showSource: false
+---
+<div class="vf-container">
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-1" data-tooltip="vf-icon-calendar-1"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-2" data-tooltip="vf-icon-calendar-2"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-3" data-tooltip="vf-icon-calendar-3"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-4" data-tooltip="vf-icon-calendar-4"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-5" data-tooltip="vf-icon-calendar-5"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-6" data-tooltip="vf-icon-calendar-6"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-7" data-tooltip="vf-icon-calendar-7"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-8" data-tooltip="vf-icon-calendar-8"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-9" data-tooltip="vf-icon-calendar-9"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-10" data-tooltip="vf-icon-calendar-10"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-11" data-tooltip="vf-icon-calendar-11"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-12" data-tooltip="vf-icon-calendar-12"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-13" data-tooltip="vf-icon-calendar-13"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-14" data-tooltip="vf-icon-calendar-14"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-15" data-tooltip="vf-icon-calendar-15"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-16" data-tooltip="vf-icon-calendar-16"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-17" data-tooltip="vf-icon-calendar-17"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-18" data-tooltip="vf-icon-calendar-18"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-19" data-tooltip="vf-icon-calendar-19"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-20" data-tooltip="vf-icon-calendar-20"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-21" data-tooltip="vf-icon-calendar-21"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-22" data-tooltip="vf-icon-calendar-22"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-23" data-tooltip="vf-icon-calendar-23"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-24" data-tooltip="vf-icon-calendar-24"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-25" data-tooltip="vf-icon-calendar-25"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-26" data-tooltip="vf-icon-calendar-26"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-27" data-tooltip="vf-icon-calendar-27"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-28" data-tooltip="vf-icon-calendar-28"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-29" data-tooltip="vf-icon-calendar-29"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-30" data-tooltip="vf-icon-calendar-30"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-calendar-31" data-tooltip="vf-icon-calendar-31"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-check" data-tooltip="vf-icon-check"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-close" data-tooltip="vf-icon-close"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-down" data-tooltip="vf-icon-down"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-up" data-tooltip="vf-icon-up"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-left" data-tooltip="vf-icon-left"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-right" data-tooltip="vf-icon-right"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-home" data-tooltip="vf-icon-home"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-less-info" data-tooltip="vf-icon-less-info"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-link" data-tooltip="vf-icon-link"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-menu" data-tooltip="vf-icon-menu"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-more" data-tooltip="vf-icon-more"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-qr-code" data-tooltip="vf-icon-qr-code"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-rss" data-tooltip="vf-icon-rss"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-search" data-tooltip="vf-icon-search"></span>
+</div>
+````
+
+# Smart Home Icons
+````html
+showSource: false
+---
+<div class="vf-container">
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-alarm" data-tooltip="vf-icon-alarm"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-cloudy" data-tooltip="vf-icon-cloudy"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-coffee-maker" data-tooltip="vf-icon-coffee-maker"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-console" data-tooltip="vf-icon-console"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-desklamp" data-tooltip="vf-icon-desklamp"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-desktop-computer" data-tooltip="vf-icon-desktop-computer"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-dishwasher" data-tooltip="vf-icon-dishwasher"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-door-closed" data-tooltip="vf-icon-door-closed"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-door-open" data-tooltip="vf-icon-door-open"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-dryer" data-tooltip="vf-icon-dryer"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-kettle" data-tooltip="vf-icon-electric-kettle"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-stove" data-tooltip="vf-icon-electric-stove"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-electric-tooth-brush" data-tooltip="vf-icon-electric-tooth-brush"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-espresso-machine" data-tooltip="vf-icon-espresso-machine"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-extractor-hood" data-tooltip="vf-icon-extractor-hood"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fairy-lights" data-tooltip="vf-icon-fairy-lights"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-freezer" data-tooltip="vf-icon-freezer"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fridge-freezer" data-tooltip="vf-icon-fridge-freezer"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-fridge" data-tooltip="vf-icon-fridge"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-gas-stove" data-tooltip="vf-icon-gas-stove"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-hair-straightener" data-tooltip="vf-icon-hair-straightener"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-hairdryer" data-tooltip="vf-icon-hairdryer"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-indution-stove" data-tooltip="vf-icon-indution-stove"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-kettle" data-tooltip="vf-icon-kettle"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-kitchen-machine" data-tooltip="vf-icon-kitchen-machine"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-laptop" data-tooltip="vf-icon-laptop"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-light-switch" data-tooltip="vf-icon-light-switch"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-1" data-tooltip="vf-icon-lightbulb-step-1"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-2" data-tooltip="vf-icon-lightbulb-step-2"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-3" data-tooltip="vf-icon-lightbulb-step-3"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-4" data-tooltip="vf-icon-lightbulb-step-4"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-lightbulb-step-5" data-tooltip="vf-icon-lightbulb-step-5"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-microwave" data-tooltip="vf-icon-microwave"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-moon" data-tooltip="vf-icon-moon"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-outdoor-lamp" data-tooltip="vf-icon-outdoor-lamp"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-patio-heater" data-tooltip="vf-icon-patio-heater"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-phone-charging" data-tooltip="vf-icon-phone-charging"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pressing-iron" data-tooltip="vf-icon-pressing-iron"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-radiator" data-tooltip="vf-icon-radiator"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-rain" data-tooltip="vf-icon-rain"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-router" data-tooltip="vf-icon-router"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smart-plug" data-tooltip="vf-icon-smart-plug"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smart-thermostat" data-tooltip="vf-icon-smart-thermostat"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-smoke-alarm" data-tooltip="vf-icon-smoke-alarm"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-snow" data-tooltip="vf-icon-snow"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-stove-with-grill" data-tooltip="vf-icon-stove-with-grill"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sun" data-tooltip="vf-icon-sun"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-surveillance" data-tooltip="vf-icon-surveillance"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-table-lamp-two" data-tooltip="vf-icon-table-lamp-two"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-table-lamp" data-tooltip="vf-icon-table-lamp"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-thunder" data-tooltip="vf-icon-thunder"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-tv-remote" data-tooltip="vf-icon-tv-remote"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vacuum-cleaner" data-tooltip="vf-icon-vacuum-cleaner"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-ventilator" data-tooltip="vf-icon-ventilator"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-washing-machine" data-tooltip="vf-icon-washing-machine"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-blinds" data-tooltip="vf-icon-window-blinds"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-closed" data-tooltip="vf-icon-window-closed"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window-open" data-tooltip="vf-icon-window-open"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-window" data-tooltip="vf-icon-window"></span>
+</div>
+````
+
+# Social Media Icons
+````html
+showSource: false
+---
+<div class="vf-container">
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-dropbox" data-tooltip="vf-icon-dropbox"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-share" data-tooltip="vf-icon-share"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-shop" data-tooltip="vf-icon-shop"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sign-in" data-tooltip="vf-icon-sign-in"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sign-out" data-tooltip="vf-icon-sign-out"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-sort" data-tooltip="vf-icon-sort"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-tag" data-tooltip="vf-icon-tag"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-trash" data-tooltip="vf-icon-trash"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-turn-device" data-tooltip="vf-icon-turn-device"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-unlocked" data-tooltip="vf-icon-unlocked"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-user" data-tooltip="vf-icon-user"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-zoom-in" data-tooltip="vf-icon-zoom-in"></span>
-    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-zoom-out" data-tooltip="vf-icon-zoom-out"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-facebook" data-tooltip="vf-icon-facebook"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-flickr" data-tooltip="vf-icon-flickr"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-instagram" data-tooltip="vf-icon-instagram"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-linkedin" data-tooltip="vf-icon-linkedin"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-pinterest" data-tooltip="vf-icon-pinterest"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-skype" data-tooltip="vf-icon-skype"></span>
     <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-slidehare" data-tooltip="vf-icon-slidehare"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-snapchat" data-tooltip="vf-icon-snapchat"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-twitter" data-tooltip="vf-icon-twitter"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-vimeo" data-tooltip="vf-icon-vimeo"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-whatsapp" data-tooltip="vf-icon-whatsapp"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-xing" data-tooltip="vf-icon-xing"></span>
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-youtube" data-tooltip="vf-icon-youtube"></span>
+</div>
+````
+
+```html
+showSource: false
+---
+<div class="vf-container">
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-placeholder" data-tooltip="vf-icon-placeholder"></span>
+
+
+
+
+
+
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-multi-home-box" data-tooltip="vf-icon-multi-home-box"></span>
+    
+
+    <span class="p-1 vf-tooltip vf-tooltip--blue-solid vf-icon-print" data-tooltip="vf-icon-print"></span>
+
 </div>
 ```

@@ -10,9 +10,9 @@ export const fetchAllMetadata = async () => {
     method: 'GET',
     url: `${baseUrl}/collection-metadata`,
 
-  })
-  return res.data
-}
+  });
+  return res.data.sort((a, b) => a.metadata.name.localeCompare(b.metadata.name))
+};
 
 export const updateMetadata = async (data) => {
   try {
