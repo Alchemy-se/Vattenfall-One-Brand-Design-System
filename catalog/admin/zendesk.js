@@ -24,46 +24,34 @@ const Zendesk = ({ data, setOpenModal }) => {
     }))
   }
   const formData = new FormData();
-   const [file, setFile] = useState()
 
   const handleFiles = (e) => {
-    console.log('e.target.files: ', e.target.files[0]);
-
-  //  setFile(e.target.files[0])
-    const formData = new FormData();
-    console.log('file: ', file)
-
-    // Update the formData object
     formData.append(
-      "myFile",
+      "files",
       e.target.files[0],
       e.target.files[0].name
     );
-
-
   }
 
-  const uploadFile = async (e) => {
-     console.log('e.target.files: ', e.target.files);
-
-    console.log('file: ', file)
-    console.log('formData: ', formData)
-
-
-    //await uploadAttachments(data)
-   }
+ /* const uploadFile = async (e) => {
+    e.preventDefault()
+    await uploadAttachments(formData)
+  }*/
 
   const sendReport = async (e) => {
+    console.log("formdata", [...formData]);
     e.preventDefault()
+
+
     const data = {
       request: {
         requester: { name: reportData.name, email: reportData.email },
         subject: reportData.subject,
-        comment: { body: reportData.comment },
+        comment: { body: reportData.comment  },
         custom_fields: [{ id: 360011116697, value: language }]
       }
     }
-    await sendRequest(data)
+    await sendRequest(data, formData)
 
   }
 
@@ -101,19 +89,16 @@ const Zendesk = ({ data, setOpenModal }) => {
                     rows="3" />
 
           <input type="file" name="attachment" multiple onChange={handleFiles} />
-          <input type="file" name="attachment" multiple onChange={handleFiles} />
-          <input type="file" name="attachment" multiple onChange={handleFiles} />
+
 
           <div className={styles.buttonRow}>
-            <button onClick={() => setOpenModal(false)} type="button"
+            <button onClick={()=> setOpenModal(false)} type="button"
                     className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
             </button>
 
-            <button onClick={uploadFile} type="button"
+            <button onClick={sendReport} type="button"
                     className="vf-btn vf-btn--md vf-btn--primary">Save
             </button>
-
-
 
 
           </div>

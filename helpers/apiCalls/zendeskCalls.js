@@ -1,7 +1,15 @@
 import axios from "axios";
 
-export const sendRequest = async (data) => {
- let response = await axios({
+export const sendRequest = async (data, formData) => {
+  console.log('formData: ', [...formData])
+  const file = formData.get('files')
+  if (file) {
+    console.log('data: ', data)
+    const token = await uploadAttachments(file)
+    data.request.comment.uploads = [token]
+  }
+
+  let response = await axios({
     method: 'POST',
     url: `https://albin-test.zendesk.com/api/v2/requests.json`,
     headers: {
@@ -9,17 +17,19 @@ export const sendRequest = async (data) => {
     },
     data
   })
-  console.log('response: ', response)
+  console.log('REQUESTS response: ', response)
 }
 
-export const uploadAttachments = async (data) => {
+export const uploadAttachments = async (file) => {
+
   let response = await axios({
     method: 'POST',
-    url: `https://albin-test.zendesk.com/api/v2/uploads.json`,
+    url: `https://albin-test.zendesk.com/api/v2/uploads.json?filename=${file.name}`,
     headers: {
-      "content-type": "application/json"
+      "content-type": "application/binary"
     },
-    data
+    data: file
   })
-  console.log('response: ', response)
+  console.log('FILE UPLOADresponse: ', response)
+  return response.data.upload.token
 }
