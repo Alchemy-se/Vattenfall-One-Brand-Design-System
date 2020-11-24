@@ -4,7 +4,8 @@ const Carousel = () => {
   return (
 
 
-    <div>
+    <div className="vf-carousel-outer-container">
+      <h2>Carousel component</h2>
       <div id="vf-carousel-container">
 
         <div  className="vf-carousel-card-container">
@@ -20,7 +21,7 @@ const Carousel = () => {
         <div id="2" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header"> 2</div>
+            <div className="vf-carousel-header"> news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
@@ -31,7 +32,7 @@ const Carousel = () => {
         <div id="3" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header"> 3</div>
+            <div className="vf-carousel-header"> news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
@@ -42,7 +43,7 @@ const Carousel = () => {
         <div id="4" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header">4</div>
+            <div className="vf-carousel-header">news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
@@ -53,7 +54,7 @@ const Carousel = () => {
         <div id="5" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header">5</div>
+            <div className="vf-carousel-header">news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
@@ -64,7 +65,7 @@ const Carousel = () => {
         <div id="6" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header">6</div>
+            <div className="vf-carousel-header">news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
@@ -75,7 +76,7 @@ const Carousel = () => {
         <div id="7" className="vf-carousel-card-container">
           <img className="vf-carousel-image" src="/img/carousel-placeholder.jpg" alt="carousel image" />
           <div className="vf-carousel-body-container">
-            <div className="vf-carousel-header">7</div>
+            <div className="vf-carousel-header">news title goes here</div>
             <div className="vf-carousel-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
               quam sit amet nisi dapibus.
             </div>
