@@ -214,7 +214,7 @@ const Routes = ({ onRouteChange, openModal }) => {
         <Redirect to={'/get-started/design'} />
       </Route>
       {GUIDELINES_ROUTES.map((item) => (
-        <Route key={item.path} path={item.path}>
+        <Route key={item.path} path={item.path} >
           {item.component}
         </Route>
       ))}

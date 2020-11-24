@@ -1,4 +1,5 @@
-/* Use this file for style algolia serach */
+/*
+!* Use this file for style algolia serach *!
 
 .main-search-container {
     display: -webkit-box;
@@ -195,9 +196,9 @@
     background-color: rgb(235, 238, 242);
 }
 
-/*.react-autosuggest__suggestion strong {
+!*.react-autosuggest__suggestion strong {
     background-color: yellow;
-}*/
+}*!
 
 .react-autosuggest__suggestion--highlighted {
     background-color: rgb(235, 238, 242);
@@ -227,4 +228,4 @@
 .ais-PoweredBy-logo {
     height: 15px;
 }
-/*# sourceMappingURL=algolia.css.map */
+!*# sourceMappingURL=algolia.css.map *!*/

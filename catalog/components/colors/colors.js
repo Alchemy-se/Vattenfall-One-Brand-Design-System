@@ -8,15 +8,15 @@ import mockmeta from './mockmeta'
 import axios from "axios";
 import authContext from "../../../helpers/authContext";
 import { fetchDataByUri } from "../../../helpers/apiCalls/metadataCalls";
+import Zendesk from "../../admin/zendesk";
 
 const markdown = colors + backgroundColor + borders
 
 
 const Colors = ({ uri }) => {
-
   const [component, setComponent] = useState('')
   const [selectedChild, setSelectedChild] = useState('')
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(true)
 
   useEffect(() => {
     const fetch = async () => {
@@ -58,7 +58,7 @@ const Colors = ({ uri }) => {
         const child = component.metadata.children.filter(child => {
           return child.uri.indexOf("#" + item.id) !== -1;
 
-        })
+        });
         setSelectedChild(child)
         setOpenModal(true)
 
@@ -69,55 +69,8 @@ const Colors = ({ uri }) => {
 
   }, [component])
 
-  console.log('setSelectedChild: ', selectedChild)
-  /*
-    constructor(props) {
-      super(props);
-      this.state = {
-        zendeskData: null
 
-      }
-    }
-
-
-    //Hämta ut id/data fråm strapi
-    componentDidMount() {
-
-      const that = this
-      Array.from(document.getElementsByClassName("find_by_header")).forEach(function (item) {
-        console.log('item: ', item)
-        //Mockmeta ska vara data fråm strapi, gör anrop med uri som
-        // kommer in från this.props. Måste läggas till manuellt i alla routes
-        const selectedChild = mockmeta.children.filter(child => {
-          return child.uri.indexOf("#" + item.id) !== -1;
-
-        })
-        console.log('selectedChild: ', selectedChild)
-
-        //create new div
-        const div = document.createElement('div');
-        div.setAttribute('id', item.id + "-div");
-
-        //create new span
-        const span = document.createElement('span');
-        span.innerHTML = 'Report issue';
-        span.classList.add("report-issue-button");
-
-        // append the span element inside the <div>
-        div.appendChild(span);
-
-        // get header by id. sets in headingRenderer.js
-        // append new <div><span>Report issue</span></div> element
-        const header = document.getElementById(item.id)
-        header.appendChild(div)
-
-
-        const reportButton = document.getElementById(item.id + "-div")
-        reportButton.addEventListener('click', function (e) {
-          that.setState({ zendeskData: selectedChild[0] })
-        })
-      });
-    }
+/*
 
     send = async () => {
       const h = await axios({
@@ -136,31 +89,17 @@ const Colors = ({ uri }) => {
         }
       })
     }
+*/
 
-    renderZendesk() {
-      if (!this.state.zendeskData) {
-        return null
-      }
-      return (
-        <div>
-          <div
-            style={{ position: "absolute", top: 0, left: 500, right: 0 }}
-            onClick={() => this.send()}>test
-          </div>
-          <input type="file" />
-        </div>
-      )
 
-    }*/
+
 
 
   return (
     <React.Fragment>
       <PageHeader title={"Colors"} />
       <Markdown source={markdown} />
-      {/*
-        {this.renderZendesk()}
-*/}
+      {openModal && <Zendesk setOpenModal={setOpenModal} data={selectedChild} />}
     </React.Fragment>
   )
 
