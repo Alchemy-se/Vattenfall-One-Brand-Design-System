@@ -1,0 +1,185 @@
+p {
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  line-height: 28px;
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+  color: #222222;
+}
+
+#main h2:not(.vf-*) {
+  color: #222222;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.ant-drawer-body {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: unset;
+}
+
+.ant-menu-inline .ant-menu-selected::after, .ant-menu-inline .ant-menu-item-selected::after {
+  border-right-color: #1964A3;
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  min-width: 72px;
+  height: 64px;
+  line-height: 60px;
+  border-top: 3px solid transparent;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #1964A3;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #1964A3;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: inherit;
+}
+
+.ant-menu-item > a, .ant-menu-horizontal > .ant-menu-item > a {
+  color: #2071B5;
+}
+
+.ant-menu-item > a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+.ant-menu-item-selected a, .ant-menu-horizontal > .ant-menu-item-selected > a {
+  color: #222222;
+}
+
+.ant-menu-item-group-title {
+  color: #fff;
+  line-height: 1.5715;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding: 8px 16px 8px 24px;
+  width: 92%;
+  background-color: #2071B5;
+  font-weight: 600;
+}
+
+.ant-drawer-close {
+  padding: 8px 8px 16px 16px;
+}
+
+.ant-drawer-close:focus {
+  outline: none;
+}
+
+.vf-col, .vf-col-1, .vf-col-2, .vf-col-3, .vf-col-4, .vf-col-5, .vf-col-6, .vf-col-7, .vf-col-8, .vf-col-9, .vf-col-10, .vf-col-11, .vf-col-12, .vf-col, .vf-col-auto, .vf-col-sm-1, .vf-col-sm-2, .vf-col-sm-3, .vf-col-sm-4, .vf-col-sm-5, .vf-col-sm-6, .vf-col-sm-7, .vf-col-sm-8, .vf-col-sm-9, .vf-col-sm-10, .vf-col-sm-11, .vf-col-sm-12, .vf-col-sm, .vf-col-sm-auto, .vf-col-md-1, .vf-col-md-2, .vf-col-md-3, .vf-col-md-4, .vf-col-md-5, .vf-col-md-6, .vf-col-md-7, .vf-col-md-8, .vf-col-md-9, .vf-col-md-10, .vf-col-md-11, .vf-col-md-12, .vf-col-md, .vf-col-md-auto, .vf-col-lg-1, .vf-col-lg-2, .vf-col-lg-3, .vf-col-lg-4, .vf-col-lg-5, .vf-col-lg-6, .vf-col-lg-7, .vf-col-lg-8, .vf-col-lg-9, .vf-col-lg-10, .vf-col-lg-11, .vf-col-lg-12, .vf-col-lg, .vf-col-lg-auto, .vf-col-xl-1, .vf-col-xl-2, .vf-col-xl-3, .vf-col-xl-4, .vf-col-xl-5, .vf-col-xl-6, .vf-col-xl-7, .vf-col-xl-8, .vf-col-xl-9, .vf-col-xl-10, .vf-col-xl-11, .vf-col-xl-12, .vf-col-xl, .vf-col-xl-auto {
+  margin-bottom: 24px;
+}
+
+.ant-drawer-left.ant-drawer-open .ant-drawer-content-wrapper {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.justify-content-md-center {
+  margin: 0 -12px;
+}
+
+.ant-dropdown {
+  width: 30%;
+}
+
+.ant-dropdown-menu-vertical > .ant-dropdown-menu-item:hover {
+  border-right: 3px solid #1964A3;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #fff;
+}
+
+.ant-dropdown-menu-item > a {
+  color: #2071B5;
+  text-decoration: none;
+}
+
+.ant-dropdown-menu-item > a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+.ant-dropdown-menu-vertical > .ant-dropdown-menu-item-selected {
+  border-right: 3px solid #1964A3;
+  background-color: #fff;
+}
+
+.ant-dropdown-menu-item-selected > a {
+  color: #222222;
+  background-color: #fff;
+}
+
+#modal-overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 9999;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+.ant-anchor-link {
+  padding-left: 0;
+}
+
+/*
+.ant-anchor-ink-ball {
+  height: 16px;
+  width: 2px;
+  background: #1964A3;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}*/
+.markdown-body.no-padding-bottom {
+  padding-bottom: initial;
+}
+
+.markdown-body.no-padding-bottom > :last-child {
+  padding-bottom: initial;
+}
+
+.ant-anchor-ink-ball {
+  border-color: #1964A3;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: #222222;
+  font-weight: 500;
+}
+/*# sourceMappingURL=documentation.css.map */

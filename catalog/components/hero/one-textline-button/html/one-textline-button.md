@@ -1,4 +1,4 @@
-### 1 text line and button
+### 1 text line + Button
 
 ```html
 responsive: true
@@ -12,9 +12,7 @@ showSource: true
     <h1 class="vf-hero__headline">
       Hero headline here
     </h1>
-     <div class="vf-hero-button-container">
-      <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Button label</button>
-    </div>
+    <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Button label</button>
   </div>
 </section>
 ```

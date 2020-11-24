@@ -1,4 +1,4 @@
-### 2 text lines and button
+### 2 text lines + Button
 ```html
 responsive: true
 showSource: true
@@ -12,9 +12,7 @@ showSource: true
       Hero headline goes <br class="vf-u--sm-hidden" />
       in two lines here
     </h1>
-    <div class="vf-hero-button-container">
-      <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Button label</button>
-    </div>
+    <button type="button" class="vf-btn vf-btn--lg vf-btn--primary">Button label</button>
   </div>
 </section>
 ```

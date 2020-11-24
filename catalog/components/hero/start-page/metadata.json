@@ -1,8 +1,8 @@
 {
   "id": "start-page",
-  "uri": "#start-page",
-  "name": "Startpage",
-  "guidelineUri":false,
+  "uri": "#startpage-(only)",
+  "name": "Startpage (only)",
+  "guidelineUri": "/guidelines/hero#for-startpage-(only)",
   "description": null,
   "react": {
     "exists": false,

@@ -1,8 +1,8 @@
 {
-  "id": "2-text-lines",
+  "id": "two-textlines",
   "uri": "#2-text-lines",
   "name": "2 text lines",
-  "guidelineUri":false,
+  "guidelineUri": "/guidelines/hero#2-text-lines" ,
   "description": null,
   "react": {
     "exists": false,

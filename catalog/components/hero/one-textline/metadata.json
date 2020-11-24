@@ -1,8 +1,8 @@
 {
-  "id": "1-text-line",
+  "id": "one-textline",
   "uri": "#1-text-line",
-  "name": "1 text-line",
-  "guidelineUri":false,
+  "name": "1 text line",
+  "guidelineUri": "/guidelines/hero#1-text-line",
   "description": null,
   "react": {
     "exists": false,

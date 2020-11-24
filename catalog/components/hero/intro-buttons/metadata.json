@@ -1,8 +1,8 @@
 {
-  "id": "text-intro-buttons",
-  "uri": "#text-intro-buttons",
-  "name": "Text intro buttons",
-  "guidelineUri":false,
+  "id": "intro-buttons",
+  "uri": "#text-+-intro-+-buttons",
+  "name": "Text + Intro + Buttons",
+  "guidelineUri": "/guidelines/hero#text-+-intro-+-buttons",
   "description": null,
   "react": {
     "exists": false,

@@ -9,14 +9,18 @@ import twoTextlineHero from './two-textlines/html/two-textlines.md';
 import twoTextlineAndButtonHero from './two-textline-button/html/two-textline-button.md';
 import textIntroButtonsHero from './intro-buttons/html/intro-buttons.md';
  
-const markdown = basicHero + startPageHero + twoTextlineAndButtonHero + oneTextlineAndButtonHero + twoTextlineHero + oneTextlineHero + textIntroButtonsHero;
- 
 export default class Hero extends Component {
   render() {
     return (
       <React.Fragment>
         <PageHeader title={"Hero"}/>
-        <Markdown source={markdown} />
+        <Markdown source={basicHero} />
+        <Markdown source={startPageHero} />
+        <Markdown source={twoTextlineAndButtonHero} />
+        <Markdown source={oneTextlineAndButtonHero} />
+        <Markdown source={twoTextlineHero} />
+        <Markdown source={oneTextlineHero} />
+        <Markdown source={textIntroButtonsHero} />
       </React.Fragment>
     )
   }

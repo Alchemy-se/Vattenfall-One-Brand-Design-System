@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import HeroBlock from './heroBlock';
-// import HeroComponent from './HeroComponent';
 import WithVideoHero from  '../../components/hero/basic-example/html/basic-example.md';
 import StartPageHero from '../../components/hero/start-page/html/start-page.md';
 import TwoLineButtonHero from  '../../components/hero/two-textline-button/html/two-textline-button.md';
@@ -32,13 +31,13 @@ const Hero = () => {
         <Markdown source={editMd(WithVideoHero)} />
       </HeroBlock>  
        <HeroBlock 
-        title='For Startpage(only)' 
+        title='For Startpage (only)' 
         text='The Hero module with Video content and the Vattenfall stacked logotype should be used for Vattenfall Startpages only and not elsewhere.'
       >
         <Markdown source={editMd(StartPageHero)} />
       </HeroBlock>
      <HeroBlock 
-        title='2 text lines and Button' 
+        title='2 text lines + Button' 
         text='The Hero module should be used as in the example, when two rows of text over image with CTA button is needed.'
       >
         <Markdown source={editMd(TwoLineButtonHero)} /> 

@@ -166,10 +166,6 @@ p {
   -moz-border-radius: 0;
   border-radius: 0;
 }*/
-.markdown-body > :last-child {
-  padding-bottom: calc(80vh - 400px);
-}
-
 .markdown-body.no-padding-bottom {
   padding-bottom: initial;
 }
