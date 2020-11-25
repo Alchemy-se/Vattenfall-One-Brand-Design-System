@@ -47,7 +47,7 @@
 .vf-hero-twoline {
   height: 310px;
 }
- 
+
 .vf-hero-intro-buttons {
   height: 670px;
   background: none;
@@ -84,7 +84,7 @@
     @include typo-paragraph-primary-desktop();
   }
   color: white; 
-  a {
+  span {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,6 +96,9 @@
     font-weight: 500;
     letter-spacing: 0px;
     line-height: 36px;
+    img {
+      margin-right: 8px;
+    }
     @include media-breakpoint-down(sm) {
       font-size: 16px;
     }
@@ -134,7 +137,7 @@
   @include media-breakpoint-down(md) {
     font-size: 60px;
     line-height: 75px;
-    width: 500px;
+    width: 600px;
   }
   @include media-breakpoint-down(sm) {
     letter-spacing: 0px;
@@ -146,9 +149,6 @@
 
 .vf-video-btn-headline {
   padding-bottom: 0;
-  @include media-breakpoint-down(sm){
-    margin-top: 36px;
-  }
 }
  
 .vf-hero__paragraph {
@@ -169,5 +169,4 @@
  
 .vf-hero__text-buttons {
   position: relative;
-  // margin-top: 20px;
 }

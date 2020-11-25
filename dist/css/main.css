@@ -9404,7 +9404,7 @@ a.vf-card:hover {
   }
 }
 
-.vf-hero__content a {
+.vf-hero__content span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9427,8 +9427,12 @@ a.vf-card:hover {
   line-height: 36px;
 }
 
+.vf-hero__content span img {
+  margin-right: 8px;
+}
+
 @media (max-width: 767.98px) {
-  .vf-hero__content a {
+  .vf-hero__content span {
     font-size: 16px;
   }
 }
@@ -9494,7 +9498,7 @@ a.vf-card:hover {
   .vf-hero__headline {
     font-size: 60px;
     line-height: 75px;
-    width: 500px;
+    width: 600px;
   }
 }
 
@@ -9509,12 +9513,6 @@ a.vf-card:hover {
 
 .vf-video-btn-headline {
   padding-bottom: 0;
-}
-
-@media (max-width: 767.98px) {
-  .vf-video-btn-headline {
-    margin-top: 36px;
-  }
 }
 
 .vf-hero__paragraph {

@@ -13,10 +13,10 @@ showSource: true
       Hero headline goes <br class="vf-u--sm-hidden" />
       in two lines here
     </h1>
-    <a href="#" class="">
-      <img src="/img/example-startpage/play.svg" width="14" style="margin-right: 8px" />
+    <span>
+      <img src="/img/example-startpage/play.svg" width="14" />
       Button label
-    </a>
+    </span>
     <img src=/img/vf-logo-vertical.svg class="vf-hero__vf_logo_vertical" />
   </div>
 </section>

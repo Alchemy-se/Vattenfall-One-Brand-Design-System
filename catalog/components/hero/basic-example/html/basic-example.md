@@ -12,10 +12,10 @@ showSource: true
       Fossil-free within <br class="vf-u--sm-hidden" />
       one generation
     </h1>
-    <a href="#" class="">
-      <img src="/img/example-startpage/play.svg" width="14" style="margin-right: 8px" />
+    <span>
+      <img src="/img/example-startpage/play.svg" width="14" />
       Button label
-    </a>
+    </span>
   </div>
 </section>
 ```

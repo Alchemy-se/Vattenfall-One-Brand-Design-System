@@ -23,6 +23,7 @@ const Hero = () => {
       <PageHeader title='Hero Modules' />
       <section className="p-2 vf-border-top-gray-200"></section>
       <p>The Hero component is used for large blocks at the top of webpages to convey a key message or describe what the page is about</p>
+      <a href="#" className="vf-link-with-arrow">View Hero Modules on Abstract</a>
       <HeroBlock 
         title='Hero with video' 
         text='The Hero module with video content is used mainly for pages that need to relate back to and anchor the connection with our external video content / campaigns.'
