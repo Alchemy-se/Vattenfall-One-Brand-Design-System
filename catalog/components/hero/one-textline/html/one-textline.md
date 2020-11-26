@@ -5,7 +5,7 @@ responsive: true
 showSource: true
 ---
 <section 
-  class="vf-hero vf-hero-oneline"
+  class="vf-hero vf-hero--oneline"
   style="background-image: url(/img/example-startpage/hero-bg-beach.jpg);"
   >
   <div class="vf-hero__content ">
@@ -15,3 +15,4 @@ showSource: true
   </div>
 </section>
 ```
+

@@ -30,7 +30,7 @@ const InfoGraphics = () => {
       <PageHeader title="Info Graphics" />
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Information graphics style</h2>
           <p className={`${styles.guidelinesText}`}>
             Sharing information and data in a clear and confident way is part of the Vattenfall overall tonality, and 
@@ -46,7 +46,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Types of graphs</h2>
           <p className={`${styles.guidelinesText}`}>
             There are different types of charts and graphs to be used – pie charts, bar graphs and lines graphs. They are generally 
@@ -71,7 +71,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Colors for graphs</h2>
           <p className={`${styles.guidelinesText}`}>
           When creating information graphics mainly use the secondary colors, but the primary colors are also allowed. 
@@ -119,7 +119,7 @@ const InfoGraphics = () => {
         <ColourSpec name="Vattenfall Dark Purple" hex="#7A2B49" rgb="122, 43, 73" />
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc" >Energy source colors</h2>
           <p className={`${styles.guidelinesText}`}>
           Recomended colors for specific energy sources have been developed mainly to be used for information graphs. Please note that this is a recommendation and not a rule. 
@@ -145,7 +145,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Color usage</h2>
           <p className={`${styles.guidelinesText}`}>
             When creating information graphics mainly use the secondary colors, but the primary colors are also allowed. 
@@ -164,7 +164,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <p className={`${styles.guidelinesText}`}>
           Always make sure that the colors used harmonize with each other. Use as few colors as possible, 
           to make graphs visibly balanced and keep the graphics in the blue needscope, not too colorful.
@@ -204,7 +204,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <p className={`${styles.guidelinesText}`}>
           Avoid mixing colors from different categories. Also avoid creating graphs with colors that have too much contrast against each other.
           </p>
@@ -222,7 +222,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Color tones for web</h2>
           <p className={`${styles.guidelinesText}`}>
           When creating 1-colored graphs, you should primarily use these percent-values to differentiate sections of the graph. 
@@ -294,7 +294,7 @@ const InfoGraphics = () => {
         <div className="vf-col"></div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Background colors</h2>
           <p className={`${styles.guidelinesText}`}>
             Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-colored graphs on colored backgrounds.
@@ -320,7 +320,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Best practice</h2>
           <p className={`${styles.guidelinesText}`}>
           Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-colored graphs on colored backgrounds.
@@ -333,7 +333,7 @@ const InfoGraphics = () => {
         </div>
       </div>
       <div className="vf-row">
-        <div className="vf-col-11">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Infographics - Motion</h2>
           <p className={`${styles.guidelinesText}`}>
           Infographics refers to the visualization of data in graphs, tables and numbers. Through our motion ID philosophy of “ease-in-out”, infographics become the most powerful examples 
