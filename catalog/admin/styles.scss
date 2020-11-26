@@ -72,40 +72,4 @@
 
 
 }
-.border {
-  border: 1px solid;
-}
-.modalContainer {
-  position: fixed;
-  top: 52%;
-  left: 50%;
-  border: 1px solid black;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  padding: 20px;
-  background-color: white;
-  width: 400px;
 
-  .modalContent {
-    background-color: white;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    justify-content: space-between;
-    label {
-      display: block;
-    }
-    input, textarea{
-      width: 100%;
-      border-width: thin;
-
-    }
-
-    .buttonRow {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
