@@ -3,9 +3,9 @@
   max-width: 62em;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 0px 0 40px;
   padding: 0 0 12px 0;
-
+  
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -19,8 +19,9 @@
   @media(min-width: 640px) {
     margin: 0 10px 0 20px;
   }
+  
   @media(min-width: 999px) {
-    margin: 0;
+    margin: 0 0 0 40px;
     // padding-bottom: 100px;
   }
   p {

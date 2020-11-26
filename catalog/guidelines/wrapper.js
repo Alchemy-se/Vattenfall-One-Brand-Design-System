@@ -26,6 +26,7 @@ class GuidelinesWrapper extends Component {
 
     let nodes = ReactDOM.findDOMNode(this.containerRef.current);
     let tags = nodes.getElementsByClassName("use-in-toc");
+    console.log("tags", tags);
 
 
     // Special case for grid elements as they have different structure
