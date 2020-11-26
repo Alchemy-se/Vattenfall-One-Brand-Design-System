@@ -10,36 +10,28 @@ const Motion = () => {
       <PageHeader title="Motion" />
       <section className="p-2 vf-border-top-gray-200"></section>
       <div className="vf-row">
-        <div className="vf-col">
+        <div className="vf-col-11" >
           <p className={`${styles.guidelinesText}`}>
-            When designing with Vttenfall Digital Design System,make sure <br />
-            to think trough th motion effects and transitions that are <br />
-            included to it. Watch over the purpose of ech effect and do not <br />
-            combine several components with heavy animations at once: the <br />
-            digitl behaviour of such should bring liveliness and sbtle motion <br />
-            rather than chaotic movement.
+          When designing with Vattenfall Digital Design System, make sure to think trough the motion effects and transitions that are included in it. 
+          Watch over the purpose of each effect and do not combine several components with heavy animations at once: the digital behaviour of such should 
+          bring liveliness and subtle motion rather than chaotic movement.
           </p>
         </div>
-        <div className="vf-col">
+        <div className="vf-col-11">
           <p className={`${styles.guidelinesText}`}>
-            ** For the sake of consistency,we use only one default animation
-            <br />
-            for now **
+          ** For the sake of consistency, we use only one default animation for now **
           </p>
           <p className={`${styles.guidelinesText}`}>
-            Motion focuses attention on what's important without creating <br />
-            unnecessary distraction.
+          Motion focuses attention on what's important without creating unnecessary distraction.
           </p>
-          <p className={`${styles.guidelinesText}`}>Object effects: Scale, Move, Elevation, Color-change</p>
+          <p className={`${styles.guidelinesText}`}>
+            Object effects: Scale, Move, Elevation, Color-change
+          </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
-          <p>
-            Duration: 0.3s <br />
-            Easee: cubic-bezier(.6,0,0,1)
-          </p>
-          <img src={motion} style={{ width: '100%' }} />
+          <img src={motion} style={{ width: '100%', margin: "30px 0 0 0"}} />
         </div>
         <div className="vf-col">&nbsp;</div>
         <div className="vf-col">&nbsp;</div>
