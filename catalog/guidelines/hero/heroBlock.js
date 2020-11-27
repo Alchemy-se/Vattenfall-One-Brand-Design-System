@@ -9,7 +9,7 @@ const HeroBlock = ({title, text, textlineTwo, children}) => {
         {textlineTwo && 
           <p>{textlineTwo}</p>
         }
-        <div style={{width: "78vw", marginLeft:"-44px"}}>
+        <div style={{width: "78vw", marginLeft:"-44px", marginTop:"-44px"}}>
         {children}
         </div>
       </div>

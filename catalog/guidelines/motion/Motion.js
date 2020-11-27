@@ -31,7 +31,7 @@ const Motion = () => {
       </div>
       <div className="vf-row">
         <div className="vf-col">
-          <img src={motion} style={{ width: '100%', margin: "30px 0 0 0"}} />
+          <img src={motion} style={{ width: '100%', margin: "28px 0"}} />
         </div>
         <div className="vf-col">&nbsp;</div>
         <div className="vf-col">&nbsp;</div>
