@@ -32,10 +32,13 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
   }
 
+  const [error, setError] = useState({subject: false, name: false, email: false,  comment: false })
 
-  const [reportData, setReportData] = useState({ name: "", email: "", subject: "", comment: "" })
+  const [reportData, setReportData] = useState({ subject: "", name: "", email: "",  comment: "" })
 
   const [isLoading, setIsLoading] = useState(false);
+
+  const [files, setFiles] = useState(false)
 
 
   const handleInputData = (e) => {
@@ -48,7 +51,6 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     }))
   }
 
-  const [files, setFiles] = useState(false)
 
   const handleFiles = (e) => {
     e.preventDefault()
@@ -68,8 +70,13 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
   const sendReport = async (e) => {
     e.preventDefault()
-    setIsLoading(true)
+
+    handleError()
+
     return
+    // setError(true)
+    /*   return
+       //setIsLoading(true)*/
 
     const data = {
       request: {
@@ -87,9 +94,9 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     };
     const success = await sendRequest(data, files)
     if (success) {
-      //  setIsLoading(false)
-      // setOpenModal(false)
-      // handleConfirmModal(success)
+      setIsLoading(false)
+      setOpenModal(false)
+      handleConfirmModal(success)
     }
   }
 
@@ -113,20 +120,14 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
   const renderFileNames = () => {
     let names = []
-
-
     files.map((file, index) => {
       let displayName = file.name
       if (displayName.length > 10) {
         displayName = shortFilename(displayName)
-
       }
-
-
       return names.push(
         <li key={name + "-" + index}>
           {displayName}
-
           <img
             src={close}
             onClick={() => deleteFile(index)}
@@ -134,14 +135,49 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
           />
         </li>
       );
-
     });
     return (<ul className={styles.fileNameList}>{names}</ul>)
-
   };
 
 
-  console.log('isLoading: ', isLoading)
+  // todo sätt isLoding till rikigti loadint, refakotisera, lägg in i alla komponenter
+
+  const handleError = () => {
+    console.log('reportData: ', reportData)
+
+
+    for (const [key, value] of Object.entries(reportData)) {
+
+      // check if value without spaces is less then 1
+      if (value.trim().length < 1) {
+        setError(prevState => ({
+          ...prevState,
+          [key]: true
+        }))
+      } else {
+        setError(prevState => ({
+          ...prevState,
+          [key]: false
+        }))
+      }
+
+
+      //console.log(`${key}: ${value}`);
+    }
+
+    /* setError(prevState => {
+       if (prevState[name].length > 1) {
+         return { ...prevState, [name]: false }
+       } else {
+         return { ...prevState, [name]: true }
+       }
+     });*/
+
+
+    return name
+  };
+
+  console.log('error.name: ', error)
 
   return (
     <div className={styles.modalContainer}>
@@ -165,6 +201,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
                      id="vf_standard_input"
                      className="vf-input"
                      placeholder="Subject"
+                     required={true}
                      value={reportData.subject}
                      name='subject'
                      onChange={(e) => handleInputData(e)}
@@ -176,13 +213,14 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
             <div className="vf-input-container">
               <input type="text"
                      id="vf_standard_input"
-                     className="vf-input"
-                     placeholder="Your name"
+                     className={`vf-input ${error && "vf-input--error"}`}
+                     placeholder="Name"
                      value={reportData.name}
                      name='name'
                      onChange={(e) => handleInputData(e)}
               />
-              <label htmlFor="vf_standard_input">Your name</label>
+              {/*<label htmlFor="vf_standard_input">{`${error ? "Name is requeird " : "Name"}`}</label>*/}
+              {/* <label htmlFor="vf_standard_input">{handleError('name')}</label>*/}
             </div>
 
             <div className="vf-input-container">
@@ -206,7 +244,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
 
             <div className={styles.fileUploadContentContainer}>
-              <span>Upload your file here</span>
+              <span>Upload your file here. Max 5</span>
               <span>Up to 50 MB</span>
               <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
                 Attach file(s)...
