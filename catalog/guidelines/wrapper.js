@@ -26,7 +26,7 @@ class GuidelinesWrapper extends Component {
 
     let nodes = ReactDOM.findDOMNode(this.containerRef.current);
     let tags = nodes.getElementsByClassName("use-in-toc");
-
+    
 
     // Special case for grid elements as they have different structure
     // and no way to separate two elements with same name in h2 (tablet)

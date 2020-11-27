@@ -1,11 +1,12 @@
 .container {
   box-sizing: border-box;
-  max-width: 64em;
+  max-width: 62em;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
-  padding: 48px 0;
-
+  // margin: 0 170px 0 40px;
+  margin: 0 0 0 44px;
+  padding: 0 0 12px 0;
+  max-width: 82%;
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,12 +17,15 @@
   flex-flow: row wrap;
 
 
-  @media(min-width: 640px) {
-    margin: 0 10px 0 20px;
+  @media(max-width: 640px) {
+    margin: 0 20px;
+    max-width: 100%;
   }
+  
   @media(min-width: 999px) {
-    margin: 0 170px 0 40px;
-    padding-bottom: 400px;
+    // margin: 0 170px 0 40px;
+    margin: 0 0 0 44px;
+    // padding-bottom: 44px;
   }
   p {
     font-style: normal;
@@ -69,7 +73,8 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 24px 0 0 0;
+  // margin: 24px 0 0 0;
+  margin: 44px 0 56px 0;
   padding: 0;
   position: relative;
 }

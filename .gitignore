@@ -70,3 +70,5 @@ conf/certs/digitaldesign.vattenfall.com.key
 dist/js/*.hot-update.*
 
 .idea/
+
+.DS_Store
