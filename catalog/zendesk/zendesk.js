@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import styles from './styles.scss'
 import { useLocation } from "react-router-dom";
 import { sendRequest } from "../../helpers/apiCalls/zendeskCalls";
@@ -32,13 +32,17 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
   }
 
-  const [error, setError] = useState({subject: false, name: false, email: false,  comment: false })
+  const [hasError, setHasError] = useState({ subject: false, name: false, email: false, comment: false })
+  //const [hasError, setHasError] = useState({ subject: "", name: "", email: "", comment: "" })
 
-  const [reportData, setReportData] = useState({ subject: "", name: "", email: "",  comment: "" })
+  const [reportData, setReportData] = useState({ subject: "", name: "", email: "", comment: "" })
 
   const [isLoading, setIsLoading] = useState(false);
 
   const [files, setFiles] = useState(false)
+
+
+  const [submitHasBeenClicked, setSubmitHasBeenClicked] = useState(false)
 
 
   const handleInputData = (e) => {
@@ -51,32 +55,59 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     }))
   }
 
-
   const handleFiles = (e) => {
     e.preventDefault()
-
     const filesFromForm = Array.from(e.target.files);
-
     let fileArray = []
     filesFromForm.forEach((file) => {
       fileArray.push(file)
     });
-
     // concat new array of files if file is added one at a time
     setFiles(prevState => [...prevState, ...fileArray])
-
   };
 
+  let isError = false
+  const handleError = () => {
+    for (const [key, value] of Object.entries(reportData)) {
+      // Check if value without spaces is less than 1. If so set errorstate to true
+      if (value.trim().length < 1) {
+        isError = true
+        setHasError(prevState => ({
+          ...prevState,
+          [key]: true
+        }))
+      } else {
+        isError = false
+        setHasError(prevState => ({
+          ...prevState,
+          [key]: false
+        }))
+      }
+    }
+    return isError
+  };
+
+  useEffect(() => {
+    if (submitHasBeenClicked) {
+      handleError()
+    }
+  }, [reportData, submitHasBeenClicked])
+
+
+  // todo måndag - hanter filstorlek, flytta ut zendeks m.m
 
   const sendReport = async (e) => {
     e.preventDefault()
+    setSubmitHasBeenClicked(true)
 
-    handleError()
+    const checkErrors = handleError();
+    if (checkErrors) {
+      console.log("ERROR");
+      return
+    }
+    setIsLoading(true)
+    console.log("NO ERRROR");
 
-    return
-    // setError(true)
-    /*   return
-       //setIsLoading(true)*/
 
     const data = {
       request: {
@@ -111,11 +142,14 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
   }
 
 
+  // todo sätt isLoding till rikigti loadint, refakotisera, lägg in i alla komponenter
+
+
   const shortFilename = (name) => {
     const names = name.split(".")
     const shorted = names[0].substr(0, 10) + "[...]"
     return shorted + "." + names[1];
-  }
+  };
 
 
   const renderFileNames = () => {
@@ -139,54 +173,11 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     return (<ul className={styles.fileNameList}>{names}</ul>)
   };
 
-
-  // todo sätt isLoding till rikigti loadint, refakotisera, lägg in i alla komponenter
-
-  const handleError = () => {
-    console.log('reportData: ', reportData)
-
-
-    for (const [key, value] of Object.entries(reportData)) {
-
-      // check if value without spaces is less then 1
-      if (value.trim().length < 1) {
-        setError(prevState => ({
-          ...prevState,
-          [key]: true
-        }))
-      } else {
-        setError(prevState => ({
-          ...prevState,
-          [key]: false
-        }))
-      }
-
-
-      //console.log(`${key}: ${value}`);
-    }
-
-    /* setError(prevState => {
-       if (prevState[name].length > 1) {
-         return { ...prevState, [name]: false }
-       } else {
-         return { ...prevState, [name]: true }
-       }
-     });*/
-
-
-    return name
-  };
-
-  console.log('error.name: ', error)
-
+  console.log('files: ', files)
   return (
     <div className={styles.modalContainer}>
-
-      {
-        isLoading && <div className={styles.overlay} />
-      }
+      {isLoading && <div className={styles.overlay} />}
       <div className={styles.modalContent}>
-
         {isLoading && <div className={styles.spinner}>
           <img src={spinner} alt="" />
         </div>}
@@ -199,59 +190,65 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
               <input type="text"
                      id="vf_standard_input"
-                     className="vf-input"
+                     className={`vf-input ${hasError.subject && "vf-input--error"}`}
                      placeholder="Subject"
                      required={true}
                      value={reportData.subject}
                      name='subject'
                      onChange={(e) => handleInputData(e)}
               />
-              <label htmlFor="vf_standard_input">Subject</label>
+              <label htmlFor="vf_standard_input">{`${hasError.subject ? "Subject is required " : "Subject"}`}</label>
             </div>
 
 
             <div className="vf-input-container">
               <input type="text"
                      id="vf_standard_input"
-                     className={`vf-input ${error && "vf-input--error"}`}
+                     className={`vf-input ${hasError.name && "vf-input--error"}`}
                      placeholder="Name"
                      value={reportData.name}
                      name='name'
                      onChange={(e) => handleInputData(e)}
               />
-              {/*<label htmlFor="vf_standard_input">{`${error ? "Name is requeird " : "Name"}`}</label>*/}
-              {/* <label htmlFor="vf_standard_input">{handleError('name')}</label>*/}
+              <label htmlFor="vf_standard_input">{`${hasError.name ? "Name is required " : "Name"}`}</label>
             </div>
 
             <div className="vf-input-container">
               <input type="text"
                      id="vf_standard_input"
-                     className="vf-input"
+                     className={`vf-input ${hasError.email && "vf-input--error"}`}
                      placeholder="Your email"
                      value={reportData.email}
                      name='email'
                      onChange={(e) => handleInputData(e)}
               />
-              <label htmlFor="vf_standard_input">Your email</label>
+              <label htmlFor="vf_standard_input">{`${hasError.email ? "Email is required " : "Email"}`}</label>
             </div>
 
 
             <div className="vf-input-container">
-              <textarea id="vf_textarea_input" value={reportData.comment}
-                        name="comment" onChange={(e) => handleInputData(e)} className="vf-input" />
-              <label htmlFor="vf_textarea_input">Comment</label>
+              <textarea id="vf_textarea_input"
+                        value={reportData.comment}
+                        name="comment"
+                        onChange={(e) => handleInputData(e)}
+                        className={`vf-input ${hasError.comment && "vf-input--error"}`}
+              />
+              <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is requeird " : "Comment"}`}</label>
             </div>
 
 
-            <div className={styles.fileUploadContentContainer}>
-              <span>Upload your file here. Max 5</span>
+            <div className={styles.fileUploadContentContainer}
+                 style={ files.length > 5 ? { borderColor: "#F93B18"} : {}}>
+
+              <span>Upload your files (5 maximum)</span>
               <span>Up to 50 MB</span>
+              {files.length > 5 && <span>Maximum 5 files are allowed</span>}
+
               <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
                 Attach file(s)...
               </label>
               <input type="file" id="file-upload-button" name="attachment" multiple
                      onChange={(e) => handleFiles(e)} />
-
               {files && renderFileNames()}
             </div>
 

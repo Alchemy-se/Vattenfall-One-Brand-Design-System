@@ -113,10 +113,18 @@ input[type="file"] {
       span:nth-child(2) {
         color: #999999;
         font-size: 14px;
+        margin-bottom: 10px;
+      }
+   // Error text...
+      span:nth-child(3) {
+        color: #F93B18;
+        line-height: 14px;
+
+        font-size: 14px;
       }
 
       label {
-        margin-top: 20px;
+       // margin-top: 20px;
         margin-bottom: 24px;
       }
     }

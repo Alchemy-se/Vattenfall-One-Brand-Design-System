@@ -39,7 +39,7 @@ export const sendRequest = async (data, files) => {
       data
 
     });
-    console.log(response);
+    console.log("response", response);
     return response.status === 201;
 
 
@@ -60,6 +60,9 @@ export const uploadAttachments = async (file) => {
       },
       data: file
     })
+    console.log("uploard", response);
+
+
     return response.data.upload.token
   } catch (e) {
     console.log("upload attachment error:", e);
