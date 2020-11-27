@@ -38,7 +38,7 @@ p {
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover a {
-  color: #222222;
+  color: #2071B5;
   text-decoration: none;
 }
 
@@ -52,16 +52,16 @@ p {
 }
 
 .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-item > a {
-  color: #2071B5;
+  color: black;
 }
 
 .ant-menu-item > a:hover {
-  color: #222222;
+  color: #2071B5;
   text-decoration: none;
 }
 
 .ant-menu-item-selected a, .ant-menu-horizontal > .ant-menu-item-selected > a {
-  color: #222222;
+  color: #2071B5;
 }
 
 .ant-menu-item-group-title {
@@ -180,7 +180,7 @@ p {
 }
 
 .ant-anchor-link-active > .ant-anchor-link-title {
-  color: #222222;
+  color: #2071B5;
   font-weight: 500;
 }
 /*# sourceMappingURL=documentation.css.map */
