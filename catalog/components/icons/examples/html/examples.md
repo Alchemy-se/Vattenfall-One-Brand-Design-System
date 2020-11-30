@@ -2,7 +2,7 @@
 # Examples
 
 ```html
-showSource: true
+showSource: false
 ---
 <div class="vf-container">
 

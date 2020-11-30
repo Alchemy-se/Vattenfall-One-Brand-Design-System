@@ -16,17 +16,14 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 
+  @media(max-width: 1024px) {
+    max-width: 58%;
+  }
+  @media(max-width: 768px) {
+    max-width: 96%;
+    margin: 0;
+  }
 
-  @media(max-width: 640px) {
-    margin: 0 20px;
-    max-width: 100%;
-  }
-  
-  @media(min-width: 999px) {
-    // margin: 0 170px 0 40px;
-    margin: 0 0 0 44px;
-    // padding-bottom: 44px;
-  }
   p {
     font-style: normal;
     font-weight: 400;

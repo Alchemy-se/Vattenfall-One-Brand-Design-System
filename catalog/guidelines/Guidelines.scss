@@ -51,3 +51,19 @@
     display: none;
   }
 }
+
+.guidelinesBlockChildWrapper {
+  width: 78vw;
+  margin-left: -44px;
+  margin-top: -44px;
+  @media(max-width: 1025px) {
+    width: 95vw;
+  }
+  @media(max-width: 768px){
+    width: 100vw;
+    margin-left: 0;
+  }
+  @media(max-width: 425px) {
+    width: 95vw;
+  }
+}

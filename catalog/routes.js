@@ -141,7 +141,8 @@ const COMPONENTS_ROUTES = [
 
   // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
-  { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
+  // { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
+  { path: '/css/icons', name: 'Icons', component: <Icons/>},
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },

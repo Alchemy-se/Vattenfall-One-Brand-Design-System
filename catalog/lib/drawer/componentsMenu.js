@@ -54,7 +54,7 @@ const MENU_GROUP_ITEMS = {
 	utilities: [
 		{path: "/utilities", name: "Intro"},
 		{path: "/utilities/favicon", name: "Favicon"},
-		{path: "/utilities/icons", name: "Icons"}
+		{path: "/css/icons", name: "Icons"}
 	]
 };
 
