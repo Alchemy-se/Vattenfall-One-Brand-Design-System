@@ -202,6 +202,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
           <img src={spinner} alt="" />
         </div>}
 
+
         <form>
           <h3>Report issue – {selectedChild.name}</h3>
           <div className={styles.inputFieldsContainer}>
@@ -209,7 +210,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               <div className="vf-input-container">
                 <input type="text"
                        id="vf_standard_input"
-                       className={`vf-input ${hasError.subject && "vf-input--error"}`}
+                       className={`vf-input ${hasError.subject ? "vf-input--error" : "vf-input--css-placeholder" }`}
                        placeholder="Subject"
                        required={true}
                        value={reportData.subject}
@@ -224,7 +225,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               <div className="vf-input-container">
                 <input type="text"
                        id="vf_standard_input"
-                       className={`vf-input ${hasError.name && "vf-input--error"}`}
+                       className={`vf-input vf-input--css-placeholder ${hasError.name ? "vf-input--error" : "vf-input--css-placeholder"}`}
                        placeholder="Name"
                        value={reportData.name}
                        name='name'
@@ -236,7 +237,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               <div className="vf-input-container">
                 <input type="text"
                        id="vf_standard_input"
-                       className={`vf-input ${hasError.email && "vf-input--error"}`}
+                       className={`vf-input vf-input--css-placeholder ${hasError.email ? "vf-input--error" : "vf-input--css-placeholder"}`}
                        placeholder="Your email"
                        value={reportData.email}
                        name='email'
@@ -250,37 +251,38 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               <textarea id="vf_textarea_input"
                         value={reportData.comment}
                         name="comment"
+                        placeholder={"Comment"}
                         onChange={(e) => handleInputData(e)}
-                        className={`vf-input ${hasError.comment && "vf-input--error"}`}
+                        className={`vf-input ${hasError.comment ? "vf-input--error" : "vf-input--css-placeholder" }`}
               />
               <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is required " : "Comment"}`}</label>
             </div>
           </div>
 
           <div className={styles.fileUploadContentContainer}
-                 style={disableSubmit ? { borderColor: "#F93B18" } : {}}>
+               style={disableSubmit ? { borderColor: "#F93B18" } : {}}>
 
-              <span>Upload your files (5 maximum)</span>
-              <span>Up to 50 MB each</span>
-              {displayError()}
+            <span>Upload your files (5 maximum)</span>
+            <span>Up to 50 MB each</span>
+            {displayError()}
 
-              <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
-                Attach file(s)...
-              </label>
-              <input type="file" id="file-upload-button" name="attachment" multiple
-                     onChange={(e) => handleFiles(e)} />
-              {files && renderFileNames()}
-            </div>
+            <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
+              Attach file(s)...
+            </label>
+            <input type="file" id="file-upload-button" name="attachment" multiple
+                   onChange={(e) => handleFiles(e)} />
+            {files && renderFileNames()}
+          </div>
 
-            <div className={styles.buttonRow}>
-              <button onClick={() => setOpenModal(false)} type="button"
-                      className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
-              </button>
+          <div className={styles.buttonRow}>
+            <button onClick={() => setOpenModal(false)} type="button"
+                    className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
+            </button>
 
-              <button onClick={sendReport} disabled={disableSubmit} type="button"
-                      className="vf-btn vf-btn--md vf-btn--primary">Save
-              </button>
-            </div>
+            <button onClick={sendReport} disabled={disableSubmit} type="button"
+                    className="vf-btn vf-btn--md vf-btn--primary">Save
+            </button>
+          </div>
 
 
         </form>
