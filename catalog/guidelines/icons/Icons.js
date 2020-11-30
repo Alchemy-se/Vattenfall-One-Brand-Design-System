@@ -158,7 +158,7 @@ const Icons = () => {
       <GuidelinesBlock 
         title="Design Sources"
       >
-      <a style={{marginLeft: "44px", marginTop: "28px"}} href="#" className="vf-link-with-arrow">View on Abstract</a>
+      <a href="#" className="vf-link-with-arrow">View on Abstract</a>
       </GuidelinesBlock >    
     </Fragment>
   );

@@ -56,6 +56,9 @@
   width: 78vw;
   margin-left: -44px;
   margin-top: -44px;
+  a {
+    margin: 44px 0 0 44px;
+  }
   @media(max-width: 1025px) {
     width: 95vw;
   }
