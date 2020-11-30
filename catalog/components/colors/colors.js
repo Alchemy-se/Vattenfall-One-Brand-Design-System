@@ -18,7 +18,7 @@ const Colors = ({ uri }) => {
   const [component, setComponent] = useState('')
   const [selectedChild, setSelectedChild] = useState('')
   const [openModal, setOpenModal] = useState(false)
-  const [displayConfirmModal, setDisplayConfirmModal] = useState(false)
+  const [displayConfirmModal, setDisplayConfirmModal] = useState(true)
 
 
   useEffect(() => {

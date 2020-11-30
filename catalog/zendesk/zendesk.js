@@ -167,8 +167,6 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
   };
 
 
-
-
   const displayError = () => {
     if (files) {
       const filesToBig = files.filter(file => file.size > maxFileSize);
@@ -187,9 +185,9 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
   };
 
   useEffect(() => {
-    if(errorMessage.length > 5){
+    if (errorMessage.length > 5) {
       setDisableSubmit(true)
-    }else {
+    } else {
       setDisableSubmit(false)
     }
 
@@ -205,46 +203,48 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
         </div>}
 
         <form>
-          <div>
-            <h3>Report issue - {selectedChild.name}</h3>
-            <div className="vf-input-container">
-              <input type="text"
-                     id="vf_standard_input"
-                     className={`vf-input ${hasError.subject && "vf-input--error"}`}
-                     placeholder="Subject"
-                     required={true}
-                     value={reportData.subject}
-                     name='subject'
-                     onChange={(e) => handleInputData(e)}
-              />
-              <label htmlFor="vf_standard_input">{`${hasError.subject ? "Subject is required " : "Subject"}`}</label>
+          <h3>Report issue – {selectedChild.name}</h3>
+          <div className={styles.inputFieldsContainer}>
+            <div className={styles.leftColumn}>
+              <div className="vf-input-container">
+                <input type="text"
+                       id="vf_standard_input"
+                       className={`vf-input ${hasError.subject && "vf-input--error"}`}
+                       placeholder="Subject"
+                       required={true}
+                       value={reportData.subject}
+                       name='subject'
+                       onChange={(e) => handleInputData(e)}
+                />
+                <label
+                  htmlFor="vf_standard_input">{`${hasError.subject ? "Subject is required " : "Subject"}`}</label>
+              </div>
+
+
+              <div className="vf-input-container">
+                <input type="text"
+                       id="vf_standard_input"
+                       className={`vf-input ${hasError.name && "vf-input--error"}`}
+                       placeholder="Name"
+                       value={reportData.name}
+                       name='name'
+                       onChange={(e) => handleInputData(e)}
+                />
+                <label htmlFor="vf_standard_input">{`${hasError.name ? "Name is required " : "Name"}`}</label>
+              </div>
+
+              <div className="vf-input-container">
+                <input type="text"
+                       id="vf_standard_input"
+                       className={`vf-input ${hasError.email && "vf-input--error"}`}
+                       placeholder="Your email"
+                       value={reportData.email}
+                       name='email'
+                       onChange={(e) => handleInputData(e)}
+                />
+                <label htmlFor="vf_standard_input">{`${hasError.email ? "Email is required " : "Email"}`}</label>
+              </div>
             </div>
-
-
-            <div className="vf-input-container">
-              <input type="text"
-                     id="vf_standard_input"
-                     className={`vf-input ${hasError.name && "vf-input--error"}`}
-                     placeholder="Name"
-                     value={reportData.name}
-                     name='name'
-                     onChange={(e) => handleInputData(e)}
-              />
-              <label htmlFor="vf_standard_input">{`${hasError.name ? "Name is required " : "Name"}`}</label>
-            </div>
-
-            <div className="vf-input-container">
-              <input type="text"
-                     id="vf_standard_input"
-                     className={`vf-input ${hasError.email && "vf-input--error"}`}
-                     placeholder="Your email"
-                     value={reportData.email}
-                     name='email'
-                     onChange={(e) => handleInputData(e)}
-              />
-              <label htmlFor="vf_standard_input">{`${hasError.email ? "Email is required " : "Email"}`}</label>
-            </div>
-
 
             <div className="vf-input-container">
               <textarea id="vf_textarea_input"
@@ -255,9 +255,9 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               />
               <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is required " : "Comment"}`}</label>
             </div>
+          </div>
 
-
-            <div className={styles.fileUploadContentContainer}
+          <div className={styles.fileUploadContentContainer}
                  style={disableSubmit ? { borderColor: "#F93B18" } : {}}>
 
               <span>Upload your files (5 maximum)</span>
@@ -271,6 +271,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
                      onChange={(e) => handleFiles(e)} />
               {files && renderFileNames()}
             </div>
+
             <div className={styles.buttonRow}>
               <button onClick={() => setOpenModal(false)} type="button"
                       className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
@@ -280,7 +281,8 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
                       className="vf-btn vf-btn--md vf-btn--primary">Save
               </button>
             </div>
-          </div>
+
+
         </form>
       </div>
     </div>
