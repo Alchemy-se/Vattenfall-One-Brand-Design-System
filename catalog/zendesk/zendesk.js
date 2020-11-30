@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
-import styles from './styles.scss'
+import React, { useEffect, useState } from 'react';
+import styles from './styles.scss';
 import { useLocation } from "react-router-dom";
 import { sendRequest } from "../../helpers/apiCalls/zendeskCalls";
 
@@ -11,11 +11,11 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
   const spinner = require('../../assets/spinner.gif').default;
   const location = useLocation();
   const regex = new RegExp("(?<=\\/)[a-z]+(?=\\/)")
-  let selectedChild = { name: "" }
-  let category = regex.exec(location.pathname)[0]
+  let selectedChild = { name: "" };
+  let category = regex.exec(location.pathname)[0];
   let guidelineUri;
   let componentUri;
-  category = category.slice(0, -1)
+  category = category.slice(0, -1);
 
 
   const language = "html/js";
@@ -24,60 +24,61 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
     if (category === 'components') {
       guidelineUri = "";
-      componentUri = selectedChild.uri
+      componentUri = selectedChild.uri;
     } else {
       guidelineUri = selectedChild.guidelineUri;
-      componentUri = ""
+      componentUri = "";
     }
 
   }
+  // filesize in k. Approx 50 mb
+  const maxFileSize = 50000000;
+  let errorMessage = "";
+  const [hasError, setHasError] = useState({ subject: false, name: false, email: false, comment: false });
 
-  const [hasError, setHasError] = useState({ subject: false, name: false, email: false, comment: false })
-  //const [hasError, setHasError] = useState({ subject: "", name: "", email: "", comment: "" })
-
-  const [reportData, setReportData] = useState({ subject: "", name: "", email: "", comment: "" })
+  const [reportData, setReportData] = useState({ subject: "", name: "", email: "", comment: "" });
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const [files, setFiles] = useState(false)
+  const [files, setFiles] = useState(false);
 
+  const [submitHasBeenClicked, setSubmitHasBeenClicked] = useState(false);
 
-  const [submitHasBeenClicked, setSubmitHasBeenClicked] = useState(false)
-
+  const [disableSubmit, setDisableSubmit] = useState(false);
 
   const handleInputData = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const name = e.target.name;
-    const value = e.target.value
+    const value = e.target.value;
     setReportData(prevState => ({
       ...prevState,
       [name]: value
     }))
-  }
+  };
 
   const handleFiles = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const filesFromForm = Array.from(e.target.files);
-    let fileArray = []
+    let fileArray = [];
     filesFromForm.forEach((file) => {
       fileArray.push(file)
     });
     // concat new array of files if file is added one at a time
-    setFiles(prevState => [...prevState, ...fileArray])
+    setFiles(prevState => [...prevState, ...fileArray]);
   };
 
-  let isError = false
+  let isError = false;
   const handleError = () => {
     for (const [key, value] of Object.entries(reportData)) {
       // Check if value without spaces is less than 1. If so set errorstate to true
       if (value.trim().length < 1) {
-        isError = true
+        isError = true;
         setHasError(prevState => ({
           ...prevState,
           [key]: true
         }))
       } else {
-        isError = false
+        isError = false;
         setHasError(prevState => ({
           ...prevState,
           [key]: false
@@ -89,24 +90,19 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
   useEffect(() => {
     if (submitHasBeenClicked) {
-      handleError()
+      handleError();
     }
-  }, [reportData, submitHasBeenClicked])
-
-
-  // todo måndag - hanter filstorlek, flytta ut zendeks m.m
+  }, [reportData, submitHasBeenClicked]);
 
   const sendReport = async (e) => {
-    e.preventDefault()
-    setSubmitHasBeenClicked(true)
+    e.preventDefault();
+    setSubmitHasBeenClicked(true);
 
     const checkErrors = handleError();
     if (checkErrors) {
-      console.log("ERROR");
       return
     }
-    setIsLoading(true)
-    console.log("NO ERRROR");
+    setIsLoading(true);
 
 
     const data = {
@@ -123,13 +119,13 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
         ]
       }
     };
-    const success = await sendRequest(data, files)
+    const success = await sendRequest(data, files);
     if (success) {
-      setIsLoading(false)
-      setOpenModal(false)
-      handleConfirmModal(success)
+      setIsLoading(false);
+      setOpenModal(false);
+      handleConfirmModal(success);
     }
-  }
+  };
 
   const deleteFile = (index) => {
     const tempFiles = [...files];
@@ -138,30 +134,27 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
         return x
       }
     });
-    setFiles(filesToKeep)
-  }
-
-
-  // todo sätt isLoding till rikigti loadint, refakotisera, lägg in i alla komponenter
-
+    setFiles(filesToKeep);
+  };
 
   const shortFilename = (name) => {
-    const names = name.split(".")
-    const shorted = names[0].substr(0, 10) + "[...]"
+    const names = name.split(".");
+    const shorted = names[0].substr(0, 10) + "[...]";
     return shorted + "." + names[1];
   };
 
 
   const renderFileNames = () => {
-    let names = []
+    let names = [];
     files.map((file, index) => {
-      let displayName = file.name
+      const toBig = file.size > maxFileSize;
+      let displayName = file.name;
       if (displayName.length > 10) {
         displayName = shortFilename(displayName)
       }
       return names.push(
         <li key={name + "-" + index}>
-          {displayName}
+          <span className={`${toBig && styles.errorText}`}>{displayName}</span>
           <img
             src={close}
             onClick={() => deleteFile(index)}
@@ -173,7 +166,36 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     return (<ul className={styles.fileNameList}>{names}</ul>)
   };
 
-  console.log('files: ', files)
+
+
+
+  const displayError = () => {
+    if (files) {
+      const filesToBig = files.filter(file => file.size > maxFileSize);
+
+      if (filesToBig.length >= 1) {
+        errorMessage = "File(s) to big";
+      }
+      if (files.length > 5) {
+        errorMessage = "Maximum 5 files are allowed";
+      }
+      if (filesToBig.length >= 1 && files.length > 5) {
+        errorMessage = "Maximum 5 files are allowed, File(s) to big";
+      }
+      return <span className={styles.errorText}>{errorMessage}</span>
+    }
+  };
+
+  useEffect(() => {
+    if(errorMessage.length > 5){
+      setDisableSubmit(true)
+    }else {
+      setDisableSubmit(false)
+    }
+
+  }, [displayError]);
+
+
   return (
     <div className={styles.modalContainer}>
       {isLoading && <div className={styles.overlay} />}
@@ -185,9 +207,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
         <form>
           <div>
             <h3>Report issue - {selectedChild.name}</h3>
-
             <div className="vf-input-container">
-
               <input type="text"
                      id="vf_standard_input"
                      className={`vf-input ${hasError.subject && "vf-input--error"}`}
@@ -233,16 +253,16 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
                         onChange={(e) => handleInputData(e)}
                         className={`vf-input ${hasError.comment && "vf-input--error"}`}
               />
-              <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is requeird " : "Comment"}`}</label>
+              <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is required " : "Comment"}`}</label>
             </div>
 
 
             <div className={styles.fileUploadContentContainer}
-                 style={ files.length > 5 ? { borderColor: "#F93B18"} : {}}>
+                 style={disableSubmit ? { borderColor: "#F93B18" } : {}}>
 
               <span>Upload your files (5 maximum)</span>
-              <span>Up to 50 MB</span>
-              {files.length > 5 && <span>Maximum 5 files are allowed</span>}
+              <span>Up to 50 MB each</span>
+              {displayError()}
 
               <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
                 Attach file(s)...
@@ -251,27 +271,18 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
                      onChange={(e) => handleFiles(e)} />
               {files && renderFileNames()}
             </div>
-
-
             <div className={styles.buttonRow}>
               <button onClick={() => setOpenModal(false)} type="button"
                       className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
               </button>
 
-              <button onClick={sendReport} type="button"
+              <button onClick={sendReport} disabled={disableSubmit} type="button"
                       className="vf-btn vf-btn--md vf-btn--primary">Save
               </button>
-
-
             </div>
-
-
           </div>
-
         </form>
       </div>
-
-
     </div>
   );
 

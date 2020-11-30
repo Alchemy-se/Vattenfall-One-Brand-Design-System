@@ -117,10 +117,15 @@ input[type="file"] {
       }
    // Error text...
       span:nth-child(3) {
-        color: #F93B18;
         line-height: 14px;
-
         font-size: 14px;
+      }
+
+      .errorBorder {
+        border-color: #F93B18;
+      }
+      .errorText {
+        color: #F93B18;
       }
 
       label {

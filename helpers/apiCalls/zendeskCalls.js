@@ -1,7 +1,9 @@
 import axios from "axios";
 
 export const sendRequest = async (data, files) => {
-  console.log('files: ', files)
+  console.log("SendRequest");
+
+  return
   const tokens = []
 
   if (files.length >= 1) {
