@@ -47,6 +47,12 @@ const Button = () => {
           "Should never be used as a cancel button"
         ]}
       />
+      <div className="vf-row w-75">
+        <div style={{ margin: '0' }} className="vf-col">
+          <h4 className="use-in-toc">Padding</h4>
+          <p>Buttons with Icon has 64px space left and right between edge and text. Buttons without Icon, has a minimum of 28px left and right.</p>
+        </div>
+      </div>
       <YellowButtons title="Yellow" label={buttonLabel} />
       <div className="vf-mt-lg" />
       <BlueButtons title="Blue" label={buttonLabel} />
