@@ -18,12 +18,6 @@ const DoNotOne = '/img/guidelines/icons/doNot1.png';
 const DoNotTwo = '/img/guidelines/icons/doNot2.png';
 const DoNotThree = '/img/guidelines/icons/doNot3.png';
 const DoNotFour = '/img/guidelines/icons/doNot4.png';
-// const ActionIcons = '/img/guidelines/icons/ActionIcons.png';
-// const InChargeIcons = '/img/guidelines/icons/InChargeIcons.png';
-// const IdentificationIcons = '/img/guidelines/icons/IdentificationIcons.png';
-// const NavigationIcons = '/img/guidelines/icons/NavigationIcons.png';
-// const SmartHomeIcons = '/img/guidelines/icons/SmartHomeIcons.png';
-// const SocialMediaIcons = '/img/guidelines/icons/SocialMediaIcons.png';
 
 const editMd = (mdText) => {
   const hideSourceCode = mdText.replace("showSource: true", "showSource: false");
