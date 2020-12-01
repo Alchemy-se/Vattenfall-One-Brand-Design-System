@@ -5,7 +5,7 @@ const GuidelinesBlock = ({title, text, textlineTwo, children}) => {
   return (
     <div className="vf-row w-100" style={{ margin: '44px 0' }}>
       <div className="vf-col-12" style={{paddingLeft: '0'}}>
-        <h4 className="use-in-toc">{title}</h4>
+        <h2 className="use-in-toc">{title}</h2>
         {text && 
           <p>{text}</p>
         }
@@ -13,7 +13,7 @@ const GuidelinesBlock = ({title, text, textlineTwo, children}) => {
           <p>{textlineTwo}</p>
         }
         <div className={GuidelinesStyles.guidelinesBlockChildWrapper}>
-        {children}
+        {children && children}
         </div>
       </div>
     </div>
