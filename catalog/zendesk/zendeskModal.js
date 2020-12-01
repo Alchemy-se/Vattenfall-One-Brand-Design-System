@@ -6,16 +6,18 @@ import { sendRequest } from "../../helpers/apiCalls/zendeskCalls";
 
 const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus }) => {
 
-
   const close = require('../../assets/icons/Close.svg').default;
   const spinner = require('../../assets/spinner.gif').default;
   const location = useLocation();
-  const regex = new RegExp("(?<=\\/)[a-z]+(?=\\/)")
+  const emailRegex = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
+
+  // get path name. match components/guidelines from e.g http://localhost:3213/components/colors
+  const pathRegex = new RegExp("(?<=\\/)[a-z]+(?=\\/)")
   let selectedChild = { name: "" };
-  let category = regex.exec(location.pathname)[0];
+  let category = pathRegex.exec(location.pathname)[0];
   let guidelineUri;
   let componentUri;
-  category = category.slice(0, -1);
+  let fullUrl = window.location.origin;
 
 
   const language = "html/js";
@@ -25,11 +27,12 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
     if (category === 'components') {
       guidelineUri = "";
       componentUri = selectedChild.uri;
+      fullUrl = fullUrl + componentUri
     } else {
       guidelineUri = selectedChild.guidelineUri;
       componentUri = "";
+      fullUrl = fullUrl + guidelineUri
     }
-
   }
   // file size in k. Approx 50 mb. Hard limit from zendesk
   const maxFileSize = 50000000;
@@ -91,17 +94,31 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
   useEffect(() => {
     if (submitHasBeenClicked) {
       handleError();
+      validateEmail()
     }
   }, [reportData, submitHasBeenClicked]);
+  const [validEmail, setValidEmail] = useState(true)
+  const validateEmail = () => {
+    if (emailRegex.test(reportData.email)) {
+      setValidEmail(true)
+    } else {
+      setValidEmail(false)
+    }
+
+  }
 
   const sendReport = async (e) => {
     e.preventDefault();
     setSubmitHasBeenClicked(true);
 
     const checkErrors = handleError();
-    if (checkErrors) {
+    validateEmail()
+    if (checkErrors || !validEmail) {
       return
     }
+
+
+
     setIsLoading(true);
 
 
@@ -115,7 +132,8 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
           { id: 360011185597, value: category },
           { id: 360011158198, value: "new request/ report issue" },
           { id: 360011185617, value: componentUri },
-          { id: 360011158218, value: guidelineUri }
+          { id: 360011158218, value: guidelineUri },
+          { id: 360011298258, value: fullUrl }
         ]
       }
     };
@@ -211,7 +229,7 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
               <div className="vf-input-container">
                 <input type="text"
                        id="vf_standard_input"
-                       className={`vf-input ${hasError.subject ? "vf-input--error" : "vf-input--css-placeholder" }`}
+                       className={`vf-input ${hasError.subject ? "vf-input--error" : "vf-input--css-placeholder"}`}
                        placeholder="Subject"
                        required={true}
                        value={reportData.subject}
@@ -226,7 +244,7 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
               <div className="vf-input-container">
                 <input type="text"
                        id="vf_standard_input"
-                       className={`vf-input vf-input--css-placeholder ${hasError.name ? "vf-input--error" : "vf-input--css-placeholder"}`}
+                       className={`vf-input ${hasError.name ? "vf-input--error" : "vf-input--css-placeholder"}`}
                        placeholder="Name"
                        value={reportData.name}
                        name='name'
@@ -236,15 +254,17 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
               </div>
 
               <div className="vf-input-container">
+
                 <input type="email"
-                       id="vf_standard_input"
-                       className={`vf-input vf-input--css-placeholder ${hasError.email ? "vf-input--error" : "vf-input--css-placeholder"}`}
-                       placeholder="Your email"
+                       id="vf_standard_input_email"
+                       className={`vf-input ${hasError.email || !validEmail ? "vf-input--error" : "vf-input--css-placeholder"}`}
+                       placeholder={"Email"}
                        value={reportData.email}
                        name='email'
                        onChange={(e) => handleInputData(e)}
                 />
-                <label htmlFor="vf_standard_input">{`${hasError.email ? "Email is required " : "Email"}`}</label>
+                <label
+                  htmlFor="vf_standard_input_email">{`${hasError.email || !validEmail ? "Email is required " : "Email"}`}</label>
               </div>
             </div>
 
@@ -254,7 +274,7 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
                         name="comment"
                         placeholder={"Comment"}
                         onChange={(e) => handleInputData(e)}
-                        className={`vf-input ${hasError.comment ? "vf-input--error" : "vf-input--css-placeholder" }`}
+                        className={`vf-input ${hasError.comment ? "vf-input--error" : "vf-input--css-placeholder"}`}
               />
               <label htmlFor="vf_standard_input">{`${hasError.comment ? "Comment is required " : "Comment"}`}</label>
             </div>

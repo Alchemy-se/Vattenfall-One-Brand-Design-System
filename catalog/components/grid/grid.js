@@ -35,13 +35,17 @@ const markdown = howItWorks + equalWidth + settingOneColumnWidth + variableWithC
 
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
+import Modals from "../../zendesk/modals";
 
 export default class Grid extends Component {
 	render() {
+
+
 		return (
 			<React.Fragment>
 				<PageHeader title={"Grid"}/>
 				<Markdown source={markdown} />
+				<Modals uri={this.props.uri} />
 			</React.Fragment>
 		)
 	}

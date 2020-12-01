@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { fetchDataByUri } from "../apiCalls/metadataCalls";
 
 
-
-
 // adds a reportbutton to each component and fetches respective data from the cms
 export function useAddReportButton(uri) {
   const [component, setComponent] = useState('')
@@ -23,6 +21,8 @@ export function useAddReportButton(uri) {
     if (component) {
       Array.from(document.getElementsByClassName("find_by_header")).forEach(function (item) {
 
+        let haveHeader = true;
+
         //create new div
         const div = document.createElement('div');
         div.setAttribute('id', item.id + "-div");
@@ -37,56 +37,55 @@ export function useAddReportButton(uri) {
 
         // get header by id. sets in headingRenderer.js
         // append new <div><span>Report issue</span></div> element
-        const header = document.getElementById(item.id)
-        header.appendChild(div)
+
+        // if the component dont have a header. We set a hidden header in the .md file
+        // e.g. ###### Header. Use 6 #.
+        const noHeader = Array.from(document.getElementsByClassName('no-header-on-component'))
+        if (noHeader.length >= 1) {
+          haveHeader = false
+          const header = document.getElementById("report-issue-hidden")
+          header.appendChild(div)
+
+        } else {
+          const header = document.getElementById(item.id)
+          header.appendChild(div)
+
+        }
+
 
         // Get report button by id and add click event listener
         const reportButton = document.getElementById(item.id + "-div");
         reportButton.addEventListener('click', function (e) {
+          let child;
+          if (haveHeader) {
+            // get the child that the user clicks on e.g background color
+            child = component.metadata.children.filter(child => {
+              return child.uri.indexOf("#" + item.id) !== -1;
 
-          // get the child that the user clicks on e.g background color
-          const child = component.metadata.children.filter(child => {
-            return child.uri.indexOf("#" + item.id) !== -1;
+            });
+          } else {
+            // get by uri - the uri in this cas only have a # as its a lonely child
+            child = component.metadata.children.filter(child => {
+              return child.uri.indexOf("#") !== -1;
+            })
+          }
 
-          });
           setSelectedChild(child);
           setOpenModal(true)
         })
       });
     }
   }, [component]);
-  return {openModal, selectedChild, setOpenModal}
+  return { openModal, selectedChild, setOpenModal }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**
  *  Detect clicks outside element container with a ref
  *
  *  You can use it like this in the component you want to check:
-  const ref = useRef(null);
-  const isClickedOutside = useDetectOutsideClick(ref)
+ const ref = useRef(null);
+ const isClickedOutside = useDetectOutsideClick(ref)
 
  useEffect(() => {
           if (isClickedOutside) {
@@ -109,6 +108,7 @@ export function useDetectOutsideClick(ref) {
         setIsClickedOutside(true)
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
 

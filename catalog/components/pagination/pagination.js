@@ -5,6 +5,7 @@ import overview from './component-overview/html/component-overview.md'
 import workingWithIcons from './working-with-icons/html/working-with-icons.md'
 import disabledAndActiveStates from './disabled-and-active-states/html/disabled-and-active-states.md'
 import alignment from './alignment/html/alignment.md'
+import Modals from "../../zendesk/modals";
 
 const markdown = overview + workingWithIcons + disabledAndActiveStates + alignment;
 export default class Pagination extends Component {
@@ -13,6 +14,7 @@ export default class Pagination extends Component {
       <React.Fragment>
         <PageHeader title={"Pagination"} />
         <Markdown source={markdown} />
+        <Modals uri={this.props.uri} />
       </React.Fragment>
     )
   }

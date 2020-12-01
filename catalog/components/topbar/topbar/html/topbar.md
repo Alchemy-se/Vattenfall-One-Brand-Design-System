@@ -1,3 +1,4 @@
+###### top bar
 The top bar contains a centered logotype and can be built as a starting point for a header.
 
 ```html

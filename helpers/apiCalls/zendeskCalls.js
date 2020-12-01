@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export const sendRequest = async (data, files) => {
-  console.log("SendRequest");
 
 
   const tokens = []
@@ -41,7 +40,6 @@ export const sendRequest = async (data, files) => {
       data
 
     });
-    console.log("response", response);
     return response.status
 
 
@@ -65,7 +63,6 @@ export const uploadAttachments = async (file) => {
       },
       data: file
     })
-    console.log("uploard", response);
 
 
     return response.data.upload.token

@@ -8,7 +8,6 @@ const Modals = ({ uri }) => {
   const [displayConfirmModal, setDisplayConfirmModal] = useState(false);
   const [status, setStatus] = useState(null);
   const { openModal, selectedChild, setOpenModal } = useAddReportButton(uri);
-
   const modalProps = {
     setOpenModal,
     setDisplayConfirmModal,

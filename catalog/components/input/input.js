@@ -10,6 +10,7 @@ import warningState from './warning-state/html/warning-state.md'
 import errorState from './error-state/html/error-state.md'
 import Markdown from "../../lib/markdown/index";
 import PageHeader from "../../lib/pageHeader";
+import Modals from "../../zendesk/modals";
 
 const markdown = standardWithPlaceholder + standard + textarea + number + underlineStyle + withTooltip
   + warningState + errorState;
@@ -20,6 +21,7 @@ export default class Input extends Component {
       <React.Fragment>
         <PageHeader title={"Input"} />
         <Markdown source={markdown} />
+        <Modals uri={this.props.uri} />
       </React.Fragment>
     )
   }

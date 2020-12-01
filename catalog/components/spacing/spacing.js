@@ -7,6 +7,7 @@ import negativeMargin from './negative-margin/html/negative-margin.md'
 
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
+import Modals from "../../zendesk/modals";
 const markdown = vattenFallSpacings + notation + examples + horizontalCentering + negativeMargin;
 export default class Spacing extends Component {
 	render() {
@@ -14,6 +15,7 @@ export default class Spacing extends Component {
 			<React.Fragment>
 				<PageHeader title={"Spacing"}/>
 				<Markdown source={markdown} />
+				<Modals uri={this.props.uri} />
 			</React.Fragment>
 		)
 	}
