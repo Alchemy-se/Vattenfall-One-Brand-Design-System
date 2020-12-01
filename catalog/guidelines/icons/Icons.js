@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import Markdown from '../../lib/markdown';
 import Action from '../../components/icons/action-icons/html/action-icons.md';
-import InCharge from '../../components/icons/incharge-icons/html/incharge-icons.md';
+import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md';
 import Identification from '../../components/icons/identification-icons/html/identification-icons.md';
 import Navigation from '../../components/icons/navigation-icons/html/navigation-icons.md';
 import SmartHome from '../../components/icons/smart-home-icons/html/smart-home-icons.md';
