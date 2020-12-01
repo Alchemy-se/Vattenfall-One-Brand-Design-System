@@ -3,7 +3,7 @@ import axios from "axios";
 export const sendRequest = async (data, files) => {
   console.log("SendRequest");
 
-  return
+
   const tokens = []
 
   if (files.length >= 1) {
@@ -42,10 +42,13 @@ export const sendRequest = async (data, files) => {
 
     });
     console.log("response", response);
-    return response.status === 201;
+    return response.status
 
 
-  } catch (e) {
+  } catch (error) {
+    return error.response.status
+
+
     console.log("sendRequest error:", e);
 
   }

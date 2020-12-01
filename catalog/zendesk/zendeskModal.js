@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { sendRequest } from "../../helpers/apiCalls/zendeskCalls";
 
 
-const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
+const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus }) => {
 
 
   const close = require('../../assets/icons/Close.svg').default;
@@ -31,7 +31,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
     }
 
   }
-  // filesize in k. Approx 50 mb
+  // file size in k. Approx 50 mb. Hard limit from zendesk
   const maxFileSize = 50000000;
   let errorMessage = "";
   const [hasError, setHasError] = useState({ subject: false, name: false, email: false, comment: false });
@@ -119,11 +119,12 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
         ]
       }
     };
-    const success = await sendRequest(data, files);
-    if (success) {
+    const status = await sendRequest(data, files);
+    if (status) {
       setIsLoading(false);
       setOpenModal(false);
-      handleConfirmModal(success);
+      setDisplayConfirmModal(true);
+      setStatus(status)
     }
   };
 
@@ -235,7 +236,7 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
               </div>
 
               <div className="vf-input-container">
-                <input type="text"
+                <input type="email"
                        id="vf_standard_input"
                        className={`vf-input vf-input--css-placeholder ${hasError.email ? "vf-input--error" : "vf-input--css-placeholder"}`}
                        placeholder="Your email"
@@ -293,4 +294,4 @@ const Zendesk = ({ data, setOpenModal, handleConfirmModal }) => {
 
 };
 
-export default Zendesk;
+export default ZendeskModal;
