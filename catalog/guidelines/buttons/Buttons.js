@@ -9,7 +9,6 @@ import TextLinks from './textLinks';
 import SelectToggle from './selectToggle';
 import RadioButtons from './radioButtons';
 import Checkbox from './checkbox';
-import GuidelinesBlock from '../guidelinesBlock';
 
 import Description from '../Description';
 import DottedDescription from '../DottedDescription';
@@ -104,7 +103,10 @@ const Button = () => {
       />   
       <Checkbox label={placeholder} />
       <div className="vf-mt-xl" />
-      <GuidelinesBlock title="Button Group" text="Guideline text about buttons group here"/>
+      <Description
+        title="Button Group"
+        text="By default the text in button group is set to: Colors / CTA / Secondary / Default on white background. On Hover text and animated icon turns White on background: Colors / CTA / Secondary / Hover. On Pressed the text stays white on background: Colors / CTA / Secondary / Pressed."
+      />    
         <div className="vf-row">
           <div class="vf-btn-group" role="group" aria-label="Basic example">
             <button type="button" className="vf-btn-group__btn vf-btn vf-btn--secondary">Left</button>
