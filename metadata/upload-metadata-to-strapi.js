@@ -1,26 +1,14 @@
-const axios = require('axios')
 require('dotenv').config()
+const axios = require('axios')
 const componentMetadata = 'metadata/components-overview-metadata.json';
 const fs = require('fs');
 
-
-let baseUrl = process.env.LOCAL_BASE_URL;
-let identifier = process.env.LOCAL_BACKEND_USER_IDENTIFIER;
-let password = process.env.LOCAL_BACKEND_USER_PASSWORD;
-
-
-if (process.env.NODE_ENV === 'production') {
-  baseUrl = process.env.PROD_STRAPI_BASE_URL;
-  identifier = process.env.PROD_BACKEND_USER_IDENTIFIER;
-  password = process.env.PROD_BACKEN_USER_PASSWOROD;
-}
+let baseUrl = process.env.BASE_URL;
+let identifier = process.env.BACKEND_USER_IDENTIFIER;
+let password = process.env.BACKEND_USER_PASSWORD;
 
 // Upload metadata to strapi cms
 async function auth() {
-  
-  console.log("auth köts");
-  
-  
   try {
 
     const { data } = await axios({
@@ -35,7 +23,6 @@ async function auth() {
     if (data && data.jwt) {
       return data.jwt
     }
-    ;
 
     return false
 
@@ -63,8 +50,8 @@ async function uploadMetadata() {
       })
       if (res) {
         console.log("metadata in strapi cms deleted");
-        
-        
+
+
 
 
         let metadata = fs.readFileSync(componentMetadata);

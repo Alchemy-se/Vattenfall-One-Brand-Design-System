@@ -1,9 +1,6 @@
 import axios from "axios";
 
-let baseUrl = process.env.LOCAL_BASE_URL;
-if (process.env.NODE_ENV === "production") {
-  baseUrl = process.env.PROD_STRAPI_BASE_URL
-}
+let baseUrl = process.env.BASE_URL;
 
 export const fetchAllMetadata = async () => {
   const res = await axios({
