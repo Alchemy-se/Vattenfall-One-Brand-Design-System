@@ -29,40 +29,37 @@ const InfoGraphics = () => {
     <Fragment>
       <PageHeader title="Info Graphics" />
       <section className="p-2 vf-border-top-gray-200"></section>
-      <div className="row align-items-start">
-        <h2 className="use-in-toc">Information graphics style</h2>
-        <p className={`${styles.guidelinesText}`}>
-          Sharing information and data in a clear and confident wy is part of the Vettenfall overall tonality, and
-          graphs are a key
-          <br />
-          graphics elements to make data come alive. Vattenfall has a style for information graphics that is bold,
-          simple and clear <br />
-          To create the graphics, the Vattenfall colours can be used in different ways - please read more regarding
-          color usage
-          <br />
-          below.
-        </p>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc">Information graphics style</h2>
+          <p className={`${styles.guidelinesText}`}>
+            Sharing information and data in a clear and confident way is part of the Vattenfall overall tonality, and 
+            graphs are a key graphic elements to make data come alive. Vattenfall has a style for information graphics that is bold, 
+            simple and clear. To create the graphs, the Vattenfall colors can be used in different ways – please read more regarding color usage 
+            below.
+          </p>
+        </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={examples} />
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
+      <div className="vf-row">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Types of graphs</h2>
           <p className={`${styles.guidelinesText}`}>
-            There are ifferent types of charts and graphs to be used - pie charts, bar graphs and lines <br />
-            graphs. They are generally used for different things. Pie charts show how a whole is divided into <br />
-            different parts, bar graphs show numbers that are independent of each other and line graphs <br />
-            show numbers that have changed over time.
+            There are different types of charts and graphs to be used – pie charts, bar graphs and lines graphs. They are generally 
+            used for different things. Pie charts show how a whole is divided into 
+            different parts, bar graphs show numbers that are independent of each other and line graphs  
+            show numbers that have changed over time. 
           </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={types1} />
-          <h4  style={{ textAlign: 'center' }}>Example of a pie chart</h4>
+          <h4 style={{ textAlign: 'center' }}>Example of a pie chart</h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={types2} />
@@ -70,46 +67,45 @@ const InfoGraphics = () => {
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={types3} />
-          <h4  style={{ textAlign: 'center' }}>Example of a line graph</h4>
+          <h4 style={{ textAlign: 'center' }}>Example of a line graph</h4>
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
-          <h2 className="use-in-toc">Colours for graphs</h2>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc">Colors for graphs</h2>
           <p className={`${styles.guidelinesText}`}>
-            When creating information graphics mainly use the secondary colours, but the primary colours <br />
-            are also allowed. There is also a colour palette specifically made for the different energy sources. <br />
-            Please look further down on this page to see how to use these colors and to find the colour <br />
-            codes. The color black is only used in text an lines, not as a color in the graph or chart.
+          When creating information graphics mainly use the secondary colors, but the primary colors are also allowed. 
+          There is also a color palette specifically made for the different energy sources. 
+          Please look further down on this page to see how to use these colors and to find the color codes. The color black is only used in text and lines, not as a color in the graph or chart.
           </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={graphColors1} />
-          <h4  style={{ textAlign: 'center' }}>Secondary colours</h4>
+          <h4 style={{ textAlign: 'center' }}>Secondary colors</h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={graphColors2} />
-          <h4  style={{ textAlign: 'center' }}>Primary colours</h4>
+          <h4 style={{ textAlign: 'center' }}>Primary colors</h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={graphColors3} />
-          <h4  style={{ textAlign: 'center' }}>Energy source colours</h4>
+          <h4 style={{ textAlign: 'center' }}>Energy source colors</h4>
         </div>
       </div>
       <div className="vf-row w-75">
         <div className="vf-col ">
-          <h2 className="use-in-toc">Colour codes</h2>
+          <h2 className="use-in-toc">Color codes</h2>
         </div>
       </div>
-      <h4 >Primary colour codes</h4>
+      <h4>Primary color codes</h4>
       <div className="vf-row">
         <ColourSpec name="Vattenfall Yellow" hex="#FFDA00" rgb="255, 218, 0" />
         <ColourSpec name="Vattenfall Blue" hex="#2071B5" rgb="32, 113, 181" />
         <ColourSpec name="Vattenfall Grey" hex="#4E4B4B" rgb="78, 75, 72" />
       </div>
-      <h4 >Secondary colour values</h4>
+      <h4>Secondary color values</h4>
       <div className="vf-row">
         <ColourSpec name="Vattenfall Dark Green" hex="#235A60" rgb="35, 90, 96" />
         <ColourSpec name="Vattenfall Dark Blue" hex="#22314C" rgb="34, 49, 76" />
@@ -122,14 +118,12 @@ const InfoGraphics = () => {
         <ColourSpec name="Vattenfall Purple" hex="#9365BC" rgb="147, 101, 188" />
         <ColourSpec name="Vattenfall Dark Purple" hex="#7A2B49" rgb="122, 43, 73" />
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col ">
-          <h2 className="use-in-toc">Energy source colours</h2>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc" >Energy source colors</h2>
           <p className={`${styles.guidelinesText}`}>
-            Recomended colours for specific energy sources has been developed mainly to be used for <br />
-            information graphs. Please note that this is a recommendation and not a rule. Colour coding for
-            <br />
-            refulation compliance. The categories are: Renewable, Nuclear, District heating and Fossil.
+          Recomended colors for specific energy sources have been developed mainly to be used for information graphs. Please note that this is a recommendation and not a rule. 
+          Color coding for refulation compliance. The categories are: Renewable, Nuclear, District heating and Fossil.
           </p>
         </div>
       </div>
@@ -150,73 +144,69 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={energySourceColours} />
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col ">
-          <h2 className="use-in-toc">Colour usage</h2>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc">Color usage</h2>
           <p className={`${styles.guidelinesText}`}>
-            When creating information graphics mainly use the secondary colours, but the primary colours
-            <br />
-            are also allowed.Either create graphics using colours tones in the same colour range or use <br />
-            colours in the same category: secondary, primary or energy source colours.
+            When creating information graphics mainly use the secondary colors, but the primary colors are also allowed. 
+            Either create graphics using color tones in the same color range or use colors in the same category: secondary, primary or energy source colors.
           </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={primaryColours} />
-          <h4 style={{ textAlign: 'center' }}>Secondary colours</h4>
+          <h4 style={{ textAlign: 'center' }}>Secondary colors</h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={secondaryColours} />
-          <h4  style={{ textAlign: 'center' }}>Primary colours</h4>
+          <h4 style={{ textAlign: 'center' }}>Primary colors</h4>
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
+      <div className="vf-row">
+        <div className="vf-col-12">
           <p className={`${styles.guidelinesText}`}>
-            Always make sure that the colours used harmonize with each other. Use as few colours as <br />
-            possible, to make graphs visibly balanced and keep the graphics in the blue needscope, not to <br />
-            colourful.
+          Always make sure that the colors used harmonize with each other. Use as few colors as possible, 
+          to make graphs visibly balanced and keep the graphics in the blue needscope, not too colorful.
           </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={examplePrimary} />
-          <h4  style={{ textAlign: 'center' }}>
+          <h4 style={{ textAlign: 'left' }}>
             Example using primary
             <br />
-            colours and energy source
+            colors and energy source
             <br />
-            colours in tones.
+            colors in tones.
           </h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={exampleEnergy} />
-          <h4 style={{ textAlign: 'center' }}>
+          <h4 style={{ textAlign: 'left' }}>
             Example using energy
             <br />
-            source colours that
+            source colors that
             <br />
             harmonize with each other.
           </h4>
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={exampleSecondary} />
-          <h4  style={{ textAlign: 'center' }}>
+          <h4 style={{ textAlign: 'left' }}>
             Example using secondary
             <br />
-            colours that harmonize with
+            colors that harmonize with
             <br />
             each other.
           </h4>
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
+      <div className="vf-row">
+        <div className="vf-col-12">
           <p className={`${styles.guidelinesText}`}>
-            Avoid mixing colours from different categories. Also avoid creating graphs with colours that <br />
-            have too much contrast against each other.
+          Avoid mixing colors from different categories. Also avoid creating graphs with colors that have too much contrast against each other.
           </p>
         </div>
       </div>
@@ -231,18 +221,16 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={avoid3} />
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
-          <h2 className="use-in-toc">Colour tones for web</h2>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc">Color tones for web</h2>
           <p className={`${styles.guidelinesText}`}>
-            When creating 1-coloured graphs, you should primarily use these percent-values to differentiate
-            <br />
-            sections of the graph. This is exemplified below but you can use any primary or secondary <br />
-            colours as a base.
+          When creating 1-colored graphs, you should primarily use these percent-values to differentiate sections of the graph. 
+          This is exemplified below but you can use any of the primary or secondary colors as a base.
           </p>
         </div>
       </div>
-      <h4 >Hydro</h4>
+      <h4>Hydro</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#2DA55D" rgb="45, 165, 93" />
         <ColourSpec name="70%" hex="#6CC08D" rgb="108, 192, 141" />
@@ -251,7 +239,7 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#EAF6EE" rgb="234, 246, 238" />
         <div className="vf-col"></div>
       </div>
-      <h4 >Wind</h4>
+      <h4>Wind</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#4FCC51" rgb="79, 204, 81" />
         <ColourSpec name="70%" hex="#83DB85" rgb="131, 219, 133" />
@@ -260,7 +248,7 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#EAF6EE" rgb="237, 239, 202" />
         <div className="vf-col"></div>
       </div>
-      <h4 >Solar</h4>
+      <h4>Solar</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#81E0A8" rgb="129, 224, 168" />
         <ColourSpec name="70%" hex="#A6E9C2" rgb="166, 233, 194" />
@@ -278,7 +266,7 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#EBEEED" rgb="235, 238, 237" />
         <div className="vf-col"></div>
       </div>
-      <h4 >Coal</h4>
+      <h4>Coal</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#E88A74" rgb="232, 138, 116" />
         <ColourSpec name="70%" hex="#EEAC9D" rgb="238, 172, 157" />
@@ -287,7 +275,7 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#FCF3F1" rgb="251, 237, 239" />
         <div className="vf-col"></div>
       </div>
-      <h4 >Nuclear</h4>
+      <h4>Nuclear</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#213D5E" rgb="33, 61, 94" />
         <ColourSpec name="70%" hex="#63778E" rgb="99, 119, 142" />
@@ -296,7 +284,7 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#E8EBEE" rgb=", 232, 235, 238" />
         <div className="vf-col"></div>
       </div>
-      <h4 >District Heating</h4>
+      <h4>District Heating</h4>
       <div className="vf-row">
         <ColourSpec name="100%" hex="#A376CC" rgb="163, 118, 204" />
         <ColourSpec name="70%" hex="#BE9FDB" rgb="190, 159, 219" />
@@ -305,18 +293,18 @@ const InfoGraphics = () => {
         <ColourSpec name="10%" hex="#F5F1F9" rgb="245, 241, 249" />
         <div className="vf-col"></div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
-          <h2 className="use-in-toc">Background colours</h2>
+      <div className="vf-row">
+        <div className="vf-col-12">
+          <h2 className="use-in-toc">Background colors</h2>
           <p className={`${styles.guidelinesText}`}>
-            Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.
+            Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-colored graphs on colored backgrounds.
           </p>
         </div>
       </div>
       <div className="vf-row">
         <div className="vf-col">
           <img style={{ width: '100%' }} src={backgroundOk} />
-          <h4  style={{ textAlign: 'center' }}>
+          <h4 style={{ textAlign: 'center' }}>
             Graphs can be placed on both white and
             <br />
             Vattenfall Grey backgrounds
@@ -324,18 +312,18 @@ const InfoGraphics = () => {
         </div>
         <div className="vf-col">
           <img style={{ width: '100%' }} src={backgroundBad} />
-          <h4  style={{ textAlign: 'center' }}>
-            Do not place multi-coloured graphs on
+          <h4 style={{ textAlign: 'center' }}>
+            Do not place multi-colored graphs on
             <br />
-            coloured backgrounds.
+            colored backgrounds.
           </h4>
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
+      <div className="vf-row">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Best practice</h2>
           <p className={`${styles.guidelinesText}`}>
-            Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-coloured graphs on coloured backgrounds.
+          Always place information graphics on white or Vattenfall Light Grey background. Do not place multi-colored graphs on colored backgrounds.
           </p>
         </div>
       </div>
@@ -344,23 +332,17 @@ const InfoGraphics = () => {
           <img style={{ width: '100%' }} src={bestPractise} />
         </div>
       </div>
-      <div className="vf-row w-75">
-        <div className="vf-col">
+      <div className="vf-row">
+        <div className="vf-col-12">
           <h2 className="use-in-toc">Infographics - Motion</h2>
           <p className={`${styles.guidelinesText}`}>
-            Infographics is of course the visualization of data in graphs, tables and numbers.
-            Through our motion ID philosophy of “ease-in-out”, infographics actually become the most powerful examples
-            of our identity in motion as we here allow a graph or number to develop in a smooth, controlled
-            “easing” movement with a high-quality perception. We have developed the
-            following examples of motion infographics, as a reference, but of course need to be created on their own for your
-            specific purposes and usageareas/channels.
+          Infographics refers to the visualization of data in graphs, tables and numbers. Through our motion ID philosophy of “ease-in-out”, infographics become the most powerful examples 
+          of our identity in motion as we here allow a graph or number to develop in a smooth, controlled “easing” movement with a high-quality perception. 
+          <br />
           </p>
           <p className={`${styles.guidelinesText}`}>
             To read more about the “ease-in-out” motion ID philosophy, please see the description in the Video &amp; Motion guidelines chapter
           </p>
-          <a href="https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25">
-            https://brandtoolbox.vattenfall.com/Styleguide/brandtwo/#page/70DBC29E-9802-4DDD-9937424FDCB53C25
-          </a>
         </div>
       </div>
     </Fragment>
@@ -368,3 +350,4 @@ const InfoGraphics = () => {
 };
 
 export default InfoGraphics;
+

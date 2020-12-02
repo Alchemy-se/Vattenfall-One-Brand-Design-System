@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Hero",
+    "description": "The Hero component is used for large blocks at the top of webpages to convey a key message or describe what the page is about.",
+    "type": "guideline",
+    "uri": "/guidelines/hero",
+    "objectID": "hero-guideline",
+    "children": [
+      {
+        "name": "Hero with video"
+      },
+      {
+        "name": "Startpage (only)"
+      },
+      {
+        "name": "1 text line"
+      },
+      {
+        "name": "1 text line + Button"
+      },
+      {
+        "name": "2 text lines"
+      },
+      {
+        "name": "2 text lines + Button"
+      },
+      {
+        "name": "Text + Intro + Buttons"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#hero-with-video",
+    "description": "The Hero module with video content is used mainly for pages that need to relate back to and anchor the connection with our external video content / campaigns.The headline should always be over two lines and displaying a play button 44px below. Headline and play button should both be vertically aligned and centered over the video and should not use drop shadows.",
+    "objectID": "hero-with-video-guideline",
+    "name": "Hero with video",
+    "id": "hero-with-video"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#for-startpage-(only)",
+    "description": "The Hero module with Video content and the Vattenfall stacked logotype should be used for Vattenfall Startpages only and not elsewhere.",
+    "objectID": "for-startpage-guideline",
+    "name": "For Startpage (only)",
+    "id": "for-startpage-(only)"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#1-text-line",
+    "description": "The Hero module should be used when only one row of headline text is needed.",
+    "objectID": "1-text-line-guideline",
+    "name": "1 text line",
+    "id": "1-text-line"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#1-text-line-+-button",
+    "description": "The Hero module should be used as in the example for one row of text over image with a CTA button",
+    "objectID": "1-textline-+-button-guideline",
+    "name": "1 text line + Button",
+    "id": "1-text-line-+-button"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#2-text-lines-+-button",
+    "description": "The Hero module should be used as in the example, when two rows of text over image with CTA button is needed.",
+    "objectID": "2-text-lines-+-button-guideline",
+    "name": "2 text lines + Button",
+    "id": "2-text-lines-+-button"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#2-text-lines",
+    "description": "The Hero module should be used as in the example, when two rows of headline text is needed.",
+    "objectID": "2-text-lines-guideline",
+    "name": "2 text line",
+    "id": "2-text-lines"
+  },
+  {
+    "parent": [
+      {
+        "name": "Hero"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/hero#text-+-intro-+-buttons",
+    "description": "The Hero module should be used as in the example when Headline, Intro text and Buttons are needed.",
+    "objectID": "text-+-intro-+-buttons-guideline",
+    "name": "Text + Intro + Buttons",
+    "id": "text-+-intro-+-buttons"
+  }
+]

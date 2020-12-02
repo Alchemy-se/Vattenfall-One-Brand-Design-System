@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchDataByUri } from "../apiCalls/metadataCalls";
 
 
-// adds a reportbutton to each component and fetches respective data from the cms
+// adds a report button to each component and fetches respective data from the cms
 export function useAddReportButton(uri) {
   const [component, setComponent] = useState('')
   const [selectedChild, setSelectedChild] = useState('')
@@ -56,19 +56,25 @@ export function useAddReportButton(uri) {
         // Get report button by id and add click event listener
         const reportButton = document.getElementById(item.id + "-div");
         reportButton.addEventListener('click', function (e) {
+
+
           let child;
           if (haveHeader) {
+
             // get the child that the user clicks on e.g background color
             child = component.metadata.children.filter(child => {
+              console.log('child: ', child)
               return child.uri.indexOf("#" + item.id) !== -1;
 
             });
           } else {
+
             // get by uri - the uri in this cas only have a # as its a lonely child
             child = component.metadata.children.filter(child => {
               return child.uri.indexOf("#") !== -1;
             })
           }
+
 
           setSelectedChild(child);
           setOpenModal(true)
@@ -78,6 +84,8 @@ export function useAddReportButton(uri) {
   }, [component]);
   return { openModal, selectedChild, setOpenModal }
 }
+
+//TODO onsdag - dra ner stage + carusel och lägg in zendesk, lägg in på guidelines ockås. Skapa ny sida för guidelines
 
 
 /**

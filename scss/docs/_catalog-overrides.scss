@@ -42,7 +42,8 @@ p {
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover a {
-  color: #222222;
+  //color: #222222;
+  color: #2071B5;
   text-decoration: none;
 }
 
@@ -56,16 +57,18 @@ p {
 }
 
 .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-item > a {
-  color: #2071B5;
+  //color: #2071B5; - textfärg
+  color:black;
 }
 
 .ant-menu-item > a:hover {
-  color: #222222;
+  color: #2071B5;
   text-decoration: none;
 }
 
 .ant-menu-item-selected a, .ant-menu-horizontal > .ant-menu-item-selected > a {
-  color: #222222;
+  //color: #222222;
+  color: #2071B5;
 }
 
 .ant-menu-item-group-title {
@@ -106,6 +109,7 @@ p {
 
 .ant-drawer-left.ant-drawer-open .ant-drawer-content-wrapper {
   box-shadow: none;
+  width: 100%;
 }
 
 .justify-content-md-center {
@@ -176,9 +180,10 @@ p {
   border-radius: 0;
 }*/
 
-.markdown-body>:last-child {
-  padding-bottom: calc(80vh - 400px);
-}
+// .markdown-body>:last-child {
+//   padding-bottom: calc(80vh - 400px);
+//   padding-bottom: 100px;
+// }
 .markdown-body.no-padding-bottom {
   padding-bottom: initial;
   &>:last-child {
@@ -189,6 +194,7 @@ p {
   border-color: #1964A3;
 }
 .ant-anchor-link-active > .ant-anchor-link-title {
-  color: #222222;
+  //color: #222222;
+  color: #2071B5;
   font-weight: 500;
 }

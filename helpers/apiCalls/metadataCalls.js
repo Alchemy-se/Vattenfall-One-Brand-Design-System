@@ -48,6 +48,7 @@ export const fetchAmount = async () => {
 }
 
 export const fetchDataByUri = async (uri) => {
+
   const res = await axios({
     method: 'POST',
     url: `${baseUrl}/collection-metadata/getByUri`,
@@ -55,5 +56,6 @@ export const fetchDataByUri = async (uri) => {
       "uri": uri
     }
   })
+  console.log('res: ', res)
   return res.data
 }
