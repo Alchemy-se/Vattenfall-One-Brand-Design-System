@@ -14,10 +14,10 @@ import IconsIntro from './IconsIntro';
 
 const Group4 = '/img/guidelines/icons/Group4.png';
 const WaterBackground = '/img/guidelines/icons/water.png';
-const DoNotOne = '/img/guidelines/icons/doNot1.png';
-const DoNotTwo = '/img/guidelines/icons/doNot2.png';
-const DoNotThree = '/img/guidelines/icons/doNot3.png';
-const DoNotFour = '/img/guidelines/icons/doNot4.png';
+const DoNotOne = '/img/guidelines/icons/doNotOne.png';
+const DoNotTwo = '/img/guidelines/icons/doNotTwo.png';
+const DoNotThree = '/img/guidelines/icons/doNotThree.png';
+const DoNotFour = '/img/guidelines/icons/doNotFour.png';
 
 const editMd = (mdText) => {
   const hideSourceCode = mdText.replace("showSource: true", "showSource: false");
@@ -96,19 +96,19 @@ const Icons = () => {
         </div> 
         <div className={`vf-row ${iconsStyles.iconGuidelineLargeIconRowContainer}`}>
           <SquareIconBlock 
-            text="Icons should always be in black when placed on a white or grey background."
+            text="When icons are in a group, use them in the same size to ensure that they have the same line weight"
             bgImg={DoNotOne}
           />
           <SquareIconBlock 
-            text="The same applies when icons are placed on other light background colours."
+            text="Do not use icons in colour."
             bgImg={DoNotTwo}
           />
           <SquareIconBlock 
-            text="When placed on an image - icons should primarily be white, but depending on the image they are also allowed to be black."
+            text="Do not use icons in colour."
             bgImg={DoNotThree}
           />
             <SquareIconBlock 
-            text="When placed on an image - icons should primarily be white, but depending on the image they are also allowed to be black."
+            text="Do not alter or distort the icons."
             bgImg={DoNotFour}
           />
         </div> 
