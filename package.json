@@ -3,8 +3,8 @@
   "version": "7.16.6",
   "main": "index.js",
   "scripts": {
-    "start-webpack": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
-    "build-webpack": "NODE_ENV=production webpack --mode=production  --config documentation.webpack.config.js",
+    "start-webpack": "webpack-dev-server  --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
+    "build-webpack": "webpack  --mode=production  --config documentation.webpack.config.js",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
     "build": "npm-run-all --sequential js-main css-main build-webpack",
@@ -21,7 +21,8 @@
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "node metadata/build-metadata.js",
-    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js"
+    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js",
+    "testalite": "yarn build && yarn build-and-upload-metadata"
 
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",

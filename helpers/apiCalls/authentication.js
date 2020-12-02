@@ -3,11 +3,7 @@ import React from "react";
 
 
 export const login = async (identifier, password) => {
-  let baseUrl = process.env.LOCAL_BASE_URL;
-  if (process.env.NODE_ENV === "production") {
-    baseUrl = process.env.PROD_STRAPI_BASE_URL
-  }
-
+  let baseUrl = process.env.BASE_URL;
 
   try {
     const res = await axios({
