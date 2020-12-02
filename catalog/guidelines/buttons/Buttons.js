@@ -107,8 +107,8 @@ const Button = () => {
         title="Button Group"
         text="By default the text in button group is set to: Colors / CTA / Secondary / Default on white background. On Hover text and animated icon turns White on background: Colors / CTA / Secondary / Hover. On Pressed the text stays white on background: Colors / CTA / Secondary / Pressed."
       />    
-        <div className="vf-row">
-          <div class="vf-btn-group" role="group" aria-label="Basic example">
+        <div className="vf-row-11">
+          <div className="vf-btn-group" role="group" aria-label="Basic example">
             <button type="button" className="vf-btn-group__btn vf-btn vf-btn--secondary">Left</button>
             <button type="button" className="vf-btn-group__btn vf-btn vf-btn--secondary">Middle</button>
             <button type="button" className="vf-btn-group__btn vf-btn vf-btn--secondary">Middle</button>

@@ -25,9 +25,37 @@ import ArticlesOverview from './articles/articlesOverview';
 import Favicon from './components/favicon/favicon'
 import Icons from './components/icons/icons'
 import Hero from './components/hero/hero';
-
+import GDPRConsentModule from "./components/GDPR/gdpr-concent-module";
+import NumberedList from "./components/numbered-list/numbered-list";
+import Badge from "./components/badge/badge";
+import Table from "./components/table/table";
+import TopBar from "./components/topbar/topbar";
+import NotificationModule from "./components/notification-module/notification-module";
+import Subscribe from "./components/subscribe/subscribe";
+import IconText from "./components/icon-text/icon-text";
+import ButtonGroup from "./components/button-group/button-group";
+import CookieBanner from "./components/cookie-banner/cookie-banner";
+import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+import Footer from "./components/footer/footer";
+import Form from "./components/form/form";
+import TabBar from "./components/tab-bar/tab-bar";
+import Carousel from "./components/carousel/carousel";
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
+import Navbar from "./components/exclude-not-done/navbar/navbar";
+import Preloader from "./components/preloader/preloader";
+import Tooltip from "./components/tooltip/tooltip";
+import Card from "./components/card/card";
+import ImageBlock from "./components/image-block/image-block";
+import ImageWithCaptions from "./components/image-with-captions/image-with-captions";
+import LargeQuote from "./components/large-quote/large-quote";
+import LinkedListBlock from "./components/linked-list-block/linked-list-block";
+import MediaBlock from "./components/media-block/media-block";
+import Pagination from "./components/pagination/pagination";
+import Progress from "./components/progress/progress";
+import SharableImage from "./components/shareable-image/sharable-image";
+import SmallQuote from "./components/small-qoute/small-quote";
+import ThreeColumn from "./components/three-column/three-column";
 
 // Guidelines
 import GuidelinesHero from "./guidelines/hero/Hero";
@@ -43,21 +71,13 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
-import Navbar from "./components/exclude-not-done/navbar/navbar";
-import Preloader from "./components/preloader/preloader";
-import Tooltip from "./components/tooltip/tooltip";
-import Card from "./components/card/card";
-import ImageBlock from "./components/image-block/image-block";
-import ImageWithCaptions from "./components/image-with-captions/image-with-captions";
-import LargeQuote from "./components/large-quote/large-quote";
-import LinkedListBlock from "./components/linked-list-block/linked-list-block";
-import MediaBlock from "./components/media-block/media-block";
-import Pagination from "./components/pagination/pagination";
-import Progress from "./components/progress/progress";
-import SharableImage from "./components/shareable-image/sharable-image";
-import SmallQuote from "./components/small-qoute/small-quote";
-import ThreeColumn from "./components/three-column/three-column";
+
+// Other
 import Login from "./admin/login";
+
+// remove this and the route in the Route -> switch function
+import CarouselDev from './development/carousel'
+
 
 
 function usePageViews(onRouteChange) {
@@ -67,82 +87,60 @@ function usePageViews(onRouteChange) {
 
 
 const COMPONENTS_ROUTES = [
-  { path: '/grid', name: 'Grid', component: <Grid /> },
-  { path: '/responsive', name: 'Responsive', component: <Responsive /> },
-  { path: '/sizing', name: 'Sizing', component: <Sizing /> },
+  { path: '/grid', name: 'Grid', component: <Grid uri={"/components/grid"} /> },
+  { path: '/responsive', name: 'Responsive', component: <Responsive uri={"/components/responsive"} /> },
+  { path: '/sizing', name: 'Sizing', component: <Sizing uri={"/components/sizing"} /> },
   { path: '/colors', name: 'Colors', component: <Colors uri={"/components/colors"} /> },
-  { path: '/spacing', name: 'Spacing', component: <Spacing /> },
-  { path: '/intro', name: 'Atoms', component: <Intro /> },
+  { path: '/spacing', name: 'Spacing', component: <Spacing uri={"/components/spacing"} /> },
+  { path: '/intro', name: 'Atoms', component: <Intro uri={"/components/intro"} /> },
   // components/css
-  { path: '/css/text', name: 'Text', component: <Text /> },
-  { path: '/css/utility-typography', name: 'Utility Typography', component: <UtilityTypography /> },
-  { path: '/css/button', name: 'Button', component: <Button /> },
-  { path: '/css/drop-down', name: 'Drop-down List', component: <DropdownList /> },
-  { path: '/css/input', name: 'Input', component: <Input /> },
+  { path: '/css/text', name: 'Text', component: <Text uri={"/components/css/text"} /> },
+  { path: '/css/utility-typography', name: 'Utility Typography', component: <UtilityTypography uri={"/components/css/utility-typography"} /> },
+  { path: '/css/button', name: 'Button', component: <Button uri={"/components/css/button"} /> },
+  { path: '/css/drop-down', name: 'Drop-down List', component: <DropdownList uri={"/components/css/drop-down"} /> },
+  { path: '/css/input', name: 'Input', component: <Input uri={"/components/css/input"} /> },
 
-  {
-    path: '/css/gdpr-consent-module',
-    name: 'GDPR Consent Module',
-    mdFile: require('./components/GDPR/gdpr-concent-module/html/gdpr-concent-module.md'),
-  },
-
-  { path: '/css/list', name: 'Lists', component: <Lists /> },
+  { path: '/css/gdpr-consent-module', name: 'GDPR Consent Module', component: <GDPRConsentModule uri={"/components/css/gdpr-consent-module"} /> },
+  { path: '/css/list', name: 'Lists', component: <Lists uri={"/components/css/list"} /> },
+/*
   { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
-  { path: '/css/preloader', name: 'Preloader', component: <Preloader /> },
+*/
+  { path: '/css/preloader', name: 'Preloader', component: <Preloader uri={"/components/css/preloader"} /> },
+  { path: '/css/numbered-list', name: 'Numbered List', component: <NumberedList uri={"/components/css/numbered-list"} /> },
 
-  {
-    path: '/css/numbered-list',
-    name: 'Numbered List',
-    mdFile: require('./components/numbered-list/standard-list/html/standard-list.md')
-  },
-  { path: '/css/badge', name: 'Badge', mdFile: require('./components/badge/example/html/badge.md') },
-  { path: '/css/table', name: 'Table', mdFile: require('./components/table/table/html/table.md') },
-  { path: '/css/tab-bar', name: 'Tab Bar', mdFile: require('./components/tab-bar/tab-bar/html/tab-bar.md') },
-  { path: '/css/tooltip', name: 'Tooltip', component: <Tooltip /> },
-  {
-    path: '/css/notification-module',
-    name: 'Notification Module',
-    mdFile: require('./components/notification-module/notification-module/html/notification-module.md'),
-  },
-  { path: '/css/subscribe', name: 'Subscribe', mdFile: require('./components/subscribe/standard/html/standard.md') },
-  { path: '/css/icon-text', name: 'Icon Text', mdFile: require('./components/icon-text/standard/html/standard.md') },
+  { path: '/css/badge', name: 'Badge', component: <Badge uri={"/components/css/badge"} /> },
+  { path: '/css/table', name: 'Table', component: <Table uri={"/components/css/table"} /> },
+  { path: '/css/tab-bar', name: 'Tab Bar', component: <TabBar uri={"/components/css/tab-bar"}  /> },
+  { path: '/css/tooltip', name: 'Tooltip', component: <Tooltip uri={"/components/css/tooltip"} /> },
+  { path: '/css/notification-module', name: 'Notification Module', component: <NotificationModule  uri={"/components/css/notification-module"}/> },
 
-  { path: '/css/card', name: 'Card', component: <Card /> },
-  {
-    path: '/css/button-group',
-    name: 'Button Group',
-    mdFile: require('./components/button-group/example/html/example.md')
-  },
-  {
-    path: '/css/cookie-banner',
-    name: 'Cookie Banner',
-    mdFile: require('./components/cookie-banner/cookie-banner/html/cookie-banner.md')
-  },
-  { path: '/css/image-block', name: 'Image Block', component: <ImageBlock /> },
-  { path: '/css/image-with-caption', name: 'Image with Caption', component: <ImageWithCaptions /> },
-  { path: '/css/shareable-image', name: 'Shareable Image', component: <SharableImage /> },
-  { path: '/css/media-block', name: 'Media Block', component: <MediaBlock /> },
-  { path: '/css/linked-list-block', name: 'Linked List Block', component: <LinkedListBlock /> },
-  {
-    path: '/css/parallax-image-block',
-    name: 'Parallax Image Block',
-    mdFile: require('./components/parallax-image-block/parallax-image-block/html/parallax-image-block.md'),
-  },
-  { path: '/css/large-quote', name: 'Large Quote', component: <LargeQuote /> },
-  { path: '/css/small-quote', name: 'Small Quote', component: <SmallQuote /> },
-  { path: '/css/three-column', name: 'Three Column', component: <ThreeColumn /> },
-  { path: '/css/topbar', name: 'Top Bar', mdFile: require('./components/topbar/topbar/html/topbar.md') },
-  { path: '/css/pagination', name: 'Pagination', component: <Pagination /> },
-  { path: '/css/progress', name: 'Progress', component: <Progress /> },
+  { path: '/css/subscribe', name: 'Subscribe', component: <Subscribe uri={"/components/css/subscribe"}/> },
+  { path: '/css/icon-text', name: 'Icon Text', component: <IconText uri={"/components/css/icon-text"} /> },
+
+  { path: '/css/card', name: 'Card', component: <Card uri={"/components/css/card"} /> },
+  { path: '/css/button-group', name: 'Button Group', component: <ButtonGroup uri={"/components/css/button-group"} /> },
+  { path: '/css/cookie-banner', name: 'Cookie Banner', component: <CookieBanner uri={"components/css/cookie-banner"} /> },
+  { path: '/css/image-block', name: 'Image Block', component: <ImageBlock uri={"/components/css/image-block"} /> },
+  { path: '/css/image-with-caption', name: 'Image with Caption', component: <ImageWithCaptions uri={"/components/css/image-with-caption"} /> },
+  { path: '/css/shareable-image', name: 'Shareable Image', component: <SharableImage uri={"/components/css/shareable-image"} /> },
+  { path: '/css/media-block', name: 'Media Block', component: <MediaBlock uri={"/components/css/media-block"} /> },
+  { path: '/css/linked-list-block', name: 'Linked List Block', component: <LinkedListBlock uri={"/components/css/linked-list-block"} /> },
+  { path: '/css/parallax-image-block', name: 'Parallax Image Block', component: <ParallaxImageBlock uri={"/components/css/parallax-image-block"}/> },
+  { path: '/css/large-quote', name: 'Large Quote', component: <LargeQuote uri={"/components/css/large-quote"} /> },
+  { path: '/css/small-quote', name: 'Small Quote', component: <SmallQuote uri={"/components/css/small-quote"} /> },
+  { path: '/css/three-column', name: 'Three Column', component: <ThreeColumn uri={"/components/css/three-column"} /> },
+  { path: '/css/topbar', name: 'Top Bar', component: <TopBar uri={"/components/css/topbar"}/> },
+  { path: '/css/pagination', name: 'Pagination', component: <Pagination uri={"/components/css/pagination"} /> },
+  { path: '/css/progress', name: 'Progress', component: <Progress uri={"/components/css/progress"} /> },
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
-  { path: '/css/footer', name: 'Footer', mdFile: require('./components/footer/basic-example/html/basic-example.md') },
-  { path: '/css/form', name: 'Form', mdFile: require('./components/form/standard/html/standard.md') },
-  { path: '/css/hero', name: 'Hero', component: <Hero/>},
+  { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"}/> },
+  { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"}/> },
+  { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"}/>},
+  { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} />},
 
-  // components/utilities
-  { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon />  },
-  // { path: '/utilities/icons', name: 'Icons', mdFile: require('./utilities/icons.md') },
-  { path: '/css/icons', name: 'Icons', component: <Icons/>},
+// components/utilities
+  { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon uri={"/components/utilities/favicon"}/>  },
+  { path: '/css/icons', name: 'Icons', component: <Icons uri={"/components/css/icons"}/>},
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
@@ -239,6 +237,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       </Route>
       <Route path={'/login'}>
         <Login />
+      </Route>
+      <Route path={'/development/carousel'}>
+        <CarouselDev />
       </Route>
       <Route path="/">
         <Welcome />

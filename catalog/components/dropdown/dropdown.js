@@ -6,6 +6,7 @@ import standard from './standard/html/standard.md'
 import underlineStyle from './underline-style/html/underline-style.md'
 import disable from './disabled/html/disabled.md'
 import withCheckboxes from './with-checkboxes/html/with-checkboxes.md'
+import Modals from "../../zendesk/modals";
 
 const markdown = standardWithSemanticElements + standard + underlineStyle + disable  + withCheckboxes
 export default class DropdownList extends Component {
@@ -14,6 +15,8 @@ export default class DropdownList extends Component {
       <React.Fragment>
         <PageHeader title={"Drop-down List"}/>
         <Markdown source={markdown} />
+        <Modals uri={this.props.uri} />
+
       </React.Fragment>
     )
   }

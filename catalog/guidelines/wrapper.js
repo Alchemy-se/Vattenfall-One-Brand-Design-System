@@ -26,7 +26,7 @@ class GuidelinesWrapper extends Component {
 
     let nodes = ReactDOM.findDOMNode(this.containerRef.current);
     let tags = nodes.getElementsByClassName("use-in-toc");
-    
+
 
     // Special case for grid elements as they have different structure
     // and no way to separate two elements with same name in h2 (tablet)
@@ -65,6 +65,7 @@ class GuidelinesWrapper extends Component {
       return null;
     }
     const tocData = this.state.tocData
+
     const links = tocData.map(item => {
       const value = item.name;
       const id = item.id
@@ -85,6 +86,8 @@ class GuidelinesWrapper extends Component {
 
 
   render() {
+
+
     return (
       <div className={styles.guidelinesContainer} ref={this.containerRef}>
         {this.tableOfContents()}

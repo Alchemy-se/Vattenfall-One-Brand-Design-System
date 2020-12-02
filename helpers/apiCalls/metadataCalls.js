@@ -1,9 +1,6 @@
 import axios from "axios";
 
-let baseUrl = process.env.LOCAL_BASE_URL;
-if (process.env.NODE_ENV === "production") {
-  baseUrl = process.env.PROD_STRAPI_BASE_URL
-}
+let baseUrl = process.env.BASE_URL;
 
 export const fetchAllMetadata = async () => {
   const res = await axios({
@@ -43,9 +40,19 @@ export const fetchAmount = async () => {
   const res = await axios({
     method: 'GET',
     url: `${baseUrl}/collection-metadata/amount`,
-
   })
+  return res.data
+}
 
+export const fetchDataByUri = async (uri) => {
 
+  const res = await axios({
+    method: 'POST',
+    url: `${baseUrl}/collection-metadata/getByUri`,
+    data: {
+      "uri": uri
+    }
+  })
+  console.log('res: ', res)
   return res.data
 }

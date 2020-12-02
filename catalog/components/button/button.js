@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import activeState from "./active-state/html/active-state.md";
 import buttonCombinations from './button-combinations/html/button-combinations.md'
 import fullWidthButtons from './full-width-buttons/html/full-width-buttons.md'
@@ -10,22 +10,24 @@ import textButton from './text-button/html/text-button.md'
 import textButtonSmall from './text-button-small/html/text-button-small.md'
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
+import Modals from "../../zendesk/modals";
 
 const markdown = primaryButtonsLarge + primaryButtonsMedium + outlinedButtonsLarge + outlinedButtonsMedium
-+ textButton + textButtonSmall + buttonCombinations + fullWidthButtons + activeState
+  + textButton + textButtonSmall + buttonCombinations + fullWidthButtons + activeState
 
-export default class Button extends Component {
-	render() {
-		return (
-			<React.Fragment>
-				<PageHeader title={"Button"}/>
-        <div className="vf-row">
+const Button = ({ uri }) => {
+  return (
+    <React.Fragment>
+      <PageHeader title={"Button"} />
+      <div className="vf-row">
         <div style={{marginLeft:"44px"}} className="vf-col-10">
         <p>Buttons indicate actions on the page. Each of our button types have specific purposes that are used consistently. Individual button types are documented below, see guidelines to help you understand basic functionality for all of our buttons.</p>
         </div>
-        </div>
-				<Markdown source={markdown} />
-			</React.Fragment>
-		)
-	}
+      </div>
+      <Markdown source={markdown} />
+			<Modals uri={uri} />
+    </React.Fragment>
+  )
 };
+
+export default Button;

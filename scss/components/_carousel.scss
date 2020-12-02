@@ -1,0 +1,226 @@
+.vf-carousel-outer-container {
+  background-color: rgb(237, 241, 246);
+  height: 797px;
+  margin-top: 50px;
+}
+
+.vf-carousel-outer-container h2 {
+  line-height: 72px;
+  height: 72px;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+
+#vf-carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 41px
+}
+
+
+#vf-carousel-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+
+.vf-carousel-next-slide-overlay {
+  opacity: 0.5;
+}
+
+.vf-carousel-card-container {
+  height: 515px;
+  background-color: white;
+  width: 360px;
+  margin-right: 25px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+
+}
+
+
+.vf-carousel-card-container:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.vf-carousel-controllers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.vf-carousel-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+  margin-top: 40px;
+  cursor: pointer;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.vf-carousel-arrows .arrow:hover {
+  color: #2071b5;
+
+}
+
+.vf-carousel-arrows .arrow {
+  color: #1964a3;
+  margin-left: 8px;
+}
+
+.vf-carousel-image {
+  height: 232px;
+  width: 360px;
+}
+
+.vf-carousel-cta {
+  position: absolute;
+  bottom: 34px
+}
+
+.vf-carousel-body-container {
+  padding-left: 32px;
+  padding-right: 35px;
+  padding-top: 27px;
+}
+
+.vf-carousel-header {
+  color: rgb(0, 0, 0);
+  font-family: "Vattenfall Hall Bold NORDx", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 36px;
+  width: 292px;
+  margin-bottom: 13px;
+}
+
+.vf-carousel-subtitle {
+  color: rgb(0, 0, 0);
+  font-family: "VattenfallHall-Regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 294px;
+  margin-bottom: 20px;
+}
+
+/*tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .vf-carousel-card-container:hover {
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 576px) {
+
+  .vf-carousel-outer-container {
+    background-color: rgb(237, 241, 246);
+    height: 612px;
+    margin-top: 50px;
+  }
+  .vf-carousel-outer-container h2 {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 0;
+  }
+  #vf-carousel-container {
+    padding-top: 0
+  }
+
+  .vf-carousel-card-container {
+    height: 456px;
+    background-color: white;
+    width: 313px;
+    margin-right: 20px;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 25px;
+
+  }
+
+  .vf-carousel-header {
+    font-size: 24px;
+  }
+
+  .vf-carousel-arrows {
+    display: none;
+  }
+
+  .vf-carousel-image {
+    height: 200px;
+    width: 313px;
+  }
+
+  .vf-carousel-body-container {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    height: 184px;
+  }
+
+  .vf-carousel-subtitle {
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .vf-carousel-card-container:hover {
+    -webkit-transform: none;
+    transform: none
+  }
+
+  .vf-carousel-indicator-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+  }
+
+  .vf-carousel-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #999999;
+    margin-left: 9px;
+  }
+
+  .vf-carousel-indicator-active {
+    background-color: #1964a3;
+  }
+
+
+}

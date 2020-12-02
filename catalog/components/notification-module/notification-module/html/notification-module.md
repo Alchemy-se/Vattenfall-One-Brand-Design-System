@@ -1,5 +1,5 @@
 Click on the icon in the blue circle to reveal the notification module. The icon can be changed by replacing `vf-icon-placeholder` with the desired icon on the `vf-notification-module-icon`.
-
+## Notification module
 The settings icon should link to a page where users can control settings.
 
 ```html

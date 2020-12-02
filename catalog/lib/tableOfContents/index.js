@@ -29,7 +29,6 @@ const TableOfContents = ({content}) => {
     const id = getId(item.props.value);
     return (<Link href={id} title={value} key={"anchor-"+id}/>);
   });
-  
   const targetOffset = 100;
   return (
     <div className={styles.container}>
