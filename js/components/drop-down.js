@@ -42,6 +42,8 @@
   CheckboxDropdown.prototype.updateStatus = function() {
     var checked = "";
 
+
+
     if (this.type === "checkbox") {
       checked = this.$el.find(":checked");
     } else if (this.type === "click") {

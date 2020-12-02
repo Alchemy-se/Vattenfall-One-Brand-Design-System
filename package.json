@@ -3,7 +3,7 @@
   "version": "7.16.6",
   "main": "index.js",
   "scripts": {
-    "start-webpack": "NODE_ENV=development webpack-dev-server --port 3213 --hot --config documentation.webpack.config.js",
+    "start-webpack": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
     "build-webpack": "NODE_ENV=production webpack --mode=production  --config documentation.webpack.config.js",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
@@ -22,6 +22,7 @@
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "node metadata/build-metadata.js",
     "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js"
+
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",
@@ -67,6 +68,7 @@
     "instantsearch.css": "^7.4.5",
     "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
+    "lodash": "^4.17.20",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-autosuggest": "^10.0.2",

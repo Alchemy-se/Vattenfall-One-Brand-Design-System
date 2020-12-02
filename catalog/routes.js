@@ -25,9 +25,37 @@ import ArticlesOverview from './articles/articlesOverview';
 import Favicon from './components/favicon/favicon'
 import Icons from './components/icons/icons'
 import Hero from './components/hero/hero';
-
+import GDPRConsentModule from "./components/GDPR/gdpr-concent-module";
+import NumberedList from "./components/numbered-list/numbered-list";
+import Badge from "./components/badge/badge";
+import Table from "./components/table/table";
+import TopBar from "./components/topbar/topbar";
+import NotificationModule from "./components/notification-module/notification-module";
+import Subscribe from "./components/subscribe/subscribe";
+import IconText from "./components/icon-text/icon-text";
+import ButtonGroup from "./components/button-group/button-group";
+import CookieBanner from "./components/cookie-banner/cookie-banner";
+import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+import Footer from "./components/footer/footer";
+import Form from "./components/form/form";
+import TabBar from "./components/tab-bar/tab-bar";
+import Carousel from "./components/carousel/carousel";
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
+import Navbar from "./components/exclude-not-done/navbar/navbar";
+import Preloader from "./components/preloader/preloader";
+import Tooltip from "./components/tooltip/tooltip";
+import Card from "./components/card/card";
+import ImageBlock from "./components/image-block/image-block";
+import ImageWithCaptions from "./components/image-with-captions/image-with-captions";
+import LargeQuote from "./components/large-quote/large-quote";
+import LinkedListBlock from "./components/linked-list-block/linked-list-block";
+import MediaBlock from "./components/media-block/media-block";
+import Pagination from "./components/pagination/pagination";
+import Progress from "./components/progress/progress";
+import SharableImage from "./components/shareable-image/sharable-image";
+import SmallQuote from "./components/small-qoute/small-quote";
+import ThreeColumn from "./components/three-column/three-column";
 
 // Guidelines
 import GuidelinesHero from "./guidelines/hero/Hero";
@@ -43,35 +71,13 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
-import Navbar from "./components/exclude-not-done/navbar/navbar";
-import Preloader from "./components/preloader/preloader";
-import Tooltip from "./components/tooltip/tooltip";
-import Card from "./components/card/card";
-import ImageBlock from "./components/image-block/image-block";
-import ImageWithCaptions from "./components/image-with-captions/image-with-captions";
-import LargeQuote from "./components/large-quote/large-quote";
-import LinkedListBlock from "./components/linked-list-block/linked-list-block";
-import MediaBlock from "./components/media-block/media-block";
-import Pagination from "./components/pagination/pagination";
-import Progress from "./components/progress/progress";
-import SharableImage from "./components/shareable-image/sharable-image";
-import SmallQuote from "./components/small-qoute/small-quote";
-import ThreeColumn from "./components/three-column/three-column";
+
+// Other
 import Login from "./admin/login";
-import GDPRConsentModule from "./components/GDPR/gdpr-concent-module";
-import NumberedList from "./components/numbered-list/numbered-list";
-import Badge from "./components/badge/badge";
-import Table from "./components/table/table";
-import TopBar from "./components/topbar/topbar";
-import NotificationModule from "./components/notification-module/notification-module";
-import Subscribe from "./components/subscribe/subscribe";
-import IconText from "./components/icon-text/icon-text";
-import ButtonGroup from "./components/button-group/button-group";
-import CookieBanner from "./components/cookie-banner/cookie-banner";
-import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
-import Footer from "./components/footer/footer";
-import Form from "./components/form/form";
-import TabBar from "./components/tab-bar/tab-bar";
+
+// remove this and the route in the Route -> switch function
+import CarouselDev from './development/carousel'
+
 
 
 function usePageViews(onRouteChange) {
@@ -130,6 +136,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"}/> },
   { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"}/> },
   { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"}/>},
+  { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} />},
 
 // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon uri={"/components/utilities/favicon"}/>  },
@@ -230,6 +237,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       </Route>
       <Route path={'/login'}>
         <Login />
+      </Route>
+      <Route path={'/development/carousel'}>
+        <CarouselDev />
       </Route>
       <Route path="/">
         <Welcome />

@@ -55,6 +55,8 @@ const useScript = url => {
 const rootRenderer = ({children}) => {
 	// Extract all toc content.
 	const TOCLines = children.reduce((acc, { key, props }) => {
+
+
 		// Skip non-headings
 		if (key.indexOf('heading') !== 0) {
 			return acc;
