@@ -19,6 +19,11 @@ export default class Button extends Component {
 		return (
 			<React.Fragment>
 				<PageHeader title={"Button"}/>
+        <div className="vf-row">
+        <div style={{marginLeft:"44px"}} className="vf-col-10">
+        <p>Buttons indicate actions on the page. Each of our button types have specific purposes that are used consistently. Individual button types are documented below, see guidelines to help you understand basic functionality for all of our buttons.</p>
+        </div>
+        </div>
 				<Markdown source={markdown} />
 			</React.Fragment>
 		)

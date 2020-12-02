@@ -8876,7 +8876,7 @@ fieldset:disabled a.vf-btn {
 .vf-btn--outline-dark {
   color: #222222;
   background: transparent;
-  border: 2px #222222 solid solid;
+  border: 2px #222222 solid;
 }
 
 .vf-btn--outline-dark:hover {
