@@ -10,6 +10,7 @@ const MENU_GROUP_ITEMS = [
     {path: "/icons", name: "Icons"},
     {path: "/buttons", name: "Buttons"},
     {path: "/forms", name: "Forms"},
+    {path: "/upload", name: "Upload"},
     {path: "/spacers", name: "Spacers"},
     {path: "/info-graphics", name: "Info Graphics"},
     {path: "/illustrations", name: "Illustrations"},

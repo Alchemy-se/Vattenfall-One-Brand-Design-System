@@ -1,5 +1,5 @@
 .vf-file-upload__container {
-  width: 280px;
+  width: 264px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,26 +58,51 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 0;
       margin: 0;
-      width: 50%;
+      width: 100%;
       transition: all 0.4s ease;
-      button {
-        border: none;
-        background: none;
-        font-size: 20px;
-      }
     }
     img {
       height: 12px;
       line-height: 10px;
-      margin-left: 6px;
+      margin: 0 4px;
       cursor: pointer;
       }
     }
 }
 
+.vf-file-upload--dragndrop {
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: #999999 dashed thin;
+  padding: 28px 0;
+  span:nth-child(2) {
+    margin: 0 0 14px 0;
+  }
+}
+.box__dragndrop {
+  display: none;
+}
+
+.vf-file-upload__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: rgb(235, 242, 243);
+  // color: #999999;
+  margin: 28px 0;
+}
+
+.vf-file-upload__icon::before {
+  font-size: 80px;
+}
 
 
 // .border {

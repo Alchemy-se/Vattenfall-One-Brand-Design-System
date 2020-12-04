@@ -72,6 +72,7 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
+import GuidelinesUpload from './guidelines/upload/Upload';
 
 // Other
 import Login from "./admin/login";
@@ -154,6 +155,7 @@ const GUIDELINES_ROUTES = [
     component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper>
   },
   { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
+  { path: '/guidelines/upload', name: 'Upload', component: <GuidelinesWrapper><GuidelinesUpload /></GuidelinesWrapper> },
   {
     path: '/guidelines/colors',
     name: 'Colors',
