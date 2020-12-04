@@ -1,7 +1,6 @@
 import axios from "axios";
 
 let baseUrl = process.env.BASE_URL;
-
 export const fetchAllMetadata = async () => {
   const res = await axios({
     method: 'GET',
@@ -44,11 +43,13 @@ export const fetchAmount = async () => {
   return res.data
 }
 
-export const fetchDataByUri = async (uri) => {
+export const fetchDataByUri = async (type ,uri) => {
+  console.log('type: ', type)
+//type is either collection (componentes) or guidelines
 
   const res = await axios({
     method: 'POST',
-    url: `${baseUrl}/collection-metadata/getByUri`,
+    url: `${baseUrl}/${type}-metadata/getByUri`,
     data: {
       "uri": uri
     }
