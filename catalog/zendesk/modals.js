@@ -4,10 +4,10 @@ import ZendeskModal from "./zendeskModal";
 import { useAddReportButton } from "../../helpers/hooks/custom-hooks";
 
 // Just return different modals. Moved it here instead of cluttering the parent component
-const Modals = ({ uri }) => {
+const Modals = ({ uri, type }) => {
   const [displayConfirmModal, setDisplayConfirmModal] = useState(false);
   const [status, setStatus] = useState(null);
-  const { openModal, selectedChild, setOpenModal } = useAddReportButton(uri);
+  const { openModal, selectedChild, setOpenModal } = useAddReportButton(uri, type);
   const modalProps = {
     setOpenModal,
     setDisplayConfirmModal,
@@ -20,7 +20,7 @@ const Modals = ({ uri }) => {
   if (displayConfirmModal) {
     return <ConfirmModal{...modalProps} />
   } else if (openModal) {
-    return <ZendeskModal {...modalProps}/>
+    return <ZendeskModal {...modalProps} />
   } else {
     return null
   }

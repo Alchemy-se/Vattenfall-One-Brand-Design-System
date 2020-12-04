@@ -21,8 +21,8 @@
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "node metadata/build-metadata.js",
-    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js",
-    "testalite": "yarn build && yarn build-and-upload-metadata"
+    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js"
+
 
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",

@@ -29,11 +29,12 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
       componentUri = selectedChild.uri;
       fullUrl = fullUrl + componentUri
     } else {
-      guidelineUri = selectedChild.guidelineUri;
+      guidelineUri = selectedChild.uri;
       componentUri = "";
       fullUrl = fullUrl + guidelineUri
     }
   }
+
   // file size in k. Approx 50 mb. Hard limit from zendesk
   const maxFileSize = 50000000;
   let errorMessage = "";
@@ -130,7 +131,7 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
         custom_fields: [
           { id: 360011116697, value: language },
           { id: 360011185597, value: category },
-          { id: 360011158198, value: "new request/ report issue" },
+          { id: 360011158198, value: "report issue" },
           { id: 360011185617, value: componentUri },
           { id: 360011158218, value: guidelineUri },
           { id: 360011298258, value: fullUrl }
@@ -283,8 +284,8 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
           <div className={styles.fileUploadContentContainer}
                style={disableSubmit ? { borderColor: "#F93B18" } : {}}>
 
-            <span>Upload your files (5 maximum)</span>
-            <span>Up to 50 MB each</span>
+            <span>Upload files (maximum of five).</span>
+            <span>Up to 50 Mb each</span>
             {displayError()}
 
             <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">

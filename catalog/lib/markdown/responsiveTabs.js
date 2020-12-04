@@ -11,7 +11,10 @@ const responsiveSizes =  [
 class Frame extends Component {
 	componentDidMount() {
 		this.renderFrameContent();
+
 	}
+
+
 
 	renderFrameContent() {
 		let doc = ReactDOM.findDOMNode(this).contentDocument;
@@ -43,7 +46,7 @@ class Frame extends Component {
 	}
 
 	render() {
-		return <iframe className={styles.iframe}/>;
+		return <iframe id={"yo"} className={styles.iframe}/>;
 	}
 }
 

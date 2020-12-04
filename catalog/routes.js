@@ -77,6 +77,7 @@ import Login from "./admin/login";
 
 // remove this and the route in the Route -> switch function
 import CarouselDev from './development/carousel'
+import Upload from "./development/upload";
 
 
 
@@ -149,7 +150,7 @@ const GUIDELINES_ROUTES = [
   {
     path: '/guidelines/buttons',
     name: 'Buttons',
-    component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper>
+    component: <GuidelinesWrapper ><GuidelinesButtons /></GuidelinesWrapper>
   },
   { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
   {
@@ -240,6 +241,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       </Route>
       <Route path={'/development/carousel'}>
         <CarouselDev />
+      </Route>
+      <Route path={'/development/upload'}>
+        <Upload />
       </Route>
       <Route path="/">
         <Welcome />

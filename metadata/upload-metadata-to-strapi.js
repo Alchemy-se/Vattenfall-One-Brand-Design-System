@@ -3,9 +3,12 @@ const axios = require('axios')
 const componentMetadata = 'metadata/components-overview-metadata.json';
 const fs = require('fs');
 
-let baseUrl = process.env.BASE_URL;
+/*let baseUrl = process.env.BASE_URL;
 let identifier = process.env.BACKEND_USER_IDENTIFIER;
-let password = process.env.BACKEND_USER_PASSWORD;
+let password = process.env.BACKEND_USER_PASSWORD;*/
+
+
+baseUrl = "http://localhost:1338"
 
 // Upload metadata to strapi cms
 async function auth() {
@@ -15,8 +18,8 @@ async function auth() {
       method: 'POST',
       url: `${baseUrl}/auth/local`,
       data: {
-        identifier,
-        password,
+        identifier: "backend",
+        password: "backend"
       }
     })
 
@@ -91,7 +94,10 @@ async function uploadMetadata() {
   }
 }
 
+// TODO kolla om denna funkar ändå
 uploadMetadata()
+
+module.exports=  { auth }
 
 
 
