@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "./Guidelines.scss";
 import { Anchor } from "antd";
-import Modals from "../zendesk/modals";
+import Modals from "../zendesk/modals/modals";
 const { Link } = Anchor;
 
 

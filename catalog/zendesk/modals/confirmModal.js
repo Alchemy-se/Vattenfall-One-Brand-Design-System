@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './styles.scss'
-import { useDetectOutsideClick } from "../../helpers/hooks/custom-hooks";
+import styles from '../styles.scss'
+import { useDetectOutsideClick } from "../../../helpers/hooks/custom-hooks";
 
 const ConfirmModal = ({ setDisplayConfirmModal, status }) => {
-    const checkMark = require('../../assets/icons/VF_check_rgb.svg').default;
-    const alert = require('../../assets/icons/VF_alert_rgb.svg').default;
-    const close = require('../../assets/icons/close.png').default;
+    const checkMark = require('../../../assets/icons/VF_check_rgb.svg').default;
+    const alert = require('../../../assets/icons/VF_alert_rgb.svg').default;
+    const close = require('../../../assets/icons/close.png').default;
     let header;
     let body;
     let icon;

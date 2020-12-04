@@ -147,7 +147,7 @@ class AutoComplete extends Component {
 
           <div className="no-suggestions">
             No results found for {this.state.value}. Make a request
-            <span style={{color: "rgb(32, 113, 181)" }}> here</span>
+            <span style={{color: "rgb(32, 113, 181)" }} onClick={()=> window.location.href="/new-request"}> here</span>
           </div>
         }
       </div>

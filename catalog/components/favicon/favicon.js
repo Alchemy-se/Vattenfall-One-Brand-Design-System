@@ -3,7 +3,7 @@ import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
 import assets from './assets/html/assets.md'
 import standard from './default/html/default.md'
-import Modals from "../../zendesk/modals";
+import Modals from "../../zendesk/modals/modals";
 
 const markdown = standard + assets
 export default class Favicon extends Component {

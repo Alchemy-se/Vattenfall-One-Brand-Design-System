@@ -6,7 +6,7 @@ import reversed from './reversed/html/reversed.md'
 import noMedia from './no-media/html/no-media.md'
 import noMediaReversed from './no-media-reversed/html/no-media-reversed.md'
 import backgroundColors from './background-colors/html/background-colors.md'
-import Modals from "../../zendesk/modals";
+import Modals from "../../zendesk/modals/modals";
 
 
 const markdown = standard + reversed + noMedia + noMediaReversed + backgroundColors ;

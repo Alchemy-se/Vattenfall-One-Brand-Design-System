@@ -49,18 +49,20 @@ input[type="file"] {
     }
 
     form {
-     // width: 440px;
+      // width: 440px;
       padding-left: 24px;
       padding-right: 24px;
-    //  min-height: 516px;
+      //  min-height: 516px;
 
       .inputFieldsContainer {
         display: flex;
+
         .leftColumn {
           margin-right: 24px;
-            input:nth-child(1) {
-              margin-bottom: 24px;
-            }
+
+          input:nth-child(1) {
+            margin-bottom: 24px;
+          }
 
         }
       }
@@ -86,8 +88,9 @@ input[type="file"] {
           padding: 10px 20px;
           font-size: 16px;
         }
+
         textarea {
-            height: 186px;
+          height: 186px;
         }
 
         label {
@@ -155,10 +158,12 @@ input[type="file"] {
       display: flex;
       justify-content: center;
       margin-bottom: 10px;
+
       button {
         &:first-child {
           margin-right: 24px;
-        }}
+        }
+      }
     }
   }
 }
@@ -211,3 +216,51 @@ input[type="file"] {
 
   }
 }
+
+.newRequestForm {
+  .inputFieldsContainer {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      width: 100%;
+    }
+
+    input, textarea {
+      margin-bottom: 24px;
+      width: 100%;
+
+    }
+
+    .test {
+      color: red;
+    }
+
+    .dropdownContainer {
+
+      .selectList {
+        border: 1px solid #cccccc;
+        height: 50px;
+        width: 100%;
+        border-radius: 4px;
+        appearance: none;
+        padding: 11px 114px 11px 20px;
+        color: #222222;
+        font-size: 1.25rem;
+        line-height: 24px;
+        cursor: pointer;
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzMzMzMzO30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K") right center no-repeat;
+        margin-bottom: 24px;
+        &:invalid {
+          color: #767676;
+
+        }
+      }
+    }
+
+  }
+}
+
+
