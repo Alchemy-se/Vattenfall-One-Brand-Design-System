@@ -190,7 +190,7 @@ fieldset:disabled a.vf-btn {
 .vf-btn--outline-dark {
   color: $btn-outline-dark-color;
   background: $btn-outline-dark-bg;
-  border: 2px $btn-outline-dark-border solid;
+  border: 2px $btn-outline-dark-border;
 
   @include hover {
     color: $white;

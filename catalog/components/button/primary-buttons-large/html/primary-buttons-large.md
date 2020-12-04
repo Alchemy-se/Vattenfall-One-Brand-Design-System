@@ -1,4 +1,3 @@
-A bunch of different buttons.
 
 ### Primary buttons / Large
 
