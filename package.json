@@ -21,7 +21,7 @@
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "node metadata/build-metadata.js",
-    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js"
+    "build-and-upload-metadata": "node metadata/entry.js"
 
 
   },
