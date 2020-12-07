@@ -44,7 +44,6 @@ export const fetchAmount = async () => {
 }
 
 export const fetchDataByUri = async (type ,uri) => {
-  console.log('type: ', type)
 //type is either collection (componentes) or guidelines
 
   const res = await axios({
@@ -54,6 +53,5 @@ export const fetchDataByUri = async (type ,uri) => {
       "uri": uri
     }
   })
-  console.log('res: ', res)
   return res.data
 }

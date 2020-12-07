@@ -1,14 +1,30 @@
 import React, { useState } from 'react';
 import styles from "../styles.scss";
+import Upload from "../../development/upload";
+import PageHeader from "../../lib/pageHeader";
 
-const NewZendeskRequest = ({ validEmail, isError, isLoading, selectedChild, reportData, hasError, handleInputData, spinner, disableSubmit, displayError, files, handleFiles, renderFileNames, sendReport, setOpenModal}) => {
+const NewZendeskRequest = ({ validEmail, isLoading, reportData, hasError, handleInputData, spinner, disableSubmit, displayError, files, handleFiles, renderFileNames, sendReport, setOpenModal }) => {
+  console.log('disableSubmit: ', disableSubmit)
+
+  const renderErrorText = (name) => {
+    return <span className={styles.errorText}>{name} is required </span>
+  }
+
 
   return (
     <div className={styles.newRequestForm}>
-      <h2>Feature request</h2>
+      {isLoading && <div className={styles.overlay} />}
+
+      {isLoading && <div className={styles.spinner}>
+        <img src={spinner} alt="" />
+      </div>}
+      <PageHeader title={"New asset request"} />
+
 
       <div className={styles.inputFieldsContainer}>
-
+        <p>If you have a need for a new asset, want to report an issue, have a suggestion or just want to
+          submit your thoughts on the Vattenfall digital design or code assets in general please submit
+          the details below and we will review and get back to you as soon as we can.</p>
         <div className="vf-input-container">
           <input type="text"
                  id="vf_standard_input"
@@ -40,14 +56,14 @@ const NewZendeskRequest = ({ validEmail, isError, isLoading, selectedChild, repo
 
           <input type="email"
                  id="vf_standard_input_email"
-                 className={`vf-input ${hasError.email ? "vf-input--error" : "vf-input--css-placeholder"}`}
+                 className={`vf-input ${hasError.email || !validEmail ? "vf-input--error" : "vf-input--css-placeholder"}`}
                  placeholder={"Email"}
                  value={reportData.email}
                  name='email'
                  onChange={(e) => handleInputData(e)}
           />
           <label
-            htmlFor="vf_standard_input_email">{`${hasError.email ? "Email is required " : "Email"}`}</label>
+            htmlFor="vf_standard_input_email">{`${hasError.email || !validEmail ? "Email is required " : "Email"}`}</label>
         </div>
         <div className="vf-input-container">
               <textarea id="vf_textarea_input"
@@ -63,23 +79,49 @@ const NewZendeskRequest = ({ validEmail, isError, isLoading, selectedChild, repo
         <div className={styles.dropdownContainer}>
 
 
-          <select required={true} className={styles.selectList}>
-            <option value="">Type of request</option>
+          <select name={"category"} onChange={(e) => handleInputData(e)} required={true}
+                  className={`${styles.selectList} ${hasError.category ? styles.errorBorderSelectList : ""}`}>
+            <option value="">Category</option>
             <option value="guideline">Guideline</option>
             <option value="componet">Component</option>
-            <option value="guideline+component">Guideline & Component</option>
+            <option value="guideline & component">Guideline & Component</option>
           </select>
+          <div className={styles.errorContainer}>{hasError.category && renderErrorText('Category')}
+          </div>
 
-          <select required={true} className={styles.selectList}>
+          <select name={"language"} onChange={(e) => handleInputData(e)} required={true}
+                  className={`${styles.selectList} ${hasError.language ? styles.errorBorderSelectList : ""}`}>
+
             <option value="">Language</option>
             <option value="html/js">HTML/JS</option>
             <option value="reactJS">ReactJS</option>
             <option value="angular">Angular</option>
             <option value="all">All</option>
           </select>
+          <div className={styles.errorContainer}>{hasError.language && renderErrorText('Language')}
+          </div>
         </div>
 
+        <div className={styles.fileUploadContentContainer}
+             style={disableSubmit ? { borderColor: "#F93B18" } : {}}
+
+        >
+
+          <span>Upload files (maximum of five).</span>
+          <span>Up to 50 Mb each</span>
+          {displayError()}
+
+          <label htmlFor="file-upload-button" className="vf-btn vf-btn--sm vf-btn--outline-secondary">
+            Attach file(s)...
+          </label>
+          <input type="file" id="file-upload-button" name="attachment" multiple
+                 onChange={(e) => handleFiles(e)} />
+          {files && renderFileNames()}
+        </div>
+
+
         <button type="button"
+                onClick={sendReport} disabled={disableSubmit}
                 className="vf-btn vf-btn--lg vf-btn--primary">
           Submit
         </button>
@@ -87,11 +129,7 @@ const NewZendeskRequest = ({ validEmail, isError, isLoading, selectedChild, repo
 
       </div>
 
-
-
     </div>
-
-
   );
 };
 

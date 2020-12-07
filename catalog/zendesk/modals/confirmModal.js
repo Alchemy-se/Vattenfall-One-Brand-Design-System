@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styles from '../styles.scss'
 import { useDetectOutsideClick } from "../../../helpers/hooks/custom-hooks";
 
-const ConfirmModal = ({ setDisplayConfirmModal, status }) => {
+const ConfirmModal = ({ setDisplayConfirmModal, status, clearInput = false }) => {
     const checkMark = require('../../../assets/icons/VF_check_rgb.svg').default;
     const alert = require('../../../assets/icons/VF_alert_rgb.svg').default;
     const close = require('../../../assets/icons/close.png').default;
@@ -13,12 +13,17 @@ const ConfirmModal = ({ setDisplayConfirmModal, status }) => {
     const ref = useRef(null);
     const isClickedOutside = useDetectOutsideClick(ref)
 
-  useEffect(() => {
+    useEffect(() => {
       if (isClickedOutside) {
         setDisplayConfirmModal(false)
+        status === 201 && clearInput && clearInput()
       }
     }, [isClickedOutside]);
 
+    const handleOnclick = () => {
+      status === 201 && clearInput && clearInput();
+      setDisplayConfirmModal(false)
+    }
 
     if (status === 201) {
       header = 'Thank you for submitting your request.';
@@ -38,7 +43,7 @@ const ConfirmModal = ({ setDisplayConfirmModal, status }) => {
     return (
       <div ref={ref} className={styles.confirmModalContainer}>
         <div className={styles.content}>
-          <img className={styles.closeButton} onClick={() => setDisplayConfirmModal(false)} src={close} alt="" />
+          <img className={styles.closeButton} onClick={() => handleOnclick()} src={close} alt="" />
           <div className={styles.header}><h3>{header}</h3></div>
           <div className={styles.checkMark}><img src={icon} alt="" /></div>
           <div className={styles.body}>

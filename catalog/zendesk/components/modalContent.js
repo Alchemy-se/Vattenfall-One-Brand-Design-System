@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../styles.scss";
 
-const ModalContent = ({ validEmail, isError, isLoading, selectedChild, reportData, hasError, handleInputData, spinner, disableSubmit, displayError, files, handleFiles, renderFileNames, sendReport, setOpenModal }) => {
+const ModalContent = ({ validEmail, isLoading, selectedChild, reportData, hasError, handleInputData, spinner, disableSubmit, displayError, files, handleFiles, renderFileNames, sendReport, setOpenModal }) => {
   return (
     <div className={styles.modalContainer}>
       {isLoading && <div className={styles.overlay} />}
