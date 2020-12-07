@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import styles from "../styles.scss";
-import Upload from "../../development/upload";
 import PageHeader from "../../lib/pageHeader";
 
 const NewZendeskRequest = ({ validEmail, isLoading, reportData, hasError, handleInputData, spinner, disableSubmit, displayError, files, handleFiles, renderFileNames, sendReport, setOpenModal }) => {
-  console.log('disableSubmit: ', disableSubmit)
 
   const renderErrorText = (name) => {
     return <span className={styles.errorText}>{name} is required </span>
