@@ -6,9 +6,11 @@ const DottedDescription = ({ title, text, dottedLines }) => {
       <div className="vf-row w-75">
         <div className="vf-col">
           {title && <h2 className="use-in-toc" >{title}</h2>}
-          <p className={styles.guidelinesText} style={{margin: 0}}>
-            {text}
-          </p>
+          {text && 
+            <p className={styles.guidelinesText} style={{margin: 0}}>
+              {text}
+            </p>
+          }
           <ul className="vf-ul">
             {dottedLines.map((dottedLine, index) => {
               return (<li style={{paddingTop: 0, paddingBottom: 0}} key={"dottedline-" + index}>{dottedLine}</li>);
