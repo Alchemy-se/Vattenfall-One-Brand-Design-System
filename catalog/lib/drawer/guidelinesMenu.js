@@ -13,7 +13,8 @@ const MENU_GROUP_ITEMS = [
     {path: "/spacers", name: "Spacers"},
     {path: "/info-graphics", name: "Info Graphics"},
     {path: "/illustrations", name: "Illustrations"},
-    {path: "/motion", name: "Motions"}
+    {path: "/motion", name: "Motions"},
+    {path: "/carousel", name: "Carousel"}
 ];
 
 const ComponentsMenu = () => {

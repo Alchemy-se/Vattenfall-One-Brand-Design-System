@@ -56,7 +56,9 @@ import SharableImage from "./components/shareable-image/sharable-image";
 import SmallQuote from "./components/small-qoute/small-quote";
 import ThreeColumn from "./components/three-column/three-column";
 import Login from "./admin/login";
+import CarouselGuidelines from './guidelines/carousel/carousel'
 import Carousel from "./development/carousel";
+
 
 
 function usePageViews(onRouteChange) {
@@ -189,6 +191,10 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/info-graphics',
     name: 'Info Graphics',
     component: <GuidelinesWrapper><GuidelinesInfoGraphics /></GuidelinesWrapper>
+  }, {
+    path: '/guidelines/carousel',
+    name: 'Carousel',
+    component: <GuidelinesWrapper><CarouselGuidelines /></GuidelinesWrapper>
   }
 ]
 
