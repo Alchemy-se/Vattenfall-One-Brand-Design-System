@@ -1,97 +1,159 @@
 import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
+import Markdown from '../../lib/markdown';
+import Action from '../../components/icons/action-icons/html/action-icons.md';
+import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md';
+import Identification from '../../components/icons/identification-icons/html/identification-icons.md';
+import Navigation from '../../components/icons/navigation-icons/html/navigation-icons.md';
+import SmartHome from '../../components/icons/smart-home-icons/html/smart-home-icons.md';
+import SocialMedia from '../../components/icons/socialmedia-icons/html/socialmedia-icons.md';
+import GuidelinesBlock from "../guidelinesBlock";
+import iconsStyles from './Icons.scss';
+import SquareIconBlock from './squareIconBlock';
+import IconsIntro from './IconsIntro';
 
 const Group4 = '/img/guidelines/icons/Group4.png';
-const ActionIcons = '/img/guidelines/icons/ActionIcons.png';
-const InChargeIcons = '/img/guidelines/icons/InChargeIcons.png';
-const IdentificationIcons = '/img/guidelines/icons/IdentificationIcons.png';
-const NavigationIcons = '/img/guidelines/icons/NavigationIcons.png';
-const SmartHomeIcons = '/img/guidelines/icons/SmartHomeIcons.png';
-const SocialMediaIcons = '/img/guidelines/icons/SocialMediaIcons.png';
+const WaterBackground = '/img/guidelines/icons/water.png';
+const DoNotOne = '/img/guidelines/icons/doNotOne.png';
+const DoNotTwo = '/img/guidelines/icons/doNotTwo.png';
+const DoNotThree = '/img/guidelines/icons/doNotThree.png';
+const DoNotFour = '/img/guidelines/icons/doNotFour.png';
+
+const editMd = (mdText) => {
+  const hideSourceCode = mdText.replace("showSource: true", "showSource: false");
+  const removeH3 = hideSourceCode.substring(hideSourceCode.indexOf("\n") + 1);
+  return removeH3;
+}
 
 const Icons = () => {
   return (
     <Fragment>
       <PageHeader title="The Icons" />
       <section className="p-2 vf-border-top-gray-200"></section>
-      <div className="vf-row">
-        <div className="vf-col">
-          <p>
-            The icons mirror our typeface – engineered and human, confident and determined.
-            <br/>
-            <br/>
-            They are created to be simple, yet powerful, representations to ease and help understanding of our services, products and  ideas. Always used in moderation, and never animated, the icons can together with simple images create more clarity and messaging power than illustrations.
-            <br/>
-            <br/>
-            Icons should always be in black when placed on a white or grey background. The same applies when icons are placed on other light background colours.
-            <br/>
-            <br/>
-            When placed on an image – icons should primarily be white, but depending on the image they are also allowed to be black.
-            <br/>
-            <br/>
-            When icons are in a group, use them in the same size to ensure that they have the same line weight
-            <br/>
-            <br/>
-            – Do not use icons in colour.
-            <br/>
-            – Do not use outlined icons.
-            <br/>
-            – Do not alter or distort the icons.
-          </p>
-        </div>
-      </div>
+      <IconsIntro />
       <div className="vf-row">
         <div className="vf-col px-5">
-          <img src={Group4} style={{ width: '100%' }} />
+          <img src={Group4} style={{ width: '100%', marginTop: "28px" }} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">Action Icons</h4>
-        <p>Action icons are used to signal and describe interaction.</p>
-        <div className="vf-col vf-p-0">
-          <img src={ActionIcons} style={{ width: '100%' }} />
+      <GuidelinesBlock 
+        title="Icon Categories" 
+        text="There are 6 different categories of icons: Navigation, Action, Identification, Social media, Smart home and InCharge."
+      >
+        <div className={`vf-row ${iconsStyles.iconGuidelineLargeIconRowContainer}`}>
+          <SquareIconBlock 
+            title="Navigation"
+            text="Navigation icons are used as part of the UI."
+            iconToolTip="vf-icon-more"
+          />
+          <SquareIconBlock 
+            title="Action"
+            text="Action icons are used to signal and describe interaction."
+            iconToolTip="vf-icon-shop"
+          />
+          <SquareIconBlock 
+            title="Identification"
+            text="Identification icons are used to identify a service or product."
+            iconToolTip="vf-icon-sun"
+          />
         </div>
-      </div>
-      <div className="vf-mt-md" />
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">InCharge Icons</h4>
-        <p>These are specific Icons for InCharge.</p>
-        <div className="vf-col vf-p-0">
-          <img src={InChargeIcons} style={{ width: '100%' }} />
+        <div className={`vf-row ${iconsStyles.iconGuidelineLargeIconRowContainer}`}>
+          <SquareIconBlock 
+            title="Social media"
+            text="Social media icons do not adhere to our icon style since they are logotypes and symbol of other platforms and services."
+            iconToolTip="vf-icon-twitter"
+          />
+          <SquareIconBlock 
+            title="Smart home"
+            text="Smart home icons are used to identify products and services for the home."
+            iconToolTip="vf-icon-router"
+          />
+          <SquareIconBlock 
+            title="InCharge"
+            text="InCharge icons are specific icons created for the InCharge brand's services and needs"
+            iconToolTip="vf-icon-private-charging"
+          />
         </div>
-      </div>
-      <div className="vf-mt-md" />
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">Identification Icons</h4>
-        <p>Identification icons are used to identify a service or product.</p>
-        <div className="vf-col vf-p-0">
-          <img src={IdentificationIcons} style={{ width: '100%' }} />
-        </div>
-      </div>
-      <div className="vf-mt-md" />
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">Navigation Icons</h4>
-        <p>Navigation icons are used as part of the UI.</p>
-        <div className="vf-col vf-p-0">
-          <img src={NavigationIcons} style={{ width: '100%' }} />
-        </div>
-      </div>
-      <div className="vf-mt-md" />
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">Smart Home Icons</h4>
-        <p>Smart home icons are used to identify products and services for the home.</p>
-        <div className="vf-col vf-p-0">
-          <img src={SmartHomeIcons} style={{ width: '100%' }} />
-        </div>
-      </div>
-      <div className="vf-mt-md" />
-      <div className="row align-items-start">
-        <h4 className="use-in-toc">Social Media Icons</h4>
-        <p>Social media icons do not adhere to our icon style since they are logotypes and symbol of other platforms and services.</p>
-        <div className="vf-col vf-p-0">
-          <img src={SocialMediaIcons} style={{ width: '100%' }} />
-        </div>
-      </div>
+      </GuidelinesBlock>
+      <GuidelinesBlock 
+        title="Usage" 
+      >
+        <div className={`vf-row ${iconsStyles.iconGuidelineLargeIconRowContainer}`}>
+          <SquareIconBlock 
+            text="Icons should always be in black when placed on a white or grey background."
+            iconToolTip="vf-icon-hydro"
+          />
+          <SquareIconBlock 
+            text="The same applies when icons are placed on other light background colours."
+            iconToolTip="vf-icon-hydro"
+            pinkBg
+          />
+          <SquareIconBlock 
+            text="When placed on an image - icons should primarily be white, but depending on the image they are also allowed to be black."
+            iconToolTip="vf-icon-hydro"
+            bgImg={WaterBackground}
+          />
+        </div> 
+        <div className={`vf-row ${iconsStyles.iconGuidelineLargeIconRowContainer}`}>
+          <SquareIconBlock 
+            text="When icons are in a group, use them in the same size to ensure that they have the same line weight"
+            bgImg={DoNotOne}
+          />
+          <SquareIconBlock 
+            text="Do not use icons in colour."
+            bgImg={DoNotTwo}
+          />
+          <SquareIconBlock 
+            text="Do not use icons in colour."
+            bgImg={DoNotThree}
+          />
+            <SquareIconBlock 
+            text="Do not alter or distort the icons."
+            bgImg={DoNotFour}
+          />
+        </div> 
+      </GuidelinesBlock>
+      <GuidelinesBlock 
+        title="Action Icons" 
+        text="Action icons are used to signal and describe interaction."
+      >
+        <Markdown source={editMd(Action)} />
+      </GuidelinesBlock>
+      <GuidelinesBlock
+        title="InCharge Icons" 
+        text="These are specific Icons for InCharge."
+      >
+        <Markdown source={editMd(InCharge)} />
+      </GuidelinesBlock>
+      <GuidelinesBlock
+        title="Identification Icons" 
+        text="Identification icons are used to identify a service or product."
+      >
+        <Markdown source={editMd(Identification)} />
+      </GuidelinesBlock>
+      <GuidelinesBlock
+        title="Navigation Icons" 
+        text="Navigation icons are used as part of the UI."
+      >
+        <Markdown source={editMd(Navigation)} />
+      </GuidelinesBlock>
+      <GuidelinesBlock
+        title="Smart Home Icons" 
+        text="Smart home icons are used to identify products and services for the home."
+      >
+        <Markdown source={editMd(SmartHome)} />
+      </GuidelinesBlock>
+      <GuidelinesBlock 
+        title="Social Media Icons" 
+        text="Social media icons do not adhere to our icon style since they are logotypes and symbol of other platforms and services."
+      >
+        <Markdown source={editMd(SocialMedia)} />
+      </GuidelinesBlock> 
+      <GuidelinesBlock 
+        title="Design Sources"
+      >
+      <a href="#" className="vf-link-with-arrow">View on Abstract</a>
+      </GuidelinesBlock >    
     </Fragment>
   );
 };

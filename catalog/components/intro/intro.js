@@ -5,6 +5,7 @@ import elements from './elements/html/elements.md'
 import modifiers from './modifiers/html/modifiers.md'
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
+import Modals from "../../zendesk/modals/modals";
 const markdown = componentNaming + blocks + elements + modifiers
 export default class Intro extends Component {
 	render() {
@@ -12,6 +13,7 @@ export default class Intro extends Component {
 			<React.Fragment>
 				<PageHeader title={"Atoms"}/>
 				<Markdown source={markdown} />
+				<Modals uri={this.props.uri} />
 			</React.Fragment>
 		)
 	}

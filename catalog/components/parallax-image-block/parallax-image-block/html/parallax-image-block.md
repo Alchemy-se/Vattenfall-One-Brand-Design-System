@@ -1,3 +1,4 @@
+###### parallax image block
 The parallax image block consists of an image and a medium length text.
 
 ```html

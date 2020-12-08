@@ -1,0 +1,69 @@
+.vf-file-upload__container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input[type="file"] {
+    display: none;
+  }
+  span {
+    // line-height: 28px;
+    line-height: 0;
+  }
+  // Upload your...
+  span:nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  // Up to...
+  span:nth-child(2) {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  // Error text...
+  span:nth-child(3) {
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .errorBorder {
+    border-color: #F93B18;
+  }
+  .errorText {
+    color: #F93B18;
+  }
+  label {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    transition: all 0.4s ease;
+    li {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 50%;
+      transition: all 0.4s ease;
+      button {
+        border: none;
+        background: none;
+        font-size: 20px;
+      }
+    }
+    img {
+      height: 12px;
+      line-height: 10px;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+  }
+}

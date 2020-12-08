@@ -1,7 +1,7 @@
 {
   "name": "Hero",
   "uri": "/components/css/hero",
-  "guidelineUri": false,
+  "guidelineUri": "/guidelines/hero",
   "description": "",
   "figmaUrl": null,
   "photoshopUrl": null,

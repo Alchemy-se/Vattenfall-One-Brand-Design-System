@@ -17,7 +17,7 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc development coverage
+# nyc test coverage
 .nyc_output
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
@@ -56,6 +56,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.*
 
 # next.js build output
 .next
@@ -70,3 +71,5 @@ conf/certs/digitaldesign.vattenfall.com.key
 dist/js/*.hot-update.*
 
 .idea/
+
+.DS_Store

@@ -1,7 +1,9 @@
 @import "default-import";
 
 @at-root {
-  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+  @-ms-viewport {
+    width: device-width;
+  } // stylelint-disable-line at-rule-no-vendor-prefix
 }
 
 html {
@@ -24,6 +26,15 @@ html {
     font-size: 1rem;
   }
 }
+
+.use-in-toc-grid > div > span {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+}
+
+
+
 
 // @include media-breakpoint-up(lg) {
 //   html {
@@ -91,6 +102,7 @@ html.sr .reveal {
 @import "components/icon-text";
 @import "components/gdpr-consent-module";
 @import "components/carousel";
+@import "components/upload";
 
 @import "docs/startpage-news";
 

@@ -1,19 +1,14 @@
 import axios from "axios";
 
-let baseUrl = process.env.LOCAL_BASE_URL;
-if (process.env.NODE_ENV === "production") {
-  baseUrl = process.env.PROD_STRAPI_BASE_URL
-}
-
+let baseUrl = process.env.BASE_URL;
 export const fetchAllMetadata = async () => {
   const res = await axios({
     method: 'GET',
     url: `${baseUrl}/collection-metadata`,
 
   });
-
-  return res.data;
-}
+  return res.data.sort((a, b) => a.metadata.name.localeCompare(b.metadata.name))
+};
 
 export const updateMetadata = async (data) => {
   try {
@@ -44,9 +39,19 @@ export const fetchAmount = async () => {
   const res = await axios({
     method: 'GET',
     url: `${baseUrl}/collection-metadata/amount`,
-
   })
+  return res.data
+}
 
+export const fetchDataByUri = async (type ,uri) => {
+//type is either collection (componentes) or guidelines
 
+  const res = await axios({
+    method: 'POST',
+    url: `${baseUrl}/${type}-metadata/getByUri`,
+    data: {
+      "uri": uri
+    }
+  })
   return res.data
 }

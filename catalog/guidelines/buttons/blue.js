@@ -7,7 +7,7 @@ const BlueButtons = ({ title, label }) => (
     <div className="vf-row w-75">
       <div style={{ margin: '0' }} className="vf-col">
         <h4 className="use-in-toc">{title}</h4>
-        <p>{`The yellow button indicated our main focus action. There is only one yellow button per component. If you need more buttons in one component, use secondary buttons`}</p>
+        <p>This blue button can be used as the main focus action when the yellow button doesn´t fit.</p>
       </div>
     </div>
     <div className="vf-row">

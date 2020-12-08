@@ -1,3 +1,4 @@
+###### GDPR Consent Module
 ```html
 showSource: true
 responsive: true

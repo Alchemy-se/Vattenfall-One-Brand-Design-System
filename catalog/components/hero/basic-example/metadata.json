@@ -1,8 +1,8 @@
 {
   "id": "basic-example",
-  "uri": "#basic-example",
-  "name": "Basic example",
-  "guidelineUri":false,
+  "uri": "#hero-with-video",
+  "name": "Hero with video",
+  "guidelineUri": "/guidelines/hero#hero-with-video",
   "description": null,
   "react": {
     "exists": false,

@@ -55,7 +55,7 @@ const BlueButtons = ({ title, label }) => (
           {label}
         </button>
         <div className="vf-pb-sm" />
-        <button type="button" className={`vf-btn vf-btn--lg vf-btn--outline-secondary ${styles.disableHover}`} disabled>
+        <button type="button" className={`vf-btn vf-btn--md vf-btn--outline-secondary ${styles.disableHover}`} disabled>
           {label}
         </button>
       </Column>

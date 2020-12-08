@@ -7,3 +7,4 @@ require("./components/carousel.js");
 require("./components/tooltip.js");
 require("./components/notification-module.js");
 require("./components/gdpr-consent-module.js");
+require("./components/upload.js");

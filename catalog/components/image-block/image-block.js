@@ -3,6 +3,7 @@ import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
 import standard from './standard/html/standard.md'
 import reversed from './reversed/html/reversed.md'
+import Modals from "../../zendesk/modals/modals";
 
 const markdown = standard + reversed;
 export default class ImageBlock extends Component {
@@ -11,6 +12,7 @@ export default class ImageBlock extends Component {
       <React.Fragment>
         <PageHeader title={'Image block'}/>
         <Markdown source={markdown} />
+        <Modals uri={this.props.uri} />
       </React.Fragment>
     )
   }

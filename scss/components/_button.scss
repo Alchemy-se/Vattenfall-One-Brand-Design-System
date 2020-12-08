@@ -15,6 +15,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
+  font-family: 'Vattenfall Hall NORDx';
 
   padding: 9px 48px;
   font-size: 0.875rem;
@@ -189,7 +190,7 @@ fieldset:disabled a.vf-btn {
 .vf-btn--outline-dark {
   color: $btn-outline-dark-color;
   background: $btn-outline-dark-bg;
-  border: 2px $btn-outline-dark-border solid;
+  border: 2px $btn-outline-dark-border;
 
   @include hover {
     color: $white;

@@ -1,33 +1,30 @@
-import React, { Component } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "./Guidelines.scss";
 import { Anchor } from "antd";
-
+import Modals from "../zendesk/modals/modals";
 const { Link } = Anchor;
 
 
-class GuidelinesWrapper extends Component {
-  constructor(props) {
-    super(props);
-    this.containerRef = React.createRef();
-    this.state = {
-      tocData: []
-    }
-  }
+const GuidelinesWrapper = ({ children }) => {
+  const uri = location.pathname
+  const containerRef = useRef(null);
+  const [tocData, setTocData] = useState([])
 
-  componentDidMount() {
-    // Scroll top on navigation change.
+  useEffect(() => {
     const scrollableElement = document.getElementById("content-container");
     if (scrollableElement) {
       scrollableElement.scrollTo(0, 0);
     }
+  }, [children])
 
-    const tocArray = []
-
-    let nodes = ReactDOM.findDOMNode(this.containerRef.current);
+  useEffect(() => {
+    let nodes = ReactDOM.findDOMNode(containerRef.current);
     let tags = nodes.getElementsByClassName("use-in-toc");
 
 
+
+    let tocs = []
     // Special case for grid elements as they have different structure
     // and no way to separate two elements with same name in h2 (tablet)
     let gridElements = nodes.getElementsByClassName("use-in-toc-grid");
@@ -35,36 +32,36 @@ class GuidelinesWrapper extends Component {
       let currentElement = gridElements[i];
       const content = currentElement.id;
       const elementID = content.replace(/\s/g, '-')
-      tocArray.push({ id: "#"+ elementID, name: content })
+      tocs.push({ id: "#" + elementID, name: content })
+
     }
 
     for (let i = 0; i < tags.length; i++) {
       let currentElement = tags[i];
       const content = currentElement.textContent;
-      const elementID = this.formatId(content)
+      const elementID = formatId(content)
       currentElement.setAttribute("id", elementID)
-      tocArray.push({ id:"#"+ elementID, name: content })
+      tocs.push({ id: "#" + elementID, name: content })
     }
 
-    if (tocArray.length >= 1) {
-      this.setState({
-        tocData: tocArray
-      })
+    if (tocs.length >= 1) {
+      setTocData(tocs)
     }
 
-  }
+  }, [])
 
-  formatId = (textContent) => {
+
+  const formatId = (textContent) => {
     textContent = textContent.replace(/–/g, '');
     textContent = textContent.replace(/\s/g, '-');
     return textContent.toLowerCase()
   };
 
-  tableOfContents = () => {
-    if (this.state.tocData.length < 1) {
+
+  const tableOfContents = () => {
+    if (tocData.length < 1) {
       return null;
     }
-    const tocData = this.state.tocData
 
     const links = tocData.map(item => {
       const value = item.name;
@@ -84,17 +81,18 @@ class GuidelinesWrapper extends Component {
     )
   }
 
-
-  render() {
-
-
-    return (
-      <div className={styles.guidelinesContainer} ref={this.containerRef}>
-        {this.tableOfContents()}
-        {this.props.children}
-      </div>
-    );
+  const renderModals = () => {
+    return <Modals uri={uri} type={'guidelines'} />
   }
-}
 
+
+  return (
+    <div className={styles.guidelinesContainer} ref={containerRef}>
+      {tableOfContents()}
+      {children}
+      {renderModals()}
+    </div>
+  );
+
+};
 export default GuidelinesWrapper;
