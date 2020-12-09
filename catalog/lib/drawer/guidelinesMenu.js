@@ -15,7 +15,7 @@ const MENU_GROUP_ITEMS = [
     {path: "/illustrations", name: "Illustrations"},
     {path: "/hero", name: "Hero"},
     {path: "/motion", name: "Motions"},
-    {path: "/carousel", name: "Carousel"}
+  /*  {path: "/carousel", name: "Carousel"}*/
 ];
 
 const ComponentsMenu = () => {

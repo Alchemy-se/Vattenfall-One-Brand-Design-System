@@ -33,7 +33,6 @@ export const sendRequest = async (data, files) => {
 
     let response = await axios({
       method: 'POST',
-      url: `https://albin-test.zendesk.com/api/v2/requests.json`,
       headers: {
         "content-type": "application/json"
       },
@@ -57,7 +56,6 @@ export const uploadAttachments = async (file) => {
 
     let response = await axios({
       method: 'POST',
-      url: `https://albin-test.zendesk.com/api/v2/uploads.json?filename=${file.name}`,
       headers: {
         "content-type": "application/binary"
       },

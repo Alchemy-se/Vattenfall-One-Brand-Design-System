@@ -140,7 +140,9 @@ const COMPONENTS_ROUTES = [
   { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"}/> },
   { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"}/> },
   { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"}/>},
+/*
   { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} />},
+*/
 
 // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon uri={"/components/utilities/favicon"}/>  },
@@ -197,11 +199,11 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/hero',
     name: 'Hero',
     component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
-  }, {
+  }/*, {
     path: '/guidelines/carousel',
     name: 'Carousel',
     component: <GuidelinesWrapper><GuidelinesCarousel/></GuidelinesWrapper>
-  }
+  }*/
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {
@@ -249,9 +251,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/new-request'}>
         <Zendesk isNewRequest={true} />
       </Route>
-      <Route path={'/developer/carousel'}>
+      {/*<Route path={'/developer/carousel'}>
         <CarouselDev/>
-      </Route>
+      </Route>*/}
       <Route path="/">
         <Welcome />
       </Route>
