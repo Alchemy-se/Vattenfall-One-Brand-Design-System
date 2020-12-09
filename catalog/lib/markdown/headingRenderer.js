@@ -46,6 +46,7 @@ const getId = (rawValue) => {
 };
 
 const Heading = (props) => {
+  console.log('props: ', props)
 
   switch (props.level) {
     case 1: {

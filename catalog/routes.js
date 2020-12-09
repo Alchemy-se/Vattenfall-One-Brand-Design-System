@@ -77,7 +77,7 @@ import GuidelinesCarousel from './guidelines/carousel/carousel';
 import Login from "./admin/login";
 
 // remove this and the route in the Route -> switch function
-import CarouselDev from './development/carousel'
+import CarouselDev from './components/responsive-components/carousel'
 import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
@@ -249,9 +249,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/new-request'}>
         <Zendesk isNewRequest={true} />
       </Route>
-     {/* <Route path={'/developer/carousel'}>
+      <Route path={'/developer/carousel'}>
         <CarouselDev/>
-      </Route>*/}
+      </Route>
       <Route path="/">
         <Welcome />
       </Route>

@@ -39,6 +39,7 @@ export function useAddReportButton(uri, type = 'collection') {
         }
 
         arrayPath = component.metadata
+
         if (arrayPath.length === 1) {
           singleComponent = true
         }
@@ -55,7 +56,7 @@ export function useAddReportButton(uri, type = 'collection') {
       Array.from(document.getElementsByClassName(findByClassName)).forEach(function (item) {
 
 
-          console.log('item: ', item.classList)
+          console.log('item: ', item.id)
           if (Array.from(item.classList).includes('no-report-button')) {
             return;
           }
@@ -64,12 +65,12 @@ export function useAddReportButton(uri, type = 'collection') {
           //create new div
           const div = document.createElement('div');
           div.setAttribute('id', item.id + "-div");
-          console.log('item: ', item.tagName)
           if (type === 'guidelines' && item.tagName === 'H2') {
             div.style.marginTop = "-30px"
 
           }
 
+          console.log('arrayPath: ', arrayPath)
 
           //create new span
           const span = document.createElement('span');
@@ -85,7 +86,7 @@ export function useAddReportButton(uri, type = 'collection') {
           // if the component dont have a header. We set a hidden header in the .md file
           // e.g. ###### Header. Use 6 #.
           const noHeader = Array.from(document.getElementsByClassName('no-header-on-component'))
-
+console.log('noHeader: ', noHeader);
           // get header by id. sets in headingRenderer.js
           // append new <div><span>Report issue</span></div> element
           if (noHeader.length >= 1) {
@@ -102,6 +103,7 @@ export function useAddReportButton(uri, type = 'collection') {
           // Get report button by id and add click event listener
           const reportButton = document.getElementById(item.id + "-div");
           reportButton.addEventListener('click', function (e) {
+            console.log('item: ', item.id)
 
 
             let child;
@@ -120,7 +122,7 @@ export function useAddReportButton(uri, type = 'collection') {
               });
             }
 
-
+            console.log('child: ', child)
             setSelectedChild(child);
             setOpenModal(true)
           })

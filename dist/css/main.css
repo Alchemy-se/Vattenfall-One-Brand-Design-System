@@ -13650,7 +13650,7 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
 
 .vf-carousel-outer-container {
   background-color: #edf1f6;
-  height: 797px;
+  min-height: 797px;
   margin-top: 50px;
 }
 

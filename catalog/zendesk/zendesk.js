@@ -132,8 +132,7 @@ const Zendesk = ({ data, setOpenModal, setDisplayConfirmModal, setStatus, isNewR
   const sendReport = async (e) => {
 
     e.preventDefault();
-    setIsLoading(true);
-return
+
     setSubmitHasBeenClicked(true);
 
     const errors = Object.values(hasError).filter(x => x !== false);
