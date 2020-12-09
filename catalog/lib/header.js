@@ -7,12 +7,14 @@ import Search from './search/search'
 import authContext from "../../helpers/authContext";
 import { logout } from "../../helpers/apiCalls/authentication";
 import LoggedInBanner from "./LoggedInBanner";
+import { useScript } from "../../helpers/hooks/useEffects/useScript";
 
 function Header(props) {
   const [toggleDropdown, setToggleDropdown] = useState(false);
   const [displayModal, setDisplayModal] = useState(false)
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
+//  useScript("/js/horizon.min.js");
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);

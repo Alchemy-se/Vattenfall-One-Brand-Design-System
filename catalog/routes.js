@@ -42,7 +42,7 @@ import TabBar from "./components/tab-bar/tab-bar";
 import Carousel from "./components/carousel/carousel";
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
-import Navbar from "./components/exclude-not-done/navbar/navbar";
+import Navbar from "./components/exclude-from-metadata/navbar/navbar";
 import Preloader from "./components/preloader/preloader";
 import Tooltip from "./components/tooltip/tooltip";
 import Card from "./components/card/card";
@@ -77,7 +77,7 @@ import GuidelinesCarousel from './guidelines/carousel/carousel';
 import Login from "./admin/login";
 
 // remove this and the route in the Route -> switch function
-import CarouselDev from './components/responsive-components/carousel'
+import CarouselDev from './components/exclude-from-metadata/responsive-components/carousel'
 import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
@@ -140,9 +140,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"}/> },
   { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"}/> },
   { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"}/>},
-/*
   { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} />},
-*/
 
 // components/utilities
   { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon uri={"/components/utilities/favicon"}/>  },
@@ -199,11 +197,11 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/hero',
     name: 'Hero',
     component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
-  }/*, {
+  }, {
     path: '/guidelines/carousel',
     name: 'Carousel',
     component: <GuidelinesWrapper><GuidelinesCarousel/></GuidelinesWrapper>
-  }*/
+  }
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {
@@ -251,9 +249,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/new-request'}>
         <Zendesk isNewRequest={true} />
       </Route>
-      {/*<Route path={'/developer/carousel'}>
+      <Route path={'/developer/carousel'}>
         <CarouselDev/>
-      </Route>*/}
+      </Route>
       <Route path="/">
         <Welcome />
       </Route>

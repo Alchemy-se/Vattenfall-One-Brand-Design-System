@@ -11,7 +11,7 @@ const getValueFromArray = (children) => {
   return mapped.join(" ");
 };
 
-const HeadingHashLink = (rawValue) => {
+export const HeadingHashLink = (rawValue) => {
   if (Array.isArray(rawValue)) {
     let value = "";
     for (let i = 0; i < rawValue.length; i++) {
@@ -46,7 +46,6 @@ const getId = (rawValue) => {
 };
 
 const Heading = (props) => {
-  console.log('props: ', props)
 
   switch (props.level) {
     case 1: {

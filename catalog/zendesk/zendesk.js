@@ -134,12 +134,14 @@ const Zendesk = ({ data, setOpenModal, setDisplayConfirmModal, setStatus, isNewR
     e.preventDefault();
 
     setSubmitHasBeenClicked(true);
-
+    handleError();
     const errors = Object.values(hasError).filter(x => x !== false);
     const validEmail = validateEmail()
-    if (errors.length >= 1 || !validEmail) {
+
+    if ((!errors.includes("") && errors.length >= 1) || !validEmail) {
       return
     }
+
     setIsLoading(true);
     const data = {
       request: {
@@ -147,12 +149,12 @@ const Zendesk = ({ data, setOpenModal, setDisplayConfirmModal, setStatus, isNewR
         subject: reportData.subject,
         comment: { body: reportData.comment },
         custom_fields: [
-          { id: 360011116697, value: reportData.language }, // html/js, react, angular
+         /* { id: 360011116697, value: reportData.language }, // html/js, react, angular
           { id: 360011185597, value: reportData.category }, // component/guidelines
           { id: 360011158198, value: reportData.typOfRequest }, //new request/report issue
           { id: 360011185617, value: componentUri },
           { id: 360011158218, value: guidelineUri },
-          { id: 360011298258, value: fullUrl }
+          { id: 360011298258, value: fullUrl }*/
         ]
       }
     };

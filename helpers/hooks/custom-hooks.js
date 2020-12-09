@@ -4,7 +4,6 @@ import { fetchDataByUri } from "../apiCalls/metadataCalls";
 
 // adds a report button to each component and fetches respective data from the cms
 export function useAddReportButton(uri, type = 'collection') {
-  console.log('uri: ', uri)
   const [component, setComponent] = useState(false)
   const [selectedChild, setSelectedChild] = useState('')
   const [openModal, setOpenModal] = useState(false)
@@ -13,8 +12,7 @@ export function useAddReportButton(uri, type = 'collection') {
   useEffect(() => {
     const fetch = async () => {
       const res = await fetchDataByUri(type, uri)
-      console.log('type: ', type)
-      console.log('res: ', res)
+
       setComponent(res);
     };
     fetch()
@@ -56,7 +54,6 @@ export function useAddReportButton(uri, type = 'collection') {
       Array.from(document.getElementsByClassName(findByClassName)).forEach(function (item) {
 
 
-          console.log('item: ', item.id)
           if (Array.from(item.classList).includes('no-report-button')) {
             return;
           }
@@ -70,7 +67,6 @@ export function useAddReportButton(uri, type = 'collection') {
 
           }
 
-          console.log('arrayPath: ', arrayPath)
 
           //create new span
           const span = document.createElement('span');
@@ -86,7 +82,6 @@ export function useAddReportButton(uri, type = 'collection') {
           // if the component dont have a header. We set a hidden header in the .md file
           // e.g. ###### Header. Use 6 #.
           const noHeader = Array.from(document.getElementsByClassName('no-header-on-component'))
-console.log('noHeader: ', noHeader);
           // get header by id. sets in headingRenderer.js
           // append new <div><span>Report issue</span></div> element
           if (noHeader.length >= 1) {
@@ -103,7 +98,6 @@ console.log('noHeader: ', noHeader);
           // Get report button by id and add click event listener
           const reportButton = document.getElementById(item.id + "-div");
           reportButton.addEventListener('click', function (e) {
-            console.log('item: ', item.id)
 
 
             let child;
@@ -121,7 +115,6 @@ console.log('noHeader: ', noHeader);
 
               });
             }
-
             console.log('child: ', child)
             setSelectedChild(child);
             setOpenModal(true)

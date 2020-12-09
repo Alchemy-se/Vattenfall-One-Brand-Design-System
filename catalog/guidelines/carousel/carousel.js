@@ -5,11 +5,15 @@ import Markdown from "../../lib/markdown";
 import GuidelinesBlock from "../guidelinesBlock";
 import styles from './styles.scss'
 import DottedDescription from "../DottedDescription";
+import CarouselComponent from "../../components/exclude-from-metadata/responsive-components/carousel";
+import Modals from "../../zendesk/modals/modals";
+import headingStyles from "../../lib/markdown/headingRenderer.scss";
+import { HeadingHashLink } from "../../lib/markdown/headingRenderer";
 
 const Carousel = () => {
   const hideSource = (source) => {
     let hideSourceCode = source.replace("showSource: true", "showSource: false");
-     hideSourceCode = source.replace("responsive: true", "responsive: false");
+    hideSourceCode = source.replace("responsive: true", "responsive: false");
     return hideSourceCode.substring(hideSourceCode.indexOf("\n") + 1);
 
   }
@@ -18,13 +22,13 @@ const Carousel = () => {
     <Fragment>
       <PageHeader title="Carousel" />
 
+      <h3 className={"use-in-toc"}>
+        Example
+      </h3>
       <div>We use the Carousel to display different cards which navigate to a certain detail or product page.</div>
-        <GuidelinesBlock
-        title={"Example"}>
-        <Markdown source={hideSource(carouselMarkdown)} />
-      </GuidelinesBlock>
 
-      <div>
+      <CarouselComponent />
+      <div style={{ marginTop: '44px' }}>
         <div className={styles.infoGroup}>
           <h2 className={`${styles.subHeader} no-report-button use-in-toc`}>General info</h2>
           <span>Dimensions 1440 x 764</span>
@@ -52,7 +56,9 @@ const Carousel = () => {
           <span className={styles.subHeader}>Card:</span>
           <div>Mandatory: <span className={styles.bold}>Yes</span></div>
           <div>Content: <span className={styles.bold}>Image, H4 title, Rich text, Text Button</span></div>
-          <div>Title: <span className={styles.bold}>Max</span> 2 rows, 35 characters – <span className={styles.bold}>Min</span> 15 characters</div>
+          <div>Title: <span className={styles.bold}>Max</span> 2 rows, 35 characters – <span
+            className={styles.bold}>Min</span> 15 characters
+          </div>
           <div>Rich text: <span className={styles.bold}>Text truncate after 105 characters</span></div>
           <div>Rules: <span className={styles.bold}>Always align to left</span></div>
           <div>Interaction: <span className={styles.bold}>Link</span> to internal page</div>
@@ -69,7 +75,7 @@ const Carousel = () => {
         />
       </div>
 
-
+      <Modals />
     </Fragment>
 
   );

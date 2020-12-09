@@ -48,7 +48,7 @@ async function buildComponentMetadata() {
         console.log('glob err: ', err)
       }
       directories.map(topLevelFolderPath => {
-        if (topLevelFolderPath === 'catalog/components/exclude-not-done') {
+        if (topLevelFolderPath === 'catalog/components/exclude-from-metadata') {
           return
         }
 

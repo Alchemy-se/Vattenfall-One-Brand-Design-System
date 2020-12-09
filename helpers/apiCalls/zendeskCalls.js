@@ -1,6 +1,10 @@
 import axios from "axios";
 
 export const sendRequest = async (data, files) => {
+  console.log("send");
+
+  return
+
 
 
   const tokens = []
@@ -33,6 +37,7 @@ export const sendRequest = async (data, files) => {
 
     let response = await axios({
       method: 'POST',
+      url: process.env.ZENDESK_REQUEST_URL,
       headers: {
         "content-type": "application/json"
       },
@@ -56,6 +61,7 @@ export const uploadAttachments = async (file) => {
 
     let response = await axios({
       method: 'POST',
+      url: process.env.ZENDESK_UPLOAD_FILE_URL + file.name,
       headers: {
         "content-type": "application/binary"
       },

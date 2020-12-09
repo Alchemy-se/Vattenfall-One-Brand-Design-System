@@ -1,10 +1,35 @@
 .container {
-  width: calc(80vw - 100px);
-  border: 1px solid black;
-  min-height: 1200px;
-
+ max-width: 82%;
+  margin-left: 45px;
 }
 
 .headingContainer {
   margin-left: 40px;
+}
+.anchorContainer {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 2;
+  a {
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 110px;
+    padding-left: 16px;
+    font-size: 0.75rem;
+    //border-left: 1px solid #f0f0f0;
+    color: #222222;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @media(max-width: 999px) {
+    display: none;
+  }
 }

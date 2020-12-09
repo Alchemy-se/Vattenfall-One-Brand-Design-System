@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import styles from "./Guidelines.scss";
 import { Anchor } from "antd";
 import Modals from "../zendesk/modals/modals";
+import { useScript } from "../../helpers/hooks/useEffects/useScript";
 const { Link } = Anchor;
 
 
 const GuidelinesWrapper = ({ children }) => {
   const uri = location.pathname
+  console.log('uri: ', uri)
   const containerRef = useRef(null);
   const [tocData, setTocData] = useState([])
 
@@ -85,6 +87,7 @@ const GuidelinesWrapper = ({ children }) => {
     return <Modals uri={uri} type={'guidelines'} />
   }
 
+  useScript("/js/horizon.min.js");
 
   return (
     <div className={styles.guidelinesContainer} ref={containerRef}>

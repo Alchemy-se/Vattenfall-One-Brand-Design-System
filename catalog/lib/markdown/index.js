@@ -36,22 +36,9 @@ module.exports = {
 }; */
 import { useEffect } from 'react';
 import TableOfContents from "../tableOfContents";
-
-const useScript = url => {
-  useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src = url;
-    script.async = true;
+import { useScript } from "../../../helpers/hooks/useEffects/useScript";
 
 
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, [url]);
-};
 
 const rootRenderer = ({ children }) => {
   // Extract all toc content.
@@ -90,7 +77,7 @@ const rootRenderer = ({ children }) => {
 
 const Markdown = ({ source, noPaddingBottom }) => {
   // Reload js.
-  // useScript("/js/horizon.min.js");
+  useScript("/js/horizon.min.js");
   return (
     <div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}`}>
       <ReactMarkdown
