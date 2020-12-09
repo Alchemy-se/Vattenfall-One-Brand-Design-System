@@ -149,12 +149,12 @@ const Zendesk = ({ data, setOpenModal, setDisplayConfirmModal, setStatus, isNewR
         subject: reportData.subject,
         comment: { body: reportData.comment },
         custom_fields: [
-         /* { id: 360011116697, value: reportData.language }, // html/js, react, angular
-          { id: 360011185597, value: reportData.category }, // component/guidelines
-          { id: 360011158198, value: reportData.typOfRequest }, //new request/report issue
-          { id: 360011185617, value: componentUri },
-          { id: 360011158218, value: guidelineUri },
-          { id: 360011298258, value: fullUrl }*/
+          { id: 360016456719, value: reportData.language }, // html/js, react, angular
+          { id: 360016469620, value: reportData.category }, // component/guidelines
+          { id: 360016469640, value: reportData.typOfRequest }, //new request/report issue
+          { id: 360016469660, value: componentUri },
+          { id: 360016456899, value: guidelineUri },
+          { id: 360016469680, value: fullUrl }
         ]
       }
     };

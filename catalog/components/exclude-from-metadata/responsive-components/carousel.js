@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const CarouselComponent = () => {
   return (
     <div style={{paddingTop: '1px'}} className="vf-carousel-outer-container">
-      <h2>Carousel component</h2>
+      <h2 style={{fontSize: "3.25rem"}}>Carousel component</h2>
       <div id="vf-carousel-container">
 
         <div className="vf-carousel-card-container">

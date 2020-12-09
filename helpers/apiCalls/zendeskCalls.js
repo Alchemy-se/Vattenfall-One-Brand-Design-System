@@ -1,11 +1,6 @@
 import axios from "axios";
 
 export const sendRequest = async (data, files) => {
-  console.log("send");
-
-  return
-
-
 
   const tokens = []
 
@@ -49,9 +44,6 @@ export const sendRequest = async (data, files) => {
 
   } catch (error) {
     return error.response.status
-
-
-    console.log("sendRequest error:", e);
 
   }
 }
