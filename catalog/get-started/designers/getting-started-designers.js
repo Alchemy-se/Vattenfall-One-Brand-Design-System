@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from "../lib/pageHeader";
+import PageHeader from "../../lib/pageHeader";
 import styles from "./index.scss";
 
 const Designers = () => (

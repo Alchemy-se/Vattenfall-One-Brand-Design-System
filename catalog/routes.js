@@ -3,8 +3,8 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 import Examples from './EXAMPLES';
 import Guidelines from './guidelines';
-import Designers from './designers/getting-started-designers';
-import Developers from './developers/getting-started-developers';
+import Designers from './get-started/designers/getting-started-designers';
+import Developers from './get-started/developers/getting-started-developers';
 
 import Grid from './components/grid/grid';
 import Responsive from './components/responsive/responsive';
@@ -56,6 +56,7 @@ import Progress from "./components/progress/progress";
 import SharableImage from "./components/shareable-image/sharable-image";
 import SmallQuote from "./components/small-qoute/small-quote";
 import ThreeColumn from "./components/three-column/three-column";
+import GuidelinesCarousel from "./components/carousel/carousel";
 
 // Guidelines
 import GuidelinesHero from "./guidelines/hero/Hero";
@@ -71,7 +72,6 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
-import GuidelinesCarousel from './guidelines/carousel/carousel';
 
 // Other
 import Login from "./admin/login";
@@ -81,7 +81,7 @@ import CarouselDev from './components/exclude-from-metadata/responsive-component
 import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
-
+import Overview from "./get-started/overview/overview";
 
 
 function usePageViews(onRouteChange) {
@@ -249,9 +249,7 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/new-request'}>
         <Zendesk isNewRequest={true} />
       </Route>
-      <Route path={'/developer/carousel'}>
-        <CarouselDev/>
-      </Route>
+
       <Route path="/">
         <Welcome />
       </Route>

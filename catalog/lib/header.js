@@ -7,14 +7,12 @@ import Search from './search/search'
 import authContext from "../../helpers/authContext";
 import { logout } from "../../helpers/apiCalls/authentication";
 import LoggedInBanner from "./LoggedInBanner";
-import { useScript } from "../../helpers/hooks/useEffects/useScript";
 
 function Header(props) {
   const [toggleDropdown, setToggleDropdown] = useState(false);
   const [displayModal, setDisplayModal] = useState(false)
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
-//  useScript("/js/horizon.min.js");
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);
@@ -45,7 +43,7 @@ function Header(props) {
         selectedKeys={props.selectedKeys}
       >
 
-        <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+        <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
         <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
         <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
 {/*
@@ -99,7 +97,7 @@ function Header(props) {
               className={styles.menuContainer}
         >
 
-          <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+          <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
           <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
           <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
 {/*

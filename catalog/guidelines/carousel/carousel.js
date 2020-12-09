@@ -1,14 +1,10 @@
 import React, { Fragment } from 'react';
 import PageHeader from "../PageHeader";
-import carouselMarkdown from '../../components/carousel/standard/html/carousel.md'
-import Markdown from "../../lib/markdown";
-import GuidelinesBlock from "../guidelinesBlock";
 import styles from './styles.scss'
 import DottedDescription from "../DottedDescription";
 import CarouselComponent from "../../components/exclude-from-metadata/responsive-components/carousel";
 import Modals from "../../zendesk/modals/modals";
-import headingStyles from "../../lib/markdown/headingRenderer.scss";
-import { HeadingHashLink } from "../../lib/markdown/headingRenderer";
+
 
 const Carousel = () => {
   const hideSource = (source) => {
