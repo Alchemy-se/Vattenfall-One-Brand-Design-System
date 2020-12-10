@@ -4,7 +4,11 @@ let baseUrl = process.env.BASE_URL;
 let identifier = process.env.BACKEND_USER_IDENTIFIER;
 let password = process.env.BACKEND_USER_PASSWORD;
 
+baseUrl= "https://production-dot-vattenfall-design-system.ew.r.appspot.com";
+identifier ="backend";
+password = "X4bYt27xG2mD3qST";
 
+console.log('baseUrl: ', baseUrl)
 
 // auth as backend user to upload metatada to strapi
 async function auth() {

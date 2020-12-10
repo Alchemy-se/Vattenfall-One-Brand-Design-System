@@ -8,7 +8,7 @@ RUN yarn install
 COPY . .
 
 # RUN CI=true yarn development
-RUN yarn build
+RUN yarn build-prod
 RUN cp -r ./dist /app/build
 
 # Build and upload metadata for algolia search and component overview
