@@ -8,6 +8,9 @@ import Modals from "../../zendesk/modals/modals";
 
 const Carousel = () => {
   const hideSource = (source) => {
+    console.log("hej hej ");
+    
+    
     let hideSourceCode = source.replace("showSource: true", "showSource: false");
     hideSourceCode = source.replace("responsive: true", "responsive: false");
     return hideSourceCode.substring(hideSourceCode.indexOf("\n") + 1);
