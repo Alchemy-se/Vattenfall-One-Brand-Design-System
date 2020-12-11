@@ -10,7 +10,7 @@
 
     "build-prod": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "build-webpack-prod": "webpack --env.NODE_ENV=production --mode=production  --config documentation.webpack.config.js",
-
+    "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss dist/css/main.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/reboot.scss dist/css/reboot.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/documentation.scss dist/css/documentation.css",
