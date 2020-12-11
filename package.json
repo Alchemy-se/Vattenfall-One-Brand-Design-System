@@ -10,7 +10,7 @@
 
     "build-prod": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "build-webpack-prod": "webpack --env.NODE_ENV=production --mode=production  --config documentation.webpack.config.js",
-    "build": "npm-run-all --sequential js-main css-main build-webpack",
+    "build": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
