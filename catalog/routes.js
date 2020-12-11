@@ -56,7 +56,6 @@ import Progress from "./components/progress/progress";
 import SharableImage from "./components/shareable-image/sharable-image";
 import SmallQuote from "./components/small-qoute/small-quote";
 import ThreeColumn from "./components/three-column/three-column";
-import GuidelinesCarousel from "./components/carousel/carousel";
 
 // Guidelines
 import GuidelinesHero from "./guidelines/hero/Hero";
@@ -72,6 +71,8 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
+import GuidelinesCarousel from "./guidelines/carousel/carousel";
+
 
 // Other
 import Login from "./admin/login";
