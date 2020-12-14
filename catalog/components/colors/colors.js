@@ -4,7 +4,7 @@ import borders from './borders/html/borders.md'
 import backgroundColor from './background-color/html/background-color.md'
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = colors + backgroundColor + borders
 

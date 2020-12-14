@@ -10,7 +10,7 @@ import textButton from './text-button/html/text-button.md'
 import textButtonSmall from './text-button-small/html/text-button-small.md'
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = primaryButtonsLarge + primaryButtonsMedium + outlinedButtonsLarge + outlinedButtonsMedium
   + textButton + textButtonSmall + buttonCombinations + fullWidthButtons + activeState

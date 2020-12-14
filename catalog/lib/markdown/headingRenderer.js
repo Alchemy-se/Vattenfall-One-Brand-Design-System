@@ -11,7 +11,7 @@ const getValueFromArray = (children) => {
   return mapped.join(" ");
 };
 
-export const HeadingHashLink = (rawValue) => {
+const HeadingHashLink = (rawValue) => {
   if (Array.isArray(rawValue)) {
     let value = "";
     for (let i = 0; i < rawValue.length; i++) {

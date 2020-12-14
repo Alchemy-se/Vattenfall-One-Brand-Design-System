@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 
-const CarouselComponent = () => {
+const Carousel = () => {
   return (
+
+
     <div className="vf-carousel-outer-container">
       <h2>Carousel component</h2>
       <div id="vf-carousel-container">
@@ -96,4 +98,4 @@ const CarouselComponent = () => {
   )
 };
 
-export default CarouselComponent;
+export default Carousel;

@@ -4,7 +4,7 @@ import PageHeader from "../../lib/pageHeader";
 import standard from './standard/html/standard.md'
 import reversed from './reversed/html/reversed.md'
 import backgroundColors from './background-colors/html/background-colors.md'
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = standard + reversed + backgroundColors ;
 export default class MediaBlock extends Component {

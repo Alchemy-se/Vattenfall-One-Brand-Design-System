@@ -3,7 +3,7 @@ import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
 import standard from './standard/html/standard.md'
 import reversed from './reversed/html/reversed.md'
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = standard + reversed;
 export default class ImageBlock extends Component {

@@ -2,15 +2,15 @@ version: 2
 jobs:
   test:
     docker:
-      - image: 'circleci/node:10.19.0'
+      - image: 'circleci/node:10.18.0'
     steps:
       - checkout
       - run: yarn
-      - run: yarn test
+      - run: yarn development
 
   release:
     docker:
-      - image: 'circleci/node:10.19.0'
+      - image: 'circleci/node:10.18.0'
     steps:
       - checkout
       - run: yarn
@@ -21,11 +21,11 @@ jobs:
 workflows:
   version: 2
   test_and_release:
-    # Run the test jobs first, then the release only when all the test jobs are successful
+    # Run the development jobs first, then the release only when all the development jobs are successful
     jobs:
-      - test
+      - development
 #      - test_node_8
       - release:
           requires:
-            - test
+            - development
  #           - test_node_8

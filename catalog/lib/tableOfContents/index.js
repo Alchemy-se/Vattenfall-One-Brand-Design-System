@@ -19,7 +19,6 @@ const getId = (rawValue) => {
 };
 
 const TableOfContents = ({content}) => {
-  console.log('content: ', content)
   if(!content || content.length === 0) {
     return null;
   }

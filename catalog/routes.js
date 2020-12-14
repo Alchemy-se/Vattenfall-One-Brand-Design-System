@@ -3,8 +3,8 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 import Examples from './EXAMPLES';
 import Guidelines from './guidelines';
-import Designers from './get-started/designers/getting-started-designers';
-import Developers from './get-started/developers/getting-started-developers';
+import Designers from './designers/getting-started-designers';
+import Developers from './developers/getting-started-developers';
 
 import Grid from './components/grid/grid';
 import Responsive from './components/responsive/responsive';
@@ -42,7 +42,7 @@ import TabBar from "./components/tab-bar/tab-bar";
 import Carousel from "./components/carousel/carousel";
 import DynamicView from './components/dynamicView';
 import ComponentOverview from "./overview/componentOverview";
-import Navbar from "./components/exclude-from-metadata/navbar/navbar";
+import Navbar from "./components/exclude-not-done/navbar/navbar";
 import Preloader from "./components/preloader/preloader";
 import Tooltip from "./components/tooltip/tooltip";
 import Card from "./components/card/card";
@@ -71,18 +71,13 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
-import GuidelinesCarousel from "./guidelines/carousel/carousel";
-
 
 // Other
 import Login from "./admin/login";
 
 // remove this and the route in the Route -> switch function
-import CarouselDev from './components/exclude-from-metadata/responsive-components/carousel'
-import Upload from "./development/upload";
-import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
-import Zendesk from "./zendesk/zendesk";
-import Overview from "./get-started/overview/overview";
+import CarouselDev from './development/carousel'
+
 
 
 function usePageViews(onRouteChange) {
@@ -154,7 +149,7 @@ const GUIDELINES_ROUTES = [
   {
     path: '/guidelines/buttons',
     name: 'Buttons',
-    component: <GuidelinesWrapper ><GuidelinesButtons /></GuidelinesWrapper>
+    component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper>
   },
   { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
   {
@@ -198,10 +193,6 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/hero',
     name: 'Hero',
     component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
-  }, {
-    path: '/guidelines/carousel',
-    name: 'Carousel',
-    component: <GuidelinesWrapper><GuidelinesCarousel/></GuidelinesWrapper>
   }
 ]
 
@@ -247,10 +238,9 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/login'}>
         <Login />
       </Route>
-      <Route path={'/new-request'}>
-        <Zendesk isNewRequest={true} />
+      <Route path={'/development/carousel'}>
+        <CarouselDev />
       </Route>
-
       <Route path="/">
         <Welcome />
       </Route>

@@ -11,7 +11,7 @@ import smallerText from './smaller-text/html/smaller-text.md'
 import preamble from './preamble/html/preamble.md'
 import introInCaps from './intro-in-caps/html/intro-in-caps.md'
 import introInCapsSmall from './intro-in-caps-small/html/intro-in-caps-small.md'
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = examples + h1 + h2 + h3 + h4 + standardText +
 	smallerText + preamble + introInCaps + introInCapsSmall

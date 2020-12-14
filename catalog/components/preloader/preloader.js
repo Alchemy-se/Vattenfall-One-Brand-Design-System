@@ -3,7 +3,7 @@ import Markdown from "../../lib/markdown/index";
 import PageHeader from "../../lib/pageHeader";
 import initialPosition from './initial-position/html/initial-position.md'
 import updatingPreloader from './updating-the-preloader/html/updating-the-preloader.md'
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 const markdown = initialPosition + updatingPreloader;
 export default class Preloader extends Component {
   render() {

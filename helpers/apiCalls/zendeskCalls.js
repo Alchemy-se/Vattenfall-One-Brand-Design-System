@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const sendRequest = async (data, files) => {
 
+
   const tokens = []
 
   if (files.length >= 1) {
@@ -32,7 +33,7 @@ export const sendRequest = async (data, files) => {
 
     let response = await axios({
       method: 'POST',
-      url: process.env.ZENDESK_REQUEST_URL,
+      url: `https://albin-test.zendesk.com/api/v2/requests.json`,
       headers: {
         "content-type": "application/json"
       },
@@ -45,6 +46,9 @@ export const sendRequest = async (data, files) => {
   } catch (error) {
     return error.response.status
 
+
+    console.log("sendRequest error:", e);
+
   }
 }
 
@@ -53,7 +57,7 @@ export const uploadAttachments = async (file) => {
 
     let response = await axios({
       method: 'POST',
-      url: process.env.ZENDESK_UPLOAD_FILE_URL + file.name,
+      url: `https://albin-test.zendesk.com/api/v2/uploads.json?filename=${file.name}`,
       headers: {
         "content-type": "application/binary"
       },

@@ -35,9 +35,9 @@ const Logotype = () => {
           </p>
           <p className={styles.guidelinesText}>
             The wordmark has been modernised, but kept in capital letters to reflect the confident leadership that
-            Vattenfall takes
+            Vattenfall takes <br />
             towards a fossil free future. The symbol balances the wordmark with the organic, round shape, visually
-            enhancing a
+            enhancing a <br />
             global aspiration to be a rolemodel for sustainable change.
           </p>
           <p className={styles.guidelinesText}>

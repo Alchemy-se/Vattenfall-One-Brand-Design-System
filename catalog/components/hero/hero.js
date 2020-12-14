@@ -8,7 +8,7 @@ import oneTextlineAndButtonHero from './one-textline-button/html/one-textline-bu
 import twoTextlineHero from './two-textlines/html/two-textlines.md';
 import twoTextlineAndButtonHero from './two-textline-button/html/two-textline-button.md';
 import textIntroButtonsHero from './intro-buttons/html/intro-buttons.md';
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 const markdown = basicHero + startPageHero + twoTextlineAndButtonHero + oneTextlineAndButtonHero + twoTextlineHero +oneTextlineHero + textIntroButtonsHero;
 

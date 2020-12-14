@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHeader from "../../lib/pageHeader";
 import Markdown from "../../lib/markdown";
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 import tabBar from './tab-bar/html/tab-bar.md'
 const TabBar = ({ uri }) => {
   return (

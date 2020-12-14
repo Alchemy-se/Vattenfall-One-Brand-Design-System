@@ -1,32 +1,33 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import styles from "./Guidelines.scss";
 import { Anchor } from "antd";
-import Modals from "../zendesk/modals/modals";
-import { useScript } from "../../helpers/hooks/useEffects/useScript";
+
 const { Link } = Anchor;
 
 
-const GuidelinesWrapper = ({ children }) => {
-  const uri = location.pathname
-  console.log('uri: ', uri)
-  const containerRef = useRef(null);
-  const [tocData, setTocData] = useState([])
+class GuidelinesWrapper extends Component {
+  constructor(props) {
+    super(props);
+    this.containerRef = React.createRef();
+    this.state = {
+      tocData: []
+    }
+  }
 
-  useEffect(() => {
+  componentDidMount() {
+    // Scroll top on navigation change.
     const scrollableElement = document.getElementById("content-container");
     if (scrollableElement) {
       scrollableElement.scrollTo(0, 0);
     }
-  }, [children])
 
-  useEffect(() => {
-    let nodes = ReactDOM.findDOMNode(containerRef.current);
+    const tocArray = []
+
+    let nodes = ReactDOM.findDOMNode(this.containerRef.current);
     let tags = nodes.getElementsByClassName("use-in-toc");
 
 
-
-    let tocs = []
     // Special case for grid elements as they have different structure
     // and no way to separate two elements with same name in h2 (tablet)
     let gridElements = nodes.getElementsByClassName("use-in-toc-grid");
@@ -34,36 +35,36 @@ const GuidelinesWrapper = ({ children }) => {
       let currentElement = gridElements[i];
       const content = currentElement.id;
       const elementID = content.replace(/\s/g, '-')
-      tocs.push({ id: "#" + elementID, name: content })
-
+      tocArray.push({ id: "#"+ elementID, name: content })
     }
 
     for (let i = 0; i < tags.length; i++) {
       let currentElement = tags[i];
       const content = currentElement.textContent;
-      const elementID = formatId(content)
+      const elementID = this.formatId(content)
       currentElement.setAttribute("id", elementID)
-      tocs.push({ id: "#" + elementID, name: content })
+      tocArray.push({ id:"#"+ elementID, name: content })
     }
 
-    if (tocs.length >= 1) {
-      setTocData(tocs)
+    if (tocArray.length >= 1) {
+      this.setState({
+        tocData: tocArray
+      })
     }
 
-  }, [])
+  }
 
-
-  const formatId = (textContent) => {
+  formatId = (textContent) => {
     textContent = textContent.replace(/–/g, '');
     textContent = textContent.replace(/\s/g, '-');
     return textContent.toLowerCase()
   };
 
-
-  const tableOfContents = () => {
-    if (tocData.length < 1) {
+  tableOfContents = () => {
+    if (this.state.tocData.length < 1) {
       return null;
     }
+    const tocData = this.state.tocData
 
     const links = tocData.map(item => {
       const value = item.name;
@@ -83,19 +84,17 @@ const GuidelinesWrapper = ({ children }) => {
     )
   }
 
-  const renderModals = () => {
-    return <Modals uri={uri} type={'guidelines'} />
+
+  render() {
+
+
+    return (
+      <div className={styles.guidelinesContainer} ref={this.containerRef}>
+        {this.tableOfContents()}
+        {this.props.children}
+      </div>
+    );
   }
+}
 
-  useScript("/js/horizon.min.js");
-
-  return (
-    <div className={styles.guidelinesContainer} ref={containerRef}>
-      {tableOfContents()}
-      {children}
-      {renderModals()}
-    </div>
-  );
-
-};
 export default GuidelinesWrapper;

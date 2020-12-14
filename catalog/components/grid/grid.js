@@ -35,7 +35,7 @@ const markdown = howItWorks + equalWidth + settingOneColumnWidth + variableWithC
 
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
-import Modals from "../../zendesk/modals/modals";
+import Modals from "../../zendesk/modals";
 
 export default class Grid extends Component {
 	render() {
