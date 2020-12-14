@@ -71,13 +71,19 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
+import GuidelinesCarousel from "./guidelines/carousel/carousel";
+
 
 // Other
 import Login from "./admin/login";
 
 // remove this and the route in the Route -> switch function
-import CarouselDev from './development/carousel'
-
+import CarouselDev from './components/exclude-from-metadata/responsive-components/carousel'
+import Upload from "./development/upload";
+import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
+import Zendesk from "./zendesk/zendesk";
+import Overview from "./get-started/overview/overview";
+import Contact from "./lib/contact/contact";
 
 
 function usePageViews(onRouteChange) {
@@ -193,6 +199,10 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/hero',
     name: 'Hero',
     component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
+  }, {
+    path: '/guidelines/carousel',
+    name: 'Carousel',
+    component: <GuidelinesWrapper><GuidelinesCarousel/></GuidelinesWrapper>
   }
 ]
 
@@ -238,9 +248,15 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/login'}>
         <Login />
       </Route>
-      <Route path={'/development/carousel'}>
-        <CarouselDev />
+      <Route path={'/contact/contact'}>
+        <Contact />
       </Route>
+      <Route path={'/contact/new-request'}>
+        <Zendesk isNewRequest={true} />
+      </Route>
+
+
+
       <Route path="/">
         <Welcome />
       </Route>

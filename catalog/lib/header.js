@@ -14,6 +14,7 @@ function Header(props) {
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
 
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);
     return () => {
@@ -26,7 +27,6 @@ function Header(props) {
       setToggleDropdown(false);
     }
   };
-
 
 
   function toggleDropDownHandler() {
@@ -44,10 +44,13 @@ function Header(props) {
         selectedKeys={props.selectedKeys}
       >
 
-        <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+        <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
         <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
         <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+{/*
         <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
+*/}
+        <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
         <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
         <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 
@@ -96,10 +99,13 @@ function Header(props) {
               className={styles.menuContainer}
         >
 
-          <Menu.Item key="/get-started"><Link to={"/get-started/design"}>Get Started</Link></Menu.Item>
+          <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
           <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
           <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+{/*
           <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
+*/}
+          <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
           <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
           <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 
