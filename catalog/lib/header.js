@@ -53,6 +53,7 @@ function Header(props) {
 {/*
         <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
+        <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
         <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
         <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 
@@ -107,6 +108,7 @@ function Header(props) {
 {/*
           <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
+          <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
           <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
           <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 

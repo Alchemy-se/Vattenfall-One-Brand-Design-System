@@ -20,9 +20,8 @@ const NewZendeskRequest = ({ validEmail, isLoading, reportData, hasError, handle
 
 
       <div className={styles.inputFieldsContainer}>
-        <p>If you have a need for a new asset, want to report an issue, have a suggestion or just want to
-          submit your thoughts on the Vattenfall digital design or code assets in general please submit
-          the details below and we will review and get back to you as soon as we can.</p>
+        <p>If you need a new asset, want to report an issue or submit a general suggestion on the Vattenfall digital
+          design or code assets submit your details below and we will get back to you as soon as we can.</p>
         <div className="vf-input-container">
           <input type="text"
                  id="vf_standard_input"
