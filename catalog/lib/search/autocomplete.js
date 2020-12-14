@@ -117,6 +117,7 @@ class AutoComplete extends Component {
   render() {
     const { hits } = this.props;
     const { value } = this.state;
+
     const inputProps = {
       placeholder: 'Search...',
       onChange: this.onChange,

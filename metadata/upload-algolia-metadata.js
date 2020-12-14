@@ -8,7 +8,7 @@ const APPLICATION_KEY = process.env.APPLICATION_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const INDEX_NAME = process.env.INDEX_NAME;
 
-console.log('APPLICATION_KEY build: ', APPLICATION_KEY)
+console.log('APPLICATION_KEY: ', APPLICATION_KEY)
 async function uploadAlgoliaData() {
   return new Promise((resolve => {
 

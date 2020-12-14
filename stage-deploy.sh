@@ -13,7 +13,7 @@ if [ ! -f ./conf/certs/digitaldesign.vattenfall.com.key ]; then
     echo "Make sure you have the file digitaldesign.vattenfall.com.key in ./conf/certs"
     exit 1
 fi
-echo "run: stage.dockerfile"
+
 docker build --no-cache -t stage-vattenfallds --build-arg mode=dev -f stage.Dockerfile .
 docker tag stage-vattenfallds eu.gcr.io/vattenfall-design-system/stage-vattenfallds
 docker push eu.gcr.io/vattenfall-design-system/stage-vattenfallds
