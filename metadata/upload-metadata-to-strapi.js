@@ -7,7 +7,7 @@ const glob = require('glob');
 const guidelinesPath = 'catalog/guidelines/*/*.json'
 let baseUrl = process.env.BASE_URL;
 
-baseUrl= "https://production-dot-vattenfall-design-system.ew.r.appspot.com";
+//baseUrl= "https://production-dot-vattenfall-design-system.ew.r.appspot.com";
 
 
 async function uploadMetadata() {

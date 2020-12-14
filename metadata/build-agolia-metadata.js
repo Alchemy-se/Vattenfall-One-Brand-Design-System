@@ -60,7 +60,7 @@ async function buildAlgoliadMetadataJSON() {
         // Make a more unique id for guideline records
         data = tmpData.map(item => {
           const prefix = item.id ? item.id : "parent";
-          item.objectID = prefix + "_" + item.objectID;
+          item.objectID = prefix + "_11_" + item.objectID;
           return item
         });
         data = JSON.stringify(data)
