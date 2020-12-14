@@ -3,11 +3,17 @@
   "version": "7.16.6",
   "main": "index.js",
   "scripts": {
-    "start-webpack": "webpack-dev-server  --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
-    "build-webpack": "webpack  --mode=production  --config documentation.webpack.config.js",
+    "start-webpack": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
+
+    "build-webpack-stage": "webpack --env.NODE_ENV=stage --mode=production  --config documentation.webpack.config.js",
+    "build-stage": "npm-run-all --sequential js-main css-main build-webpack-stage",
+
+    "build-prod": "npm-run-all --sequential js-main css-main build-webpack-prod",
+    "build-webpack-prod": "webpack --env.NODE_ENV=production --mode=production  --config documentation.webpack.config.js",
+
+    "build": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
-    "build": "npm-run-all --sequential js-main css-main build-webpack",
     "css-main": "npm-run-all --sequential css-compile css-prefix css-minify css-copy",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss dist/css/main.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/reboot.scss dist/css/reboot.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/documentation.scss dist/css/documentation.css",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
@@ -20,10 +26,9 @@
     "js-main": "npm-run-all --sequential js-build js-copy",
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
-    "build-metadata": "node metadata/build-metadata.js",
-    "build-and-upload-metadata": "node metadata/build-metadata.js && node metadata/build-agolia-metadata.js && node metadata/upload-algolia-metadata.js && node metadata/upload-metadata-to-strapi.js",
-    "testalite": "yarn build && yarn build-and-upload-metadata"
-
+    "build-metadata": "NODE_ENV=production node metadata/build-metadata.js",
+    "build-and-upload-metadata-stage": "NODE_ENV=stage node metadata/entry.js",
+    "build-and-upload-metadata-production": "NODE_ENV=production node metadata/entry.js"
   },
   "repository": "git@github.com:Alchemy-se/Vattenfall-One-Brand-Design-System.git",
   "author": "Daniel Mauno Pettersson <daniel@alchemy.se>",

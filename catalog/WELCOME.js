@@ -10,7 +10,7 @@ const Welcome = () => (
         <div className="vf-row">
           <div className="vf-col vf-col-md-9">
             <p style={{ fontSize: '18px' }} className="">
-             2 Vattenfall Design System unites products & services around a common visual language. It aims to reduce current Design Debt, accelerates the design process, and builds bridges between teams working in concert to bring unified products to life within set brand. Vattenfall Design System is created with aim to help the teams within Vattenfall to improve product quality, amplify production efficiency and enhance communication.
+              Vattenfall Design System unites products & services around a common visual language. It aims to reduce current Design Debt, accelerates the design process, and builds bridges between teams working in concert to bring unified products to life within set brand. Vattenfall Design System is created with aim to help the teams within Vattenfall to improve product quality, amplify production efficiency and enhance communication.
             </p>
             <div className="vf-row">
               <div className="vf-col" style={{maxWidth: "268px"}}>
