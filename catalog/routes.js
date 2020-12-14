@@ -83,6 +83,7 @@ import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
 import Overview from "./get-started/overview/overview";
+import Contact from "./lib/contact/contact";
 
 
 function usePageViews(onRouteChange) {
@@ -247,9 +248,14 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/login'}>
         <Login />
       </Route>
-      <Route path={'/new-request'}>
+      <Route path={'/contact/contact'}>
+        <Contact />
+      </Route>
+      <Route path={'/contact/new-request'}>
         <Zendesk isNewRequest={true} />
       </Route>
+
+
 
       <Route path="/">
         <Welcome />

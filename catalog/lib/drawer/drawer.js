@@ -6,6 +6,7 @@ import ComponentsMenu from "./componentsMenu";
 import GuidelinesMenu from "./guidelinesMenu";
 import styles from "./drawer.scss";
 import authContext from "../../../helpers/authContext";
+import ContactMenu from "./ContactMenu";
 
 const PACKAGE = require("../../../package.json");
 
@@ -79,6 +80,9 @@ const renderMenuContent = (_path) => {
     }
     case "/guidelines": {
       return GuidelinesMenu();
+    }
+    case "/contact": {
+      return ContactMenu();
     }
     default: {
       return null;
