@@ -65,7 +65,7 @@ const Designers = () => (
         <div className="vf-row">
           <div className="vf-col">
             <a className="vf-link-with-arrow vf-link-with-arrow--small"
-               href="https://app.abstract.com/projects/1669dae0-736a-4420-92c6-4bdf4b3384d4/branches/master/files/4110c76a-e10b-413d-a20c-02662a4d766f"
+               href="https://share.goabstract.com/1cd7494e-4d06-4eb9-af2c-743c4b3c1178?sha=ef55e8d315e37a13c39cf31ec5cba99c706740ee"
                target="_blank" rel="noopener">Vattenfall Design Kit on Abstract</a>
           </div>
           <div className="vf-col">
