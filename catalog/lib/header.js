@@ -99,7 +99,7 @@ function Header(props) {
               className={styles.menuContainer}
         >
 
-          <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
+          <Menu.Item key="/get-started"><Link to={"/get-started/overview"}>Get Started</Link></Menu.Item>
           <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
           <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
 {/*
