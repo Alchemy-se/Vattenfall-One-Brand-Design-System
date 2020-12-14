@@ -100,52 +100,88 @@ const COMPONENTS_ROUTES = [
   { path: '/intro', name: 'Atoms', component: <Intro uri={"/components/intro"} /> },
   // components/css
   { path: '/css/text', name: 'Text', component: <Text uri={"/components/css/text"} /> },
-  { path: '/css/utility-typography', name: 'Utility Typography', component: <UtilityTypography uri={"/components/css/utility-typography"} /> },
+  {
+    path: '/css/utility-typography',
+    name: 'Utility Typography',
+    component: <UtilityTypography uri={"/components/css/utility-typography"} />
+  },
   { path: '/css/button', name: 'Button', component: <Button uri={"/components/css/button"} /> },
   { path: '/css/drop-down', name: 'Drop-down List', component: <DropdownList uri={"/components/css/drop-down"} /> },
   { path: '/css/input', name: 'Input', component: <Input uri={"/components/css/input"} /> },
 
-  { path: '/css/gdpr-consent-module', name: 'GDPR Consent Module', component: <GDPRConsentModule uri={"/components/css/gdpr-consent-module"} /> },
+  {
+    path: '/css/gdpr-consent-module',
+    name: 'GDPR Consent Module',
+    component: <GDPRConsentModule uri={"/components/css/gdpr-consent-module"} />
+  },
   { path: '/css/list', name: 'Lists', component: <Lists uri={"/components/css/list"} /> },
-/*
-  { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
-*/
+  /*
+    { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
+  */
   { path: '/css/preloader', name: 'Preloader', component: <Preloader uri={"/components/css/preloader"} /> },
-  { path: '/css/numbered-list', name: 'Numbered List', component: <NumberedList uri={"/components/css/numbered-list"} /> },
+  {
+    path: '/css/numbered-list',
+    name: 'Numbered List',
+    component: <NumberedList uri={"/components/css/numbered-list"} />
+  },
 
   { path: '/css/badge', name: 'Badge', component: <Badge uri={"/components/css/badge"} /> },
   { path: '/css/table', name: 'Table', component: <Table uri={"/components/css/table"} /> },
-  { path: '/css/tab-bar', name: 'Tab Bar', component: <TabBar uri={"/components/css/tab-bar"}  /> },
+  { path: '/css/tab-bar', name: 'Tab Bar', component: <TabBar uri={"/components/css/tab-bar"} /> },
   { path: '/css/tooltip', name: 'Tooltip', component: <Tooltip uri={"/components/css/tooltip"} /> },
-  { path: '/css/notification-module', name: 'Notification Module', component: <NotificationModule  uri={"/components/css/notification-module"}/> },
+  {
+    path: '/css/notification-module',
+    name: 'Notification Module',
+    component: <NotificationModule uri={"/components/css/notification-module"} />
+  },
 
-  { path: '/css/subscribe', name: 'Subscribe', component: <Subscribe uri={"/components/css/subscribe"}/> },
+  { path: '/css/subscribe', name: 'Subscribe', component: <Subscribe uri={"/components/css/subscribe"} /> },
   { path: '/css/icon-text', name: 'Icon Text', component: <IconText uri={"/components/css/icon-text"} /> },
 
   { path: '/css/card', name: 'Card', component: <Card uri={"/components/css/card"} /> },
   { path: '/css/button-group', name: 'Button Group', component: <ButtonGroup uri={"/components/css/button-group"} /> },
-  { path: '/css/cookie-banner', name: 'Cookie Banner', component: <CookieBanner uri={"components/css/cookie-banner"} /> },
+  {
+    path: '/css/cookie-banner',
+    name: 'Cookie Banner',
+    component: <CookieBanner uri={"components/css/cookie-banner"} />
+  },
   { path: '/css/image-block', name: 'Image Block', component: <ImageBlock uri={"/components/css/image-block"} /> },
-  { path: '/css/image-with-caption', name: 'Image with Caption', component: <ImageWithCaptions uri={"/components/css/image-with-caption"} /> },
-  { path: '/css/shareable-image', name: 'Shareable Image', component: <SharableImage uri={"/components/css/shareable-image"} /> },
+  {
+    path: '/css/image-with-caption',
+    name: 'Image with Caption',
+    component: <ImageWithCaptions uri={"/components/css/image-with-caption"} />
+  },
+  {
+    path: '/css/shareable-image',
+    name: 'Shareable Image',
+    component: <SharableImage uri={"/components/css/shareable-image"} />
+  },
   { path: '/css/media-block', name: 'Media Block', component: <MediaBlock uri={"/components/css/media-block"} /> },
-  { path: '/css/linked-list-block', name: 'Linked List Block', component: <LinkedListBlock uri={"/components/css/linked-list-block"} /> },
-  { path: '/css/parallax-image-block', name: 'Parallax Image Block', component: <ParallaxImageBlock uri={"/components/css/parallax-image-block"}/> },
+  {
+    path: '/css/linked-list-block',
+    name: 'Linked List Block',
+    component: <LinkedListBlock uri={"/components/css/linked-list-block"} />
+  },
+  {
+    path: '/css/parallax-image-block',
+    name: 'Parallax Image Block',
+    component: <ParallaxImageBlock uri={"/components/css/parallax-image-block"} />
+  },
   { path: '/css/large-quote', name: 'Large Quote', component: <LargeQuote uri={"/components/css/large-quote"} /> },
   { path: '/css/small-quote', name: 'Small Quote', component: <SmallQuote uri={"/components/css/small-quote"} /> },
   { path: '/css/three-column', name: 'Three Column', component: <ThreeColumn uri={"/components/css/three-column"} /> },
-  { path: '/css/topbar', name: 'Top Bar', component: <TopBar uri={"/components/css/topbar"}/> },
+  { path: '/css/topbar', name: 'Top Bar', component: <TopBar uri={"/components/css/topbar"} /> },
   { path: '/css/pagination', name: 'Pagination', component: <Pagination uri={"/components/css/pagination"} /> },
   { path: '/css/progress', name: 'Progress', component: <Progress uri={"/components/css/progress"} /> },
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
-  { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"}/> },
-  { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"}/> },
-  { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"}/>},
-  { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} />},
+  { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"} /> },
+  { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"} /> },
+  { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"} /> },
+  { path: '/css/carousel', name: 'Carousel', component: <Carousel uri={"/components/css/carousel"} /> },
 
-// components/utilities
-  { path: '/utilities/favicon', name: 'Favicon',  component: <Favicon uri={"/components/utilities/favicon"}/>  },
-  { path: '/css/icons', name: 'Icons', component: <Icons uri={"/components/css/icons"}/>},
+  // components/utilities
+  { path: '/utilities/favicon', name: 'Favicon', component: <Favicon uri={"/components/utilities/favicon"} /> },
+  { path: '/css/icons', name: 'Icons', component: <Icons uri={"/components/css/icons"} /> },
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
   // Redirect if path is only /components.
   { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
@@ -154,7 +190,7 @@ const GUIDELINES_ROUTES = [
   {
     path: '/guidelines/buttons',
     name: 'Buttons',
-    component: <GuidelinesWrapper ><GuidelinesButtons /></GuidelinesWrapper>
+    component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper>
   },
   { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
   {
@@ -197,11 +233,11 @@ const GUIDELINES_ROUTES = [
   {
     path: '/guidelines/hero',
     name: 'Hero',
-    component: <GuidelinesWrapper><GuidelinesHero/></GuidelinesWrapper>
+    component: <GuidelinesWrapper><GuidelinesHero /></GuidelinesWrapper>
   }, {
     path: '/guidelines/carousel',
     name: 'Carousel',
-    component: <GuidelinesWrapper><GuidelinesCarousel/></GuidelinesWrapper>
+    component: <GuidelinesWrapper><GuidelinesCarousel /></GuidelinesWrapper>
   }
 ]
 
@@ -218,11 +254,12 @@ const Routes = ({ onRouteChange, openModal }) => {
           {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
         </Route>
       ))}
+      <Route path="/get-started/overview">
+        <Overview />
+      </Route>
       <Route path="/get-started/design">
         <Designers />
-      </Route> <Route path="/get-started/design">
-      <Designers />
-    </Route>
+      </Route>
       <Route path="/get-started/developer">
         <Developers />
       </Route>
