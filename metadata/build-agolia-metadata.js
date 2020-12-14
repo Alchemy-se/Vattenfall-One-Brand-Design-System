@@ -3,7 +3,7 @@ const jsonOverview = require('./components-overview-metadata');
 const glob = require("glob");
 const algoliaSearchMetadata = 'metadata/algolia-search-metadata.json';
 const guidelineMetadata = 'metadata/guideline.json';
-const metadataFileName = 'metadata/components-overview-metadata.json';
+const metadataFileName = 'metadata/components-introduction-metadata.json';
 const guidelineRootPath = './catalog/guidelines/*/*.json'
 
 let childArr = [];

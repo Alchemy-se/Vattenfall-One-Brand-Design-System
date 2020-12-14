@@ -2,8 +2,8 @@ import {Menu} from "antd";
 import {Link} from "react-router-dom";
 import React from "react";
 
-const MENU_ITEMS = ["/design", "/developer"];
-const MENU_ITEM_NAMES = ["Designers", "Developers"];
+const MENU_ITEMS = ["/introduction","/design", "/developer"];
+const MENU_ITEM_NAMES = ["Introduction", "Designers", "Developers"];
 
 const GetStartedMenu = () => {
 

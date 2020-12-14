@@ -82,8 +82,9 @@ import CarouselDev from './components/exclude-from-metadata/responsive-component
 import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
-import Overview from "./get-started/overview/overview";
+import Overview from "./get-started/introduction/introduction";
 import Contact from "./lib/contact/contact";
+import Introduction from "./get-started/introduction/introduction";
 
 
 function usePageViews(onRouteChange) {
@@ -255,11 +256,12 @@ const Routes = ({ onRouteChange, openModal }) => {
           {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
         </Route>
       ))}
+      <Route path="/get-started/introduction">
+        <Introduction />
+      </Route>
       <Route path="/get-started/design">
         <Designers />
-      </Route> <Route path="/get-started/design">
-      <Designers />
-    </Route>
+      </Route>
       <Route path="/get-started/developer">
         <Developers />
       </Route>
@@ -278,7 +280,7 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/articles'}>
         <ArticlesOverview />
       </Route>
-      <Route path={'/overview'}>
+      <Route path={'/introduction'}>
         <ComponentOverview />
       </Route>
       <Route path={'/login'}>

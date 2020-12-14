@@ -1,6 +1,6 @@
 /**
  * File for mapping all metadata.json files and join values from parent to respective
- * child/component and save a new components-overview-metadata.json file.
+ * child/component and save a new components-introduction-metadata.json file.
  *
  * run with 'yarn build-metadata'
  * should probably be included in build script later
@@ -9,12 +9,12 @@
 const glob = require('glob');
 const fs = require('fs');
 const componentsPath = 'catalog/components/*';
-const metadataFileName = './metadata/components-overview-metadata.json';
+const metadataFileName = './metadata/components-introduction-metadata.json';
 
 async function buildComponentMetadata() {
   return new Promise((resolve) => {
     // delete file first if it exists as sometimes it concatenate
-    // the new and old .json data in the components-overview-metadata.json file
+    // the new and old .json data in the components-introduction-metadata.json file
     // instead of overwriting it
     fs.stat(metadataFileName, ((err) => {
         if (err) {
