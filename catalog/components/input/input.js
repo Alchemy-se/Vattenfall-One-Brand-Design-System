@@ -10,7 +10,7 @@ import warningState from './warning-state/html/warning-state.md'
 import errorState from './error-state/html/error-state.md'
 import Markdown from "../../lib/markdown/index";
 import PageHeader from "../../lib/pageHeader";
-import Modals from "../../zendesk/modals";
+import Modals from "../../zendesk/modals/modals";
 
 const markdown = standardWithPlaceholder + standard + textarea + number + underlineStyle + withTooltip
   + warningState + errorState;

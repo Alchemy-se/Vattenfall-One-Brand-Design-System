@@ -36,68 +36,56 @@ module.exports = {
 }; */
 import { useEffect } from 'react';
 import TableOfContents from "../tableOfContents";
+import { useScript } from "../../../helpers/hooks/useEffects/useScript";
 
-const useScript = url => {
-	useEffect(() => {
-		const script = document.createElement('script');
 
-		script.src = url;
-		script.async = true;
 
-		document.body.appendChild(script);
+const rootRenderer = ({ children }) => {
+  // Extract all toc content.
+  const TOCLines = children.reduce((acc, { key, props }) => {
 
-		return () => {
-			document.body.removeChild(script);
-		}
-	}, [url]);
+
+    // Skip non-headings
+    if (key.indexOf('heading') !== 0) {
+      return acc;
+    }
+
+    // Indent by two spaces per heading level after h1
+    let indent = '';
+    for (let idx = 1; idx < props.level; idx++) {
+      indent = `${indent}  `;
+    }
+
+    if (props.children.length !== 1) {
+      let joinedValue = "";
+      for (let i = 0; i < props.children.length; i++) {
+        joinedValue += props.children[i].props.value
+      }
+      joinedValue = joinedValue.replace(/ /g, " ");
+      const newChild = { props: { value: joinedValue } };
+      return acc.concat([newChild]);
+    }
+    return acc.concat(props.children);
+  }, []);
+  return (
+    <React.Fragment>
+      <TableOfContents content={TOCLines} />
+      {children}
+    </React.Fragment>
+  );
 };
 
-const rootRenderer = ({children}) => {
-	// Extract all toc content.
-	const TOCLines = children.reduce((acc, { key, props }) => {
-
-
-		// Skip non-headings
-		if (key.indexOf('heading') !== 0) {
-			return acc;
-		}
-
-		// Indent by two spaces per heading level after h1
-		let indent = '';
-		for (let idx = 1; idx < props.level; idx++) {
-			indent = `${indent}  `;
-		}
-
-		if(props.children.length !== 1) {
-			let joinedValue = "";
-			for(let i = 0; i < props.children.length; i++) {
-				joinedValue+= props.children[i].props.value
-			}
-			joinedValue = joinedValue.replace(/ /g, " ");
-			const newChild = {props:{value: joinedValue}};
-			return acc.concat([newChild]);
-		}
-		return acc.concat(props.children);
-	}, []);
-	return (
-		<React.Fragment>
-			<TableOfContents content={TOCLines}/>
-			{children}
-		</React.Fragment>
-	);
-};
-
-const Markdown = ({source, noPaddingBottom}) => {
-	// Reload js.
-	useScript("/js/horizon.min.js");
-	return (
-		<div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}` }>
-			<ReactMarkdown
-				source={source}
-				renderers={{heading: Heading, code: Code, root: rootRenderer}}
-			/>
-		</div>
-	);
+const Markdown = ({ source, noPaddingBottom }) => {
+  // Reload js.
+  useScript("/js/horizon.min.js");
+  return (
+    <div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}`}>
+      <ReactMarkdown
+        source={source}
+        renderers={{ heading: Heading, code: Code, root: rootRenderer }}
+      />
+    </div>
+  );
 };
 
 export default Markdown;

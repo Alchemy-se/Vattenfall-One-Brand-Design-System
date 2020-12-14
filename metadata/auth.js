@@ -1,8 +1,11 @@
-require('dotenv').config()
+
+console.log('process.env.NODE_ENV: ', process.env.NODE_ENV)
+
 const axios = require('axios')
 let baseUrl = process.env.BASE_URL;
 let identifier = process.env.BACKEND_USER_IDENTIFIER;
 let password = process.env.BACKEND_USER_PASSWORD;
+console.log("baseUrl", baseUrl);
 
 
 

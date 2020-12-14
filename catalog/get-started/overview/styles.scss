@@ -1,21 +1,13 @@
 .container {
-  margin: 0 170px 200px 40px;
+  margin: 0 170px 0 40px;
   @media(max-width: 999px) {
     margin: 0 10px 0 20px;
   }
-
-  .section {
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
     margin-top: 48px;
-    span {
-
-    }
-
-    a {
-      display: block;
-      margin-left: 48px;
-      margin-top: 48px;
-
-    }
 
   }
 }

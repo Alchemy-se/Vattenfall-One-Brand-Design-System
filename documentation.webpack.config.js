@@ -3,12 +3,14 @@ const CopyPlugin = require("copy-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
 
 module.exports = (env, argv) => {
+  console.log(env.NODE_ENV);
 
-  let pathToEnv = './.env.development';
 
-  if(argv.mode === 'production'){
-    pathToEnv = './.env'
-  }
+  console.log('argv: ', argv);
+
+
+  const pathToEnv = `./.env.${env.NODE_ENV}`
+
   console.log('pathToEnv: ', pathToEnv)
 
   return {

@@ -25,6 +25,12 @@ html {
   }
 }
 
+.use-in-toc-grid > div > span {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+}
+
 html.sr .reveal {
   visibility: hidden;
 }
@@ -13644,7 +13650,7 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
 
 .vf-carousel-outer-container {
   background-color: #edf1f6;
-  height: 797px;
+  min-height: 797px;
   margin-top: 50px;
 }
 
@@ -13850,6 +13856,104 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   .vf-carousel-indicator-active {
     background-color: #1964a3;
   }
+}
+
+.vf-file-upload__container {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vf-file-upload__container input[type="file"] {
+  display: none;
+}
+
+.vf-file-upload__container span {
+  line-height: 0;
+}
+
+.vf-file-upload__container span:nth-child(1) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vf-file-upload__container span:nth-child(2) {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.vf-file-upload__container span:nth-child(3) {
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.vf-file-upload__container .errorBorder {
+  border-color: #F93B18;
+}
+
+.vf-file-upload__container .errorText {
+  color: #F93B18;
+}
+
+.vf-file-upload__container label {
+  margin-bottom: 20px;
+}
+
+.vf-file-upload__container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.vf-file-upload__container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.vf-file-upload__container ul li button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.vf-file-upload__container ul img {
+  height: 12px;
+  line-height: 10px;
+  margin-left: 6px;
+  cursor: pointer;
 }
 
 .news-outer-container {

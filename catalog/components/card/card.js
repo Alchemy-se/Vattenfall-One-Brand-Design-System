@@ -3,7 +3,7 @@ import PageHeader from "../../lib/pageHeader";
 import Markdown from "../../lib/markdown";
 import example from './example/html/example.md'
 import asALink from './as-a-link/html/as-a-link.md'
-import Modals from "../../zendesk/modals";
+import Modals from "../../zendesk/modals/modals";
 const markdown = example + asALink;
 
 const Card = ({uri}) => {

@@ -14,6 +14,9 @@ function Header(props) {
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
 
+  console.log("process.env.APPLICATION_KEY", process.env.APPLICATION_KEY);
+  console.log("process.env.INDEX_NAME", process.env.INDEX_NAME);
+
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);
@@ -50,7 +53,6 @@ function Header(props) {
 {/*
         <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
-        <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
         <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
         <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 
@@ -99,13 +101,12 @@ function Header(props) {
               className={styles.menuContainer}
         >
 
-          <Menu.Item key="/get-started"><Link to={"/get-started/overview"}>Get Started</Link></Menu.Item>
+          <Menu.Item key="/get-started"><Link to={"/get-started"}>Get Started</Link></Menu.Item>
           <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
           <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
 {/*
           <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
-          <Menu.Item key="/contact/contact"><Link to={"/contact/contact"}>Contact</Link></Menu.Item>
           <Menu.Item key="/articles"><Link to={"/articles"}>Articles</Link></Menu.Item>
           <Menu.Item key="/overview"><Link to={"/overview"}>Overview</Link></Menu.Item>
 

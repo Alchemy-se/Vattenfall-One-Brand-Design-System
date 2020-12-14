@@ -5,7 +5,7 @@ import standard from './standard/html/standard.md'
 import withIcon from './with-icon/html/with-icon.md'
 import colors from './colors/html/colors.md'
 import alignment from './alignment/html/alignment.md'
-import Modals from "../../zendesk/modals";
+import Modals from "../../zendesk/modals/modals";
 const markdown = standard + withIcon + colors + alignment;
 
 export default class Tooltip extends Component {
