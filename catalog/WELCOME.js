@@ -4,12 +4,6 @@ import NewsletterBox from "./lib/newsletterBox";
 import styles from "./welcome.scss";
 
 const Welcome = () => {
-  console.log("app key",process.env.APPLICATION_KEY);
-  console.log("index name", process.env.INDEX_NAME);
-
-
-
-
   return (
     <React.Fragment>
       <PageHeader title={"Digital Design System"} />

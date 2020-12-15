@@ -1,7 +1,7 @@
 const { auth } = require('./auth')
 require('dotenv').config()
 const axios = require('axios')
-const componentMetadata = 'metadata/components-introduction-metadata.json';
+const componentMetadata = 'metadata/components-overview-metadata.json';
 const fs = require('fs')
 const glob = require('glob');
 const guidelinesPath = 'catalog/guidelines/*/*.json'

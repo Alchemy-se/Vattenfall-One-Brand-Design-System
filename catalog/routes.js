@@ -280,7 +280,7 @@ const Routes = ({ onRouteChange, openModal }) => {
       <Route path={'/articles'}>
         <ArticlesOverview />
       </Route>
-      <Route path={'/introduction'}>
+      <Route path={'/overview'}>
         <ComponentOverview />
       </Route>
       <Route path={'/login'}>
