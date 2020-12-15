@@ -1,5 +1,6 @@
 
-console.log('process.env.NODE_ENV: ', process.env.NODE_ENV)
+//console.log('process.env.NODE_ENV: ', process.env.NODE_ENV)
+require('dotenv').config({path:__dirname+`/../.env.stage`})
 
 const axios = require('axios')
 let baseUrl = process.env.BASE_URL;

@@ -14,9 +14,6 @@ function Header(props) {
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
 
-  console.log("process.env.APPLICATION_KEY", process.env.APPLICATION_KEY);
-  console.log("process.env.INDEX_NAME", process.env.INDEX_NAME);
-
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);

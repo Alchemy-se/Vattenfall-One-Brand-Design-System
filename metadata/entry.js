@@ -1,4 +1,7 @@
+
 require('dotenv').config({path:__dirname+`/../.env.${process.env.NODE_ENV}`})
+console.log("ENTRY: ", process.env.NODE_ENV);
+
 
 const { buildAlgoliadMetadataJSON } = require("./build-agolia-metadata");
 const { buildComponentMetadata } = require("./build-metadata");

@@ -1,4 +1,4 @@
-import { InstantSearch, Configure,  } from 'react-instantsearch-dom';
+import { InstantSearch, Configure, } from 'react-instantsearch-dom';
 import algoliasearch from 'algoliasearch';
 import Autocomplete from './autocomplete';
 import React from "react";
@@ -6,10 +6,9 @@ import React from "react";
 const APPLICATION_KEY = process.env.APPLICATION_KEY;
 const PUBLIC_SEARCH_KEY = process.env.PUBLIC_SEARCH_KEY
 const INDEX_NAME = process.env.INDEX_NAME
-console.log('INDEX_NAME: ', INDEX_NAME);
-console.log('APPLICATION_KEY: ', APPLICATION_KEY)
+
 //TODO kolla algolia
-const algoliaClient = algoliasearch("94EUAZRQ09", "89f2a1d2c6f90670b52eb06b34c706d2");
+const algoliaClient = algoliasearch(APPLICATION_KEY, PUBLIC_SEARCH_KEY);
 
 // Use this to not send initial requests on empty query
 // When styling the dropdown box pass algoliaClient as param to InstantSearch component instead of searchClient
@@ -35,7 +34,7 @@ const searchClient = {
 
 const Search = () => {
   return (
-    <InstantSearch searchClient={searchClient} indexName={"vf_components_index"}>
+    <InstantSearch searchClient={searchClient} indexName={INDEX_NAME}>
       <Configure hitsPerPage={5} />
       <Autocomplete />
     </InstantSearch>)
