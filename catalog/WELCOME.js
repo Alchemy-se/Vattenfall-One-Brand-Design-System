@@ -33,7 +33,7 @@ const Welcome = () => {
         </div>
 
         <div className={styles.buttonContainer}>
-          <button type="button" className="vf-btn vf-btn--lg vf-btn--primary">Getting started</button>
+          <a href="/get-started/introduction" className="vf-btn vf-btn--lg vf-btn--primary">Getting started</a>
           {/* <button type="button" className="vf-btn  vf-btn--outline-secondary">Blue Button</button>*/}
 
         </div>
