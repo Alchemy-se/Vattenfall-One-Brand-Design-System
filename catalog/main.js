@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 
 import Routes from "./routes";
 import Hamburger from "./lib/hamburger";
@@ -64,6 +64,11 @@ export default class App extends Component {
   };
 
   componentDidMount() {
+
+    this.setState({
+      isStartPage: location.pathname === "/"
+    })
+
     window.addEventListener('resize', this.resize);
     document.addEventListener("keydown", this.onKeyDown, false);
 
@@ -160,7 +165,6 @@ export default class App extends Component {
     const setAuthenticated = (value) => this.setState({ authenticated: value })
     const authenticated = this.state.authenticated
 
-    console.log('this.state.isStartPage: ', this.state.isStartPage);
     const { isStartPage } = this.state
 
 
