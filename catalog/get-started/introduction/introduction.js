@@ -16,7 +16,7 @@ const Introduction = () => {
 
         <div className={styles.section}>
 
-          <h3>Designers</h3>
+          <h4>Designers</h4>
           <span>Designers receive all current design specifications and styles in Sketch & Abstract.
             The created layouts serve later as blueprints for programming. No HTML exports from Sketch are necessary! </span>
           <a href="/get-started/design" className="vf-link-with-arrow">Designers</a>
@@ -25,7 +25,7 @@ const Introduction = () => {
 
         <div className={styles.section}>
 
-          <h3>Developers</h3>
+          <h4>Developers</h4>
           <span>Programmers receive the basic kit for programming websites, service websites or apps as code.
             All modules and components are identical to the design.
             Please always work 100% with our modules and never copy anything from other sites - because they might not be up to date. </span>

@@ -1,7 +1,9 @@
 p {
-  font-size: 16px;
-  letter-spacing: -0.05px;
-  line-height: 28px;
+  font-size: 16px !important;
+  letter-spacing: -0.05px !important;
+  line-height: 28px !important;
+  font-family: "Vattenfall Hall NORDx", "Vattenfall Hall", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {

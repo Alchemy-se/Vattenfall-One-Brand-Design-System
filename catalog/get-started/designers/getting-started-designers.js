@@ -10,7 +10,7 @@ const Designers = () => (
       <div style={{
         background: 'transparent'
       }}>
-        <div className={styles.quickstartHeader}>Quick start</div>
+        <h4 className={styles.quickstartHeader}>Quick start</h4>
         <p>
           In order to get started with Vattenfall Digital Design System, make sure you have been provided with both
           apps: Abstract and Sketch. Abstract is a version control tool, which keeps all of your Sketch working files in

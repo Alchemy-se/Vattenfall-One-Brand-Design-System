@@ -5,6 +5,13 @@
   }
 
   p {
+    font-size: 16px;
+    font-family: "Vattenfall Hall NORDx", "Vattenfall Hall", sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+  /*p {
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -22,21 +29,21 @@
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin: 16px 0 24px 0;
-  }
+  }*/
 }
 
 .quickstartHeader {
   font-style: normal;
   font-weight: 400;
   text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
   letter-spacing: normal;
   font-family: "Vattenfall Hall Display NORDx", "Vattenfall Hall Display", Helvetica, sans-serif;
-  font-size: 1.44rem;
+  font-size: 24px;
   line-height: 1.2;
   position: relative;
   flex-basis: 100%;
   margin: 48px 0px 0px;
+  margin-bottom: 1rem;
   border-bottom: none !important;
   color: #222222;
 
