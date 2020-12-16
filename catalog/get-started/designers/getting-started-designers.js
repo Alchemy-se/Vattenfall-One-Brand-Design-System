@@ -5,14 +5,12 @@ import styles from "./index.scss";
 const Designers = () => (
   <React.Fragment>
     <PageHeader title={"Designers"}/>
-    <div className={styles.container} style={{
-      padding: '48px 0'
-    }}>
+    <div className={styles.container}>
 
       <div style={{
         background: 'transparent'
       }}>
-        <h2 style={{marginTop: '24px', marginBottom: '16px', paddingBottom: '.3em'}}>Get started / Designers</h2>
+        <div className={styles.quickstartHeader}>Quick start</div>
         <p>
           In order to get started with Vattenfall Digital Design System, make sure you have been provided with both
           apps: Abstract and Sketch. Abstract is a version control tool, which keeps all of your Sketch working files in
@@ -59,13 +57,12 @@ const Designers = () => (
         </p>
 
         <p>
-          We're currently in the process of making some larger updates grouped into releases throughout the year, the latest update was completed by the end of June 2020. You will find the latest file by following the link below.
-        </p>
+          We're currently in the process of making some larger updates grouped into releases, the latest update was released the second week of December 2020. You will find the latest file by following the link below.        </p>
 
         <div className="vf-row">
           <div className="vf-col">
             <a className="vf-link-with-arrow vf-link-with-arrow--small"
-               href="https://app.abstract.com/projects/1669dae0-736a-4420-92c6-4bdf4b3384d4/branches/master/files/4110c76a-e10b-413d-a20c-02662a4d766f"
+               href="https://share.goabstract.com/1cd7494e-4d06-4eb9-af2c-743c4b3c1178?sha=ef55e8d315e37a13c39cf31ec5cba99c706740ee"
                target="_blank" rel="noopener">Vattenfall Design Kit on Abstract</a>
           </div>
           <div className="vf-col">

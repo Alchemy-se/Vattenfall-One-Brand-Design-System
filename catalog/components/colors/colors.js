@@ -12,7 +12,7 @@ const markdown = colors + backgroundColor + borders
 const Colors = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={"Colors"} />
+      <PageHeader title={"Colors & Borders"} />
       <Markdown source={markdown} />
       <Modals uri={uri} />
     </React.Fragment>

@@ -162,10 +162,12 @@ const OverviewItem = ({ item, id, setSelectedChild, setSelectedParentID, setSele
 
   const showExpand = (children) => {
     return children.map(child => {
+      console.log('child.uri: ', child.uri)
       return (
         <tr className={styles.expandedRow} key={child.name}>
           <td colSpan="4">
             <div className={styles.nameContainer}>
+
               <a href={child.uri}>{child.name}</a>
 
               {authenticated &&

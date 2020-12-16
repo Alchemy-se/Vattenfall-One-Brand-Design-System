@@ -99,10 +99,7 @@ export default class App extends Component {
   };
 
   onRouteChange = (pathname) => {
-
-
     useEffect(() => {
-
       // Path changed, ok to update state.
       if (this.state.currentPath !== pathname) {
         const newSelectedKeysSubmenu = [pathname];
@@ -166,7 +163,6 @@ export default class App extends Component {
     const authenticated = this.state.authenticated
 
     const { isStartPage } = this.state
-
 
     const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
     const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;

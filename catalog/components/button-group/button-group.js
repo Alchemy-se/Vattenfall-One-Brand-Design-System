@@ -7,7 +7,7 @@ import example from './example/html/example.md'
 const ButtonGroup = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={"Colors"} />
+      <PageHeader title={"Button Group"} />
       <Markdown source={example} />
       <Modals uri={uri} />
     </React.Fragment>

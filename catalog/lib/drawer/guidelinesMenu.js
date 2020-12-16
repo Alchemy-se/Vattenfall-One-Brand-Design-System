@@ -13,8 +13,8 @@ const MENU_GROUP_ITEMS = [
     {path: "/spacers", name: "Spacers"},
     {path: "/info-graphics", name: "Info Graphics"},
     {path: "/illustrations", name: "Illustrations"},
+    {path: "/motion", name: "Motion"},
     {path: "/hero", name: "Hero"},
-    {path: "/motion", name: "Motions"},
     {path: "/carousel", name: "Carousel"}
 ];
 
