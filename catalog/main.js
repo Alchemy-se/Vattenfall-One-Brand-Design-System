@@ -44,7 +44,8 @@ export default class App extends Component {
       currentPath: getCurrentLocation(true),
       modalOpen: false,
       modalImageUrl: null,
-      authenticated: checkLoggedIn()
+      authenticated: checkLoggedIn(),
+      isStartPage: true
     };
   }
 
@@ -96,6 +97,7 @@ export default class App extends Component {
 
 
     useEffect(() => {
+
       // Path changed, ok to update state.
       if (this.state.currentPath !== pathname) {
         const newSelectedKeysSubmenu = [pathname];
@@ -103,7 +105,8 @@ export default class App extends Component {
         this.setState({
           selectedKeysMenu: newSelectedKeysMenu,
           selectedKeysSubmenu: newSelectedKeysSubmenu,
-          currentPath: pathname
+          currentPath: pathname,
+          isStartPage: pathname === "/"
         });
         trackPageView(pathname);
       }
@@ -157,6 +160,9 @@ export default class App extends Component {
     const setAuthenticated = (value) => this.setState({ authenticated: value })
     const authenticated = this.state.authenticated
 
+    console.log('this.state.isStartPage: ', this.state.isStartPage);
+    const { isStartPage } = this.state
+
 
     const classes = this.state.drawerOpen ? `${styles.container} ${styles.drawerOpen}` : styles.container;
     const hamburgerClasses = this.state.drawerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger;
@@ -169,14 +175,14 @@ export default class App extends Component {
           <Hamburger onClick={this.openDrawer} className={hamburgerClasses} />
           <Header onClick={this.onClickHeader} selectedKeys={this.state.selectedKeysMenu} />
           <div className={classes} id="content-container">
-            <Drawer
+            {!isStartPage && <Drawer
               closeDrawer={this.closeDrawer}
               drawerOpen={this.state.drawerOpen}
               closable={this.state.closable}
               selectedKeys={this.state.selectedKeysSubmenu}
-            />
+            />}
             {/*<div className={styles.innerContainer} >*/}
-            <div style={{ marginTop: authenticated ? "30px" : 0}}
+            <div style={{ marginTop: authenticated ? "30px" : 0, paddingLeft: isStartPage ? 0 : '250px' }}
                  className={`${styles.innerContainer} documentation-container`}>
               <Routes onRouteChange={this.onRouteChange} openModal={this.triggerModal} />
             </div>

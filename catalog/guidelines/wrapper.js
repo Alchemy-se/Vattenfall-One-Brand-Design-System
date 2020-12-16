@@ -9,7 +9,6 @@ const { Link } = Anchor;
 
 const GuidelinesWrapper = ({ children }) => {
   const uri = location.pathname
-  console.log('uri: ', uri)
   const containerRef = useRef(null);
   const [tocData, setTocData] = useState([])
 
