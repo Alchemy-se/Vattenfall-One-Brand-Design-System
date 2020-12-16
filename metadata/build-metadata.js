@@ -16,14 +16,14 @@ async function buildComponentMetadata() {
     // delete file first if it exists as sometimes it concatenate
     // the new and old .json data in the components-overview-metadata.json file
     // instead of overwriting it
-    fs.stat(metadataFileName, ((err) => {
+    /*fs.stat(metadataFileName, ((err) => {
         if (err) {
           return console.log("fs Stat err", err);
         }
         console.log("deleted");
         fs.unlinkSync(metadataFileName)
       })
-    );
+    );*/
 
     let jsonObject = {
       amount: {},
@@ -149,11 +149,11 @@ async function buildComponentMetadata() {
       });
 
       fs.writeFileSync(metadataFileName, allComponents, 'utf8')
-      resolve()
+        resolve()
     })
   })
 }
-buildComponentMetadata()
+
 module.exports = {
   buildComponentMetadata
 }

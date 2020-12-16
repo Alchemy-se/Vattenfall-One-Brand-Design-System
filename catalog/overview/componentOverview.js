@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.scss'
 import OverviewItem from "./overviewItem";
 
@@ -197,6 +197,7 @@ const ComponentOverview = () => {
 
   return (
     <div className={styles.tableContainer}>
+
       <div className={styles.topContainer}>
         <div className={styles.legend}>
 
@@ -208,7 +209,11 @@ const ComponentOverview = () => {
 
             <div className={styles.circleContainer}>
               <div className={styles.canBeUsedIf} />
-              <div className={styles.legendText}>Can only be used if…</div>
+              <div className={styles.legendText}>
+                <div className={styles.tooltip}> Conditional use
+                  <span className={styles.tooltipText}>Can only be used if…</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -216,12 +221,23 @@ const ComponentOverview = () => {
           <div>
             <div className={styles.circleContainer}>
               <div className={styles.awaitingReview} />
-              <div className={styles.legendText}>Awaiting review</div>
+              <div className={styles.legendText}>
+                <div className={styles.tooltip}>Review pending
+                  <span className={styles.tooltipText}>Awaiting review</span>
+                </div>
+
+
+              </div>
             </div>
 
             <div className={styles.circleContainer}>
               <div className={styles.canBeUsed} />
-              <div className={styles.legendText}>Can be used</div>
+              <div className={styles.legendText}>
+                <div className={styles.tooltip}>Allowed
+                  <span className={styles.tooltipText}>Can be used</span>
+                </div>
+
+                </div>
             </div>
 
           </div>
@@ -235,7 +251,11 @@ const ComponentOverview = () => {
 
             <div className={styles.circleContainer}>
               <div className={styles.canBeUsedSoon} />
-              <div className={styles.legendText}>Can be used but update soon available</div>
+              <div className={styles.legendText}>
+                <div className={styles.tooltip}>Allowed, update pending
+                  <span className={styles.tooltipText}>Can be used but update soon available</span>
+                </div>
+                </div>
             </div>
 
           </div>

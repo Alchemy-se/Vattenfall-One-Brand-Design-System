@@ -2,9 +2,11 @@
   position: relative;
   text-align: center;
   color: white;
+
   .videoContainer {
     min-width: 100%;
     max-height: 488px;
+
     video {
       width: 100%;
       height: 488px;
@@ -12,7 +14,6 @@
 
     }
   }
-
 
 
   .signUpContainer {
@@ -52,55 +53,64 @@
   }
 }
 
-.introText {
+.bodyContainer {
   display: flex;
-  margin-top: 142px;
+  flex-direction: column;
+  padding-right: 202px;
+  padding-left: 202px;
+  align-items: center;
 
-  div {
-    margin-bottom: 56px;
-    flex: 1;
+
+  .introText {
+    display: flex;
+    margin-top: 142px;
+
+    div {
+      margin-bottom: 56px;
+      flex: 1;
+      line-height: 23px;
+    }
+
+    div:first-child {
+    //  padding-left: 202px;
+      padding-right: 12px;
+
+    }
+
+    div:nth-child(2) {
+      //padding-right: 202px;
+      padding-left: 12px;
+
+    }
+
+  }
+
+  .buttonContainer {
+/*    width: 200px;
+    margin-left: auto;
+    margin-right: auto;*/
+  }
+
+  .border {
+    margin-top: 125px;
+    border: 1px solid rgb(224, 224, 224);
+    height: 1px;
+    //margin-left: auto;
+    //margin-right: auto;
+    width: 100%;
+  }
+
+  .brandStyleGuideContainer {
+    margin-top: 14px;
+    //margin-left: auto;
+    //margin-right: auto;
+    margin-bottom: 154px;
+    width: 100%;
     line-height: 23px;
-  }
 
-  div:first-child {
-    padding-left: 202px;
-    padding-right: 12px;
-
-  }
-
-  div:nth-child(2) {
-    padding-right: 202px;
-    padding-left: 12px;
+    .header {
+      font-weight: bold;
+    }
 
   }
-
-}
-
-.buttonContainer {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.border {
-  margin-top: 125px;
-  border: 1px solid rgb(224, 224, 224);
-  height: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 936px;
-}
-
-.brandStyleGuideContainer {
-  margin-top: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 154px;
-  width: 936px;
-  line-height: 23px;
-
-  .header {
-    font-weight: bold;
-  }
-
 }

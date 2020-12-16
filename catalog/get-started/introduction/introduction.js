@@ -5,7 +5,7 @@ import styles from "./styles.scss";
 const Introduction = () => {
   return (
     <div>
-      <PageHeader title={'Overview'} />
+      <PageHeader title={'Introduction'} />
       <div className={styles.container}>
 
        <span> No matter if you are a designer or a developer, we have created a tool / modular system with the Digital Design
