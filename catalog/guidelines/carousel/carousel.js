@@ -10,11 +10,14 @@ const Carousel = () => {
   return (
     <Fragment>
       <PageHeader title="Carousel" />
-
+      <section className="p-2 vf-border-top-gray-200"/>
+      <p style={{marginBottom: "56px"}}>
+        We use the Carousel to display different cards which navigate to a certain detail or product page.
+      </p>
       <h3 className={"use-in-toc"}>
         Example
       </h3>
-      <div>We use the Carousel to display different cards which navigate to a certain detail or product page.</div>
+
 
       <CarouselComponent />
       <div style={{ marginTop: '44px' }}>
