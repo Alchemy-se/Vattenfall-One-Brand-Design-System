@@ -87,6 +87,7 @@ import Contact from "./lib/singlePages/contact";
 import Introduction from "./get-started/introduction/introduction";
 import IntroductionGuideline from "./lib/singlePages/introductionGuideline";
 import IntroductionComponents from "./lib/singlePages/introductionComponents";
+import Principles from "./lib/singlePages/principles";
 
 
 function usePageViews(onRouteChange) {
@@ -274,9 +275,13 @@ const Routes = ({ onRouteChange, openModal }) => {
           {item.component}
         </Route>
       ))}
+      <Route path={'/guidelines/principles'}>
+        <Principles />
+      </Route>
       <Route path={'/guidelines'}>
         <IntroductionGuideline />
       </Route>
+
       <Route path={'/components'}>
         <IntroductionComponents/>
       </Route>

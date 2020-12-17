@@ -8,7 +8,7 @@ const IntroductionComponents = () => {
       <PageHeader title={"Introduction"} />
 
       <div className={styles.container}>
-        <span>The Components section in this Digital Design System are here to help guide developers on any code requirements or questions to do with usage of code assets across all digital touch-points. </span>
+        <span>The Components section in this Digital Design System is here to help guide developers on any code requirements or questions to do with usage of code assets across all digital touch-points.</span>
         <h3 style={{marginTop: '48px'}}>New asset request</h3>
         <span >If you need a new asset, want to report an issue or submit a general suggestion on the Vattenfall digital
           design

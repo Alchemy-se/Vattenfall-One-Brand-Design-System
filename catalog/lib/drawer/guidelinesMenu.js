@@ -4,6 +4,7 @@ import React from "react";
 
 const MENU_GROUP_ITEMS = [
   { path: "", name: "Introduction" },
+  { path: "/principles", name: "Principles" },
   { path: "/logotype", name: "Logotype" },
   { path: "/colors", name: "Colors" },
   { path: "/typography", name: "Typography" },

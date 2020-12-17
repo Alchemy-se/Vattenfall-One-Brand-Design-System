@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import styles from "../../get-started/designers/index.scss";
+import styles from "./styles.scss";
 import PageHeader from "../pageHeader";
 
 const Contact = () => {

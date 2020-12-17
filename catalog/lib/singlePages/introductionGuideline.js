@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PageHeader from "../pageHeader";
-import styles from "../../get-started/designers/index.scss";
+import styles from "./styles.scss";
 
 const IntroductionGuideline = () => {
   return (
@@ -9,10 +9,9 @@ const IntroductionGuideline = () => {
 
       <div className={styles.container}>
         <span>
-          The Guidelines section in this Digital Design System are here to help
-          guide designers on any requirements or questions to do with Digital Brand Guidelines usage across all digital touch-points.
+          The Guidelines section in this Digital Design System is here to help guide designers on any requirements or questions to do with Digital Brand Guidelines usage across all digital touch-points.
         </span>
-        <a style={{ display: 'block', marginTop: '24px' }} href="" className="vf-link-with-arrow">
+        <a style={{ display: 'block', marginTop: '24px' }} href="/guidelines/principles" className="vf-link-with-arrow">
           Design Principles
         </a>
         <h3 style={{ marginTop: '48px' }}>New asset request</h3>
