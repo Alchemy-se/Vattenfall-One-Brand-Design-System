@@ -4,13 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start-webpack": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
-
     "build-webpack-stage": "webpack --env.NODE_ENV=stage --mode=production  --config documentation.webpack.config.js",
     "build-stage": "npm-run-all --sequential js-main css-main build-webpack-stage",
-
     "build-prod": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "build-webpack-prod": "webpack --env.NODE_ENV=production --mode=production  --config documentation.webpack.config.js",
-
     "build": "npm-run-all --sequential js-main css-main build-webpack-prod",
     "test": "yarn build",
     "old-build": "npm-run-all --sequential js-main css-main webpack-build",
