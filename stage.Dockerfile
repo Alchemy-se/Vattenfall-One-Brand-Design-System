@@ -14,7 +14,7 @@ RUN yarn build-stage
 RUN cp -r ./dist /app/build
 
 # Build and upload metadata for algolia search and component introduction
-RUN yarn build-and-upload-metadata-stage
+#RUN yarn build-and-upload-metadata-stage
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.15

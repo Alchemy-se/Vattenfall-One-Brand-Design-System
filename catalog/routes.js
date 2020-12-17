@@ -83,8 +83,10 @@ import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
 import Overview from "./get-started/introduction/introduction";
-import Contact from "./lib/contact/contact";
+import Contact from "./lib/singlePages/contact";
 import Introduction from "./get-started/introduction/introduction";
+import IntroductionGuideline from "./lib/singlePages/introductionGuideline";
+import IntroductionComponents from "./lib/singlePages/introductionComponents";
 
 
 function usePageViews(onRouteChange) {
@@ -185,8 +187,7 @@ const COMPONENTS_ROUTES = [
   { path: '/utilities/favicon', name: 'Favicon', component: <Favicon uri={"/components/utilities/favicon"} /> },
   { path: '/css/icons', name: 'Icons', component: <Icons uri={"/components/css/icons"} /> },
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
-  // Redirect if path is only /components.
-  { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
+
 ];
 const GUIDELINES_ROUTES = [
   {
@@ -274,7 +275,10 @@ const Routes = ({ onRouteChange, openModal }) => {
         </Route>
       ))}
       <Route path={'/guidelines'}>
-        <Guidelines />
+        <IntroductionGuideline />
+      </Route>
+      <Route path={'/components'}>
+        <IntroductionComponents/>
       </Route>
       <Route exact path={'/articles/:articleId'} component={Articles} />
       <Route path={'/articles'}>

@@ -14,7 +14,7 @@ const Contact = () => {
           For inquiries regarding specific needs or assets, please submit a request.
         </span>
         <a style={{ display: 'block', marginTop: '24px' }} href="/contact/new-request" className="vf-link-with-arrow">New
-          Request</a>
+        Request</a>
 
 
       </div>

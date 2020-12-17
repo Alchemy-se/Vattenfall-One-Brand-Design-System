@@ -4,6 +4,7 @@ import React from "react";
 
 const MENU_GROUP_ITEMS = {
 	components: [
+		{path: "", name: "Introduction"},
 		{path: "/colors", name: "Colors & Borders"},
 		{path: "/grid", name: "Grid"},
 		{path: "/responsive", name: "Responsive"},

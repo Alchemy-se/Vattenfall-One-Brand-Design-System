@@ -47,8 +47,8 @@ function Header(props) {
       >
 
         <Menu.Item key="/get-started"><Link to={"/get-started/introduction"}>Get Started</Link></Menu.Item>
-        <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
-        <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+        <Menu.Item key="/components"><Link to={"/components"}>Components</Link></Menu.Item>
+        <Menu.Item key="/guidelines"><Link to={"/guidelines"}>Guidelines</Link></Menu.Item>
 {/*
         <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
@@ -102,8 +102,8 @@ function Header(props) {
         >
 
           <Menu.Item key="/get-started"><Link to={"/get-started/introduction"}>Get Started</Link></Menu.Item>
-          <Menu.Item key="/components"><Link to={"/components/colors"}>Components</Link></Menu.Item>
-          <Menu.Item key="/guidelines"><Link to={"/guidelines/logotype"}>Guidelines</Link></Menu.Item>
+          <Menu.Item key="/components"><Link to={"/components"}>Components</Link></Menu.Item>
+          <Menu.Item key="/guidelines"><Link to={"/guidelines"}>Guidelines</Link></Menu.Item>
 {/*
           <Menu.Item key="/examples"><Link to={"/examples"}>Examples</Link></Menu.Item>
 */}
