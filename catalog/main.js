@@ -13,6 +13,13 @@ import AuthContext from "../helpers/authContext";
 import { checkLoggedIn } from "../helpers/apiCalls/authentication";
 import LoggedInBanner from "./lib/LoggedInBanner";
 
+/**
+ * NOTE: the daterangepicker lib is used by the datepicker component
+ and need to be imported here for the component to work. It may
+ look like it's not used, but it is. Do not remove this import
+ */
+import daterangepicker from 'daterangepicker';
+
 
 ReactGA.initialize('UA-159160070-1');
 

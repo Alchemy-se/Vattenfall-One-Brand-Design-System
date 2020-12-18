@@ -66,6 +66,7 @@
     "axios": "^0.21.0",
     "catalog": "^3.6.0",
     "copy-webpack-plugin": "^5.1.1",
+    "daterangepicker": "^3.1.0",
     "dotenv-webpack": "^3.0.0",
     "glob": "^7.1.6",
     "instantsearch.css": "^7.4.5",

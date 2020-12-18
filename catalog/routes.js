@@ -88,6 +88,7 @@ import Introduction from "./get-started/introduction/introduction";
 import IntroductionGuideline from "./lib/singlePages/introductionGuideline";
 import IntroductionComponents from "./lib/singlePages/introductionComponents";
 import Principles from "./lib/singlePages/principles";
+import Datepicker from "./components/datepicker/datepicker";
 
 
 function usePageViews(onRouteChange) {
@@ -131,6 +132,7 @@ const COMPONENTS_ROUTES = [
   },
 
   { path: '/css/badge', name: 'Badge', component: <Badge uri={"/components/css/badge"} /> },
+  { path: '/css/datepicker', name: 'Datepicker', component: <Datepicker uri={""} /> },
   { path: '/css/table', name: 'Table', component: <Table uri={"/components/css/table"} /> },
   { path: '/css/tab-bar', name: 'Tab Bar', component: <TabBar uri={"/components/css/tab-bar"} /> },
   { path: '/css/tooltip', name: 'Tooltip', component: <Tooltip uri={"/components/css/tooltip"} /> },
