@@ -12,7 +12,7 @@ const algoliaClient = algoliasearch(APPLICATION_KEY, PUBLIC_SEARCH_KEY);
 
 // Use this to not send initial requests on empty query
 // When styling the dropdown box pass algoliaClient as param to InstantSearch component instead of searchClient
-// AND IMPORTANT set "var isOpen" to true on row 523 in the search lib located in node_modules/react-autosuggest/dist/Autosuggest.js
+// AND IMPORTANT set "var isOpen" to true in the search lib located in node_modules/react-autosuggest/dist/Autosuggest.js
 // for having the dropdown always be open.
 // Dont forget to change back when done!
 // https://www.algolia.com/doc/guides/building-search-ui/going-further/conditional-requests/react/
@@ -31,6 +31,7 @@ const searchClient = {
     return algoliaClient.search(requests);
   },
 };
+
 
 const Search = () => {
   return (

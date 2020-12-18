@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./index.scss";
-
 const NewsletterBox = () => {
   return (
     <div onClick={() => location.href = 'mailto:branding@vattenfall.com'

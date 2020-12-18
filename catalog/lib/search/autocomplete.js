@@ -15,6 +15,9 @@ class AutoComplete extends Component {
       noSuggestions: false,
       hasBeenBlured: false
     };
+    this.handleClick = this.handleClick.bind(this);
+
+
   }
 
   onChange = (_, { newValue }) => {
@@ -50,6 +53,7 @@ class AutoComplete extends Component {
     }
 
   }
+
 
   onSuggestionsFetchRequested = ({ value }) => {
     this.props.refine(value);
@@ -107,12 +111,33 @@ class AutoComplete extends Component {
     this.setState({ value: "" })
   };
 
+  componentDidMount() {
+    document.addEventListener('click', this.handleClick);
+  }
+
+  handleClick(e) {
+    if (this.node && this.node.contains(e.target)) {
+      window.location.href = "/contact/new-request"
+    } else {
+       this.onBlur()
+    }
+  }
+
   onBlur = () => {
-    this.setState({ hasBeenBlured: true })
+    this.setState({ value: "" });
+    this.setState({ hasBeenBlured: true });
   };
   onFocus = () => {
-    this.setState({ hasBeenBlured: false })
+    this.setState({ hasBeenBlured: false });
   }
+
+  setDisplay = () => {
+    if (this.state.noSuggestions && !this.state.hasBeenBlured) {
+      return { display: "block" }
+    } else {
+      return { display: "none" }
+    }
+  };
 
   render() {
     const { hits } = this.props;
@@ -120,7 +145,6 @@ class AutoComplete extends Component {
     const inputProps = {
       placeholder: 'Search...',
       onChange: this.onChange,
-      onBlur: this.onBlur,
       onFocus: this.onFocus,
       value,
     };
@@ -142,11 +166,11 @@ class AutoComplete extends Component {
           renderSuggestionsContainer={this.renderSuggestionsContainer}
         />
         {
-          this.state.noSuggestions && !this.state.hasBeenBlured &&
 
-          <div className="no-suggestions">
+
+          <div ref={node => this.node = node} style={this.setDisplay()} className="no-suggestions">
             No results found for {this.state.value}. Make a request
-            <span style={{color: "rgb(32, 113, 181)" }} onClick={()=> window.location.href="/new-request"}> here</span>
+            <span style={{ color: "rgb(32, 113, 181)" }} > here</span>
           </div>
         }
       </div>
