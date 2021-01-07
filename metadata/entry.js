@@ -8,8 +8,6 @@ const { buildAlgoliadMetadataJSON } = require("./build-agolia-metadata");
 
 
 Promise.all([buildComponentMetadata()]).then(() => {
-
-
   Promise.all([buildAlgoliadMetadataJSON()])
     .then(() => {
       Promise.all([uploadAlgoliaData(), uploadMetadata()])

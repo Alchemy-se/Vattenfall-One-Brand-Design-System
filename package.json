@@ -24,6 +24,7 @@
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "NODE_ENV=production node metadata/build-metadata.js",
+    "build-and-upload-metadata-development": "NODE_ENV=development node metadata/entry.js",
     "build-and-upload-metadata-stage": "NODE_ENV=stage node metadata/entry.js",
     "build-and-upload-metadata-production": "NODE_ENV=production node metadata/entry.js"
   },

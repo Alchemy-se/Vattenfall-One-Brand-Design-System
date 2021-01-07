@@ -2,14 +2,18 @@ import React from 'react';
 import PageHeader from "../../lib/pageHeader";
 import Markdown from "../../lib/markdown";
 import Modals from "../../zendesk/modals/modals";
-import datepicker from './datepicker.md'
+import dateRange from './date-range/html/date-range.md'
+import localisation from './localisation/html/localisation.md'
+import singleDateSelector from './single-date-selector/html/single-date-selector.md'
+import localisationExampleSweden from './localisation-example-sweden/html/localisation-example-sweden.md'
 
-// TODO add metadata to datepicker
+const markdown = dateRange + localisation + localisationExampleSweden + singleDateSelector
+
 const Datepicker = () => {
   return (
     <React.Fragment>
-      <PageHeader title={"Card"}/>
-      <Markdown source={datepicker} />
+      <PageHeader title={"Datepicker"} />
+      <Markdown source={markdown} />
       <Modals uri={"uri"} />
     </React.Fragment>
   );
