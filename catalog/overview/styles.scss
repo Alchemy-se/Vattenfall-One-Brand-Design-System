@@ -7,6 +7,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .divider {
   z-index: 999999;
   border: 1px solid #d3d3d3c4;
@@ -19,33 +20,80 @@ a {
   top: 52%;
   left: 50%;
   border: 1px solid black;
-  transform: translate(-50%, -50%);
+  transform: translate(-38%, -50%);
   z-index: 1;
-  padding: 20px;
+  padding: 24px;
   background-color: white;
+  width: 75%;
+
+  select {
+    border: 1px solid #cccccc;
+    height: 38px;
+    width: 100%;
+    border-radius: 4px;
+    appearance: none;
+    padding: 9px 35px 9px 20px;
+    color: #222222;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzMzMzMzO30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K") right center no-repeat;
+    // margin-bottom: 24px;
+  }
 
   .buttonContainer {
-    display: flex;
-    justify-content: space-around;
+
     background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    button {
+      margin-top: 24px;
+    }
   }
 
   .border {
     border: 1px solid;
   }
 
+  .column {
+    width: 33%;
+
+    &:nth-child(1) {
+      padding-right: 20px;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid #d3d3d3c4;
+      border-right: 1px solid #d3d3d3c4;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+    }
+  }
 
   .modalContent {
     background-color: white;
     height: auto; // set to auto?
     display: flex;
     //  flex-direction: column;
-    width: auto;
     justify-content: space-between;
 
     form {
       display: flex;
       flex-direction: row;
+
 
       span {
         margin-top: -10px;
@@ -59,14 +107,11 @@ a {
         margin-bottom: 10px;
 
       }
-      .childModal {
-        margin-right: 20px;
-      }
+
+
       .textInformation {
         display: flex;
         flex-direction: column;
-
-
       }
 
       .radioButtonsContainer {
@@ -463,7 +508,7 @@ a {
 .tooltip {
   position: relative;
   display: inline-block;
-  cursor:pointer
+  cursor: pointer
 
 }
 
@@ -471,7 +516,7 @@ a {
 
   visibility: hidden;
   opacity: 0;
-  background-color:#2071b5;
+  background-color: #2071b5;
   color: #fff;
   text-align: center;
   border-radius: 6px;
