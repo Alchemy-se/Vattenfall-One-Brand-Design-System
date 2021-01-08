@@ -1,3 +1,4 @@
+The Hero component is used for large blocks at the top of webpages to convey a key message or describe what the page is about.
 ### Hero with video
 
 ```html
