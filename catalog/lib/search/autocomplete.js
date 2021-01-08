@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Highlight, PoweredBy } from 'react-instantsearch-dom';
 import AutoSuggest from 'react-autosuggest';
 import { connectAutoComplete, connectStateResults } from 'react-instantsearch/connectors';
+import { Link } from "react-router-dom";
 
 const searchIcon = require('../../../assets/icons/search-icon.png').default;
 
@@ -91,6 +92,12 @@ class AutoComplete extends Component {
     }
   };
 
+  renderFullSearch = () => {
+    const query = this.props.currentRefinement;
+    return (<div className="open-more-result"><a href={'/search?q=' + query}>See more results</a></div>)
+
+  }
+
   renderSuggestionsContainer = ({ containerProps, children, query }) => (
     <div {...containerProps}>
       {<div className="suggestion-header">
@@ -98,7 +105,11 @@ class AutoComplete extends Component {
         <hr />
       </div>}
       {children}
-      <PoweredBy />
+      <div className="suggestion-footer">
+        {this.renderFullSearch()}
+
+        <PoweredBy />
+      </div>
     </div>
   );
 
@@ -119,7 +130,7 @@ class AutoComplete extends Component {
     if (this.node && this.node.contains(e.target)) {
       window.location.href = "/contact/new-request"
     } else {
-       this.onBlur()
+      this.onBlur()
     }
   }
 
@@ -170,7 +181,7 @@ class AutoComplete extends Component {
 
           <div ref={node => this.node = node} style={this.setDisplay()} className="no-suggestions">
             No results found for {this.state.value}. Make a request
-            <span style={{ color: "rgb(32, 113, 181)" }} > here</span>
+            <span style={{ color: "rgb(32, 113, 181)" }}> here</span>
           </div>
         }
       </div>

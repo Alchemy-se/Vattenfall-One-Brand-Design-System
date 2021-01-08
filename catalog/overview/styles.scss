@@ -210,8 +210,11 @@ a {
 
 
 .tableContainer {
-  margin: 30px;
-
+  margin: 0 44px 88px 44px;
+  padding-bottom: 88px;
+  @media(max-width: 999px) {
+    margin: 0 10px 0 20px;
+  }
   .topContainer {
     display: flex;
     justify-content: space-between;

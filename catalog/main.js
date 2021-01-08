@@ -70,6 +70,8 @@ export default class App extends Component {
     }
   };
 
+
+
   componentDidMount() {
 
     this.setState({
@@ -106,6 +108,8 @@ export default class App extends Component {
   };
 
   onRouteChange = (pathname) => {
+
+
     useEffect(() => {
       // Path changed, ok to update state.
       if (this.state.currentPath !== pathname) {

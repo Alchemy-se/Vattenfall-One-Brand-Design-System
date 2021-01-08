@@ -168,6 +168,12 @@
 .react-autosuggest__suggestion--highlighted {
   background-color: rgb(235, 238, 242);
 }
+
+.suggestion-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 .ais-PoweredBy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,4 +195,7 @@
 .ais-PoweredBy-logo {
   height: 15px;
 }
+
+
+
 /*# sourceMappingURL=algolia.css.map */

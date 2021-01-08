@@ -7,7 +7,6 @@ const APPLICATION_KEY = process.env.APPLICATION_KEY;
 const PUBLIC_SEARCH_KEY = process.env.PUBLIC_SEARCH_KEY
 const INDEX_NAME = process.env.INDEX_NAME
 
-//TODO kolla algolia
 const algoliaClient = algoliasearch(APPLICATION_KEY, PUBLIC_SEARCH_KEY);
 
 // Use this to not send initial requests on empty query

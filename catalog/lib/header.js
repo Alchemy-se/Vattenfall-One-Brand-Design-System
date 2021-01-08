@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import Hamburger from "./hamburger";
 import Search from './search/search'
 import authContext from "../../helpers/authContext";
-import { logout } from "../../helpers/apiCalls/authentication";
-import LoggedInBanner from "./LoggedInBanner";
+
 
 function Header(props) {
   const [toggleDropdown, setToggleDropdown] = useState(false);

@@ -89,6 +89,7 @@ import IntroductionGuideline from "./lib/singlePages/introductionGuideline";
 import IntroductionComponents from "./lib/singlePages/introductionComponents";
 import Principles from "./lib/singlePages/principles";
 import Datepicker from "./components/datepicker/datepicker";
+import FullSearchResult from "./lib/singlePages/fullSearchResult";
 
 
 function usePageViews(onRouteChange) {
@@ -251,63 +252,65 @@ const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange);
   let location = useLocation();
   return (
-    <Switch>
-      <Route path="/examples">
-        <Examples openModal={openModal} />
-      </Route>
-      {COMPONENTS_ROUTES.map((item) => (
-        <Route key={'/components' + item.path} path={'/components' + item.path}>
-          {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
+      <Switch>
+        <Route path="/examples">
+          <Examples openModal={openModal} />
         </Route>
-      ))}
-      <Route path="/get-started/introduction">
-        <Introduction />
-      </Route>
-      <Route path="/get-started/design">
-        <Designers />
-      </Route>
-      <Route path="/get-started/developer">
-        <Developers />
-      </Route>
-      <Route path={'/get-started'}>
-        <Redirect to={'/get-started/design'} />
-      </Route>
-      {GUIDELINES_ROUTES.map((item) => (
-        <Route key={item.path} path={item.path}>
-          {item.component}
+        {COMPONENTS_ROUTES.map((item) => (
+          <Route key={'/components' + item.path} path={'/components' + item.path}>
+            {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
+          </Route>
+        ))}
+        <Route path="/get-started/introduction">
+          <Introduction />
         </Route>
-      ))}
-      <Route path={'/guidelines/principles'}>
-        <Principles />
-      </Route>
-      <Route path={'/guidelines'}>
-        <IntroductionGuideline />
-      </Route>
+        <Route path="/get-started/design">
+          <Designers />
+        </Route>
+        <Route path="/get-started/developer">
+          <Developers />
+        </Route>
+        <Route path={'/get-started'}>
+          <Redirect to={'/get-started/design'} />
+        </Route>
+        {GUIDELINES_ROUTES.map((item) => (
+          <Route key={item.path} path={item.path}>
+            {item.component}
+          </Route>
+        ))}
+        <Route path={'/guidelines/principles'}>
+          <Principles />
+        </Route>
+        <Route path={'/guidelines'}>
+          <IntroductionGuideline />
+        </Route>
 
-      <Route path={'/components'}>
-        <IntroductionComponents/>
-      </Route>
-      <Route exact path={'/articles/:articleId'} component={Articles} />
-      <Route path={'/articles'}>
-        <ArticlesOverview />
-      </Route>
-      <Route path={'/overview'}>
-        <ComponentOverview />
-      </Route>
-      <Route path={'/login'}>
-        <Login />
-      </Route>
-      <Route path={'/contact/new-request'}>
-        <Zendesk isNewRequest={true} />
-      </Route>
-      <Route path={'/contact/contact'}>
-        <Contact />
-      </Route>
+        <Route path={'/components'}>
+          <IntroductionComponents />
+        </Route>
+        <Route exact path={'/articles/:articleId'} component={Articles} />
+        <Route path={'/articles'}>
+          <ArticlesOverview />
+        </Route>
+        <Route path={'/overview'}>
+          <ComponentOverview />
+        </Route>
+        <Route path={'/login'}>
+          <Login />
+        </Route>
+        <Route path={'/contact/new-request'}>
+          <Zendesk isNewRequest={true} />
+        </Route>
+        <Route path={'/contact/contact'}>
+          <Contact />
+        </Route>
+        <Route path={'/search'} component={FullSearchResult} />
 
-      <Route path="/">
-        <Welcome />
-      </Route>
-    </Switch>
+
+        <Route path="/">
+          <Welcome />
+        </Route>
+      </Switch>
   );
 };
 

@@ -146,7 +146,6 @@
 
   //Add Calendar icon
   $("[class^=vf-calendar]").find('input').each(function(){
-    console.log("hej hej");
 
 
     $('<div class="vf-input-tooltip-icon vf-icon-calendar"></div>').insertAfter(this);

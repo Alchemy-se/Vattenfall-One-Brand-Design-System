@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import styles from './styles.scss'
 import OverviewItem from "./overviewItem";
 
@@ -6,6 +6,7 @@ import { fetchAllMetadata, fetchAmount, updateMetadata } from "../../helpers/api
 import ChildModal from "./modal/ChildModal";
 
 import ParentModal from "./modal/parentModal";
+import PageHeader from "../lib/pageHeader";
 
 const ComponentOverview = () => {
   const figmaLogo = require('../../assets/icons/figma-logo.png').default;
@@ -196,120 +197,123 @@ const ComponentOverview = () => {
   };
 
   return (
-    <div className={styles.tableContainer}>
+    <Fragment>
+      <PageHeader title={"Overview"} />
+      <div className={styles.tableContainer}>
 
-      <div className={styles.topContainer}>
-        <div className={styles.legend}>
+        <div className={styles.topContainer}>
+          <div className={styles.legend}>
 
-          <div>
-            <div className={styles.circleContainer}>
-              <div className={styles.unknown} />
-              <div className={styles.legendText}>Unknown</div>
-            </div>
+            <div>
+              <div className={styles.circleContainer}>
+                <div className={styles.unknown} />
+                <div className={styles.legendText}>Unknown</div>
+              </div>
 
-            <div className={styles.circleContainer}>
-              <div className={styles.canBeUsedIf} />
-              <div className={styles.legendText}>
-                <div className={styles.tooltip}> Conditional use
-                  <span className={styles.tooltipText}>Can only be used if…</span>
+              <div className={styles.circleContainer}>
+                <div className={styles.canBeUsedIf} />
+                <div className={styles.legendText}>
+                  <div className={styles.tooltip}> Conditional use
+                    <span className={styles.tooltipText}>Can only be used if…</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
 
-          <div>
-            <div className={styles.circleContainer}>
-              <div className={styles.awaitingReview} />
-              <div className={styles.legendText}>
-                <div className={styles.tooltip}>Review pending
-                  <span className={styles.tooltipText}>Awaiting review</span>
+            <div>
+              <div className={styles.circleContainer}>
+                <div className={styles.awaitingReview} />
+                <div className={styles.legendText}>
+                  <div className={styles.tooltip}>Review pending
+                    <span className={styles.tooltipText}>Awaiting review</span>
+                  </div>
+
+
                 </div>
-
-
               </div>
+
+              <div className={styles.circleContainer}>
+                <div className={styles.canBeUsed} />
+                <div className={styles.legendText}>
+                  <div className={styles.tooltip}>Allowed
+                    <span className={styles.tooltipText}>Can be used</span>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
 
-            <div className={styles.circleContainer}>
-              <div className={styles.canBeUsed} />
-              <div className={styles.legendText}>
-                <div className={styles.tooltip}>Allowed
-                  <span className={styles.tooltipText}>Can be used</span>
+
+            <div>
+              <div className={styles.circleContainer}>
+                <div className={styles.inReview} />
+                <div className={styles.legendText}>In review</div>
+              </div>
+
+              <div className={styles.circleContainer}>
+                <div className={styles.canBeUsedSoon} />
+                <div className={styles.legendText}>
+                  <div className={styles.tooltip}>Allowed, update pending
+                    <span className={styles.tooltipText}>Can be used but update soon available</span>
+                  </div>
                 </div>
+              </div>
 
-                </div>
-            </div>
-
-          </div>
-
-
-          <div>
-            <div className={styles.circleContainer}>
-              <div className={styles.inReview} />
-              <div className={styles.legendText}>In review</div>
-            </div>
-
-            <div className={styles.circleContainer}>
-              <div className={styles.canBeUsedSoon} />
-              <div className={styles.legendText}>
-                <div className={styles.tooltip}>Allowed, update pending
-                  <span className={styles.tooltipText}>Can be used but update soon available</span>
-                </div>
-                </div>
             </div>
 
           </div>
 
         </div>
 
+        {displayModal && renderModal()}
+        {displayModalParent && renderModalParent()}
+
+        <table>
+          <thead>
+          <tr className={styles.tableHeader}>
+            <th colSpan="4" rowSpan="2">Components</th>
+            <th colSpan="4" rowSpan="2">Guidelines</th>
+            <th style={{ width: '100px' }}>Html/JS</th>
+            <th colSpan="2">Angular</th>
+            <th colSpan="2">React</th>
+            <th rowSpan="2"><img src={sketchLogo} alt="" /></th>
+            <th rowSpan="2"><img src={figmaLogo} alt="" /></th>
+            <th rowSpan="2"><img src={psXDLogo} alt="" /></th>
+            <th rowSpan="2">Read more</th>
+
+          </tr>
+          <tr>
+            <th>Global</th>
+            <th>Global</th>
+            <th>NL</th>
+            <th>Global</th>
+            <th>SV</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          {renderOverview()}
+
+          </tbody>
+          <tfoot>
+          <tr>
+            <td colSpan="8">Total components</td>
+            <td>{amount.html.global}</td>
+            <td>{amount.angular.global}</td>
+            <td>{amount.angular.NL}</td>
+            <td>{amount.react.global}</td>
+            <td>{amount.react.SV}</td>
+            <td>{amount.design.sketch}</td>
+            <td>{amount.design.figma}</td>
+            <td>{amount.design.adobeXd}</td>
+          </tr>
+          </tfoot>
+        </table>
+
       </div>
-
-      {displayModal && renderModal()}
-      {displayModalParent && renderModalParent()}
-
-      <table>
-        <thead>
-        <tr className={styles.tableHeader}>
-          <th colSpan="4" rowSpan="2">Components</th>
-          <th colSpan="4" rowSpan="2">Guidelines</th>
-          <th style={{ width: '100px' }}>Html/JS</th>
-          <th colSpan="2">Angular</th>
-          <th colSpan="2">React</th>
-          <th rowSpan="2"><img src={sketchLogo} alt="" /></th>
-          <th rowSpan="2"><img src={figmaLogo} alt="" /></th>
-          <th rowSpan="2"><img src={psXDLogo} alt="" /></th>
-          <th rowSpan="2">Read more</th>
-
-        </tr>
-        <tr>
-          <th>Global</th>
-          <th>Global</th>
-          <th>NL</th>
-          <th>Global</th>
-          <th>SV</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        {renderOverview()}
-
-        </tbody>
-        <tfoot>
-        <tr>
-          <td colSpan="8">Total components</td>
-          <td>{amount.html.global}</td>
-          <td>{amount.angular.global}</td>
-          <td>{amount.angular.NL}</td>
-          <td>{amount.react.global}</td>
-          <td>{amount.react.SV}</td>
-          <td>{amount.design.sketch}</td>
-          <td>{amount.design.figma}</td>
-          <td>{amount.design.adobeXd}</td>
-        </tr>
-        </tfoot>
-      </table>
-
-    </div>
+    </Fragment>
   );
 };
 
