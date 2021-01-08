@@ -32,18 +32,13 @@ const Forms = () => {
       <div className="vf-row w-75">
         <div className="vf-col">
           <p>
-            Input text are the most commently use form control. Input fields are suitable for getting textual data from
-            the user.
+            Forms are used for submitting data so be as concise as possible when designing. Keep it short. Think about each field and what value the data will provide. Input text are the most commonly used form control. Input fields are suitable for getting textual data from the user. Below you will find ”Standard” Input fields, ”dropdown”, ”Underline Input” and more.
           </p>
           <p>
-            Behaviour
-            <br />
-            Input text contain a label above the input field.
+            Forms will be updated with new features created for InCharge web, portal and app in the near future.
           </p>
           <p>
-            Error messages are displayed below the input field. When the users input isn’t valid the error message will
-            be displayed. The application wich implements the input fields is responsible for validation and display of
-            the error message.{' '}
+            Error messages are displayed below the input field. When the users input isn’t valid the error message will be displayed. The application which implements the input fields is responsible for validation and display of the error message.
           </p>
         </div>
       </div>

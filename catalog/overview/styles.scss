@@ -15,16 +15,19 @@ a {
   margin-bottom: 20px;
 }
 
+
 .modalContainer {
   position: fixed;
   top: 52%;
   left: 50%;
   border: 1px solid black;
-  transform: translate(-38%, -50%);
-  z-index: 1;
+  //transform: translate(-38%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100000000;
   padding: 24px;
   background-color: white;
   width: 75%;
+
 
   select {
     border: 1px solid #cccccc;
@@ -39,6 +42,11 @@ a {
     cursor: pointer;
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzMzMzMzO30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K") right center no-repeat;
     // margin-bottom: 24px;
+  }
+
+  .buttonContainerParent {
+    display: flex;
+    justify-content: space-around;
   }
 
   .buttonContainer {
@@ -87,7 +95,6 @@ a {
     background-color: white;
     height: auto; // set to auto?
     display: flex;
-    //  flex-direction: column;
     justify-content: space-between;
 
     form {
@@ -112,6 +119,12 @@ a {
       .textInformation {
         display: flex;
         flex-direction: column;
+
+        span {
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
       }
 
       .radioButtonsContainer {
@@ -160,15 +173,15 @@ a {
       }
 
       label {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
         margin-bottom: 4px;
-        line-height: 14px;
+        line-height: 16px;
       }
 
       textarea {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 16px;
         margin-bottom: 6px;
 
       }

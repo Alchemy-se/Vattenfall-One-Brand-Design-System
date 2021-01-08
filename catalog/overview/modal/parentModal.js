@@ -5,12 +5,12 @@ import SupportItem from "./supportItem";
 const ParentModal = ({ parent, closeModal, updateParentData,saveNewMetadata }) => {
   const { guidelineUri, description, sketchUrl, figmaUrl, adobeXDUrl, uri } = parent
   return (
-    <div className={styles.modalContainer}>
+    <div style={{width: 'auto'}} className={styles.modalContainer}>
       <div className={styles.modalContent}>
         <form style={{marginBottom: "30px"}}>
           <div className={styles.textInformation} style={{width : "500px"}}>
             <label> Component name</label>
-            <span>{parent.name}</span>
+            <span style={{ marginTop: 0 }}>{parent.name}</span>
 
             <label>Description</label>
             <textarea rows={5}
@@ -53,7 +53,7 @@ const ParentModal = ({ parent, closeModal, updateParentData,saveNewMetadata }) =
 
         </form>
       </div>
-      <div className={styles.buttonContainer}>
+      <div className={styles.buttonContainerParent}>
         <button onClick={() => closeModal()} type="button"
                 className={`vf-btn  vf-btn--outline-dark ${styles.border}`}>Cancel
         </button>

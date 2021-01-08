@@ -4,7 +4,7 @@ import SupportItem from "./supportItem";
 
 const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => {
   return (
-    <div className={styles.modalContainer}>
+    <div style={{transform:'translate(-38%, -50%)'}} className={styles.modalContainer}>
 
       <div className={styles.modalContent}>
 
@@ -13,12 +13,13 @@ const ChildModal = ({ child, closeModal, saveNewMetadata, updateChildData }) => 
           <div className={styles.column}>
             <div className={styles.textInformation}>
               <label> Component name</label>
-              <span style={{ marginTop: 0 }}>{child.name}</span>
+              <span>{child.name}</span>
 
               <label style={{ fontWeight: "normal" }}>Description</label>
               <textarea rows={5}
-                        value={child.description}
+                        value={child.description ? child.description : ""}
                         name="description"
+
                         onChange={(e) => updateChildData(e)} />
 
               <div className={styles.radioButtonsContainer}>
