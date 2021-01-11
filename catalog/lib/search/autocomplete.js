@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Highlight, PoweredBy } from 'react-instantsearch-dom';
 import AutoSuggest from 'react-autosuggest';
 import { connectAutoComplete, connectStateResults } from 'react-instantsearch/connectors';
-import { Link } from "react-router-dom";
 
 const searchIcon = require('../../../assets/icons/search-icon.png').default;
 
@@ -14,24 +13,12 @@ class AutoComplete extends Component {
     this.state = {
       value: this.props.currentRefinement,
       noSuggestions: false,
-      hasBeenBlured: false
+      hasBeenBlured: false,
+      hasBeenHighlighted: false
     };
     this.handleClick = this.handleClick.bind(this);
-
-
   }
 
-  onChange = (_, { newValue }) => {
-    if (!newValue) {
-      this.setState({ value: "" })
-      this.setState({
-        noSuggestions: false
-      })
-    }
-    this.setState({
-      value: newValue,
-    });
-  };
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     const { searchResults } = this.props
@@ -55,18 +42,21 @@ class AutoComplete extends Component {
 
   }
 
-
-  onSuggestionsFetchRequested = ({ value }) => {
-    this.props.refine(value);
-  };
-
-  onSuggestionsClearRequested = () => {
-    this.setState({ noSuggestions: false })
-    this.props.refine();
-  };
-
   getSuggestionValue(hit) {
     return hit.name;
+  }
+
+
+  componentDidMount() {
+    document.addEventListener('click', this.handleClick);
+  }
+
+  handleClick(e) {
+    if (this.node && this.node.contains(e.target)) {
+      window.location.href = "/contact/new-request"
+    } else {
+      this.onBlur()
+    }
   }
 
 
@@ -95,7 +85,6 @@ class AutoComplete extends Component {
   renderFullSearch = () => {
     const query = this.props.currentRefinement;
     return (<div className="open-more-result"><a href={'/search?q=' + query}>See more results</a></div>)
-
   }
 
   renderSuggestionsContainer = ({ containerProps, children, query }) => (
@@ -113,7 +102,18 @@ class AutoComplete extends Component {
     </div>
   );
 
-  onSuggestionSelected = (_, { suggestion }) => {
+
+  onSuggestionsFetchRequested = ({ value }) => {
+    this.props.refine(value);
+  };
+
+  onSuggestionsClearRequested = () => {
+    this.setState({ noSuggestions: false })
+    this.props.refine();
+  };
+
+
+  onSuggestionSelected = (_, { suggestion, method }) => {
     this.setState({ hasBeenBlured: true })
     window.location.href = suggestion.uri
   };
@@ -121,19 +121,6 @@ class AutoComplete extends Component {
   onSuggestionCleared = () => {
     this.setState({ value: "" })
   };
-
-  componentDidMount() {
-    document.addEventListener('click', this.handleClick);
-  }
-
-  handleClick(e) {
-    if (this.node && this.node.contains(e.target)) {
-      window.location.href = "/contact/new-request"
-    } else {
-      this.onBlur()
-    }
-  }
-
   onBlur = () => {
     this.setState({ value: "" });
     this.setState({ hasBeenBlured: true });
@@ -149,6 +136,28 @@ class AutoComplete extends Component {
       return { display: "none" }
     }
   };
+  handleKeyPress = (e) => {
+    if (e.key === 'Enter' && !this.state.hasBeenHighlighted) {
+      const query = this.props.currentRefinement;
+      this.setState({ hasBeenBlured: true })
+      window.location.href = '/search?q=' + query
+    }
+  }
+  onSuggestionHighlighted = () => {
+    this.setState({ hasBeenHighlighted: true })
+  }
+
+  onChange = (_, { newValue }) => {
+    if (!newValue) {
+      this.setState({ value: "" })
+      this.setState({
+        noSuggestions: false
+      })
+    }
+    this.setState({
+      value: newValue,
+    });
+  };
 
   render() {
     const { hits } = this.props;
@@ -157,6 +166,7 @@ class AutoComplete extends Component {
       placeholder: 'Search...',
       onChange: this.onChange,
       onFocus: this.onFocus,
+      onKeyPress: this.handleKeyPress,
       value,
     };
     return (
@@ -165,6 +175,7 @@ class AutoComplete extends Component {
         <img className="icon" src={searchIcon} alt="icon" />
         <AutoSuggest
           suggestions={hits}
+          onSuggestionHighlighted={this.onSuggestionHighlighted}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           onSuggestionSelected={this.onSuggestionSelected}
@@ -173,7 +184,6 @@ class AutoComplete extends Component {
           renderSuggestion={this.renderSuggestion}
           focusFirstSuggestion={true}
           inputProps={inputProps}
-          highlightFirstSuggestion={true}
           renderSuggestionsContainer={this.renderSuggestionsContainer}
         />
         {
