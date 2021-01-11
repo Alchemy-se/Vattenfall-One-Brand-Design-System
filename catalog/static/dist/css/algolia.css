@@ -168,6 +168,16 @@
 .react-autosuggest__suggestion--highlighted {
   background-color: rgb(235, 238, 242);
 }
+
+.suggestion-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 .ais-PoweredBy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,15 +187,19 @@
   justify-content: flex-end;
   margin-top: -10px;
   margin-bottom: -10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .ais-PoweredBy-text {
   font-size: 12px;
   font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
   color: rgb(34, 34, 34);
   margin-right: -18px;
-  margin-top: 1px;
+  margin-top: 5px;
 }
 .ais-PoweredBy-logo {
   height: 15px;
 }
+
 /*# sourceMappingURL=algolia.css.map */
