@@ -12284,18 +12284,18 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active {
-  -webkit-box-shadow: 0 3px 0 0 #2071b5;
-  box-shadow: 0 3px 0 0 #2071b5;
+  -webkit-box-shadow: 0 3px 0 0 #1964A3;
+  box-shadow: 0 3px 0 0 #1964A3;
 }
 
 @media (max-width: 1199.98px) {
   .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active {
-    color: #222222;
+    color: #2071b5;
   }
 }
 
 .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--active .vf-tab-bar-link {
-  color: #222222;
+  color: #2071b5;
 }
 
 .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item.vf-tab-bar-item--disabled {
@@ -12313,6 +12313,16 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #767676;
 }
 
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active):hover {
+  -webkit-box-shadow: 0 3px 0 0 #1964A3;
+  box-shadow: 0 3px 0 0 #1964A3;
+  color: #2071b5;
+}
+
+.vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active):hover .vf-tab-bar-link {
+  color: #2071b5;
+}
+
 @media (max-width: 1199.98px) {
   .vf-tab-bar-container .vf-tab-bar .vf-tab-bar-item:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active):hover {
     color: #2071b5;
@@ -12327,7 +12337,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1964A3;
+  color: #222222;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.05px;

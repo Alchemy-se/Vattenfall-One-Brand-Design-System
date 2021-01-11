@@ -182,6 +182,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/pagination', name: 'Pagination', component: <Pagination uri={"/components/css/pagination"} /> },
   { path: '/css/progress', name: 'Progress', component: <Progress uri={"/components/css/progress"} /> },
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
+  { path: '/css/block', name: 'block', mdFile: require('../catalog/components/exclude-from-metadata/blockquote.md') },
   { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"} /> },
   { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"} /> },
   { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"} /> },
