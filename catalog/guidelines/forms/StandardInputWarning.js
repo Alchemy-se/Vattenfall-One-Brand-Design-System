@@ -51,7 +51,7 @@ const StandardInputWarning = ({ title, label }) => {
             <input
               type="text"
               id="vf_warning_state_input"
-              className={`vf-input vf-input--warning vf-input--data ${styles.fullWidth}`}
+              className={`vf-input vf-input--warning vf-input--data vf-input--blured-label vf-input--blured-warning ${styles.fullWidth}`}
               placeholder="Standard Label"
               defaultValue="Value filled in"
               readOnly

@@ -12775,6 +12775,29 @@ a.vf-badge:hover, a.vf-badge:focus {
   pointer-events: none;
 }
 
+.vf-input--blured-label ~ label {
+  display: none !important;
+}
+
+.vf-input--blured-standard {
+  border: 1px solid #cccccc !important;
+}
+
+.vf-input--blured-underline {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #cccccc !important;
+}
+
+.vf-input--blured-warning {
+  border: 1px solid #f5a623 !important;
+}
+
+.vf-input--blured-error {
+  border: 1px solid #F93B18 !important;
+}
+
 .vf-input-container {
   position: relative;
   cursor: pointer;

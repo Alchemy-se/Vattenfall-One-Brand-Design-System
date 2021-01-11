@@ -50,7 +50,7 @@ const StandardInput = ({ title, label }) => {
             <input
               type="text"
               id="vf_standard_input"
-              className={`vf-input vf-input--css-placeholder ${styles.disableHover} ${styles.fullWidth}`}
+              className={`vf-input vf-input--css-placeholder vf-input--blured-label vf-input--blured-standard ${styles.disableHover} ${styles.fullWidth}`}
               placeholder="Standard Label"
               defaultValue="Value filled in"
             />
