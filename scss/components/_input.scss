@@ -3,21 +3,41 @@
     display: none !important;
   }
 }
+
 .vf-input--blured-standard {
   border: 1px solid $vattenfall-input-grey !important;
+
+  &:hover {
+    border: 1px solid $vattenfall-border-dark-grey !important;
+  }
 }
+
 .vf-input--blured-underline {
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
   border-bottom: 1px solid $vattenfall-input-grey !important;
+
+  &:hover {
+    border-bottom: 1px solid $vattenfall-border-dark-grey !important;
+  }
 }
+
 .vf-input--blured-warning {
   border: 1px solid $vattenfall-warning-yellow !important;
+
+  &:hover {
+    border: 1px solid  $vattenfall-warning-yellow-border !important;
+  }
+
 }
 
 .vf-input--blured-error {
-   border: 1px solid $vattenfall-dark-red !important;
+  border: 1px solid $vattenfall-dark-red !important;
+
+  &:hover {
+    border: 1px solid $vattenfall-error-red-border !important;
+  }
 }
 
 .vf-input-container {
@@ -46,7 +66,6 @@
     padding-right: 40px;
 
   }
-
 
 
   .vf-input--number-increment, .vf-input--number-decrement {
@@ -191,6 +210,12 @@
       border-bottom: 1px solid $vattenfall-input-grey;
       padding-left: 0;
       border-radius: 0;
+
+      &:hover {
+
+        border-bottom: 1px solid $vattenfall-border-dark-grey;
+
+      }
 
       & ~ label {
         &:after {

@@ -12783,6 +12783,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   border: 1px solid #cccccc !important;
 }
 
+.vf-input--blured-standard:hover {
+  border: 1px solid #999999 !important;
+}
+
 .vf-input--blured-underline {
   border-top: none !important;
   border-left: none !important;
@@ -12790,12 +12794,24 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-bottom: 1px solid #cccccc !important;
 }
 
+.vf-input--blured-underline:hover {
+  border-bottom: 1px solid #999999 !important;
+}
+
 .vf-input--blured-warning {
   border: 1px solid #f5a623 !important;
 }
 
+.vf-input--blured-warning:hover {
+  border: 1px solid #ffb2a4 !important;
+}
+
 .vf-input--blured-error {
   border: 1px solid #F93B18 !important;
+}
+
+.vf-input--blured-error:hover {
+  border: 1px solid #ffb2a4 !important;
 }
 
 .vf-input-container {
@@ -12962,6 +12978,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-bottom: 1px solid #cccccc;
   padding-left: 0;
   border-radius: 0;
+}
+
+.vf-input-container .vf-input.vf-input--underline:hover {
+  border-bottom: 1px solid #999999;
 }
 
 .vf-input-container .vf-input.vf-input--underline ~ label {
