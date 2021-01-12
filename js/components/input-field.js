@@ -1,17 +1,4 @@
 (function ($) {
-/*  if ($(this).val().length > 0) {
-    if ($(this).hasClass('vf-input--underline')) {
-      $(this).addClass('vf-input--blured-label vf-input--blured-underline')
-    } else if ($(this).hasClass('vf-input--warning')) {
-      $(this).addClass('vf-input--blured-label vf-input--blured-warning')
-    } else if ($(this).hasClass('vf-input--error')) {
-      $(this).addClass('vf-input--blured-label vf-input--blured-error')
-    } else {
-      $(this).addClass('vf-input--blured-label vf-input--blured-standard')
-
-    }
-  }*/
-
   $('.vf-input').each(function (index) {
     $(this).on('blur', function () {
       if ($(this).val().length > 0) {
