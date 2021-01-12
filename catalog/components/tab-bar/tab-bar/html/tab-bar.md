@@ -4,7 +4,7 @@ To select a tab by default, simply add the `vf-tab-bar-item--active` class to th
 
 To disable a tab, simply add the `vf-tab-bar-item--disabled` class to the corresponding `li` element, and add `aria-disabled="true"`.
 
-Icons are added to the `:before` pseudo-element on the `vf-tab-bar-link` element. To add a placeholder icon, simply add `vf-icon-placeholder` to the `vf-tab-bar-link` element. See [Icons](/utilities/icons) for more details.
+Icons are added to the `:before` pseudo-element on the `vf-tab-bar-link` element. To add a placeholder icon, simply add `vf-icon-placeholder` to the `vf-tab-bar-link` element. See [Icons](/components/css/icons) for more details.
 
 ```html
 showSource: true

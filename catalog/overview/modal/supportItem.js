@@ -93,7 +93,7 @@ const SupportItem = ({ child, updateChildData, language, regionSupportCode = fal
       </div>
       {regionSupportCode && (
         <div className={styles.regionSupportContainer}>
-          Region support:
+          Region support: {' '}
           <label>{region}</label>
 
           <select value={setSelectValue()} id="region-support" supportforregion={regionSupportCode}

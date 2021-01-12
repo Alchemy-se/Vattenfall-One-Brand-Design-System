@@ -1,329 +1,359 @@
-.vf-input-container{
-
-	position: relative;
-	cursor: pointer;
-	line-height: 1;
-
-	input:focus,
-	select:focus,
-	textarea:focus,
-	button:focus {
-	    outline: none;
-	}
-
-	//Number input
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
-	    -webkit-appearance: none;
-	    margin: 0;
-	}
-
-	input[type="number"] {
-
-		appearance: textfield;
-		padding-right: 40px;
-
-	}
-
-	.vf-input--number-increment, .vf-input--number-decrement{
-		position: absolute;
-		right: 1px;
-		height: 48%;
-		width: 40px;
-		border-left: 1px solid $vattenfall-light-border-grey;
-		background-repeat: no-repeat;
-		background-size: 16px;
-		background-position: 50%;
-		box-sizing: content-box;
-
-	}
-
-	.vf-input--number-increment{
-		top: 1px;
-
-		&.vf-icon-up{
-
-			&:before{ //Icon font
-
-				position: absolute;
-				font-size: 0.4375rem; //width 16px
-				left: calc(50% - 8px);
-				top: calc(50% - 3.5px);
-
-			}
-		}
-
-	}
-
-	.vf-input--number-decrement{
-		border-top: 1px solid $vattenfall-light-border-grey;
-		bottom: 1px;
-
-		&.vf-icon-down{
-
-			&:before{ //Icon font
-
-				position: absolute;
-				font-size: 0.4375rem; //width 16px
-				left: calc(50% - 8px);
-				top: calc(50% - 3.5px);
-
-			}
-		}
-	}
-
-	.vf-input{
-
-		position: relative;
-		min-width: 264px;
-		background-color: $white;
-		color: $dark;
-		padding: 16px 20px;
-		border-radius: 4px 4px 4px 4px;
-		border: 1px solid $vattenfall-input-grey;
-		font-size: $font-size-lg;
-		letter-spacing: 0px;
-		line-height: 24px;
-		font-weight: normal;
-		&::placeholder {
-			color: transparent;
-		}
-		&:hover{
-
-			border: 1px solid $vattenfall-border-dark-grey;
-
-		}
-		&.vf-input--css-placeholder {
-			&:focus, &:not(:placeholder-shown), &.vf-input--data {
-				border: 1px solid $vattenfall-button-blue;
-
-				& ~ label{
-
-					top: -9px;
-					left: 16.5px;
-					padding: 0 7px;
-					color: $vattenfall-button-blue;
-					font-weight: 500;
-					letter-spacing: 0px;
+.vf-input--blured-label {
+  & ~ label {
+    display: none !important;
+  }
+}
+.vf-input--blured-standard {
+  border: 1px solid $vattenfall-input-grey !important;
+}
+.vf-input--blured-underline {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid $vattenfall-input-grey !important;
+}
+.vf-input--blured-warning {
+  border: 1px solid $vattenfall-warning-yellow !important;
+}
+
+.vf-input--blured-error {
+   border: 1px solid $vattenfall-dark-red !important;
+}
+
+.vf-input-container {
+
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+
+  //Number input
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+
+    appearance: textfield;
+    padding-right: 40px;
+
+  }
+
+
+
+  .vf-input--number-increment, .vf-input--number-decrement {
+    position: absolute;
+    right: 1px;
+    height: 48%;
+    width: 40px;
+    border-left: 1px solid $vattenfall-light-border-grey;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 50%;
+    box-sizing: content-box;
+
+  }
+
+  .vf-input--number-increment {
+    top: 1px;
+
+    &.vf-icon-up {
+
+      &:before { //Icon font
+
+        position: absolute;
+        font-size: 0.4375rem; //width 16px
+        left: calc(50% - 8px);
+        top: calc(50% - 3.5px);
+
+      }
+    }
+
+  }
+
+  .vf-input--number-decrement {
+    border-top: 1px solid $vattenfall-light-border-grey;
+    bottom: 1px;
+
+    &.vf-icon-down {
+
+      &:before { //Icon font
+
+        position: absolute;
+        font-size: 0.4375rem; //width 16px
+        left: calc(50% - 8px);
+        top: calc(50% - 3.5px);
+
+      }
+    }
+  }
+
+  .vf-input {
+
+    position: relative;
+    min-width: 264px;
+    background-color: $white;
+    color: $dark;
+    padding: 16px 20px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid $vattenfall-input-grey;
+    font-size: $font-size-lg;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: normal;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:hover {
+
+      border: 1px solid $vattenfall-border-dark-grey;
+
+    }
+
+    &.vf-input--css-placeholder {
+      &:focus, &:not(:placeholder-shown), &.vf-input--data {
+        border: 1px solid $vattenfall-button-blue;
+
+        & ~ label {
+
+          top: -9px;
+          left: 16.5px;
+          padding: 0 7px;
+          color: $vattenfall-button-blue;
+          font-weight: 500;
+          letter-spacing: 0px;
 
-					transform: scale(0.7);
-					transform-origin: top left; //center will be different for each label length
-					label:after {
-						content: '';
-						display: block;
-						top: -12px;
-						width: 100%;
-						position: relative;
-						transform: scaleX(1.05);
-						z-index: -1;
-						height: 2px;
-						background: white;
-					}
-				}
-			}
-		}
+          transform: scale(0.7);
+          transform-origin: top left; //center will be different for each label length
+          label:after {
+            content: '';
+            display: block;
+            top: -12px;
+            width: 100%;
+            position: relative;
+            transform: scaleX(1.05);
+            z-index: -1;
+            height: 2px;
+            background: white;
+          }
+        }
+      }
 
-		&:focus, &.vf-input--data{
 
-			border: 1px solid $vattenfall-button-blue;
+    }
 
-			& ~ label{
+    &:focus, &.vf-input--data {
 
-				top: -9px;
-				left: 16.5px;
-				padding: 0 7px;
-				color: $vattenfall-button-blue;
-				font-weight: 500;
-				letter-spacing: 0px;
+      border: 1px solid $vattenfall-button-blue;
 
-				transform: scale(0.7);
-				transform-origin: top left; //center will be different for each label length
-				label:after {
-					content: '';
-					display: block;
-					top: -12px;
-					width: 100%;
-					position: relative;
-					/* position: absolute; */
-					/* padding-right: 100px; */
-					transform: scaleX(1.05);
-					z-index: -1;
-					height: 2px;
-					background: white;
-				}
-			}
+      & ~ label {
 
-		}
+        top: -9px;
+        left: 16.5px;
+        padding: 0 7px;
+        color: $vattenfall-button-blue;
+        font-weight: 500;
+        letter-spacing: 0px;
 
-		&.vf-input--underline{
+        transform: scale(0.7);
+        transform-origin: top left; //center will be different for each label length
+        label:after {
+          content: '';
+          display: block;
+          top: -12px;
+          width: 100%;
+          position: relative;
+          /* position: absolute; */
+          /* padding-right: 100px; */
+          transform: scaleX(1.05);
+          z-index: -1;
+          height: 2px;
+          background: white;
+        }
+      }
 
-			background-color: transparent;
-			border:none;
-			border-bottom: 1px solid $vattenfall-input-grey;
-			padding-left: 0;
-			border-radius: 0;
+    }
 
-			& ~ label{
-				&:after {
-					background: transparent;
-				}
-				background-color: transparent;
-				left: 0;
-				padding: 0;
-			}
+    &.vf-input--underline {
 
-			&.vf-input--error{
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $vattenfall-input-grey;
+      padding-left: 0;
+      border-radius: 0;
 
-				box-shadow: 0 0 $vattenfall-dark-red;
+      & ~ label {
+        &:after {
+          background: transparent;
+        }
 
-				&:focus{
+        background-color: transparent;
+        left: 0;
+        padding: 0;
+      }
 
-					box-shadow: 0 1px $vattenfall-dark-red;
-					transition: box-shadow .2s ease-in-out;
-				}
+      &.vf-input--error {
 
-			}
+        box-shadow: 0 0 $vattenfall-dark-red;
 
-			&.vf-input--warning{
+        &:focus {
 
-				box-shadow: 0 0 $vattenfall-warning-yellow;
+          box-shadow: 0 1px $vattenfall-dark-red;
+          transition: box-shadow .2s ease-in-out;
+        }
 
-				&:focus{
+      }
 
-					box-shadow: 0 1px $vattenfall-warning-yellow;
-					transition: box-shadow .2s ease-in-out;
+      &.vf-input--warning {
 
-				}
+        box-shadow: 0 0 $vattenfall-warning-yellow;
 
-			}
+        &:focus {
 
-		}
+          box-shadow: 0 1px $vattenfall-warning-yellow;
+          transition: box-shadow .2s ease-in-out;
 
-		&.vf-input--error{
+        }
 
-			border-color: $vattenfall-error-red-border;
+      }
 
-			&:hover{
+    }
 
-				border-color: $vattenfall-dark-red;
-			}
+    &.vf-input--error {
 
-			&:focus{
+      border-color: $vattenfall-error-red-border;
 
-				border-color: $vattenfall-dark-red;
-			}
+      &:hover {
 
-			& ~ label{
+        border-color: $vattenfall-dark-red;
+      }
 
-				color: $vattenfall-dark-red;
-			}
-		}
+      &:focus {
 
-		&.vf-input--warning{
+        border-color: $vattenfall-dark-red;
+      }
 
-			border-color: $vattenfall-warning-yellow-border;
+      & ~ label {
 
-			&:hover{
+        color: $vattenfall-dark-red;
+      }
+    }
 
-				border-color: $vattenfall-warning-yellow;
-			}
+    &.vf-input--warning {
 
-			&:focus{
+      border-color: $vattenfall-warning-yellow-border;
 
-				border-color: $vattenfall-warning-yellow;
+      &:hover {
 
-			}
+        border-color: $vattenfall-warning-yellow;
+      }
 
-			& ~ label{
+      &:focus {
 
-				color: $vattenfall-warning-yellow;
-			}
-		}
+        border-color: $vattenfall-warning-yellow;
 
-		&.vf-tooltip--left ~ .vf-tooltip-message, &.vf-tooltip--right ~ .vf-tooltip-message{
+      }
 
-			margin-bottom: 0;
-			transform: translate(0, -50%) !important;
-			top: 50%;
-			bottom: auto;
+      & ~ label {
 
-		}
+        color: $vattenfall-warning-yellow;
+      }
+    }
 
-		&.vf-tooltip--bottom ~ .vf-tooltip-message{
+    &.vf-tooltip--left ~ .vf-tooltip-message, &.vf-tooltip--right ~ .vf-tooltip-message {
 
-			margin-bottom: 0;
-			bottom: auto;
-			top: calc(100% - 8px);
+      margin-bottom: 0;
+      transform: translate(0, -50%) !important;
+      top: 50%;
+      bottom: auto;
 
-		}
-	}
+    }
 
-	label{
+    &.vf-tooltip--bottom ~ .vf-tooltip-message {
 
-		position: absolute;
-		top: 17px;
-		left: 20px;
-		margin-bottom: 0;
-		color: $btn-disabled-color;
-		line-height: 25px;
-		font-size: $font-size-lg;
-		letter-spacing: 0px;
-		pointer-events: none;
-		cursor: default;
-		transition: top .2s ease-in-out;
+      margin-bottom: 0;
+      bottom: auto;
+      top: calc(100% - 8px);
 
-		&:after {
-			content: '';
-			display: block;
-			top: -12.43666px;
-			width: 100%;
-			position: relative;
-			-webkit-transform: scaleX(1.05);
-			transform: scaleX(1.05) scaleY(1.1);
-			z-index: -1;
-			height: 2.6px;
-			background: white;
-		}
+    }
+  }
 
-	}
+  label {
 
-	.vf-tooltip-message{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    margin-bottom: 0;
+    color: $btn-disabled-color;
+    line-height: 25px;
+    font-size: $font-size-lg;
+    letter-spacing: 0px;
+    pointer-events: none;
+    cursor: default;
+    transition: top .2s ease-in-out;
 
-		opacity: 0;
-		position: absolute;
-		right: 27px;
-		transform: translate(50%, 0);
-		bottom: calc(100% - 8px);
+    &:after {
+      content: '';
+      display: block;
+      top: -12.43666px;
+      width: 100%;
+      position: relative;
+      -webkit-transform: scaleX(1.05);
+      transform: scaleX(1.05) scaleY(1.1);
+      z-index: -1;
+      height: 2.6px;
+      background: white;
+    }
 
-	}
+  }
 
-	.vf-input-tooltip-icon{ //Generated by js
+  .vf-tooltip-message {
 
-		display: inline;
-		cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    right: 27px;
+    transform: translate(50%, 0);
+    bottom: calc(100% - 8px);
 
-		&.vf-icon-question{ //Icon font
+  }
 
-			&:before{
+  .vf-input-tooltip-icon { //Generated by js
 
-				position: absolute;
-				top: calc(50% - 12px);;
-				right: 15px;
+    display: inline;
+    cursor: pointer;
 
-			}
+    &.vf-icon-question { //Icon font
 
-		}
+      &:before {
 
-		&:hover{
+        position: absolute;
+        top: calc(50% - 12px);;
+        right: 15px;
 
-			~ .vf-tooltip-message{
+      }
 
-				opacity: 1;
-				transition: opacity .3s ease-in-out;
-			}
+    }
 
-		}
+    &:hover {
 
-	}
+      ~ .vf-tooltip-message {
+
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+      }
+
+    }
+
+  }
 
 }

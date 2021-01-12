@@ -66,14 +66,19 @@
           } else {
             entry.target.classList.remove('vf-carousel-next-slide-overlay')
           }
-          observer.unobserve(entry.target)
 
         }
+        observer.unobserve(entry.target)
+
       }
     })
   };
+  let options = {
+    root: document.querySelector('#vf-carousel-container'),
+    rootMargin: '0px',
+  }
 
-  const observer = new IntersectionObserver(addOverlay);
+  const observer = new IntersectionObserver(addOverlay, options);
 
   if (isMobile) {
     // create indicator dots

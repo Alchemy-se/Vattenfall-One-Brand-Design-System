@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import styles from "../../get-started/designers/index.scss";
+import styles from "./styles.scss";
 import PageHeader from "../pageHeader";
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
           For inquiries regarding specific needs or assets, please submit a request.
         </span>
         <a style={{ display: 'block', marginTop: '24px' }} href="/contact/new-request" className="vf-link-with-arrow">New
-          Request</a>
+        Request</a>
 
 
       </div>

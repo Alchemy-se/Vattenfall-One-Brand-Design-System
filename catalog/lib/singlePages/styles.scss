@@ -1,0 +1,88 @@
+
+.container {
+  margin: 0 170px 0 44px;
+  @media(max-width: 999px) {
+    margin: 0 10px 0 20px;
+  }
+
+  .infoList {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      line-height: 28px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 108px;
+    }
+  }
+
+  img {
+    margin-bottom: 48px;
+    margin-top: 108px;
+  }
+
+  img:first-of-type {
+    margin-top: 71px;
+  }
+
+
+  .subTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+}
+
+.resultContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: max-content;
+  padding-right: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(235, 238, 242);
+
+  }
+
+  span {
+    color: rgb(32, 113, 181);
+    font-family: "Vattenfall Hall", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .category {
+    text-transform: capitalize;
+    width: 100px;
+    font-weight: 400;
+  }
+
+  .divider {
+    border: 1px solid rgb(212, 216, 221);
+    height: 2rem;
+    margin: auto 20px;
+  }
+
+  .highlightContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+
+    .subtitle {
+      margin-right: 3px;
+
+    }
+  }
+}
+

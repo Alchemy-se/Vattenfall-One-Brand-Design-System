@@ -98,6 +98,13 @@ html.sr .reveal {
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Vattenfall Hall NORDx Medium";
+  src: url("../fonts/VattenfallHall-Medium.eot");
+  src: url("../fonts/VattenfallHall-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/VattenfallHall-Medium.woff2") format("woff2"), url("../fonts/VattenfallHall-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Vattenfall Hall NORDx";

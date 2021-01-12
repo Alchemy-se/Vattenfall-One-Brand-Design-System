@@ -51,7 +51,7 @@ const StandardInputError = ({ title, label }) => {
             <input
               type="text"
               id="vf_error_state_input"
-              className={`vf-input vf-input--error vf-input--data ${styles.fullWidth}`}
+              className={`vf-input vf-input--error vf-input--data vf-input--blured-label vf-input--blured-error ${styles.fullWidth}`}
               placeholder="Standard Label"
               defaultValue="Value filled in"
               readOnly

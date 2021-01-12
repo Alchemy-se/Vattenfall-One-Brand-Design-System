@@ -1,6 +1,6 @@
 {
   "name": "@vf-alchemy/vattenfall-design-system",
-  "version": "1.0.0",
+  "version": "7.16.7",
   "main": "index.js",
   "scripts": {
     "start-webpack": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
@@ -24,6 +24,7 @@
     "js-build": "webpack",
     "js-copy": "shx cp -r dist/js/ catalog/static/dist/",
     "build-metadata": "NODE_ENV=production node metadata/build-metadata.js",
+    "build-and-upload-metadata-development": "NODE_ENV=development node metadata/entry.js",
     "build-and-upload-metadata-stage": "NODE_ENV=stage node metadata/entry.js",
     "build-and-upload-metadata-production": "NODE_ENV=production node metadata/entry.js"
   },
@@ -66,6 +67,7 @@
     "axios": "^0.21.0",
     "catalog": "^3.6.0",
     "copy-webpack-plugin": "^5.1.1",
+    "daterangepicker": "^3.1.0",
     "dotenv-webpack": "^3.0.0",
     "glob": "^7.1.6",
     "instantsearch.css": "^7.4.5",

@@ -33,7 +33,7 @@ const StandardInputWithTooltip = ({ title, label }) => {
             <label htmlFor="vf_tooltip_input">{label}</label>
           </div>
         </Column>
-        <Column title={'Filled'}>
+        <Column title={'Focus with suggestion'}>
           <div className="vf-input-container">
             <input
               type="text"
@@ -52,7 +52,7 @@ const StandardInputWithTooltip = ({ title, label }) => {
             <input
               type="text"
               id="vf_tooltip_input"
-              className={`vf-input vf-input--data ${styles.fullWidth}`}
+              className={`vf-input vf-input--data vf-input--blured-label vf-input--blured-standard ${styles.fullWidth}`}
               data-tooltip="Tooltip text"
               defaultValue="Value filled in"
               readOnly

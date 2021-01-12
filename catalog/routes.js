@@ -83,8 +83,13 @@ import Upload from "./development/upload";
 import NewZendeskRequest from "./zendesk/components/newZendeskRequest";
 import Zendesk from "./zendesk/zendesk";
 import Overview from "./get-started/introduction/introduction";
-import Contact from "./lib/contact/contact";
+import Contact from "./lib/singlePages/contact";
 import Introduction from "./get-started/introduction/introduction";
+import IntroductionGuideline from "./lib/singlePages/introductionGuideline";
+import IntroductionComponents from "./lib/singlePages/introductionComponents";
+import Principles from "./lib/singlePages/principles";
+import Datepicker from "./components/datepicker/datepicker";
+import FullSearchResult from "./lib/singlePages/fullSearchResult";
 
 
 function usePageViews(onRouteChange) {
@@ -128,6 +133,7 @@ const COMPONENTS_ROUTES = [
   },
 
   { path: '/css/badge', name: 'Badge', component: <Badge uri={"/components/css/badge"} /> },
+  { path: '/css/datepicker', name: 'Datepicker', component: <Datepicker uri={""} /> },
   { path: '/css/table', name: 'Table', component: <Table uri={"/components/css/table"} /> },
   { path: '/css/tab-bar', name: 'Tab Bar', component: <TabBar uri={"/components/css/tab-bar"} /> },
   { path: '/css/tooltip', name: 'Tooltip', component: <Tooltip uri={"/components/css/tooltip"} /> },
@@ -176,6 +182,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/pagination', name: 'Pagination', component: <Pagination uri={"/components/css/pagination"} /> },
   { path: '/css/progress', name: 'Progress', component: <Progress uri={"/components/css/progress"} /> },
   { path: '/css/organisms', name: 'Organisms', mdFile: require('./organisms/index.md') },
+  { path: '/css/block', name: 'block', mdFile: require('../catalog/components/exclude-from-metadata/blockquote.md') },
   { path: '/css/footer', name: 'Footer', component: <Footer uri={"/components/css/footer"} /> },
   { path: '/css/form', name: 'Form', component: <Form uri={"/components/css/form"} /> },
   { path: '/css/hero', name: 'Hero', component: <Hero uri={"/components/css/hero"} /> },
@@ -185,8 +192,7 @@ const COMPONENTS_ROUTES = [
   { path: '/utilities/favicon', name: 'Favicon', component: <Favicon uri={"/components/utilities/favicon"} /> },
   { path: '/css/icons', name: 'Icons', component: <Icons uri={"/components/css/icons"} /> },
   { path: '/utilities', name: 'Utilities', mdFile: require('./utilities/utilities.md') },
-  // Redirect if path is only /components.
-  { path: '/', name: '', component: <Redirect to={'/components/grid'} /> },
+
 ];
 const GUIDELINES_ROUTES = [
   {
@@ -247,56 +253,65 @@ const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange);
   let location = useLocation();
   return (
-    <Switch>
-      <Route path="/examples">
-        <Examples openModal={openModal} />
-      </Route>
-      {COMPONENTS_ROUTES.map((item) => (
-        <Route key={'/components' + item.path} path={'/components' + item.path}>
-          {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
+      <Switch>
+        <Route path="/examples">
+          <Examples openModal={openModal} />
         </Route>
-      ))}
-      <Route path="/get-started/introduction">
-        <Introduction />
-      </Route>
-      <Route path="/get-started/design">
-        <Designers />
-      </Route>
-      <Route path="/get-started/developer">
-        <Developers />
-      </Route>
-      <Route path={'/get-started'}>
-        <Redirect to={'/get-started/design'} />
-      </Route>
-      {GUIDELINES_ROUTES.map((item) => (
-        <Route key={item.path} path={item.path}>
-          {item.component}
+        {COMPONENTS_ROUTES.map((item) => (
+          <Route key={'/components' + item.path} path={'/components' + item.path}>
+            {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
+          </Route>
+        ))}
+        <Route path="/get-started/introduction">
+          <Introduction />
         </Route>
-      ))}
-      <Route path={'/guidelines'}>
-        <Guidelines />
-      </Route>
-      <Route exact path={'/articles/:articleId'} component={Articles} />
-      <Route path={'/articles'}>
-        <ArticlesOverview />
-      </Route>
-      <Route path={'/overview'}>
-        <ComponentOverview />
-      </Route>
-      <Route path={'/login'}>
-        <Login />
-      </Route>
-      <Route path={'/contact/new-request'}>
-        <Zendesk isNewRequest={true} />
-      </Route>
-      <Route path={'/contact/contact'}>
-        <Contact />
-      </Route>
+        <Route path="/get-started/design">
+          <Designers />
+        </Route>
+        <Route path="/get-started/developer">
+          <Developers />
+        </Route>
+        <Route path={'/get-started'}>
+          <Redirect to={'/get-started/design'} />
+        </Route>
+        {GUIDELINES_ROUTES.map((item) => (
+          <Route key={item.path} path={item.path}>
+            {item.component}
+          </Route>
+        ))}
+        <Route path={'/guidelines/principles'}>
+          <Principles />
+        </Route>
+        <Route path={'/guidelines'}>
+          <IntroductionGuideline />
+        </Route>
 
-      <Route path="/">
-        <Welcome />
-      </Route>
-    </Switch>
+        <Route path={'/components'}>
+          <IntroductionComponents />
+        </Route>
+        <Route exact path={'/articles/:articleId'} component={Articles} />
+        <Route path={'/articles'}>
+          <ArticlesOverview />
+        </Route>
+        <Route path={'/overview'}>
+          <ComponentOverview />
+        </Route>
+        <Route path={'/login'}>
+          <Login />
+        </Route>
+        <Route path={'/contact/new-request'}>
+          <Zendesk isNewRequest={true} />
+        </Route>
+        <Route path={'/contact/contact'}>
+          <Contact />
+        </Route>
+        <Route path={'/search'} component={FullSearchResult} />
+
+
+        <Route path="/">
+          <Welcome />
+        </Route>
+      </Switch>
   );
 };
 
