@@ -1,7 +1,5 @@
 (function ($) {
 
-
-
   const windowWidth = $(window).width()
   const cardContainer = $('.vf-carousel-card-container');
   const indicatorContainer = $('.vf-carousel-indicator-container');
