@@ -17,8 +17,6 @@ const NewZendeskRequest = ({ validEmail, isLoading, reportData, hasError, handle
         <img src={spinner} alt="" />
       </div>}
       <PageHeader title={"New asset request"} />
-
-
       <div className={styles.inputFieldsContainer}>
         <p>If you need a new asset, want to report an issue or submit a general suggestion on the Vattenfall digital
           design or code assets submit your details below and we will get back to you as soon as we can.</p>
@@ -35,8 +33,6 @@ const NewZendeskRequest = ({ validEmail, isLoading, reportData, hasError, handle
           <label
             htmlFor="vf_standard_input">{`${hasError.subject ? "Subject is required " : "Subject"}`}</label>
         </div>
-
-
         <div className="vf-input-container">
           <input type="text"
                  id="vf_standard_input"
