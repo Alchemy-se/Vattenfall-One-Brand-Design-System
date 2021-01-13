@@ -12799,19 +12799,19 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-input--blured-warning {
-  border: 1px solid #f5a623 !important;
+  border: 1px solid #ffb2a4 !important;
 }
 
 .vf-input--blured-warning:hover {
-  border: 1px solid #ffb2a4 !important;
+  border: 1px solid #f5a623 !important;
 }
 
 .vf-input--blured-error {
-  border: 1px solid #F93B18 !important;
+  border: 1px solid #ffb2a4 !important;
 }
 
 .vf-input--blured-error:hover {
-  border: 1px solid #ffb2a4 !important;
+  border: 1px solid #F93B18 !important;
 }
 
 .vf-input-container {

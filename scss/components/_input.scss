@@ -24,19 +24,19 @@
 }
 
 .vf-input--blured-warning {
-  border: 1px solid $vattenfall-warning-yellow !important;
+  border: 1px solid $vattenfall-warning-yellow-border !important;
 
   &:hover {
-    border: 1px solid  $vattenfall-warning-yellow-border !important;
+    border: 1px solid $vattenfall-warning-yellow !important;
   }
 
 }
 
 .vf-input--blured-error {
-  border: 1px solid $vattenfall-dark-red !important;
+  border: 1px solid $vattenfall-error-red-border !important;
 
   &:hover {
-    border: 1px solid $vattenfall-error-red-border !important;
+    border: 1px solid $vattenfall-dark-red !important;
   }
 }
 
