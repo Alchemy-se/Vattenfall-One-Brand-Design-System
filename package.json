@@ -1,6 +1,6 @@
 {
   "name": "@vf-alchemy/vattenfall-design-system",
-  "version": "1.0.0",
+  "version": "7.16.8",
   "main": "index.js",
   "scripts": {
     "start-webpack": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0 --port 3213 --hot --config documentation.webpack.config.js",
