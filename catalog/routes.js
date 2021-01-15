@@ -91,6 +91,8 @@ import Principles from "./lib/singlePages/principles";
 import Datepicker from "./components/datepicker/datepicker";
 import FullSearchResult from "./lib/singlePages/fullSearchResult";
 
+// parallax test
+import parallax from "./development/parallax"
 
 function usePageViews(onRouteChange) {
   let location = useLocation();
@@ -306,6 +308,7 @@ const Routes = ({ onRouteChange, openModal }) => {
           <Contact />
         </Route>
         <Route path={'/search'} component={FullSearchResult} />
+        <Route path={'/test'} component={parallax} />
 
 
         <Route path="/">
