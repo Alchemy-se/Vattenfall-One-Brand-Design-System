@@ -4,7 +4,7 @@
   //   const shorted = names[0].substr(0, 10) + '[...]';
   //   return shorted + "." + names[1];
   // };
-
+// test commit
   let fileArray = [];
   let selectedFiles = [];
   const maxFileSize = 200000;
