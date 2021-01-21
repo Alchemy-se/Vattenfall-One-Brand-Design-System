@@ -13852,7 +13852,8 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   }
 }
 
-.vf-file-upload__container, .vf-file-upload--dragndrop {
+.vf-file-upload__container,
+.vf-file-upload--dragndrop {
   width: 264px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13866,43 +13867,52 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   align-items: center;
 }
 
-.vf-file-upload__container input[type="file"], .vf-file-upload--dragndrop input[type="file"] {
+.vf-file-upload__container input[type='file'],
+.vf-file-upload--dragndrop input[type='file'] {
   display: none;
 }
 
-.vf-file-upload__container span, .vf-file-upload--dragndrop span {
+.vf-file-upload__container span,
+.vf-file-upload--dragndrop span {
   line-height: 0;
 }
 
-.vf-file-upload__container span:nth-child(1), .vf-file-upload--dragndrop span:nth-child(1) {
+.vf-file-upload__container span:nth-child(1),
+.vf-file-upload--dragndrop span:nth-child(1) {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.vf-file-upload__container .vf-file-upload__span--up-to-size, .vf-file-upload--dragndrop .vf-file-upload__span--up-to-size {
+.vf-file-upload__container .vf-file-upload__span--up-to-size,
+.vf-file-upload--dragndrop .vf-file-upload__span--up-to-size {
   color: #999999;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-.vf-file-upload__container span:nth-child(3), .vf-file-upload--dragndrop span:nth-child(3) {
+.vf-file-upload__container span:nth-child(3),
+.vf-file-upload--dragndrop span:nth-child(3) {
   line-height: 14px;
   font-size: 14px;
 }
 
-.vf-file-upload__container .errorBorder, .vf-file-upload--dragndrop .errorBorder {
-  border-color: #F93B18;
+.vf-file-upload__container .errorBorder,
+.vf-file-upload--dragndrop .errorBorder {
+  border-color: #f93b18;
 }
 
-.vf-file-upload__container .errorText, .vf-file-upload--dragndrop .errorText {
-  color: #F93B18;
+.vf-file-upload__container .errorText,
+.vf-file-upload--dragndrop .errorText {
+  color: #f93b18;
 }
 
-.vf-file-upload__container label, .vf-file-upload--dragndrop label {
+.vf-file-upload__container label,
+.vf-file-upload--dragndrop label {
   margin-bottom: 20px;
 }
 
-.vf-file-upload__container ul, .vf-file-upload--dragndrop ul {
+.vf-file-upload__container ul,
+.vf-file-upload--dragndrop ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -13910,6 +13920,9 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -13921,7 +13934,8 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   transition: all 0.4s ease;
 }
 
-.vf-file-upload__container ul li, .vf-file-upload--dragndrop ul li {
+.vf-file-upload__container ul li,
+.vf-file-upload--dragndrop ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13929,43 +13943,48 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 180px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.vf-file-upload__container ul img, .vf-file-upload--dragndrop ul img {
+.vf-file-upload__container ul img,
+.vf-file-upload--dragndrop ul img {
   height: 12px;
   line-height: 10px;
   margin: 0 4px;
   cursor: pointer;
 }
 
-.vf-file-upload__container ul .disabled, .vf-file-upload--dragndrop ul .disabled {
+.vf-file-upload__container ul .disabled,
+.vf-file-upload--dragndrop ul .disabled {
   color: #767676;
   background-color: #EEEEEE;
 }
 
-.vf-file-upload__container ul .errorText, .vf-file-upload--dragndrop ul .errorText {
-  color: #F93B18 !important;
+.vf-file-upload__container ul .errorText,
+.vf-file-upload--dragndrop ul .errorText {
+  color: #f93b18 !important;
 }
 
-.vf-file-upload__container ul .vf-icon-span, .vf-file-upload--dragndrop ul .vf-icon-span {
+.vf-file-upload__container ul .vf-icon-span,
+.vf-file-upload--dragndrop ul .vf-icon-span {
   line-height: 10px;
   margin: 0 0 0 10px;
   cursor: pointer;
 }
 
-.vf-file-upload__container ul .vf-icon-span::before, .vf-file-upload--dragndrop ul .vf-icon-span::before {
+.vf-file-upload__container ul .vf-icon-span::before,
+.vf-file-upload--dragndrop ul .vf-icon-span::before {
   font-size: 16px;
 }
 
@@ -14000,6 +14019,9 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -14019,16 +14041,16 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 180px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -14039,7 +14061,7 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
 }
 
 .vf-file-upload--dragndrop .errorText {
-  color: #F93B18;
+  color: #f93b18;
 }
 
 .vf-file-upload--dragndrop .vf-icon-span {
@@ -14050,10 +14072,11 @@ input:checked ~ .vf-gdpr-consent-module__checkbox:before {
 
 .vf-file-upload--dragndrop .vf-icon-span::before {
   font-size: 16px;
+  padding: 5px;
 }
 
 .is-dragover {
-  border: #1964A3 dashed thin;
+  border: #1964a3 dashed thin;
 }
 
 .box__dragndrop {

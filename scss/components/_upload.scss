@@ -1,12 +1,13 @@
-.vf-file-upload__container, .vf-file-upload--dragndrop {
+.vf-file-upload__container,
+.vf-file-upload--dragndrop {
   width: 264px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  input[type="file"] {
-  display: none;
-}
+  input[type='file'] {
+    display: none;
+  }
 
   span {
     // line-height: 28px;
@@ -32,11 +33,11 @@
   }
 
   .errorBorder {
-    border-color: #F93B18;
+    border-color: #f93b18;
   }
 
   .errorText {
-    color: #F93B18;
+    color: #f93b18;
   }
 
   label {
@@ -49,6 +50,7 @@
     margin: 0;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 28px;
@@ -56,12 +58,12 @@
     li {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       text-align: center;
       padding: 0;
       margin: 0;
-      width: 100%;
+      width: 180px;
       transition: all 0.4s ease;
     }
     img {
@@ -69,23 +71,23 @@
       line-height: 10px;
       margin: 0 4px;
       cursor: pointer;
-      }
-      .disabled {
-        color: $btn-primary-color-disabled;
-        background-color: $btn-primary-bg-disabled;
-      }
-      .errorText {
-        color: #F93B18 !important;
-      }
-      .vf-icon-span {
-        line-height: 10px;
-        margin: 0 0 0 10px;
-        cursor: pointer;
-      }   
-      .vf-icon-span::before {
-        font-size: 16px;
-      }
     }
+    .disabled {
+      color: $btn-primary-color-disabled;
+      background-color: $btn-primary-bg-disabled;
+    }
+    .errorText {
+      color: #f93b18 !important;
+    }
+    .vf-icon-span {
+      line-height: 10px;
+      margin: 0 0 0 10px;
+      cursor: pointer;
+    }
+    .vf-icon-span::before {
+      font-size: 16px;
+    }
+  }
 }
 
 .vf-file-upload--dragndrop {
@@ -105,41 +107,43 @@
     margin: 0;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 28px;
     transition: all 0.4s ease;
-      li {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        transition: all 0.4s ease;
-      }
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 180px;
+      transition: all 0.4s ease;
     }
-    .disabled {
-      color: $btn-primary-color-disabled;
-      background-color: $btn-primary-bg-disabled;
-    }
-    .errorText {
-      color: #F93B18;
-    }
-    .vf-icon-span {
-      line-height: 10px;
-      margin: 0 0 0 10px;
-      cursor: pointer;
-    }   
-    .vf-icon-span::before {
-      font-size: 16px;
-    }
+  }
+  .disabled {
+    color: $btn-primary-color-disabled;
+    background-color: $btn-primary-bg-disabled;
+  }
+  .errorText {
+    color: #f93b18;
+  }
+  .vf-icon-span {
+    line-height: 10px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+  }
+  .vf-icon-span::before {
+    font-size: 16px;
+    padding: 5px;
+  }
 }
 
 .is-dragover {
-  border: #1964A3 dashed thin;
+  border: #1964a3 dashed thin;
 }
 
 .box__dragndrop {
@@ -158,6 +162,3 @@
 .vf-file-upload__icon::before {
   font-size: 80px;
 }
-
-
-
