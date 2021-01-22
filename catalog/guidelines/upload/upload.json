@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Upload",
+    "description": "Upload",
+    "type": "guideline",
+    "uri": "/guidelines/upload",
+    "objectID": "upload-guideline",
+    "children": [
+      {
+        "name": "Basic upload example"
+      },
+      {
+        "name": "Drag and drop"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Upload"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/upload#basic-upload-example",
+    "description": "",
+    "objectID": "basic-upload-example-guideline",
+    "name": "Basic upload example",
+    "id": "upload-basic-upload-example"
+  },
+  {
+    "parent": [
+      {
+        "name": "Upload"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/upload#drag-and-drop",
+    "description": "",
+    "objectID": "drag-and-drop-guideline",
+    "name": "Drag and drop",
+    "id": "upload-drag-and-drop"
+  }
+]

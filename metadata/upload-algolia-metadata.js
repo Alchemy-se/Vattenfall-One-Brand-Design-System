@@ -16,7 +16,6 @@ async function uploadAlgoliaData() {
     try {
       const client = algoliasearch(APPLICATION_KEY, PRIVATE_KEY)
       const index = client.initIndex(INDEX_NAME)
-
       index.saveObjects(algoliaMetadata, {
         autoGenerateObjectIDIfNotExist: true
       })

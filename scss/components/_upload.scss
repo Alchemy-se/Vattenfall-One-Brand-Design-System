@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-.vf-file-upload__container {
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  input[type="file"] {
-    display: none;
-  }
-=======
 .vf-file-upload__container,
 .vf-file-upload--dragndrop {
   width: 264px;
@@ -19,51 +9,26 @@
     display: none;
   }
 
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
   span {
     // line-height: 28px;
     line-height: 0;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
   // Upload your...
   span:nth-child(1) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
-  // Up to...
-  span:nth-child(2) {
-=======
 
   .vf-file-upload__span--up-to-size {
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
     color: #999999;
     font-size: 14px;
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
   // Error text...
   span:nth-child(3) {
     line-height: 14px;
     font-size: 14px;
   }
-<<<<<<< HEAD
-  .errorBorder {
-    border-color: #F93B18;
-  }
-  .errorText {
-    color: #F93B18;
-  }
-  label {
-    margin-bottom: 20px;
-  }
-=======
 
   .errorBorder {
     border-color: #f93b18;
@@ -77,17 +42,13 @@
     margin-bottom: 20px;
   }
 
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 100%;
     display: flex;
-<<<<<<< HEAD
-=======
     justify-content: center;
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 28px;
@@ -95,18 +56,6 @@
     li {
       display: flex;
       flex-direction: row;
-<<<<<<< HEAD
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      width: 50%;
-      transition: all 0.4s ease;
-      button {
-        border: none;
-        background: none;
-        font-size: 20px;
-      }
-=======
       justify-content: space-between;
       align-items: center;
       text-align: center;
@@ -114,17 +63,10 @@
       margin: 0;
       width: 180px;
       transition: all 0.4s ease;
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
     }
     img {
       height: 12px;
       line-height: 10px;
-<<<<<<< HEAD
-      margin-left: 6px;
-      cursor: pointer;
-    }
-  }
-=======
       margin: 0 4px;
       cursor: pointer;
     }
@@ -217,5 +159,4 @@
 
 .vf-file-upload__icon::before {
   font-size: 80px;
->>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
 }
