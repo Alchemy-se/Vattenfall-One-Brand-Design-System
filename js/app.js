@@ -8,4 +8,7 @@ require("./components/tooltip.js");
 require("./components/notification-module.js");
 require("./components/gdpr-consent-module.js");
 require("./components/upload.js");
+<<<<<<< HEAD
 require("./components/datepicker.js");
+=======
+>>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af

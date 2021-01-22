@@ -18,6 +18,7 @@ import Button from './components/button/button';
 import Lists from './components/list/lists';
 import DropdownList from "./components/dropdown/dropdown";
 import Input from './components/input/input'
+import Upload from './components/upload/upload';
 import Welcome from './WELCOME';
 import Intro from './components/intro/intro';
 import Articles from './articles/articles';
@@ -71,8 +72,12 @@ import GuidelinesLogotype from './guidelines/logotype/Logotype';
 import GuidelinesIcons from './guidelines/icons/Icons';
 import GuidelinesSpacers from './guidelines/spacers/Spacers';
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics';
+<<<<<<< HEAD
 import GuidelinesCarousel from "./guidelines/carousel/carousel";
 
+=======
+import GuidelinesUpload from './guidelines/upload/Upload';
+>>>>>>> 41eec6b923a51ed9f24c9c30b7adaa091ffc33af
 
 // Other
 import Login from "./admin/login";
@@ -115,6 +120,7 @@ const COMPONENTS_ROUTES = [
   { path: '/css/button', name: 'Button', component: <Button uri={"/components/css/button"} /> },
   { path: '/css/drop-down', name: 'Drop-down List', component: <DropdownList uri={"/components/css/drop-down"} /> },
   { path: '/css/input', name: 'Input', component: <Input uri={"/components/css/input"} /> },
+  { path: '/css/upload', name: 'Upload', component: <Upload uri={"/components/css/ipload"} /> },
 
   {
     path: '/css/gdpr-consent-module',
@@ -201,6 +207,7 @@ const GUIDELINES_ROUTES = [
     component: <GuidelinesWrapper><GuidelinesButtons /></GuidelinesWrapper>
   },
   { path: '/guidelines/forms', name: 'Forms', component: <GuidelinesWrapper><GuidelinesForms /></GuidelinesWrapper> },
+  { path: '/guidelines/upload', name: 'Upload', component: <GuidelinesWrapper><GuidelinesUpload /></GuidelinesWrapper> },
   {
     path: '/guidelines/colors',
     name: 'Colors',
