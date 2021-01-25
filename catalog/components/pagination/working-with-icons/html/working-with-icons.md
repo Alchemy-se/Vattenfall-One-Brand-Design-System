@@ -1,7 +1,7 @@
 
-## Working with icons
+## Icons
 
-Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with `aria` attributes.
+When you want to use an icon or symbol as pagination, be sure to provide screen reader support with `aria` attributes.
 
 ```html
 showSource: true

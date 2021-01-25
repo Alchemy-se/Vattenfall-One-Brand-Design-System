@@ -1,1 +1,1 @@
-Contains things that aren't really components, but still useful for developers.
+Contains things that aren’t components, but still useful for developers.

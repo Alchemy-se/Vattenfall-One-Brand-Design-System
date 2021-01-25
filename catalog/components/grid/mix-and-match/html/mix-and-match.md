@@ -1,7 +1,7 @@
 
 ### Mix and match
 
-Don't want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.
+If you don’t want your columns to simply stack in grid tiers, use a combination of different classes for each tier as needed. See the example below.
 
 ```html
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->

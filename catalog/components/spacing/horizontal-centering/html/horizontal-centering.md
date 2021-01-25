@@ -1,7 +1,7 @@
 
 ### Horizontal centering
 
-Additionally, VF Design System also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
+Additionally, the Vattenfall Digital Design System (DDS) also includes an `.mx-auto` class for horizontally centering fixed-width block level content. That is content that has `display: block` and a width set—by setting the horizontal margins to `auto`.
 
 ```html
 showSource: true

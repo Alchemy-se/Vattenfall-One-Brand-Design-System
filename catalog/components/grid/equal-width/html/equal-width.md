@@ -5,7 +5,7 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
 
 ### Equal-width
 
-For example, here are two grid layouts that apply to every device and viewport, from `xs` to `xl`. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+Here are two grid layout examples that apply to every device and viewport, from `xs` to `xl`. Add any number of unit-less classes for each breakpoint you need, and every column will be the same width.
 
 ```html
 <div class="vf-container">
@@ -31,7 +31,7 @@ For example, here are two grid layouts that apply to every device and viewport, 
 </div>
 ```
 
-Equal-width columns can be broken into multiple lines, but there was a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#flexbug-11) that prevented this from working without an explicit `flex-basis` or `border`. There are workarounds for older browser versions, but they shouldn't be necessary if you're up-to-date.
+Equal width columns can be broken into multiple lines, but there was a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#flexbug-11) that prevented this from working without an explicit `flex-basis` or `border`. There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up to date.
 
 ```html
 <div class="vf-container">

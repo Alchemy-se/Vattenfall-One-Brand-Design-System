@@ -1,6 +1,6 @@
 # Three columns
 
-The three column content box is made using the regular Grid system, but gives an example of how you can use the grid in a way fitting to Vattenfall's design guidelines.
+The three column content box is made with the regular grid system. It’s an example of how to use the grid in accordance with the Vattenfall’s design guidelines.
 
 ```html
 showSource: true

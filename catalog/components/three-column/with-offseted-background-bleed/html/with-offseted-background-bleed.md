@@ -1,7 +1,7 @@
 
-## Three column with offseted background bleed
+## Three columns with offseted background bleed
 
-To get a offseted background bleed, simply add a negative `margin-top` to the `.container` element, and a positive `margin-top` style to the containing `.container-bleed` element.
+To achieve offseted background bleed, simply add a negative `margin-top` to the `.container` element, and a positive `margin-top` style to the containing `.container-bleed` element.
 
 ```
 <!-- The styles here are examples, and should of course be in the css file and handle the responsive states. -->

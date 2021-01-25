@@ -1,4 +1,4 @@
-Linked List block is used to display an image or a video with some text and a long list of links.
+A linked list block is used to display an image or a video with some text plus a list of links.
 ## Standard
 ```html
 responsive: true

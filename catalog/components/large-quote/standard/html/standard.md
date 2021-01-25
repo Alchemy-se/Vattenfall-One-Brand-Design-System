@@ -1,4 +1,5 @@
-Large quote component features a prominent image, a quote and a byline.
+
+The large quote component features a prominent image, a quote and a byline.
 
 ### Standard
 ```html
