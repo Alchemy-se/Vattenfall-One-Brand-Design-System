@@ -1,5 +1,5 @@
-import React from 'react'
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
+import React, { useEffect } from 'react';
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 import Examples from './EXAMPLES'
 import Guidelines from './guidelines'
@@ -36,7 +36,8 @@ import Subscribe from './components/subscribe/subscribe'
 import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
-import ParallaxImageBlock from './components/parallax-image-block/parallax-image-block'
+// import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+import ParallaxImageBlock from './development/parallax'
 import Footer from './components/footer/footer'
 import Form from './components/form/form'
 import TabBar from './components/tab-bar/tab-bar'
@@ -91,9 +92,26 @@ import Principles from './lib/singlePages/principles'
 import Datepicker from './components/datepicker/datepicker'
 import FullSearchResult from './lib/singlePages/fullSearchResult'
 
+// disable scroll navigation on parallax page
+function toggleScrollNavigation(pathname) {
+  // triggers a component mount to make sure the element is rendered.
+  useEffect(() => {
+    let container = document.querySelector('.main__container___31py4')
+    if (
+      container != null &&
+      pathname === '/components/css/parallax-image-block/'
+    ) {
+      container.style.overflow = 'unset'
+    } else {
+      container.style.overflow = 'scroll'
+    }
+  }, [pathname])
+} 
+
 function usePageViews(onRouteChange) {
   let location = useLocation()
   onRouteChange(location.pathname)
+  toggleScrollNavigation(location.pathname)
 }
 
 const COMPONENTS_ROUTES = [
