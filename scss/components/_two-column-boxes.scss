@@ -2,9 +2,7 @@
   @include make-container();
   max-width: $bleed-container-max-width;
   position: relative;
-  padding-top: 1px; // Trigger margin offset
-  // padding: 1px 0 0 0;
-
+ 
   margin-bottom: $spacing-xl;
   width: 1440px;
   height: 640px;
@@ -40,6 +38,10 @@
   }
 }
 
+  .vf-two-column-boxes__title {
+    padding-left: 20px;
+  }
+
   .vf-two-column-boxes__headline {
     width: 90%;
     text-align: left;
@@ -62,7 +64,7 @@
       text-align: center;
       width: 744px;
       left: 328px;
-      top:115px;
+      top:171px;
       z-index: 20;
       // padding: 0 20px;
       // transform: none !important;
@@ -89,11 +91,10 @@
   }
   
   .vf-two-column-boxes__content {
-    // margin-top:35px;
-    // padding-right: 12px;
-    width: 55%;
+    width: 784px;
     background:$vattenfall-light-blue;
     position: absolute;
+    top: 56px;
     right: 0;
     
     border-radius: 0px;

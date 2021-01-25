@@ -1,16 +1,10 @@
-import React, {Fragment} from "react"
+import React, {Fragment, useEffect} from "react"
 import { useScript } from "../../helpers/hooks/useEffects/useScript"
-const parallax = () => {
-    
-    let container = document.querySelector(".main__container___31py4")
-    if (container != null) container.style.overflow = "unset"
-
+const parallax = () => {   
     useScript("/js/horizon.min.js")
     return (
         <Fragment>
-            <h2>Parallax Image Block</h2>
-            <h2>Parallax Image Block</h2>
-            <h2>Parallax Image Block</h2>
+            <h2 className="vf-two-column-boxes__title">Parallax Image Block</h2>
             <section className="vf-two-column-boxes">
                 <h3 className="vf-two-column-boxes__headline">
                     Energy solutions <br />
@@ -28,6 +22,7 @@ const parallax = () => {
                         <a href="#" className="vf-link-with-arrow">Read more</a>
                     </div>
                 </div>
+                <div style={{height:"150vh"}}></div>
             </section>
         </Fragment>
     )

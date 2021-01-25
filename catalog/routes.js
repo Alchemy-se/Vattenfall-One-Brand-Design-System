@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 import Examples from './EXAMPLES';
@@ -35,7 +35,8 @@ import Subscribe from "./components/subscribe/subscribe";
 import IconText from "./components/icon-text/icon-text";
 import ButtonGroup from "./components/button-group/button-group";
 import CookieBanner from "./components/cookie-banner/cookie-banner";
-import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+// import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+import ParallaxImageBlock from './development/parallax'
 import Footer from "./components/footer/footer";
 import Form from "./components/form/form";
 import TabBar from "./components/tab-bar/tab-bar";
@@ -92,11 +93,28 @@ import Datepicker from "./components/datepicker/datepicker";
 import FullSearchResult from "./lib/singlePages/fullSearchResult";
 
 // parallax test
-import parallax from "./development/parallax"
+// import parallax from "./development/parallax"
+
+// disable scroll navigation on parallax page
+function toggleScrollNavigation(pathname) {
+  // triggers a component mount to make sure the element is rendered.
+  useEffect(() => {
+    let container = document.querySelector('.main__container___31py4')
+    if (
+      container != null &&
+      pathname === '/components/css/parallax-image-block/'
+    ) {
+      container.style.overflow = 'unset'
+    } else {
+      container.style.overflow = 'scroll'
+    }
+  }, [pathname])
+} 
 
 function usePageViews(onRouteChange) {
   let location = useLocation();
   onRouteChange(location.pathname);
+  toggleScrollNavigation(location.pathname)
 }
 
 
@@ -255,67 +273,74 @@ const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange);
   let location = useLocation();
   return (
-      <Switch>
-        <Route path="/examples">
-          <Examples openModal={openModal} />
+    <Switch>
+      <Route path='/examples'>
+        <Examples openModal={openModal} />
+      </Route>
+      {COMPONENTS_ROUTES.map(item => (
+        <Route key={'/components' + item.path} path={'/components' + item.path}>
+          {item.component ? (
+            item.component
+          ) : (
+            <DynamicView title={item.name} mdFile={item.mdFile} />
+          )}
         </Route>
-        {COMPONENTS_ROUTES.map((item) => (
-          <Route key={'/components' + item.path} path={'/components' + item.path}>
-            {item.component ? item.component : <DynamicView title={item.name} mdFile={item.mdFile} />}
-          </Route>
-        ))}
-        <Route path="/get-started/introduction">
-          <Introduction />
+      ))}
+      <Route path='/get-started/introduction'>
+        <Introduction />
+      </Route>
+      <Route path='/get-started/design'>
+        <Designers />
+      </Route>
+      <Route path='/get-started/developer'>
+        <Developers />
+      </Route>
+      <Route path={'/get-started'}>
+        <Redirect to={'/get-started/design'} />
+      </Route>
+      {GUIDELINES_ROUTES.map(item => (
+        <Route key={item.path} path={item.path}>
+          {item.component}
         </Route>
-        <Route path="/get-started/design">
-          <Designers />
-        </Route>
-        <Route path="/get-started/developer">
-          <Developers />
-        </Route>
-        <Route path={'/get-started'}>
-          <Redirect to={'/get-started/design'} />
-        </Route>
-        {GUIDELINES_ROUTES.map((item) => (
-          <Route key={item.path} path={item.path}>
-            {item.component}
-          </Route>
-        ))}
-        <Route path={'/guidelines/principles'}>
-          <Principles />
-        </Route>
-        <Route path={'/guidelines'}>
-          <IntroductionGuideline />
-        </Route>
+      ))}
+      <Route path={'/guidelines/principles'}>
+        <Principles />
+      </Route>
+      <Route path={'/guidelines'}>
+        <IntroductionGuideline />
+      </Route>
 
-        <Route path={'/components'}>
-          <IntroductionComponents />
-        </Route>
-        <Route exact path={'/articles/:articleId'} component={Articles} />
-        <Route path={'/articles'}>
-          <ArticlesOverview />
-        </Route>
-        <Route path={'/overview'}>
-          <ComponentOverview />
-        </Route>
-        <Route path={'/login'}>
-          <Login />
-        </Route>
-        <Route path={'/contact/new-request'}>
-          <Zendesk isNewRequest={true} />
-        </Route>
-        <Route path={'/contact/contact'}>
-          <Contact />
-        </Route>
-        <Route path={'/search'} component={FullSearchResult} />
-        <Route path={'/test'} component={parallax} />
+      <Route path={'/components'}>
+        <IntroductionComponents />
+      </Route>
+      <Route exact path={'/articles/:articleId'} component={Articles} />
+      <Route path={'/articles'}>
+        <ArticlesOverview />
+      </Route>
+      <Route path={'/overview'}>
+        <ComponentOverview />
+      </Route>
+      <Route path={'/login'}>
+        <Login />
+      </Route>
+      <Route path={'/contact/new-request'}>
+        <Zendesk isNewRequest={true} />
+      </Route>
+      <Route path={'/contact/contact'}>
+        <Contact />
+      </Route>
+      <Route path={'/search'} component={FullSearchResult} />
+      {/* <Route
+        path={'/components/css/parallax-image-block'}
+        component={parallax}
+        location={location}
+      /> */}
 
-
-        <Route path="/">
-          <Welcome />
-        </Route>
-      </Switch>
-  );
+      <Route path='/'>
+        <Welcome />
+      </Route>
+    </Switch>
+  )
 };
 
 export default Routes;

@@ -11073,7 +11073,6 @@ a.vf-card:hover {
   margin-left: auto;
   max-width: 1680px;
   position: relative;
-  padding-top: 1px;
   margin-bottom: 88px;
   width: 1440px;
   height: 640px;
@@ -11128,6 +11127,10 @@ a.vf-card:hover {
   top: 458px;
 }
 
+.vf-two-column-boxes__title {
+  padding-left: 20px;
+}
+
 .vf-two-column-boxes__headline {
   width: 90%;
   text-align: left;
@@ -11147,7 +11150,7 @@ a.vf-card:hover {
     text-align: center;
     width: 744px;
     left: 328px;
-    top: 115px;
+    top: 171px;
     z-index: 20;
   }
 }
@@ -11171,9 +11174,10 @@ a.vf-card:hover {
 }
 
 .vf-two-column-boxes__content {
-  width: 55%;
+  width: 784px;
   background: #EDF1F6;
   position: absolute;
+  top: 56px;
   right: 0;
   border-radius: 0px;
   height: 640px;
