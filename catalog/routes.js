@@ -36,8 +36,11 @@ import Subscribe from './components/subscribe/subscribe'
 import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
+
+// PARALLAX
 // import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
 import ParallaxImageBlock from './development/parallax'
+
 import Footer from './components/footer/footer'
 import Form from './components/form/form'
 import TabBar from './components/tab-bar/tab-bar'
