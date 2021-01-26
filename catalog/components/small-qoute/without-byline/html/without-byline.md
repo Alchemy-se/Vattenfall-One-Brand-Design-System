@@ -1,4 +1,4 @@
-Quote component for shorter amounts of text, if you're looking for a more impactful component, checkout [Large Quote](/css/large-quote).
+Use the quote component for short texts. If you’re looking for a more impactful component, check out [Large Quote](/css/large-quote).
 
 ## Without byline
 

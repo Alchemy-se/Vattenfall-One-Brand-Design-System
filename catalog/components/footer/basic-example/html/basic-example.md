@@ -1,4 +1,4 @@
-The footer component is used on most Vattenfall pages, and contains links, social media icons and an area for a short text message.
+The website footer component is used on most Vattenfall pages. It contains links, social media icons and an area for a short text message.
 
 ### Basic example
 

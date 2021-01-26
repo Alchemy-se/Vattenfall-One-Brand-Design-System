@@ -1,6 +1,6 @@
 ## Quick start
 
-The Vattenfall Design System provides front-end developers & engineers a collection of reusable HTML and CSS classes, as well ass SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+The DDS provides front-end developers and engineers with a collection of reusable HTML and CSS classes, as well as SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent mark-up, styles, and behaviour in prototype and production work
 
 ### Installation
 
@@ -55,13 +55,13 @@ That's all you need for overall page requirements.
 
 ### SCSS
 
-You can choose to only include certain components and mixins from the design system if you choose. There is however a few things that you need to take into consideration then.
+You can choose to only include components and mixins from the DDS. When doing so, there are however a few things that you need to take into consideration.
 
 #### Autoprefixer
 Make sure your build process uses autoprefixer to ensure vendor prefixes are automatically added to your output CSS.
 
 #### Global SCSS variables
-These variables are used to configure which parts of the SCSS get compiled and some colors and such.
+These variables are used to configure which parts of the SCSS get compiled.
 
 All variables are found in `_variables.scss`.
 
@@ -75,15 +75,15 @@ To add a component style to your build, simply import the component directly.
 Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 #### Namespacing
-Vattenfall Design System Components are built to be included individually and not clobber global styles - all class attributes are prefixed by the vf-- moniker. 
+The DDS components are built to be included individually and not clobber global styles – all class attributes are prefixed by the vf-- moniker.
 
 ## Important globals
 
-VF Design System employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the *normalization* of cross browser styles. Let's dive in.
+The DDS employs a handful of important global styles and settings, all of which are almost exclusively geared towards the normalisation of cross browser styles. 
 
 ### HTML5 doctype
 
-VF Design System requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
+The DDS requires the use of the HTML5 doctype. Without it, you’ll see some incomplete styling.
 
 ```
 <!doctype html>
@@ -94,8 +94,7 @@ VF Design System requires the use of the HTML5 doctype. Without it, you'll see s
 
 ### Responsive meta tag
 
-VF Design System is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
-
+The DDS is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>`.
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 ```

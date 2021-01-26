@@ -18,76 +18,74 @@ const modulesCombined = '/img/guidelines/spacers/modules-combined.jpg';
 const Spacers = () => {
   return (
     <Fragment>
-      <PageHeader title="Spacers" />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <PageHeader title='Spacers' />
+      <section className='p-2 vf-border-top-gray-200'></section>
       <p className={`${styles.guidelinesText}`}>
-        The Spacers come in four sizes, Small 28px, Medium 44px, Large 56px and Extra Large 88px. You'll find them under{' '}
-        <br />
-        Utility in the library. Important to note is that all distances between individual modules are 88px aka the
-        "Spacer - Extra <br />
-        Large" on the desktop and 28ps on Mobile.
+        Spacers come in four sizes, Small 28px, Medium 44px, Large 56px and
+        Extra Large 88px. You’ll find them under Utility in the library. Please
+        note that all distances between individual modules are 88px on desktop
+        and 28px on Mobile.
       </p>
-      <div className="vf-row w-50">
-        <div className="vf-col-lg-12">
-          <h4 className="use-in-toc">Spacer - Extra large - 88px</h4>
+      <div className='vf-row w-50'>
+        <div className='vf-col-lg-12'>
+          <h4 className='use-in-toc'>Spacer - Extra large - 88px</h4>
           <img style={{ width: '100%' }} src={Group7} />
         </div>
-        <div className="vf-col-lg-12">
-          <h4 className="use-in-toc">Spacer - Large - 56px</h4>
+        <div className='vf-col-lg-12'>
+          <h4 className='use-in-toc'>Spacer - Large - 56px</h4>
           <img style={{ width: '100%' }} src={Group6} />
         </div>
-        <div className="vf-col-lg-12">
-          <h4 className="use-in-toc">Spacer - Medium - 44px</h4>
+        <div className='vf-col-lg-12'>
+          <h4 className='use-in-toc'>Spacer - Medium - 44px</h4>
           <img style={{ width: '100%' }} src={Group5} />
         </div>
-        <div className="vf-col-lg-12">
-          <h4 className="use-in-toc">Spacer - Small - 28px</h4>
+        <div className='vf-col-lg-12'>
+          <h4 className='use-in-toc'>Spacer - Small - 28px</h4>
           <img style={{ width: '100%' }} src={Group4} />
         </div>
       </div>
-      <section className="p-2 vf-border-top-gray-200"></section>
-      <div className="row align-items-start">
-        <h2 className="use-in-toc">Example – Desktop</h2>
+      <section className='p-2 vf-border-top-gray-200'></section>
+      <div className='row align-items-start'>
+        <h2 className='use-in-toc'>Example – Desktop</h2>
         <p className={`${styles.guidelinesText}`}>
-          Example of applied spacers in the Image block Module. To visually see the spacers, turn on eye symbol inside
-          of "Utility / <br />
-          Spacers"
+          Example of spacers in the Image block Module. For visual guidance when
+          designing, click on the eye symbol inside "Utility / Spacers".
         </p>
       </div>
-      <div className="vf-row">
-        <div className="vf-col">
+      <div className='vf-row'>
+        <div className='vf-col'>
           <img style={{ width: '100%' }} src={Group16} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <h2 className="use-in-toc">Example – Mobile</h2>
+      <div className='row align-items-start'>
+        <h2 className='use-in-toc'>Example – Mobile</h2>
         <p className={`${styles.guidelinesText}`}>
-          Example of applied spacers in the Image block Mobile Module. To visually see the spacers, turn on eye symbol
-          inside
-          <br />
-          of "Utility / Spacers"
+          Example of applied spacers in the Image block Mobile Module. For
+          visual guidance when designing, click on the eye symbol inside
+          "Utility / Spacers".
         </p>
       </div>
-      <div className="vf-row">
-        <div className="vf-col-lg-4">
+      <div className='vf-row'>
+        <div className='vf-col-lg-4'>
           <img style={{ width: '100%' }} src={Group17} />
         </div>
       </div>
-      <div className="row align-items-start">
-        <h2 className="use-in-toc">Distance Between modules – Desktop</h2>
+      <div className='row align-items-start'>
+        <h2 className='use-in-toc'>Distance Between modules – Desktop</h2>
         <p className={`${styles.guidelinesText}`}>
-          Important to note is that all distances between individual modules are 88px ka the "Spacer - Extra Large" on
-          desktop <br />
-          Exception is for the modules named "media block" with image that hangs down,then use 2 of the 88px spacers.
+          Please note that all distances between individual modules are 88px –
+          like the "Spacer – Extra Large" – on desktop. One exception is for the
+          module named "media block" (where the image continues below the
+          background colour). Use two of the 88px spacers here.
         </p>
       </div>
-      <div className="vf-row">
-        <div className="vf-col">
+      <div className='vf-row'>
+        <div className='vf-col'>
           <img style={{ width: '100%' }} src={modulesCombined} />
         </div>
       </div>
     </Fragment>
-  );
+  )
 };
 
 export default Spacers;

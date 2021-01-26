@@ -1,5 +1,5 @@
 
-## Colors
+## Colours
 
 ```html
 <p class="vf-text--body">.vf-text--body</p>

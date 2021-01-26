@@ -10,7 +10,7 @@ export default class ImageBlock extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={'Image block'}/>
+        <PageHeader title={'Image Blocks'}/>
         <Markdown source={markdown} />
         <Modals uri={this.props.uri} />
       </React.Fragment>

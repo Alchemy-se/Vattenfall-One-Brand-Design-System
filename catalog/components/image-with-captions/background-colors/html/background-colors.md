@@ -1,5 +1,5 @@
 
-## Background Colors
+## Background Colours
 
 The following background colors are okay to use as background colors. Use any of these helper classes.
 

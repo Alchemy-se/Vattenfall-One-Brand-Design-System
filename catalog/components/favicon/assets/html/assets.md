@@ -1,6 +1,6 @@
 # Assets
 
-Different common sizes for download below
+See different sizes for download below.
 
 ```download
 title: Favicon 48x48px ICO

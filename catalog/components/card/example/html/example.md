@@ -1,4 +1,4 @@
-The card is mostly used for presenting shorter, article like, content segments. Like news posts.
+The card is mostly used for presenting shorter, article like content segments, e.g. news posts.
 
 ## Example
 ```html

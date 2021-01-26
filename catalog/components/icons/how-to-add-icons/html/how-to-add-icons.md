@@ -1,4 +1,4 @@
-Several icons are availble as fonts. This list will be continually expanded upon.
+Several icons are available as fonts. More options will be added continuously.
 
 # How to add an icon
 

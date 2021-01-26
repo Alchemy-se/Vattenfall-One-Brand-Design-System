@@ -14,10 +14,6 @@ Vattenfall Design Kit on Abstract
 Vattenfall Design Kit on Github
 
 ### Design Kit Structure
-Have a look at the Design Kit structure here. It is a nested library of symbols for all everyday design needs. It is grouped by a type of module or component with different aspects depending on the use case of such.
+The VDK structure is a nested library of symbols, grouped by type of module or component. The library contains more that 500 ready-to-use design snippets: from simple buttons to more complex modules. 
 
-
-The library of Design Kit contains more that 500 ready-to-use design snippets: from simply buttons to more complex modules. Make sure to study the component library as well and use components with correct naming.
-
-We use a simplified version of the Atomic Design methodology, which we have adapted to suit our design process and our team culture. The main difference with Atomic Design is that all modules are either an atom or a molecule, categorised by purpose. Having organisms used to cause confusion in the team, so we removed them.
-Our approach to defining modules and naming them is function directed, rather than presentational. It is based on evolving a shared design language collaboratively and empowering all designers and engineers on the team to contribute to the system.
+Make sure to study the component library and use components with correct naming. We use a simplified version of the Atomic Design methodology, adapted to suit our design process and our team culture. The main difference with Atomic Design is that all modules are either an atom or a molecule, categorised by purpose. Our approach to defining modules and naming them is function-directed, rather than presentational. It is based on evolving a shared design language collaboratively and empowering all designers and engineers on the team to contribute to the system.

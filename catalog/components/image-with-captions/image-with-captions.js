@@ -11,7 +11,7 @@ export default class ImageWithCaptions extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={"Image with captions"} />
+        <PageHeader title={"Image with Captions"} />
         <Markdown source={markdown} />
         <Modals uri={this.props.uri} />
       </React.Fragment>

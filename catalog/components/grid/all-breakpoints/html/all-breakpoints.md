@@ -1,7 +1,7 @@
 
 ## Responsive classes
 
-VF Design System's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on small, medium, large, or extra large devices however you see fit.
+The Vattenfall Digital Design System’s grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on small, medium, large, or extra-large devices however you see fit.
 
 ### All breakpoints
 
