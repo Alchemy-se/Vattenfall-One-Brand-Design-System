@@ -102,7 +102,7 @@ function toggleScrollNavigation(pathname) {
     let container = document.querySelector('.main__container___31py4')
     if (
       container != null &&
-      pathname === '/components/css/parallax-image-block/'
+      pathname.includes('/components/css/parallax-image-block')
     ) {
       container.style.overflow = 'unset'
     } else {
