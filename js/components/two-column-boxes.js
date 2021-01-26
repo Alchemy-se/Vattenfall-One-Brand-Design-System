@@ -43,31 +43,30 @@
 // }
 
 if (window.innerWidth >= 992) {
-  const parallax = () => {
+  // const parallax = () => {
     
-    let scrollY = window.scrollY
-    let intViewportHeight = window.innerHeight
+  //   let scrollY = window.scrollY
+  //   let intViewportHeight = window.innerHeight
 
-    console.log("scroll Y", scrollY)
-    console.log("intViewportHeight", intViewportHeight)
+  //   console.log("scroll Y", scrollY)
+  //   console.log("intViewportHeight", intViewportHeight)
 
-  }
+  // }
   
-  let box = document.querySelector(".vf-two-column-boxes")
+  // let box = document.querySelector(".vf-two-column-boxes")
   // console.log(box.getBoundingClientRect())
-  // let imageBox = document.querySelector('.vf-two-column-boxes__image img')
-  // let image = imageBox.children[0]
+  let imageBox = document.querySelector('.vf-two-column-boxes__image')
+  let image = imageBox.children[0]
 
   // console.log(imageBox.offsetTop)
   
   window.addEventListener("scroll", function () {
-    parallax()
-    // let wh = window.outerHeight
-    // let scroll = window.scrollY
-    // if (scroll < wh * 0.15)
-    // {
-    //   // console.log()
-    //   // image.style.width = 100 + scroll / 30 + '%'
-    // }
+    // parallax()
+    let wh = window.outerHeight
+    let scroll = window.scrollY
+    if (scroll < wh * 0.15)
+    {
+      image.style.width = 100 + scroll / 30 + '%'
+    }
   })
 }
