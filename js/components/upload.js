@@ -54,6 +54,7 @@
 
   // BASIC UPLOAD (vanilla javascript)
   window.onload = () => {
+
     // variables for BASIC UPLOAD
     let ulElement = document.getElementById('vf-file-upload__filelist')
     let upToSize = document.getElementById('up-to-size')
@@ -62,8 +63,8 @@
     )
     let uploadForm = document.getElementById('vf-file-upload__container')
     let fileArray = []
-
-    if (uploadForm.classList.contains('vf-file-upload__container')) {
+    
+    if (uploadForm && uploadForm.classList.contains('vf-file-upload__container')) {
       document
         .getElementById('vf-file-upload__button')
         .addEventListener('change', e => {

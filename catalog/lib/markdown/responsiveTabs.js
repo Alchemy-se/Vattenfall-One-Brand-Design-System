@@ -15,8 +15,11 @@ class Frame extends Component {
 
 
   renderFrameContent() {
-    let doc = ReactDOM.findDOMNode(this).contentDocument;
-    if (doc.readyState === 'complete') {
+    let doc = document.querySelector('.responsiveTabs__iframe___1nTCV')
+      .contentDocument
+    
+    if (doc.readyState === 'interactive') {
+
       let contents = React.createElement(
         "div",
         null,

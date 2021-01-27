@@ -89,9 +89,9 @@ const Heading = (props) => {
         <h5 id={getId(props.children)} key={"heading-" + props.children[0].key}
             className={styles.headingContainer + " find_by_header"}>
           {
-            props.children.map(child => {
+            props.children.map((child, index) => {
               if (child.props.inline) {
-                return <code>{child.props.value}</code>
+                return <code key={index}>{child.props.value}</code>
               }
               return child.props.value
             })
