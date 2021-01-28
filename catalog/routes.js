@@ -36,6 +36,7 @@ import Subscribe from './components/subscribe/subscribe'
 import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
+import Navigation from "./components/navigation/Navigation"
 
 // PARALLAX
 // import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -102,7 +103,7 @@ function toggleScrollNavigation(pathname) {
     let container = document.querySelector('.main__container___31py4')
     if (
       container != null &&
-      pathname === '/components/css/parallax-image-block/'
+      pathname.includes('/components/css/parallax-image-block')
     ) {
       container.style.overflow = 'unset'
     } else {
@@ -173,7 +174,7 @@ const COMPONENTS_ROUTES = [
   {
     path: '/css/upload',
     name: 'Upload',
-    component: <Upload uri={'/components/css/ipload'} />,
+    component: <Upload uri={'/components/css/upload'} />,
   },
 
   {
@@ -191,6 +192,11 @@ const COMPONENTS_ROUTES = [
   /*
     { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
   */
+  {
+    path: "/css/navigation",
+    name: "Navigation",
+    component: <Navigation uri={"/components/css/navigation"} />,
+  },
   {
     path: '/css/preloader',
     name: 'Preloader',

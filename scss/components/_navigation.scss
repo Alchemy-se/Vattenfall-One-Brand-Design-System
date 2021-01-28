@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'VattenfallHall-Medium';
+  src: url($fontPath + '/VattenfallHall-Medium.eot');
+  src: url($fontPath + '/VattenfallHall-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Medium.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.vf-navigation {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: auto;
+  padding: 0;
+}
+
+.vf-navigation__default {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 56px;
+  left: 1em;
+  right: 1em;
+  display: flex;
+  justify-content: center;
+
+  span {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+
+.vf-navigation__default-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  span {
+    padding: 18px;
+  }
+}
+
+.vf-logo__navigation {
+  height: 56px;
+}
+
+.vf-navigation__search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 56px;
+  right: 1em;
+  left: 1em;
+  height: 160px;
+  background: rgb(235, 242, 243);
+  visibility: hidden;
+  input {
+    text-indent: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 36px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-family: VattenfallHall-Medium;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+  }
+
+  input:focus {
+    outline: none;
+  }
+  input::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(0, 0, 0);
+  }
+
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(0, 0, 0);
+  }
+
+  input::placeholder {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.vf-navigation__menu-level-1,
+.vf-navigation__menu-level-2,
+.vf-navigation__menu-level-3,
+.vf-navigation__menu-level-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+  display: none;
+
+  li {
+    div {
+      min-height: 54px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      a {
+        font-family: VattenfallHall-Medium;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 20px);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      span {
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.vf-navigation__menu-level-1 {
+  margin-top: calc(56px - 1em);
+  border-top: 1px solid rgb(220, 221, 220);
+  border-bottom: 1px solid rgb(220, 221, 220);
+}
+
+.vf-navigation__menu-level-1 > li > div {
+  background: #fff;
+  border-bottom: 1px solid rgb(220, 221, 220);
+}
+
+.vf-navigation__menu-level-2 li div {
+  background: rgb(237, 241, 246);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  margin-bottom: 1px;
+}
+
+.vf-navigation__menu-level-3 li div {
+  margin-bottom: 1px;
+  background: rgb(242, 242, 242);
+  a {
+    width: calc(100% - 33px);
+    margin-left: 13px;
+  }
+}
+
+.vf-navigation__menu-level-4 li div {
+  border: 1px solid #fff;
+  background: rgb(242, 242, 242);
+  a {
+    width: calc(100% - 46px);
+    margin-left: 26px;
+  }
+}
+
+.vf-navigation__menu-list-empty {
+  height: 53px;
+}
