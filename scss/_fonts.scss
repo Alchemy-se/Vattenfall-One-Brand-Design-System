@@ -1,142 +1,188 @@
+// @font-face {
+//   font-family: 'VattenfallHall-Medium';
+//   src: url('../fonts/VattenfallHall-Medium.eot');
+//   src: url('../fonts/fonts/VattenfallHall-Medium.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('../fonts/fonts/VattenfallHall-Medium.woff2') format('woff2'),
+//     url('../fonts/fonts/VattenfallHall-Medium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'VattenfallHall-Regular';
+//   src: url('../fonts/VattenfallHall-Regular.eot');
+//   src: url('../fonts/VattenfallHall-Regular.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('../fonts/VattenfallHall-Regular.woff2') format('woff2'),
+//     url('../fonts/VattenfallHall-Regular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-Light.eot");
-  src: url($fontPath + "/VattenfallHall-Light.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Light.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Light.woff") format("woff");
+  font-family: 'VattenfallHallDisplay-Bold';
+  src: url('../fonts/VattenfallHallDisplay-Bold.eot');
+  src: url('../fonts/VattenfallHallDisplay-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/VattenfallHallDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/VattenfallHallDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-Light.eot');
+  src: url($fontPath + '/VattenfallHall-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Light.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-LightItalic.eot");
-  src: url($fontPath + "/VattenfallHall-LightItalic.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-LightItalic.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-LightItalic.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-LightItalic.eot');
+  src: url($fontPath + '/VattenfallHall-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-LightItalic.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-Regular.eot");
-  src: url($fontPath + "/VattenfallHall-Regular.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Regular.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Regular.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-Regular.eot');
+  src: url($fontPath + '/VattenfallHall-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Regular.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-
-}@font-face {
-  font-family: "VattenfallHall-Regular";
-  src: url($fontPath + "/VattenfallHall-Regular.eot");
-  src: url($fontPath + "/VattenfallHall-Regular.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Regular.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'VattenfallHall-Regular';
+  src: url($fontPath + '/VattenfallHall-Regular.eot');
+  src: url($fontPath + '/VattenfallHall-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Regular.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-RegularItalic.eot");
-  src: url($fontPath + "/VattenfallHall-RegularItalic.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-RegularItalic.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-RegularItalic.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-RegularItalic.eot');
+  src: url($fontPath + '/VattenfallHall-RegularItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-RegularItalic.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-RegularItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-Medium.eot");
-  src: url($fontPath + "/VattenfallHall-Medium.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Medium.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Medium.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-Medium.eot');
+  src: url($fontPath + '/VattenfallHall-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Medium.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-MediumItalic.eot");
-  src: url($fontPath + "/VattenfallHall-MediumItalic.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-MediumItalic.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-MediumItalic.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-MediumItalic.eot');
+  src: url($fontPath + '/VattenfallHall-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-MediumItalic.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall Display NORDx";
-  src: url($fontPath + "/VattenfallHallDisplay-Bold.eot");
-  src: url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHallDisplay-Bold.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHallDisplay-Bold.woff") format("woff");
+  font-family: 'Vattenfall Hall Display NORDx';
+  src: url($fontPath + '/VattenfallHallDisplay-Bold.eot');
+  src: url($fontPath + '/VattenfallHallDisplay-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHallDisplay-Bold.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHallDisplay-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHallDisplay-Bold.eot");
-  src: url($fontPath + "/VattenfallHallDisplay-Bold.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHallDisplay-Bold.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHallDisplay-Bold.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHallDisplay-Bold.eot');
+  src: url($fontPath + '/VattenfallHallDisplay-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHallDisplay-Bold.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHallDisplay-Bold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall Bold NORDx";
-  src: url($fontPath + "/VattenfallHall-Bold.eot");
-  src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Bold.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Bold.woff") format("woff");
+  font-family: 'Vattenfall Hall Bold NORDx';
+  src: url($fontPath + '/VattenfallHall-Bold.eot');
+  src: url($fontPath + '/VattenfallHall-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Bold.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-Bold.eot");
-  src: url($fontPath + "/VattenfallHall-Bold.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Bold.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Bold.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-Bold.eot');
+  src: url($fontPath + '/VattenfallHall-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Bold.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-BoldItalic.eot");
-  src: url($fontPath + "/VattenfallHall-BoldItalic.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-BoldItalic.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-BoldItalic.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-BoldItalic.eot');
+  src: url($fontPath + '/VattenfallHall-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-BoldItalic.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-BoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-Heavy.eot");
-  src: url($fontPath + "/VattenfallHall-Heavy.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-Heavy.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-Heavy.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-Heavy.eot');
+  src: url($fontPath + '/VattenfallHall-Heavy.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-Heavy.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-Heavy.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Vattenfall Hall NORDx";
-  src: url($fontPath + "/VattenfallHall-HeavyItalic.eot");
-  src: url($fontPath + "/VattenfallHall-HeavyItalic.eot?#iefix") format("embedded-opentype"),
-  url($fontPath + "/VattenfallHall-HeavyItalic.woff2") format("woff2"),
-  url($fontPath + "/VattenfallHall-HeavyItalic.woff") format("woff");
+  font-family: 'Vattenfall Hall NORDx';
+  src: url($fontPath + '/VattenfallHall-HeavyItalic.eot');
+  src: url($fontPath + '/VattenfallHall-HeavyItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url($fontPath + '/VattenfallHall-HeavyItalic.woff2') format('woff2'),
+    url($fontPath + '/VattenfallHall-HeavyItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
-
 
 // Icons - https://icomoon.io/app
 
@@ -144,14 +190,15 @@
   font-family: 'vf-icons';
   src: url($fontPath + '/vf-icons.eot?o2vgyw');
   src: url($fontPath + '/vf-icons.eot?o2vgyw#iefix') format('embedded-opentype'),
-  url($fontPath + '/vf-icons.ttf?o2vgyw') format('truetype'),
-  url($fontPath + '/vf-icons.woff?o2vgyw') format('woff'),
-  url($fontPath + '/vf-icons.svg?o2vgywd#vf-icons') format('svg');
+    url($fontPath + '/vf-icons.ttf?o2vgyw') format('truetype'),
+    url($fontPath + '/vf-icons.woff?o2vgyw') format('woff'),
+    url($fontPath + '/vf-icons.svg?o2vgywd#vf-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="vf-icon-"], [class*=" vf-icon-"] {
+[class^='vf-icon-'],
+[class*=' vf-icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
 
   &:before {
@@ -171,36 +218,36 @@
 }
 
 .vf-icon-placeholder:before {
-  content: "\e900";
+  content: '\e900';
 }
 
 .vf-icon-settings:before {
-  content: "\e901";
+  content: '\e901';
 }
 
 .vf-icon-up:before {
-  content: "\e902";
+  content: '\e902';
   //font-size: 0.4375rem;
 }
 
 .vf-icon-down:before {
-  content: "\e903";
+  content: '\e903';
   //font-size: 0.4375rem;
 }
 
 .vf-icon-left:before {
-  content: "\e904";
+  content: '\e904';
 }
 
 .vf-icon-right:before {
-  content: "\e905";
+  content: '\e905';
 }
 
 .vf-icon-question {
   cursor: pointer;
 
   &:before {
-    content: "\e906";
+    content: '\e906';
     color: #999999;
   }
 
@@ -212,1525 +259,1525 @@
 }
 
 .vf-icon-calendar:before {
-  content: "\e907";
+  content: '\e907';
 }
 
 .vf-icon-map-tag:before {
-  content: "\e908";
+  content: '\e908';
 }
 
 .vf-icon-time:before {
-  content: "\e909";
+  content: '\e909';
 }
 
 // NEW
 
 .vf-icon-clock:before {
-  content: "\e909";
+  content: '\e909';
 }
 
 .vf-icon-help:before {
-  content: "\e906";
+  content: '\e906';
 }
 
 .vf-icon-pin:before {
-  content: "\e908";
+  content: '\e908';
 }
 
 .vf-icon-calendar-31:before {
-  content: "\e907";
+  content: '\e907';
 }
 
 .vf-icon-twitter:before {
-  content: "\e90a";
+  content: '\e90a';
 }
 
 .vf-icon-vimeo:before {
-  content: "\e90b";
+  content: '\e90b';
 }
 
 .vf-icon-whatsapp:before {
-  content: "\e90c";
+  content: '\e90c';
 }
 
 .vf-icon-xing:before {
-  content: "\e90d";
+  content: '\e90d';
 }
 
 .vf-icon-youtube:before {
-  content: "\e90e";
+  content: '\e90e';
 }
 
 .vf-icon-alarm:before {
-  content: "\e90f";
+  content: '\e90f';
 }
 
 .vf-icon-cloudy:before {
-  content: "\e910";
+  content: '\e910';
 }
 
 .vf-icon-coffee-maker:before {
-  content: "\e911";
+  content: '\e911';
 }
 
 .vf-icon-console:before {
-  content: "\e912";
+  content: '\e912';
 }
 
 .vf-icon-desklamp:before {
-  content: "\e913";
+  content: '\e913';
 }
 
 .vf-icon-desktop-computer:before {
-  content: "\e914";
+  content: '\e914';
 }
 
 .vf-icon-dishwasher:before {
-  content: "\e915";
+  content: '\e915';
 }
 
 .vf-icon-door-closed:before {
-  content: "\e916";
+  content: '\e916';
 }
 
 .vf-icon-door-open:before {
-  content: "\e917";
+  content: '\e917';
 }
 
 .vf-icon-dryer:before {
-  content: "\e918";
+  content: '\e918';
 }
 
 .vf-icon-electric-kettle:before {
-  content: "\e919";
+  content: '\e919';
 }
 
 .vf-icon-electric-stove:before {
-  content: "\e91a";
+  content: '\e91a';
 }
 
 .vf-icon-electric-tooth-brush:before {
-  content: "\e91b";
+  content: '\e91b';
 }
 
 .vf-icon-espresso-machine:before {
-  content: "\e91c";
+  content: '\e91c';
 }
 
 .vf-icon-extractor-hood:before {
-  content: "\e91d";
+  content: '\e91d';
 }
 
 .vf-icon-fairy-lights:before {
-  content: "\e91e";
+  content: '\e91e';
 }
 
 .vf-icon-freezer:before {
-  content: "\e91f";
+  content: '\e91f';
 }
 
 .vf-icon-fridge-freezer:before {
-  content: "\e920";
+  content: '\e920';
 }
 
 .vf-icon-fridge:before {
-  content: "\e921";
+  content: '\e921';
 }
 
 .vf-icon-gas-stove:before {
-  content: "\e922";
+  content: '\e922';
 }
 
 .vf-icon-hair-straightener:before {
-  content: "\e923";
+  content: '\e923';
 }
 
 .vf-icon-hairdryer:before {
-  content: "\e924";
+  content: '\e924';
 }
 
 .vf-icon-indution-stove:before {
-  content: "\e925";
+  content: '\e925';
 }
 
 .vf-icon-kettle:before {
-  content: "\e926";
+  content: '\e926';
 }
 
 .vf-icon-kitchen-machine:before {
-  content: "\e927";
+  content: '\e927';
 }
 
 .vf-icon-laptop:before {
-  content: "\e928";
+  content: '\e928';
 }
 
 .vf-icon-light-switch:before {
-  content: "\e929";
+  content: '\e929';
 }
 
 .vf-icon-lightbulb-step-1:before {
-  content: "\e92a";
+  content: '\e92a';
 }
 
 .vf-icon-lightbulb-step-2:before {
-  content: "\e92b";
+  content: '\e92b';
 }
 
 .vf-icon-lightbulb-step-3:before {
-  content: "\e92c";
+  content: '\e92c';
 }
 
 .vf-icon-lightbulb-step-4:before {
-  content: "\e92d";
+  content: '\e92d';
 }
 
 .vf-icon-lightbulb-step-5:before {
-  content: "\e92e";
+  content: '\e92e';
 }
 
 .vf-icon-microwave:before {
-  content: "\e92f";
+  content: '\e92f';
 }
 
 .vf-icon-moon:before {
-  content: "\e930";
+  content: '\e930';
 }
 
 .vf-icon-outdoor-lamp:before {
-  content: "\e931";
+  content: '\e931';
 }
 
 .vf-icon-patio-heater:before {
-  content: "\e932";
+  content: '\e932';
 }
 
 .vf-icon-phone-charging:before {
-  content: "\e933";
+  content: '\e933';
 }
 
 .vf-icon-pressing-iron:before {
-  content: "\e934";
+  content: '\e934';
 }
 
 .vf-icon-radiator:before {
-  content: "\e935";
+  content: '\e935';
 }
 
 .vf-icon-rain:before {
-  content: "\e936";
+  content: '\e936';
 }
 
 .vf-icon-router:before {
-  content: "\e937";
+  content: '\e937';
 }
 
 .vf-icon-smart-plug:before {
-  content: "\e938";
+  content: '\e938';
 }
 
 .vf-icon-smart-thermostat:before {
-  content: "\e939";
+  content: '\e939';
 }
 
 .vf-icon-smoke-alarm:before {
-  content: "\e93a";
+  content: '\e93a';
 }
 
 .vf-icon-snow:before {
-  content: "\e93b";
+  content: '\e93b';
 }
 
 .vf-icon-stove-with-grill:before {
-  content: "\e93c";
+  content: '\e93c';
 }
 
 .vf-icon-sun:before {
-  content: "\e93d";
+  content: '\e93d';
 }
 
 .vf-icon-surveillance:before {
-  content: "\e93e";
+  content: '\e93e';
 }
 
 .vf-icon-table-lamp-two:before {
-  content: "\e93f";
+  content: '\e93f';
 }
 
 .vf-icon-table-lamp:before {
-  content: "\e940";
+  content: '\e940';
 }
 
 .vf-icon-thunder:before {
-  content: "\e941";
+  content: '\e941';
 }
 
 .vf-icon-tv-remote:before {
-  content: "\e942";
+  content: '\e942';
 }
 
 .vf-icon-vacuum-cleaner:before {
-  content: "\e943";
+  content: '\e943';
 }
 
 .vf-icon-ventilator:before {
-  content: "\e944";
+  content: '\e944';
 }
 
 .vf-icon-washing-machine:before {
-  content: "\e945";
+  content: '\e945';
 }
 
 .vf-icon-window-blinds:before {
-  content: "\e946";
+  content: '\e946';
 }
 
 .vf-icon-window-closed:before {
-  content: "\e947";
+  content: '\e947';
 }
 
 .vf-icon-window-open:before {
-  content: "\e948";
+  content: '\e948';
 }
 
 .vf-icon-window:before {
-  content: "\e949";
+  content: '\e949';
 }
 
 .vf-icon-calendar-1:before {
-  content: "\e94a";
+  content: '\e94a';
 }
 
 .vf-icon-calendar-2:before {
-  content: "\e94b";
+  content: '\e94b';
 }
 
 .vf-icon-calendar-3:before {
-  content: "\e94c";
+  content: '\e94c';
 }
 
 .vf-icon-calendar-4:before {
-  content: "\e94d";
+  content: '\e94d';
 }
 
 .vf-icon-calendar-5:before {
-  content: "\e94e";
+  content: '\e94e';
 }
 
 .vf-icon-calendar-6:before {
-  content: "\e94f";
+  content: '\e94f';
 }
 
 .vf-icon-calendar-7:before {
-  content: "\e950";
+  content: '\e950';
 }
 
 .vf-icon-calendar-8:before {
-  content: "\e951";
+  content: '\e951';
 }
 
 .vf-icon-calendar-9:before {
-  content: "\e952";
+  content: '\e952';
 }
 
 .vf-icon-calendar-10:before {
-  content: "\e953";
+  content: '\e953';
 }
 
 .vf-icon-calendar-11:before {
-  content: "\e954";
+  content: '\e954';
 }
 
 .vf-icon-calendar-12:before {
-  content: "\e955";
+  content: '\e955';
 }
 
 .vf-icon-calendar-13:before {
-  content: "\e956";
+  content: '\e956';
 }
 
 .vf-icon-calendar-14:before {
-  content: "\e957";
+  content: '\e957';
 }
 
 .vf-icon-calendar-15:before {
-  content: "\e958";
+  content: '\e958';
 }
 
 .vf-icon-calendar-16:before {
-  content: "\e959";
+  content: '\e959';
 }
 
 .vf-icon-calendar-17:before {
-  content: "\e95a";
+  content: '\e95a';
 }
 
 .vf-icon-calendar-18:before {
-  content: "\e95b";
+  content: '\e95b';
 }
 
 .vf-icon-calendar-19:before {
-  content: "\e95c";
+  content: '\e95c';
 }
 
 .vf-icon-calendar-20:before {
-  content: "\e95d";
+  content: '\e95d';
 }
 
 .vf-icon-calendar-21:before {
-  content: "\e95e";
+  content: '\e95e';
 }
 
 .vf-icon-calendar-22:before {
-  content: "\e95f";
+  content: '\e95f';
 }
 
 .vf-icon-calendar-23:before {
-  content: "\e960";
+  content: '\e960';
 }
 
 .vf-icon-calendar-24:before {
-  content: "\e961";
+  content: '\e961';
 }
 
 .vf-icon-calendar-25:before {
-  content: "\e962";
+  content: '\e962';
 }
 
 .vf-icon-calendar-26:before {
-  content: "\e963";
+  content: '\e963';
 }
 
 .vf-icon-calendar-27:before {
-  content: "\e964";
+  content: '\e964';
 }
 
 .vf-icon-calendar-28:before {
-  content: "\e965";
+  content: '\e965';
 }
 
 .vf-icon-calendar-29:before {
-  content: "\e966";
+  content: '\e966';
 }
 
 .vf-icon-calendar-30:before {
-  content: "\e967";
+  content: '\e967';
 }
 
 .vf-icon-skype:before {
-  content: "\e968";
+  content: '\e968';
 }
 
 .vf-icon-check:before {
-  content: "\e969";
+  content: '\e969';
 }
 
 .vf-icon-close:before {
-  content: "\e96a";
+  content: '\e96a';
 }
 
 .vf-icon-flickr:before {
-  content: "\e96b";
+  content: '\e96b';
 }
 
 .vf-icon-home:before {
-  content: "\e96c";
+  content: '\e96c';
 }
 
 .vf-icon-instagram:before {
-  content: "\e96d";
+  content: '\e96d';
 }
 
 .vf-icon-less-info:before {
-  content: "\e96e";
+  content: '\e96e';
 }
 
 .vf-icon-link:before {
-  content: "\e96f";
+  content: '\e96f';
 }
 
 .vf-icon-menu:before {
-  content: "\e970";
+  content: '\e970';
 }
 
 .vf-icon-more:before {
-  content: "\e971";
+  content: '\e971';
 }
 
 .vf-icon-qr-code:before {
-  content: "\e972";
+  content: '\e972';
 }
 
 .vf-icon-linkedin:before {
-  content: "\e973";
+  content: '\e973';
 }
 
 .vf-icon-rss:before {
-  content: "\e974";
+  content: '\e974';
 }
 
 .vf-icon-search:before {
-  content: "\e975";
+  content: '\e975';
 }
 
 .vf-icon-facebook:before {
-  content: "\e976";
+  content: '\e976';
 }
 
 .vf-icon-card-and-tag:before {
-  content: "\e977";
+  content: '\e977';
 }
 
 .vf-icon-charge-smart-and-safe-at-home:before {
-  content: "\e978";
+  content: '\e978';
 }
 
 .vf-icon-charge-up-multihome:before {
-  content: "\e979";
+  content: '\e979';
 }
 
 .vf-icon-charge-up-your-business:before {
-  content: "\e97a";
+  content: '\e97a';
 }
 
 .vf-icon-charging-wall-box:before {
-  content: "\e97b";
+  content: '\e97b';
 }
 
 .vf-icon-e-bike:before {
-  content: "\e97c";
+  content: '\e97c';
 }
 
 .vf-icon-fuse-box:before {
-  content: "\e97d";
+  content: '\e97d';
 }
 
 .vf-icon-history-of-charge-session:before {
-  content: "\e97e";
+  content: '\e97e';
 }
 
 .vf-icon-move-with-existing-contract:before {
-  content: "\e97f";
+  content: '\e97f';
 }
 
 .vf-icon-move-with-new-contract:before {
-  content: "\e980";
+  content: '\e980';
 }
 
 .vf-icon-parking-meter:before {
-  content: "\e981";
+  content: '\e981';
 }
 
 .vf-icon-partner:before {
-  content: "\e982";
+  content: '\e982';
 }
 
 .vf-icon-private-charging:before {
-  content: "\e983";
+  content: '\e983';
 }
 
 .vf-icon-public-business-charging:before {
-  content: "\e984";
+  content: '\e984';
 }
 
 .vf-icon-public-charging:before {
-  content: "\e985";
+  content: '\e985';
 }
 
 .vf-icon-scooter-2:before {
-  content: "\e986";
+  content: '\e986';
 }
 
 .vf-icon-scooter:before {
-  content: "\e987";
+  content: '\e987';
 }
 
 .vf-icon-smart-charging-poles:before {
-  content: "\e988";
+  content: '\e988';
 }
 
 .vf-icon-h:before {
-  content: "\e989";
+  content: '\e989';
 }
 
 .vf-icon-advent-calendar:before {
-  content: "\e98a";
+  content: '\e98a';
 }
 
 .vf-icon-airplane:before {
-  content: "\e98b";
+  content: '\e98b';
 }
 
 .vf-icon-apartment-house:before {
-  content: "\e98c";
+  content: '\e98c';
 }
 
 .vf-icon-assortment:before {
-  content: "\e98d";
+  content: '\e98d';
 }
 
 .vf-icon-balance:before {
-  content: "\e98e";
+  content: '\e98e';
 }
 
 .vf-icon-battery:before {
-  content: "\e98f";
+  content: '\e98f';
 }
 
 .vf-icon-beauty-personal-care:before {
-  content: "\e990";
+  content: '\e990';
 }
 
 .vf-icon-behaviour:before {
-  content: "\e991";
+  content: '\e991';
 }
 
 .vf-icon-benchmark-cockpit:before {
-  content: "\e992";
+  content: '\e992';
 }
 
 .vf-icon-benchmark-temperature:before {
-  content: "\e993";
+  content: '\e993';
 }
 
 .vf-icon-benchmark-two:before {
-  content: "\e994";
+  content: '\e994';
 }
 
 .vf-icon-benchmark:before {
-  content: "\e995";
+  content: '\e995';
 }
 
 .vf-icon-benefit:before {
-  content: "\e996";
+  content: '\e996';
 }
 
 .vf-icon-billing:before {
-  content: "\e997";
+  content: '\e997';
 }
 
 .vf-icon-bio-diesel-generator:before {
-  content: "\e998";
+  content: '\e998';
 }
 
 .vf-icon-biofuel-biomass:before {
-  content: "\e999";
+  content: '\e999';
 }
 
 .vf-icon-book-room:before {
-  content: "\e99a";
+  content: '\e99a';
 }
 
 .vf-icon-books-magazines:before {
-  content: "\e99b";
+  content: '\e99b';
 }
 
 .vf-icon-brain:before {
-  content: "\e99c";
+  content: '\e99c';
 }
 
 .vf-icon-brainstorm:before {
-  content: "\e99d";
+  content: '\e99d';
 }
 
 .vf-icon-calculator:before {
-  content: "\e99e";
+  content: '\e99e';
 }
 
 .vf-icon-call-center:before {
-  content: "\e99f";
+  content: '\e99f';
 }
 
 .vf-icon-callback:before {
-  content: "\e9a0";
+  content: '\e9a0';
 }
 
 .vf-icon-career-and-development:before {
-  content: "\e9a1";
+  content: '\e9a1';
 }
 
 .vf-icon-central-heating:before {
-  content: "\e9a2";
+  content: '\e9a2';
 }
 
 .vf-icon-certificate:before {
-  content: "\e9a3";
+  content: '\e9a3';
 }
 
 .vf-icon-chart:before {
-  content: "\e9a4";
+  content: '\e9a4';
 }
 
 .vf-icon-city:before {
-  content: "\e9a5";
+  content: '\e9a5';
 }
 
 .vf-icon-climate-mix:before {
-  content: "\e9a6";
+  content: '\e9a6';
 }
 
 .vf-icon-climate-neutral:before {
-  content: "\e9a7";
+  content: '\e9a7';
 }
 
 .vf-icon-snapchat:before {
-  content: "\e9a8";
+  content: '\e9a8';
 }
 
 .vf-icon-cloud-storage:before {
-  content: "\e9a9";
+  content: '\e9a9';
 }
 
 .vf-icon-co2-reducation:before {
-  content: "\e9aa";
+  content: '\e9aa';
 }
 
 .vf-icon-co2:before {
-  content: "\e9ab";
+  content: '\e9ab';
 }
 
 .vf-icon-coal:before {
-  content: "\e9ac";
+  content: '\e9ac';
 }
 
 .vf-icon-cockpit:before {
-  content: "\e9ad";
+  content: '\e9ad';
 }
 
 .vf-icon-cold:before {
-  content: "\e9ae";
+  content: '\e9ae';
 }
 
 .vf-icon-combined-heat-and-power:before {
-  content: "\e9af";
+  content: '\e9af';
 }
 
 .vf-icon-conclusion:before {
-  content: "\e9b0";
+  content: '\e9b0';
 }
 
 .vf-icon-consumption:before {
-  content: "\e9b1";
+  content: '\e9b1';
 }
 
 .vf-icon-contract-details:before {
-  content: "\e9b2";
+  content: '\e9b2';
 }
 
 .vf-icon-cooperation-area:before {
-  content: "\e9b3";
+  content: '\e9b3';
 }
 
 .vf-icon-cost-saving:before {
-  content: "\e9b4";
+  content: '\e9b4';
 }
 
 .vf-icon-cottage:before {
-  content: "\e9b5";
+  content: '\e9b5';
 }
 
 .vf-icon-defence-soldier:before {
-  content: "\e9b6";
+  content: '\e9b6';
 }
 
 .vf-icon-defence:before {
-  content: "\e9b7";
+  content: '\e9b7';
 }
 
 .vf-icon-delivery:before {
-  content: "\e9b8";
+  content: '\e9b8';
 }
 
 .vf-icon-discussion-two:before {
-  content: "\e9b9";
+  content: '\e9b9';
 }
 
 .vf-icon-discussion:before {
-  content: "\e9ba";
+  content: '\e9ba';
 }
 
 .vf-icon-distribution:before {
-  content: "\e9bb";
+  content: '\e9bb';
 }
 
 .vf-icon-district-cooling:before {
-  content: "\e9bc";
+  content: '\e9bc';
 }
 
 .vf-icon-district-heat-and-power:before {
-  content: "\e9bd";
+  content: '\e9bd';
 }
 
 .vf-icon-district-heating-two:before {
-  content: "\e9be";
+  content: '\e9be';
 }
 
 .vf-icon-district-heating:before {
-  content: "\e9bf";
+  content: '\e9bf';
 }
 
 .vf-icon-doing-good:before {
-  content: "\e9c0";
+  content: '\e9c0';
 }
 
 .vf-icon-dont:before {
-  content: "\e9c1";
+  content: '\e9c1';
 }
 
 .vf-icon-economize:before {
-  content: "\e9c2";
+  content: '\e9c2';
 }
 
 .vf-icon-eko-hourly-spot:before {
-  content: "\e9c3";
+  content: '\e9c3';
 }
 
 .vf-icon-electricity-gas:before {
-  content: "\e9c4";
+  content: '\e9c4';
 }
 
 .vf-icon-electricity:before {
-  content: "\e9c5";
+  content: '\e9c5';
 }
 
 .vf-icon-electronic-payment-euro:before {
-  content: "\e9c6";
+  content: '\e9c6';
 }
 
 .vf-icon-energy-mix:before {
-  content: "\e9c7";
+  content: '\e9c7';
 }
 
 .vf-icon-energy-service:before {
-  content: "\e9c8";
+  content: '\e9c8';
 }
 
 .vf-icon-energy-solution:before {
-  content: "\e9c9";
+  content: '\e9c9';
 }
 
 .vf-icon-euro:before {
-  content: "\e9ca";
+  content: '\e9ca';
 }
 
 .vf-icon-euros:before {
-  content: "\e9cb";
+  content: '\e9cb';
 }
 
 .vf-icon-evaluation:before {
-  content: "\e9cc";
+  content: '\e9cc';
 }
 
 .vf-icon-eye:before {
-  content: "\e9cd";
+  content: '\e9cd';
 }
 
 .vf-icon-face-mask:before {
-  content: "\e9ce";
+  content: '\e9ce';
 }
 
 .vf-icon-farm:before {
-  content: "\e9cf";
+  content: '\e9cf';
 }
 
 .vf-icon-fixed:before {
-  content: "\e9d0";
+  content: '\e9d0';
 }
 
 .vf-icon-flexible:before {
-  content: "\e9d1";
+  content: '\e9d1';
 }
 
 .vf-icon-full-water-quartal:before {
-  content: "\e9d2";
+  content: '\e9d2';
 }
 
 .vf-icon-gas:before {
-  content: "\e9d3";
+  content: '\e9d3';
 }
 
 .vf-icon-geothermal-heat-pump:before {
-  content: "\e9d4";
+  content: '\e9d4';
 }
 
 .vf-icon-globe:before {
-  content: "\e9d5";
+  content: '\e9d5';
 }
 
 .vf-icon-going-out:before {
-  content: "\e9d6";
+  content: '\e9d6';
 }
 
 .vf-icon-group-discussion:before {
-  content: "\e9d7";
+  content: '\e9d7';
 }
 
 .vf-icon-guide:before {
-  content: "\e9d8";
+  content: '\e9d8';
 }
 
 .vf-icon-handshake:before {
-  content: "\e9d9";
+  content: '\e9d9';
 }
 
 .vf-icon-heat-load-curve:before {
-  content: "\e9da";
+  content: '\e9da';
 }
 
 .vf-icon-heat-pump:before {
-  content: "\e9db";
+  content: '\e9db';
 }
 
 .vf-icon-heating:before {
-  content: "\e9dc";
+  content: '\e9dc';
 }
 
 .vf-icon-home-garden:before {
-  content: "\e9dd";
+  content: '\e9dd';
 }
 
 .vf-icon-home-security:before {
-  content: "\e9de";
+  content: '\e9de';
 }
 
 .vf-icon-hot:before {
-  content: "\e9df";
+  content: '\e9df';
 }
 
 .vf-icon-hourly-spot-mix:before {
-  content: "\e9e0";
+  content: '\e9e0';
 }
 
 .vf-icon-house:before {
-  content: "\e9e1";
+  content: '\e9e1';
 }
 
 .vf-icon-hydro:before {
-  content: "\e9e2";
+  content: '\e9e2';
 }
 
 .vf-icon-in-queue:before {
-  content: "\e9e3";
+  content: '\e9e3';
 }
 
 .vf-icon-industry:before {
-  content: "\e9e4";
+  content: '\e9e4';
 }
 
 .vf-icon-insight:before {
-  content: "\e9e5";
+  content: '\e9e5';
 }
 
 .vf-icon-insulation:before {
-  content: "\e9e6";
+  content: '\e9e6';
 }
 
 .vf-icon-invoice-euro:before {
-  content: "\e9e7";
+  content: '\e9e7';
 }
 
 .vf-icon-invoice-pound:before {
-  content: "\e9e8";
+  content: '\e9e8';
 }
 
 .vf-icon-kids-toys:before {
-  content: "\e9e9";
+  content: '\e9e9';
 }
 
 .vf-icon-knowledge:before {
-  content: "\e9ea";
+  content: '\e9ea';
 }
 
 .vf-icon-large-battery:before {
-  content: "\e9eb";
+  content: '\e9eb';
 }
 
 .vf-icon-lecture:before {
-  content: "\e9ec";
+  content: '\e9ec';
 }
 
 .vf-icon-life-events:before {
-  content: "\e9ed";
+  content: '\e9ed';
 }
 
 .vf-icon-lightbulb:before {
-  content: "\e9ee";
+  content: '\e9ee';
 }
 
 .vf-icon-manage-my-team:before {
-  content: "\e9ef";
+  content: '\e9ef';
 }
 
 .vf-icon-map:before {
-  content: "\e9f0";
+  content: '\e9f0';
 }
 
 .vf-icon-meter:before {
-  content: "\e9f1";
+  content: '\e9f1';
 }
 
 .vf-icon-mobility:before {
-  content: "\e9f2";
+  content: '\e9f2';
 }
 
 .vf-icon-modules:before {
-  content: "\e9f3";
+  content: '\e9f3';
 }
 
 .vf-icon-move-with-existing-contract1:before {
-  content: "\e9f4";
+  content: '\e9f4';
 }
 
 .vf-icon-move-with-new-contract1:before {
-  content: "\e9f5";
+  content: '\e9f5';
 }
 
 .vf-icon-movie-music-theatre:before {
-  content: "\e9f6";
+  content: '\e9f6';
 }
 
 .vf-icon-multi-home-box:before {
-  content: "\e9f7";
+  content: '\e9f7';
 }
 
 .vf-icon-my-cases:before {
-  content: "\e9f8";
+  content: '\e9f8';
 }
 
 .vf-icon-my-documents:before {
-  content: "\e9f9";
+  content: '\e9f9';
 }
 
 .vf-icon-nature-and-bioversity:before {
-  content: "\e9fa";
+  content: '\e9fa';
 }
 
 .vf-icon-need:before {
-  content: "\e9fb";
+  content: '\e9fb';
 }
 
 .vf-icon-nighttime-electricity-metering:before {
-  content: "\e9fc";
+  content: '\e9fc';
 }
 
 .vf-icon-not-visible:before {
-  content: "\e9fd";
+  content: '\e9fd';
 }
 
 .vf-icon-nuclear:before {
-  content: "\e9fe";
+  content: '\e9fe';
 }
 
 .vf-icon-ocean-energy:before {
-  content: "\e9ff";
+  content: '\e9ff';
 }
 
 .vf-icon-offshore:before {
-  content: "\ea00";
+  content: '\ea00';
 }
 
 .vf-icon-oil-condensing-gas-turbine:before {
-  content: "\ea01";
+  content: '\ea01';
 }
 
 .vf-icon-open-area:before {
-  content: "\ea02";
+  content: '\ea02';
 }
 
 .vf-icon-operation-central:before {
-  content: "\ea03";
+  content: '\ea03';
 }
 
 .vf-icon-peat:before {
-  content: "\ea04";
+  content: '\ea04';
 }
 
 .vf-icon-phone-sound-off:before {
-  content: "\ea05";
+  content: '\ea05';
 }
 
 .vf-icon-pin-two:before {
-  content: "\ea06";
+  content: '\ea06';
 }
 
 .vf-icon-planned-outage:before {
-  content: "\ea07";
+  content: '\ea07';
 }
 
 .vf-icon-policies:before {
-  content: "\ea08";
+  content: '\ea08';
 }
 
 .vf-icon-power-gas:before {
-  content: "\ea09";
+  content: '\ea09';
 }
 
 .vf-icon-power-grid:before {
-  content: "\ea0a";
+  content: '\ea0a';
 }
 
 .vf-icon-power-plant:before {
-  content: "\ea0b";
+  content: '\ea0b';
 }
 
 .vf-icon-premium:before {
-  content: "\ea0c";
+  content: '\ea0c';
 }
 
 .vf-icon-present:before {
-  content: "\ea0d";
+  content: '\ea0d';
 }
 
 .vf-icon-prices-equal-alt:before {
-  content: "\ea0e";
+  content: '\ea0e';
 }
 
 .vf-icon-prices-equal:before {
-  content: "\ea0f";
+  content: '\ea0f';
 }
 
 .vf-icon-prices-fall-alt:before {
-  content: "\ea10";
+  content: '\ea10';
 }
 
 .vf-icon-prices-fall:before {
-  content: "\ea11";
+  content: '\ea11';
 }
 
 .vf-icon-prices-rise-alt:before {
-  content: "\ea12";
+  content: '\ea12';
 }
 
 .vf-icon-prices-rise:before {
-  content: "\ea13";
+  content: '\ea13';
 }
 
 .vf-icon-private-end-user:before {
-  content: "\ea14";
+  content: '\ea14';
 }
 
 .vf-icon-public-transport:before {
-  content: "\ea15";
+  content: '\ea15';
 }
 
 .vf-icon-purpose-profit:before {
-  content: "\ea16";
+  content: '\ea16';
 }
 
 .vf-icon-quote:before {
-  content: "\ea17";
+  content: '\ea17';
 }
 
 .vf-icon-reach:before {
-  content: "\ea18";
+  content: '\ea18';
 }
 
 .vf-icon-recommendation:before {
-  content: "\ea19";
+  content: '\ea19';
 }
 
 .vf-icon-recycling:before {
-  content: "\ea1a";
+  content: '\ea1a';
 }
 
 .vf-icon-reimburse:before {
-  content: "\ea1b";
+  content: '\ea1b';
 }
 
 .vf-icon-renewable-energy:before {
-  content: "\ea1c";
+  content: '\ea1c';
 }
 
 .vf-icon-road:before {
-  content: "\ea1d";
+  content: '\ea1d';
 }
 
 .vf-icon-salary-time-and-benefits:before {
-  content: "\ea1e";
+  content: '\ea1e';
 }
 
 .vf-icon-sales-of-electric-heat-gas:before {
-  content: "\ea1f";
+  content: '\ea1f';
 }
 
 .vf-icon-savings:before {
-  content: "\ea20";
+  content: '\ea20';
 }
 
 .vf-icon-semi-detached-house:before {
-  content: "\ea21";
+  content: '\ea21';
 }
 
 .vf-icon-ship-docking:before {
-  content: "\ea22";
+  content: '\ea22';
 }
 
 .vf-icon-silent-area:before {
-  content: "\ea23";
+  content: '\ea23';
 }
 
 .vf-icon-smart-home:before {
-  content: "\ea24";
+  content: '\ea24';
 }
 
 .vf-icon-smart-meter:before {
-  content: "\ea25";
+  content: '\ea25';
 }
 
 .vf-icon-smartphone-text:before {
-  content: "\ea26";
+  content: '\ea26';
 }
 
 .vf-icon-smiley-neutral:before {
-  content: "\ea27";
+  content: '\ea27';
 }
 
 .vf-icon-smiley-sad:before {
-  content: "\ea28";
+  content: '\ea28';
 }
 
 .vf-icon-smiley:before {
-  content: "\ea29";
+  content: '\ea29';
 }
 
 .vf-icon-solar-back:before {
-  content: "\ea2a";
+  content: '\ea2a';
 }
 
 .vf-icon-solar-panel:before {
-  content: "\ea2b";
+  content: '\ea2b';
 }
 
 .vf-icon-spread-purchases:before {
-  content: "\ea2c";
+  content: '\ea2c';
 }
 
 .vf-icon-standard-contact-continuous:before {
-  content: "\ea2d";
+  content: '\ea2d';
 }
 
 .vf-icon-standard-energy:before {
-  content: "\ea2e";
+  content: '\ea2e';
 }
 
 .vf-icon-strategy:before {
-  content: "\ea2f";
+  content: '\ea2f';
 }
 
 .vf-icon-street-light:before {
-  content: "\ea30";
+  content: '\ea30';
 }
 
 .vf-icon-summary:before {
-  content: "\ea31";
+  content: '\ea31';
 }
 
 .vf-icon-sun-two:before {
-  content: "\ea32";
+  content: '\ea32';
 }
 
 .vf-icon-support:before {
-  content: "\ea33";
+  content: '\ea33';
 }
 
 .vf-icon-tap-water-cold:before {
-  content: "\ea34";
+  content: '\ea34';
 }
 
 .vf-icon-tap-water-warm:before {
-  content: "\ea35";
+  content: '\ea35';
 }
 
 .vf-icon-temperature:before {
-  content: "\ea36";
+  content: '\ea36';
 }
 
 .vf-icon-tender-multiple:before {
-  content: "\ea37";
+  content: '\ea37';
 }
 
 .vf-icon-thumbs-down:before {
-  content: "\ea38";
+  content: '\ea38';
 }
 
 .vf-icon-thumbs-up:before {
-  content: "\ea39";
+  content: '\ea39';
 }
 
 .vf-icon-to-dos:before {
-  content: "\ea3a";
+  content: '\ea3a';
 }
 
 .vf-icon-tool:before {
-  content: "\ea3b";
+  content: '\ea3b';
 }
 
 .vf-icon-train:before {
-  content: "\ea3c";
+  content: '\ea3c';
 }
 
 .vf-icon-transformer:before {
-  content: "\ea3d";
+  content: '\ea3d';
 }
 
 .vf-icon-tv:before {
-  content: "\ea3e";
+  content: '\ea3e';
 }
 
 .vf-icon-variable:before {
-  content: "\ea3f";
+  content: '\ea3f';
 }
 
 .vf-icon-ventilation:before {
-  content: "\ea40";
+  content: '\ea40';
 }
 
 .vf-icon-vf-benchmark-co2:before {
-  content: "\ea41";
+  content: '\ea41';
 }
 
 .vf-icon-voice-search:before {
-  content: "\ea42";
+  content: '\ea42';
 }
 
 .vf-icon-wind:before {
-  content: "\ea43";
+  content: '\ea43';
 }
 
 .vf-icon-activity-log:before {
-  content: "\ea44";
+  content: '\ea44';
 }
 
 .vf-icon-add-contact:before {
-  content: "\ea45";
+  content: '\ea45';
 }
 
 .vf-icon-alert:before {
-  content: "\ea46";
+  content: '\ea46';
 }
 
 .vf-icon-align-center:before {
-  content: "\ea47";
+  content: '\ea47';
 }
 
 .vf-icon-align-left:before {
-  content: "\ea48";
+  content: '\ea48';
 }
 
 .vf-icon-app-settings:before {
-  content: "\ea49";
+  content: '\ea49';
 }
 
 .vf-icon-arrow-down-left:before {
-  content: "\ea4a";
+  content: '\ea4a';
 }
 
 .vf-icon-arrow-down-right:before {
-  content: "\ea4b";
+  content: '\ea4b';
 }
 
 .vf-icon-arrow-down:before {
-  content: "\ea4c";
+  content: '\ea4c';
 }
 
 .vf-icon-arrow-left:before {
-  content: "\ea4d";
+  content: '\ea4d';
 }
 
 .vf-icon-arrow-right:before {
-  content: "\ea4e";
+  content: '\ea4e';
 }
 
 .vf-icon-arrow-up-left:before {
-  content: "\ea4f";
+  content: '\ea4f';
 }
 
 .vf-icon-arrow-up-right:before {
-  content: "\ea50";
+  content: '\ea50';
 }
 
 .vf-icon-arrow-up:before {
-  content: "\ea51";
+  content: '\ea51';
 }
 
 .vf-icon-autostart:before {
-  content: "\ea52";
+  content: '\ea52';
 }
 
 .vf-icon-blog:before {
-  content: "\ea53";
+  content: '\ea53';
 }
 
 .vf-icon-call:before {
-  content: "\ea54";
+  content: '\ea54';
 }
 
 .vf-icon-camera:before {
-  content: "\ea55";
+  content: '\ea55';
 }
 
 .vf-icon-change-availability:before {
-  content: "\ea56";
+  content: '\ea56';
 }
 
 .vf-icon-chat:before {
-  content: "\ea57";
+  content: '\ea57';
 }
 
 .vf-icon-checkbox:before {
-  content: "\ea58";
+  content: '\ea58';
 }
 
 .vf-icon-download-pdf:before {
-  content: "\ea59";
+  content: '\ea59';
 }
 
 .vf-icon-download:before {
-  content: "\ea5a";
+  content: '\ea5a';
 }
 
 .vf-icon-edit:before {
-  content: "\ea5b";
+  content: '\ea5b';
 }
 
 .vf-icon-elipsis:before {
-  content: "\ea5c";
+  content: '\ea5c';
 }
 
 .vf-icon-favourite:before {
-  content: "\ea5d";
+  content: '\ea5d';
 }
 
 .vf-icon-filter:before {
-  content: "\ea5e";
+  content: '\ea5e';
 }
 
 .vf-icon-gallery:before {
-  content: "\ea5f";
+  content: '\ea5f';
 }
 
 .vf-icon-pinterest:before {
-  content: "\ea60";
+  content: '\ea60';
 }
 
 .vf-icon-in-progress:before {
-  content: "\ea61";
+  content: '\ea61';
 }
 
 .vf-icon-information:before {
-  content: "\ea62";
+  content: '\ea62';
 }
 
 .vf-icon-list-view:before {
-  content: "\ea63";
+  content: '\ea63';
 }
 
 .vf-icon-locked:before {
-  content: "\ea64";
+  content: '\ea64';
 }
 
 .vf-icon-mail:before {
-  content: "\ea65";
+  content: '\ea65';
 }
 
 .vf-icon-news:before {
-  content: "\ea66";
+  content: '\ea66';
 }
 
 .vf-icon-off:before {
-  content: "\ea67";
+  content: '\ea67';
 }
 
 .vf-icon-open-new-window:before {
-  content: "\ea68";
+  content: '\ea68';
 }
 
 .vf-icon-pause:before {
-  content: "\ea69";
+  content: '\ea69';
 }
 
 .vf-icon-phone:before {
-  content: "\ea6a";
+  content: '\ea6a';
 }
 
 .vf-icon-play:before {
-  content: "\ea6c";
+  content: '\ea6c';
 }
 
 .vf-icon-power-outage:before {
-  content: "\ea6d";
+  content: '\ea6d';
 }
 
 .vf-icon-print:before {
-  content: "\ea6e";
+  content: '\ea6e';
 }
 
 .vf-icon-request:before {
-  content: "\ea6f";
+  content: '\ea6f';
 }
 
 .vf-icon-restart:before {
-  content: "\ea70";
+  content: '\ea70';
 }
 
 .vf-icon-send:before {
-  content: "\ea71";
+  content: '\ea71';
 }
 
 .vf-icon-dropbox:before {
-  content: "\ea72";
+  content: '\ea72';
 }
 
 .vf-icon-share:before {
-  content: "\ea73";
+  content: '\ea73';
 }
 
 .vf-icon-shop:before {
-  content: "\ea74";
+  content: '\ea74';
 }
 
 .vf-icon-sign-in:before {
-  content: "\ea75";
+  content: '\ea75';
 }
 
 .vf-icon-sign-out:before {
-  content: "\ea76";
+  content: '\ea76';
 }
 
 .vf-icon-sort:before {
-  content: "\ea77";
+  content: '\ea77';
 }
 
 .vf-icon-tag:before {
-  content: "\ea78";
+  content: '\ea78';
 }
 
 .vf-icon-trash:before {
-  content: "\ea79";
+  content: '\ea79';
 }
 
 .vf-icon-turn-device:before {
-  content: "\ea7a";
+  content: '\ea7a';
 }
 
 .vf-icon-unlocked:before {
-  content: "\ea7b";
+  content: '\ea7b';
 }
 
 .vf-icon-user:before {
-  content: "\ea7c";
+  content: '\ea7c';
 }
 
 .vf-icon-zoom-in:before {
-  content: "\ea7d";
+  content: '\ea7d';
 }
 
 .vf-icon-zoom-out:before {
-  content: "\ea7e";
+  content: '\ea7e';
 }
 
 .vf-icon-slidehare:before {
-  content: "\ea6b5";
+  content: '\ea6b5';
 }
 
 // NEW END

@@ -1,8 +1,6 @@
-## Default
+### Scroll level 1
 
 ```html
-responsive: true
----
 <section class="vf-navigation">
   <nav class="vf-navigation__menu">
     <div class="vf-navigation__default">

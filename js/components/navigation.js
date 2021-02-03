@@ -1,3 +1,5 @@
+import { slice } from 'lodash'
+
 // Wait for dom to load
 window.addEventListener('load', () => {
   let doc
@@ -10,24 +12,74 @@ window.addEventListener('load', () => {
     doc = document
   }
 
+  frame.contentDocument.body.style = 'padding:0'
+
   // Menu button
   let menuButton = doc.querySelector('#vf-navigation-menu-icon')
   let ul = doc.querySelector('.vf-navigation__menu-list')
   let searchBox = doc.querySelector('.vf-navigation__search-box')
   let searchButton = doc.querySelector('.vf-icon-search')
+  let searchButtonDesktop = doc.querySelector(
+    '.vf-navigation__icon-search-desktop'
+  )
   let searchInpuField = searchBox.children[0]
+  let navLinks = doc.querySelectorAll('#vf-navigation__link')
   let menuListItems = doc.getElementsByClassName(
     'vf-navigation__menu-list-item'
   )
 
+  // Toggle Active Links
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      let arrow = e.target.nextElementSibling.nextElementSibling
+
+      let li = e.target.parentElement.parentElement
+      let siblings = li.parentElement.children
+
+      searchButtonDesktop.addEventListener('click', function () {
+        console.log(li.classList.remove("active"))
+      })
+
+      for (let sib of siblings) {
+        if (sib.classList.contains('active')) {
+          sib.classList.remove('active')
+          searchBox.classList.remove('active')
+          li.classList.add('active')
+
+          // Toggle Active Arrow
+          let sibArrow = sib.children[0].children[2]
+          if (sibArrow) {
+            if (sibArrow.classList.contains('active')) {
+              sibArrow.classList.remove('active')
+              arrow.classList.add('active')
+            } else {
+              arrow.classList.add('active')
+            }
+          }
+        } else {
+          li.classList.add('active')
+          searchBox.classList.remove('active')
+        }
+      }
+    })
+  })
+
+  // pressing search button desktop
+  searchButtonDesktop.addEventListener('click', () => {
+    if (searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active')
+    } else {
+      searchBox.classList.add('active')
+      searchInpuField.focus()
+    }
+  })
+
   function toggleMenu() {
     if (menuButton.classList.contains('vf-icon-menu')) {
       menuButton.classList.remove('vf-icon-menu')
+      searchBox.classList.remove('active')
       menuButton.classList.add('vf-icon-close')
       ul.style = 'display: block'
-      searchButton.classList.remove('is-open')
-      searchBox.style = 'visibility:hidden'
-      searchInpuField.value = ''
     } else {
       menuButton.classList.remove('vf-icon-close')
       menuButton.classList.add('vf-icon-menu')
@@ -72,22 +124,23 @@ window.addEventListener('load', () => {
       listIcon.classList.add('vf-icon-more')
 
       listIcon.addEventListener('click', () => toggleChildMenu(listIcon))
-    } else {
+    }
+
+    if (hasChildMenu(listItem) == false) {
       listIcon.classList.remove('vf-icon-more')
+      listIcon.classList.remove('vf-icon-less-info')
     }
   }
 
   // Show/hide search box
-  function toggleSearch(searchButton, searchBox) {
-    if (searchButton.classList.contains('is-open')) {
-      searchButton.classList.remove('is-open')
-      searchBox.style = 'visibility:hidden'
+  function toggleSearch(searchBox) {
+    if (searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active')
     } else {
       menuButton.classList.remove('vf-icon-close')
       menuButton.classList.add('vf-icon-menu')
       ul.style = 'display: none'
-      searchButton.classList.add('is-open')
-      searchBox.style = 'visibility:visible'
+      searchBox.classList.add('active')
       searchInpuField.focus()
     }
   }
@@ -95,9 +148,8 @@ window.addEventListener('load', () => {
   // toggle menu
   menuButton.addEventListener('click', toggleMenu)
 
-  // pressing search button
+  // pressing search button mobile/tablet
   searchButton.addEventListener('click', () => {
-    // toggle search box
-    toggleSearch(searchButton, searchBox)
+    toggleSearch(searchBox)
   })
 })

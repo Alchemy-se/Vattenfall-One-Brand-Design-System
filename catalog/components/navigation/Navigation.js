@@ -2,15 +2,16 @@ import React from 'react'
 import PageHeader from '../../lib/pageHeader'
 import Markdown from '../../lib/markdown'
 import Modals from '../../zendesk/modals/modals'
-import defaultMenu from './default/html/default.md'
+import nav from './expanded/html/expanded.md'
 
-const Navigation = () => {
-    return (
-        <React.Fragment>
-            <PageHeader title={'Navigation'} />
-                <Markdown source={defaultMenu} />
-        </React.Fragment>
-    )
+const Navigation = ({ uri }) => {
+  return (
+    <React.Fragment>
+      <PageHeader title={'Navigation'} />
+      <Markdown source={nav} />
+      <Modals uri={uri}/>
+    </React.Fragment>
+  )
 }
 
 export default Navigation
