@@ -4,15 +4,32 @@ import { slice } from 'lodash'
 window.addEventListener('load', () => {
   let doc
   let frame = document.querySelector('.responsiveTabs__iframe___1nTCV')
+  let markdownChildren = document.querySelectorAll(
+    '.index__htmlInnerContainer___FJLtG'
+  )
+  let previewAreas = document.querySelectorAll('.index__html___3cypL')
+  let markdownElement = document.querySelector('.index__container___3_kmB')
+  markdownElement.style = "max-width: 1482px"
+
+  previewAreas[1].style = "padding-bottom: 200px"
+  markdownChildren[1].style = "height: 260px"
+
+  previewAreas[2].style = 'padding-bottom: 225px'
+  markdownChildren[2].style = 'height: 240px'
+
+  previewAreas[4].style = 'padding-bottom: 165px'
+  markdownChildren[4].style = 'height: 160px'
+
+  previewAreas[5].style = 'padding-bottom: 110px'
+  markdownChildren[5].style = 'height: 100px'
 
   // If responsive mode is true, use ifram document, else use DOM.
   if (frame) {
     doc = frame.contentDocument.body
+    doc.style = 'padding:0'
   } else {
     doc = document
   }
-
-  frame.contentDocument.body.style = 'padding:0'
 
   // Menu button
   let menuButton = doc.querySelector('#vf-navigation-menu-icon')

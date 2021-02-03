@@ -79,6 +79,7 @@ import GuidelinesSpacers from './guidelines/spacers/Spacers'
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics'
 import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
+import GuideLinesNavigation from "./guidelines/navigation/Navigation"
 
 // Other
 import Login from './admin/login'
@@ -501,6 +502,15 @@ const GUIDELINES_ROUTES = [
     component: (
       <GuidelinesWrapper>
         <GuidelinesCarousel />
+      </GuidelinesWrapper>
+    ),
+  },
+  {
+    path: '/guidelines/navigation',
+    name: 'Navigation',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesNavigation />
       </GuidelinesWrapper>
     ),
   },
