@@ -13,10 +13,8 @@ function Header(props) {
   const wrapperRef = useRef(null);
   const { setAuthenticated, authenticated } = useContext(authContext);
 
-
-
-
   useEffect(() => {
+     console.log('header')
     document.addEventListener("click", handleClickOutside, false);
     return () => {
       document.removeEventListener("click", handleClickOutside, false);
