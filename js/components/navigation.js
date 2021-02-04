@@ -14,9 +14,9 @@ window.addEventListener('load', () => {
   for (let child of markdownChildren) {
     child.style = "height:auto"
   }
-  
+
   previewAreas[1].style = 'padding-bottom: 180px'
-  previewAreas[2].style = 'padding-bottom: 225px'
+  previewAreas[2].style = 'padding-bottom: 165px'
   previewAreas[4].style = 'padding-bottom: 165px'
   previewAreas[5].style = 'padding-bottom: 110px'
 
