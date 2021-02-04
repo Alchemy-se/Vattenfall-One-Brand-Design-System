@@ -9,19 +9,16 @@ window.addEventListener('load', () => {
   )
   let previewAreas = document.querySelectorAll('.index__html___3cypL')
   let markdownElement = document.querySelector('.index__container___3_kmB')
-  markdownElement.style = "max-width: 1482px"
+  markdownElement.style = 'max-width: 1482px'
 
-  previewAreas[1].style = "padding-bottom: 200px"
-  markdownChildren[1].style = "height: 260px"
-
+  for (let child of markdownChildren) {
+    child.style = "height:auto"
+  }
+  
+  previewAreas[1].style = 'padding-bottom: 180px'
   previewAreas[2].style = 'padding-bottom: 225px'
-  markdownChildren[2].style = 'height: 240px'
-
   previewAreas[4].style = 'padding-bottom: 165px'
-  markdownChildren[4].style = 'height: 160px'
-
   previewAreas[5].style = 'padding-bottom: 110px'
-  markdownChildren[5].style = 'height: 100px'
 
   // If responsive mode is true, use ifram document, else use DOM.
   if (frame) {
@@ -54,7 +51,7 @@ window.addEventListener('load', () => {
       let siblings = li.parentElement.children
 
       searchButtonDesktop.addEventListener('click', function () {
-        console.log(li.classList.remove("active"))
+        console.log(li.classList.remove('active'))
       })
 
       for (let sib of siblings) {
