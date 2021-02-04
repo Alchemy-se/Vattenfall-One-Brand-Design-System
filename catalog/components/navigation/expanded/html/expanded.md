@@ -1,6 +1,6 @@
-For level 2 `.active` can be applied to the sibling element `.vf-navigation__bottom-arrow` to apply the arrow styling.
-
 ## Expanded
+
+(DEKSTOP ONLY) For level 2 class `.active` can be applied to the sibling element `.vf-navigation__bottom-arrow` to apply the arrow styling.
 
 ```html
 <nav class="vf-navigation__menu">
@@ -89,7 +89,7 @@ For level 2 `.active` can be applied to the sibling element `.vf-navigation__bot
           <div>
             <a href="javascript:" id="vf-navigation__link">Sutstainability</a>
             <span class="vf-icon-more"></span>
-            <arrow class="vf-navigation__bottom-arrow"></arrow>
+            <arrow class="vf-navigation__bottom-arrow active"></arrow>
           </div>
           <ul class="vf-navigation__menu-list vf-navigation__menu-level-3">
             <li class="vf-navigation__menu-list-item active">

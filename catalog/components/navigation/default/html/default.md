@@ -13,7 +13,7 @@ Active states with `.active` to indicate the current page can be applied to thei
       <img src="/img/vf-logo.svg" width="180" />
     </a>
 
-    <li class="vf-navigation__menu-list-item">
+    <li class="vf-navigation__menu-list-item active">
       <div>
         <a href="javascript:" id="vf-navigation__link">Who we are</a>
         <span class="vf-icon-more"></span>

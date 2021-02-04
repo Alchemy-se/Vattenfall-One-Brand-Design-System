@@ -1,7 +1,4 @@
-### Expanded Responsive
-
-For level 2 `.active` can be applied to the sibling element `.vf-navigation__bottom-arrow` to apply the arrow styling.
-
+## Responsive
 
 ```html
 responsive: true

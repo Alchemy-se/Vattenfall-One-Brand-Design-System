@@ -1,5 +1,3 @@
-import { slice } from 'lodash'
-
 // Wait for dom to load
 window.addEventListener('load', () => {
   let doc

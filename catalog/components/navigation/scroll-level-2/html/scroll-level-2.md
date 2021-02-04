@@ -87,7 +87,7 @@
           <div>
             <a href="javascript:" id="vf-navigation__link">Sutstainability</a>
             <span class="vf-icon-more"></span>
-            <arrow class="vf-navigation__bottom-arrow"></arrow>
+            <arrow class="vf-navigation__bottom-arrow active"></arrow>
           </div>
           <ul class="vf-navigation__menu-list vf-navigation__menu-level-3">
             <li class="vf-navigation__menu-list-item active">
