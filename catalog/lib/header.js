@@ -14,7 +14,6 @@ function Header(props) {
   const { setAuthenticated, authenticated } = useContext(authContext);
 
   useEffect(() => {
-     console.log('header')
     document.addEventListener("click", handleClickOutside, false);
     return () => {
       document.removeEventListener("click", handleClickOutside, false);
