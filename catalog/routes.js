@@ -190,9 +190,6 @@ const COMPONENTS_ROUTES = [
     name: 'Lists',
     component: <Lists uri={'/components/css/list'} />,
   },
-  /*
-    { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
-  */
   {
     path: "/css/navigation",
     name: "Navigation",
