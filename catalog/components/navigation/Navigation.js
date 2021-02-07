@@ -2,22 +2,51 @@ import React from 'react'
 import PageHeader from '../../lib/pageHeader'
 import Markdown from '../../lib/markdown'
 import Modals from '../../zendesk/modals/modals'
-import nav from './expanded/html/expanded.md'
-import defaultmenu from './default/html/default.md'
-import search from './search/html/search.md'
-import expanded from './expanded/html/expanded.md'
-import scroll1 from "./scroll-level-1/html/scroll-level-1.md"
-import scroll2 from "./scroll-level-2/html/scroll-level-2.md"
-import scroll3 from "./scroll-level-3/html/scroll-level-3.md"
-import responsive from "./responsive/html/responsive.md"
 
-const markdown = defaultmenu + search + expanded + scroll1 + scroll2 + scroll3 + responsive
+import intro from './default/html/intro.md'
+import defaultmenuText from './default/html/text.md'
+import defaultmenu from './default/html/default.md'
+
+import searchText from './search/html/text.md'
+import search from './search/html/search.md'
+
+import expandedText from './expanded/html/text.md'
+import expanded from './expanded/html/expanded.md'
+
+import scroll1Text from './scroll-level-1/html/text.md'
+import scroll1 from './scroll-level-1/html/scroll-level-1.md'
+
+import scroll2Text from './scroll-level-2/html/text.md'
+import scroll2 from './scroll-level-2/html/scroll-level-2.md'
+
+import scroll3Text from './scroll-level-3/html/text.md'
+import scroll3 from './scroll-level-3/html/scroll-level-3.md'
+
+import responsiveText from './responsive/html/text.md'
+import responsive from './responsive/html/responsive.md'
+
+const markdown =
+  intro +
+  defaultmenuText +
+  defaultmenu +
+  searchText +
+  search +
+  expandedText +
+  expanded +
+  scroll1Text +
+  scroll1 +
+  scroll2Text +
+  scroll2 +
+  scroll3Text +
+  scroll3 +
+  responsiveText +
+  responsive
 
 const Navigation = ({ uri }) => {
   return (
     <React.Fragment>
       <PageHeader title={'Navigation'} />
-        <Markdown source={markdown} />
+      <Markdown source={markdown} />
       <Modals uri={uri} />
     </React.Fragment>
   )

@@ -1,5 +1,3 @@
-## Scroll level 3
-
 ```html
 <nav class="vf-navigation__menu scroll-level-3">
   <div class="vf-navigation__default">

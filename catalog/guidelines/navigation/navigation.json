@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Navigation",
+    "description": "Navigation",
+    "type": "guideline",
+    "uri": "/guidelines/navigation",
+    "objectID": "navigation-guideline",
+    "children": [
+      {
+        "name": "Default"
+      },
+      {
+        "name": "Search"
+      },
+      {
+        "name": "Expanded"
+      },
+      {
+        "name": "Scroll level 1"
+      },
+      {
+        "name": "Scroll level 2"
+      },
+      {
+        "name": "Scroll level 3"
+      },
+      {
+        "name": "Responsive"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#default",
+    "description": "",
+    "objectID": "default-guideline",
+    "name": "Default",
+    "id": "navigation-default"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#search",
+    "description": "",
+    "objectID": "search-guideline",
+    "name": "Search",
+    "id": "navigation-search"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded",
+    "description": "",
+    "objectID": "expanded-guideline",
+    "name": "Expanded",
+    "id": "navigation-expanded"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#scroll-level-1",
+    "description": "",
+    "objectID": "scroll-level-1-guideline",
+    "name": "Scroll level 1",
+    "id": "navigation-scroll-level-1"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#scroll-level-2",
+    "description": "",
+    "objectID": "scroll-level-2-guideline",
+    "name": "Scroll level 2",
+    "id": "navigation-scroll-level-2"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#scroll-level-3",
+    "description": "",
+    "objectID": "scroll-level-3-guideline",
+    "name": "Scroll level 3",
+    "id": "navigation-scroll-level-3"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#responsive",
+    "description": "",
+    "objectID": "responsive-guideline",
+    "name": "Responsive",
+    "id": "navigation-responsive"
+  }
+]
