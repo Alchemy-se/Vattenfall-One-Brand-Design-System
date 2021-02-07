@@ -1,7 +1,7 @@
 {
-  "id": "navigation-default",
+  "id": "default",
   "uri": "#default",
-  "name": "Navigation default",
+  "name": "Default",
   "guidelineUri":"#default",
   "description": null,
   "react": {

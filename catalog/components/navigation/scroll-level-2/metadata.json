@@ -1,7 +1,7 @@
 {
-  "id": "navigation-scroll-level-2",
+  "id": "scroll-level-2",
   "uri": "#scroll-level-2",
-  "name": "Navigation scroll-level-2",
+  "name": "Scroll level 2",
   "guidelineUri":"#scroll-level-2",
   "description": null,
   "react": {

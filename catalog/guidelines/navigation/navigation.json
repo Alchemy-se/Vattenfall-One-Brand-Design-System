@@ -16,13 +16,13 @@
         "name": "Expanded"
       },
       {
-        "name": "Scroll-level-1"
+        "name": "Scroll level 1"
       },
       {
-        "name": "Scroll-level-2"
+        "name": "Scroll level 2"
       },
       {
-        "name": "Scroll-level-3"
+        "name": "Scroll level 3"
       },
       {
         "name": "Responsive"
@@ -78,9 +78,10 @@
     "uri": "/guidelines/navigation#scroll-level-1",
     "description": "",
     "objectID": "scroll-level-1-guideline",
-    "name": "Scroll-level-1",
+    "name": "Scroll level 1",
     "id": "navigation-scroll-level-1"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Navigation"
@@ -90,9 +91,10 @@
     "uri": "/guidelines/navigation#scroll-level-2",
     "description": "",
     "objectID": "scroll-level-2-guideline",
-    "name": "Scroll-level-2",
+    "name": "Scroll level 2",
     "id": "navigation-scroll-level-2"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Navigation"
@@ -102,9 +104,10 @@
     "uri": "/guidelines/navigation#scroll-level-3",
     "description": "",
     "objectID": "scroll-level-3-guideline",
-    "name": "Scroll-level-3",
+    "name": "Scroll level 3",
     "id": "navigation-scroll-level-3"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Navigation"

@@ -1,7 +1,3 @@
-### Scroll level 1
-
-Same as Default
-
 ```html
 <nav class="vf-navigation__menu">
   <ul class="vf-navigation__menu-list vf-navigation__menu-level-1">

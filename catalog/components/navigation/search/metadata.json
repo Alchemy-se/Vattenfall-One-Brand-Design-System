@@ -1,7 +1,7 @@
 {
-  "id": "navigation-search",
+  "id": "search",
   "uri": "#search",
-  "name": "Navigation search",
+  "name": "Search",
   "guidelineUri":"#search",
   "description": null,
   "react": {

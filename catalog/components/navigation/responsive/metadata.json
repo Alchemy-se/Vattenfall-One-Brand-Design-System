@@ -1,7 +1,7 @@
 {
-  "id": "navigation-responsive",
+  "id": "responsive",
   "uri": "#responsive",
-  "name": "Navigation responsive",
+  "name": "Responsive",
   "guidelineUri":"#responsive",
   "description": null,
   "react": {

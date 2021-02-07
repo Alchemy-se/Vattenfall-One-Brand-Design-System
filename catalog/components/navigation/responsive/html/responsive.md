@@ -1,5 +1,3 @@
-## Responsive
-
 ```html
 responsive: true
 ---
