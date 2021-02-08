@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
-import examples from './examples/html/examples.md';
+import example from './example/html/example.md';
 import howToAddIcons from './how-to-add-icons/html/how-to-add-icons.md';
 import ActionIcons from './action-icons/html/action-icons.md';
 import InChargeIcons from './Incharge-icons/html/incharge-icons.md';
@@ -12,7 +12,7 @@ import SocialMediaIcons from './socialmedia-icons/html/socialmedia-icons.md';
 import Sizing from "./sizing/html/sizing.md"
 import Modals from "../../zendesk/modals/modals";
 
-const markdown = howToAddIcons + examples + ActionIcons + InChargeIcons + IdentificationIcons + NavigationIcons + SmartHomeIcons + SocialMediaIcons + Sizing;
+const markdown = howToAddIcons + example + ActionIcons + InChargeIcons + IdentificationIcons + NavigationIcons + SmartHomeIcons + SocialMediaIcons + Sizing;
 export default class Icons extends Component {
   render() {
     return (
