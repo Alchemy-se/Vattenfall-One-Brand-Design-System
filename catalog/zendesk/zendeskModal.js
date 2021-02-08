@@ -8,6 +8,7 @@ const ZendeskModal = ({ data, setOpenModal, setDisplayConfirmModal, setStatus })
 
   const close = require('../../assets/icons/Close.svg').default;
   const spinner = require('../../assets/spinner.gif').default;
+  const spinner2 = require("../../assets/spinner.json")
   const location = useLocation();
   const emailRegex = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
 

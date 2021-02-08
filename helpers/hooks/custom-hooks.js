@@ -96,10 +96,10 @@ export function useAddReportButton(uri, type = 'collection') {
 
 
           // Get report button by id and add click event listener
-          const reportButton = document.getElementById(item.id + "-div");
+        const reportButton = document.getElementById(item.id + "-div");
+          reportButton.style = "max-width:135px; cursor:pointer;"
           reportButton.addEventListener('click', function (e) {
-
-
+            
             let child;
             // create prop/key (uri) to look for in the filter -> indexOf
             // if the component dont have any children its a lonely child and dont have an
@@ -172,3 +172,5 @@ export function useDetectOutsideClick(ref) {
   });
   return isClickedOutside
 }
+
+
