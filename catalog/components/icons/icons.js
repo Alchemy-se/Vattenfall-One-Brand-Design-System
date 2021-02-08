@@ -9,9 +9,10 @@ import IdentificationIcons from './identification-icons/html/identification-icon
 import NavigationIcons from './navigation-icons/html/navigation-icons.md';
 import SmartHomeIcons from './smart-home-icons/html/smart-home-icons.md';
 import SocialMediaIcons from './socialmedia-icons/html/socialmedia-icons.md';
+import Sizing from "./sizing/html/sizing.md"
 import Modals from "../../zendesk/modals/modals";
 
-const markdown = howToAddIcons + examples + ActionIcons + InChargeIcons + IdentificationIcons + NavigationIcons + SmartHomeIcons + SocialMediaIcons;
+const markdown = howToAddIcons + examples + ActionIcons + InChargeIcons + IdentificationIcons + NavigationIcons + SmartHomeIcons + SocialMediaIcons + Sizing;
 export default class Icons extends Component {
   render() {
     return (

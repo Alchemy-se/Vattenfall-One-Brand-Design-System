@@ -1,47 +1,12 @@
-
-# Examples
+# Example
 
 ```html
 showSource: false
 ---
-<div class="vf-container">
-
-	<div class="vf-icon-placeholder">
-		Placeholder
-	</div>
-
-	<div class="vf-icon-settings">
-		Settings
-	</div>
-
-	<div class="vf-icon-up">
-		Up
-	</div>
-
-	<div class="vf-icon-down">
-		Down
-	</div>
-
-	<div class="vf-icon-left">
-		Left
-	</div>
-
-	<div class="vf-icon-right">
-		Right
-	</div>
-
-	<div class="vf-icon-question">
-		Question
-	</div>
-
-	<div class="vf-icon-map-tag">
-		Map Tag
-	</div>
-
-	<div class="vf-icon-time">
-		Time
-	</div>
-
+<div class="vf-container" id="vf-icon-example">
+    <span class="vf-icon-placeholder">Placeholder</span>
 </div>
-
 ```
+
+Below you’ll find all Action, InCharge, Identification, Navigation, Smart Home and Social Media Icons. Hover over the icon to see the class name for each or use the built in search function in the top menu.
+
