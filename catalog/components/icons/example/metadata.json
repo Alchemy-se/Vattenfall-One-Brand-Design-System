@@ -1,7 +1,7 @@
 {
-  "id": "examples",
-  "uri": "#examples",
-  "name": "Examples",
+  "id": "example",
+  "uri": "#example",
+  "name": "Example",
   "guidelineUri":false,
   "description": null,
   "react": {
