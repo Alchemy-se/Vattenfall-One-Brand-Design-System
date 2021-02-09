@@ -59,6 +59,7 @@ const MENU_GROUP_ITEMS = {
     { path: '/utilities', name: 'Intro' },
     { path: '/utilities/favicon', name: 'Favicon' },
     { path: '/css/icons', name: 'Icons' },
+    { path: '/css/spinner', name: 'Spinner' },
   ],
 }
 
