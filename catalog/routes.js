@@ -37,7 +37,7 @@ import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from "./components/navigation/Navigation"
-import Spinner from "./components/spinner/spinner"
+import Spinner from "./components/spinner/Spinner"
 
 // PARALLAX
 // import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
