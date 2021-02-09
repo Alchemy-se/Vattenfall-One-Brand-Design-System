@@ -9,7 +9,7 @@ const ModalContent = ({
   reportData,
   hasError,
   handleInputData,
-  spinner,
+  Spinner,
   disableSubmit,
   displayError,
   files,
@@ -22,6 +22,8 @@ const ModalContent = ({
   const isClickedOutside = useDetectOutsideClick(ref)
 
   useEffect(() => {
+    if (isLoading == false) {
+    }
     if (isClickedOutside) {
       setOpenModal(false)
     }
@@ -29,14 +31,13 @@ const ModalContent = ({
 
   return (
     <div className={styles.modalContainer} ref={ref}>
-      {isLoading && <div className={styles.overlay} />}
+      {isLoading && (
+        <React.Fragment>
+          <div className={styles.overlay} />
+          <Spinner className={styles.spinner} />
+        </React.Fragment>
+      )}
       <div className={styles.modalContent}>
-        {isLoading && (
-          <div className={styles.spinner}>
-            <img src={spinner} alt='' />
-          </div>
-        )}
-
         <form>
           <h3>Report issue – {selectedChild.name}</h3>
           <div className={styles.inputFieldsContainer}>
