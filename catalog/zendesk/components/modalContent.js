@@ -27,8 +27,6 @@ const ModalContent = ({
     }
   }, [isClickedOutside])
 
-  console.log('report window is now open...')
-
   return (
     <div className={styles.modalContainer} ref={ref}>
       {isLoading && <div className={styles.overlay} />}
