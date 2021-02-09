@@ -1,12 +1,22 @@
 import React from 'react'
-import ReportButton from "../../lib/ReportButton"
+import Lottie from 'react-lottie'
+import animationData from '../../../assets/spinner.json'
 
-const spinner = () => {
-    return (
-        <div>
-            <ReportButton></ReportButton>
-        </div>
-    )
+const Spinner = ({height = 40, width = 40}) => {
+    const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    redndererSettings: {
+      preserverAspectRatio: 'xMidYMid slice',
+    },
+  }
+
+  return (
+    <div style={{width:width, height:height}}>
+      <Lottie options={defaultOptions} height={height} width={width} />
+    </div>
+  )
 }
 
-export default spinner
+export default Spinner
