@@ -54,7 +54,7 @@
 
 [class^='vf-icon-']:before,
 [class*=' vf-icon-']:before {
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .vf-navigation__menu-level-1 li div {
@@ -241,6 +241,7 @@
   .vf-navigation__menu {
     display: flex;
     position: relative;
+    font-size: 10px;
   }
   .vf-navigation__default {
     left: 0;
@@ -252,15 +253,17 @@
     display: none;
   }
   .vf-navigation__logo-desktop {
-    margin-right: 40px;
+    margin-right: 4em;
   }
   .vf-navigation__globe-desktop {
-    margin-left: calc(85px - 30px);
-    margin-right: calc(44px);
+    font-size: 1em;
+    margin-left: calc(8.5em - 3em);
+    margin-right: 4.4em;
   }
 
   .vf-navigation__menu-level-1 {
-    height: 60px;
+    font-size: 1em;
+    height: 6em;
     display: block;
     display: flex;
     justify-content: center;
@@ -276,11 +279,12 @@
   }
   .vf-navigation__menu-level-1 > a > img {
     display: inline-block;
+    width: 18em;
   }
   .vf-navigation__menu-level-1 > span {
     margin-bottom: 0;
     display: block;
-    padding: 8px;
+    padding: 0.8em;
   }
   .vf-navigation__menu-level-1 > span:hover {
     transform: scale(1.3);
@@ -298,33 +302,35 @@
   }
   .vf-navigation__menu-level-1 > li > div {
     padding: 0;
+    min-height: 6em;
   }
   .vf-navigation__menu-level-1 > li > div > a {
     display: flex;
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 500;
     justify-content: center;
     text-decoration: none;
-    padding: 19px 25px 19px;
+    padding: 0;
+    margin: 0 calc(1.4em - 0.2px);
     width: 100%;
-    height: 100%;
-    line-height: 23px;
-    margin-top: 1px;
+    height: 1.28em;
+    line-height: 1.28em;
   }
   .vf-navigation__menu-level-1 > li > div > a:hover {
     color: #2071b5;
   }
-  .vf-navigation__menu-level-1 > li.active > div > a {
+  .vf-navigation__menu-level-1 > li.active > div {
     background: #edf1f6;
-    color: #2071b5;
-    line-height: 23px;
-    margin-top: 1px;
+
+    > a {
+      color: #2071b5;
+    }
   }
 }
 
-@media only screen and (min-width: 1200px) and (min-width: 1250px) {
+@media only screen and (min-width: 1200px) {
   .vf-navigation__globe-desktop {
-    margin-left: calc(125px - 30px);
+    margin-left: calc(12.5em - 3em);
   }
 }
 
@@ -338,8 +344,8 @@
     display: none;
   }
   .vf-navigation__menu-list-item.active > ul {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -349,7 +355,7 @@
   .vf-navigation__menu-list-item.active > .vf-navigation__menu-level-3 {
     margin-left: 0;
     margin-right: 0;
-    min-height: 44px;
+    min-height: 4.4em;
   }
   .vf-navigation__menu-list-border {
     position: absolute;
@@ -363,13 +369,13 @@
     top: 100%;
     left: 0;
     right: 0;
-    padding-left: 21vw;
-    padding-right: 17vw;
+    padding-left: 21%;
+    padding-right: 17%;
   }
   .vf-navigation__menu-level-2 li,
   .vf-navigation__menu-level-3 li,
   .vf-navigation__menu-level-4 li {
-    height: 56px;
+    height: 5.6em;
   }
   .vf-navigation__menu-level-2 li div,
   .vf-navigation__menu-level-3 li div,
@@ -382,11 +388,15 @@
   .vf-navigation__menu-level-2 li div a,
   .vf-navigation__menu-level-3 li div a,
   .vf-navigation__menu-level-4 li div a {
-    padding: 16px 16px 17px;
-    font-size: 18px;
+    margin: calc((1em * 0.9) - 0.2px) calc((1em * 0.9) - 0.2px) calc((1em*0.95) - 0.1px);
+    font-size: 1.8em;
     font-weight: 500;
-    margin: 0;
+    padding: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 1.28em;
+    line-height: 1.28em;
     text-decoration: none;
   }
   .vf-navigation__menu-level-2 li div a:hover,
@@ -409,9 +419,9 @@
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 8px solid #fff;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: 0.8em solid #fff;
     z-index: 100;
     visibility: hidden;
   }
@@ -422,35 +432,38 @@
     padding: 0;
     position: relative;
     margin: 0;
+    min-height: 5.4em;
   }
   .vf-navigation__menu-level-3 {
     background: #fff;
-    padding-left: 171px;
-    padding-right: 160px;
-    min-height: 44px;
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-left: 17.1em;
+    padding-right: 16em;
+    min-height: 4.4em;
+    padding-top: 0.7em;
+    padding-bottom: 0.9em;
     display: flex;
   }
   .vf-navigation__menu-level-3 > li {
-    height: 36px;
+    height: 3.6em;
   }
   .vf-navigation__menu-level-3 > li > div {
-    min-height: 36px;
-    height: 36px;
+    min-height: 3.6em;
+    height: 3.6em;
   }
   .vf-navigation__menu-level-3 > li > div a {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    padding: 6px 25px 7px;
+    font-size: 1.6em;
+    height: 1.44em;
+    line-height: 1.44em;
+    margin: 0.375em 1.562em 0.437em;
+    padding: 0;
   }
   .vf-navigation__menu-level-3 > li.active > div > a {
     background: #fff;
     color: #2071b5;
   }
   .vf-navigation__menu-list-item.active > .vf-navigation__menu-level-3 > ul {
-    height: 88px;
+    height: 8.8em;
   }
 }
 
@@ -468,7 +481,6 @@
   > li > ul {
     padding: 0;
   }
-
 }
 
 .vf-navigation__menu.scroll-level-2 > ul.vf-navigation__menu-level-1 > a {
@@ -494,11 +506,9 @@
   visibility: hidden;
 }
 
-.vf-navigation__menu.scroll-level-3
-  > ul.vf-navigation__menu-level-1{
-    height: 0;
-    > li
-    > ul.vf-navigation__menu-level-2 {
+.vf-navigation__menu.scroll-level-3 > ul.vf-navigation__menu-level-1 {
+  height: 0;
+  > li > ul.vf-navigation__menu-level-2 {
     height: 0;
   }
 }
@@ -522,15 +532,17 @@
 /* search desktop */
 @media only screen and (min-width: 1200px) {
   .vf-navigation__search-box.active {
+    font-size: 1em;
     display: flex;
-    top: 60px;
+    top: 6em;
     left: 0;
     right: 0;
     z-index: 10;
+    height: 16em;
   }
   .vf-navigation__search-box.active > input {
-    font-size: 52px;
-    width: 552px;
+    font-size: 5.2em;
+    width: calc(10em + 32px);
     height: 72px;
   }
   .vf-navigation__icon-close-desktop {

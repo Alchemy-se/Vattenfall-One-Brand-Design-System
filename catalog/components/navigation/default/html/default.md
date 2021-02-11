@@ -2,10 +2,10 @@
 <nav class="vf-navigation__menu">
   <ul class="vf-navigation__menu-list vf-navigation__menu-level-1">
     <a href="javascript:" class="vf-navigation__logo-desktop">
-      <img src="/img/vf-logo.svg" width="180" />
+      <img src="/img/vf-logo.svg" />
     </a>
 
-    <li class="vf-navigation__menu-list-item active">
+    <li class="vf-navigation__menu-list-item">
       <div>
         <a href="javascript:" id="vf-navigation__link">Who we are</a>
         <span class="vf-icon-more"></span>

@@ -6,11 +6,11 @@ window.addEventListener('load', () => {
     '.index__htmlInnerContainer___FJLtG'
   )
   let previewAreas = document.querySelectorAll('.index__html___3cypL')
-  let markdownElement = document.querySelector('.index__container___3_kmB')
-  markdownElement.style = 'max-width: 1482px'
+  // let markdownElement = document.querySelector('.index__container___3_kmB')
+  // markdownElement.style = 'max-width: 1482px'
 
   for (let child of markdownChildren) {
-    child.style = "height:auto"
+    child.style = 'height:auto'
   }
 
   previewAreas[1].style = 'padding-bottom: 180px'
@@ -18,7 +18,49 @@ window.addEventListener('load', () => {
   previewAreas[4].style = 'padding-bottom: 165px'
   previewAreas[5].style = 'padding-bottom: 110px'
 
-  // If responsive mode is true, use ifram document, else use DOM.
+  // Scaling
+
+  function scaling() {
+    let navMenus = document.querySelectorAll('.vf-navigation__menu')
+    navMenus.forEach(navMenu => {
+      let navDimensions = navMenu.getBoundingClientRect()
+      let navWidth = parseInt(navDimensions.width)
+
+      if (navWidth >= 1440) {
+        navMenu.style = 'font-size:10px'
+      }
+
+      if (navWidth < 1440 && navWidth > 1260) {
+        navMenu.style = 'font-size:9px'
+      }
+
+      if (navWidth <= 1260 && navWidth > 1160) {
+        navMenu.style = 'font-size:8px'
+      }
+
+      if (navWidth <= 1160 && navWidth > 960) {
+        navMenu.style = 'font-size:7px'
+      }
+
+      if (navWidth <= 960 && navWidth > 860) {
+        navMenu.style = 'font-size:6px'
+      }
+
+      if (navWidth <= 860) {
+        navMenu.style = 'font-size:5px'
+      }
+    })
+  }
+
+  // run scaling on load
+  scaling()
+
+  // then run scaling whenever window is resized
+  window.addEventListener('resize', function () {
+    scaling()
+  })
+
+  // If responsive mode is true, use iframe document, else use DOM.
   if (frame) {
     doc = frame.contentDocument.body
     doc.style = 'padding:0'
