@@ -27,6 +27,8 @@ import responsive from './responsive/html/responsive.md'
 
 const markdown =
   intro +
+  responsiveText +
+  responsive +
   defaultmenuText +
   defaultmenu +
   searchText +
@@ -38,9 +40,8 @@ const markdown =
   scroll2Text +
   scroll2 +
   scroll3Text +
-  scroll3 +
-  responsiveText +
-  responsive
+  scroll3
+  
 
 const Navigation = ({ uri }) => {
   return (

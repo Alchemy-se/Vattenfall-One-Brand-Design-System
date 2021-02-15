@@ -11,8 +11,12 @@
   justify-content: center;
 }
 .vf-navigation__default span {
-  margin-top: 5px;
+  margin: 0;
   cursor: pointer;
+}
+
+.vf-navigation__default span:before {
+  font-size: 20px;
 }
 
 .vf-navigation__default-inner {
@@ -52,18 +56,13 @@
   display: none;
 }
 
-[class^='vf-icon-']:before,
-[class*=' vf-icon-']:before {
-  font-size: 2em;
-}
-
 .vf-navigation__menu-level-1 li div {
   min-height: 54px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .vf-navigation__menu-level-1 li div a {
   display: flex;
@@ -104,8 +103,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .vf-navigation__menu-level-2 li div a,
 .vf-navigation__menu-level-3 li div a,
@@ -172,15 +171,17 @@
 /* search mobile */
 .vf-navigation__search-box {
   display: none;
+
+  .vf-navigation__icon-close-desktop {
+    display: none;
+  }
 }
 .vf-navigation__search-box.active {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 60px;
-  right: 1em;
-  left: 1em;
+  top: 56px;
   height: 160px;
   background: #ebf2f3;
 }
@@ -216,16 +217,16 @@
 
 /* default tablet */
 @media only screen and (min-width: 668px) {
-  .vf-navigation__default-inner {
-    padding-right: calc(5% - 18px);
-    padding-left: calc(5% - 18px);
-  }
   /* search tablet */
   .vf-navigation__search-box input {
     width: 42vw;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  .vf-navigation__search-box.active {
+    right: 0;
+    left: 0;
   }
 }
 
@@ -255,10 +256,17 @@
   .vf-navigation__logo-desktop {
     margin-right: 4em;
   }
-  .vf-navigation__globe-desktop {
-    font-size: 1em;
-    margin-left: calc(8.5em - 3em);
-    margin-right: 4.4em;
+  .vf-navigation__globe-desktop::before {
+    font-size: 2em;
+  }
+
+  .vf-navigation__icon-search-desktop {
+    margin-left: 1.6em;
+  }
+
+  .vf-navigation__icon-search-desktop::before {
+    font-size: 2em;
+    margin-top: 2px;
   }
 
   .vf-navigation__menu-level-1 {
@@ -286,11 +294,33 @@
     display: block;
     padding: 0.8em;
   }
+
   .vf-navigation__menu-level-1 > span:hover {
-    transform: scale(1.3);
-    transition: 0.2s;
     cursor: pointer;
   }
+
+  .vf-navigation__menu-level-1 > {
+    .vf-icon-globe.vf-navigation__globe-desktop:hover {
+      transform: scale(1.3);
+      transition: 0.4s;
+    }
+
+    .vf-navigation__icon-search-desktop:hover:before {
+      transform: scale(1.3);
+      transition: 0.4s;
+    }
+  }
+
+  .vf-navigation__menu-level-1 > .vf-navigation__icon-search-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 6em;
+    height: 6em;
+    padding: 0;
+  }
+
   .vf-navigation__menu-level-1 > li span {
     display: none;
   }
@@ -388,7 +418,8 @@
   .vf-navigation__menu-level-2 li div a,
   .vf-navigation__menu-level-3 li div a,
   .vf-navigation__menu-level-4 li div a {
-    margin: calc((1em * 0.9) - 0.2px) calc((1em * 0.9) - 0.2px) calc((1em*0.95) - 0.1px);
+    margin: calc((1em * 0.9) - 0.2px) calc((1em * 0.9) - 0.2px)
+      calc((1em * 0.95) - 0.1px);
     font-size: 1.8em;
     font-weight: 500;
     padding: 0;
@@ -531,6 +562,12 @@
 
 /* search desktop */
 @media only screen and (min-width: 1200px) {
+  .vf-navigation__search-box {
+    .vf-navigation__icon-close-desktop {
+      display: block;
+    }
+  }
+
   .vf-navigation__search-box.active {
     font-size: 1em;
     display: flex;
@@ -539,6 +576,10 @@
     right: 0;
     z-index: 10;
     height: 16em;
+
+    .vf-navigation__icon-close-desktop::before {
+      font-size: 2em;
+    }
   }
   .vf-navigation__search-box.active > input {
     font-size: 5.2em;
@@ -546,11 +587,9 @@
     height: 72px;
   }
   .vf-navigation__icon-close-desktop {
-    display: block;
-    background: red;
-    width: 20px;
-    height: 20px;
+    font-size: 1.111em;
     position: absolute;
     right: 66px;
+    cursor: pointer;
   }
 }

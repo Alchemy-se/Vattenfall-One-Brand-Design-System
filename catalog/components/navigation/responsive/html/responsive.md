@@ -17,6 +17,7 @@ responsive: true
 
     <div class="vf-navigation__search-box">
       <input type="text" placeholder="Type here to search" />
+      <span class="vf-icon-close vf-navigation__icon-close-desktop"></span>
     </div>
 
     <ul class="vf-navigation__menu-list vf-navigation__menu-level-1">
@@ -879,3 +880,4 @@ responsive: true
     </ul>
   </nav>
 ```
+

@@ -1,27 +1,36 @@
 // Wait for dom to load
 window.addEventListener('load', () => {
-  let doc
-  let frame = document.querySelector('.responsiveTabs__iframe___1nTCV')
   let markdownChildren = document.querySelectorAll(
     '.index__htmlInnerContainer___FJLtG'
   )
   let previewAreas = document.querySelectorAll('.index__html___3cypL')
-  // let markdownElement = document.querySelector('.index__container___3_kmB')
-  // markdownElement.style = 'max-width: 1482px'
 
+  // Set height for pre tags
   for (let child of markdownChildren) {
     child.style = 'height:auto'
   }
 
+  // Preview settings
   previewAreas[1].style = 'padding-bottom: 180px'
   previewAreas[2].style = 'padding-bottom: 165px'
   previewAreas[4].style = 'padding-bottom: 165px'
   previewAreas[5].style = 'padding-bottom: 110px'
 
-  // Scaling
+  /**
+   *  CODE BELOW IS FOR THE NON-RESPONSIVE PREVIEW
+   */
 
-  function scaling() {
-    let navMenus = document.querySelectorAll('.vf-navigation__menu')
+  let navMenus = document.querySelectorAll('.vf-navigation__menu')
+
+  // Run scaling on load
+  scaling(navMenus)
+
+  // Then run scaling whenever window is resized
+  window.addEventListener('resize', function () {
+    scaling(navMenus)
+  })
+
+  function scaling(navMenus) {
     navMenus.forEach(navMenu => {
       let navDimensions = navMenu.getBoundingClientRect()
       let navWidth = parseInt(navDimensions.width)
@@ -52,14 +61,74 @@ window.addEventListener('load', () => {
     })
   }
 
-  // run scaling on load
-  scaling()
+  // Check current state for searchbox on load
+  // and add event handler
+  toggleSearchBoxDesktop()
 
-  // then run scaling whenever window is resized
-  window.addEventListener('resize', function () {
-    scaling()
-  })
+  // Toggle searchBox desktop
+  function toggleSearchBoxDesktop() {
+    navMenus.forEach(navMenu => {
+      let searchBox = navMenu.querySelector('.vf-navigation__search-box')
+      let searchIcon = navMenu.querySelector(
+        '.vf-navigation__icon-search-desktop'
+      )
+      let searchClose = navMenu.querySelector(
+        '.vf-navigation__icon-close-desktop'
+      )
 
+      // check if searchBox exists
+      if (searchBox) {
+        let searchInput = searchBox.children[0]
+
+        // check if searchbox is active
+        if (searchBox.classList.contains('active')) {
+          searchIcon.style = 'background:#ebf2f3;'
+          searchInput.focus()
+        } else {
+          searchIcon.style = 'background:#ffffff'
+        }
+
+        searchIcon.addEventListener('click', () =>
+          clickSearchIcon(searchBox, searchIcon, searchInput)
+        )
+
+        // check if searchClose exists
+        if (searchClose) {
+          searchClose.addEventListener('click', () =>
+            searchCloseButton(searchBox, searchIcon)
+          )
+        }
+      }
+    })
+  }
+
+  function clickSearchIcon(searchBox, searchIcon, searchInput) {
+    if (searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active')
+      searchIcon.style = 'background:#ffffff;'
+      console.log('click search icon...')
+    } else {
+      searchBox.classList.add('active')
+      searchIcon.style = 'background:#ebf2f3;'
+      searchInput.focus()
+      console.log('click search icon...')
+    }
+  }
+
+  function searchCloseButton(searchBox, searchIcon) {
+    if (searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active')
+      searchIcon.style = 'background:#ffffff;'
+      console.log('click search close...')
+    }
+  }
+
+  /**
+   *  CODE BELOW IS FOR THE RESPONSIVE PREVIEW BOX
+   */
+
+  let doc
+  let frame = document.querySelector('.responsiveTabs__iframe___1nTCV')
   // If responsive mode is true, use iframe document, else use DOM.
   if (frame) {
     doc = frame.contentDocument.body
@@ -72,9 +141,12 @@ window.addEventListener('load', () => {
   let menuButton = doc.querySelector('#vf-navigation-menu-icon')
   let ul = doc.querySelector('.vf-navigation__menu-list')
   let searchBox = doc.querySelector('.vf-navigation__search-box')
-  let searchButton = doc.querySelector('.vf-icon-search')
+  let searchButtonMobile = doc.querySelector('.vf-icon-search')
   let searchButtonDesktop = doc.querySelector(
     '.vf-navigation__icon-search-desktop'
+  )
+  let searchCloseDesktop = doc.querySelector(
+    '.vf-navigation__icon-close-desktop'
   )
   let searchInpuField = searchBox.children[0]
   let navLinks = doc.querySelectorAll('#vf-navigation__link')
@@ -85,14 +157,12 @@ window.addEventListener('load', () => {
   // Toggle Active Links
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
+      searchButtonDesktop.style = "background:#ffffff;"
       let arrow = e.target.nextElementSibling.nextElementSibling
-
       let li = e.target.parentElement.parentElement
       let siblings = li.parentElement.children
 
-      searchButtonDesktop.addEventListener('click', function () {
-        console.log(li.classList.remove('active'))
-      })
+      console.log("click");
 
       for (let sib of siblings) {
         if (sib.classList.contains('active')) {
@@ -118,52 +188,20 @@ window.addEventListener('load', () => {
     })
   })
 
-  // pressing search button desktop
-  searchButtonDesktop.addEventListener('click', () => {
-    if (searchBox.classList.contains('active')) {
-      searchBox.classList.remove('active')
-    } else {
-      searchBox.classList.add('active')
-      searchInpuField.focus()
-    }
-  })
+  // toggle menu list
+  menuButton.addEventListener('click', toggleMenu)
 
   function toggleMenu() {
     if (menuButton.classList.contains('vf-icon-menu')) {
       menuButton.classList.remove('vf-icon-menu')
       searchBox.classList.remove('active')
+      searchButtonMobile.style = 'background:#ffffff;'
       menuButton.classList.add('vf-icon-close')
       ul.style = 'display: block'
     } else {
       menuButton.classList.remove('vf-icon-close')
       menuButton.classList.add('vf-icon-menu')
       ul.style = 'display: none'
-    }
-  }
-
-  // check if a list item has a list as child
-  // will only work if html structure is followed correctly
-  function hasChildMenu(elem) {
-    if (elem.children.length > 1) {
-      return true
-    } else {
-      return false
-    }
-  }
-
-  // Toggle child list menu
-  function toggleChildMenu(icon) {
-    console.log('click')
-    let ul = icon.parentElement.nextElementSibling
-
-    if (icon.classList.contains('vf-icon-more')) {
-      icon.classList.remove('vf-icon-more')
-      icon.classList.add('vf-icon-less-info')
-      ul.style = 'display:block'
-    } else {
-      icon.classList.remove('vf-icon-less-info')
-      icon.classList.add('vf-icon-more')
-      ul.style = 'display:none'
     }
   }
 
@@ -186,24 +224,67 @@ window.addEventListener('load', () => {
     }
   }
 
+  // Toggle child list menu
+  function toggleChildMenu(icon) {
+    let ul = icon.parentElement.nextElementSibling
+
+    if (icon.classList.contains('vf-icon-more')) {
+      icon.classList.remove('vf-icon-more')
+      icon.classList.add('vf-icon-less-info')
+      ul.style = 'display:block'
+    } else {
+      icon.classList.remove('vf-icon-less-info')
+      icon.classList.add('vf-icon-more')
+      ul.style = 'display:none'
+    }
+  }
+
+  // check if a list item has a list as child
+  function hasChildMenu(elem) {
+    if (elem.children.length > 1) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  // pressing search button mobile/tablet
+  searchButtonMobile.addEventListener('click', () => {
+    toggleSearchMobile(searchBox, searchButtonMobile)
+  })
+
+  searchButtonDesktop.addEventListener('click', () => {
+    toggleSearchDesktop(searchBox, searchButtonDesktop)
+  })
+
   // Show/hide search box
-  function toggleSearch(searchBox) {
+  function toggleSearchMobile(searchBox) {
     if (searchBox.classList.contains('active')) {
       searchBox.classList.remove('active')
+      searchButtonMobile.style = 'background:#ffffff;'
     } else {
       menuButton.classList.remove('vf-icon-close')
       menuButton.classList.add('vf-icon-menu')
       ul.style = 'display: none'
       searchBox.classList.add('active')
+      searchButtonMobile.style = 'background:#ebf2f3;'
       searchInpuField.focus()
     }
   }
 
-  // toggle menu
-  menuButton.addEventListener('click', toggleMenu)
-
-  // pressing search button mobile/tablet
-  searchButton.addEventListener('click', () => {
-    toggleSearch(searchBox)
-  })
+  function toggleSearchDesktop(searchBox) {
+    if (searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active')
+      searchButtonDesktop.style = 'background:#ffffff;'
+    } else {
+      searchBox.classList.add('active')
+      searchButtonDesktop.style = 'background:#ebf2f3'
+      searchInpuField.focus()
+     navLinks.forEach(link => link.parentElement.parentElement.classList.remove("active"))
+      searchCloseDesktop.addEventListener('click', function () {
+        searchBox.classList.remove('active')
+        searchButtonDesktop.style = 'background:#ffffff;'
+      })
+    }
+  }
 })

@@ -44,7 +44,7 @@
       alt="globe logo"
     ></span>
     <span
-      class="vf-icon-search"
+      class="vf-icon-search vf-navigation__icon-search-desktop"
       alt="search logo"
     ></span>
     <li class="vf-navigation__menu-list-border"></li>
