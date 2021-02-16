@@ -3,12 +3,13 @@ window.addEventListener('load', () => {
   let markdownChildren = document.querySelectorAll(
     '.index__htmlInnerContainer___FJLtG'
   )
-  let previewAreas = document.querySelectorAll('.index__html___3cypL')
-
+console.log("running");
   // Set height for pre tags
   for (let child of markdownChildren) {
     child.style = 'height:auto'
   }
+
+  let previewAreas = document.querySelectorAll('.index__html___3cypL')
 
   // Preview settings
   previewAreas[1].style = 'padding-bottom: 180px'
@@ -72,6 +73,7 @@ window.addEventListener('load', () => {
       let searchIcon = navMenu.querySelector(
         '.vf-navigation__icon-search-desktop'
       )
+      console.log(searchIcon);
       let searchClose = navMenu.querySelector(
         '.vf-navigation__icon-close-desktop'
       )
@@ -83,7 +85,7 @@ window.addEventListener('load', () => {
         // check if searchbox is active
         if (searchBox.classList.contains('active')) {
           searchIcon.style = 'background:#ebf2f3;'
-          searchInput.focus()
+          searchInput.focus({ preventScroll: true })
         } else {
           searchIcon.style = 'background:#ffffff'
         }
@@ -157,12 +159,12 @@ window.addEventListener('load', () => {
   // Toggle Active Links
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
-      searchButtonDesktop.style = "background:#ffffff;"
+      searchButtonDesktop.style = 'background:#ffffff;'
       let arrow = e.target.nextElementSibling.nextElementSibling
       let li = e.target.parentElement.parentElement
       let siblings = li.parentElement.children
 
-      console.log("click");
+      console.log('click')
 
       for (let sib of siblings) {
         if (sib.classList.contains('active')) {
@@ -280,7 +282,9 @@ window.addEventListener('load', () => {
       searchBox.classList.add('active')
       searchButtonDesktop.style = 'background:#ebf2f3'
       searchInpuField.focus()
-     navLinks.forEach(link => link.parentElement.parentElement.classList.remove("active"))
+      navLinks.forEach(link =>
+        link.parentElement.parentElement.classList.remove('active')
+      )
       searchCloseDesktop.addEventListener('click', function () {
         searchBox.classList.remove('active')
         searchButtonDesktop.style = 'background:#ffffff;'
