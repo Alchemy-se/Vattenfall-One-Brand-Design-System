@@ -7,7 +7,6 @@ window.addEventListener('load', () => {
   )
   let previewAreas = document.querySelectorAll('.index__html___3cypL')
   let markdownElement = document.querySelector('.index__container___3_kmB')
-  markdownElement.style = 'max-width: 1482px; margin:0 0 0 12px;'
 
   for (let child of markdownChildren) {
     child.style = "height:auto"

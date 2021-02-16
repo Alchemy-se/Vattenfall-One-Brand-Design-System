@@ -20,6 +20,7 @@ const MENU_GROUP_ITEMS = [
   { path: '/carousel', name: 'Carousel' },
   { path: '/upload', name: 'Upload' },
   { path: '/navigation', name: 'Navigation' },
+  { path: '/spinners', name: 'Spinners' },
 ]
 
 const ComponentsMenu = () => {
