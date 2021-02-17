@@ -4,7 +4,7 @@ import Markdown from '../../lib/markdown'
 import Modals from '../../zendesk/modals/modals'
 
 import intro from './default/html/intro.md'
-import defaultmenuText from './default/html/text.md'
+import defaultMenuText from './default/html/text.md'
 import defaultmenu from './default/html/default.md'
 
 import searchText from './search/html/text.md'
@@ -22,26 +22,25 @@ import scroll2 from './scroll-level-2/html/scroll-level-2.md'
 import scroll3Text from './scroll-level-3/html/text.md'
 import scroll3 from './scroll-level-3/html/scroll-level-3.md'
 
-import responsiveText from './responsive/html/text.md'
+import responsiveHeading from './responsive/html/heading.md'
 import responsive from './responsive/html/responsive.md'
 
 const markdown =
   intro +
-  responsiveText +
+  responsiveHeading +
   responsive +
-  defaultmenuText +
+  defaultMenuText +
   defaultmenu +
-  searchText +
-  search +
-  expandedText +
-  expanded +
   scroll1Text +
   scroll1 +
+  expandedText +
+  expanded +
   scroll2Text +
   scroll2 +
   scroll3Text +
-  scroll3
-  
+  scroll3 +
+  searchText +
+  search
 
 const Navigation = ({ uri }) => {
   return (

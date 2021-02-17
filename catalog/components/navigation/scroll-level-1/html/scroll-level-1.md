@@ -5,7 +5,7 @@
       <img src="/img/vf-logo.svg" />
     </a>
 
-    <li class="vf-navigation__menu-list-item active">
+    <li class="vf-navigation__menu-list-item">
       <div>
         <a href="javascript:" id="vf-navigation__link">Who we are</a>
         <span class="vf-icon-more"></span>

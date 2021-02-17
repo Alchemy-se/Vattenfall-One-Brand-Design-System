@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 
 import Examples from './EXAMPLES'
 import Guidelines from './guidelines'
@@ -36,7 +36,7 @@ import Subscribe from './components/subscribe/subscribe'
 import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
-import Navigation from "./components/navigation/Navigation"
+import Navigation from './components/navigation/Navigation'
 
 // PARALLAX
 // import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -66,6 +66,7 @@ import ThreeColumn from './components/three-column/three-column'
 // Guidelines
 import GuidelinesHero from './guidelines/hero/Hero'
 import GuidelinesWrapper from './guidelines/wrapper'
+import GuidelinesWrapperNoScript from './guidelines/wrapperNoScript'
 import GuidelinesButtons from './guidelines/buttons/Buttons'
 import GuidelinesForms from './guidelines/forms/Forms'
 import GuidelinesColors from './guidelines/colors/Colors'
@@ -79,7 +80,7 @@ import GuidelinesSpacers from './guidelines/spacers/Spacers'
 import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics'
 import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
-import GuideLinesNavigation from "./guidelines/navigation/Navigation"
+import GuideLinesNavigation from './guidelines/navigation/Navigation'
 
 // Other
 import Login from './admin/login'
@@ -111,7 +112,7 @@ function toggleScrollNavigation(pathname) {
       container.style.overflow = 'scroll'
     }
   }, [pathname])
-} 
+}
 
 function usePageViews(onRouteChange) {
   let location = useLocation()
@@ -194,9 +195,9 @@ const COMPONENTS_ROUTES = [
     { path: '/css/navigation', name: 'Navigation', component: <Navbar /> },
   */
   {
-    path: "/css/navigation",
-    name: "Navigation",
-    component: <Navigation uri={"/components/css/navigation"} />,
+    path: '/css/navigation',
+    name: 'Navigation',
+    component: <Navigation uri={'/components/css/navigation'} />,
   },
   {
     path: '/css/preloader',
@@ -509,9 +510,9 @@ const GUIDELINES_ROUTES = [
     path: '/guidelines/navigation',
     name: 'Navigation',
     component: (
-      <GuidelinesWrapper>
+      <GuidelinesWrapperNoScript>
         <GuideLinesNavigation />
-      </GuidelinesWrapper>
+      </GuidelinesWrapperNoScript>
     ),
   },
 ]
