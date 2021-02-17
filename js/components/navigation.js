@@ -1,7 +1,6 @@
 // Wait for dom to load
-window.onload = () => {
-  console.log('running')
 
+// window.onload = () => {  
   let markdownChildren = document.querySelectorAll(
     '.index__htmlInnerContainer___FJLtG'
   )
@@ -16,7 +15,6 @@ window.onload = () => {
     previewAreas[2].style = 'padding-bottom: 165px'
     previewAreas[3].style = 'padding-bottom: 165px'
     previewAreas[4].style = 'padding-bottom: 110px'
-    previewAreas[5].style = 'padding-bottom: 110px'
     previewAreas[5].style = 'padding-bottom: 135px'
   }
     
@@ -59,7 +57,7 @@ window.onload = () => {
           previewAreas[2].style = 'padding-bottom: 135px'
           previewAreas[3].style = 'padding-bottom: 135px'
           previewAreas[4].style = 'padding-bottom: 90px'
-          previewAreas[5].style = 'padding-bottom: 145px'
+          previewAreas[5].style = 'padding-bottom: 150px'
         }
       }
 
@@ -86,10 +84,10 @@ window.onload = () => {
       if (navWidth <= 860) {
         navMenu.style = 'font-size:5px'
         if (previewAreas) {
-          previewAreas[2].style = 'padding-bottom: 75px'
-          previewAreas[3].style = 'padding-bottom: 75px'
-          previewAreas[3].style = 'padding-bottom: 45px'
-          previewAreas[3].style = 'padding-bottom: 100px'
+          previewAreas[2].style = 'padding-bottom: 90px'
+          previewAreas[3].style = 'padding-bottom: 90px'
+          previewAreas[4].style = 'padding-bottom: 65px'
+          previewAreas[5].style = 'padding-bottom: 100px'
         }
       }
     })
@@ -321,4 +319,4 @@ window.onload = () => {
       }
     }
   }
-}
+// }
