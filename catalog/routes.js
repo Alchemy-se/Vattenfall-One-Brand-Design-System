@@ -81,6 +81,7 @@ import GuidelinesInfoGraphics from './guidelines/infographics/InfoGraphics'
 import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
 import GuideLinesNavigation from './guidelines/navigation/Navigation'
+import GuideLinesSpinner from "./guidelines/spinner/Spinner"
 
 // Other
 import Login from './admin/login'
@@ -517,6 +518,15 @@ const GUIDELINES_ROUTES = [
       </GuidelinesWrapperNoScript>
     ),
   },
+  {
+    path: "/guidelines/spinners",
+    name: "Spinners",
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesSpinner />
+      </GuidelinesWrapper>
+    )
+  }
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {
