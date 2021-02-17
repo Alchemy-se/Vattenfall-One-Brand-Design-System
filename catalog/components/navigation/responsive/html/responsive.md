@@ -17,11 +17,12 @@ responsive: true
 
     <div class="vf-navigation__search-box">
       <input type="text" placeholder="Type here to search" />
+      <span class="vf-icon-close vf-navigation__icon-close-desktop"></span>
     </div>
 
     <ul class="vf-navigation__menu-list vf-navigation__menu-level-1">
       <a href="javascript:" class="vf-navigation__logo-desktop">
-        <img src="/img/vf-logo.svg" width="180" />
+        <img src="/img/vf-logo.svg"/>
       </a>
 
       <li class="vf-navigation__menu-list-item">
@@ -879,3 +880,4 @@ responsive: true
     </ul>
   </nav>
 ```
+
