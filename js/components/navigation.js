@@ -11,12 +11,10 @@
 
   let previewAreas = document.querySelectorAll('.index__html___3cypL')
 
-  if (previewAreas) {
-    previewAreas[2].style = 'padding-bottom: 165px'
-    previewAreas[3].style = 'padding-bottom: 165px'
-    previewAreas[4].style = 'padding-bottom: 110px'
-    previewAreas[5].style = 'padding-bottom: 135px'
-  }
+    if(previewAreas[2]) previewAreas[2].style = 'padding-bottom: 165px'
+    if(previewAreas[3]) previewAreas[3].style = 'padding-bottom: 165px'
+    if(previewAreas[4]) previewAreas[4].style = 'padding-bottom: 110px'
+    if(previewAreas[5]) previewAreas[5].style = 'padding-bottom: 135px'
     
   /**
    *  CODE BELOW IS FOR THE NON-RESPONSIVE PREVIEW

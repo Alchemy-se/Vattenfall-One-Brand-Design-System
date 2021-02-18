@@ -33,9 +33,16 @@ const Spinners = () => {
         allowed is 88px. Background should always be white with an opacity of
         92%.'
       />
-      <Markdown source={editMd(spinners)} />
+      <div style={divStyle}>
+        <Markdown source={editMd(spinners)} />
+      </div>
     </Fragment>
   )
+
+}
+
+const divStyle = {
+  marginLeft:"-44px"
 }
 
 export default Spinners

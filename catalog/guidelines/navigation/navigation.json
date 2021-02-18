@@ -7,25 +7,46 @@
     "objectID": "navigation-guideline",
     "children": [
       {
-        "name": "Default"
+        "name": "Responsive"
       },
       {
-        "name": "Search"
+        "name": "Default Mobile"
+      },
+      {
+        "name": "Expanded Level 1"
+      },
+      {
+        "name": "Expanded Level 2"
+      },
+      {
+        "name": "Expanded Level 3"
+      },
+      {
+        "name": "Expanded Level 4"
+      },
+      {
+        "name": "Expanded Level 4 Multi-line"
+      },
+      {
+        "name": "Search Mobile"
+      },
+      {
+        "name": "Default Desktop"
+      },
+      {
+        "name": "Scroll Level 1"
       },
       {
         "name": "Expanded"
       },
       {
-        "name": "Scroll level 1"
+        "name": "Scroll Level 2"
       },
       {
-        "name": "Scroll level 2"
+        "name": "Scroll Level 3"
       },
       {
-        "name": "Scroll level 3"
-      },
-      {
-        "name": "Responsive"
+        "name": "Search"
       }
     ]
   },
@@ -36,11 +57,11 @@
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/navigation#default",
+    "uri": "/guidelines/navigation#responsive",
     "description": "",
-    "objectID": "default-guideline",
-    "name": "Default",
-    "id": "navigation-default"
+    "objectID": "responsive-guideline",
+    "name": "Responsive",
+    "id": "navigation-responsive"
   },
   {
     "parent": [
@@ -49,11 +70,11 @@
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/navigation#search",
+    "uri": "/guidelines/navigation#default-mobile",
     "description": "",
-    "objectID": "search-guideline",
-    "name": "Search",
-    "id": "navigation-search"
+    "objectID": "default-mobile-guideline",
+    "name": "Default Mobile",
+    "id": "navigation-default-mobile"
   },
   {
     "parent": [
@@ -62,11 +83,89 @@
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/navigation#expanded",
+    "uri": "/guidelines/navigation#expanded-level-1",
     "description": "",
-    "objectID": "expanded-guideline",
-    "name": "Expanded",
-    "id": "navigation-expanded"
+    "objectID": "expanded-level-1-guideline",
+    "name": "Expanded level 1",
+    "id": "navigation-expanded-level-1"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded-level-2",
+    "description": "",
+    "objectID": "expanded-level-2-guideline",
+    "name": "Expanded level 2",
+    "id": "navigation-expanded-level-2"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded-level-3",
+    "description": "",
+    "objectID": "expanded-level-3-guideline",
+    "name": "Expanded level 3",
+    "id": "navigation-expanded-level-3"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded-level-4",
+    "description": "",
+    "objectID": "expanded-level-4-guideline",
+    "name": "Expanded level 4",
+    "id": "navigation-expanded-level-4"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded-level-4-multi-line",
+    "description": "",
+    "objectID": "expanded-level-4-multi-line-guideline",
+    "name": "Expanded level 4 Multi-line",
+    "id": "navigation-expanded-level-4-multi-line"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#search-mobile",
+    "description": "",
+    "objectID": "search-mobile-guideline",
+    "name": "Search Mobile",
+    "id": "navigation-search-mobile"
+  },
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#default-desktop",
+    "description": "",
+    "objectID": "default-desktop-guideline",
+    "name": "Default Desktop",
+    "id": "navigation-default-desktop"
   },
   {
     "parent": [
@@ -80,6 +179,20 @@
     "objectID": "scroll-level-1-guideline",
     "name": "Scroll level 1",
     "id": "navigation-scroll-level-1"
+  },
+
+  {
+    "parent": [
+      {
+        "name": "Navigation"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/navigation#expanded",
+    "description": "",
+    "objectID": "expanded-guideline",
+    "name": "Expanded",
+    "id": "navigation-expanded"
   },
   {
     "parent": [
@@ -114,10 +227,10 @@
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/navigation#responsive",
+    "uri": "/guidelines/navigation#search",
     "description": "",
-    "objectID": "responsive-guideline",
-    "name": "Responsive",
-    "id": "navigation-responsive"
+    "objectID": "search-guideline",
+    "name": "Search",
+    "id": "navigation-search"
   }
 ]

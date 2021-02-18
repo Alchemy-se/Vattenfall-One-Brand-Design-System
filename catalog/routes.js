@@ -37,6 +37,7 @@ import IconText from './components/icon-text/icon-text'
 import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
+import Spinner from "./components/spinner/Spinner"
 
 // PARALLAX
 // import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -48,7 +49,6 @@ import TabBar from './components/tab-bar/tab-bar'
 import Carousel from './components/carousel/carousel'
 import DynamicView from './components/dynamicView'
 import ComponentOverview from './overview/componentOverview'
-import Navbar from './components/exclude-from-metadata/navbar/navbar'
 import Preloader from './components/preloader/preloader'
 import Tooltip from './components/tooltip/tooltip'
 import Card from './components/card/card'
@@ -197,11 +197,11 @@ const COMPONENTS_ROUTES = [
     name: 'Navigation',
     component: <Navigation uri={'/components/css/navigation'} />,
   },
-  // {
-  //   path: "/css/spinner",
-  //   name: "Spinner",
-  //   component: <Spinner uri={"/components/css/spinner"} />
-  // },
+  {
+    path: '/css/spinner',
+    name: 'Spinner',
+    component: <Spinner uri={'/components/css/spinner'} />,
+  },
   {
     path: '/css/preloader',
     name: 'Preloader',

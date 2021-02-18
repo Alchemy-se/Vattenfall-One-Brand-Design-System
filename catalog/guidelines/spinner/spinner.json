@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Spinners",
+    "description": "Spinners",
+    "type": "guideline",
+    "uri": "/guidelines/spinners",
+    "objectID": "spinners-guideline",
+    "children": [
+      {
+        "name": "Size and Appearance"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Spinners"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/spinners#size-and-appearance",
+    "description": "",
+    "objectID": "spinners-guideline",
+    "name": "Size and Appearance",
+    "id": "spinners-size-and-appearance"
+  }
+]

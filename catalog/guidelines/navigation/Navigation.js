@@ -58,7 +58,7 @@ const Navigation = () => {
         align left with a left-margin of 48px. Between each section there should
         be a 1px white line.
       </p>
-      <GuidelinesBlock title='Expanded Level 4 multi-line' />
+      <GuidelinesBlock title='Expanded Level 4 Multi-line' />
       <p style={pStyle}>
         Level 4 muliti-line has a height of 72px and a bg-colour of #F2F2F2. The
         text should align left with a left-margin of 48px. The text has a
