@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import PageHeader from '../PageHeader'
 import Markdown from '../../lib/markdown'
 import DottedDescription from '../DottedDescription'
+import GuidelinesBlock from '../guidelinesBlock'
 import Description from '../Description'
-import spinners from '../../components/spinner/spinner/html/spinner.md'
+import spinner from '../../components/spinner/spinner/html/spinner.md'
 
-const Spinners = () => {
+const Spinner = () => {
   const editMd = mdText => {
     const hideSourceCode = mdText.replace(
       'showSource: true',
@@ -17,9 +18,9 @@ const Spinners = () => {
 
   return (
     <Fragment>
-      <PageHeader title='Spinners' />
+      <PageHeader title='Spinner' />
       <DottedDescription
-        text='Spinners are used to indicate an ongoing loading process.'
+        text='Spinner are used to indicate an ongoing loading process.'
         dottedLines={[
           'When centered on the screen upon initial load they indicate the loading of screen content.',
           'When used above or below existing content, they draw attention to where new content will appear.',
@@ -33,8 +34,10 @@ const Spinners = () => {
         allowed is 88px. Background should always be white with an opacity of
         92%.'
       />
+      <GuidelinesBlock title="Examples">
+        <Markdown source={editMd(spinner)} />
+      </GuidelinesBlock>
       <div style={divStyle}>
-        <Markdown source={editMd(spinners)} />
       </div>
     </Fragment>
   )
@@ -45,4 +48,4 @@ const divStyle = {
   marginLeft:"-44px"
 }
 
-export default Spinners
+export default Spinner

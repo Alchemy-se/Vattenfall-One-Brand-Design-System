@@ -1,27 +1,43 @@
 [
   {
-    "name": "Spinners",
-    "description": "Spinners",
+    "name": "Spinner",
+    "description": "Spinner",
     "type": "guideline",
-    "uri": "/guidelines/spinners",
-    "objectID": "spinners-guideline",
+    "uri": "/guidelines/spinner",
+    "objectID": "spinner-guideline",
     "children": [
       {
         "name": "Size and Appearance"
+      },
+      {
+        "name": "Examples"
       }
     ]
   },
   {
     "parent": [
       {
-        "name": "Spinners"
+        "name": "Spinner"
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/spinners#size-and-appearance",
+    "uri": "/guidelines/spinner#size-and-appearance",
     "description": "",
-    "objectID": "spinners-guideline",
+    "objectID": "spinner-guideline",
     "name": "Size and Appearance",
-    "id": "spinners-size-and-appearance"
-  }
+    "id": "spinner-size-and-appearance"
+  },
+   {
+     "parent": [
+       {
+         "name": "Spinner"
+       }
+     ],
+     "type": "guideline",
+     "uri": "/guidelines/spinner#examples",
+     "description": "",
+     "objectID": "spinner-guideline",
+     "name": "Size and Appearance",
+     "id": "spinner-examples"
+   }
 ]

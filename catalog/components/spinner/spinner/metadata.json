@@ -1,8 +1,8 @@
 {
-  "id": "spinner",
-  "uri": "#spinner",
-  "name": "Spinner",
-  "guidelineUri": "#spinner",
+  "id": "examples",
+  "uri": "#examples",
+  "name": "Examples",
+  "guidelineUri": "#examples",
   "description": null,
   "react": {
     "exists": false,

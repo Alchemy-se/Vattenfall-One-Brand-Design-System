@@ -15,10 +15,10 @@ const Navigation = () => {
     <Fragment>
       <PageHeader title='Navigation' />
       <section className='p-2 vf-border-top-gray-200'></section>
-      <GuidelinesBlock
-        title='Responsive'
-        text=' This is the main menu that is used for both Desktop and Mobile'
-      ></GuidelinesBlock>
+      <p style={pStyle}>
+        This is the main menu that is used for both Desktop and Mobile
+      </p>
+      <GuidelinesBlock title='Responsive' style={headingStyle} />
       <div style={divStyle}>
         <Markdown source={responsive} />
       </div>
@@ -141,12 +141,16 @@ const Navigation = () => {
   )
 }
 
+const headingStyle = {
+  margin:"44 0 0 0"
+}
+
 const divStyle = {
   marginLeft: '-44px',
 }
 
 const pStyle = {
-  margin:"0"
+  margin: '0',
 }
 
 export default Navigation
