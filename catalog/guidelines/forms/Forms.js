@@ -45,10 +45,11 @@ const Forms = () => {
           </p>
           <strong>Behaviour</strong>
           <p>
-            Error messages are displayed below the input field. When the users
-            input isn’t valid the error message will be displayed. The
-            application which implements the input fields is responsible for
-            validation and display of the error message.
+            Input text contains a label above the input field. Error messages
+            are displayed below the input field. When the users input invalid,
+            the error message will be displayed. The application which
+            implements the input fields is responsible for validation and
+            display of the error message.
           </p>
         </div>
       </div>

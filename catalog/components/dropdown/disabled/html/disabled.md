@@ -2,6 +2,7 @@
 ### Disabled
 
 To disable a drop-down, simply add the modifier class `disabled` to the `vf-dropdown` element, and change the `data-control` attribute to `vf-dropdown-data-disabled`
+
 ```html
 showSource: true
 ---

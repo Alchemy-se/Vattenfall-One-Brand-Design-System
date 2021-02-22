@@ -1,6 +1,6 @@
 ## How it works
 
-Vattenfall's grid system uses a series of containers, rows, and columns to layout and align content. It's built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+Vattenfall’s grid system uses a series of containers, lines, and columns to layout and align content. It's built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
 
 ```html
@@ -20,8 +20,6 @@ Vattenfall's grid system uses a series of containers, rows, and columns to layou
 ```
 
 The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.vf-container`.
-
-Breaking it down, here's how it works:
 
 - Containers provide a means to center and horizontally pad your site's contents. See [Containers](#different-containers) section on the bottom.
 - Rows are wrappers for columns. Each column has horizontal `padding` (called a gutter) for controlling the space between them. This `padding` is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.

@@ -1,6 +1,6 @@
 ## Blocks
 
-Are the components in this case. For example a modal window.
+Blocks are the components in this case. For example a modal window.
 
 ```
 <!-- A block example -->

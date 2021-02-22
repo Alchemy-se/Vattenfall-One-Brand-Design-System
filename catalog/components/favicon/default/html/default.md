@@ -9,7 +9,7 @@ src: "/favicon/android-chrome-512x512.png"
 
 # How to add a favicon
 
-Use one or more of these lines to add a favion for your applications use case.
+Use one or more of these lines to add a favicon for your applications use case.
 
 ```
 <link rel="apple-touch-icon" sizes="180x180" href="/path/to/apple-touch-icon.png">

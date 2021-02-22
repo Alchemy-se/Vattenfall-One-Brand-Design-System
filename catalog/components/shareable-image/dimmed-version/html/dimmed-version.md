@@ -1,7 +1,7 @@
 
 ### Dimmed version
 
-Sometimes when you work with images with brighter colors you might need to add the modifier class `.vf-image-with-icon--dimmed` to make the text more readable.
+Sometimes when working with bright images you might need to add the modifier class `.vf-image-with-icon--dimmed` to enhance readability.
 
 ```html
 responsive: true

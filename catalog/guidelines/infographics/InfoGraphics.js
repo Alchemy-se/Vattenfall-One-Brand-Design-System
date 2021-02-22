@@ -34,11 +34,11 @@ const InfoGraphics = () => {
           <h2 className='use-in-toc'>Information graphics style</h2>
           <p className={`${styles.guidelinesText}`}>
             Sharing information and data in a clear and confident way is part of
-            the Vattenfall overall tonality, and graphs are a key graphic
-            elements to make data come alive. Vattenfall has a style for
-            information graphics that is bold, simple and clear. To create the
-            graphs, the Vattenfall colours can be used in different ways –
-            please read more regarding colour usage below.
+            Vattenfall’s overall tonality. Graphs are key graphic elements to
+            visualise data. Vattenfall has a style for information graphics that
+            is bold, simple and clear. To create the graphs, the Vattenfall
+            colours can be used in different ways – please read more regarding
+            colour usage below.
           </p>
         </div>
       </div>
@@ -51,11 +51,11 @@ const InfoGraphics = () => {
         <div className='vf-col-12'>
           <h2 className='use-in-toc'>Types of graphs</h2>
           <p className={`${styles.guidelinesText}`}>
-            There are different types of charts and graphs to be used – pie
-            charts, bar graphs and lines graphs. They are generally used for
-            different things. Pie charts show how a whole is divided into
-            different parts, bar graphs show numbers that are independent of
-            each other and line graphs show numbers that have changed over time.
+            There are different types of charts and graphs to use – pie charts,
+            bar graphs, and lines graphs. They are generally used for different
+            purposes. Pie charts show how a whole is divided into different
+            parts, bar graphs show numbers that are independent of each other
+            and line graphs show numbers that have changed over time.
           </p>
         </div>
       </div>

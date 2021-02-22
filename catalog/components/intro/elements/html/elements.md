@@ -1,6 +1,6 @@
 ## Elements
 
-The parts that make up the component. For example the modal window title, close button etc.
+Elements are the parts that make up the component. For example the modal window title, close button etc.
 
 ```
 <div class="vattenfall-modal-window">
