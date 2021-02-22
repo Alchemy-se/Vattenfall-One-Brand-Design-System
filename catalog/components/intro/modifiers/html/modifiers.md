@@ -1,7 +1,7 @@
 
 ## Modifiers
 
-Handles different stylistic or functional variants of the same element. Example 
+Modifiers handle different stylistic or functional variants of the same element.
 
 ```
 <div class="vattenfall-modal-window">

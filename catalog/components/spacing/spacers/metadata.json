@@ -1,7 +1,7 @@
 {
-  "id": "vattenfall-spacings",
-  "uri": "#vattenfall-spacings",
-  "name": "Vattenfall spacings",
+  "id": "spacers",
+  "uri": "#spacers",
+  "name": "Spacers",
   "guidelineUri": null,
   "description": "Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties.\n\n Vattenfall uses four default custom spacers, called Small, Medium, Large and Extra Large.\n\n",
   "react": {

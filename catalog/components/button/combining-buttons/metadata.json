@@ -1,7 +1,7 @@
 {
-  "id": "button-combinations",
-  "uri": "#button-combinations",
-  "name": "Button combinations",
+  "id": "combining-buttons",
+  "uri": "#combining-buttons",
+  "name": "Combining buttons",
   "guidelineUri":false,
   "description": null,
   "react": {

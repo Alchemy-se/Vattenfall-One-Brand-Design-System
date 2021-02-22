@@ -11,14 +11,14 @@ const Designers = () => (
           background: 'transparent',
         }}
       >
-        <h4 className={styles.quickstartHeader}>Quick start</h4>
+        <h4 className={styles.quickstartHeader}>Get started / Designers</h4>
         <p>
-          In order to get started with Vattenfall Digital Design System, make
-          sure you have been provided with both apps: Abstract and Sketch.
-          Abstract is a version control tool, which keeps all of your Sketch
-          working files in one place. It also prevents creating conflicting
-          copies and allows contributors to request reviews and inspect the
-          files without opening Sketch.
+          In order to get started with the Vattenfall Digital Design System
+          (DDS), make sure you have been provided with both apps: Abstract and
+          Sketch. Abstract is a version control tool which keeps all of your
+          Sketch working files in one place. It also prevents creating
+          conflicting copies and allows contributors to request reviews and
+          inspect the files without opening Sketch.
         </p>
 
         <div className='vf-row'>
@@ -67,21 +67,20 @@ const Designers = () => (
 
         <h4 style={{ marginTop: '40px' }}>Vattenfall Design Kit</h4>
         <p>
-          The Vattenfall Design Kit (VDK) is a living library that contains
-          Vattenfall's digital visual assets for everyday purpose: modules,
-          components, icons, color palettes, grids, typography, etc. The purpose
-          of VDK is to ensure design and development consistency across entire
-          Vattenfall ecosystem, improve quality & efficiency in production,
-          bring digital products & services to next level of coherency. The VDK
+          The Vattenfall Design Kit (VDK) is a living library containing
+          Vattenfall’s digital visual assets for everyday purposes: modules,
+          components, icons, colour palettes, grids, typography, etc. The VDK
+          exists to ensure design and development consistency across the entire
+          Vattenfall ecosystem, improve quality and efficiency in production,
+          bring digital products and services to the next level of coherency. It
           can be accessed via Abstract in Sketch format and connected to your
           working design documents as a Sketch Library source.
         </p>
 
         <p>
-          We're currently in the process of making some larger updates grouped
-          into releases, the latest update was released the second week of
-          December 2020. You will find the latest file by following the link
-          below.{' '}
+          We’re currently in the process of making some larger updates – grouped
+          into releases. The latest update will be completed by mid-December
+          2020. You will find the latest file by following the link below.
         </p>
 
         <div className='vf-row'>

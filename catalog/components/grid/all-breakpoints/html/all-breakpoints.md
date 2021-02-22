@@ -5,7 +5,7 @@ The Vattenfall Digital Design System’s grid includes five tiers of predefined 
 
 ### All breakpoints
 
-For grids that are the same from the smallest of devices to the largest, use the `.vf-col` and `.vf-col-*` classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to `.vf-col`.
+For grids that are the same, on small as well as on large devices, use the `.vf-col` and `.vf-col-*` classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to `.vf-col`.
 
 ```html
 <div class="vf-row">

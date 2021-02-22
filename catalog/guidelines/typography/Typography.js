@@ -18,22 +18,24 @@ const Abc123 = '/img/guidelines/typography/Abc123.png';
 const Typography = () => {
   return (
     <Fragment>
-      <PageHeader title="Typography" />
-      <section className="p-2 vf-border-top-gray-200"></section>
-      <div className="vf-row">
-        <div className="vf-col">
+      <PageHeader title='Typography' />
+      <section className='p-2 vf-border-top-gray-200'></section>
+      <div className='vf-row'>
+        <div className='vf-col'>
           <p className={styles.guidelinesText}>
-            Hall is a bespoke typeface that mirrors and embodies the qualities of a true market leader – as expected by
-            our target group: confident, competent and determined.
+            Hall is a bespoke typeface that mirrors and embodies the qualities
+            of a true market leader – as expected by our target group:
+            confident, competent and determined.
             <br />
             <br />
-            Yet, it should feel stable, organic, and personable and at the same time emphasise our engineering and
-            functional capacity. Being bold without being arrogant, it creates credibility for our capability to act on
-            on a broader scale. Developed together with the wordmark and icons, it creates a strong, recognisable and
-            coherent identity.
+            Yet, it should feel stable, organic, and personable and at the same
+            time emphasise our engineering and functional capacity. Being bold
+            without being arrogant, it creates credibility for our capability to
+            act on a broader scale. Developed together with the wordmark and
+            icons, it creates a strong, recognisable and coherent identity.
             <br />
             <br />
-            <strong className="use-in-toc">Rules for headings</strong>
+            <strong className='use-in-toc'>Rules for headings</strong>
             <br />
             Always use Hall Display Bold for 30px and above
             <br />
@@ -41,28 +43,28 @@ const Typography = () => {
           </p>
         </div>
       </div>
-      <div className="vf-row">
-        <div className="vf-col">
+      <div className='vf-row'>
+        <div className='vf-col'>
           <img style={{ width: '100%' }} src={Abc123} />
         </div>
       </div>
       <HeaderH1 />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <HeaderH2 />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <HeaderH3 />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <HeaderH4 />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <PreambleText />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <BodyTextLarge />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <BodyTextSmall />
-      <section className="p-2 vf-border-top-gray-200"></section>
+      <section className='p-2 vf-border-top-gray-200'></section>
       <IntroInCaps />
     </Fragment>
-  );
+  )
 };
 
 export default Typography;

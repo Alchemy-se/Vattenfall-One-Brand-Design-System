@@ -1,6 +1,6 @@
 ### Full width buttons
 
-Create block level buttons—those that span the full width of a parent—by adding .vf-btn--block.
+Create block level buttons that spans the full width of a parent by adding `.vf-btn--block`.
 
 ```html
 showSource: true

@@ -1,6 +1,6 @@
 ## Quick start
 
-The DDS provides front-end developers and engineers with a collection of reusable HTML and CSS classes, as well as SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent mark-up, styles, and behaviour in prototype and production work
+The DDS provides front-end developers and engineers with a collection of reusable HTML and CSS classes, as well as SCSS partials and mixins to build websites and user interfaces. Adopting the library enables developers to use consistent mark-up, styles, and behaviour in prototype and production work.
 
 ### Installation
 
@@ -54,7 +54,6 @@ Be sure to have your pages set up with the latest design and development standar
 That's all you need for overall page requirements. 
 
 ### SCSS
-
 You can choose to only include components and mixins from the DDS. When doing so, there are however a few things that you need to take into consideration.
 
 #### Autoprefixer
@@ -72,7 +71,7 @@ To add a component style to your build, simply import the component directly.
 
 @import 'node_modules/@vf-alchemy/vattenfall-design-system/scss/components/card';
 
-Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
+Importing a component this way will bring in any dependencies that the component has. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 #### Namespacing
 The DDS components are built to be included individually and not clobber global styles – all class attributes are prefixed by the vf-- moniker.

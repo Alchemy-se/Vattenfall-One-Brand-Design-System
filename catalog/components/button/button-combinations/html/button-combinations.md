@@ -1,3 +1,0 @@
-### Button combinations
-
-Coming soon
