@@ -40,8 +40,8 @@ import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
 
 // PARALLAX
-// import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
-import ParallaxImageBlock from './development/parallax'
+import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
+// import ParallaxImageBlock from './development/parallax'
 
 import Footer from './components/footer/footer'
 import Form from './components/form/form'
@@ -519,7 +519,7 @@ const GUIDELINES_ROUTES = [
     ),
   },
   {
-    path: "/guidelines/spinner",
+    path: "/guidelines/spinners",
     name: "Spinners",
     component: (
       <GuidelinesWrapper>
