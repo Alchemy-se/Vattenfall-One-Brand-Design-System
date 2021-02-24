@@ -13,8 +13,8 @@ The DDS provides front-end developers and engineers with a collection of reusabl
 Copy-paste the stylesheets `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 ```
-<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css"">
-<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
+<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css">
+<link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css">
 ```
 
 ### JS
@@ -37,8 +37,8 @@ Be sure to have your pages set up with the latest design and development standar
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css"">
-    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css"">
+    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/reboot.min.css">
+    <link rel="stylesheet" href="node_modules/@vf-alchemy/vattenfall-design-system/dist/css/main.min.css">
 
     <title>Vattenfall Design System Boilerplate!</title>
   </head>
