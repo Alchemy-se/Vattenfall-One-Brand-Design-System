@@ -13,20 +13,34 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include media-breakpoint-down(sm) {
+  //old padding for vf.container
+  // @include media-breakpoint-down(sm) {
+  //   padding-left: 21px;
+  //   padding-right: 21px;
+  // }
+
+  // @include media-breakpoint-down(md) {
+  //   padding-left: 30px;
+  //   padding-right: 30px;
+  // }
+
+  // new padding for vf-container
+  @media (min-width: 576px) and (max-width: 767px) {
     padding-left: 21px;
     padding-right: 21px;
   }
-  
-  @include media-breakpoint-down(md) {
+
+  @media (min-width: 768px) and (max-width: 992px) {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-
 // For each breakpoint, define the maximum width of the container in a media query
-@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+@mixin make-container-max-widths(
+  $max-widths: $container-max-widths,
+  $breakpoints: $grid-breakpoints
+) {
   @each $breakpoint, $container-max-width in $max-widths {
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       max-width: $container-max-width;

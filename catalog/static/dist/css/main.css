@@ -1765,14 +1765,14 @@ html.sr .reveal {
   clear: left;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-container {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-container {
     padding-left: 30px;
     padding-right: 30px;
@@ -1848,14 +1848,14 @@ html.sr .reveal {
   margin-left: auto;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-container-fluid {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-container-fluid {
     padding-left: 30px;
     padding-right: 30px;
@@ -9776,14 +9776,14 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-media-block__body {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-media-block__body {
     padding-left: 30px;
     padding-right: 30px;
@@ -9975,14 +9975,14 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
     padding-left: 30px;
     padding-right: 30px;
@@ -10148,14 +10148,14 @@ a.vf-card:hover {
   margin-top: 0;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
     padding-left: 30px;
     padding-right: 30px;
@@ -11473,14 +11473,14 @@ a.vf-card:hover {
   padding: 70px 0 70px 0;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-large-quote {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-large-quote {
     padding-left: 30px;
     padding-right: 30px;
@@ -11771,14 +11771,14 @@ a.vf-card:hover {
   margin-bottom: 88px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-two-column-boxes {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-two-column-boxes {
     padding-left: 30px;
     padding-right: 30px;
@@ -11964,14 +11964,14 @@ a.vf-card:hover {
   height: 56px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-navbar__nav {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-navbar__nav {
     padding-left: 30px;
     padding-right: 30px;
@@ -12404,14 +12404,14 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-top: 90px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .vf-image-block__body {
     padding-left: 21px;
     padding-right: 21px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vf-image-block__body {
     padding-left: 30px;
     padding-right: 30px;
