@@ -519,7 +519,7 @@ const GUIDELINES_ROUTES = [
     ),
   },
   {
-    path: "/guidelines/spinners",
+    path: "/guidelines/spinner",
     name: "Spinner",
     component: (
       <GuidelinesWrapper>
