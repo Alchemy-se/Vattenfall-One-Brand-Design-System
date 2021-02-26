@@ -1,28 +1,28 @@
-import React, { Fragment } from 'react';
-import PageHeader from '../PageHeader';
-import Description from '../Description';
+import React, { Fragment } from 'react'
+import PageHeader from '../PageHeader'
+import Description from '../Description'
 
-import StandardInput from './StandardInput';
-import StandardInputWithTooltip from './StandardInputWithTooltip';
-import StandardInputWarning from './StandardInputWarning';
-import StandardInputError from './StandardInputError';
+import StandardInput from './StandardInput'
+import StandardInputWithTooltip from './StandardInputWithTooltip'
+import StandardInputWarning from './StandardInputWarning'
+import StandardInputError from './StandardInputError'
 
-import StandardDropdown from './StandardDropdown';
-import StandardDropdownWithCheckboxes from './StandardDropdownWithCheckboxes';
+import StandardDropdown from './StandardDropdown'
+import StandardDropdownWithCheckboxes from './StandardDropdownWithCheckboxes'
 
-import StandardUnderlineInput from './StandardUnderlineInput';
-import StandartUnderlineInputWithTooltip from './StandartUnderlineInputWithTooltip';
-import StandardUnderlineInputWarning from './StandardUnderlineInputWarning';
-import StandardUnderlineInputError from './StandardUnderlineInputError';
-import UnderlineDropbox from './UnderlineDropbox';
+import StandardUnderlineInput from './StandardUnderlineInput'
+import StandartUnderlineInputWithTooltip from './StandartUnderlineInputWithTooltip'
+import StandardUnderlineInputWarning from './StandardUnderlineInputWarning'
+import StandardUnderlineInputError from './StandardUnderlineInputError'
+import UnderlineDropbox from './UnderlineDropbox'
 
-import NumericInput from './NumericInput';
+import NumericInput from './NumericInput'
 
-import Textarea from './Textarea';
-import TextareaError from './TextareaError';
+import Textarea from './Textarea'
+import TextareaError from './TextareaError'
 
-import TooltipsOutlined from './TooltipsOutlined';
-import TooltipsSolid from './TooltipsSolid';
+import TooltipsOutlined from './TooltipsOutlined'
+import TooltipsSolid from './TooltipsSolid'
 
 const Forms = () => {
   return (
@@ -45,10 +45,9 @@ const Forms = () => {
           </p>
           <strong>Behaviour</strong>
           <p>
-            Input text contains a label above the input field. Error messages
-            are displayed below the input field. When the users input invalid,
-            the error message will be displayed. The application which
-            implements the input fields is responsible for validation and
+            Error messages are displayed below the input field. When the users
+            input invalid, the error message will be displayed. The application
+            which implements the input fields is responsible for validation and
             display of the error message.
           </p>
         </div>
@@ -113,6 +112,6 @@ const Forms = () => {
       <TooltipsOutlined title='Outlined' />
     </Fragment>
   )
-};
+}
 
-export default Forms;
+export default Forms
