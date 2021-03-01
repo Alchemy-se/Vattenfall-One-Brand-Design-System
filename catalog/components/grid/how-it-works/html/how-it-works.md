@@ -19,9 +19,9 @@ Vattenfall’s grid system uses a series of containers, lines, and columns to la
 </div>
 ```
 
-The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.vf-container`.
+The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. The columns are centered on the page with the parent `.vf-container`.
 
-- Containers provide a means to center and horizontally pad your site's contents. See [Containers](#different-containers) section on the bottom.
+- Containers provide a means to center and horizontally pad your site content. See [Containers](#different-containers) section on the bottom.
 - Rows are wrappers for columns. Each column has horizontal `padding` (called a gutter) for controlling the space between them. This `padding` is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.
 - In a grid layout, content must be placed within columns and only columns may be immediate children of rows.
 - Grid columns without a specified `width` will automatically layout as equal width columns. See the [auto-layout columns](#auto-layout-columns) section for more examples.

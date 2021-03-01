@@ -26,7 +26,7 @@ const markdown =
 const Button = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={'Button'} />
+      <PageHeader title={'Buttons'} />
       <div className='vf-row'>
         <div style={{ marginLeft: '44px' }} className='vf-col-10'>
           <p>

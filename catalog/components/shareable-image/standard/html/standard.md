@@ -1,4 +1,4 @@
-This component is used to show an image with a share icon, and a optional description.
+This component is used to show an image with a share icon, and an optional description.
 ### Standard
 ```html
 responsive: true

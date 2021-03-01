@@ -1,3 +1,3 @@
 ### Combining buttons
 
-Coming soon
+Coming soon.

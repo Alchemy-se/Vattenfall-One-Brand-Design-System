@@ -12,8 +12,8 @@ const BodyTextSmall = () => {
       <div className='vf-row'>
         <div className='vf-col'>
           <p className='vf-typo-p-secondary'>
-            This is body text small. It’s used in all of Vattenfall’s modules as
-            body text.
+            This is the body text small, which is used in all of Vattenfall’s
+            modules as body text.
           </p>
         </div>
       </div>

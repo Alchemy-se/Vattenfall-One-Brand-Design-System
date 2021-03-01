@@ -24,8 +24,8 @@ const Button = () => {
       <p>
         Buttons indicate actions on the page. Each of our button types have
         specific purposes that are used consistently. Individual button types
-        are documented below, but the following guidelines will help you
-        understand basic functionality for all of our buttons.
+        are shown below, but the guidelines will help you understand basic
+        functionality for all our buttons.
       </p>
       <DottedDescription
         title='Best practices'
@@ -104,26 +104,26 @@ const Button = () => {
       <div className='vf-mt-xl' />
       <Description
         title='Text links'
-        leftText={`For usage in bodytext when links are needed.`}
+        leftText={`Text links are used in bodytext when you need to link to other content.`}
         rightText={``}
       />
       <TextLinks label={placeholder} />
       <div className='vf-mt-xl' />
       <Description
         title='Toggle'
-        text='Mostly used to indicate engaging / disengaging certain feature within the context.'
+        text='Toggles are used to indicate when a certain feature on a page is engaged / disengaged.'
       />
       <SelectToggle label={placeholder} />
       <div className='vf-mt-xl' />
       <Description
         title='Radio button'
-        text='Used in the situation when desired state of preference needs to be selected. Only one selection can be made at all times. When mutiple preferences need to be chosen use checkboxes instead.'
+        text='Radio buttons should be used when a single preference selection is needed. If multiple selections are needed checkboxes should be used instead.'
       />
       <RadioButtons label={placeholder} />
       <div className='vf-mt-xl' />
       <Description
         title='Checkbox'
-        text='Checkboxes can be used when a desired items needs to be selected. Depending on the context it can be one or multiple items.'
+        text='Checkboxes can be used to visualise the selection of one or several desired states. Ideally the use of a single checkbox should be relevant in the context such as agreeing to Terms & Conditions, in most other cases radio buttons should be used.'
       />
       <Checkbox label={placeholder} />
       <div className='vf-mt-xl' />
