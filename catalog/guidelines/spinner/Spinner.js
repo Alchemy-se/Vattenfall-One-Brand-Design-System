@@ -20,7 +20,7 @@ const Spinner = () => {
     <Fragment>
       <PageHeader title='Spinner' />
       <DottedDescription
-        text='Spinner are used to indicate an ongoing loading process.'
+        text='A spinner animation is used to indicate an ongoing loading process.'
         dottedLines={[
           'When centered on the screen upon initial load they indicate the loading of screen content.',
           'When used above or below existing content, they draw attention to where new content will appear.',
@@ -28,17 +28,15 @@ const Spinner = () => {
       />
       <Description
         title='Size and Appearance'
-        text='The VF_Spinner should always be horizontal and
-        vertically centered in the space it inhabits. Recommended sizes are
+        text='The VF_Spinner should always be horizontal and vertically centered in the space it should display in. Recommended sizes are
         24px, 44px, 88px, the default should be 44px and the maximum size
         allowed is 88px. Background should always be white with an opacity of
         92%.'
       />
-      <GuidelinesBlock title="Examples">
+      <GuidelinesBlock title='Examples'>
         <Markdown source={editMd(spinner)} />
       </GuidelinesBlock>
-      <div style={divStyle}>
-      </div>
+      <div style={divStyle}></div>
     </Fragment>
   )
 
