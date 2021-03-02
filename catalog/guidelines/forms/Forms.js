@@ -45,7 +45,6 @@ const Forms = () => {
           </p>
           <strong>Behaviour</strong>
           <p>
-            Input text fields should display a label above the input field.
             Error messages are displayed beneath the input field. If a user
             inputs invalid content, an error message should be displayed. The
             application which implements the input fields is responsible for
