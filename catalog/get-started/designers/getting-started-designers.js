@@ -79,8 +79,8 @@ const Designers = () => (
 
         <p>
           We’re currently in the process of making some larger updates – grouped
-          into releases. The latest update will be completed by mid-December
-          2020. You will find the latest file by following the link below.
+          into releases. The latest update was completed by mid-December 2020..
+          You will find the latest file by following the link below.
         </p>
 
         <div className='vf-row'>

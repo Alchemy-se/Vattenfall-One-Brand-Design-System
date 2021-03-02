@@ -6,7 +6,7 @@ const MENU_GROUP_ITEMS = [
   { path: '', name: 'Introduction' },
   { path: '/principles', name: 'Principles' },
   { path: '/logotype', name: 'Logotype' },
-  { path: '/colors', name: 'Colors' },
+  { path: '/colors', name: 'Colours' },
   { path: '/typography', name: 'Typography' },
   { path: '/grid', name: 'The Grid' },
   { path: '/icons', name: 'Icons' },

@@ -5,7 +5,7 @@ import React from 'react'
 const MENU_GROUP_ITEMS = {
   components: [
     { path: '', name: 'Introduction' },
-    { path: '/colors', name: 'Colors & Borders' },
+    { path: '/colors', name: 'Colours & Borders' },
     { path: '/grid', name: 'Grid' },
     { path: '/responsive', name: 'Responsive' },
     { path: '/sizing', name: 'Sizing' },
@@ -14,7 +14,7 @@ const MENU_GROUP_ITEMS = {
   atoms: [
     { path: '/intro', name: 'Intro' },
     { path: '/css/badge', name: 'Badge' },
-    { path: '/css/button', name: 'Button' },
+    { path: '/css/button', name: 'Buttons' },
     { path: '/css/drop-down', name: 'Drop-down List' },
     { path: '/css/gdpr-consent-module', name: 'GDPR Consent Module' },
     { path: '/css/icon-text', name: 'Icon Text' },

@@ -32,12 +32,12 @@ const Forms = () => {
       <div className='vf-row w-75'>
         <div className='vf-col'>
           <p>
-            Forms are used for submitting data so be as concise as possible when
-            designing. Keep it short. Think about each field and what value the
-            data will provide. Input text are the most commonly used form
-            control. Input fields are suitable for getting textual data from the
-            user. Below you will find ”Standard” Input fields, ”dropdown”,
-            ”Underline Input” and more.
+            Forms are used for submitting key data so need to be designed
+            specifically for the content it should capture. Keep it short and
+            focus on what is needed to capture the relevant data. Input text is
+            the most commonly used form control. Input fields are suitable for
+            getting textual data from the user. Below you will find ”Standard”
+            Input fields, ”dropdown”, ”Underline Input” and more.
           </p>
           <p>
             Forms will be updated with new features created for InCharge web,
@@ -45,10 +45,11 @@ const Forms = () => {
           </p>
           <strong>Behaviour</strong>
           <p>
-            Error messages are displayed below the input field. When the users
-            input invalid, the error message will be displayed. The application
-            which implements the input fields is responsible for validation and
-            display of the error message.
+            Input text fields should display a label above the input field.
+            Error messages are displayed beneath the input field. If a user
+            inputs invalid content, an error message should be displayed. The
+            application which implements the input fields is responsible for
+            validation and display of the error message.
           </p>
         </div>
       </div>
@@ -66,8 +67,7 @@ const Forms = () => {
       <div className='vf-mt-lg' />
       <Description
         title='Dropdown'
-        text='Dropdown allows you to make a particular choice within a compact area. It’s useful especially for mobile devices.
-        Only one item can be chosen at the time. It’s often a good idea to use this element when the number of items to be chosen from exceeds three options.'
+        text='Dropdowns allows the user to make a particular choice within a small space and is especially useful for mobile devices. Only one item can be chosen from the dropdown list at a time. usage of dropdowns are a good idea to use when the number of items to be chosen from exceeds three options.'
       />
       <StandardDropdown title='Standard' />
       <StandardDropdownWithCheckboxes title='Standard with checkboxes' />
@@ -96,8 +96,8 @@ const Forms = () => {
       />
       <NumericInput title='Standard' />
       <Description
-        title='Textarea'
-        text='Textarea provides the possibility for the custom input from the user. Use this element when personal feedback from the user is needed or the situation itself is not specific enough to support pre-definied option for the user to choose from.'
+        title='Text area'
+        text='Text areas allows the user to enter free text. Use this element when the user needs to type in their feedback rather than choose from pre-defined options.'
       />
       <Textarea title='Standard' />
       <TextareaError title='Textarea Error' />
