@@ -14,9 +14,26 @@ import Modals from "../../zendesk/modals/modals";
 import altStandard from "./alternative-with-label/standard/html/standard.md"
 import altWithTooltip from "./alternative-with-label/with-tooltip/html/with-tooltip.md"
 import altStandardError from "./alternative-with-label/standard-error/html/standard-error.md"
+import altStandardDetailedText from "./alternative-with-label/detailed-text/html/detailed-text.md"
+import altTextarea from "./alternative-with-label/textarea/html/textarea.md"
+import altTextareaDetailedText from "./alternative-with-label/textarea-and-detailed-text/html/textarea-and-detailed-text.md"
 
-const markdown = standardWithPlaceholder + standard + textarea + number + underlineStyle + withTooltip
-  + warningState + errorState + altStandard + altWithTooltip + altStandardError;
+
+const markdown =
+  standardWithPlaceholder +
+  standard +
+  textarea +
+  number +
+  underlineStyle +
+  withTooltip +
+  warningState +
+  errorState +
+  altStandard +
+  altWithTooltip +
+  altStandardError +
+  altStandardDetailedText +
+  altTextarea +
+  altTextareaDetailedText
 
 export default class Input extends Component {
   render() {

@@ -13825,6 +13825,57 @@ a.vf-badge:hover, a.vf-badge:focus {
   height: 107px;
 }
 
+.vf-alt-input-container input:focus,
+.vf-alt-input-container select:focus,
+.vf-alt-input-container textarea:focus,
+.vf-alt-input-container button:focus {
+  outline: none;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input {
+  height: 110px;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-webkit-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-moz-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-ms-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
 .vf-alt-input-container .vf-alt-input {
   font-family: VattenfallHall-Regular;
   position: relative;
@@ -13891,6 +13942,34 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
 }
 
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error {
+  border-color: #ffb2a4;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:hover {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:focus {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-webkit-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-moz-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-ms-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::placeholder {
+  color: #F93B18;
+}
+
 .vf-alt-input-container label {
   position: absolute;
   top: 0;
@@ -13927,8 +14006,60 @@ a.vf-badge:hover, a.vf-badge:focus {
   transition: opacity 0.3s ease-in-out;
 }
 
+.vf-alt-input-container .vf-alt-input--error-msg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  color: #F93B18;
+  font-family: VattenfallHall-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--textarea-detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  height: 33px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
 #vf_alt_tooltip_input {
   padding-right: 54px;
+}
+
+.vf-alt-input-container-textarea {
+  height: 185px;
 }
 
 [class*="vf-utility-typo--"] {
