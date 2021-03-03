@@ -13527,14 +13527,15 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin: 0;
 }
 
-.vf-input-container input[type="number"] {
+.vf-input-container input[type='number'] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
   padding-right: 40px;
 }
 
-.vf-input-container .vf-input--number-increment, .vf-input-container .vf-input--number-decrement {
+.vf-input-container .vf-input--number-increment,
+.vf-input-container .vf-input--number-decrement {
   position: absolute;
   right: 1px;
   height: 48%;
@@ -13696,10 +13697,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--error:focus {
   -webkit-box-shadow: 0 1px #F93B18;
   box-shadow: 0 1px #F93B18;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning {
@@ -13710,10 +13711,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning:focus {
   -webkit-box-shadow: 0 1px #f5a623;
   box-shadow: 0 1px #f5a623;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--error {
@@ -13748,7 +13749,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #f5a623;
 }
 
-.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message, .vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
+.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message,
+.vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
   margin-bottom: 0;
   -webkit-transform: translate(0, -50%) !important;
   transform: translate(0, -50%) !important;
@@ -13773,8 +13775,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
   pointer-events: none;
   cursor: default;
-  -webkit-transition: top .2s ease-in-out;
-  transition: top .2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 .vf-input-container label:after {
@@ -13812,8 +13814,121 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input-tooltip-icon:hover ~ .vf-tooltip-message {
   opacity: 1;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vf-alt-input-container {
+  position: relative;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  height: 107px;
+}
+
+.vf-alt-input-container .vf-alt-input {
+  font-family: VattenfallHall-Regular;
+  position: relative;
+  top: 34px;
+  width: 264px;
+  height: 52px;
+  background-color: #fff;
+  color: #222222;
+  padding: 16px 20px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #cccccc;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.vf-alt-input-container .vf-alt-input:hover {
+  border: 1px solid #999999;
+}
+
+.vf-alt-input-container .vf-alt-input:focus {
+  outline: none;
+  border: 1px solid #1964A3;
+}
+
+.vf-alt-input-container .vf-alt-input::-webkit-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-moz-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-ms-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 26px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  width: 256px;
+}
+
+.vf-alt-input-container .vf-tooltip-message {
+  opacity: 0;
+  position: absolute;
+  right: 27px;
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  top: 10px;
+}
+
+.vf-alt-input-container .vf-icon-question:before {
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  right: 17px;
+}
+
+.vf-alt-input-container .vf-icon-question:hover ~ .vf-tooltip-message {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#vf_alt_tooltip_input {
+  padding-right: 54px;
 }
 
 [class*="vf-utility-typo--"] {

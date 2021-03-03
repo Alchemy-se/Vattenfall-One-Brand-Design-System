@@ -1,0 +1,13 @@
+### Alternative Standard Error
+
+```html
+showSource: true 
+---
+
+<div class="vf-row">
+  <div class="vf-alt-input-container">
+    <input type="text" id="vf_alt_error_state_input" class="vf-alt-input vf-alt-input--error">
+    <label for="vf_alt_error_state_input">Label</label>
+  </div>
+</div>
+```

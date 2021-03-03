@@ -11,9 +11,12 @@ import errorState from './error-state/html/error-state.md'
 import Markdown from "../../lib/markdown/index";
 import PageHeader from "../../lib/pageHeader";
 import Modals from "../../zendesk/modals/modals";
+import altStandard from "./alternative-with-label/standard/html/standard.md"
+import altWithTooltip from "./alternative-with-label/with-tooltip/html/with-tooltip.md"
+import altStandardError from "./alternative-with-label/standard-error/html/standard-error.md"
 
 const markdown = standardWithPlaceholder + standard + textarea + number + underlineStyle + withTooltip
-  + warningState + errorState;
+  + warningState + errorState + altStandard + altWithTooltip + altStandardError;
 
 export default class Input extends Component {
   render() {
