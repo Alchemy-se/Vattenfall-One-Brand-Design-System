@@ -13194,6 +13194,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown .vf-dropdown-label {
   display: block;
+  height: 52px;
   background: #fff;
   padding: 12px 114px 12px 20px;
   margin-bottom: 0;
@@ -13242,11 +13243,30 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item {
   padding: 12px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 52px;
 }
 
-.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item:hover, .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item.checked {
+.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item span::before {
+  font-size: 18px;
+  opacity: 0;
+}
+
+.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item:hover {
   background-color: #1964A3;
   color: #fff;
+}
+
+.vf-dropdown .vf-dropdown-list .vf-dropdown-list-item.checked span::before {
+  opacity: 1;
 }
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item input {
@@ -13330,6 +13350,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown.vf-dropdown--underline .vf-dropdown-label {
+  height: 52px;
   background: none;
   border-radius: 0px 0px 0px 0px;
   border: none;
@@ -13352,7 +13373,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown.vf-dropdown--semantic {
   border: 1px solid #E8E8E9;
-  height: 50px;
+  height: 52px;
   width: 300px;
   border-radius: 4px;
   -moz-appearance: none;
