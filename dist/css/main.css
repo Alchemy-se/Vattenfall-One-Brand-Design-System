@@ -13823,6 +13823,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   font-family: VattenfallHall-Regular;
   font-size: 20px;
   height: 107px;
+  width: 264px;
 }
 
 .vf-alt-input-container input:focus,
@@ -13834,6 +13835,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-alt-input-container #vf__alt_textarea_input {
   height: 110px;
+  color: #222222;
 }
 
 .vf-alt-input-container #vf__alt_textarea_input::-webkit-input-placeholder {

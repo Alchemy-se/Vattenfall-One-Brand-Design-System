@@ -9,7 +9,7 @@ showSource: true
     <input
       type="text"
       id="vf_alt_error_state_input"
-      placeholder="Input label"
+      placeholder="Input Text"
       class="vf-alt-input vf-alt-input--error"
     />
     <label for="vf_alt_error_state_input">Label</label>

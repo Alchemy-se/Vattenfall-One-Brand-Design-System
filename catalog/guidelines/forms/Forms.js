@@ -24,6 +24,13 @@ import TextareaError from './TextareaError'
 import TooltipsOutlined from './TooltipsOutlined'
 import TooltipsSolid from './TooltipsSolid'
 
+import AlternativeStandard from './AlternativeStandard'
+import AlternativeTooltip from "./AlternativeTooltip"
+import AlternativeError from "./AlternativeError"
+import AlternativeDetailedText from "./AlternativeDetailedText"
+import AlternativeTextarea from "./AlternativeTextarea"
+import AlternativeTextareaDetailedText from "./AlternativeTextareaDetailedText"
+
 const Forms = () => {
   return (
     <Fragment>
@@ -64,10 +71,54 @@ const Forms = () => {
       />
       <StandardInputError title='Standard Error' label='Error state label' />
       <div className='vf-mt-lg' />
+
+      
+      {/* ALTERNATIVE WITH LABEL */}
+      <Description title='Alternative With Label' />
+
+      <AlternativeStandard
+        title='Standard'
+        placeholder='Placeholder Text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+      <AlternativeTooltip
+        title='Tooltip'
+        placeholder='Placeholder Text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+      <AlternativeError
+        title='Error state'
+        placeholder='Placeholder Text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+      <AlternativeDetailedText
+        title='Detailed text'
+        placeholder='Placeholder text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+      <AlternativeTextarea
+        title='Textarea'
+        placeholder='Placeholder Text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+      <AlternativeTextareaDetailedText
+        title='Textarea With Detailed Text'
+        placeholder='Placeholder Text'
+        suggestion='Value with suggestion'
+        filled='Value filled in'
+      />
+
+      {/* DROPDOWN */}
       <Description
         title='Dropdown'
         text='Dropdowns allows the user to make a particular choice within a small space and is especially useful for mobile devices. Only one item can be chosen from the dropdown list at a time. usage of dropdowns are a good idea to use when the number of items to be chosen from exceeds three options.'
       />
+
       <StandardDropdown title='Standard' />
       <StandardDropdownWithCheckboxes title='Standard with checkboxes' />
       <Description

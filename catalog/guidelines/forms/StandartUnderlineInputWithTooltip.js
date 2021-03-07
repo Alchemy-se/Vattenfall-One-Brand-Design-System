@@ -19,7 +19,7 @@ const StandartUnderlineInputWithTooltip = ({ title, label }) => {
               className={`vf-input vf-input--underline ${styles.fullWidth}`}
               data-tooltip="Tooltip text"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Hover'}>
@@ -30,7 +30,7 @@ const StandartUnderlineInputWithTooltip = ({ title, label }) => {
               className={`vf-input vf-input--underline ${styles.underlineInputHover} ${styles.fullWidth}`}
               data-tooltip="Tooltip text"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Focus'}>
@@ -42,7 +42,7 @@ const StandartUnderlineInputWithTooltip = ({ title, label }) => {
               data-tooltip="Tooltip text"
               defaultValue="Value with suggestion"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Selected'}>
@@ -54,7 +54,7 @@ const StandartUnderlineInputWithTooltip = ({ title, label }) => {
               data-tooltip="Tooltip text"
               defaultValue="Value filled in"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
       </div>

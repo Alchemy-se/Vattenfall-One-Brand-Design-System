@@ -341,6 +341,7 @@
   font-family: VattenfallHall-Regular;
   font-size: 20px;
   height: 107px;
+  width: 264px;
 
   input:focus,
   select:focus,
@@ -351,6 +352,7 @@
 
   #vf__alt_textarea_input {
     height: 110px;
+    color:$dark;
     &::placeholder {
       color: rgb(118, 118, 118);
       font-family: VattenfallHall-Regular;

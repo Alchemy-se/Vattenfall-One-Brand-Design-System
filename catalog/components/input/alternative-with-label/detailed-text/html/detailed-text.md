@@ -10,7 +10,7 @@ showSource: true
       type="text"
       id="vf_alt_input"
       class="vf-alt-input"
-      placeholder="Input Label"
+      placeholder="Input Text"
     />
     <label for="vf_alt_input">Label</label>
     <span class="vf-alt-input--detailed-text">Detailed information text here</span>
