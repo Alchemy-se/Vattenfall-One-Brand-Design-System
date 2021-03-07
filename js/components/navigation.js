@@ -134,12 +134,14 @@
 
   function clickSearchIcon(event, searchBox, searchIcon, searchInput) {
     if (searchBox.classList.contains('active')) {
+      console.log(event.target.parentElement.parentElement)
       searchBox.classList.remove('active')
       searchIcon.style = 'background:#ffffff;'
     } else {
       searchBox.classList.add('active')
       searchIcon.style = 'background:#ebf2f3;'
       searchInput.focus()
+      console.log('clicked search icon')
     }
   }
 
@@ -147,6 +149,7 @@
     if (searchBox.classList.contains('active')) {
       searchBox.classList.remove('active')
       searchIcon.style = 'background:#ffffff;'
+      console.log('click search close...')
     }
   }
 
@@ -158,6 +161,8 @@
   let responsive = document.querySelector('.responsiveTabs__iframe___1nTCV')
   // If responsive mode is true, use iframe document
   if (responsive) {
+    console.log('runnning responsive')
+
     doc = responsive.contentDocument.body
     doc.style = 'padding:0'
 
@@ -172,11 +177,7 @@
     let searchCloseDesktop = doc.querySelector(
       '.vf-navigation__icon-close-desktop'
     )
-
-    if (searchBox) {
-       var searchInputfield = searchBox.children[0]
-    }
-
+    let searchInpuField = searchBox.children[0]
     let navLinks = doc.querySelectorAll('#vf-navigation__link')
     let menuListItems = doc.getElementsByClassName(
       'vf-navigation__menu-list-item'
@@ -215,7 +216,7 @@
     })
 
     // toggle menu list
-    menuButton && menuButton.addEventListener('click', toggleMenu)
+    menuButton.addEventListener('click', toggleMenu)
 
     function toggleMenu() {
       if (menuButton.classList.contains('vf-icon-menu')) {
@@ -275,11 +276,11 @@
     }
 
     // pressing search button mobile/tablet
-    searchButtonMobile && searchButtonMobile.addEventListener('click', () => {
+    searchButtonMobile.addEventListener('click', () => {
       toggleSearchMobile(searchBox, searchButtonMobile)
     })
 
-    searchButtonDesktop && searchButtonDesktop.addEventListener('click', () => {
+    searchButtonDesktop.addEventListener('click', () => {
       toggleSearchDesktop(searchBox, searchButtonDesktop)
     })
 
@@ -294,7 +295,7 @@
         ul.style = 'display: none'
         searchBox.classList.add('active')
         searchButtonMobile.style = 'background:#ebf2f3;'
-        searchInputField.focus()
+        searchInpuField.focus()
       }
     }
 
@@ -305,7 +306,7 @@
       } else {
         searchBox.classList.add('active')
         searchButtonDesktop.style = 'background:#ebf2f3'
-        searchInputField.focus()
+        searchInpuField.focus()
         navLinks.forEach(link =>
           link.parentElement.parentElement.classList.remove('active')
         )
