@@ -15,31 +15,42 @@ class Frame extends Component {
 
 
   renderFrameContent() {
-    let doc = document.querySelector('.responsiveTabs__iframe___1nTCV')
-      .contentDocument
+    // let doc = document.querySelector('.responsiveTabs__iframe___1nTCV')
+    //   .contentDocument
     
-    if (doc.readyState === 'interactive') {
+    let responsiveTabs = document.querySelectorAll('.responsiveTabs__iframe___1nTCV')
+ 
+    responsiveTabs.forEach(tab => {
+      let doc = tab.contentDocument
 
-      let contents = React.createElement(
-        "div",
-        null,
-        this.props.head,
-        this.props.children
-      );
-      doc.body.innerHTML = "<div></div>";
-      doc.head.innerHTML = "";
-      let base = doc.createElement("base");
-      base.setAttribute("href", window.location.href);
-      doc.head.appendChild(base);
-      let pageStyles = Array.from(document.querySelectorAll('head > style, link[rel="stylesheet"]'));
-      pageStyles.forEach(function (s) {
-        doc.head.appendChild(s.cloneNode(true));
-      });
-      ReactDOM.unstable_renderSubtreeIntoContainer(this, contents, doc.body.firstChild, function () {
-      });
-    } else {
-      setTimeout(this.renderFrameContent, 0);
-    }
+      if (doc.readyState === 'interactive' || doc.readyState === "complete") {
+        let contents = React.createElement(
+          'div',
+          null,
+          this.props.head,
+          this.props.children
+        )
+        doc.body.innerHTML = '<div></div>'
+        doc.head.innerHTML = ''
+        let base = doc.createElement('base')
+        base.setAttribute('href', window.location.href)
+        doc.head.appendChild(base)
+        let pageStyles = Array.from(
+          document.querySelectorAll('head > style, link[rel="stylesheet"]')
+        )
+        pageStyles.forEach(function (s) {
+          doc.head.appendChild(s.cloneNode(true))
+        })
+        ReactDOM.unstable_renderSubtreeIntoContainer(
+          this,
+          contents,
+          doc.body.firstChild,
+          function () {}
+        )
+      } else {
+        setTimeout(this.renderFrameContent, 0)
+      }
+    })
   }
 
   componentDidUpdate() {
