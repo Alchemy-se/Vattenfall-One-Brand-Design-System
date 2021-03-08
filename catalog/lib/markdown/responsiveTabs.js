@@ -24,7 +24,7 @@ class Frame extends Component {
 
          let doc = tab.contentDocument
 
-      if (doc.readyState === 'interactive') {
+      if (doc.readyState === 'interactive' || doc.readyState === "complete") {
         let contents = React.createElement(
           'div',
           null,
