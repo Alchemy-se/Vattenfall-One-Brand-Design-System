@@ -135,7 +135,6 @@ function toggleSearchBoxDesktop() {
 
 function clickSearchIcon(event, searchBox, searchIcon, searchInput) {
   if (searchBox.classList.contains('active')) {
-    console.log(event.target.parentElement.parentElement)
     searchBox.classList.remove('active')
     searchIcon.style = 'background:#ffffff;'
   } else {
@@ -150,7 +149,6 @@ function searchCloseButton(searchBox, searchIcon) {
   if (searchBox.classList.contains('active')) {
     searchBox.classList.remove('active')
     searchIcon.style = 'background:#ffffff;'
-    console.log('click search close...')
   }
 }
 
@@ -162,7 +160,6 @@ let doc
 let responsive = document.querySelector('.responsiveTabs__iframe___1nTCV')
 // If responsive mode is true, use iframe document
 if (responsive) {
-  console.log('runnning responsive')
 
   doc = responsive.contentDocument.body
   doc.style = 'padding:0'
@@ -174,7 +171,7 @@ if (responsive) {
   let searchButtonMobile = doc.querySelector('.vf-icon-search')
   let searchButtonDesktop = doc.querySelector(
     '.vf-navigation__icon-search-desktop'
-  )
+    )
   let searchCloseDesktop = doc.querySelector(
     '.vf-navigation__icon-close-desktop'
   )

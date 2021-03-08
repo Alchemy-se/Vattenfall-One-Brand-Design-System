@@ -21,9 +21,10 @@ class Frame extends Component {
     let responsiveTabs = document.querySelectorAll('.responsiveTabs__iframe___1nTCV')
  
     responsiveTabs.forEach(tab => {
-      let doc = tab.contentDocument
 
-      if (doc.readyState === 'interactive' || doc.readyState === "complete") {
+         let doc = tab.contentDocument
+
+      if (doc.readyState === 'interactive') {
         let contents = React.createElement(
           'div',
           null,
@@ -47,7 +48,8 @@ class Frame extends Component {
           doc.body.firstChild,
           function () {}
         )
-      } else {
+      }
+      else {
         setTimeout(this.renderFrameContent, 0)
       }
     })
