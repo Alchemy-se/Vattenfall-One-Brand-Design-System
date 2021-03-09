@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import styles from './responsiveTabs.scss'
-import ResponsiveTabs2 from './ResponsiveTabs2'
 
 const responsiveSizes = [
   { name: 'Phone', width: 375, height: 667 },
