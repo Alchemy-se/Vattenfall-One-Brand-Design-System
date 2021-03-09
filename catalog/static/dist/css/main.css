@@ -1758,24 +1758,17 @@ html.sr .reveal {
 
 .vf-container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   clear: left;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-container {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1842,23 +1835,16 @@ html.sr .reveal {
 
 .vf-container-fluid {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-container-fluid {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -9764,8 +9750,8 @@ a.vf-card:hover {
 
 .vf-media-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -9776,17 +9762,10 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-media-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-media-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -9963,8 +9942,8 @@ a.vf-card:hover {
 
 .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -9975,17 +9954,10 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -10136,8 +10108,8 @@ a.vf-card:hover {
 
 .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -10148,17 +10120,10 @@ a.vf-card:hover {
   margin-top: 0;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11466,24 +11431,17 @@ a.vf-card:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-large-quote {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-large-quote {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11761,8 +11719,8 @@ a.vf-card:hover {
 
 .vf-two-column-boxes {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
@@ -11771,17 +11729,10 @@ a.vf-card:hover {
   margin-bottom: 88px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-two-column-boxes {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-two-column-boxes {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11954,8 +11905,8 @@ a.vf-card:hover {
 
 .vf-navbar__nav {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   line-height: 1;
@@ -11964,17 +11915,10 @@ a.vf-card:hover {
   height: 56px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-navbar__nav {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-navbar__nav {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -12392,8 +12336,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-image-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -12404,17 +12348,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-image-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-image-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

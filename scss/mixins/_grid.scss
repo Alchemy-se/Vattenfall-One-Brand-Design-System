@@ -4,35 +4,15 @@
 
 @mixin make-container() {
   width: 100%;
-  // padding-right: ($grid-gutter-width / 2);
-  // padding-left: ($grid-gutter-width / 2);
-
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   margin-right: auto;
   margin-left: auto;
 
-  //old padding for vf.container
-  // @include media-breakpoint-down(sm) {
-  //   padding-left: 21px;
-  //   padding-right: 21px;
-  // }
-
-  // @include media-breakpoint-down(md) {
-  //   padding-left: 30px;
-  //   padding-right: 30px;
-  // }
-
-  // new padding for vf-container
-  @media (min-width: 576px) and (max-width: 767px) {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-
-  @media (min-width: 768px) and (max-width: 992px) {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: 375px){
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
