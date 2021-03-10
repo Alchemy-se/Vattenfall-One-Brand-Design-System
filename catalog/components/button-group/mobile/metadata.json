@@ -1,19 +1,19 @@
 {
-  "id": "desktop-and-tablet",
-  "uri": "#desktop-and-tablet",
-  "name": "Desktop and tablet",
-  "guidelineUri":"#desktop-and-tablet",
+  "id": "mobile",
+  "uri": "#mobile",
+  "name": "Mobile",
+  "guidelineUri": "#mobile",
   "description": null,
   "react": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-	"support": [
-	      {
-	        "region": "SV",
-	        "status": -1
-	      }
-	    ]
+    "support": [
+      {
+        "region": "SV",
+        "status": -1
+      }
+    ]
   },
   "vue": {
     "exists": false,
@@ -25,12 +25,12 @@
     "exists": false,
     "status": -1,
     "globalUse": false,
-	"support": [
-	      {
-	        "region": "NL",
-	        "status": -1
-	      }
-	    ]
+    "support": [
+      {
+        "region": "NL",
+        "status": -1
+      }
+    ]
   },
   "html": {
     "exists": true,

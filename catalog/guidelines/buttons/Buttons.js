@@ -1,20 +1,21 @@
-import React, { Fragment } from 'react';
-import PageHeader from '../PageHeader';
-import YellowButtons from './yellow';
-import BlueButtons from './blue';
-import TertiaryBlackButtons from './tertiaryBlack';
-import TertiaryBlueButtons from './tertiaryBlue';
-import TextButtons from './textButtons';
-import TextLinks from './textLinks';
-import SelectToggle from './selectToggle';
-import RadioButtons from './radioButtons';
-import Checkbox from './checkbox';
+import React, { Fragment } from 'react'
+import PageHeader from '../PageHeader'
+import YellowButtons from './yellow'
+import BlueButtons from './blue'
+import TertiaryBlackButtons from './tertiaryBlack'
+import TertiaryBlueButtons from './tertiaryBlue'
+import TextButtons from './textButtons'
+import TextLinks from './textLinks'
+import SelectToggle from './selectToggle'
+import RadioButtons from './radioButtons'
+import Checkbox from './checkbox'
+import GroupDesktop from './groupDesktop'
+import GroupMobile from "./groupMobile"
+import Description from '../Description'
+import DottedDescription from '../DottedDescription'
 
-import Description from '../Description';
-import DottedDescription from '../DottedDescription';
-
-const buttonLabel = 'Button label';
-const placeholder = 'Placeholder';
+const buttonLabel = 'Button label'
+const placeholder = 'Placeholder'
 
 const Button = () => {
   return (
@@ -127,40 +128,18 @@ const Button = () => {
       />
       <Checkbox label={placeholder} />
       <div className='vf-mt-xl' />
+
       <Description
         title='Button Group'
-        text='By default the text in button group is set to: Colors / CTA / Secondary / Default on white background. On Hover text and animated icon turns White on background: Colors / CTA / Secondary / Hover. On Pressed the text stays white on background: Colors / CTA / Secondary / Pressed.'
+        text='The Button Group component should be used for group related buttons. The maximum number of buttons should be four. Desktop version should be 64px in height and 16px font size. The Tablet version should be 52px in height and 16px font size. Mobile version stacks the Buttons and should have a height of 40px with a 16px padding horizontally and 16px font size. If more then four buttons are needed on mobile use the scrollable Tabs.'
       />
-      <div className='vf-row-11'>
-        <div className='vf-btn-group' role='group' aria-label='Basic example'>
-          <button
-            type='button'
-            className='vf-btn-group__btn vf-btn vf-btn--secondary'
-          >
-            Left
-          </button>
-          <button
-            type='button'
-            className='vf-btn-group__btn vf-btn vf-btn--secondary'
-          >
-            Middle
-          </button>
-          <button
-            type='button'
-            className='vf-btn-group__btn vf-btn vf-btn--secondary'
-          >
-            Middle
-          </button>
-          <button
-            type='button'
-            className='vf-btn-group__btn vf-btn vf-btn--secondary'
-          >
-            Right
-          </button>
-        </div>
-      </div>
+
+      <GroupDesktop title={'Desktop and tablet'} />
+      <div className='vf-mt-xl' />
+      <GroupMobile title={'Mobile'} />
+      <div className='vf-mt-xl' />
     </Fragment>
   )
-};
+}
 
-export default Button;
+export default Button
