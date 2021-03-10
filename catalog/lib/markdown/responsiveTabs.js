@@ -48,9 +48,9 @@ class Frame extends Component {
       }
     })
   }
-  // componentDidUpdate() {
-  //   this.renderFrameContent();
-  // }
+  componentDidUpdate() {
+    this.renderFrameContent();
+  }
   render() {
     return <iframe id={"iframe"} className={styles.iframe} />;
   }
