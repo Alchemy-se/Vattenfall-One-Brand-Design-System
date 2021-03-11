@@ -13573,7 +13573,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input {
   position: relative;
-  min-width: 264px;
+  height: 52px;
+  width: 264px;
   background-color: #fff;
   color: #222222;
   padding: 16px 20px;
@@ -13764,9 +13765,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: calc(100% - 8px);
 }
 
+.vf-input-container #vf_tooltip_input {
+  padding-right: 55px;
+}
+
+.vf-input-container #vf_textarea_input {
+  height: auto;
+}
+
 .vf-input-container label {
   position: absolute;
-  top: 17px;
+  top: 13px;
   left: 20px;
   margin-bottom: 0;
   color: #767676;
@@ -14044,7 +14053,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-alt-input-container .vf-alt-input--textarea-detailed-text {
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: -66px;
   color: #767676;
   font-family: VattenfallHall-Regular;
   font-size: 16px;
@@ -14061,7 +14070,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-alt-input-container-textarea {
-  height: 185px;
+  height: auto;
+  margin-bottom: 66px;
 }
 
 [class*="vf-utility-typo--"] {
