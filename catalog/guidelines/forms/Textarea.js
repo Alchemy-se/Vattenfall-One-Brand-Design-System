@@ -14,7 +14,7 @@ const Textarea = ({ title, label }) => {
         <Column title={'Default'}>
           <div className="vf-input-container">
             <textarea rows="3" cols="10" id="vf_textarea_input" className="vf-input"></textarea>
-            <label for="vf_textarea_input">Textarea Label</label>
+            <label htmlFor="vf_textarea_input">Textarea Label</label>
           </div>
         </Column>
         <Column title={'Hover'}>
@@ -25,7 +25,7 @@ const Textarea = ({ title, label }) => {
               id="vf_textarea_input"
               className={`vf-input ${styles.standardHover}`}
             ></textarea>
-            <label for="vf_textarea_input">Textarea Label</label>
+            <label htmlFor="vf_textarea_input">Textarea Label</label>
           </div>
         </Column>
         <Column title={'Focus'}>
@@ -37,7 +37,7 @@ const Textarea = ({ title, label }) => {
               className={`vf-input vf-input--data ${styles.disableHover}`}
               defaultValue="Textarea label filled in"
             ></textarea>
-            <label for="vf_textarea_input">Textarea Label</label>
+            <label htmlFor="vf_textarea_input">Textarea Label</label>
           </div>
         </Column>
         <div className="vf-col"></div>

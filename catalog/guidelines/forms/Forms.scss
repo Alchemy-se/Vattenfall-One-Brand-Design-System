@@ -84,3 +84,30 @@
   background-color: #1964a3;
   color: #fff;
 }
+
+.alternativeHover {
+  border: 1px solid rgb(153, 153, 153) !important;
+}
+
+.alternativeFocus {
+  border: 1px solid rgb(32, 113, 181) !important;
+}
+
+.alternativeErrorMsg {
+  opacity: 1 !important;
+}
+
+.alternativeHoverError, .alternativeFocusError {
+  border: 1px solid #f93b18 !important;
+}
+
+.alternativeTooltipHover {
+  > input, label {
+    pointer-events: none;
+  }
+  > div.vf-input-tooltip-icon.vf-icon-question {
+    &::before {
+      pointer-events: auto !important;
+    }
+  }
+}

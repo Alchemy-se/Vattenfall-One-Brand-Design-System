@@ -13489,14 +13489,15 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin: 0;
 }
 
-.vf-input-container input[type="number"] {
+.vf-input-container input[type='number'] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
   padding-right: 40px;
 }
 
-.vf-input-container .vf-input--number-increment, .vf-input-container .vf-input--number-decrement {
+.vf-input-container .vf-input--number-increment,
+.vf-input-container .vf-input--number-decrement {
   position: absolute;
   right: 1px;
   height: 48%;
@@ -13534,7 +13535,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input {
   position: relative;
-  min-width: 264px;
+  height: 52px;
+  width: 264px;
   background-color: #fff;
   color: #222222;
   padding: 16px 20px;
@@ -13658,10 +13660,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--error:focus {
   -webkit-box-shadow: 0 1px #F93B18;
   box-shadow: 0 1px #F93B18;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning {
@@ -13672,10 +13674,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning:focus {
   -webkit-box-shadow: 0 1px #f5a623;
   box-shadow: 0 1px #f5a623;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--error {
@@ -13710,7 +13712,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #f5a623;
 }
 
-.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message, .vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
+.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message,
+.vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
   margin-bottom: 0;
   -webkit-transform: translate(0, -50%) !important;
   transform: translate(0, -50%) !important;
@@ -13724,9 +13727,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: calc(100% - 8px);
 }
 
+.vf-input-container #vf_tooltip_input {
+  padding-right: 55px;
+}
+
+.vf-input-container #vf_textarea_input {
+  height: auto;
+}
+
 .vf-input-container label {
   position: absolute;
-  top: 17px;
+  top: 13px;
   left: 20px;
   margin-bottom: 0;
   color: #767676;
@@ -13735,8 +13746,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
   pointer-events: none;
   cursor: default;
-  -webkit-transition: top .2s ease-in-out;
-  transition: top .2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 .vf-input-container label:after {
@@ -13774,8 +13785,255 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input-tooltip-icon:hover ~ .vf-tooltip-message {
   opacity: 1;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vf-alt-input-container {
+  position: relative;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  height: 107px;
+  width: 264px;
+}
+
+.vf-alt-input-container input:focus,
+.vf-alt-input-container select:focus,
+.vf-alt-input-container textarea:focus,
+.vf-alt-input-container button:focus {
+  outline: none;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input {
+  height: 110px;
+  color: #222222;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-webkit-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-moz-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-ms-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container .vf-alt-input {
+  font-family: VattenfallHall-Regular;
+  position: relative;
+  top: 34px;
+  width: 264px;
+  height: 52px;
+  background-color: #fff;
+  color: #222222;
+  padding: 16px 20px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #cccccc;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.vf-alt-input-container .vf-alt-input:hover {
+  border: 1px solid #999999;
+}
+
+.vf-alt-input-container .vf-alt-input:focus {
+  outline: none;
+  border: 1px solid #1964A3;
+}
+
+.vf-alt-input-container .vf-alt-input::-webkit-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-moz-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-ms-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error {
+  border-color: #ffb2a4;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:hover {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:focus {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-webkit-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-moz-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-ms-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 26px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  width: 256px;
+}
+
+.vf-alt-input-container .vf-tooltip-message {
+  opacity: 0;
+  position: absolute;
+  right: 27px;
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  top: 10px;
+}
+
+.vf-alt-input-container .vf-icon-question:before {
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  right: 17px;
+}
+
+.vf-alt-input-container .vf-icon-question:hover ~ .vf-tooltip-message {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vf-alt-input-container .vf-alt-input--error-msg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  color: #F93B18;
+  font-family: VattenfallHall-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--textarea-detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -66px;
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  height: 33px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+#vf_alt_tooltip_input {
+  padding-right: 54px;
+}
+
+.vf-alt-input-container-textarea {
+  height: auto;
+  margin-bottom: 66px;
 }
 
 [class*="vf-utility-typo--"] {

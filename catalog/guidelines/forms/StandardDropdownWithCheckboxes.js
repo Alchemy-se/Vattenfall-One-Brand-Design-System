@@ -66,11 +66,11 @@ const StandardDropdownWithCheckboxes = ({ title, label }) => {
                 <label className="vf-dropdown-option">Winter</label>
               </div>
               <div className={`vf-dropdown-list-item ${styles.dropdownSelectedOption}`}>
-                <input type="checkbox" checked name="vf-dropdown-group" value="Spring" />
+                <input type="checkbox" defaultChecked name="vf-dropdown-group" value="Spring" />
                 <label className="vf-dropdown-option">Spring</label>
               </div>
               <div className={`vf-dropdown-list-item ${styles.dropdownSelectedOption}`}>
-                <input type="checkbox" checked name="vf-dropdown-group" value="Summer" />
+                <input type="checkbox" defaultChecked name="vf-dropdown-group" value="Summer" />
                 <label className="vf-dropdown-option">Summer</label>
               </div>
               <div className="vf-dropdown-list-item">
