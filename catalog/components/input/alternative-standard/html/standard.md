@@ -1,4 +1,4 @@
-### Alternative With Label
+### Alternative Standard
 
 ```html
 showSource: true 

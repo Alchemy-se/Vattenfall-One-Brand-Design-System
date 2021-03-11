@@ -1,4 +1,4 @@
-### Alternative Standard Error
+### Alternative Error Standard
 
 ```html
 showSource: true 

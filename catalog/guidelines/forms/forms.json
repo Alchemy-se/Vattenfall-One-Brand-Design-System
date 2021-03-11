@@ -1,100 +1,123 @@
-[ {
-  "name": "Forms",
-  "description": "Input text are the most commently use form control. Input fields are suitable for getting textual data from the user.",
-  "type": "guideline",
-  "uri": "/guidelines/forms",
-  "objectID": "forms-guideline",
-  "children": [
-    {
-      "name": "Standard"
-    },
-    {
-      "name": "Dropdown"
-    },
-    {
-      "name": "Underline input"
-    },
-    {
-      "name": "Number"
-    },
-    {
-      "name": "Textarea"
-    },
-    {
-      "name": "Tooltip"
-    }
-  ]
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#standard",
-  "description": "",
-  "objectID": "forms-standard-guideline",
-  "name": "Standard",
-  "id": "forms-standard"
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#dropdown",
-  "description": "Dropdown is an element that allows you to make a particular choice within compact area which is very useful, especially for the mobile devices. Only one item can be chosen at the time. Advice is to use this element when the amount of items to be chosen from exceeds 3 options.",
-  "objectID": "forms-dropdown-guideline",
-  "name": "Dropdown",
-  "id": "forms-dropdown"
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#underline-input",
-  "description": "Underline input is only used when the input fields are three or less. Distance between each field should always be 28px",
-  "objectID": "forms-underline-input-guideline",
-  "name": "Underline input",
-  "id": "forms-underline-input"
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#number",
-  "description": "Number input should alwasy be 52px in height. Like dropdowns, numbers include an ever-present label in order to be accessible.",
-  "objectID": "forms-number-guideline",
-  "name": "number",
-  "id": "forms-number"
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#textarea",
-  "description": "Tooltips appear on hover and provide an additional layer of information for the user. They are filled with different colors in order to generate maximum contrast with the page beneath. Carets are positioned in the top center, bottom center, right center and left center",
-  "objectID": "forms-textarea-guideline",
-  "name": "Textarea",
-  "id": "forms-textarea"
-}, {
-  "parent": [
-    {
-      "name": "Forms"
-    }
-  ],
-  "type": "guideline",
-  "uri": "/guidelines/forms#tooltip",
-  "description": "Textarea provides the possibility for the custom input from the user. Use this element when personal feedback from the user is needed or the situation itself is not specific enough to support pre-definied option for the user to choose from.",
-  "objectID": "forms-tooltip-guideline",
-  "name": "Tooltip",
-  "id": "forms-Tooltip"
-}
+[
+  {
+    "name": "Forms",
+    "description": "Input text are the most commently use form control. Input fields are suitable for getting textual data from the user.",
+    "type": "guideline",
+    "uri": "/guidelines/forms",
+    "objectID": "forms-guideline",
+    "children": [
+      {
+        "name": "Standard"
+      },
+      {
+        "name": "Alternative With Label"
+      },
+      {
+        "name": "Dropdown"
+      },
+      {
+        "name": "Underline input"
+      },
+      {
+        "name": "Number"
+      },
+      {
+        "name": "Textarea"
+      },
+      {
+        "name": "Tooltip"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#standard",
+    "description": "",
+    "objectID": "forms-standard-guideline",
+    "name": "Standard",
+    "id": "forms-standard"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#alterative-with-label",
+    "description": "",
+    "objectID": "forms-alterative-with-label",
+    "name": "Alternative With Label",
+    "id": "alterative-with-label"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#dropdown",
+    "description": "Dropdown is an element that allows you to make a particular choice within compact area which is very useful, especially for the mobile devices. Only one item can be chosen at the time. Advice is to use this element when the amount of items to be chosen from exceeds 3 options.",
+    "objectID": "forms-dropdown-guideline",
+    "name": "Dropdown",
+    "id": "forms-dropdown"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#underline-input",
+    "description": "Underline input is only used when the input fields are three or less. Distance between each field should always be 28px",
+    "objectID": "forms-underline-input-guideline",
+    "name": "Underline input",
+    "id": "forms-underline-input"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#number",
+    "description": "Number input should alwasy be 52px in height. Like dropdowns, numbers include an ever-present label in order to be accessible.",
+    "objectID": "forms-number-guideline",
+    "name": "number",
+    "id": "forms-number"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#textarea",
+    "description": "Tooltips appear on hover and provide an additional layer of information for the user. They are filled with different colors in order to generate maximum contrast with the page beneath. Carets are positioned in the top center, bottom center, right center and left center",
+    "objectID": "forms-textarea-guideline",
+    "name": "Textarea",
+    "id": "forms-textarea"
+  },
+  {
+    "parent": [
+      {
+        "name": "Forms"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/forms#tooltip",
+    "description": "Textarea provides the possibility for the custom input from the user. Use this element when personal feedback from the user is needed or the situation itself is not specific enough to support pre-definied option for the user to choose from.",
+    "objectID": "forms-tooltip-guideline",
+    "name": "Tooltip",
+    "id": "forms-Tooltip"
+  }
 ]
