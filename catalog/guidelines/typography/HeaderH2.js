@@ -6,7 +6,7 @@ const HeaderH2 = () => {
     <Fragment>
       <div className='vf-row'>
         <div className='vf-col'>
-          <h2 className='use-in-toc' style={{ fontSize: '3.25rem' }}>
+          <h2 className='use-in-toc'>
             Header H2
           </h2>
         </div>
@@ -18,25 +18,25 @@ const HeaderH2 = () => {
       </div>
       <div className='vf-row'>
         <ElementSpeifications
-          screenSize='Dektop'
+          screenSize='Desktop'
           fontName='Vattenfall Hall Display'
           fontWeight='Bold'
-          fontSize='52px'
-          lineHeight='72px'
+          fontSize='36px'
+          lineHeight='42px'
         />
         <ElementSpeifications
           screenSize='Tablet'
           fontName='Vattenfall Hall Display'
           fontWeight='Bold'
-          fontSize='52px'
-          lineHeight='72px'
+          fontSize='36px'
+          lineHeight='42px'
         />
         <ElementSpeifications
           screenSize='Mobile'
           fontName='Vattenfall Hall Display'
           fontWeight='Bold'
-          fontSize='36px'
-          lineHeight='40px'
+          fontSize='28px'
+          lineHeight='32px'
         />
       </div>
     </Fragment>

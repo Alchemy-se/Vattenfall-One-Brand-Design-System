@@ -2935,69 +2935,62 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h1 {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
 h2 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h2 {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
 h3 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
   letter-spacing: 0;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h3 {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 h4 {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h4 {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -3071,17 +3064,17 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-primary {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
@@ -3100,69 +3093,62 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-primary {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
 .vf-typo-secondary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-secondary {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
 .vf-typo-tetriary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
   letter-spacing: 0;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-tetriary {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 .vf-typo-quaternary {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-quaternary {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -9070,18 +9056,17 @@ a.vf-card:hover {
   margin-bottom: 1.5rem;
   text-align: center;
   color: #222222;
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-card__title {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -12467,20 +12452,17 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-image-block__title {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-image-block__title {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 

@@ -19,25 +19,25 @@ const HeaderH1 = () => {
       </div>
       <div className='vf-row'>
         <ElementSpeifications
-          screenSize='Dektop'
+          screenSize='Desktop'
           fontName='Vatenfall Hall Display'
           fontWeight='Bold'
-          fontSize='72px'
-          lineHeight='84px'
+          fontSize='52px'
+          lineHeight='62px'
         />
         <ElementSpeifications
           screenSize='Tablet'
           fontName='Vatenfall Hall Display'
           fontWeight='Bold'
-          fontSize='60px'
-          lineHeight='75px'
+          fontSize='52px'
+          lineHeight='62px'
         />
         <ElementSpeifications
           screenSize='Mobile'
           fontName='Vatenfall Hall Display'
           fontWeight='Bold'
-          fontSize='44px'
-          lineHeight='48px'
+          fontSize='34px'
+          lineHeight='40px'
         />
       </div>
     </Fragment>
