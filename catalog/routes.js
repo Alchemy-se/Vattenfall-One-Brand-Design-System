@@ -38,6 +38,7 @@ import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
+import VisualPickers from "./components/visual-pickers"
 
 // PARALLAX
 import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -201,6 +202,11 @@ const COMPONENTS_ROUTES = [
     path: '/css/spinner',
     name: 'Spinner',
     component: <Spinner uri={'/components/css/spinner'} />,
+  },
+  {
+    path: '/css/visual-pickers',
+    name: 'Visual Pickers',
+    component: <VisualPickers uri={'/components/css/visual-pickers'} />,
   },
   {
     path: '/css/preloader',
