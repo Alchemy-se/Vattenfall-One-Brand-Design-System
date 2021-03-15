@@ -1,0 +1,57 @@
+.vf-visual-pickers__container {
+  display: flex;
+}
+
+.vf-visual-pickers__btn {
+  font-family: VattenfallHall-Regular;
+  box-sizing: border-box;
+  position: relative;
+  width: 264px;
+  height: 52px;
+  background-color: $white;
+  padding: 0;
+  //   color: $dark;
+    padding: 12px 16px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid $vattenfall-input-grey;
+  //   font-size: $font-size-lg;
+  line-height: 28px;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    margin-bottom: 0;
+    &::before {
+      font-size: 20px;
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid $vattenfall-border-dark-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $vattenfall-button-blue;
+  }
+
+  &::placeholder {
+    width: 102px;
+    height: 25px;
+    color: rgb(118, 118, 118);
+    font-size: 20px;
+    font-family: VattenfallHall-Regular;
+    font-weight: normal;
+    letter-spacing: 0px;
+  }
+}
