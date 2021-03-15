@@ -19,7 +19,7 @@ const BodyTextSmall = () => {
       </div>
       <div className='vf-row'>
         <ElementSpeifications
-          screenSize='Dektop'
+          screenSize='Desktop'
           fontName='Vattenfall Hall'
           fontWeight='Regular'
           fontSize='16px'

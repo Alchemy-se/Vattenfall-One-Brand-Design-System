@@ -18,7 +18,7 @@ const PreambleText = () => {
       </div>
       <div className="vf-row">
         <ElementSpeifications
-          screenSize="Dektop"
+          screenSize="Desktop"
           fontName="Vattenfall Hall"
           fontWeight="Medium"
           fontSize="24px"
