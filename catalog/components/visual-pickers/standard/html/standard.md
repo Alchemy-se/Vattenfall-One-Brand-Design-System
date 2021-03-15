@@ -7,15 +7,11 @@ showSource: true
 <div class="vf-row">
   <div id="vf-visual-pickers__single" class="vf-visual-pickers__container">
 
-    <button class="vf-visual-pickers__btn" value="value1">
-      <span class="vf-visual-pickers__btn-title">Value 1</span>
-      <span class="vf-icon-check" style="display: none;"></span>
-    </button>
+    <input type="radio" id="radio1" name="vf-visual-pickers" />
+    <label class="vf-visual-pickers__label" for="radio1">radio 1</label>
 
-    <button class="vf-visual-pickers__btn" value="value2">
-      <span class="vf-visual-pickers__btn-title">Value 2</span>
-      <span class="vf-icon-check"></span>
-    </button>
+    <input type="radio" id="radio2" name="vf-visual-pickers" />
+    <label class="vf-visual-pickers__label" for="radio2">radio 2</label>
 
   </div>
 </div>
