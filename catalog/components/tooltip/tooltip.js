@@ -12,10 +12,9 @@ export default class Tooltip extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={"Tooltip"}/>
-        <Markdown source={markdown} />
+        <PageHeader title={'Tooltip'} />
+        <Markdown source={markdown} scriptUrl={'/js/tooltip.min.js'} />
         <Modals uri={this.props.uri} />
-
       </React.Fragment>
     )
   }

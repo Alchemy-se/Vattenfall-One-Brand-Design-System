@@ -75,18 +75,26 @@ const rootRenderer = ({ children }) => {
   );
 };
 
-const Markdown = ({ source, noPaddingBottom }) => {
+const Markdown = ({
+  source,
+  scriptUrl,
+  // scriptUrl = '/js/horizon.min.js',
+  noPaddingBottom,
+}) => {
   // Reload js.
-  
-  useScript("/js/horizon.min.js");
+  scriptUrl && useScript(scriptUrl)
   return (
-    <div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}`}>
+    <div
+      className={`${styles.container} markdown-body ${
+        noPaddingBottom ? 'no-padding-bottom' : ''
+      }`}
+    >
       <ReactMarkdown
         source={source}
         renderers={{ heading: Heading, code: Code, root: rootRenderer }}
       />
     </div>
-  );
-};
+  )
+}
 
 export default Markdown;

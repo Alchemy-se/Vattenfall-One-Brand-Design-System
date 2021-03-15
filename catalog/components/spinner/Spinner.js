@@ -11,7 +11,7 @@ const Spinner = ({ uri }) => {
   return (
     <React.Fragment>
       <PageHeader title={'Spinner'} />
-        <Markdown source={md} />
+      <Markdown source={md} scriptUrl={'/js/spinner.min.js'} />
       <Modals uri={uri} />
     </React.Fragment>
   )

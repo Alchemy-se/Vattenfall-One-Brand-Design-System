@@ -39,8 +39,8 @@ export default class Input extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={"Input"} />
-        <Markdown source={markdown} />
+        <PageHeader title={'Input'} />
+        <Markdown source={markdown} scriptUrl={'/js/input.min.js'} />
         <Modals uri={this.props.uri} />
       </React.Fragment>
     )

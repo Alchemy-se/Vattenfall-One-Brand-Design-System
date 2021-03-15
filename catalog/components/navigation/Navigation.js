@@ -46,7 +46,7 @@ const Navigation = ({ uri }) => {
   return (
     <React.Fragment>
       <PageHeader title={'Navigation'} />
-      <Markdown source={markdown} />
+      <Markdown source={markdown} scriptUrl={'/js/navigation.min.js'} />
       <Modals uri={uri} />
     </React.Fragment>
   )

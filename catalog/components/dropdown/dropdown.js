@@ -13,10 +13,9 @@ export default class DropdownList extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={"Drop-down List"}/>
-        <Markdown source={markdown} />
+        <PageHeader title={'Drop-down List'} />
+        <Markdown source={markdown} scriptUrl={'/js/drop-down-list.min.js'} />
         <Modals uri={this.props.uri} />
-
       </React.Fragment>
     )
   }

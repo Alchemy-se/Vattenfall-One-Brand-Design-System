@@ -7,6 +7,8 @@ import DragNDropMd from '../../components/upload/drag-and-drop/html/drag-and-dro
 import DottedDescription from '../DottedDescription'
 
 const Upload = () => {
+let scirptUrl = "/js/upload.min.js"
+
   const editMd = mdText => {
     const hideSourceCode = mdText.replace(
       'showSource: true',
@@ -74,14 +76,14 @@ const Upload = () => {
         text='This is the basic upload component, which should be used on Mobile or when space is limited. It has a built in drag and drop for desktop and supports a maximum of 5 files each at 50mb/file. The maximum for files can be adjusted in the code if needed.
 After selection of files, they appear with the names truncated under the upload-button and can be deselected by clicking the ”X” to the right of the filenames.'
       >
-        <Markdown source={editMd(UploadMd)} />
+        <Markdown source={editMd(UploadMd)} scirptUrl={scirptUrl} />
       </GuidelinesBlock>
       <GuidelinesBlock
         title='Drag and drop'
         text='This is the upload component for Desktop which should be used when there is enough space.
 Behaviour is otherwise the same as the basic upload, see above.'
       >
-        <Markdown source={editMd(DragNDropMd)} />
+        <Markdown source={editMd(DragNDropMd)} scirptUrl={scirptUrl} />
       </GuidelinesBlock>
     </Fragment>
   )

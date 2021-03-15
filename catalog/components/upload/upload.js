@@ -8,13 +8,13 @@ import DragAndDrop from "./drag-and-drop/html/drag-and-drop.md";
 const markdown = BasicUpload + DragAndDrop;
 const Upload = ({uri}) => {
   return (
-     <Fragment>
-      <PageHeader title={"Upload"}/>
+    <Fragment>
+      <PageHeader title={'Upload'} />
       {/* <DragAndDropTest /> */}
-        <Markdown source={markdown} />
-        <Modals uri={uri} />
-     </Fragment>
-  );
+      <Markdown source={markdown} scriptUrl={'/js/upload.min.js'} />
+      <Modals uri={uri} />
+    </Fragment>
+  )
 };
 
 export default Upload;

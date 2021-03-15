@@ -11,6 +11,8 @@ import scroll2 from '../../components/navigation/scroll-level-2/html/scroll-leve
 import scroll3 from '../../components/navigation/scroll-level-3/html/scroll-level-3.md'
 
 const Navigation = () => {
+
+  let scriptUrl = '/js/navigation.min.js'
   return (
     <Fragment>
       <PageHeader title='Navigation' />
@@ -20,7 +22,7 @@ const Navigation = () => {
       </p>
       <GuidelinesBlock title='Responsive' style={headingStyle} />
       <div style={divStyle}>
-        <Markdown source={responsive} />
+        <Markdown source={responsive} scriptUrl={scriptUrl} />
       </div>
       <GuidelinesBlock title='Default Mobile' />
       <p style={pStyle}>
@@ -84,13 +86,13 @@ const Navigation = () => {
         on hover and Active State should be #2071B5.
       </p>
       <div style={divStyle}>
-        <Markdown source={defaultMenu} />
+        <Markdown source={defaultMenu} scriptUrl={scriptUrl} />
       </div>
 
       <GuidelinesBlock title='Scroll Level 1' />
       <p style={pStyle}>This is the main menu state before interaction.</p>
       <div style={divStyle}>
-        <Markdown source={scroll1} />
+        <Markdown source={scroll1} scriptUrl={scriptUrl} />
       </div>
 
       <GuidelinesBlock title='Expanded' />
@@ -102,7 +104,7 @@ const Navigation = () => {
         Vattenfall Hall Regular 16px with a line height of 36px.
       </p>
       <div style={divStyle}>
-        <Markdown source={expanded} />
+        <Markdown source={expanded} scriptUrl={scriptUrl} />
       </div>
 
       <GuidelinesBlock title='Scroll Level 2' />
@@ -111,7 +113,7 @@ const Navigation = () => {
         top. When scrolling up all levels above should be revealed.
       </p>
       <div style={divStyle}>
-        <Markdown source={scroll2} />
+        <Markdown source={scroll2} scriptUrl={scriptUrl} />
       </div>
 
       <GuidelinesBlock title='Scroll Level 3' />
@@ -120,7 +122,7 @@ const Navigation = () => {
         top. When scrolling up all levels above should be revealed.
       </p>
       <div style={divStyle}>
-        <Markdown source={scroll3} />
+        <Markdown source={scroll3} scriptUrl={scriptUrl} />
       </div>
 
       <GuidelinesBlock title='Search' />
@@ -135,7 +137,7 @@ const Navigation = () => {
       </p>
 
       <div style={divStyle}>
-        <Markdown source={search} />
+        <Markdown source={search} scriptUrl={scriptUrl} />
       </div>
     </Fragment>
   )

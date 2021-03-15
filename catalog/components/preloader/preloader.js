@@ -9,8 +9,8 @@ export default class Preloader extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader title={"Preloader"}/>
-        <Markdown source={markdown} />
+        <PageHeader title={'Preloader'} />
+        <Markdown source={markdown} scriptUrl={'/js/preloader.min.js'} />
         <Modals uri={this.props.uri} />
       </React.Fragment>
     )

@@ -6,8 +6,11 @@ import gpdrConsentModule from './gdpr-concent-module/html/gdpr-concent-module.md
 const GDPRConsentModule = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={"GDPR Consent Module"} />
-      <Markdown source={gpdrConsentModule} />
+      <PageHeader title={'GDPR Consent Module'} />
+      <Markdown
+        source={gpdrConsentModule}
+        scriptUrl={'/js/gdpr-consent-module.min.js'}
+      />
       <Modals uri={uri} />
     </React.Fragment>
   )

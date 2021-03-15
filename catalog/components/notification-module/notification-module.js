@@ -7,8 +7,8 @@ import notificationModule from './notification-module/html/notification-module.m
 const NotificationModule = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={"Notification Module"} />
-      <Markdown source={notificationModule} />
+      <PageHeader title={'Notification Module'} />
+      <Markdown source={notificationModule} scriptUrl={'/js/notification-module.min.js'} />
       <Modals uri={uri} />
     </React.Fragment>
   )

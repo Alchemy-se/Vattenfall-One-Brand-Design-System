@@ -6,8 +6,8 @@ import tabBar from './tab-bar/html/tab-bar.md'
 const TabBar = ({ uri }) => {
   return (
     <React.Fragment>
-      <PageHeader title={"Tab Bar"} />
-      <Markdown source={tabBar} />
+      <PageHeader title={'Tab Bar'} />
+      <Markdown source={tabBar} scriptUrl={'/js/tab-bar.min.js'} />
       <Modals uri={uri} />
     </React.Fragment>
   )
