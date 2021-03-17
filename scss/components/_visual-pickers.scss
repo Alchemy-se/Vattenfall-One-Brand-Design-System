@@ -1,57 +1,96 @@
-.vf-visual-pickers__container {
-  display: flex;
-}
-
-.vf-visual-pickers__btn {
-  font-family: VattenfallHall-Regular;
-  box-sizing: border-box;
+.vf-visual-pickers__radio,
+.vf-visual-pickers__checkbox {
   position: relative;
-  width: 264px;
-  height: 52px;
-  background-color: $white;
-  padding: 0;
-  //   color: $dark;
-    padding: 12px 16px;
-  border-radius: 4px 4px 4px 4px;
-  border: 1px solid $vattenfall-input-grey;
-  //   font-size: $font-size-lg;
-  line-height: 28px;
-
-  span {
-    display: flex;
-    align-items: center;
-
-    height: 100%;
-    letter-spacing: 0px;
-    line-height: 28px;
-    color: rgb(34, 34, 34);
-    font-size: 20px;
-    margin-bottom: 0;
-    &::before {
-      font-size: 20px;
-    }
-  }
-
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid $vattenfall-input-grey;
+  height: 52px;
+  width: 264px;
 
   &:hover {
     border: 1px solid $vattenfall-border-dark-grey;
   }
 
-  &:focus {
-    outline: none;
-    border: 1px solid $vattenfall-button-blue;
+  &:disabled {
+    background: grey;
   }
 
-  &::placeholder {
-    width: 102px;
-    height: 25px;
-    color: rgb(118, 118, 118);
+  input {
+    display: none;
+  }
+
+  label {
+    all: initial;
+    color: rgb(34, 34, 34);
+    font-family: VattenfallHall-Medium;
     font-size: 20px;
-    font-family: VattenfallHall-Regular;
-    font-weight: normal;
+    font-weight: 500;
+    height: 28px;
     letter-spacing: 0px;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.vf-visual-pickers__icon:before {
+  position: absolute;
+  right: 17px;
+  bottom: 14px;
+  font-size: 20px;
+}
+
+.vf-visual-pickers__outline {
+  border: 1px solid $vattenfall-button-blue !important;
+}
+
+.vf-visual-pickers__link {
+  height: 52px;
+  width: 264px;
+  position: relative;
+  border-radius: 8px;
+
+  a {
+    all: initial;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 28px;
+    color: rgb(34, 34, 34);
+    font-family: VattenfallHall-Medium;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid $vattenfall-input-grey;
+
+    &:hover {
+      border: 1px solid $vattenfall-border-dark-grey;
+    }
+
+    &:disabled {
+      background: grey;
+    }
+    span {
+      display:none;
+    }
+    &:active {
+      span {
+        display:block;
+      }
+      border: 1px solid $vattenfall-button-blue; 
+    }
+
   }
 }

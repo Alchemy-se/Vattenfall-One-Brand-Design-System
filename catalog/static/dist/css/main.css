@@ -15763,102 +15763,111 @@ section.spinners {
   align-items: center;
 }
 
-.vf-visual-pickers__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.vf-visual-pickers__btn {
-  font-family: VattenfallHall-Regular;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.vf-visual-pickers__radio,
+.vf-visual-pickers__checkbox {
   position: relative;
-  width: 264px;
-  height: 52px;
-  background-color: #fff;
-  padding: 0;
-  padding: 12px 16px;
-  border-radius: 4px 4px 4px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
   border: 1px solid #cccccc;
-  line-height: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 52px;
+  width: 264px;
 }
 
-.vf-visual-pickers__btn span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-  letter-spacing: 0px;
-  line-height: 28px;
-  color: #222222;
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-.vf-visual-pickers__btn span::before {
-  font-size: 20px;
-}
-
-.vf-visual-pickers__btn:hover {
+.vf-visual-pickers__radio:hover,
+.vf-visual-pickers__checkbox:hover {
   border: 1px solid #999999;
 }
 
-.vf-visual-pickers__btn:focus {
-  outline: none;
+.vf-visual-pickers__radio:disabled,
+.vf-visual-pickers__checkbox:disabled {
+  background: grey;
+}
+
+.vf-visual-pickers__radio input,
+.vf-visual-pickers__checkbox input {
+  display: none;
+}
+
+.vf-visual-pickers__radio label,
+.vf-visual-pickers__checkbox label {
+  all: initial;
+  color: #222222;
+  font-family: VattenfallHall-Medium;
+  font-size: 20px;
+  font-weight: 500;
+  height: 28px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 100%;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.vf-visual-pickers__icon:before {
+  position: absolute;
+  right: 17px;
+  bottom: 14px;
+  font-size: 20px;
+}
+
+.vf-visual-pickers__outline {
+  border: 1px solid #1964A3 !important;
+}
+
+.vf-visual-pickers__link {
+  height: 52px;
+  width: 264px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.vf-visual-pickers__link a {
+  all: initial;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 28px;
+  color: #222222;
+  font-family: VattenfallHall-Medium;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+}
+
+.vf-visual-pickers__link a:hover {
+  border: 1px solid #999999;
+}
+
+.vf-visual-pickers__link a:disabled {
+  background: grey;
+}
+
+.vf-visual-pickers__link a span {
+  display: none;
+}
+
+.vf-visual-pickers__link a:active {
   border: 1px solid #1964A3;
 }
 
-.vf-visual-pickers__btn::-webkit-input-placeholder {
-  width: 102px;
-  height: 25px;
-  color: #767676;
-  font-size: 20px;
-  font-family: VattenfallHall-Regular;
-  font-weight: normal;
-  letter-spacing: 0px;
-}
-
-.vf-visual-pickers__btn::-moz-placeholder {
-  width: 102px;
-  height: 25px;
-  color: #767676;
-  font-size: 20px;
-  font-family: VattenfallHall-Regular;
-  font-weight: normal;
-  letter-spacing: 0px;
-}
-
-.vf-visual-pickers__btn::-ms-input-placeholder {
-  width: 102px;
-  height: 25px;
-  color: #767676;
-  font-size: 20px;
-  font-family: VattenfallHall-Regular;
-  font-weight: normal;
-  letter-spacing: 0px;
-}
-
-.vf-visual-pickers__btn::placeholder {
-  width: 102px;
-  height: 25px;
-  color: #767676;
-  font-size: 20px;
-  font-family: VattenfallHall-Regular;
-  font-weight: normal;
-  letter-spacing: 0px;
+.vf-visual-pickers__link a:active span {
+  display: block;
 }
 
 .news-outer-container {
