@@ -1758,24 +1758,17 @@ html.sr .reveal {
 
 .vf-container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   clear: left;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-container {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1842,23 +1835,16 @@ html.sr .reveal {
 
 .vf-container-fluid {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-container-fluid {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -2949,69 +2935,62 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h1 {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
 h2 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h2 {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
 h3 {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
   letter-spacing: 0;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h3 {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 h4 {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   h4 {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -3085,17 +3064,17 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-primary {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
@@ -3114,69 +3093,62 @@ p {
 }
 
 .vf-typo-primary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 2.75rem;
-  line-height: 48px;
+  font-size: 52px;
+  line-height: 62px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-primary {
-    font-size: 4.5rem;
-    line-height: 84px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
 .vf-typo-secondary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-secondary {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
 .vf-typo-tetriary {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
   letter-spacing: 0;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-tetriary {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 .vf-typo-quaternary {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-typo-quaternary {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -9084,18 +9056,17 @@ a.vf-card:hover {
   margin-bottom: 1.5rem;
   text-align: center;
   color: #222222;
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: 1rem;
-  line-height: 24px;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-card__title {
-    font-family: "Vattenfall Hall Display NORDx";
-    font-size: 1.5rem;
-    line-height: 36px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -9764,8 +9735,8 @@ a.vf-card:hover {
 
 .vf-media-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -9776,17 +9747,10 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-media-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-media-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -9963,8 +9927,8 @@ a.vf-card:hover {
 
 .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -9975,17 +9939,10 @@ a.vf-card:hover {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-linked-list-block:not(.vf-linked-list-block--no-media) .vf-linked-list-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -10136,8 +10093,8 @@ a.vf-card:hover {
 
 .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -10148,17 +10105,10 @@ a.vf-card:hover {
   margin-top: 0;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-linked-list-block.vf-linked-list-block--no-media .vf-linked-list-block__body .vf-linked-list-block__content {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11466,24 +11416,17 @@ a.vf-card:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   padding: 70px 0 70px 0;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-large-quote {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-large-quote {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11761,8 +11704,8 @@ a.vf-card:hover {
 
 .vf-two-column-boxes {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1680px;
@@ -11771,17 +11714,10 @@ a.vf-card:hover {
   margin-bottom: 88px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-two-column-boxes {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-two-column-boxes {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -11954,8 +11890,8 @@ a.vf-card:hover {
 
 .vf-navbar__nav {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   line-height: 1;
@@ -11964,17 +11900,10 @@ a.vf-card:hover {
   height: 56px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-navbar__nav {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-navbar__nav {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -12244,6 +12173,31 @@ a.vf-card:hover {
   border-bottom-left-radius: 0;
 }
 
+.vf-btn-group__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.vf-btn-group__mobile .vf-btn-group__btn {
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 28px;
+  text-align: center;
+  padding: 6px;
+}
+
+.vf-btn-group__mobile .vf-btn-group__btn:not(:first-child) {
+  margin-top: 16px;
+}
+
 .vf-ul {
   list-style-position: outside;
   padding: 0 0 0 18px;
@@ -12392,8 +12346,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-image-block__body {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -12404,17 +12358,10 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-top: 90px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .vf-image-block__body {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .vf-image-block__body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -12505,20 +12452,17 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-image-block__title {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 540px) {
   .vf-image-block__title {
-    font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 72px;
-    letter-spacing: -0.2px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -13527,14 +13471,15 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin: 0;
 }
 
-.vf-input-container input[type="number"] {
+.vf-input-container input[type='number'] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
   padding-right: 40px;
 }
 
-.vf-input-container .vf-input--number-increment, .vf-input-container .vf-input--number-decrement {
+.vf-input-container .vf-input--number-increment,
+.vf-input-container .vf-input--number-decrement {
   position: absolute;
   right: 1px;
   height: 48%;
@@ -13572,7 +13517,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input {
   position: relative;
-  min-width: 264px;
+  height: 52px;
+  width: 264px;
   background-color: #fff;
   color: #222222;
   padding: 16px 20px;
@@ -13696,10 +13642,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--error:focus {
   -webkit-box-shadow: 0 1px #F93B18;
   box-shadow: 0 1px #F93B18;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning {
@@ -13710,10 +13656,10 @@ a.vf-badge:hover, a.vf-badge:focus {
 .vf-input-container .vf-input.vf-input--underline.vf-input--warning:focus {
   -webkit-box-shadow: 0 1px #f5a623;
   box-shadow: 0 1px #f5a623;
-  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-  transition: -webkit-box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .vf-input-container .vf-input.vf-input--error {
@@ -13748,7 +13694,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #f5a623;
 }
 
-.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message, .vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
+.vf-input-container .vf-input.vf-tooltip--left ~ .vf-tooltip-message,
+.vf-input-container .vf-input.vf-tooltip--right ~ .vf-tooltip-message {
   margin-bottom: 0;
   -webkit-transform: translate(0, -50%) !important;
   transform: translate(0, -50%) !important;
@@ -13762,9 +13709,17 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: calc(100% - 8px);
 }
 
+.vf-input-container #vf_tooltip_input {
+  padding-right: 55px;
+}
+
+.vf-input-container #vf_textarea_input {
+  height: auto;
+}
+
 .vf-input-container label {
   position: absolute;
-  top: 17px;
+  top: 13px;
   left: 20px;
   margin-bottom: 0;
   color: #767676;
@@ -13773,8 +13728,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
   pointer-events: none;
   cursor: default;
-  -webkit-transition: top .2s ease-in-out;
-  transition: top .2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 .vf-input-container label:after {
@@ -13812,8 +13767,255 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-input-container .vf-input-tooltip-icon:hover ~ .vf-tooltip-message {
   opacity: 1;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vf-alt-input-container {
+  position: relative;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  height: 107px;
+  width: 264px;
+}
+
+.vf-alt-input-container input:focus,
+.vf-alt-input-container select:focus,
+.vf-alt-input-container textarea:focus,
+.vf-alt-input-container button:focus {
+  outline: none;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input {
+  height: 110px;
+  color: #222222;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-webkit-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-moz-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::-ms-input-placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container #vf__alt_textarea_input::placeholder {
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.vf-alt-input-container .vf-alt-input {
+  font-family: VattenfallHall-Regular;
+  position: relative;
+  top: 34px;
+  width: 264px;
+  height: 52px;
+  background-color: #fff;
+  color: #222222;
+  padding: 16px 20px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #cccccc;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.vf-alt-input-container .vf-alt-input:hover {
+  border: 1px solid #999999;
+}
+
+.vf-alt-input-container .vf-alt-input:focus {
+  outline: none;
+  border: 1px solid #1964A3;
+}
+
+.vf-alt-input-container .vf-alt-input::-webkit-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-moz-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::-ms-input-placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input::placeholder {
+  width: 102px;
+  height: 25px;
+  color: #767676;
+  font-size: 20px;
+  font-family: VattenfallHall-Regular;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error {
+  border-color: #ffb2a4;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:hover {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error:focus {
+  border-color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-webkit-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-moz-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-ms-input-placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container .vf-alt-input.vf-alt-input--error::placeholder {
+  color: #F93B18;
+}
+
+.vf-alt-input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  height: 26px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  width: 256px;
+}
+
+.vf-alt-input-container .vf-tooltip-message {
+  opacity: 0;
+  position: absolute;
+  right: 27px;
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  top: 10px;
+}
+
+.vf-alt-input-container .vf-icon-question:before {
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  right: 17px;
+}
+
+.vf-alt-input-container .vf-icon-question:hover ~ .vf-tooltip-message {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vf-alt-input-container .vf-alt-input--error-msg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  color: #F93B18;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.vf-alt-input-container .vf-alt-input--textarea-detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -66px;
+  color: #767676;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  height: 33px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  width: 264px;
+  margin-bottom: 0;
+}
+
+#vf_alt_tooltip_input {
+  padding-right: 54px;
+}
+
+.vf-alt-input-container-textarea {
+  height: auto;
+  margin-bottom: 66px;
 }
 
 [class*="vf-utility-typo--"] {

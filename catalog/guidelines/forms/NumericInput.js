@@ -14,7 +14,7 @@ const NumericInput = ({ title, label }) => {
         <Column title={'Default'}>
           <div className="vf-input-container">
             <input type="number" id="vf_number_input" className={`vf-input ${styles.fullWidth}`}></input>
-            <label for="vf_number_input">Number Label</label>
+            <label htmlFor="vf_number_input">Number Label</label>
           </div>
         </Column>
         <Column title={'Hover'}>
@@ -24,7 +24,7 @@ const NumericInput = ({ title, label }) => {
               id="vf_number_input"
               className={`vf-input ${styles.fullWidth} ${styles.standardHover}`}
             ></input>
-            <label for="vf_number_input">Number Label</label>
+            <label htmlFor="vf_number_input">Number Label</label>
           </div>
         </Column>
         <Column title={'Focus with suggestion'}>
@@ -35,7 +35,7 @@ const NumericInput = ({ title, label }) => {
               className={`vf-input vf-input--data ${styles.fullWidth}`}
               defaultValue="1"
             ></input>
-            <label for="vf_number_input">Number Label</label>
+            <label htmlFor="vf_number_input">Number Label</label>
           </div>
         </Column>
         <Column title={'Filled'}>
@@ -46,7 +46,7 @@ const NumericInput = ({ title, label }) => {
               className={`vf-input vf-input--error vf-input--data ${styles.fullWidth}`}
               defaultValue="1"
             ></input>
-            <label for="vf_number_input">Number Label</label>
+            <label htmlFor="vf_number_input">Number Label</label>
           </div>
         </Column>
       </div>

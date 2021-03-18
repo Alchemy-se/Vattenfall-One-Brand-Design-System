@@ -38,6 +38,12 @@
       },
       {
         "name": "Text links"
+      },
+      {
+        "name": "Desktop and tablet"
+      },
+      {
+        "name": "Mobile"
       }
     ]
   },
@@ -202,5 +208,31 @@
     "objectID": "checkbox",
     "name": "Checkbox",
     "id": "Checkbox"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#desktop-and-tablet",
+    "description": "Button group for desktop and tablet",
+    "objectID": "desktop-and-tablet",
+    "name": "Desktop and tablet",
+    "id": "desktop-and-tablet"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/buttons#mobile",
+    "description": "Button group for mobile",
+    "objectID": "mobile",
+    "name": "Mobile",
+    "id": "mobile"
   }
 ]

@@ -16,7 +16,7 @@ const HeaderH3 = () => {
       </div>
       <div className='vf-row'>
         <ElementSpeifications
-          screenSize='Dektop'
+          screenSize='Desktop'
           fontName='Vattenfall Hall'
           fontWeight='Bold'
           fontSize='28px'
@@ -33,7 +33,7 @@ const HeaderH3 = () => {
           screenSize='Mobile'
           fontName='Vattenfall Hall'
           fontWeight='Bold'
-          fontSize='24px'
+          fontSize='22px'
           lineHeight='28px'
         />
       </div>

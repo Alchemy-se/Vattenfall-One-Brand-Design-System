@@ -18,7 +18,7 @@ const StandardUnderlineInputError = ({ title, label }) => {
               id="vf_underline_input"
               className={`vf-input vf-input--underline vf-input--error ${styles.fullWidth}`}
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Hover'}>
@@ -28,7 +28,7 @@ const StandardUnderlineInputError = ({ title, label }) => {
               id="vf_underline_input"
               className={`vf-input vf-input--underline vf-input--error ${styles.underlineInputHoverWarning} ${styles.fullWidth}`}
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Focus'}>
@@ -39,7 +39,7 @@ const StandardUnderlineInputError = ({ title, label }) => {
               className={`vf-input vf-input--underline vf-input--data vf-input--error ${styles.underlineInputFocusWarning} ${styles.fullWidth}`}
               defaultValue="Value with suggestion"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
         <Column title={'Selected'}>
@@ -50,7 +50,7 @@ const StandardUnderlineInputError = ({ title, label }) => {
               className={`vf-input vf-input--underline vf-input--data vf-input--error ${styles.fullWidth}`}
               defaultValue="Value filled in"
             ></input>
-            <label for="vf_underline_input">{label}</label>
+            <label htmlFor="vf_underline_input">{label}</label>
           </div>
         </Column>
       </div>

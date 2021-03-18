@@ -1,11 +1,19 @@
-@import "../../scss/variables";
+@import '../../scss/variables';
 
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 @mixin headline-base {
-  font-family: "Vattenfall Hall Display NORDx", Helvetica, sans-serif;
+  font-family: 'Vattenfall Hall Display NORDx', Helvetica, sans-serif;
   font-weight: 600;
 }
+
+//
+// Breakpoints
+//  sm: 540px,
+//  md: 600px,
+//  lg: 774px,
+//  xl: 960px
+//
 
 //
 // Mixins
@@ -23,72 +31,51 @@
   }
 }
 
+//
+// h1 - headline primary
+//
+
 @mixin typo-primary {
   @include headline-base();
   letter-spacing: 0;
+  font-size: 52px;
+  line-height: 62px;
 
-  font-size: 2.75rem;
-  line-height: 48px;
-  @include media-breakpoint-up(sm) {
-    font-size: 4.5rem;
-    line-height: 84px;
+  @media (max-width: 540px) {
+    font-size: 34px;
+    line-height: 40px;
   }
 }
-
 
 //
 // h2 - headline secondary
 //
 
-@mixin typo-secondary-mobile {
-  @include headline-base();
-  font-size: 2.25rem;
-  letter-spacing: 0;
-  line-height: 40px;
-}
-
-@mixin typo-secondary-desktop {
-  @include headline-base();
-  font-size: 3.25rem;
-  line-height: 72px;
-  letter-spacing: -0.2px;
-}
-
 @mixin typo-secondary {
-  @include typo-secondary-mobile();
-  @include media-breakpoint-up(sm) {
-    @include typo-secondary-desktop();
+  @include headline-base();
+  letter-spacing: 0;
+  font-size: 36px;
+  line-height: 42px;
+
+  @media (max-width: 540px) {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
-
 
 //
 // h3 - headline tetriary
 //
 
-@mixin typo-tetriary-base {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-weight: 600;
-}
-
-@mixin typo-tetriary-mobile {
-  @include headline-base();
-  font-size: $font-size-xl;
-  letter-spacing: 0;
-  line-height: 28px;
-}
-
-@mixin typo-tetriary-desktop {
-  @include typo-tetriary-base();
-  font-size: 1.75rem;
-  line-height: 1.33;
-  letter-spacing: -0.2px;
-}
-
 @mixin typo-tetriary {
-  @include typo-tetriary-mobile();
-  @include media-breakpoint-up(sm) {
-    @include typo-tetriary-desktop();
+  @include headline-base();
+  letter-spacing: 0;
+  font-size: 28px;
+  line-height: 36px;
+
+  @media (max-width: 540px) {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
@@ -96,25 +83,15 @@
 // h4 - headline quarternary
 //
 
-@mixin typo-quaternary-desktop {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: $font-size-xl;
-  line-height: 36px;
-  font-weight: 600;
-}
-
-@mixin typo-quaternary-mobile {
-  font-family: "Vattenfall Hall Display NORDx";
-  font-size: $font-size-base;
-  line-height: 24px;
-  font-weight: 600;
-}
-
 @mixin typo-quaternary {
-  @include typo-quaternary-mobile();
+ @include headline-base();
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 28px;
 
-  @include media-breakpoint-up(sm) {
-    @include typo-quaternary-desktop();
+  @media (max-width: 540px) {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

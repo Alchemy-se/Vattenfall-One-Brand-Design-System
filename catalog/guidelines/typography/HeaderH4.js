@@ -18,18 +18,18 @@ const HeaderH4 = () => {
       </div>
       <div className="vf-row">
         <ElementSpeifications
-          screenSize="Dektop"
+          screenSize="Desktop"
           fontName="Vattenfall Hall"
           fontWeight="Bold"
-          fontSize="24px"
-          lineHeight="36px"
+          fontSize="22px"
+          lineHeight="28px"
         />
         <ElementSpeifications
           screenSize="Tablet"
           fontName="Vattenfall Hall"
           fontWeight="Bold"
-          fontSize="24px"
-          lineHeight="36px"
+          fontSize="22px"
+          lineHeight="28px"
         />
         <ElementSpeifications
           screenSize="Mobile"

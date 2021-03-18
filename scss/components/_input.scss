@@ -29,7 +29,6 @@
   &:hover {
     border: 1px solid $vattenfall-warning-yellow !important;
   }
-
 }
 
 .vf-input--blured-error {
@@ -41,7 +40,6 @@
 }
 
 .vf-input-container {
-
   position: relative;
   cursor: pointer;
   line-height: 1;
@@ -60,15 +58,13 @@
     margin: 0;
   }
 
-  input[type="number"] {
-
+  input[type='number'] {
     appearance: textfield;
     padding-right: 40px;
-
   }
 
-
-  .vf-input--number-increment, .vf-input--number-decrement {
+  .vf-input--number-increment,
+  .vf-input--number-decrement {
     position: absolute;
     right: 1px;
     height: 48%;
@@ -78,24 +74,21 @@
     background-size: 16px;
     background-position: 50%;
     box-sizing: content-box;
-
   }
 
   .vf-input--number-increment {
     top: 1px;
 
     &.vf-icon-up {
-
-      &:before { //Icon font
+      &:before {
+        //Icon font
 
         position: absolute;
         font-size: 0.4375rem; //width 16px
         left: calc(50% - 8px);
         top: calc(50% - 3.5px);
-
       }
     }
-
   }
 
   .vf-input--number-decrement {
@@ -103,22 +96,21 @@
     bottom: 1px;
 
     &.vf-icon-down {
-
-      &:before { //Icon font
+      &:before {
+        //Icon font
 
         position: absolute;
         font-size: 0.4375rem; //width 16px
         left: calc(50% - 8px);
         top: calc(50% - 3.5px);
-
       }
     }
   }
 
   .vf-input {
-
     position: relative;
-    min-width: 264px;
+    height: 52px;
+    width: 264px;
     background-color: $white;
     color: $dark;
     padding: 16px 20px;
@@ -132,19 +124,17 @@
     &::placeholder {
       color: transparent;
     }
-
     &:hover {
-
       border: 1px solid $vattenfall-border-dark-grey;
-
     }
 
     &.vf-input--css-placeholder {
-      &:focus, &:not(:placeholder-shown), &.vf-input--data {
+      &:focus,
+      &:not(:placeholder-shown),
+      &.vf-input--data {
         border: 1px solid $vattenfall-button-blue;
 
         & ~ label {
-
           top: -9px;
           left: 16.5px;
           padding: 0 7px;
@@ -167,16 +157,13 @@
           }
         }
       }
-
-
     }
 
-    &:focus, &.vf-input--data {
-
+    &:focus,
+    &.vf-input--data {
       border: 1px solid $vattenfall-button-blue;
 
       & ~ label {
-
         top: -9px;
         left: 16.5px;
         padding: 0 7px;
@@ -200,11 +187,9 @@
           background: white;
         }
       }
-
     }
 
     &.vf-input--underline {
-
       background-color: transparent;
       border: none;
       border-bottom: 1px solid $vattenfall-input-grey;
@@ -212,9 +197,7 @@
       border-radius: 0;
 
       &:hover {
-
         border-bottom: 1px solid $vattenfall-border-dark-grey;
-
       }
 
       & ~ label {
@@ -228,95 +211,82 @@
       }
 
       &.vf-input--error {
-
         box-shadow: 0 0 $vattenfall-dark-red;
 
         &:focus {
-
           box-shadow: 0 1px $vattenfall-dark-red;
-          transition: box-shadow .2s ease-in-out;
+          transition: box-shadow 0.2s ease-in-out;
         }
-
       }
 
       &.vf-input--warning {
-
         box-shadow: 0 0 $vattenfall-warning-yellow;
 
         &:focus {
-
           box-shadow: 0 1px $vattenfall-warning-yellow;
-          transition: box-shadow .2s ease-in-out;
-
+          transition: box-shadow 0.2s ease-in-out;
         }
-
       }
-
     }
 
     &.vf-input--error {
-
       border-color: $vattenfall-error-red-border;
 
       &:hover {
-
         border-color: $vattenfall-dark-red;
       }
 
       &:focus {
-
         border-color: $vattenfall-dark-red;
       }
 
       & ~ label {
-
         color: $vattenfall-dark-red;
       }
     }
 
     &.vf-input--warning {
-
       border-color: $vattenfall-warning-yellow-border;
 
       &:hover {
-
         border-color: $vattenfall-warning-yellow;
       }
 
       &:focus {
-
         border-color: $vattenfall-warning-yellow;
-
       }
 
       & ~ label {
-
         color: $vattenfall-warning-yellow;
       }
     }
 
-    &.vf-tooltip--left ~ .vf-tooltip-message, &.vf-tooltip--right ~ .vf-tooltip-message {
-
+    &.vf-tooltip--left ~ .vf-tooltip-message,
+    &.vf-tooltip--right ~ .vf-tooltip-message {
       margin-bottom: 0;
       transform: translate(0, -50%) !important;
       top: 50%;
       bottom: auto;
-
     }
 
     &.vf-tooltip--bottom ~ .vf-tooltip-message {
-
       margin-bottom: 0;
       bottom: auto;
       top: calc(100% - 8px);
-
     }
   }
 
-  label {
+  #vf_tooltip_input {
+    padding-right: 55px;
+  }
 
+  #vf_textarea_input {
+    height: auto;
+  }
+
+  label {
     position: absolute;
-    top: 17px;
+    top: 13px;
     left: 20px;
     margin-bottom: 0;
     color: $btn-disabled-color;
@@ -325,7 +295,7 @@
     letter-spacing: 0px;
     pointer-events: none;
     cursor: default;
-    transition: top .2s ease-in-out;
+    transition: top 0.2s ease-in-out;
 
     &:after {
       content: '';
@@ -339,46 +309,213 @@
       height: 2.6px;
       background: white;
     }
-
   }
 
   .vf-tooltip-message {
-
     opacity: 0;
     position: absolute;
     right: 27px;
     transform: translate(50%, 0);
     bottom: calc(100% - 8px);
-
   }
-
-  .vf-input-tooltip-icon { //Generated by js
+  .vf-input-tooltip-icon {
+    //Generated by js
 
     display: inline;
     cursor: pointer;
 
-    &.vf-icon-question { //Icon font
+    &.vf-icon-question {
+      //Icon font
 
       &:before {
-
         position: absolute;
-        top: calc(50% - 12px);;
+        top: calc(50% - 12px);
         right: 15px;
-
       }
-
     }
 
     &:hover {
-
       ~ .vf-tooltip-message {
-
         opacity: 1;
-        transition: opacity .3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
       }
-
     }
+  }
+}
 
+.vf-alt-input-container {
+  position: relative;
+  font-family: VattenfallHall-Regular;
+  font-size: 20px;
+  height: 107px;
+  width: 264px;
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
   }
 
+  #vf__alt_textarea_input {
+    height: 110px;
+    color: $dark;
+    &::placeholder {
+      color: rgb(118, 118, 118);
+      font-family: VattenfallHall-Regular;
+      font-size: 20px;
+      font-weight: normal;
+      height: 24px;
+      letter-spacing: 0px;
+      width: 100%;
+    }
+  }
+
+  .vf-alt-input {
+    font-family: VattenfallHall-Regular;
+    position: relative;
+    // top: 1.4em;
+    top: 34px;
+    width: 264px;
+    height: 52px;
+    background-color: $white;
+    color: $dark;
+    padding: 16px 20px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid $vattenfall-input-grey;
+    font-size: $font-size-lg;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: normal;
+
+    &:hover {
+      border: 1px solid $vattenfall-border-dark-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $vattenfall-button-blue;
+    }
+
+    &::placeholder {
+      width: 102px;
+      height: 25px;
+      color: rgb(118, 118, 118);
+      font-size: 20px;
+      font-family: VattenfallHall-Regular;
+      font-weight: normal;
+      letter-spacing: 0px;
+    }
+
+    &.vf-alt-input--error {
+      border-color: $vattenfall-error-red-border;
+
+      &:hover {
+        border-color: $vattenfall-dark-red;
+      }
+
+      &:focus {
+        border-color: $vattenfall-dark-red;
+      }
+
+      &::placeholder {
+        color: $vattenfall-dark-red;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-family: VattenfallHall-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    height: 26px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    width: 256px;
+  }
+
+  .vf-tooltip-message {
+    opacity: 0;
+    position: absolute;
+    right: 27px;
+    transform: translate(50%, 0);
+    top: 10px;
+  }
+
+  .vf-icon-question {
+    &:before {
+      font-size: 20px;
+      position: absolute;
+      top: 50px;
+      right: 17px;
+    }
+
+    &:hover {
+      ~ .vf-tooltip-message {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .vf-alt-input--error-msg {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    font-size: 16px;
+    color: $vattenfall-dark-red;
+    font-family: VattenfallHall-Regular;
+    font-size: 16px;
+    font-weight: 500;
+    height: 26.6px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .vf-alt-input--detailed-text {
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    font-size: 16px;
+    font-family: VattenfallHall-Regular;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(118, 118, 118);
+    height: 26.6px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .vf-alt-input--textarea-detailed-text {
+    position: absolute;
+    left: 0;
+    bottom: -66px;
+    color: rgb(118, 118, 118);
+    font-family: VattenfallHall-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    height: 33px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
+#vf_alt_tooltip_input {
+  padding-right: 54px;
+}
+
+.vf-alt-input-container-textarea {
+  height: auto;
+  margin-bottom: 66px;
 }

@@ -77,6 +77,7 @@ const rootRenderer = ({ children }) => {
 
 const Markdown = ({ source, noPaddingBottom }) => {
   // Reload js.
+  
   useScript("/js/horizon.min.js");
   return (
     <div className={`${styles.container} markdown-body ${noPaddingBottom ? "no-padding-bottom" : ""}`}>

@@ -1,8 +1,8 @@
 {
-  "id": "example",
-  "uri": "#example",
-  "name": "Example",
-  "guidelineUri":false,
+  "id": "desktop-and-tablet",
+  "uri": "#desktop-and-tablet",
+  "name": "Desktop and tablet",
+  "guidelineUri":"#desktop-and-tablet",
   "description": null,
   "react": {
     "exists": false,

@@ -1,7 +1,7 @@
 {
   "name": "Button group",
   "uri": "/components/css/button-group",
-  "guidelineUri": false,
+  "guidelineUri": "guidelines/buttons",
   "description": "",
   "figmaUrl": null,
   "photoshopUrl": null,

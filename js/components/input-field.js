@@ -84,7 +84,30 @@
 
       });
     }
-
   });
+
+  let altError = document.getElementById('vf_alt_error_state_input')
+  altError && altError.addEventListener("load", checkError)
+  altError && altError.addEventListener("change", showErrorMsg)
+
+  function showErrorMsg(e) {
+    let errorMsg = e.target.parentNode.querySelector('.vf-alt-input--error-msg')
+    let input = e.target.value
+    if (input) {
+      errorMsg.style = "opacity:1;"
+    } else {
+      errorMsg.style = 'opacity:0;'
+    }
+  }
+
+  function checkError(e) {
+    let errorMsg = e.target.parentNode.querySelector('.vf-alt-input--error-msg')
+    let input = e.target.value
+    if (input) {
+      errorMsg.style = 'opacity:1;'
+    } else {
+      errorMsg.style = 'opacity:0;'
+    }
+  }
 
 })(jQuery);
