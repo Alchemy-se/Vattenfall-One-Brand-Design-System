@@ -83,6 +83,7 @@ import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
 import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
+import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
 
 // Other
 import Login from './admin/login'
@@ -525,14 +526,23 @@ const GUIDELINES_ROUTES = [
     ),
   },
   {
-    path: "/guidelines/spinner",
-    name: "Spinner",
+    path: '/guidelines/spinner',
+    name: 'Spinner',
     component: (
       <GuidelinesWrapper>
         <GuideLinesSpinner />
       </GuidelinesWrapper>
-    )
-  }
+    ),
+  },
+  {
+    path: '/guidelines/visual-pickers',
+    name: 'Visual Pickers',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLineVisualPickers />
+      </GuidelinesWrapper>
+    ),
+  },
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {
