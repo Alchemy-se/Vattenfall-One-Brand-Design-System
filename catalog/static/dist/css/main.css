@@ -15794,7 +15794,8 @@ section.spinners {
 .vf-visual-pickers-md-two-line:disabled,
 .vf-visual-pickers-md-two-line-icon:disabled,
 .vf-visual-pickers-lg:disabled {
-  background: grey;
+  pointer-events: none;
+  background: #eeeeee;
 }
 
 .vf-visual-pickers-sm input,

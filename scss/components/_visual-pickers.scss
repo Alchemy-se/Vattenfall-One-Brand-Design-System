@@ -16,7 +16,8 @@
   }
 
   &:disabled {
-    background: grey;
+    pointer-events: none;
+    background: #eeeeee;
   }
 
   input {
@@ -132,13 +133,13 @@
 
 // large
 .vf-visual-pickers-lg {
-height: 250px;
+  height: 250px;
   label {
     padding-top: 211px;
     padding-bottom: 11px;
     padding-right: 24px;
     text-align: center;
-    
+
     img {
       position: absolute;
       height: 182px;
@@ -149,7 +150,7 @@ height: 250px;
       bottom: 50px;
     }
   }
-   .vf-visual-pickers__icon:before {
+  .vf-visual-pickers__icon:before {
     right: 17px;
     top: 17px;
   }
