@@ -1,12 +1,14 @@
-.vf-visual-pickers__radio,
-.vf-visual-pickers__checkbox {
+.vf-visual-pickers-sm,
+.vf-visual-pickers-md,
+.vf-visual-pickers-md-two-line,
+.vf-visual-pickers-md-two-line-icon,
+.vf-visual-pickers-lg {
   position: relative;
   display: flex;
   align-items: center;
   background: rgb(255, 255, 255);
   border-radius: 8px;
   border: 1px solid $vattenfall-input-grey;
-  height: 52px;
   width: 264px;
 
   &:hover {
@@ -24,7 +26,7 @@
   label {
     all: initial;
     color: rgb(34, 34, 34);
-    font-family: VattenfallHall-Medium;
+    font-family: VattenfallHall-Regular;
     font-size: 20px;
     font-weight: 500;
     height: 28px;
@@ -34,13 +36,16 @@
     padding-left: 24px;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-right: 57px;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
-
 .vf-visual-pickers__icon:before {
   position: absolute;
-  right: 17px;
-  bottom: 14px;
   font-size: 20px;
 }
 
@@ -54,43 +59,118 @@
   position: relative;
   border-radius: 8px;
 
-  a {
-    all: initial;
-    display: block;
+  // a {
+  //   all: initial;
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   padding-left: 24px;
+  //   padding-top: 12px;
+  //   padding-bottom: 12px;
+  //   line-height: 28px;
+  //   color: rgb(34, 34, 34);
+  //   font-family: VattenfallHall-Regular;
+  //   font-size: 20px;
+  //   font-weight: 500;
+  //   letter-spacing: 0px;
+  //   background: rgb(255, 255, 255);
+  //   border-radius: 8px;
+  //   border: 1px solid $vattenfall-input-grey;
+
+  //   &:hover {
+  //     border: 1px solid $vattenfall-border-dark-grey;
+  //   }
+
+  //   &:disabled {
+  //     background: grey;
+  //   }
+  //   span {
+  //     display: none;
+  //   }
+  //   &:active {
+  //     span {
+  //       display: block;
+  //     }
+  //     border: 1px solid $vattenfall-button-blue;
+  //   }
+  // }
+}
+
+// small
+.vf-visual-pickers-sm {
+  height: 52px;
+
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    bottom: 14px;
+  }
+}
+// medium
+.vf-visual-pickers-md {
+  height: 90px;
+  label {
+    padding-right: 24px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    text-align: center;
+  }
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+}
+
+.vf-visual-pickers-md-two-line {
+  height: 90px;
+  label {
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    text-align: center;
+
+    .vf-visual-pickers__second-line {
+      position: absolute;
+      line-height: 28px;
+      font-size: 14px;
+      font-family: VattenfallHall-Regular;
+      font-weight: 500;
+      letter-spacing: -0.04px;
+      margin-bottom: 0;
+      left: 0;
+      right: 0;
+      bottom: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+}
+
+.vf-visual-pickers-md-two-line-icon {
+  height: 90px;
+
+  label {
+    padding-right: 24px;
+    padding-top: 45px;
+    padding-bottom: 9px;
+    text-align: center;
+  }
+
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+  .vf-visual-pickers__two-line-icon:before {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 17px;
     left: 0;
     right: 0;
-    padding-left: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    line-height: 28px;
-    color: rgb(34, 34, 34);
-    font-family: VattenfallHall-Medium;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0px;
-    background: rgb(255, 255, 255);
-    border-radius: 8px;
-    border: 1px solid $vattenfall-input-grey;
-
-    &:hover {
-      border: 1px solid $vattenfall-border-dark-grey;
-    }
-
-    &:disabled {
-      background: grey;
-    }
-    span {
-      display:none;
-    }
-    &:active {
-      span {
-        display:block;
-      }
-      border: 1px solid $vattenfall-button-blue; 
-    }
-
+    font-size: 30px;
   }
 }
