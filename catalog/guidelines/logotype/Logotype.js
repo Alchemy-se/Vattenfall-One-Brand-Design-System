@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 
 import PageHeader from '../PageHeader';
-
+import Continental from "./Continental"
+import Nordic from "./Nordic" 
 import styles from '../Guidelines.scss';
 
 const TextPrimary = '/img/guidelines/logotype/Group12.png';
@@ -207,6 +208,8 @@ const Logotype = () => {
           <img style={{ width: '100%' }} src={Group31} />
         </div>
       </div>
+      <Continental/>
+      {/* <Nordic/> */}
     </Fragment>
   )
 };

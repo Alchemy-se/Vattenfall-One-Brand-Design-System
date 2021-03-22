@@ -1,5 +1,7 @@
-### Continental
+### Continental Stacked
 
 ```html
-<img src="" alt="vattenfall-incharge-logotype-continental" />
+showSource: true
+---
+<img src="/img/inCharge/logotypes/continental/stacked.svg" alt="incharge-logotype-continental-stacked" />
 ```
