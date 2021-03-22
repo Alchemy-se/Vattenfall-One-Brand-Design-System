@@ -22,6 +22,7 @@
   .vf-dropdown-label {
 
     display: block;
+    height: 52px;
     background: $white;
     padding: 12px 114px 12px 20px;
     margin-bottom: 0;
@@ -74,12 +75,25 @@
     .vf-dropdown-list-item {
 
       padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
 
-      &:hover, &.checked {
+      span::before {
+        font-size: 18px;
+        opacity:0;
+      }
 
+      &:hover {
         background-color: $vattenfall-button-blue;
         color: #fff;
+      }
 
+      &.checked {
+        span::before {
+          opacity: 1;
+        }
       }
 
       input {
@@ -181,7 +195,7 @@
   &.vf-dropdown--underline {
 
     .vf-dropdown-label {
-
+      height: 52px;
       background: none;
       border-radius: 0px 0px 0px 0px;
       border: none;
@@ -217,7 +231,7 @@
 
   &.vf-dropdown--semantic {
       border: 1px solid #E8E8E9;
-      height: 50px;
+      height: 52px;
       width: 300px;
       border-radius: 4px;
       appearance: none;
