@@ -15812,7 +15812,7 @@ section.spinners {
 .vf-visual-pickers-lg label {
   all: initial;
   color: #222222;
-  font-family: VattenfallHall-Regular;
+  font-family: Vattenfall Hall NORDx;
   font-size: 20px;
   font-weight: 500;
   height: 28px;
@@ -15844,13 +15844,6 @@ section.spinners {
 
 .vf-visual-pickers__outline {
   border: 1px solid #1964A3 !important;
-}
-
-.vf-visual-pickers__link {
-  height: 52px;
-  width: 264px;
-  position: relative;
-  border-radius: 8px;
 }
 
 .vf-visual-pickers-sm {
@@ -15931,6 +15924,32 @@ section.spinners {
   left: 0;
   right: 0;
   font-size: 30px;
+}
+
+.vf-visual-pickers-lg {
+  height: 250px;
+}
+
+.vf-visual-pickers-lg label {
+  padding-top: 211px;
+  padding-bottom: 11px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.vf-visual-pickers-lg label img {
+  position: absolute;
+  height: 182px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 50px;
+}
+
+.vf-visual-pickers-lg .vf-visual-pickers__icon:before {
+  right: 17px;
+  top: 17px;
 }
 
 .news-outer-container {

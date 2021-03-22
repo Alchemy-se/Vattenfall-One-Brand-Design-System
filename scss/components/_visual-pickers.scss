@@ -26,7 +26,7 @@
   label {
     all: initial;
     color: rgb(34, 34, 34);
-    font-family: VattenfallHall-Regular;
+    font-family: Vattenfall Hall NORDx;
     font-size: 20px;
     font-weight: 500;
     height: 28px;
@@ -53,52 +53,6 @@
   border: 1px solid $vattenfall-button-blue !important;
 }
 
-.vf-visual-pickers__link {
-  height: 52px;
-  width: 264px;
-  position: relative;
-  border-radius: 8px;
-
-  // a {
-  //   all: initial;
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   padding-left: 24px;
-  //   padding-top: 12px;
-  //   padding-bottom: 12px;
-  //   line-height: 28px;
-  //   color: rgb(34, 34, 34);
-  //   font-family: VattenfallHall-Regular;
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   letter-spacing: 0px;
-  //   background: rgb(255, 255, 255);
-  //   border-radius: 8px;
-  //   border: 1px solid $vattenfall-input-grey;
-
-  //   &:hover {
-  //     border: 1px solid $vattenfall-border-dark-grey;
-  //   }
-
-  //   &:disabled {
-  //     background: grey;
-  //   }
-  //   span {
-  //     display: none;
-  //   }
-  //   &:active {
-  //     span {
-  //       display: block;
-  //     }
-  //     border: 1px solid $vattenfall-button-blue;
-  //   }
-  // }
-}
-
 // small
 .vf-visual-pickers-sm {
   height: 52px;
@@ -122,7 +76,7 @@
     top: 17px;
   }
 }
-
+// medium two line
 .vf-visual-pickers-md-two-line {
   height: 90px;
   label {
@@ -152,6 +106,7 @@
   }
 }
 
+// medium two line icon
 .vf-visual-pickers-md-two-line-icon {
   height: 90px;
 
@@ -172,5 +127,30 @@
     left: 0;
     right: 0;
     font-size: 30px;
+  }
+}
+
+// large
+.vf-visual-pickers-lg {
+height: 250px;
+  label {
+    padding-top: 211px;
+    padding-bottom: 11px;
+    padding-right: 24px;
+    text-align: center;
+    
+    img {
+      position: absolute;
+      height: 182px;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      bottom: 50px;
+    }
+  }
+   .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
   }
 }

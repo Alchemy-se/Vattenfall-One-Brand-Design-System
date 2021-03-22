@@ -2,14 +2,18 @@ import React, { Fragment } from 'react'
 import Markdown from '../../lib/markdown/index'
 import PageHeader from '../../lib/pageHeader'
 import Modals from '../../zendesk/modals/modals'
-import radio from './radio/html/radio.md'
-import cSmall from "./checkbox/html/small.md"
-import cMedium from "./checkbox/html/medium.md"
-import cMedium2Line from "./checkbox/html/medium-two-line.md"
-import cMedium2LineIcon from "./checkbox/html/medium-two-line-icon.md"
-import cLarge from "./checkbox/html/large.md"
+import singleSmall from './single-select/html/small.md'
+import singleMedium from "./single-select/html/medium.md"
+import singleMedium2Line from "./single-select/html/medium-two-line.md"
+import singleMedium2LineIcon from "./single-select/html/medium-two-line-icon.md"
+import singleLarge from "./single-select/html/large.md"
+import multiSmall from "./multi-select/html/small.md"
+import multiMedium from "./multi-select/html/medium.md"
+import multiMedium2Line from "./multi-select/html/medium-two-line.md"
+import multiMedium2LineIcon from "./multi-select/html/medium-two-line-icon.md"
+import multiLarge from "./multi-select/html/large.md"
 
-const md = cSmall + cMedium + cMedium2Line + cMedium2LineIcon + cLarge
+const md = singleSmall + singleMedium + singleMedium2Line + singleMedium2LineIcon + singleLarge + multiSmall + multiMedium + multiMedium2Line + multiMedium2LineIcon + multiLarge
 
 const index = ({ uri }) => {
   return (
