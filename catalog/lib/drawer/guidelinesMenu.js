@@ -21,6 +21,7 @@ const MENU_GROUP_ITEMS = [
   { path: '/upload', name: 'Upload' },
   { path: '/navigation', name: 'Navigation' },
   { path: '/spinner', name: 'Spinner' },
+  { path: '/visual-pickers', name: 'Visual Pickers' },
 ]
 
 const ComponentsMenu = () => {
