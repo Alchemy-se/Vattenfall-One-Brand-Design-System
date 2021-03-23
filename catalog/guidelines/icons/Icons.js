@@ -1,33 +1,37 @@
-import React, { Fragment } from 'react';
-import PageHeader from '../PageHeader';
-import Markdown from '../../lib/markdown';
-import Action from '../../components/icons/action-icons/html/action-icons.md';
-import Identification from '../../components/icons/identification-icons/html/identification-icons.md';
-import Navigation from '../../components/icons/navigation-icons/html/navigation-icons.md';
-import SmartHome from '../../components/icons/smart-home-icons/html/smart-home-icons.md';
-import SocialMedia from '../../components/icons/socialmedia-icons/html/socialmedia-icons.md';
-import GuidelinesBlock from "../guidelinesBlock";
-import iconsStyles from './Icons.scss';
-import SquareIconBlock from './squareIconBlock';
-import IconsIntro from './IconsIntro';
+import React, { Fragment } from 'react'
+import PageHeader from '../PageHeader'
+import Markdown from '../../lib/markdown'
+import Action from '../../components/icons/action-icons/html/action-icons.md'
+import Identification from '../../components/icons/identification-icons/html/identification-icons.md'
+import Navigation from '../../components/icons/navigation-icons/html/navigation-icons.md'
+import SmartHome from '../../components/icons/smart-home-icons/html/smart-home-icons.md'
+import SocialMedia from '../../components/icons/socialmedia-icons/html/socialmedia-icons.md'
+import GuidelinesBlock from '../guidelinesBlock'
+import iconsStyles from './Icons.scss'
+import SquareIconBlock from './squareIconBlock'
+import IconsIntro from './IconsIntro'
+import ThreeBigIcons from "./ThreeBigIcons"
 
 // InCharge
-import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md';
-import InChargeMobileApp from "../../components/icons/incharge-icons-mobile-app/html/incharge-icons-mobile-app.md"
-import InChargeChargingPointStatus from '../../components/icons/incharge-icons-charging-point-status/html/incharge-icons-charging-point-status.md'
-import InChargeConnectors from '../../components/icons/incharge-icons-connectors/html/incharge-icons-connectors.md'
+import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md'
+import InChargePortalAndApp from './InChargePortalAndApp'
 
-const Group4 = '/img/guidelines/icons/Group4.png';
-const WaterBackground = '/img/guidelines/icons/water.png';
-const DoNotOne = '/img/guidelines/icons/doNotOne.png';
-const DoNotTwo = '/img/guidelines/icons/doNotTwo.png';
-const DoNotThree = '/img/guidelines/icons/doNotThree.png';
-const DoNotFour = '/img/guidelines/icons/doNotFour.png';
 
-const editMd = (mdText) => {
-  const hideSourceCode = mdText.replace("showSource: true", "showSource: false");
-  const removeH3 = hideSourceCode.substring(hideSourceCode.indexOf("\n") + 1);
-  return removeH3;
+const Group4 = '/img/guidelines/icons/Group4.png'
+const WaterBackground = '/img/guidelines/icons/water.png'
+const DoNotOne = '/img/guidelines/icons/doNotOne.png'
+const DoNotTwo = '/img/guidelines/icons/doNotTwo.png'
+const DoNotThree = '/img/guidelines/icons/doNotThree.png'
+const DoNotFour = '/img/guidelines/icons/doNotFour.png'
+
+const inChargeChargingFast = '/img/guidelines/icons/incharge-charging-fast.svg'
+const inChargeLocation = "/img/guidelines/icons/incharge-location.svg"
+const inChargeType2 = "/img/guidelines/icons/incharge-type2.svg"
+
+const editMd = mdText => {
+  const hideSourceCode = mdText.replace('showSource: true', 'showSource: false')
+  const removeH3 = hideSourceCode.substring(hideSourceCode.indexOf('\n') + 1)
+  return removeH3
 }
 
 const Icons = () => {
@@ -138,26 +142,20 @@ const Icons = () => {
       </GuidelinesBlock>
 
       <GuidelinesBlock
-        title='InCharge Icons - Mobile App'
+        title='InCharge Icons for Portal and App'
         text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
-      >
-        <Markdown source={editMd(InChargeMobileApp)} />
-      </GuidelinesBlock>
+      ></GuidelinesBlock>
 
-      <GuidelinesBlock
-        title='InCharge Icons - Charging Point Status'
-        text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
-      >
-        <Markdown source={editMd(InChargeChargingPointStatus)} />
-      </GuidelinesBlock>
+      <ThreeBigIcons
+        src1={inChargeChargingFast}
+        src2={inChargeLocation}
+        src3={inChargeType2}
+      />
 
-      <GuidelinesBlock
-        title='InCharge Icons - Connectors'
-        text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
-      >
-        <Markdown source={editMd(InChargeConnectors)} />
-      </GuidelinesBlock>
+      <InChargePortalAndApp />
 
+      <section className='p-2 vf-border-top-gray-200'></section>
+      
       <GuidelinesBlock
         title='Identification Icons'
         text='Identification icons are used to identify a service or product.'
@@ -189,6 +187,6 @@ const Icons = () => {
       </GuidelinesBlock>
     </Fragment>
   )
-};
+}
 
-export default Icons;
+export default Icons
