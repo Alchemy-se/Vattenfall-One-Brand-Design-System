@@ -23,7 +23,7 @@ const AlternativeTooltip = ({ title, placeholder, suggestion, filled }) => {
                 placeholder={placeholder}
                 data-tooltip='Tooltip text'
               />
-              <label htmlFor='vf_alt_tooltip_input'>Tooltip Label</label>
+              <label className='vf-alt-input-label' htmlFor='vf_alt_tooltip_input'>Tooltip Label</label>
             </div>
           </Column>
           <Column title={'Hover'}>
@@ -37,7 +37,7 @@ const AlternativeTooltip = ({ title, placeholder, suggestion, filled }) => {
                 placeholder={placeholder}
                 data-tooltip='Tooltip text'
               ></input>
-              <label htmlFor='vf_alt_input'>Label</label>
+              <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
             </div>
           </Column>
           <Column title={'Focus with suggestion'}>
@@ -51,7 +51,7 @@ const AlternativeTooltip = ({ title, placeholder, suggestion, filled }) => {
                 defaultValue={suggestion}
                 data-tooltip='Tooltip text'
               />
-              <label htmlFor='vf_alt_input'>Label</label>
+              <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
             </div>
           </Column>
           <Column title='Filled'>
@@ -65,7 +65,7 @@ const AlternativeTooltip = ({ title, placeholder, suggestion, filled }) => {
                 defaultValue={filled}
                 data-tooltip='Tooltip text'
               />
-              <label htmlFor='vf_alt_input'>Label</label>
+              <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
             </div>
           </Column>
         </div>

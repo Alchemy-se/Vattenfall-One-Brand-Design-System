@@ -22,7 +22,7 @@ const AlternativeTextareaDetailedText = ({ title, placeholder, suggestion, fille
               id='vf__alt_textarea_input'
               className='vf-alt-input'
             ></textarea>
-            <label htmlFor='vf_alt_textarea_input'>Textarea Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_textarea_input'>Textarea Label</label>
             <span className='vf-alt-input--textarea-detailed-text'>
               Detailed information text here
             </span>
@@ -39,7 +39,7 @@ const AlternativeTextareaDetailedText = ({ title, placeholder, suggestion, fille
               id='vf__alt_textarea_input'
               className={`vf-alt-input ${styles.alternativeHover}`}
             ></textarea>
-            <label htmlFor='vf_alt_textarea_input'>Textarea Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_textarea_input'>Textarea Label</label>
             <span className='vf-alt-input--textarea-detailed-text'>
               Detailed information text here
             </span>
@@ -56,7 +56,7 @@ const AlternativeTextareaDetailedText = ({ title, placeholder, suggestion, fille
               id='vf__alt_textarea_input'
               className={`vf-alt-input ${styles.alternativeFocus}`}
             ></textarea>
-            <label htmlFor='vf_alt_textarea_input'>Textarea Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_textarea_input'>Textarea Label</label>
             <span className='vf-alt-input--textarea-detailed-text'>
               Detailed information text here
             </span>
@@ -73,7 +73,7 @@ const AlternativeTextareaDetailedText = ({ title, placeholder, suggestion, fille
               id='vf__alt_textarea_input'
               className='vf-alt-input'
             ></textarea>
-            <label htmlFor='vf_alt_textarea_input'>Textarea Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_textarea_input'>Textarea Label</label>
             <span className='vf-alt-input--textarea-detailed-text'>
               Detailed information text here
             </span>
