@@ -157,6 +157,28 @@ showSource: false
 </div>
 ````
 
+# Mobile App - Custom Icons
+````html
+showSource: false
+---
+<div class="vf-container"></div>
+````
+
+# Charging Point Status
+````html
+showSource: false
+---
+<div class="vf-container"></div>
+````
+
+# Connectors
+````html
+showSource: false
+---
+<div class="vf-container"></div>
+````
+
+
 # Identification Icons
 ````html
 showSource: false
