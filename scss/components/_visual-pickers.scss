@@ -1,0 +1,157 @@
+.vf-visual-pickers-sm,
+.vf-visual-pickers-md,
+.vf-visual-pickers-md-two-line,
+.vf-visual-pickers-md-two-line-icon,
+.vf-visual-pickers-lg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid $vattenfall-input-grey;
+  width: 264px;
+
+  &:hover {
+    border: 1px solid $vattenfall-border-dark-grey;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background: #eeeeee;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    all: initial;
+    color: rgb(34, 34, 34);
+    font-family: Vattenfall Hall NORDx;
+    font-size: 20px;
+    font-weight: 500;
+    height: 28px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 57px;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.vf-visual-pickers__icon:before {
+  position: absolute;
+  font-size: 20px;
+}
+
+.vf-visual-pickers__outline {
+  border: 1px solid $vattenfall-button-blue !important;
+}
+
+// small
+.vf-visual-pickers-sm {
+  height: 52px;
+
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    bottom: 14px;
+  }
+}
+// medium
+.vf-visual-pickers-md {
+  height: 90px;
+  label {
+    padding-right: 24px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    text-align: center;
+  }
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+}
+// medium two line
+.vf-visual-pickers-md-two-line {
+  height: 90px;
+  label {
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    text-align: center;
+
+    .vf-visual-pickers__second-line {
+      position: absolute;
+      line-height: 28px;
+      font-size: 14px;
+      font-family: VattenfallHall-Regular;
+      font-weight: 500;
+      letter-spacing: -0.04px;
+      margin-bottom: 0;
+      left: 0;
+      right: 0;
+      bottom: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+}
+
+// medium two line icon
+.vf-visual-pickers-md-two-line-icon {
+  height: 90px;
+
+  label {
+    padding-right: 24px;
+    padding-top: 45px;
+    padding-bottom: 9px;
+    text-align: center;
+  }
+
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+  .vf-visual-pickers__two-line-icon:before {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+  }
+}
+
+// large
+.vf-visual-pickers-lg {
+  height: 250px;
+  label {
+    padding-top: 211px;
+    padding-bottom: 11px;
+    padding-right: 24px;
+    text-align: center;
+
+    img {
+      position: absolute;
+      height: 182px;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      bottom: 50px;
+    }
+  }
+  .vf-visual-pickers__icon:before {
+    right: 17px;
+    top: 17px;
+  }
+}

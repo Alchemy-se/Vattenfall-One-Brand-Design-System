@@ -38,6 +38,7 @@ import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
+import VisualPickers from "./components/visual-pickers"
 
 // PARALLAX
 import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -82,6 +83,7 @@ import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
 import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
+import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
 
 // Other
 import Login from './admin/login'
@@ -201,6 +203,11 @@ const COMPONENTS_ROUTES = [
     path: '/css/spinner',
     name: 'Spinner',
     component: <Spinner uri={'/components/css/spinner'} />,
+  },
+  {
+    path: '/css/visual-pickers',
+    name: 'Visual Pickers',
+    component: <VisualPickers uri={'/components/css/visual-pickers'} />,
   },
   {
     path: '/css/preloader',
@@ -519,14 +526,23 @@ const GUIDELINES_ROUTES = [
     ),
   },
   {
-    path: "/guidelines/spinner",
-    name: "Spinner",
+    path: '/guidelines/spinner',
+    name: 'Spinner',
     component: (
       <GuidelinesWrapper>
         <GuideLinesSpinner />
       </GuidelinesWrapper>
-    )
-  }
+    ),
+  },
+  {
+    path: '/guidelines/visual-pickers',
+    name: 'Visual Pickers',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLineVisualPickers />
+      </GuidelinesWrapper>
+    ),
+  },
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {

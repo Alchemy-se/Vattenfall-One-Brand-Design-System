@@ -13852,7 +13852,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   width: 100%;
 }
 
-.vf-alt-input-container .vf-alt-input {
+.vf-alt-input {
   font-family: VattenfallHall-Regular;
   position: relative;
   top: 34px;
@@ -13869,16 +13869,16 @@ a.vf-badge:hover, a.vf-badge:focus {
   font-weight: normal;
 }
 
-.vf-alt-input-container .vf-alt-input:hover {
+.vf-alt-input:hover {
   border: 1px solid #999999;
 }
 
-.vf-alt-input-container .vf-alt-input:focus {
+.vf-alt-input:focus {
   outline: none;
   border: 1px solid #1964A3;
 }
 
-.vf-alt-input-container .vf-alt-input::-webkit-input-placeholder {
+.vf-alt-input::-webkit-input-placeholder {
   width: 102px;
   height: 25px;
   color: #767676;
@@ -13888,7 +13888,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
 }
 
-.vf-alt-input-container .vf-alt-input::-moz-placeholder {
+.vf-alt-input::-moz-placeholder {
   width: 102px;
   height: 25px;
   color: #767676;
@@ -13898,7 +13898,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
 }
 
-.vf-alt-input-container .vf-alt-input::-ms-input-placeholder {
+.vf-alt-input::-ms-input-placeholder {
   width: 102px;
   height: 25px;
   color: #767676;
@@ -13908,7 +13908,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
 }
 
-.vf-alt-input-container .vf-alt-input::placeholder {
+.vf-alt-input::placeholder {
   width: 102px;
   height: 25px;
   color: #767676;
@@ -13918,35 +13918,35 @@ a.vf-badge:hover, a.vf-badge:focus {
   letter-spacing: 0px;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error {
+.vf-alt-input.vf-alt-input--error {
   border-color: #ffb2a4;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error:hover {
+.vf-alt-input.vf-alt-input--error:hover {
   border-color: #F93B18;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error:focus {
+.vf-alt-input.vf-alt-input--error:focus {
   border-color: #F93B18;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-webkit-input-placeholder {
+.vf-alt-input.vf-alt-input--error::-webkit-input-placeholder {
   color: #F93B18;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-moz-placeholder {
+.vf-alt-input.vf-alt-input--error::-moz-placeholder {
   color: #F93B18;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error::-ms-input-placeholder {
+.vf-alt-input.vf-alt-input--error::-ms-input-placeholder {
   color: #F93B18;
 }
 
-.vf-alt-input-container .vf-alt-input.vf-alt-input--error::placeholder {
+.vf-alt-input.vf-alt-input--error::placeholder {
   color: #F93B18;
 }
 
-.vf-alt-input-container label {
+label {
   position: absolute;
   top: 0;
   left: 0;
@@ -13960,7 +13960,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   width: 256px;
 }
 
-.vf-alt-input-container .vf-tooltip-message {
+.vf-tooltip-message {
   opacity: 0;
   position: absolute;
   right: 27px;
@@ -13969,20 +13969,20 @@ a.vf-badge:hover, a.vf-badge:focus {
   top: 10px;
 }
 
-.vf-alt-input-container .vf-icon-question:before {
+.vf-icon-question:before {
   font-size: 20px;
   position: absolute;
   top: 50px;
   right: 17px;
 }
 
-.vf-alt-input-container .vf-icon-question:hover ~ .vf-tooltip-message {
+.vf-icon-question:hover ~ .vf-tooltip-message {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-.vf-alt-input-container .vf-alt-input--error-msg {
+.vf-alt-input--error-msg {
   opacity: 0;
   position: absolute;
   left: 0;
@@ -13999,7 +13999,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-bottom: 0;
 }
 
-.vf-alt-input-container .vf-alt-input--detailed-text {
+.vf-alt-input--detailed-text {
   position: absolute;
   left: 0;
   bottom: -7px;
@@ -14015,7 +14015,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   margin-bottom: 0;
 }
 
-.vf-alt-input-container .vf-alt-input--textarea-detailed-text {
+.vf-alt-input--textarea-detailed-text {
   position: absolute;
   left: 0;
   bottom: -66px;
@@ -15764,6 +15764,196 @@ section.spinners {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.vf-visual-pickers-sm,
+.vf-visual-pickers-md,
+.vf-visual-pickers-md-two-line,
+.vf-visual-pickers-md-two-line-icon,
+.vf-visual-pickers-lg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  width: 264px;
+}
+
+.vf-visual-pickers-sm:hover,
+.vf-visual-pickers-md:hover,
+.vf-visual-pickers-md-two-line:hover,
+.vf-visual-pickers-md-two-line-icon:hover,
+.vf-visual-pickers-lg:hover {
+  border: 1px solid #999999;
+}
+
+.vf-visual-pickers-sm:disabled,
+.vf-visual-pickers-md:disabled,
+.vf-visual-pickers-md-two-line:disabled,
+.vf-visual-pickers-md-two-line-icon:disabled,
+.vf-visual-pickers-lg:disabled {
+  pointer-events: none;
+  background: #eeeeee;
+}
+
+.vf-visual-pickers-sm input,
+.vf-visual-pickers-md input,
+.vf-visual-pickers-md-two-line input,
+.vf-visual-pickers-md-two-line-icon input,
+.vf-visual-pickers-lg input {
+  display: none;
+}
+
+.vf-visual-pickers-sm label,
+.vf-visual-pickers-md label,
+.vf-visual-pickers-md-two-line label,
+.vf-visual-pickers-md-two-line-icon label,
+.vf-visual-pickers-lg label {
+  all: initial;
+  color: #222222;
+  font-family: Vattenfall Hall NORDx;
+  font-size: 20px;
+  font-weight: 500;
+  height: 28px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 100%;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 57px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.vf-visual-pickers-sm label:hover,
+.vf-visual-pickers-md label:hover,
+.vf-visual-pickers-md-two-line label:hover,
+.vf-visual-pickers-md-two-line-icon label:hover,
+.vf-visual-pickers-lg label:hover {
+  cursor: pointer;
+}
+
+.vf-visual-pickers__icon:before {
+  position: absolute;
+  font-size: 20px;
+}
+
+.vf-visual-pickers__outline {
+  border: 1px solid #1964A3 !important;
+}
+
+.vf-visual-pickers-sm {
+  height: 52px;
+}
+
+.vf-visual-pickers-sm .vf-visual-pickers__icon:before {
+  right: 17px;
+  bottom: 14px;
+}
+
+.vf-visual-pickers-md {
+  height: 90px;
+}
+
+.vf-visual-pickers-md label {
+  padding-right: 24px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  text-align: center;
+}
+
+.vf-visual-pickers-md .vf-visual-pickers__icon:before {
+  right: 17px;
+  top: 17px;
+}
+
+.vf-visual-pickers-md-two-line {
+  height: 90px;
+}
+
+.vf-visual-pickers-md-two-line label {
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 42px;
+  text-align: center;
+}
+
+.vf-visual-pickers-md-two-line label .vf-visual-pickers__second-line {
+  position: absolute;
+  line-height: 28px;
+  font-size: 14px;
+  font-family: VattenfallHall-Regular;
+  font-weight: 500;
+  letter-spacing: -0.04px;
+  margin-bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.vf-visual-pickers-md-two-line .vf-visual-pickers__icon:before {
+  right: 17px;
+  top: 17px;
+}
+
+.vf-visual-pickers-md-two-line-icon {
+  height: 90px;
+}
+
+.vf-visual-pickers-md-two-line-icon label {
+  padding-right: 24px;
+  padding-top: 45px;
+  padding-bottom: 9px;
+  text-align: center;
+}
+
+.vf-visual-pickers-md-two-line-icon .vf-visual-pickers__icon:before {
+  right: 17px;
+  top: 17px;
+}
+
+.vf-visual-pickers-md-two-line-icon .vf-visual-pickers__two-line-icon:before {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+}
+
+.vf-visual-pickers-lg {
+  height: 250px;
+}
+
+.vf-visual-pickers-lg label {
+  padding-top: 211px;
+  padding-bottom: 11px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.vf-visual-pickers-lg label img {
+  position: absolute;
+  height: 182px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 50px;
+}
+
+.vf-visual-pickers-lg .vf-visual-pickers__icon:before {
+  right: 17px;
+  top: 17px;
 }
 
 .news-outer-container {
