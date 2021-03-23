@@ -1,4 +1,4 @@
-# Charging Point Status Icons
+# InCharge Icons - Charging Point Status
 
 ```html
 showSource: false

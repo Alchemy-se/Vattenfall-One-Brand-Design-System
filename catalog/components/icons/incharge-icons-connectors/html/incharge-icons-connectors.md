@@ -1,4 +1,4 @@
-# Connector Icons
+# InCharge Icons - Connectors
 ````html
 showSource: false
 ---
