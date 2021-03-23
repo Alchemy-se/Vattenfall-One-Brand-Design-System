@@ -1,19 +1,19 @@
 {
-  "id": "standard",
-  "uri": "#standard",
-  "name": "Standard",
-  "guidelineUri":false,
+  "id": "single-select-medium-two-line-icon",
+  "uri": "#single-select-medium-two-line-icon",
+  "name": "Single Select Two Line Icon",
+  "guidelineUri": "#medium-two-line-icon",
   "description": null,
   "react": {
     "exists": false,
     "status": -1,
     "globalUse": false,
-	"support": [
-	      {
-	        "region": "SV",
-	        "status": -1
-	      }
-	    ]
+    "support": [
+      {
+        "region": "SV",
+        "status": -1
+      }
+    ]
   },
   "vue": {
     "exists": false,
@@ -25,12 +25,12 @@
     "exists": false,
     "status": -1,
     "globalUse": false,
-	"support": [
-	      {
-	        "region": "NL",
-	        "status": -1
-	      }
-	    ]
+    "support": [
+      {
+        "region": "NL",
+        "status": -1
+      }
+    ]
   },
   "html": {
     "exists": true,
@@ -41,6 +41,6 @@
   "figmaUrl": false,
   "photoshopUrl": false,
   "adobeXDUrl": false,
-  "sketchUrl": false,
+  "sketchUrl": true,
   "abstractUrl": false
 }

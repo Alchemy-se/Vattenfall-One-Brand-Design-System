@@ -1,4 +1,4 @@
-### Single Select/Large
+### Single Select Large
 
 ```html
 showSource: true

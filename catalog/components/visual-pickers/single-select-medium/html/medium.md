@@ -1,4 +1,4 @@
-### Single Select/Medium
+### Single Select Medium
 
 ```html
 showSource: true

@@ -1,4 +1,4 @@
-### Multi Select/Medium/Two Line Icon
+### Multi Select Medium Two Line Icon
 
 ```html
 showSource: true

@@ -1,0 +1,46 @@
+{
+  "id": "multi-select-medium-two-line-icon",
+  "uri": "#multi-select-medium-two-line-icon",
+  "name": "Multi Select Medium Two Line Icon",
+  "guidelineUri": "#medium-two-line-icon",
+  "description": null,
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [
+      {
+        "region": "SV",
+        "status": -1
+      }
+    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [
+      {
+        "region": "NL",
+        "status": -1
+      }
+    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": true,
+  "abstractUrl": false
+}

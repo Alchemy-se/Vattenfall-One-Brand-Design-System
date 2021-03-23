@@ -1,4 +1,4 @@
-### Multi Select/Large
+### Multi Select Large
 
 ```html
 showSource: true

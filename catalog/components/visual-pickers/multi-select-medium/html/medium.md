@@ -1,4 +1,4 @@
-### Multi Select/Medium
+### Multi Select Medium
 
 ```html
 showSource: true

@@ -1,4 +1,4 @@
-### Single Select/Medium/Two Line
+### Single Select Medium Two Line
 
 ```html
 showSource: true
