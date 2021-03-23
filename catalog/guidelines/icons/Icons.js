@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import PageHeader from '../PageHeader';
 import Markdown from '../../lib/markdown';
 import Action from '../../components/icons/action-icons/html/action-icons.md';
-import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md';
 import Identification from '../../components/icons/identification-icons/html/identification-icons.md';
 import Navigation from '../../components/icons/navigation-icons/html/navigation-icons.md';
 import SmartHome from '../../components/icons/smart-home-icons/html/smart-home-icons.md';
@@ -11,6 +10,12 @@ import GuidelinesBlock from "../guidelinesBlock";
 import iconsStyles from './Icons.scss';
 import SquareIconBlock from './squareIconBlock';
 import IconsIntro from './IconsIntro';
+
+// InCharge
+import InCharge from '../../components/icons/Incharge-icons/html/incharge-icons.md';
+import InChargeMobileApp from "../../components/icons/incharge-icons-mobile-app/html/incharge-icons-mobile-app.md"
+import InChargeChargingPointStatus from '../../components/icons/incharge-icons-charging-point-status/html/incharge-icons-charging-point-status.md'
+import InChargeConnectors from '../../components/icons/incharge-icons-connectors/html/incharge-icons-connectors.md'
 
 const Group4 = '/img/guidelines/icons/Group4.png';
 const WaterBackground = '/img/guidelines/icons/water.png';
@@ -131,6 +136,28 @@ const Icons = () => {
       >
         <Markdown source={editMd(InCharge)} />
       </GuidelinesBlock>
+
+      <GuidelinesBlock
+        title='InCharge Icons - Mobile App'
+        text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
+      >
+        <Markdown source={editMd(InChargeMobileApp)} />
+      </GuidelinesBlock>
+
+      <GuidelinesBlock
+        title='InCharge Icons - Charging Point Status'
+        text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
+      >
+        <Markdown source={editMd(InChargeChargingPointStatus)} />
+      </GuidelinesBlock>
+
+      <GuidelinesBlock
+        title='InCharge Icons - Connectors'
+        text='These Icon are Specific for InCharge and only to be used for Incharge Portal or Incharge App'
+      >
+        <Markdown source={editMd(InChargeConnectors)} />
+      </GuidelinesBlock>
+
       <GuidelinesBlock
         title='Identification Icons'
         text='Identification icons are used to identify a service or product.'
