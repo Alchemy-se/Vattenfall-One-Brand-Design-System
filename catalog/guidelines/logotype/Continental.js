@@ -25,8 +25,9 @@ const InChargeContinental = () => {
       </div>
       <p>
         <strong>
-          Exception - Logotype version for website only. The logotype variant
-          shown above is an exception used only for the website.
+          Exception – The horizontal logotype variant shown above is an
+          exception used only for the desktop website. For breaking point 768px
+          and lower, use the Linear logotype shown below.
         </strong>
       </p>
       <div style={smallContainer}>
@@ -49,18 +50,44 @@ const InChargeContinental = () => {
               src='/img/inCharge/logotypes/continental/linear.svg'
               alt='incharge-logotype-continental-linear'
             />
-            <p>
-              <strong>Linear Logotype</strong>
-            </p>
           </div>
+          <p>
+            <strong>Linear Logotype</strong>
+          </p>
         </div>
       </div>
+      <h4 className='use-in-toc'>Logotype Clear Space</h4>
+      <p>
+        To help our logotype stand out and maintain its integrity an area of
+        clear space should always surround the logotype. This area should be
+        clear from other graphic elements or text.
+      </p>
+      <div style={largeContainer}>
+        <img
+          src='/img/inCharge/logotypes/continental/linear-spacing.svg'
+          alt='incharge-logotype-continental-linear-spacing'
+        />
+      </div>
+      <p>
+        The clear space around the linear logotype is defined by the Vattenfall
+        Symbol. Half the symbols height is 1X, and the clear space is 1X around
+        all sides of the logotype.
+      </p>
+      <div style={largeContainer}>
+        <img
+          src='/img/inCharge/logotypes/continental/stacked-spacing.svg'
+          alt='incharge-logotype-continental-stacked-spacing'
+        />
+      </div>
+      <p>
+        The clear space around the stacked logotype is half of the symbols
+        height (1X). The clear space is 1X around all sides of the logotype.
+      </p>
     </div>
   )
 }
 
 const largeContainer = {
-  width: '100%',
   display: 'flex',
   border: '1px solid rgb(204, 204, 204)',
   padding: '84px',
@@ -69,33 +96,37 @@ const largeContainer = {
 }
 
 const smallContainer = {
+  display: 'flex',
+  justifyContent: 'space-between',
+}
+
+const stackedDiv = {
   width: '100%',
+  border: '1px solid rgb(204, 204, 204)',
   display: 'flex',
   justifyContent: 'center',
 }
 
-const stackedDiv = {
-  border: '1px solid rgb(204, 204, 204)',
-  padding: '78px',
-}
-
 const linearDiv = {
+  height: '100%',
+  width: '100%',
   border: '1px solid rgb(204, 204, 204)',
-  padding: '28px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 }
 
 const stackedImg = {
   height: '314px',
+  padding: '30px',
 }
 
 const linearImg = {
-  border: '1px solid rgb(204, 204, 204)',
-
   height: '130px',
 }
 
 const column = {
-  width: 'calc(100% - 12px)',
+  width: 'calc(50% - 12px)',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
