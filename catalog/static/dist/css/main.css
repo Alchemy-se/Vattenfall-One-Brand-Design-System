@@ -9058,10 +9058,28 @@ fieldset:disabled a.vf-btn {
   margin-top: 0.5rem;
 }
 
-input[type="submit"].vf-btn--block,
-input[type="reset"].vf-btn--block,
-input[type="button"].vf-btn--block {
+input[type='submit'].vf-btn--block,
+input[type='reset'].vf-btn--block,
+input[type='button'].vf-btn--block {
   width: 100%;
+}
+
+.vf-btn--incharge-nordic {
+  color: #000;
+  background: #46ee76;
+}
+
+.vf-btn--incharge-nordic:hover {
+  background: #88f4a6;
+}
+
+.vf-btn--incharge-nordic:focus, .vf-btn--incharge-nordic.focus {
+  background: #46ee76;
+}
+
+.vf-btn--incharge-nordic.disabled, .vf-btn--incharge-nordic:disabled {
+  color: #767676;
+  background-color: #EEEEEE;
 }
 
 .vf-card {

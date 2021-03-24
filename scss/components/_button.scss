@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import '../../scss/variables';
 
 // stylelint-disable selector-no-qualifying-type
 
@@ -87,7 +87,6 @@ fieldset:disabled a.vf-btn {
   pointer-events: none;
 }
 
-
 .vf-btn--primary {
   color: $btn-primary-color;
   background: $btn-primary-bg;
@@ -154,10 +153,9 @@ fieldset:disabled a.vf-btn {
   &.disabled,
   &:disabled {
     color: $btn-tertiary-color-disabled;
-    background-color: $btn-tertiary-bg-disabled ;
+    background-color: $btn-tertiary-bg-disabled;
     border-color: $btn-tertiary-border-disabled;
   }
-
 }
 
 .vf-btn--outline-secondary {
@@ -297,9 +295,9 @@ fieldset:disabled a.vf-btn {
     text-decoration: none;
   }
 }
-  .vf-link-with-arrow--small {
-    font-size: $font-size-base;
-  }
+.vf-link-with-arrow--small {
+  font-size: $font-size-base;
+}
 
 //
 // Block button
@@ -316,10 +314,31 @@ fieldset:disabled a.vf-btn {
 }
 
 // Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
   &.vf-btn--block {
     width: 100%;
+  }
+}
+
+// InCharge Nordic
+.vf-btn--incharge-nordic {
+  color: #000;
+  background: rgb(70, 238, 118);
+
+  @include hover {
+    background: rgb(136, 244, 166);
+  }
+
+  &:focus,
+  &.focus {
+    background: rgb(70, 238, 118);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $btn-primary-color-disabled;
+    background-color: $btn-primary-bg-disabled;
   }
 }
