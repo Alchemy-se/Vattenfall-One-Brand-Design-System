@@ -251,7 +251,7 @@ const COMPONENTS_ROUTES = [
   {
     path: '/css/logotypes',
     name: 'Logotype',
-    component: <InChargeLogos uri={'/components/css/logotypes'} />,
+    component: <Logotypes uri={'/components/css/logotypes'} />,
   },
 
   {
