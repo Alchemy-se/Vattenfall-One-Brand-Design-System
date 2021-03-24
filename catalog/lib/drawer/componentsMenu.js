@@ -46,7 +46,7 @@ const MENU_GROUP_ITEMS = {
     { path: '/css/small-quote', name: 'Small Quote' },
     { path: '/css/three-column', name: 'Three Column' },
     { path: '/css/topbar', name: 'Top Bar' },
-    { path: '/css/incharge-logotypes', name: 'InCharge Logotypes' },
+    { path: '/css/logotypes', name: 'Logotypes' },
   ],
   organisms: [
     { path: '/css/organisms', name: 'Intro' },

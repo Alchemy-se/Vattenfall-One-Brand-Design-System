@@ -62,7 +62,7 @@ import Progress from './components/progress/progress'
 import SharableImage from './components/shareable-image/sharable-image'
 import SmallQuote from './components/small-qoute/small-quote'
 import ThreeColumn from './components/three-column/three-column'
-import InChargeLogos from "./components/incharge-logo"
+import Logotypes from "./components/logotypes"
 
 // Guidelines
 import GuidelinesHero from './guidelines/hero/Hero'
@@ -249,9 +249,9 @@ const COMPONENTS_ROUTES = [
   },
 
   {
-    path: '/css/incharge-logotypes',
+    path: '/css/logotypes',
     name: 'Logotype',
-    component: <InChargeLogos uri={'/components/css/incharge-logotypes'} />,
+    component: <InChargeLogos uri={'/components/css/logotypes'} />,
   },
 
   {
