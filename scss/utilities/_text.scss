@@ -53,6 +53,36 @@
 .vf-text--black-50 { color: rgba($black, .5) !important; }
 .vf-text--white-50 { color: rgba($white, .5) !important; }
 
+.vf-text--incharge-nordic-green {
+  color:$incharge-nordic-green !important;
+}
+.vf-text--incharge-nordic-blue {
+  color:$incharge-nordic-blue !important;
+}
+.vf-text--incharge-nordic-grey {
+  color:$incharge-nordic-grey !important;
+}
+.vf-text--incharge-vattenfall-green {
+  color:$incharge-vattenfall-green !important;
+}
+
+.vf-text--incharge-map-app-yellow {
+  color: $incharge-map-app-yellow !important;
+}
+
+.vf-text--incharge-map-app-white {
+  color: $incharge-map-app-white !important;
+}
+
+.vf-text--incharge-map-app-solar {
+  color: $incharge-map-app-solar !important;
+}
+
+.vf-text--incharge-map-app-blue {
+  color: $incharge-map-app-blue !important;
+}
+
+
 // Misc
 
 .vf-text--hide {

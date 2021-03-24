@@ -16594,6 +16594,38 @@ a.vf-text--light-grey:hover, a.vf-text--light-grey:focus {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.vf-text--incharge-nordic-green {
+  color: #46ee76 !important;
+}
+
+.vf-text--incharge-nordic-blue {
+  color: #2071b5 !important;
+}
+
+.vf-text--incharge-nordic-grey {
+  color: #4e4b4b !important;
+}
+
+.vf-text--incharge-vattenfall-green {
+  color: #46ee76 !important;
+}
+
+.vf-text--incharge-map-app-yellow {
+  color: #ffda00 !important;
+}
+
+.vf-text--incharge-map-app-white {
+  color: #ffffff !important;
+}
+
+.vf-text--incharge-map-app-solar {
+  color: #81e0a8 !important;
+}
+
+.vf-text--incharge-map-app-blue {
+  color: #2071b5 !important;
+}
+
 .vf-text--hide {
   font: 0/0 a;
   color: transparent;

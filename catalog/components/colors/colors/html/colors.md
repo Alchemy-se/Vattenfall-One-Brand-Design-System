@@ -33,6 +33,14 @@
 <p class="vf-text--white vf-bg--dark">.vf-text--white</p>
 <p class="vf-text--black-50">.vf-text--black-50</p>
 <p class="vf-text--white-50 vf-bg--dark">.vf-text--white-50</p>
+<p class="vf-text--incharge-nordic-green">.vf-text--incharge-nordic-green</p>
+<p class="vf-text--incharge-nordic-blue">.vf-text--incharge-nordic-blue</p>
+<p class="vf-text--incharge-nordic-grey">.vf-text--incharge-nordic-grey</p>
+<p class="vf-text--incharge-vattenfall-green">.vf-text--incharge-vattenfall-green</p>
+<p class="vf-text--incharge-map-app-yellow">.vf-text--incharge-map-app-yellow</p>
+<p class="vf-text--incharge-map-app-white vf-bg--dark">.vf-text--incharge-map-app-white</p>
+<p class="vf-text--incharge-map-app-solar">.vf-text--incharge-map-app-solar</p>
+<p class="vf-text--incharge-map-app-blue">.vf-text--incharge-map-app-blue</p>
 ```
 
 Contextual text classes also work well on anchors with the provided hover and focus states. **Note that the `.text-white` and `.text-muted` class has no additional link styling beyond underline.**
