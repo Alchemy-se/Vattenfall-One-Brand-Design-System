@@ -38,6 +38,24 @@
   box-shadow: none;
 }
 
+.greenButtonHover {
+  pointer-events: none;
+  color: #000;
+  background: rgb(136, 244, 166);
+  &:before {
+    opacity: 1;
+    transform: translate(-150%, 0);
+  }
+}
+
+.greenButtonActive {
+  composes: greenButtonHover;
+  background: rgb(70, 238, 118);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .tertiaryBlackButton {
   border-color: #222222;
 }
