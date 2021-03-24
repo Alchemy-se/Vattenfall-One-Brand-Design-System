@@ -13,13 +13,13 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/continental/stacked.svg'
+          src='/img/logotypes/incharge/continental/stacked.svg'
           alt='incharge-logotype-continental-stacked'
         />
       </div>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/continental/one-line.svg'
+          src='/img/logotypes/incharge/continental/one-line.svg'
           alt='incharge-logotype-continental-one-line'
         />
       </div>
@@ -35,7 +35,7 @@ const InChargeContinental = () => {
           <div style={stackedDiv}>
             <img
               style={stackedImg}
-              src='/img/inCharge/logotypes/continental/stacked.svg'
+              src='/img/logotypes/incharge/continental/stacked.svg'
               alt='incharge-logotype-continental-stacked'
             />
           </div>
@@ -47,7 +47,7 @@ const InChargeContinental = () => {
           <div style={linearDiv}>
             <img
               style={linearImg}
-              src='/img/inCharge/logotypes/continental/linear.svg'
+              src='/img/logotypes/incharge/continental/linear.svg'
               alt='incharge-logotype-continental-linear'
             />
           </div>
@@ -64,7 +64,7 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/continental/linear-spacing.svg'
+          src='/img/logotypes/incharge/continental/linear-spacing.svg'
           alt='incharge-logotype-continental-linear-spacing'
         />
       </div>
@@ -75,7 +75,7 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/continental/stacked-spacing.svg'
+          src='/img/logotypes/incharge/continental/stacked-spacing.svg'
           alt='incharge-logotype-continental-stacked-spacing'
         />
       </div>

@@ -2,20 +2,25 @@ import React, { Fragment } from 'react'
 import PageHeader from '../../lib/pageHeader'
 import Markdown from '../../lib/markdown/index'
 import Modals from '../../zendesk/modals/modals'
+// vattenfall
+import vStacked from "./vattenfall-stacked/html/stacked.md"
+import vStackedNegative from "./vattenfall-stacked-negative/html/stacked-negative.md"
+import vLinear from "./vattenfall-linear/html/linear.md"
+import vLinearNegative from "./vattenfall-linear-negative/html/linear-negative.md"
 // Continental
-import cStacked from './continental/html/stacked.md'
-import cOneLine from './continental/html/one-line.md'
-import cLinear from './continental/html/linear.md'
+import cStacked from './incharge-continental-stacked/html/stacked.md'
+import cOneLine from './incharge-continental-one-line/html/one-line.md'
+import cLinear from './incharge-continental-linear/html/linear.md'
 // Nordic
-import nStacked from "./nordic/html/stacked.md"
-import nLinear from "./nordic/html/linear.md"
+import nStacked from "./incharge-nordic-stacked/html/stacked.md"
+import nLinear from './incharge-nordic-linear/html/linear.md'
 
-const markdown = cStacked + cOneLine + cLinear + nStacked + nLinear
+const markdown = vStacked + vLinear + cStacked + cOneLine + cLinear + nStacked + nLinear
 
 const index = ({ uri }) => {
   return (
     <Fragment>
-      <PageHeader title={'InCharge Logotypes'} />
+      <PageHeader title={'Logotypes'} />
       <Markdown source={markdown} />
       <Modals uri={uri} />
     </Fragment>

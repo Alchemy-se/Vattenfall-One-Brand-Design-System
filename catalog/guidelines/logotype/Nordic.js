@@ -20,7 +20,7 @@ const InChargeNordic = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/nordic/stacked.svg'
+          src='/img/logotypes/incharge/nordic/stacked.svg'
           alt='incharge-logotype-nordic-stacked'
         />
       </div>
@@ -32,7 +32,7 @@ const InChargeNordic = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/nordic/linear.svg'
+          src='/img/logotypes/incharge/nordic/linear.svg'
           alt='incharge-logotype-nordic-linear'
         />
       </div>
@@ -44,7 +44,7 @@ const InChargeNordic = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/nordic/stacked-spacing.svg'
+          src='/img/logotypes/incharge/nordic/stacked-spacing.svg'
           alt='incharge-logotype-nordic-stacked-spacing'
         />
       </div>
@@ -54,7 +54,7 @@ const InChargeNordic = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/inCharge/logotypes/nordic/linear-spacing.svg'
+          src='/img/logotypes/incharge/nordic/linear-spacing.svg'
           alt='incharge-logotype-nordic-linear-spacing'
         />
       </div>
