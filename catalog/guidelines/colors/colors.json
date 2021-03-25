@@ -26,6 +26,12 @@
       },
       {
         "name": "lines"
+      },
+      {
+        "name": "InCharge Nordic Colors"
+      },
+      {
+        "name": "InCharge Map App Colors"
       }
     ]
   },
@@ -41,7 +47,8 @@
     "objectID": "primary-colors",
     "name": "Primary colors",
     "id": "primary-colors"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Colors"
@@ -53,7 +60,8 @@
     "objectID": "secondary-colors",
     "name": "Secondary colors",
     "id": "secondary-colors"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Colors"
@@ -65,7 +73,8 @@
     "objectID": "color-tones",
     "name": "Color tones",
     "id": "color-tones"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Colors"
@@ -77,7 +86,8 @@
     "objectID": "tertiary",
     "name": "Tertiary",
     "id": "tertiary"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Colors"
@@ -89,7 +99,8 @@
     "objectID": "energy-source-colors",
     "name": "Energy source colors",
     "id": "energy-source-colors"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Colors"
@@ -101,5 +112,44 @@
     "objectID": "what-color-do-lines-get?s",
     "name": "Lines",
     "id": "what-color-do-lines-get?"
+  },
+  {
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#what-color-do-lines-get?",
+    "description": "Sometimes lines are used to seperate planes from eachother. Depending on the background the following colors are used for lines",
+    "objectID": "what-color-do-lines-get?s",
+    "name": "Lines",
+    "id": "what-color-do-lines-get?"
+  },
+  {
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#incharge-nordic-colors",
+    "description": "InCharge Nordic Colors",
+    "objectID": "incharge-nordic-colors",
+    "name": "InCharge Nordic Colors",
+    "id": "incharge-nordic-colors"
+  },
+  {
+    "parent": [
+      {
+        "name": "Colors"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/colors#incharge-map-app-colors",
+    "description": "InCharge Map App Colors",
+    "objectID": "incharge-map-app-colors",
+    "name": "InCharge Map App Colors",
+    "id": "incharge-map-app-colors"
   }
 ]
