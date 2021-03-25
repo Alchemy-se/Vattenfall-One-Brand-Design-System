@@ -210,6 +210,7 @@ const VisualPickers = () => {
             select={'single-select'}
             divStyles={disabledStyle}
             labelStyles={disablePointer}
+            imgStyles={disabledImgStyle}
           />
         </Column>
       </div>
@@ -219,6 +220,7 @@ const VisualPickers = () => {
 
 const disablePointer = {
   pointerEvents: 'none',
+  color: "#767676",
 }
 
 const hoverStyle = {
@@ -227,13 +229,17 @@ const hoverStyle = {
 }
 
 const activeStyle = {
-  border: '1px solid #1964A3',
+  border: '2px solid #1964A3',
   pointerEvents: 'none',
 }
 
 const disabledStyle = {
   background: '#EEEEEE',
   pointerEvents: 'none',
+}
+
+const disabledImgStyle = {
+  opacity: "0.65",
 }
 
 export default VisualPickers
