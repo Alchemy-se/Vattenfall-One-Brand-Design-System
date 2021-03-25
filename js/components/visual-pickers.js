@@ -1,6 +1,8 @@
-window.onload = () => {
+;(function ($) {
   function singleSelects() {
-    let singleSelectList = document.getElementsByClassName('vf-visual-pickers__single-select')
+    let singleSelectList = document.getElementsByClassName(
+      'vf-visual-pickers__single-select'
+    )
 
     let singleSelectButtons = []
     for (let i = 0; i < singleSelectList.length; i++) {
@@ -54,4 +56,4 @@ window.onload = () => {
   }
 
   visualPickers()
-}
+})(jQuery)
