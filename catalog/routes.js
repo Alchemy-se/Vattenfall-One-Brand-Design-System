@@ -62,7 +62,7 @@ import Progress from './components/progress/progress'
 import SharableImage from './components/shareable-image/sharable-image'
 import SmallQuote from './components/small-qoute/small-quote'
 import ThreeColumn from './components/three-column/three-column'
-import Logotypes from "./components/logotypes"
+import Logotypes from "./components/logotype"
 
 // Guidelines
 import GuidelinesHero from './guidelines/hero/Hero'
@@ -249,9 +249,9 @@ const COMPONENTS_ROUTES = [
   },
 
   {
-    path: '/css/logotypes',
+    path: '/css/logotype',
     name: 'Logotype',
-    component: <Logotypes uri={'/components/css/logotypes'} />,
+    component: <Logotypes uri={'/components/css/logotype'} />,
   },
 
   {

@@ -13,14 +13,14 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/logotypes/incharge/continental/stacked.svg'
-          alt='incharge-logotype-continental-stacked'
+          src='/img/logotypes/incharge/continental/stacked/grey_rgb.svg'
+          alt='incharge_continental_stacked_grey_rgb'
         />
       </div>
       <div style={largeContainer}>
         <img
-          src='/img/logotypes/incharge/continental/one-line.svg'
-          alt='incharge-logotype-continental-one-line'
+          src='/img/logotypes/incharge/continental/one-line/grey_rgb.svg'
+          alt='incharge_continental_one-line_grey_rgb'
         />
       </div>
       <p>
@@ -35,8 +35,8 @@ const InChargeContinental = () => {
           <div style={stackedDiv}>
             <img
               style={stackedImg}
-              src='/img/logotypes/incharge/continental/stacked.svg'
-              alt='incharge-logotype-continental-stacked'
+              src='/img/logotypes/incharge/continental/stacked/grey_rgb.svg'
+              alt='incharge_continental_stacked_grey_rgb'
             />
           </div>
           <p>
@@ -47,8 +47,8 @@ const InChargeContinental = () => {
           <div style={linearDiv}>
             <img
               style={linearImg}
-              src='/img/logotypes/incharge/continental/linear.svg'
-              alt='incharge-logotype-continental-linear'
+              src='/img/logotypes/incharge/continental/linear/grey_rgb.svg'
+              alt='incharge_continental_linear_grey_rgb'
             />
           </div>
           <p>
@@ -64,8 +64,8 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/logotypes/incharge/continental/linear-spacing.svg'
-          alt='incharge-logotype-continental-linear-spacing'
+          src='/img/logotypes/incharge/continental/linear/linear_grey_spacing_rgb.svg'
+          alt='incharge_continental_linear_grey_spacing_rgb'
         />
       </div>
       <p>
@@ -75,8 +75,8 @@ const InChargeContinental = () => {
       </p>
       <div style={largeContainer}>
         <img
-          src='/img/logotypes/incharge/continental/stacked-spacing.svg'
-          alt='incharge-logotype-continental-stacked-spacing'
+          src='/img/logotypes/incharge/continental/stacked/grey_spacing_rgb.svg'
+          alt='incharge_continental_stacked_grey_spacing_rgb'
         />
       </div>
       <p>
