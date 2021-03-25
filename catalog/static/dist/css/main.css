@@ -15789,15 +15789,6 @@ section.spinners {
   border: 1px solid #999999;
 }
 
-.vf-visual-pickers-sm:disabled,
-.vf-visual-pickers-md:disabled,
-.vf-visual-pickers-md-two-line:disabled,
-.vf-visual-pickers-md-two-line-icon:disabled,
-.vf-visual-pickers-lg:disabled {
-  pointer-events: none;
-  background: #eeeeee;
-}
-
 .vf-visual-pickers-sm input,
 .vf-visual-pickers-md input,
 .vf-visual-pickers-md-two-line input,

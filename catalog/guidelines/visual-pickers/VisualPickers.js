@@ -227,7 +227,7 @@ const hoverStyle = {
 }
 
 const activeStyle = {
-  border: '1px solid #1964A3',
+  border: '2px solid #1964A3',
   pointerEvents: 'none',
 }
 

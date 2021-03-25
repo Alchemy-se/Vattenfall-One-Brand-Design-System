@@ -15,11 +15,6 @@
     border: 1px solid $vattenfall-border-dark-grey;
   }
 
-  &:disabled {
-    pointer-events: none;
-    background: #eeeeee;
-  }
-
   input {
     display: none;
   }
@@ -45,6 +40,8 @@
     }
   }
 }
+
+
 .vf-visual-pickers__icon:before {
   position: absolute;
   font-size: 20px;
