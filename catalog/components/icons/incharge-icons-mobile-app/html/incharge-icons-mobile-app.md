@@ -1,4 +1,4 @@
-# InCharge Icons - Mobile App
+# InCharge Icons Mobile App
 
 ```html
 showSource: false
