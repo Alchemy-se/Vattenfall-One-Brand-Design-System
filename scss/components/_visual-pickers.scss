@@ -51,7 +51,7 @@
 }
 
 .vf-visual-pickers__outline {
-  border: 1px solid $vattenfall-button-blue !important;
+  border: 2px solid $vattenfall-button-blue !important;
 }
 
 // small
@@ -73,8 +73,8 @@
     text-align: center;
   }
   .vf-visual-pickers__icon:before {
-    right: 17px;
-    top: 17px;
+    right: 16px;
+    top: 16px;
   }
 }
 // medium two line
@@ -102,8 +102,8 @@
     }
   }
   .vf-visual-pickers__icon:before {
-    right: 17px;
-    top: 17px;
+    right: 16px;
+    top: 16px;
   }
 }
 
@@ -142,16 +142,20 @@
 
     img {
       position: absolute;
-      height: 182px;
+      width: 224px;
       left: 0;
       right: 0;
-      margin-right: auto;
       margin-left: auto;
+      margin-right: auto;
       bottom: 50px;
     }
   }
   .vf-visual-pickers__icon:before {
-    right: 17px;
-    top: 17px;
+    right: 26px;
+    top: 26px;
+    border-radius: 50%;
+    border: 2px solid $vattenfall-button-blue;
+    background: #fff;
+    padding: 7px;
   }
 }

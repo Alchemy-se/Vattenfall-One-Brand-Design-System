@@ -15844,7 +15844,7 @@ section.spinners {
 }
 
 .vf-visual-pickers__outline {
-  border: 1px solid #1964A3 !important;
+  border: 2px solid #1964A3 !important;
 }
 
 .vf-visual-pickers-sm {
@@ -15868,8 +15868,8 @@ section.spinners {
 }
 
 .vf-visual-pickers-md .vf-visual-pickers__icon:before {
-  right: 17px;
-  top: 17px;
+  right: 16px;
+  top: 16px;
 }
 
 .vf-visual-pickers-md-two-line {
@@ -15899,8 +15899,8 @@ section.spinners {
 }
 
 .vf-visual-pickers-md-two-line .vf-visual-pickers__icon:before {
-  right: 17px;
-  top: 17px;
+  right: 16px;
+  top: 16px;
 }
 
 .vf-visual-pickers-md-two-line-icon {
@@ -15940,17 +15940,21 @@ section.spinners {
 
 .vf-visual-pickers-lg label img {
   position: absolute;
-  height: 182px;
+  width: 224px;
   left: 0;
   right: 0;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   bottom: 50px;
 }
 
 .vf-visual-pickers-lg .vf-visual-pickers__icon:before {
-  right: 17px;
-  top: 17px;
+  right: 26px;
+  top: 26px;
+  border-radius: 50%;
+  border: 2px solid #1964A3;
+  background: #fff;
+  padding: 7px;
 }
 
 .news-outer-container {
