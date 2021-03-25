@@ -7,6 +7,7 @@ const Large = ({
   divStyles,
   labelStyles,
   checkmark = '',
+  imgStyles = {},
 }) => {
   return (
     <div
@@ -19,7 +20,12 @@ const Large = ({
         className='vf-visual-pickers__label'
         htmlFor={select + `-lg-` + id}
       >
-        <img src='/img/visual-pickers/charger.png' alt='vf-charger' /> Option
+        <img
+          style={imgStyles}
+          src='/img/visual-pickers/charger.png'
+          alt='vf-charger'
+        />{' '}
+        Option
         {id}
       </label>
       <span className={'vf-visual-pickers__icon' + ' ' + checkmark}></span>
