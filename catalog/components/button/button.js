@@ -11,6 +11,8 @@ import textButtonSmall from './text-button-small/html/text-button-small.md'
 import Markdown from "../../lib/markdown";
 import PageHeader from "../../lib/pageHeader";
 import Modals from "../../zendesk/modals/modals";
+import inchargeNordicLarge from './incharge-buttons-nordic-large/html/incharge-buttons-nordic-large.md'
+import inchargeNordicMedium from './incharge-buttons-nordic-medium/html/incharge-buttons-nordic-medium.md'
 
 const markdown =
   primaryButtonsLarge +
@@ -21,7 +23,9 @@ const markdown =
   textButtonSmall +
   combiningButtons +
   fullWidthButtons +
-  activeState
+  activeState +
+  inchargeNordicLarge +
+  inchargeNordicMedium
 
 const Button = ({ uri }) => {
   return (

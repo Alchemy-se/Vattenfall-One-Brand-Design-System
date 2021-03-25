@@ -19,7 +19,7 @@ const AlternativeError = ({ title, placeholder, suggestion, filled }) => {
               placeholder={placeholder}
               className='vf-alt-input vf-alt-input--error'
             />
-            <label htmlFor='vf_alt_error_state_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_error_state_input'>Label</label>
             <span className='vf-alt-input--error-msg'>Error Message</span>
           </div>
         </Column>
@@ -31,7 +31,7 @@ const AlternativeError = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input vf-alt-input--error ${styles.alternativeHoverError}`}
               placeholder={placeholder}
             />
-            <label htmlFor='vf_alt_error_state_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_error_state_input'>Label</label>
             <span className='vf-alt-input--error-msg'>Error Message</span>
           </div>
         </Column>
@@ -43,7 +43,7 @@ const AlternativeError = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input vf-alt-input--error ${styles.alternativeFocusError}`}
               defaultValue={suggestion}
             />
-            <label htmlFor='vf_alt_error_state_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_error_state_input'>Label</label>
             <span className='vf-alt-input--error-msg'>Error Message</span>
           </div>
         </Column>
@@ -55,7 +55,7 @@ const AlternativeError = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input vf-alt-input--error`}
               defaultValue={filled}
             />
-            <label htmlFor='vf_alt_error_state_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_error_state_input'>Label</label>
             <span
               className={`vf-alt-input--error-msg ${styles.alternativeErrorMsg}`}
             >

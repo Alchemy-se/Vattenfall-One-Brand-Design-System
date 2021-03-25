@@ -9061,10 +9061,28 @@ fieldset:disabled a.vf-btn {
   margin-top: 0.5rem;
 }
 
-input[type="submit"].vf-btn--block,
-input[type="reset"].vf-btn--block,
-input[type="button"].vf-btn--block {
+input[type='submit'].vf-btn--block,
+input[type='reset'].vf-btn--block,
+input[type='button'].vf-btn--block {
   width: 100%;
+}
+
+.vf-btn--incharge-nordic {
+  color: #000;
+  background: #46ee76;
+}
+
+.vf-btn--incharge-nordic:hover {
+  background: #88f4a6;
+}
+
+.vf-btn--incharge-nordic:focus, .vf-btn--incharge-nordic.focus {
+  background: #46ee76;
+}
+
+.vf-btn--incharge-nordic.disabled, .vf-btn--incharge-nordic:disabled {
+  color: #767676;
+  background-color: #EEEEEE;
 }
 
 .vf-card {
@@ -13199,7 +13217,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown {
   position: relative;
-  width: 300px;
+  width: 256px;
+  height: 52px;
 }
 
 .vf-dropdown .vf-dropdown-label {
@@ -13226,7 +13245,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown .vf-dropdown-label:after {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   background-size: 36px;
   background-position: right center;
@@ -13296,12 +13315,12 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown .vf-dropdown-list .vf-dropdown-list-item input:before {
-  content: "";
+  content: '';
   position: absolute;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   border-bottom: 3px solid #d8d8d8;
   border-right: 3px solid #d8d8d8;
   height: 16px;
@@ -13345,8 +13364,8 @@ a.vf-badge:hover, a.vf-badge:focus {
   display: inline-block;
   margin-bottom: 0;
   opacity: 0;
-  -webkit-transition: opacity .15s ease-in-out;
-  transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   font-size: 1.25rem;
   font-weight: normal;
   letter-spacing: 0px;
@@ -13371,18 +13390,20 @@ a.vf-badge:hover, a.vf-badge:focus {
   border-color: #69788C;
 }
 
-.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-label, .vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-list {
+.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-label,
+.vf-dropdown.vf-dropdown--underline.disabled .vf-dropdown-list {
   color: #767676;
   background: none;
   border-color: #869bad;
 }
 
-.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-label, .vf-dropdown.vf-dropdown--underline.on .vf-dropdown-list {
+.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-label,
+.vf-dropdown.vf-dropdown--underline.on .vf-dropdown-list {
   background: #fff;
 }
 
 .vf-dropdown.vf-dropdown--semantic {
-  border: 1px solid #E8E8E9;
+  border: 1px solid #e8e8e9;
   height: 52px;
   width: 300px;
   border-radius: 4px;
@@ -13425,7 +13446,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-dropdown.on .vf-dropdown-label:after {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   background-size: 36px;
   background-position: right center;
@@ -13444,8 +13465,8 @@ a.vf-badge:hover, a.vf-badge:focus {
 
 .vf-dropdown.on .vf-dropdown-list .vf-dropdown-option {
   opacity: 1;
-  -webkit-transition-delay: .2s;
-  transition-delay: .2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .vf-dropdown.on .vf-dropdown-label:after {
@@ -13471,13 +13492,15 @@ a.vf-badge:hover, a.vf-badge:focus {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNiAzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzYgMzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojOTk5OTk5O30KPC9zdHlsZT4KPGcgaWQ9Ik1hc2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjAwMDAwMCwgMTguNTAwMDAwKSBzY2FsZSgxLCAtMSkgdHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xOC41MDAwMDApICI+Cgk8cG9seWdvbiBpZD0icGF0aC0xXzFfIiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4LDE0LjUgMTAsMjAuMyAxMSwyMS41IDE4LDE2LjUgMjUsMjEuNSAyNiwyMC4zIAkiLz4KPC9nPgo8L3N2Zz4K");
 }
 
-.vf-dropdown.disabled .vf-dropdown-label, .vf-dropdown.disabled .vf-dropdown-list {
+.vf-dropdown.disabled .vf-dropdown-label,
+.vf-dropdown.disabled .vf-dropdown-list {
   color: #767676;
   background: #f1f1f1;
   border-color: #bcbcbc;
 }
 
-.vf-dropdown.disabled .vf-dropdown-label .vf-dropdown-list-item:hover, .vf-dropdown.disabled .vf-dropdown-list .vf-dropdown-list-item:hover {
+.vf-dropdown.disabled .vf-dropdown-label .vf-dropdown-list-item:hover,
+.vf-dropdown.disabled .vf-dropdown-list .vf-dropdown-list-item:hover {
   background-color: inherit;
   color: inherit;
 }
@@ -13487,7 +13510,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-semantic-dropdown-wrapper:after {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   background-size: 36px;
   background-position: right center;
@@ -13945,7 +13968,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-alt-input::-webkit-input-placeholder {
-  width: 102px;
+  width: 100%;
   height: 25px;
   color: #767676;
   font-size: 20px;
@@ -13955,7 +13978,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-alt-input::-moz-placeholder {
-  width: 102px;
+  width: 100%;
   height: 25px;
   color: #767676;
   font-size: 20px;
@@ -13965,7 +13988,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-alt-input::-ms-input-placeholder {
-  width: 102px;
+  width: 100%;
   height: 25px;
   color: #767676;
   font-size: 20px;
@@ -13975,7 +13998,7 @@ a.vf-badge:hover, a.vf-badge:focus {
 }
 
 .vf-alt-input::placeholder {
-  width: 102px;
+  width: 100%;
   height: 25px;
   color: #767676;
   font-size: 20px;
@@ -14012,7 +14035,7 @@ a.vf-badge:hover, a.vf-badge:focus {
   color: #F93B18;
 }
 
-label {
+.vf-alt-input-label {
   position: absolute;
   top: 0;
   left: 0;

@@ -371,60 +371,61 @@
     }
   }
 }
-  .vf-alt-input {
+.vf-alt-input {
+  font-family: VattenfallHall-Regular;
+  position: relative;
+  // top: 1.4em;
+  top: 34px;
+  width: 264px;
+  height: 52px;
+  background-color: $white;
+  color: $dark;
+  padding: 16px 20px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid $vattenfall-input-grey;
+  font-size: $font-size-lg;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: normal;
+
+  &:hover {
+    border: 1px solid $vattenfall-border-dark-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $vattenfall-button-blue;
+  }
+
+  &::placeholder {
+    width: 100%;
+    height: 25px;
+    color: rgb(118, 118, 118);
+    font-size: 20px;
     font-family: VattenfallHall-Regular;
-    position: relative;
-    // top: 1.4em;
-    top: 34px;
-    width: 264px;
-    height: 52px;
-    background-color: $white;
-    color: $dark;
-    padding: 16px 20px;
-    border-radius: 4px 4px 4px 4px;
-    border: 1px solid $vattenfall-input-grey;
-    font-size: $font-size-lg;
-    letter-spacing: 0px;
-    line-height: 24px;
     font-weight: normal;
+    letter-spacing: 0px;
+  }
+
+  &.vf-alt-input--error {
+    border-color: $vattenfall-error-red-border;
 
     &:hover {
-      border: 1px solid $vattenfall-border-dark-grey;
+      border-color: $vattenfall-dark-red;
     }
 
     &:focus {
-      outline: none;
-      border: 1px solid $vattenfall-button-blue;
+      border-color: $vattenfall-dark-red;
     }
 
     &::placeholder {
-      width: 102px;
-      height: 25px;
-      color: rgb(118, 118, 118);
-      font-size: 20px;
-      font-family: VattenfallHall-Regular;
-      font-weight: normal;
-      letter-spacing: 0px;
-    }
-
-    &.vf-alt-input--error {
-      border-color: $vattenfall-error-red-border;
-
-      &:hover {
-        border-color: $vattenfall-dark-red;
-      }
-
-      &:focus {
-        border-color: $vattenfall-dark-red;
-      }
-
-      &::placeholder {
-        color: $vattenfall-dark-red;
-      }
+      color: $vattenfall-dark-red;
     }
   }
+  
+}
 
-  label {
+.vf-alt-input-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -438,77 +439,76 @@
     width: 256px;
   }
 
-  .vf-tooltip-message {
-    opacity: 0;
+.vf-tooltip-message {
+  opacity: 0;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.vf-icon-question {
+  &:before {
+    font-size: 20px;
     position: absolute;
-    right: 50%;
-    transform: translate(50%, 0);
+    top: 50px;
+    right: 17px;
   }
 
-  .vf-icon-question {
-    &:before {
-      font-size: 20px;
-      position: absolute;
-      top: 50px;
-      right: 17px;
+  &:hover {
+    ~ .vf-tooltip-message {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
     }
-
-    &:hover {
-      ~ .vf-tooltip-message {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out;
-      }
-    }
   }
+}
 
-  .vf-alt-input--error-msg {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    font-size: 16px;
-    color: $vattenfall-dark-red;
-    font-family: VattenfallHall-Regular;
-    font-size: 16px;
-    font-weight: 500;
-    height: 26.6px;
-    letter-spacing: 0px;
-    line-height: 28px;
-    width: 264px;
-    margin-bottom: 0;
-  }
+.vf-alt-input--error-msg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  color: $vattenfall-dark-red;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
 
-  .vf-alt-input--detailed-text {
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    font-size: 16px;
-    font-family: VattenfallHall-Regular;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(118, 118, 118);
-    height: 26.6px;
-    letter-spacing: 0px;
-    line-height: 28px;
-    width: 264px;
-    margin-bottom: 0;
-  }
+.vf-alt-input--detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  font-size: 16px;
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(118, 118, 118);
+  height: 26.6px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  width: 264px;
+  margin-bottom: 0;
+}
 
-  .vf-alt-input--textarea-detailed-text {
-    position: absolute;
-    left: 0;
-    bottom: -66px;
-    color: rgb(118, 118, 118);
-    font-family: VattenfallHall-Regular;
-    font-size: 16px;
-    font-weight: normal;
-    height: 33px;
-    letter-spacing: 0px;
-    line-height: 18px;
-    width: 264px;
-    margin-bottom: 0;
-  }
-
+.vf-alt-input--textarea-detailed-text {
+  position: absolute;
+  left: 0;
+  bottom: -66px;
+  color: rgb(118, 118, 118);
+  font-family: VattenfallHall-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  height: 33px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  width: 264px;
+  margin-bottom: 0;
+}
 
 #vf_alt_tooltip_input {
   padding-right: 54px;
