@@ -221,6 +221,7 @@
 
 .vf-icon-available:before {
  content: "\e900";
+ color: rgb(61, 192, 124)
 }
 
 .vf-icon-charging:before {
@@ -229,10 +230,12 @@
 
 .vf-icon-error:before {
  content: "\e902";
+ color: rgb(209, 38, 107);
 }
 
 .vf-icon-unavailable:before {
  content: "\e903";
+ color: rgb(32, 113, 181);
 }
 
 .vf-icon-unknown:before {

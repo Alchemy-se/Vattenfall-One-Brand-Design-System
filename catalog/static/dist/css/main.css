@@ -201,6 +201,7 @@ html.sr .reveal {
 
 .vf-icon-available:before {
   content: "\e900";
+  color: #3dc07c;
 }
 
 .vf-icon-charging:before {
@@ -209,10 +210,12 @@ html.sr .reveal {
 
 .vf-icon-error:before {
   content: "\e902";
+  color: #d1266b;
 }
 
 .vf-icon-unavailable:before {
   content: "\e903";
+  color: #2071b5;
 }
 
 .vf-icon-unknown:before {
