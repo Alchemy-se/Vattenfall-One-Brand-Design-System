@@ -47,6 +47,7 @@ const MENU_GROUP_ITEMS = {
     { path: '/css/three-column', name: 'Three Column' },
     { path: '/css/topbar', name: 'Top Bar' },
     { path: '/css/visual-pickers', name: 'Visual Pickers' },
+    { path: '/css/logotype', name: 'Logotypes' },
   ],
   organisms: [
     { path: '/css/organisms', name: 'Intro' },

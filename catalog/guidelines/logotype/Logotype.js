@@ -1,27 +1,28 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../PageHeader'
+import Continental from './Continental'
+import Nordic from './Nordic'
+import styles from '../Guidelines.scss'
 
-import styles from '../Guidelines.scss';
-
-const TextPrimary = '/img/guidelines/logotype/Group12.png';
-const LogoPrimary = '/img/guidelines/logotype/Group14.png';
-const wordmarkAndSymbol = '/img/guidelines/logotype/wordmarkAndSymbol.png';
-const placedCentered = '/img/guidelines/logotype/placedCentered.png';
-const boldInPlacement = '/img/guidelines/logotype/boldInPlacement.png';
-const avatarSymbol = '/img/guidelines/logotype/avatarSymbol.png';
-const centeredOnTheSetting = '/img/guidelines/logotype/centeredOnTheSetting.png';
-const clearspace = '/img/guidelines/logotype/clearspace.png';
-const Group22 = '/img/guidelines/logotype/Group22.png';
-const Group23 = '/img/guidelines/logotype/Group23.png';
-const Group24 = '/img/guidelines/logotype/Group24.png';
-const Group25 = '/img/guidelines/logotype/Group25.png';
-const Group26 = '/img/guidelines/logotype/Group26.png';
-const Group27 = '/img/guidelines/logotype/Group27.png';
-const Group28 = '/img/guidelines/logotype/Group28.png';
-const Group29 = '/img/guidelines/logotype/Group29.png';
-const Group30 = '/img/guidelines/logotype/Group30.png';
-const Group31 = '/img/guidelines/logotype/Group31.png';
+const TextPrimary = '/img/guidelines/logotype/Group12.png'
+const LogoPrimary = '/img/guidelines/logotype/Group14.png'
+const wordmarkAndSymbol = '/img/guidelines/logotype/wordmarkAndSymbol.png'
+const placedCentered = '/img/guidelines/logotype/placedCentered.png'
+const boldInPlacement = '/img/guidelines/logotype/boldInPlacement.png'
+const avatarSymbol = '/img/guidelines/logotype/avatarSymbol.png'
+const centeredOnTheSetting = '/img/guidelines/logotype/centeredOnTheSetting.png'
+const clearspace = '/img/guidelines/logotype/clearspace.png'
+const Group22 = '/img/guidelines/logotype/Group22.png'
+const Group23 = '/img/guidelines/logotype/Group23.png'
+const Group24 = '/img/guidelines/logotype/Group24.png'
+const Group25 = '/img/guidelines/logotype/Group25.png'
+const Group26 = '/img/guidelines/logotype/Group26.png'
+const Group27 = '/img/guidelines/logotype/Group27.png'
+const Group28 = '/img/guidelines/logotype/Group28.png'
+const Group29 = '/img/guidelines/logotype/Group29.png'
+const Group30 = '/img/guidelines/logotype/Group30.png'
+const Group31 = '/img/guidelines/logotype/Group31.png'
 
 const Logotype = () => {
   return (
@@ -207,8 +208,12 @@ const Logotype = () => {
           <img style={{ width: '100%' }} src={Group31} />
         </div>
       </div>
+      <section className='p-2 vf-border-top-gray-200'></section>
+      <Continental />
+      <section className='p-2 vf-border-top-gray-200'></section>
+      <Nordic />
     </Fragment>
   )
-};
+}
 
-export default Logotype;
+export default Logotype
