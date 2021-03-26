@@ -212,8 +212,6 @@ const Logotype = () => {
       <Continental />
       <section className='p-2 vf-border-top-gray-200'></section>
       <Nordic />
-      <section className='p-2 vf-border-top-gray-200'></section>
-      
     </Fragment>
   )
 }

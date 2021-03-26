@@ -78,14 +78,9 @@ const InChargeNordic = () => {
           <p>Stacked logotype color, positive and negative.</p>
           <div style={imgContainer}>
             <img
-              src='/img/logotypes/incharge/nordic/stacked/grey_rgb.svg'
-              alt='incharge_logotype_nordic_stacked_grey_rgb'
-              width='50%'
-            />
-            <img
-              src='/img/logotypes/incharge/nordic/stacked/grey_rgb.svg'
-              alt='incharge_logotype_nordic_stacked_grey_rgb'
-              width='50%'
+              src='/img/guidelines/logotype/incharge_nordic_stacked_color_version.png'
+              alt='incharge_logotype_nordic_stacked_color_version'
+              width='100%'
             />
           </div>
         </div>
@@ -94,14 +89,9 @@ const InChargeNordic = () => {
           <p>Linear logotype color, positive and negative.</p>
           <div style={imgContainer}>
             <img
-              src='/img/logotypes/incharge/nordic/linear/grey_rgb.svg'
-              alt='incharge_logotype_nordic_linear_grey_rgb'
-              width='50%'
-            />
-            <img
-              src='/img/logotypes/incharge/nordic/linear/grey_rgb.svg'
-              alt='incharge_logotype_nordic_linear_grey_rgb'
-              width='50%'
+              src='/img/guidelines/logotype/incharge_nordic_linear_color_version.png'
+              alt='incharge_logotype_nordic_linear_color_version'
+              width='100%'
             />
           </div>
         </div>
