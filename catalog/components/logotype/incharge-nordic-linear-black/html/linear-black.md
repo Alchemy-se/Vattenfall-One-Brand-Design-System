@@ -1,4 +1,4 @@
-### Nordic Linear Black
+### InCharge Nordic Linear Black
 
 ```html
 showSource: true

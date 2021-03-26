@@ -1,4 +1,4 @@
-### Nordic Stacked Grey
+### InCharge Nordic Stacked Grey
 
 ```html
 showSource: true

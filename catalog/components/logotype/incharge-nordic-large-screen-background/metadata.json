@@ -1,8 +1,8 @@
 {
-  "id": "incharge-nordic-linear-grey",
-  "uri": "#incharge-nordic-linear-grey",
-  "name": "InCharge Nordic Linear Grey",
-  "guidelineUri": "#nordic-linear",
+  "id": "incharge-nordic-large-screen-background",
+  "uri": "#incharge-nordic-large-screen-background",
+  "name": "InCharge Nordic Large Screen Background",
+  "guidelineUri": "#incharge-nordic-color-versions",
   "description": false,
   "react": {
     "exists": false,

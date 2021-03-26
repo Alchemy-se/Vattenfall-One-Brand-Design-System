@@ -12,7 +12,7 @@ const InChargeNordic = () => {
         website, as an avatar in social media as well as on the charging
         card/tag and app.
       </p>
-      <h4>Stacked logotype</h4>
+      <h4 className='use-in-toc'>Nordic Stacked</h4>
       <p>
         The InCharge Nordic Primary stacked logotype has the symbol centered
         above the wordmark. The logotype is a fixed artwork and is not to be
@@ -22,9 +22,10 @@ const InChargeNordic = () => {
         <img
           src='/img/logotypes/incharge/nordic/stacked/grey_rgb.svg'
           alt='incharge_logotype_nordic_stacked_grey_rgb'
+          width='35%'
         />
       </div>
-      <h4>Linear logotype</h4>
+      <h4 className='use-in-toc'>Nordic Linear</h4>
       <p>
         The InCharge Nordic Primary linear logotype has the symbol to the right
         of the wordmark. The logotype is a fixed artwork and is not to be
@@ -34,9 +35,10 @@ const InChargeNordic = () => {
         <img
           src='/img/logotypes/incharge/nordic/linear/grey_rgb.svg'
           alt='incharge_logotype_nordic_linear_grey_rgb'
+          width='50%'
         />
       </div>
-      <h4>Logotype clear space</h4>
+      <h4 className='use-in-toc'>Nordic Clear Space</h4>
       <p>
         To help the logotype stand out and maintain its integrity, an area of
         clearspace should always surround the logotype. This area should be
@@ -63,7 +65,7 @@ const InChargeNordic = () => {
         symbol. This is not to be changed.
       </p>
       <section className='p-2 vf-border-top-gray-200'></section>
-      <h2 className='use-in-toc'>InCharge Nordic color versions</h2>
+      <h2 className='use-in-toc'>InCharge Nordic Color Versions</h2>
       <p>
         The InCharge Primary stacked logotype in color with grey wordmark is the
         default color version and should always be used when possible. The

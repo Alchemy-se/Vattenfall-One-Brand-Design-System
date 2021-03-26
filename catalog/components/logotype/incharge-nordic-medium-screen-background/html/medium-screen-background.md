@@ -1,4 +1,4 @@
-### Nordic Medium Screen Background
+### InCharge Nordic Medium Screen Background
 
 ```html
 responsive: true

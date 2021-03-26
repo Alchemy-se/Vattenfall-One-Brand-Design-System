@@ -1,4 +1,4 @@
-### Nordic Large Screen Background
+### InCharge Nordic Large Screen Background
 
 ```html
 responsive: true

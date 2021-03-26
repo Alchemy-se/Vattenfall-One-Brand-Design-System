@@ -1,4 +1,4 @@
-### Nordic Stacked Black
+### InCharge Nordic Stacked Black
 
 ```html
 showSource: true

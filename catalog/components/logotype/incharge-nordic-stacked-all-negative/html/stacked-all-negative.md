@@ -1,4 +1,4 @@
-### Nordic Stacked All Negative
+### InCharge Nordic Stacked All Negative
 
 ```html
 showSource: true

@@ -4,7 +4,6 @@ const InChargeContinental = () => {
   return (
     <div className='row align-items-start'>
       <h2 className='use-in-toc'>InCharge Continental</h2>
-      <h4 className='use-in-toc'>Continental Stacked</h4>
       <p>
         The InCharge Continental logotype is used for the markets Netherlands
         and Germany, where InCharge is communicated as a product by Vattenfall
@@ -56,7 +55,7 @@ const InChargeContinental = () => {
           </p>
         </div>
       </div>
-      <h4 className='use-in-toc'>Logotype Clear Space</h4>
+      <h4 className='use-in-toc'>Continental Clear Space</h4>
       <p>
         To help our logotype stand out and maintain its integrity an area of
         clear space should always surround the logotype. This area should be

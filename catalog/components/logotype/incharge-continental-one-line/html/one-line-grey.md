@@ -1,4 +1,4 @@
-### Continental One Line
+### InCharge Continental One Line
 
 ```html
 showSource: true

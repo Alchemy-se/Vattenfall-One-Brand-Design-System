@@ -1,4 +1,4 @@
-### Nordic Stacked All Black
+### InCharge Nordic Stacked All Black
 
 ```html
 showSource: true

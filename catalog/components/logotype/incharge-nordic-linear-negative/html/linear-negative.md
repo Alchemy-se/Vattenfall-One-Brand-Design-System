@@ -1,4 +1,4 @@
-### Nordic Linear Negative
+### InCharge Nordic Linear Negative
 
 ```html
 showSource: true

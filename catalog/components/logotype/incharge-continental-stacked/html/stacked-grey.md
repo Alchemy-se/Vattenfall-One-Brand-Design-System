@@ -1,4 +1,4 @@
-### Continental Stacked
+### InCharge Continental Stacked
 
 ```html
 showSource: true
