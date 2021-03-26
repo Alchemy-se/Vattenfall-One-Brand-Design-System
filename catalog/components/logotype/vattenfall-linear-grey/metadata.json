@@ -2,7 +2,7 @@
   "id": "vattenfall-linear",
   "uri": "#vattenfall-linear",
   "name": "Vattenfall Linear",
-  "guidelineUri": "linear--logos-/-horizontal-/-medium",
+  "guidelineUri": "#linear--logos-/-horizontal-/-medium",
   "description": false,
   "react": {
     "exists": false,
