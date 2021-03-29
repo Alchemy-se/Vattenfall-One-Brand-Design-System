@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Tab bar",
+    "description": "Tab bar",
+    "type": "guideline",
+    "uri": "/guidelines/tab-bar",
+    "objectID": "tab-bar-guideline",
+    "children": [
+      {
+        "name": "InCharge Tab bar Mobile / Fixed"
+      },
+      {
+        "name": "InCharge Tab bar Mobile / Scrollable"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Tab bar"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/tab-bar#incharge-tab-bar-mobile-fixed",
+    "description": "",
+    "objectID": "incharge-tab-bar-mobile-fixed-guideline",
+    "name": "InCharge Tab bar Mobile / Fixed",
+    "id": "incharge-tab-bar-mobile-fixed"
+  },
+  {
+    "parent": [
+      {
+        "name": "Tab bar"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/tab-bar#incharge-tab-bar-mobile-scrollable",
+    "description": "",
+    "objectID": "incharge-tab-bar-mobile-scrollable-guideline",
+    "name": "InCharge Tab bar Mobile / Scrollable",
+    "id": "incharge-tab-bar-mobile-scrollable"
+  }
+]

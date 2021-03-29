@@ -1,8 +1,8 @@
 {
-  "id": "incharge-tab-bar-mobile/-scrollable",
-  "uri": "#incharge-tab-bar-mobile/-scrollable",
+  "id": "incharge-tab-bar-mobile-/-scrollable",
+  "uri": "#incharge-tab-bar-mobile-/-scrollable",
   "name": "InCharge Tab bar Mobile / Scrollable",
-  "guidelineUri": false,
+  "guidelineUri": "#incharge-tab-bar-mobile-/-scrollable",
   "description": null,
   "react": {
     "exists": false,

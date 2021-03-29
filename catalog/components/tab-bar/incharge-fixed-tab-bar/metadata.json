@@ -1,8 +1,8 @@
 {
-  "id": "incharge-tab-bar-mobile/-fixed",
-  "uri": "#incharge-tab-bar-mobile/-fixed",
+  "id": "incharge-tab-bar-mobile-/-fixed",
+  "uri": "#incharge-tab-bar-mobile-/-fixed",
   "name": "InCharge Tab bar Mobile / Fixed",
-  "guidelineUri": false,
+  "guidelineUri": "#incharge-tab-bar-mobile-/-fixed",
   "description": null,
   "react": {
     "exists": false,
