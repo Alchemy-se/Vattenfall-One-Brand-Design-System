@@ -91,7 +91,6 @@ import { Tabs } from 'antd'
         'vf-tab-bar-item--incharge-mobile--active'
       )
 
-      console.log(mobileTabs[i])
       if (isActive) {
         mobileTabsContent[i].style = 'display:block;'
       }
