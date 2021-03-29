@@ -19,10 +19,10 @@ import InChargePortalAndApp from './InChargePortalAndApp'
 
 const Group4 = '/img/guidelines/icons/Group4.png'
 const WaterBackground = '/img/guidelines/icons/water.png'
-const DoNotOne = '/img/guidelines/icons/doNotOne.png'
-const DoNotTwo = '/img/guidelines/icons/doNotTwo.png'
-const DoNotThree = '/img/guidelines/icons/doNotThree.png'
-const DoNotFour = '/img/guidelines/icons/doNotFour.png'
+const DoNotOne = '/img/guidelines/icons/DoNotOne.png'
+const DoNotTwo = '/img/guidelines/icons/DoNotTwo.png'
+const DoNotThree = '/img/guidelines/icons/DoNotThree.png'
+const DoNotFour = '/img/guidelines/icons/DoNotFour.png'
 
 const inChargeChargingFast = '/img/guidelines/icons/incharge-charging-fast.svg'
 const inChargeLocation = "/img/guidelines/icons/incharge-location.svg"
