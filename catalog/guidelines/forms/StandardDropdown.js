@@ -17,22 +17,22 @@ const StandardDropdown = ({ title, label }) => {
             data-control='vf-dropdown-data'
           >
             <label className='vf-dropdown-label'>Select option</label>
-            <div class='vf-dropdown-list'>
-              <div class='vf-dropdown-list-item'>
-                <label class='vf-dropdown-option'>Winter</label>
-                <span id='vf-dropdown-icon' class='vf-icon-check'></span>
+            <div className='vf-dropdown-list'>
+              <div className='vf-dropdown-list-item'>
+                <label className='vf-dropdown-option'>Winter</label>
+                <span id='vf-dropdown-icon' className='vf-icon-check'></span>
               </div>
-              <div class='vf-dropdown-list-item'>
-                <label class='vf-dropdown-option'>Spring</label>
-                <span id='vf-dropdown-icon' class='vf-icon-check'></span>
+              <div className='vf-dropdown-list-item'>
+                <label className='vf-dropdown-option'>Spring</label>
+                <span id='vf-dropdown-icon' className='vf-icon-check'></span>
               </div>
-              <div class='vf-dropdown-list-item'>
-                <label class='vf-dropdown-option'>Summer</label>
-                <span id='vf-dropdown-icon' class='vf-icon-check'></span>
+              <div className='vf-dropdown-list-item'>
+                <label className='vf-dropdown-option'>Summer</label>
+                <span id='vf-dropdown-icon' className='vf-icon-check'></span>
               </div>
-              <div class='vf-dropdown-list-item'>
-                <label class='vf-dropdown-option'>Autumn</label>
-                <span id='vf-dropdown-icon' class='vf-icon-check'></span>
+              <div className='vf-dropdown-list-item'>
+                <label className='vf-dropdown-option'>Autumn</label>
+                <span id='vf-dropdown-icon' className='vf-icon-check'></span>
               </div>
             </div>
           </div>
