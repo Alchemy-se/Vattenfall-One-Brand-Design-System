@@ -85,6 +85,7 @@ import GuidelinesUpload from './guidelines/upload/Upload'
 import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
 import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
+import GuideLinesTabBar from "./guidelines/tab-bar"
 
 // Other
 import Login from './admin/login'
@@ -548,6 +549,15 @@ const GUIDELINES_ROUTES = [
     component: (
       <GuidelinesWrapper>
         <GuideLineVisualPickers />
+      </GuidelinesWrapper>
+    ),
+  },
+  {
+    path: '/guidelines/tab-bar',
+    name: 'Tab Bar',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesTabBar />
       </GuidelinesWrapper>
     ),
   },
