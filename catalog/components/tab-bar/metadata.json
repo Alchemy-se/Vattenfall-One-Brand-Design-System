@@ -1,7 +1,7 @@
 {
   "name": "Tab bar",
   "uri": "/components/css/tab-bar",
-  "guidelineUri": false,
+  "guidelineUri": "/guidelines/tab-bar",
   "description": "",
   "figmaUrl": null,
   "photoshopUrl": null,
