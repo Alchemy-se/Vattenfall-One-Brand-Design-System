@@ -1,0 +1,24 @@
+.vf-horizontal-steppers--container {
+  display: flex;
+
+  .vf-horizontal-steppers--bullet {
+    background: $vattenfall-button-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    width: 36px;
+    height: 36px;
+    .vf-horizontal-steppers--icon {
+      margin: 0;
+      padding: 0;
+
+      &::before {
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}

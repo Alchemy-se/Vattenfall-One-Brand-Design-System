@@ -39,6 +39,7 @@ import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
 import VisualPickers from "./components/visual-pickers"
+import HorizontalSteppers from "./components/horizontal-steppers"
 
 // PARALLAX
 import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -211,6 +212,11 @@ const COMPONENTS_ROUTES = [
     path: '/css/visual-pickers',
     name: 'Visual Pickers',
     component: <VisualPickers uri={'/components/css/visual-pickers'} />,
+  },
+  {
+    path: '/css/horizontal-steppers',
+    name: 'Horizontal Steppers',
+    component: <HorizontalSteppers uri={'/components/css/horizontal-steppers'} />,
   },
   {
     path: '/css/preloader',

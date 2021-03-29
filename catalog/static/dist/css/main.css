@@ -16115,6 +16115,38 @@ section.spinners {
   padding: 7px;
 }
 
+.vf-horizontal-steppers--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--bullet {
+  background: #1964A3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--bullet .vf-horizontal-steppers--icon {
+  margin: 0;
+  padding: 0;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--bullet .vf-horizontal-steppers--icon::before {
+  font-size: 20px;
+  color: white;
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
