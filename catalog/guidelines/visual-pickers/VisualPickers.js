@@ -13,7 +13,21 @@ const VisualPickers = () => {
     <Fragment>
       <PageHeader title='Visual Pickers' />
       <section className='p-2 vf-border-top-gray-200' />
-      <Description title='Small' />
+      <p>
+        A visual picker can be used when the options benefit from being visually
+        enhanced. It can be either radio buttons or checkboxes.
+      </p>
+      <p>
+        When options are more than 6 on desktop and 4 on mobile, dropdown should
+        be used instead of a visual picker. Visual picker can be set to a single
+        or multiple selection. The padding between each picker is set to 24px
+        horizontally and 28px vertically. The text label inside should on all
+        breakpoints remain on a single line with a 20px font-size.
+      </p>
+      <Description
+        title='Small'
+        text='The text inside is aligned to the left with a 24px padding on the left side. The height of the Small version is set to 52px.'
+      />
       <div className='vf-row'>
         <Column title={'Default'}>
           <Small
@@ -53,7 +67,10 @@ const VisualPickers = () => {
           />
         </Column>
       </div>
-      <Description title='Medium' />
+      <Description
+        title='Medium'
+        text='Currently being used in product configurator for ordering Smart Home charging station (B2C). The text inside the Medium version is always centered aligned within it’s container. The height of this version is set to 90px.'
+      />
       <div className='vf-row'>
         <Column title={'Default'}>
           <Medium
