@@ -177,10 +177,7 @@ const Colors = () => {
             </p>
             <p>
               White or soft toned colors are used for backgrounds, to create a
-              fresh and clear look in line with the Vattenfall brand. When
-              printing possibilities allow, we recommend printing Pantone
-              colours on coated paper. This is to guarantee the correct color
-              expression.
+              fresh and clear look in line with the Vattenfall brand.
             </p>
           </span>
         }
