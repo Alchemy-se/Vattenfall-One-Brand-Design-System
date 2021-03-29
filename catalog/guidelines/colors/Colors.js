@@ -166,17 +166,17 @@ const Colors = () => {
       />
       <section className='p-2 vf-border-top-gray-200'></section>
       <Description
-        title='InCharge Nordic Colors'
+        title='InCharge Nordic Colours'
         text={
           <span>
             <p>
-              InCharge uses the same color scale as the Vattenfall brand
-              identity. In addition, InCharge has a light green color (InCharge
+              InCharge uses the same colour scale as the Vattenfall brand
+              identity. In addition, InCharge has a light green colour (InCharge
               Green), that is used in the logotype, for icons and the CTA
               (call-to-action) buttons.
             </p>
             <p>
-              White or soft toned colors are used for backgrounds, to create a
+              White or soft toned colours are used for backgrounds, to create a
               fresh and clear look in line with the Vattenfall brand.
             </p>
           </span>
@@ -187,8 +187,8 @@ const Colors = () => {
       <section className='p-2 vf-border-top-gray-200'></section>
       
       <Description
-        title='InCharge Map App Colors'
-        text='These colors combination are specific for Incharge App.'
+        title='InCharge Map App Colours'
+        text='These colours combination are specific for Incharge App.'
       />
       <InChargeMapAppColors />
       <section className='p-2 vf-border-top-gray-200'></section>
