@@ -1,3 +1,4 @@
+import { Tabs } from 'antd'
 ;(function ($) {
   $('.vf-tab-bar-item').each(function (index) {
     if ($(this).hasClass('vf-tab-bar-item--active')) {
@@ -47,4 +48,56 @@
           .attr('hidden', false)
       }
     })
+
+  let mobileTabsFixed = document.getElementsByClassName(
+    'vf-tab-bar-item--incharge-mobile--fixed'
+  )
+  let mobileTabsScroll = document.getElementsByClassName(
+    'vf-tab-bar-item--incharge-mobile--scroll'
+  )
+
+  let mobileTabsContentFixed = document.getElementsByClassName(
+    'vf-tab-bar-content--incharge-mobile--fixed'
+  )
+
+  let mobileTabsContentScroll = document.getElementsByClassName(
+    'vf-tab-bar-content--incharge-mobile--scroll'
+  )
+
+  function toggleTabs(mobileTabs, mobileTabsContent) {
+    for (let i = 0; i < mobileTabs.length; i++) {
+      mobileTabs[i].addEventListener('click', function (ev) {
+        let siblings = ev.target.parentElement.children
+
+        // remove active class from all tabs
+        for (let sibling of siblings) {
+          sibling.classList.remove('vf-tab-bar-item--incharge-mobile--active')
+        }
+
+        // hide all tab contents
+        for (let content of mobileTabsContent) {
+          content.style = 'display:none;'
+        }
+
+        // add active class to selected
+        ev.target.classList.add('vf-tab-bar-item--incharge-mobile--active')
+
+        // display selected tab content
+        mobileTabsContent[i].style = 'display:block;'
+        // mobileTabContentScroll[i].style = 'display:block;'
+      })
+
+      let isActive = mobileTabs[i].classList.contains(
+        'vf-tab-bar-item--incharge-mobile--active'
+      )
+
+      console.log(mobileTabs[i])
+      if (isActive) {
+        mobileTabsContent[i].style = 'display:block;'
+      }
+    }
+  }
+
+  toggleTabs(mobileTabsFixed, mobileTabsContentFixed)
+  toggleTabs(mobileTabsScroll, mobileTabsContentScroll)
 })(jQuery)
