@@ -74,9 +74,14 @@
       justify-content: space-between;
       height: 52px;
 
+      span {
+        margin-bottom: 0;
+      }
+
       span::before {
         font-size: 18px;
-        opacity: 0;
+        opacity:0;
+       
       }
 
       &:hover {
