@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import Markdown from '../../lib/markdown'
-import scroll from '../../components/tab-bar/incharge-scrollable-tab-bar/html/incharge-scrollable-tab-bar.md'
+import scroll from '../../components/tab-bar/tab-bar-mobile-scrollable/html/tab-bar-mobile-scrollable.md'
 
 const Scroll = ({ editMd }) => {
   return (
     <Fragment>
-      <h4 className='use-in-toc'>InCharge Tab bar Mobile / Scrollable</h4>
+      <h4 className='use-in-toc'>Tab bar Mobile / Scrollable</h4>
       <div style={styles}>
         <Markdown source={editMd(scroll)} />
       </div>

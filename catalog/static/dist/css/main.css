@@ -13130,13 +13130,13 @@ a.vf-badge:hover, a.vf-badge:focus {
   }
 }
 
-.vf-tab-bar-container--incharge-mobile {
+.vf-tab-bar-container--mobile {
   width: 100%;
   height: 152px;
   position: relative;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar--incharge-mobile-fixed {
+.vf-tab-bar-container--mobile .vf-tab-bar--mobile-fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13146,14 +13146,14 @@ a.vf-badge:hover, a.vf-badge:focus {
   list-style: none;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar--incharge-mobile-fixed > .vf-tab-bar-item--incharge-mobile--fixed {
+.vf-tab-bar-container--mobile .vf-tab-bar--mobile-fixed > .vf-tab-bar-item--mobile--fixed {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: center;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar--incharge-mobile-scroll {
+.vf-tab-bar-container--mobile .vf-tab-bar--mobile-scroll {
   background: #fff;
   overflow-x: auto;
   white-space: nowrap;
@@ -13162,13 +13162,13 @@ a.vf-badge:hover, a.vf-badge:focus {
   list-style: none;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar--incharge-mobile-scroll::-webkit-scrollbar {
+.vf-tab-bar-container--mobile .vf-tab-bar--mobile-scroll::-webkit-scrollbar {
   height: 0;
   width: 0;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar-item--incharge-mobile--fixed,
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar-item--incharge-mobile--scroll {
+.vf-tab-bar-container--mobile .vf-tab-bar-item--mobile--fixed,
+.vf-tab-bar-container--mobile .vf-tab-bar-item--mobile--scroll {
   display: inline-block;
   border: none;
   outline: none;
@@ -13185,14 +13185,14 @@ a.vf-badge:hover, a.vf-badge:focus {
   min-width: 130px;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar-item--incharge-mobile--active {
+.vf-tab-bar-container--mobile .vf-tab-bar-item--mobile--active {
   color: #1964A3;
   border-bottom: solid 4px #1964A3;
   padding-bottom: 4px;
 }
 
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar-content--incharge-mobile--fixed,
-.vf-tab-bar-container--incharge-mobile .vf-tab-bar-content--incharge-mobile--scroll {
+.vf-tab-bar-container--mobile .vf-tab-bar-content--mobile--fixed,
+.vf-tab-bar-container--mobile .vf-tab-bar-content--mobile--scroll {
   position: absolute;
   left: 0;
   right: 0;
