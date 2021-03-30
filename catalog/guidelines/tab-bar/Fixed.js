@@ -6,8 +6,7 @@ import fixed from '../../components/tab-bar/incharge-fixed-tab-bar/html/incharge
 const Fixed = ({ editMd }) => {
   return (
     <Fragment>
-          <h4 className="use-in-toc">InCharge Tab bar Mobile / Fixed</h4>
-          <p>text about fixed...</p>
+      <h4 className='use-in-toc'>InCharge Tab bar Mobile / Fixed</h4>
       <div style={styles}>
         <Markdown source={editMd(fixed)} />
       </div>

@@ -19,11 +19,6 @@ const index = () => {
       <PageHeader title='Tab Bar' />
       <section className='p-2 vf-border-top-gray-200'></section>
       <div className='row align-items-start'>
-        <p style={{ marginBottom: '56px' }}>some text about tab bars...</p>
-        <GuidelinesBlock
-          title='InCharge Tab bar Mobile'
-          text='some text about incharge mobile tab bars...'
-        />
         <Fixed editMd={editMd} />
         <Scroll editMd={editMd} />
       </div>
