@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import PageHeader from './lib/pageHeader'
 
-const Releasenotes = () => {
+const ReleaseNotes = () => {
   return (
     <Fragment>
       <PageHeader title='Releasenotes' />
@@ -77,4 +77,4 @@ const styles = {
   marginLeft: '40px',
 }
 
-export default Releasenotes
+export default ReleaseNotes
