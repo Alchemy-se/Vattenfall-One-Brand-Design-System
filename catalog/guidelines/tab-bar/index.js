@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react'
 import Fixed from './Fixed'
 import Scroll from './Scroll'
-
-import GuidelinesBlock from '../guidelinesBlock'
 import PageHeader from '../PageHeader'
 
 const index = () => {

@@ -50,18 +50,18 @@ import { Tabs } from 'antd'
     })
 
   let mobileTabsFixed = document.getElementsByClassName(
-    'vf-tab-bar-item--incharge-mobile--fixed'
+    'vf-tab-bar-item--mobile--fixed'
   )
   let mobileTabsScroll = document.getElementsByClassName(
-    'vf-tab-bar-item--incharge-mobile--scroll'
+    'vf-tab-bar-item--mobile--scroll'
   )
 
   let mobileTabsContentFixed = document.getElementsByClassName(
-    'vf-tab-bar-content--incharge-mobile--fixed'
+    'vf-tab-bar-content--mobile--fixed'
   )
 
   let mobileTabsContentScroll = document.getElementsByClassName(
-    'vf-tab-bar-content--incharge-mobile--scroll'
+    'vf-tab-bar-content--mobile--scroll'
   )
 
   function toggleTabs(mobileTabs, mobileTabsContent) {
@@ -71,7 +71,7 @@ import { Tabs } from 'antd'
 
         // remove active class from all tabs
         for (let sibling of siblings) {
-          sibling.classList.remove('vf-tab-bar-item--incharge-mobile--active')
+          sibling.classList.remove('vf-tab-bar-item--mobile--active')
         }
 
         // hide all tab contents
@@ -80,7 +80,7 @@ import { Tabs } from 'antd'
         }
 
         // add active class to selected
-        ev.target.classList.add('vf-tab-bar-item--incharge-mobile--active')
+        ev.target.classList.add('vf-tab-bar-item--mobile--active')
 
         // display selected tab content
         mobileTabsContent[i].style = 'display:block;'
@@ -88,7 +88,7 @@ import { Tabs } from 'antd'
       })
 
       let isActive = mobileTabs[i].classList.contains(
-        'vf-tab-bar-item--incharge-mobile--active'
+        'vf-tab-bar-item--mobile--active'
       )
 
       if (isActive) {
