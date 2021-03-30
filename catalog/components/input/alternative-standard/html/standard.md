@@ -12,7 +12,7 @@ showSource: true
       class="vf-alt-input"
       placeholder="Input Text"
     />
-    <label for="vf_alt_input">Label</label>
+    <label class="vf-alt-input-label" for="vf_alt_input">Label</label>
   </div>
 </div>
 ```

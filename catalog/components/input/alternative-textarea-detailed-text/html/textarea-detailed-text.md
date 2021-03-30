@@ -12,7 +12,7 @@ showSource: true
       class="vf-alt-input"
       placeholder="Input Text"
     ></textarea>
-    <label for="vf_alt_textarea_input">Textarea Label</label>
+    <label class="vf-alt-input-label" for="vf_alt_textarea_input">Textarea Label</label>
     <span class="vf-alt-input--textarea-detailed-text"
       >Detailed information text here</span
     >

@@ -19,7 +19,7 @@ const AlternativeStandard = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input`}
               placeholder={placeholder}
             />
-            <label htmlFor='vf_alt_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
           </div>
         </Column>
         <Column title={'Hover'}>
@@ -30,7 +30,7 @@ const AlternativeStandard = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input ${styles.alternativeHover} `}
               placeholder={placeholder}
             ></input>
-            <label htmlFor='vf_alt_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
           </div>
         </Column>
         <Column title={'Focus with suggestion'}>
@@ -41,7 +41,7 @@ const AlternativeStandard = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input ${styles.alternativeFocus}`}
               defaultValue={suggestion}
             />
-            <label htmlFor='vf_alt_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
           </div>
         </Column>
         <Column title='Filled'>
@@ -52,7 +52,7 @@ const AlternativeStandard = ({ title, placeholder, suggestion, filled }) => {
               className={`vf-alt-input`}
               defaultValue={filled}
             />
-            <label htmlFor='vf_alt_input'>Label</label>
+            <label className='vf-alt-input-label' htmlFor='vf_alt_input'>Label</label>
           </div>
         </Column>
       </div>

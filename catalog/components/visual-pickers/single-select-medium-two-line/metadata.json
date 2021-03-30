@@ -1,0 +1,46 @@
+{
+  "id": "single-select-medium-two-line",
+  "uri": "#single-select-medium-two-line",
+  "name": "Single Select Medium Two Line",
+  "guidelineUri": "#medium-two-line",
+  "description": null,
+  "react": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [
+      {
+        "region": "SV",
+        "status": -1
+      }
+    ]
+  },
+  "vue": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": []
+  },
+  "angular": {
+    "exists": false,
+    "status": -1,
+    "globalUse": false,
+    "support": [
+      {
+        "region": "NL",
+        "status": -1
+      }
+    ]
+  },
+  "html": {
+    "exists": true,
+    "status": 0,
+    "globalUse": true,
+    "support": []
+  },
+  "figmaUrl": false,
+  "photoshopUrl": false,
+  "adobeXDUrl": false,
+  "sketchUrl": true,
+  "abstractUrl": false
+}

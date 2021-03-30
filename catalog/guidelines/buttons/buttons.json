@@ -16,6 +16,9 @@
         "name": "Yellow"
       },
       {
+        "name": "InCharge Green"
+      },
+      {
         "name": "Secondary buttons"
       },
       {
@@ -80,6 +83,19 @@
       }
     ],
     "type": "guideline",
+    "uri": "/guidelines/buttons#incharge-green",
+    "description": false,
+    "objectID": "primary-buttons-incharge-green-guideline",
+    "name": "Primary Buttons - InCharge Green",
+    "id": "primary-buttons-incharge-green"
+  },
+  {
+    "parent": [
+      {
+        "name": "Buttons"
+      }
+    ],
+    "type": "guideline",
     "uri": "/guidelines/buttons#yellow",
     "description": "The yellow button indicated our main focus action. There is only one yellow button per component. If you need more buttons in one component, use secondary buttons",
     "objectID": "primary-buttons-yellow-guideline",
@@ -124,7 +140,8 @@
     "objectID": "secondary-buttons-tertiary-blue-(outlined-button)",
     "name": "Tertiary blue - (outlined-button)",
     "id": "tertiary-blue-(outlined-button)"
-  } ,{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -136,7 +153,8 @@
     "objectID": "secondary-buttons-tertiary-blue-(outlined-button)",
     "name": "Tertiary blue - (outlined-button)",
     "id": "tertiary-blue-(outlined-button)"
-  } ,{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -148,7 +166,8 @@
     "objectID": "text-buttons-and-links",
     "name": "Text buttons and links",
     "id": "text-buttons-and-links"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -160,7 +179,8 @@
     "objectID": "text-buttons-and-links",
     "name": "Text buttons and links",
     "id": "text-buttons-and-links"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -172,7 +192,8 @@
     "objectID": "text-links",
     "name": "Text links",
     "id": "text-links"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -184,7 +205,8 @@
     "objectID": "toggle",
     "name": "Toggle",
     "id": "toggle"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"
@@ -196,7 +218,8 @@
     "objectID": "radio-button",
     "name": "Radio button",
     "id": "radio-button"
-  },{
+  },
+  {
     "parent": [
       {
         "name": "Buttons"

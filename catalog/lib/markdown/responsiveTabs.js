@@ -18,7 +18,7 @@ class Frame extends Component {
     let responsiveTabs = document.querySelectorAll('.responsiveTabs__iframe___1nTCV')
     responsiveTabs.forEach(tab => {
          let doc = tab.contentDocument
-      if (doc.readyState === 'interactive' || doc.readyState === "complete") {
+      if (doc.readyState === 'interactive') {
         let contents = React.createElement(
           'div',
           null,

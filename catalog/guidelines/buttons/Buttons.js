@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import PageHeader from '../PageHeader'
 import YellowButtons from './yellow'
 import BlueButtons from './blue'
+import InChargeGreenButtons from "./InChargeGreenButtons"
 import TertiaryBlackButtons from './tertiaryBlack'
 import TertiaryBlueButtons from './tertiaryBlue'
 import TextButtons from './textButtons'
@@ -64,6 +65,8 @@ const Button = () => {
       <YellowButtons title='Yellow' label={buttonLabel} />
       <div className='vf-mt-lg' />
       <BlueButtons title='Blue' label={buttonLabel} />
+      <div className='vf-mt-xl' />
+      <InChargeGreenButtons title={"InCharge Green"} label={"Button Label"} />
       <div className='vf-mt-xl' />
       <DottedDescription
         title='Secondary buttons'

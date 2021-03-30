@@ -273,7 +273,7 @@
 	width: 180px;
 	width: max-content;
 	max-width: 180px;
-	bottom: 100%;
+	bottom: calc(100% - 10px);
 	min-height: 31px;
 	opacity: 0;
 	position: absolute;

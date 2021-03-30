@@ -17,6 +17,27 @@
       },
       {
         "name": "Stacked – Logos / Stacked"
+      },
+      {
+        "name": "InCharge Continental"
+      },
+      {
+        "name": "Continental Clear Space"
+      },
+      {
+        "name": "InCharge Nordic"
+      },
+      {
+        "name": "Nordic Stacked"
+      },
+      {
+        "name": "Nordic Linear"
+      },
+      {
+        "name": "Nordic Clear Space"
+      },
+      {
+        "name": "InCharge Nordic Color Versions"
       }
     ]
   },
@@ -71,5 +92,95 @@
     "objectID": "stacked--logos-/-stacked-guideline",
     "name": "Stacked - logos / stacked",
     "id": "logotype-stacked--logos-/-stacked"
-  }
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#incharge-continental",
+    "description": "InCharge Continental",
+    "objectID": "incharge-continental-guideline",
+    "name": "InCharge Continental",
+    "id": "logotype-incharge-continental"
+  },
+  {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#continental-clear-space",
+    "description": "Continental Clear Space",
+    "objectID": "continental-clear-space-guideline",
+    "name": "Continental Clear Space",
+    "id": "logotype-continental-clear-space"
+  }, {
+    "parent": [
+      {
+        "name": "Logotype"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/logotype#incharge-nordic",
+    "description": "InCharge Nordic",
+    "objectID": "incharge-nordic-guideline",
+    "name": "InCharge Nordic",
+    "id": "logotype-incharge-nordic"
+  },
+   {
+     "parent": [
+       {
+         "name": "Logotype"
+       }
+     ],
+     "type": "guideline",
+     "uri": "/guidelines/logotype#nordic-stacked",
+     "description": "Nordic Stacked",
+     "objectID": "nordic-stacked-guideline",
+     "name": "Nordic Stacked",
+     "id": "logotype-nordic-stacked"
+   },
+    {
+      "parent": [
+        {
+          "name": "Logotype"
+        }
+      ],
+      "type": "guideline",
+      "uri": "/guidelines/logotype#nordic-linear",
+      "description": "Nordic Linear",
+      "objectID": "nordic-linear-guideline",
+      "name": "Nordic Linear",
+      "id": "logotype-nordic-linear"
+    },
+     {
+       "parent": [
+         {
+           "name": "Logotype"
+         }
+       ],
+       "type": "guideline",
+       "uri": "/guidelines/logotype#nordic-clear-space",
+       "description": "Nordic Clear Space",
+       "objectID": "nordic-clear-space-guideline",
+       "name": "Nordic Clear Space",
+       "id": "logotype-nordic-clear-space"
+     },
+      {
+        "parent": [
+          {
+            "name": "Logotype"
+          }
+        ],
+        "type": "guideline",
+        "uri": "/guidelines/logotype#incharge-nordic-color-versions",
+        "description": "InCharge Nordic Color Versions",
+        "objectID": "incharge-nordic-color-versions-guideline",
+        "name": "InCharge Nordic Color Versions",
+        "id": "logotype-incharge-nordic-color-versions"
+      }
 ]

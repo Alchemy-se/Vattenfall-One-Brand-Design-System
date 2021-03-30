@@ -1,7 +1,6 @@
-@import "../../scss/variables";
+@import '../../scss/variables';
 
 .vf-tab-bar-container {
-
   *[hidden] {
     display: none;
   }
@@ -11,9 +10,6 @@
   }
 
   .vf-tab-bar {
-
-
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,8 +21,6 @@
     margin: 0;
 
     .vf-tab-bar-item {
-
-
       position: relative;
       flex-grow: 1;
 
@@ -40,116 +34,84 @@
       background-color: $white;
       border-right: 1px solid $vattenfall-light-blue;
       box-shadow: 0 0px 0 0 transparent;
-      transition: box-shadow .3s ease-in-out;;
+      transition: box-shadow 0.3s ease-in-out;
 
       cursor: pointer;
 
       &:last-of-type {
-
         border: none;
-
       }
 
       @include media-breakpoint-down(lg) {
-
         align-items: center;
         color: $vattenfall-button-blue;
 
-
         &:before {
-
           //content is supplied by class as font icon. See _fonts.scss
           position: relative;
           width: 24px;
           height: 24px;
           font-size: $font-size-xl;
-
         }
-
       }
 
       &.vf-tab-bar-item--active {
-
         box-shadow: 0 3px 0 0 $vattenfall-button-blue;
 
         @include media-breakpoint-down(lg) {
-
           //color: $dark;
           color: $vattenfall-mid-blue;
-
         }
 
         .vf-tab-bar-link {
           color: $vattenfall-mid-blue;
-
-
         }
-
       }
 
       &.vf-tab-bar-item--disabled {
-
         cursor: not-allowed;
 
         @include media-breakpoint-down(lg) {
-
           color: $btn-disabled-color;
-
         }
 
         .vf-tab-bar-link {
-
           pointer-events: none;
           color: $btn-disabled-color;
-
         }
-
       }
 
       &:not(.vf-tab-bar-item--disabled):not(.vf-tab-bar-item--active) {
         &:hover {
-
           box-shadow: 0 3px 0 0 $vattenfall-button-blue;
           color: $vattenfall-mid-blue;
 
           .vf-tab-bar-link {
             color: $vattenfall-mid-blue;
           }
-
         }
 
         @include media-breakpoint-down(lg) {
-
           &:hover {
-
-
             color: $vattenfall-mid-blue;
-
-
           }
-
         }
 
         .vf-tab-bar-link {
-
           &:hover {
             color: $vattenfall-mid-blue;
-
           }
         }
       }
 
       .vf-tab-bar-link {
-
         @include media-breakpoint-down(lg) {
-
           //(display:none;
           font-size: 0;
 
           &:before {
             left: 0 !important;
           }
-
         }
 
         display: flex;
@@ -162,9 +124,7 @@
         align-items: center;
 
         &:hover {
-
           text-decoration: none;
-
         }
 
         &:before {
@@ -175,14 +135,11 @@
           left: -20px;
           top: 2px;
           font-size: $font-size-xl;
-
         }
-
       }
     }
 
     .vf-tab-bar-link-mobile {
-
       position: absolute;
       display: none;
       top: 94px;
@@ -195,38 +152,100 @@
       text-align: center;
 
       &.vf-tab-bar-link-mobile--active {
-
         @include media-breakpoint-down(lg) {
-
           display: block;
           cursor: default;
 
           &:hover {
-
             text-decoration: none;
-
           }
         }
       }
 
       &:before {
-
         content: none !important;
-
       }
-
     }
   }
 
   .vf-tab-bar-panels {
-
     padding-top: 35px;
 
     @include media-breakpoint-down(lg) {
-
       padding-top: 55px;
-
     }
+  }
+}
 
+// InCharge
+// Fixed
+
+// Scrollable Container
+.vf-tab-bar-container--mobile {
+  width: 100%;
+  height: 152px;
+  position: relative;
+
+  .vf-tab-bar--mobile-fixed {
+    display: flex;
+    background: $white;
+    height: 52px;
+    padding: 0;
+    list-style: none;
+
+    > .vf-tab-bar-item--mobile--fixed {
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+
+  .vf-tab-bar--mobile-scroll {
+    background: $white;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 52px;
+    padding: 0;
+    list-style: none;
+
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
+  }
+
+  .vf-tab-bar-item--mobile--fixed,
+  .vf-tab-bar-item--mobile--scroll {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: $white;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-right: -5px;
+    letter-spacing: -0.05px;
+    line-height: 28px;
+    position: relative;
+
+    padding: 16px 14px 7px 14px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    min-width: 130px;
+  }
+
+  .vf-tab-bar-item--mobile--active {
+    color: $vattenfall-button-blue;
+    border-bottom: solid 4px $vattenfall-button-blue;
+    padding-bottom: 4px;
+  }
+
+  .vf-tab-bar-content--mobile--fixed,
+  .vf-tab-bar-content--mobile--scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52px;
+    bottom: 0;
+    padding-top: 16px;
+    display: none;
   }
 }

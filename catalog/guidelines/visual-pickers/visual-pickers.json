@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Visual Pickers",
+    "description": "Visual Pickers",
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers",
+    "objectID": "visual-pickers-guideline",
+    "children": [
+      {
+        "name": "Small"
+      },
+      {
+        "name": "Medium"
+      },
+      {
+        "name": "Medium Two Line"
+      },
+      {
+        "name": "Medium Two Line Icon"
+      },
+      {
+        "name": "Large"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Visual Pickers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers#small",
+    "description": "",
+    "objectID": "visual-pickers-guideline",
+    "name": "Small",
+    "id": "visual-pickers-small"
+  },
+  {
+    "parent": [
+      {
+        "name": "Visual Pickers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers#medium",
+    "description": "",
+    "objectID": "visual-pickers-guideline",
+    "name": "Medium",
+    "id": "visual-pickers-medium"
+  },
+  {
+    "parent": [
+      {
+        "name": "Visual Pickers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers#medium-two-line",
+    "description": "",
+    "objectID": "visual-pickers-guideline",
+    "name": "Medium Two Line",
+    "id": "visual-pickers-medium-two-line"
+  },
+  {
+    "parent": [
+      {
+        "name": "Visual Pickers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers#medium-two-line-icon",
+    "description": "",
+    "objectID": "visual-pickers-guideline",
+    "name": "Medium Two Line Icon",
+    "id": "visual-pickers-medium-two-line-icon"
+  },
+  {
+    "parent": [
+      {
+        "name": "Visual Pickers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/visual-pickers#large",
+    "description": "",
+    "objectID": "visual-pickers-guideline",
+    "name": "Large",
+    "id": "visual-pickers-large"
+  }
+]

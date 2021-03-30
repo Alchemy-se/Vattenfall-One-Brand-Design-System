@@ -9,6 +9,8 @@ import ColorTones from './ColorTones';
 import BackgroundColors from './BackgroundColors';
 import Tertiary from './Tertiary';
 import EnergySourceColors from './EnergySourceColors';
+import InChargeMapAppColors from "./InChargeMapAppColors"
+import InChargeNordicColors from "./InChargeNordicColors"
 
 import styles from '../Guidelines.scss';
 
@@ -162,6 +164,34 @@ const Colors = () => {
           </span>
         }
       />
+      <section className='p-2 vf-border-top-gray-200'></section>
+      <Description
+        title='InCharge Nordic Colours'
+        text={
+          <span>
+            <p>
+              InCharge uses the same colour scale as the Vattenfall brand
+              identity. In addition, InCharge has a light green colour (InCharge
+              Green), that is used in the logotype, for icons and the CTA
+              (call-to-action) buttons.
+            </p>
+            <p>
+              White or soft toned colours are used for backgrounds, to create a
+              fresh and clear look in line with the Vattenfall brand.
+            </p>
+          </span>
+        }
+      />
+      <InChargeNordicColors />
+
+      <section className='p-2 vf-border-top-gray-200'></section>
+      
+      <Description
+        title='InCharge Map App Colours'
+        text='These colours combination are specific for Incharge App.'
+      />
+      <InChargeMapAppColors />
+      <section className='p-2 vf-border-top-gray-200'></section>
     </Fragment>
   )
 };

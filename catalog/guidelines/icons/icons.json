@@ -10,10 +10,13 @@
         "name": "Action Icons"
       },
       {
+        "name": "Identification Icons"
+      },
+      {
         "name": "InCharge Icons"
       },
       {
-        "name": "Identification Icons"
+        "name": "InCharge Icons for Portal and App"
       },
       {
         "name": "Navigation Icons"
@@ -46,6 +49,19 @@
       }
     ],
     "type": "guideline",
+    "uri": "/guidelines/icons#identification-icons",
+    "description": "Identification icons are used to identify a service or product.",
+    "objectID": "identification-icons-guideline",
+    "name": "Identification icons",
+    "id": "icons-identification-icons"
+  },
+  {
+    "parent": [
+      {
+        "name": "Icons"
+      }
+    ],
+    "type": "guideline",
     "uri": "/guidelines/icons#incharge-icons",
     "description": "These are specific Icons for InCharge.",
     "objectID": "#incharge-icons-guideline",
@@ -59,11 +75,11 @@
       }
     ],
     "type": "guideline",
-    "uri": "/guidelines/icons#identification-icons",
-    "description": "Identification icons are used to identify a service or product.",
-    "objectID": "identification-icons-guideline",
-    "name": "Identification icons",
-    "id": "icons-identification-icons"
+    "uri": "/guidelines/icons#incharge-icons-for-portal-and-app",
+    "description": "These are specific Icons for InCharge Portal and App.",
+    "objectID": "#incharge-icons-for-portal-and-appguideline",
+    "name": "Incharge icons for portal and app",
+    "id": "icons-incharge-icons-for-portal-and-app"
   },
   {
     "parent": [

@@ -5,6 +5,7 @@ import Examples from './EXAMPLES'
 import Guidelines from './guidelines'
 import Designers from './get-started/designers/getting-started-designers'
 import Developers from './get-started/developers/getting-started-developers'
+import ReleaseNotes from "./ReleaseNotes.js"
 
 import Grid from './components/grid/grid'
 import Responsive from './components/responsive/responsive'
@@ -38,6 +39,7 @@ import ButtonGroup from './components/button-group/button-group'
 import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
+import VisualPickers from "./components/visual-pickers"
 
 // PARALLAX
 import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -62,6 +64,7 @@ import Progress from './components/progress/progress'
 import SharableImage from './components/shareable-image/sharable-image'
 import SmallQuote from './components/small-qoute/small-quote'
 import ThreeColumn from './components/three-column/three-column'
+import Logotypes from "./components/logotype"
 
 // Guidelines
 import GuidelinesHero from './guidelines/hero/Hero'
@@ -82,6 +85,8 @@ import GuidelinesCarousel from './guidelines/carousel/carousel'
 import GuidelinesUpload from './guidelines/upload/Upload'
 import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
+import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
+import GuideLinesTabBar from "./guidelines/tab-bar"
 
 // Other
 import Login from './admin/login'
@@ -148,6 +153,7 @@ const COMPONENTS_ROUTES = [
     name: 'Atoms',
     component: <Intro uri={'/components/intro'} />,
   },
+
   // components/css
   {
     path: '/css/text',
@@ -203,6 +209,11 @@ const COMPONENTS_ROUTES = [
     component: <Spinner uri={'/components/css/spinner'} />,
   },
   {
+    path: '/css/visual-pickers',
+    name: 'Visual Pickers',
+    component: <VisualPickers uri={'/components/css/visual-pickers'} />,
+  },
+  {
     path: '/css/preloader',
     name: 'Preloader',
     component: <Preloader uri={'/components/css/preloader'} />,
@@ -244,6 +255,12 @@ const COMPONENTS_ROUTES = [
     component: (
       <NotificationModule uri={'/components/css/notification-module'} />
     ),
+  },
+
+  {
+    path: '/css/logotype',
+    name: 'Logotype',
+    component: <Logotypes uri={'/components/css/logotype'} />,
   },
 
   {
@@ -519,14 +536,32 @@ const GUIDELINES_ROUTES = [
     ),
   },
   {
-    path: "/guidelines/spinner",
-    name: "Spinner",
+    path: '/guidelines/spinner',
+    name: 'Spinner',
     component: (
       <GuidelinesWrapper>
         <GuideLinesSpinner />
       </GuidelinesWrapper>
-    )
-  }
+    ),
+  },
+  {
+    path: '/guidelines/visual-pickers',
+    name: 'Visual Pickers',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLineVisualPickers />
+      </GuidelinesWrapper>
+    ),
+  },
+  {
+    path: '/guidelines/tab-bar',
+    name: 'Tab Bar',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesTabBar />
+      </GuidelinesWrapper>
+    ),
+  },
 ]
 
 const Routes = ({ onRouteChange, openModal }) => {
@@ -590,6 +625,9 @@ const Routes = ({ onRouteChange, openModal }) => {
         <Contact />
       </Route>
       <Route path={'/search'} component={FullSearchResult} />
+      <Route path='/releasenotes'>
+        <ReleaseNotes />
+      </Route>
 
       <Route path='/'>
         <Welcome />
