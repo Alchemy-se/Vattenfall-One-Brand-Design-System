@@ -4,8 +4,9 @@ import Modals from '../../zendesk/modals/modals'
 import PageHeader from '../../lib/pageHeader'
 
 import desktopDefault from "./desktop-default/html/default.md"
+import desktopNumbers from "./desktop-numbers/html/numbers.md"
 
-const markdown = desktopDefault
+const markdown = desktopDefault + desktopNumbers
 
 
 const index = ({ uri }) => {

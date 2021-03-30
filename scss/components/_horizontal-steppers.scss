@@ -1,24 +1,94 @@
 .vf-horizontal-steppers--container {
   display: flex;
+  align-items: center;
+  .vf-horizontal-steppers--step {
+    position: relative;
+    flex-grow: 1;
+    max-width: 200px;
 
-  .vf-horizontal-steppers--bullet {
-    background: $vattenfall-button-blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .vf-horizontal-steppers--bullet {
+      display: flex;
+      background: rgb(237, 241, 246);
+      justify-content: center;
+      align-items: center;
 
-    border-radius: 50%;
+      border-radius: 50%;
 
-    width: 36px;
-    height: 36px;
-    .vf-horizontal-steppers--icon {
-      margin: 0;
-      padding: 0;
+      width: 36px;
+      height: 36px;
 
-      &::before {
-        font-size: 20px;
-        color: white;
+      .vf-horizontal-steppers--icon {
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+        &::before {
+          pointer-events: none;
+          font-size: 20px;
+          color: white;
+        }
       }
+
+      .vf-horizontal-steppers--vf-icon-edit::before {
+        font-size: 14px;
+      }
+    }
+
+    &:not(:last-child) {
+      .vf-horizontal-steppers--bullet {
+        &::after {
+          content: '';
+          background: rgb(237, 241, 246);
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          left: 36px;
+        }
+      }
+
+      .vf-horizontal-steppers--complete {
+        &::after {
+          background: $vattenfall-button-blue;
+        }
+      }
+    }
+
+    > label {
+      font-size: 12px;
+      margin-bottom: 0;
+      font-weight: 500;
+      height: 16px;
+      line-height: 16px;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      > label {
+        text-align: center;
+        width: 100%;
+        margin-left: 18px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &:last-child {
+      > label {
+        transform: translateX(-100%);
+        margin-left: 36px;
+      }
+    }
+
+    .vf-horizontal-steppers--line {
+      background: lightgrey;
+      height: 4px;
+      position: absolute;
+      transform: translateX(-100%);
+      width: calc(100% - 36px);
+      top: 16px;
+      right: 36px;
+    }
+
+    .vf-horizontal-steppers--active,
+    .vf-horizontal-steppers--complete {
+      background: $vattenfall-button-blue;
     }
   }
 }
