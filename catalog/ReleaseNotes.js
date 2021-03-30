@@ -10,7 +10,7 @@ const ReleaseNotes = () => {
         <h3>v.7.19.0</h3>
 
         <h4>Dropdown updated</h4>
-        <p>Adjusted dropdown component with updated guideline.</p>
+        <p>Adjusted dropdown component with updated guidelines.</p>
 
         <h4>Scrollable Tabs</h4>
         <p>New Fixed and Scrollable Tab-bar for mobile.</p>
@@ -68,7 +68,7 @@ const ReleaseNotes = () => {
 
         <h4>Upload Component</h4>
         <p>Updated Component and guidelines for the upload asset.</p>
-        
+
       </div>
     </Fragment>
   )
