@@ -5,6 +5,7 @@ import Examples from './EXAMPLES'
 import Guidelines from './guidelines'
 import Designers from './get-started/designers/getting-started-designers'
 import Developers from './get-started/developers/getting-started-developers'
+import ReleaseNotes from "./ReleaseNotes"
 
 import Grid from './components/grid/grid'
 import Responsive from './components/responsive/responsive'
@@ -624,6 +625,9 @@ const Routes = ({ onRouteChange, openModal }) => {
         <Contact />
       </Route>
       <Route path={'/search'} component={FullSearchResult} />
+      <Route path='/release-notes'>
+        <ReleaseNotes />
+      </Route>
 
       <Route path='/'>
         <Welcome />
