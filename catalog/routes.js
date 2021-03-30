@@ -5,7 +5,7 @@ import Examples from './EXAMPLES'
 import Guidelines from './guidelines'
 import Designers from './get-started/designers/getting-started-designers'
 import Developers from './get-started/developers/getting-started-developers'
-import Releasenotes from "./Releasenotes"
+import Releasenotes from "./Releasenotes.js"
 
 import Grid from './components/grid/grid'
 import Responsive from './components/responsive/responsive'
