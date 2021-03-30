@@ -6,7 +6,6 @@ const Scroll = ({ editMd }) => {
   return (
     <Fragment>
       <h4 className='use-in-toc'>InCharge Tab bar Mobile / Scrollable</h4>
-      <p>text about scrollable...</p>
       <div style={styles}>
         <Markdown source={editMd(scroll)} />
       </div>

@@ -1,5 +1,7 @@
 ### InCharge Tab bar Mobile / Scrollable
 
+Scrollable tabs are displayed without fixed widths. They are scrollable, such that some tabs will remain off-screen until scrolled.
+
 ```html
 <div class="vf-tab-bar-container--incharge-mobile">
   <ul class="vf-tab-bar--incharge-mobile-scroll">
@@ -30,3 +32,6 @@
   <div class="vf-tab-bar-content--incharge-mobile--scroll">10</div>
 </div>
 ```
+
+
+On mobile the text labels has a minimum padding of 14px left and right. Content below the Tabs starts with a distance of minimum 16px.
