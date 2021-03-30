@@ -23,7 +23,7 @@ const ReleaseNotes = () => {
         <h3>v.7.18.0</h3>
         <h4>Icons, class-name</h4>
         <p>
-          - Updated and made some clarification regarding the icons on the
+          Updated and made some clarification regarding the icons on the
           component page. (Rules for sizing, small, medium, large will be
           implemented in a upcoming release).
         </p>
