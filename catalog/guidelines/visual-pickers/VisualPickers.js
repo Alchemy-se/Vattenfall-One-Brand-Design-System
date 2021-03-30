@@ -237,7 +237,7 @@ const VisualPickers = () => {
 
 const disablePointer = {
   pointerEvents: 'none',
-  color: "#767676",
+  color: '#767676',
 }
 
 const hoverStyle = {
@@ -248,6 +248,7 @@ const hoverStyle = {
 const activeStyle = {
   border: '2px solid #1964A3',
   pointerEvents: 'none',
+  background: '#EDF1F6',
 }
 
 const disabledStyle = {
@@ -256,7 +257,7 @@ const disabledStyle = {
 }
 
 const disabledImgStyle = {
-  opacity: "0.65",
+  opacity: '0.65',
 }
 
 export default VisualPickers
