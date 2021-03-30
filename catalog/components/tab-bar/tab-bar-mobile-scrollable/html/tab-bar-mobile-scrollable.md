@@ -3,6 +3,8 @@
 Scrollable tabs are displayed without fixed widths. They are scrollable, such that some tabs will remain off-screen until scrolled.
 
 ```html
+showSource: true
+---
 <div class="vf-tab-bar-container--mobile">
   <ul class="vf-tab-bar--mobile-scroll">
     <li
