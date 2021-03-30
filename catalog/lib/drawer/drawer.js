@@ -62,7 +62,7 @@ const renderFooter = () => {
         <img style={menuFooterLinkIconStyle} src='/img/docs/github.svg' />{' '}
         Github
       </a>
-      <a href='/release-notes' style={menuFooterLinkStyle}>
+      <a href='/releasenotes' style={menuFooterLinkStyle}>
         <span style={versionTextStyle}>{'Version ' + PACKAGE.version}</span>
       </a>
     </div>
