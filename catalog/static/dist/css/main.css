@@ -16132,7 +16132,8 @@ section.spinners {
   max-width: 200px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16148,23 +16149,34 @@ section.spinners {
   height: 36px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet .vf-horizontal-steppers--icon {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon {
   margin: 0;
   padding: 0;
   pointer-events: none;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet .vf-horizontal-steppers--icon::before {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon::before {
   pointer-events: none;
   font-size: 20px;
   color: white;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet .vf-horizontal-steppers--vf-icon-edit::before {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--numbers {
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--vf-icon-edit::before {
   font-size: 14px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet::after {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-numbers::after {
   content: '';
   background: #edf1f6;
   width: 100%;
@@ -16173,7 +16185,8 @@ section.spinners {
   left: 36px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete::after {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-numbers::after {
   background: #1964A3;
 }
 
@@ -16210,9 +16223,15 @@ section.spinners {
   right: 36px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-default {
   background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-numbers {
+  background: #1964A3;
+  color: #fff;
 }
 
 .news-outer-container {

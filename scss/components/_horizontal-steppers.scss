@@ -6,7 +6,8 @@
     flex-grow: 1;
     max-width: 200px;
 
-    .vf-horizontal-steppers--bullet {
+    .vf-horizontal-steppers--bullet-default,
+    .vf-horizontal-steppers--bullet-numbers {
       display: flex;
       background: rgb(237, 241, 246);
       justify-content: center;
@@ -28,13 +29,20 @@
         }
       }
 
+      .vf-horizontal-steppers--numbers {
+        pointer-events: none;
+        margin: 0;
+        padding: 0;
+      }
+
       .vf-horizontal-steppers--vf-icon-edit::before {
         font-size: 14px;
       }
     }
 
     &:not(:last-child) {
-      .vf-horizontal-steppers--bullet {
+      .vf-horizontal-steppers--bullet-default,
+      .vf-horizontal-steppers--bullet-numbers {
         &::after {
           content: '';
           background: rgb(237, 241, 246);
@@ -45,7 +53,8 @@
         }
       }
 
-      .vf-horizontal-steppers--complete {
+      .vf-horizontal-steppers--complete-default,
+      .vf-horizontal-steppers--complete-numbers {
         &::after {
           background: $vattenfall-button-blue;
         }
@@ -86,9 +95,15 @@
       right: 36px;
     }
 
-    .vf-horizontal-steppers--active,
-    .vf-horizontal-steppers--complete {
+    .vf-horizontal-steppers--active-default,
+    .vf-horizontal-steppers--complete-default {
       background: $vattenfall-button-blue;
+    }
+
+    .vf-horizontal-steppers--active-numbers,
+    .vf-horizontal-steppers--complete-numbers {
+      background: $vattenfall-button-blue;
+      color: #fff;
     }
   }
 }
