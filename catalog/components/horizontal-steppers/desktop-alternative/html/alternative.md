@@ -1,4 +1,4 @@
-### Desktop Alternative
+### Desktop / Alternative
 
 ```html
 <!-- showSource: true

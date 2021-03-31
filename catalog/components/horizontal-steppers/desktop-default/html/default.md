@@ -1,4 +1,4 @@
-### Desktop Default
+### Desktop / Default
 
 ```html
 <!-- showSource: true

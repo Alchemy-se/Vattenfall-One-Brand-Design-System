@@ -48,7 +48,7 @@
     );
 
     if (bullets.length > 0) {
-      if (type === 'alternative' || type === "default-mobile") {
+      if (type === 'alternative' || type === "default-mobile" || type === "numbers-mobile") {
         hideLabels(bullets);
       }
       addActiveClass(bullets, type);
@@ -60,4 +60,5 @@
   horizontalTabBar('numbers');
   horizontalTabBar('alternative');
   horizontalTabBar("default-mobile")
+  horizontalTabBar("numbers-mobile")
 })(jQuery);

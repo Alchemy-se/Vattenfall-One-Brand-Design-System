@@ -1,13 +1,15 @@
 .vf-horizontal-steppers--container {
   display: flex;
-  .vf-horizontal-steppers--step, .vf-horizontal-steppers--step-mobile {
+  .vf-horizontal-steppers--step,
+  .vf-horizontal-steppers--step-mobile {
     position: relative;
     width: 236px;
 
     .vf-horizontal-steppers--bullet-default,
     .vf-horizontal-steppers--bullet-numbers,
     .vf-horizontal-steppers--bullet-alternative,
-    .vf-horizontal-steppers--bullet-default-mobile {
+    .vf-horizontal-steppers--bullet-default-mobile,
+    .vf-horizontal-steppers--bullet-numbers-mobile {
       display: flex;
       background: rgb(237, 241, 246);
       justify-content: center;
@@ -44,7 +46,8 @@
       .vf-horizontal-steppers--bullet-default,
       .vf-horizontal-steppers--bullet-numbers,
       .vf-horizontal-steppers--bullet-alternative,
-      .vf-horizontal-steppers--bullet-default-mobile {
+      .vf-horizontal-steppers--bullet-default-mobile,
+      .vf-horizontal-steppers--bullet-numbers-mobile {
         &::after {
           content: '';
           background: rgb(237, 241, 246);
@@ -58,7 +61,8 @@
       .vf-horizontal-steppers--complete-default,
       .vf-horizontal-steppers--complete-numbers,
       .vf-horizontal-steppers--complete-alternative,
-      .vf-horizontal-steppers--complete-default-mobile {
+      .vf-horizontal-steppers--complete-default-mobile,
+      .vf-horizontal-steppers--complete-numbers-mobile {
         &::after {
           background: $vattenfall-button-blue;
         }
@@ -116,7 +120,10 @@
     }
 
     .vf-horizontal-steppers--active-numbers,
-    .vf-horizontal-steppers--complete-numbers {
+    .vf-horizontal-steppers--complete-numbers,
+    .vf-horizontal-steppers--active-numbers-mobile,
+    .vf-horizontal-steppers--complete-numbers-mobile
+     {
       background: $vattenfall-button-blue;
       color: #fff;
     }

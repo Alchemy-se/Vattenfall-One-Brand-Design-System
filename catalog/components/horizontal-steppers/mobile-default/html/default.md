@@ -1,4 +1,4 @@
-### Mobile Default
+### Mobile / Default
 
 ```html
 <!-- showSource: true
