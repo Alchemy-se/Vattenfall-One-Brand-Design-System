@@ -16119,21 +16119,16 @@ section.spinners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step {
   position: relative;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 200px;
+  width: 200px;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16150,33 +16145,38 @@ section.spinners {
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon {
   margin: 0;
   padding: 0;
   pointer-events: none;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon::before,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon::before {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon::before {
   pointer-events: none;
   font-size: 20px;
   color: white;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--numbers,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--numbers {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--numbers {
   pointer-events: none;
   margin: 0;
   padding: 0;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--vf-icon-edit::before,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--vf-icon-edit::before {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--vf-icon-edit::before {
   font-size: 14px;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-default::after,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-numbers::after {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-alternative::after {
   content: '';
   background: #edf1f6;
   width: 100%;
@@ -16186,7 +16186,8 @@ section.spinners {
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-default::after,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-numbers::after {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-alternative::after {
   background: #1964A3;
 }
 
@@ -16196,6 +16197,8 @@ section.spinners {
   font-weight: 500;
   height: 16px;
   line-height: 16px;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:first-child):not(:last-child) > label {
@@ -16206,10 +16209,20 @@ section.spinners {
   transform: translateX(-50%);
 }
 
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:first-child > label {
+  margin-right: 18px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:last-child {
+  width: 36px;
+}
+
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step:last-child > label {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   margin-left: 36px;
+  width: auto;
+  text-align: right;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--line {
@@ -16232,6 +16245,11 @@ section.spinners {
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-numbers {
   background: #1964A3;
   color: #fff;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-alternative {
+  background: #1964A3;
 }
 
 .news-outer-container {

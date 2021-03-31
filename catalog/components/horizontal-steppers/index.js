@@ -5,8 +5,9 @@ import PageHeader from '../../lib/pageHeader'
 
 import desktopDefault from "./desktop-default/html/default.md"
 import desktopNumbers from "./desktop-numbers/html/numbers.md"
+import desktopAlternative from "./desktop-alternative/html/alternative.md"
 
-const markdown = desktopDefault + desktopNumbers
+const markdown = desktopDefault + desktopNumbers + desktopAlternative
 
 
 const index = ({ uri }) => {
