@@ -20,12 +20,12 @@
   }
 
   function addActiveClass(bullets, type) {
-    if (type === 'default' || type === 'alternative') {
+    if (type === 'default' || type === 'alternative' || type === "default-mobile") {
       bullets[activeIndex(bullets, type)].children[0].classList.add(
         'vf-icon-edit'
       );
       bullets[activeIndex(bullets, type)].children[0].classList.add(
-        "'vf-horizontal-steppers--vf-icon-edit'"
+        "vf-horizontal-steppers--vf-icon-edit"
       );
     }
     bullets[activeIndex(bullets, type)].nextElementSibling.style =
@@ -34,7 +34,7 @@
 
   function completePrevious(bullets, type) {
     for (let i = 0; i < activeIndex(bullets, type); i++) {
-      if (type === 'default' || type === 'alternative') {
+      if (type === 'default' || type === 'alternative' || type === "default-mobile") {
         bullets[i].children[0].classList.add('vf-icon-check');
       }
       bullets[i].classList.add(`vf-horizontal-steppers--complete-${type}`);
@@ -42,13 +42,13 @@
     }
   }
 
-  function horizontalTabBarDesktop(type) {
+  function horizontalTabBar(type) {
     const bullets = document.getElementsByClassName(
       `vf-horizontal-steppers--bullet-${type}`
     );
 
     if (bullets.length > 0) {
-      if (type === 'alternative') {
+      if (type === 'alternative' || type === "default-mobile") {
         hideLabels(bullets);
       }
       addActiveClass(bullets, type);
@@ -56,7 +56,8 @@
     }
   }
 
-  horizontalTabBarDesktop('default');
-  horizontalTabBarDesktop('numbers');
-  horizontalTabBarDesktop('alternative');
+  horizontalTabBar('default');
+  horizontalTabBar('numbers');
+  horizontalTabBar('alternative');
+  horizontalTabBar("default-mobile")
 })(jQuery);

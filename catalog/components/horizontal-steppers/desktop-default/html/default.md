@@ -17,7 +17,8 @@
   <div class="vf-horizontal-steppers--step">
     <div
       id="vf-horizontal-step-2"
-      class="vf-horizontal-steppers--bullet-default "
+      class="vf-horizontal-steppers--bullet-default
+      vf-horizontal-steppers--active-default"
     >
       <span class="vf-horizontal-steppers--icon"></span>
     </div>
@@ -27,7 +28,7 @@
   <div class="vf-horizontal-steppers--step">
     <div
       id="vf-horizontal-step-3"
-      class="vf-horizontal-steppers--bullet-default vf-horizontal-steppers--active-default"
+      class="vf-horizontal-steppers--bullet-default"
     >
       <span class="vf-horizontal-steppers--icon"></span>
     </div>

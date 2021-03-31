@@ -7,7 +7,10 @@ import desktopDefault from "./desktop-default/html/default.md"
 import desktopNumbers from "./desktop-numbers/html/numbers.md"
 import desktopAlternative from "./desktop-alternative/html/alternative.md"
 
-const markdown = desktopDefault + desktopNumbers + desktopAlternative
+import mobileDefault from "./mobile-default/html/default.md"
+
+
+const markdown = desktopDefault + desktopNumbers + desktopAlternative + mobileDefault
 
 
 const index = ({ uri }) => {
