@@ -1,0 +1,193 @@
+.vf-horizontal-steppers--container {
+  display: flex;
+  .vf-horizontal-steppers--step,
+  .vf-horizontal-steppers--step-mobile {
+    position: relative;
+    width: 236px;
+
+    .vf-horizontal-steppers--bullet-default,
+    .vf-horizontal-steppers--bullet-numbers,
+    .vf-horizontal-steppers--bullet-alternative,
+    .vf-horizontal-steppers--bullet-default-mobile,
+    .vf-horizontal-steppers--bullet-numbers-mobile {
+      display: flex;
+      background: rgb(237, 241, 246);
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 50%;
+
+      width: 36px;
+      height: 36px;
+
+      .vf-horizontal-steppers--icon {
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+        &::before {
+          pointer-events: none;
+          font-size: 20px;
+          color: white;
+        }
+      }
+
+      .vf-horizontal-steppers--numbers {
+        pointer-events: none;
+        margin: 0;
+        padding: 0;
+        font-family: 'Vattenfall Hall Bold NORDx';
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .vf-horizontal-steppers--vf-icon-edit::before {
+        font-size: 14px;
+      }
+    }
+
+    &:not(:last-child) {
+      .vf-horizontal-steppers--bullet-default,
+      .vf-horizontal-steppers--bullet-numbers,
+      .vf-horizontal-steppers--bullet-alternative,
+      .vf-horizontal-steppers--bullet-default-mobile,
+      .vf-horizontal-steppers--bullet-numbers-mobile {
+        &::after {
+          content: '';
+          background: rgb(237, 241, 246);
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          left: 36px;
+        }
+      }
+
+      .vf-horizontal-steppers--complete-default,
+      .vf-horizontal-steppers--complete-numbers,
+      .vf-horizontal-steppers--complete-alternative,
+      .vf-horizontal-steppers--complete-default-mobile,
+      .vf-horizontal-steppers--complete-numbers-mobile {
+        &::after {
+          background: $vattenfall-button-blue;
+        }
+      }
+    }
+
+    > label {
+      font-size: 12px;
+      margin-bottom: 0;
+      font-weight: 500;
+      height: 16px;
+      line-height: 16px;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      > label {
+        text-align: center;
+        width: 100%;
+        margin-left: 18px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &:first-child {
+      > label {
+        margin-right: 18px;
+      }
+    }
+
+    &:last-child {
+      width: 36px;
+      > label {
+        transform: translateX(-100%);
+        margin-left: 36px;
+        width: auto;
+        text-align: right;
+      }
+    }
+
+    .vf-horizontal-steppers--line {
+      background: lightgrey;
+      height: 4px;
+      position: absolute;
+      transform: translateX(-100%);
+      width: calc(100% - 36px);
+      top: 16px;
+      right: 36px;
+    }
+
+    .vf-horizontal-steppers--active-default,
+    .vf-horizontal-steppers--complete-default {
+      background: $vattenfall-button-blue;
+    }
+
+    .vf-horizontal-steppers--active-numbers,
+    .vf-horizontal-steppers--complete-numbers,
+    .vf-horizontal-steppers--active-numbers-mobile,
+    .vf-horizontal-steppers--complete-numbers-mobile {
+      background: $vattenfall-button-blue;
+      color: #fff;
+    }
+
+    .vf-horizontal-steppers--active-alternative,
+    .vf-horizontal-steppers--complete-alternative,
+    .vf-horizontal-steppers--active-default-mobile,
+    .vf-horizontal-steppers--complete-default-mobile {
+      background: $vattenfall-button-blue;
+    }
+  }
+
+  .vf-horizontal-steppers--step-mobile {
+    width: 98px;
+  }
+
+  .vf-horizontal-steppers--dash,
+  .vf-horizontal-steppers--portal,
+  .vf-horizontal-steppers--portal-details {
+    display: flex;
+    position: relative;
+    height: 30px;
+
+    .vf-horizontal-steppers--dash--alternative-mobile {
+      &:first-child {
+        margin-left: 0;
+      }
+      background: rgb(237, 241, 246);
+      border-radius: 0px;
+      height: 4px;
+      width: 50px;
+      margin-left: 6px;
+    }
+
+    .vf-horizontal-steppers--portal-mobile,
+    .vf-horizontal-steppers--portal-details-mobile {
+      background: rgb(237, 241, 246);
+      border-radius: 0px;
+      height: 4px;
+      width: 84px;
+    }
+
+    .vf-horizontal-steppers--active-alternative-mobile,
+    .vf-horizontal-steppers--complete-alternative-mobile,
+    .vf-horizontal-steppers--active-portal-mobile,
+    .vf-horizontal-steppers--complete-portal-mobile,
+    .vf-horizontal-steppers--active-portal-details-mobile,
+    .vf-horizontal-steppers--complete-portal-details-mobile {
+      background: $vattenfall-button-blue;
+    }
+
+    > label {
+      position: absolute;
+      margin-bottom: 0;
+      color: rgb(0, 0, 0);
+      font-family: Vattenfall Hall Bold NORDx;
+      font-size: 14px;
+      font-weight: bold;
+      height: 16px;
+      line-height: 16px;
+      width: 247px;
+      top: 11px;
+    }
+  }
+}
