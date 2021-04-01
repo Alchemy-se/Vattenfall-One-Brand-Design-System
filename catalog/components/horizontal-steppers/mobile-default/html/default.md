@@ -1,8 +1,10 @@
 ### Mobile / Default
 
+`.vf-horizontal-steppers--active-default-mobile`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
   <div class="vf-horizontal-steppers--step-mobile">
     <div

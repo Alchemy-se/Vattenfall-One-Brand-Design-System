@@ -1,8 +1,10 @@
 ### Desktop / Alternative
 
+`.vf-horizontal-steppers--active-alternative`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
   <div class="vf-horizontal-steppers--step">
     <div

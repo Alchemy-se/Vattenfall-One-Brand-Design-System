@@ -1,8 +1,10 @@
 ### Mobile / Numbers
 
+`.vf-horizontal-steppers--active-numbers-mobile`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
 
     <div class="vf-horizontal-steppers--step-mobile">

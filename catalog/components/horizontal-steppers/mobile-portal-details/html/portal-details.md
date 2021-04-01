@@ -1,8 +1,10 @@
 ### Mobile / Portal with details
 
+`.vf-horizontal-steppers--active-portal-details-mobile`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
   <div class="vf-horizontal-steppers--portal-details">
     <div

@@ -1,8 +1,10 @@
 ### Mobile / Alternative
 
+`.vf-horizontal-steppers--active-alternative-mobile`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
   <div class="vf-horizontal-steppers--dash">
     <div

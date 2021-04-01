@@ -1,8 +1,10 @@
 ### Desktop / Numbers
 
+`.vf-horizontal-steppers--active-numbers`
+
 ```html
-<!-- showSource: true
---- -->
+showSource: true
+---
 <div class="vf-horizontal-steppers--container">
 
     <div class="vf-horizontal-steppers--step">
