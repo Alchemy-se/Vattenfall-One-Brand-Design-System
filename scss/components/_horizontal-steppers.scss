@@ -35,6 +35,9 @@
         pointer-events: none;
         margin: 0;
         padding: 0;
+        font-family: 'Vattenfall Hall Bold NORDx';
+        font-weight: bold;
+        font-size: 16px;
       }
 
       .vf-horizontal-steppers--vf-icon-edit::before {
@@ -139,7 +142,9 @@
     width: 98px;
   }
 
-  .vf-horizontal-steppers--dash {
+  .vf-horizontal-steppers--dash,
+  .vf-horizontal-steppers--portal,
+  .vf-horizontal-steppers--portal-details {
     display: flex;
     position: relative;
     height: 30px;
@@ -155,8 +160,20 @@
       margin-left: 6px;
     }
 
+    .vf-horizontal-steppers--portal-mobile,
+    .vf-horizontal-steppers--portal-details-mobile {
+      background: rgb(237, 241, 246);
+      border-radius: 0px;
+      height: 4px;
+      width: 84px;
+    }
+
     .vf-horizontal-steppers--active-alternative-mobile,
-    .vf-horizontal-steppers--complete-alternative-mobile {
+    .vf-horizontal-steppers--complete-alternative-mobile,
+    .vf-horizontal-steppers--active-portal-mobile,
+    .vf-horizontal-steppers--complete-portal-mobile,
+    .vf-horizontal-steppers--active-portal-details-mobile,
+    .vf-horizontal-steppers--complete-portal-details-mobile {
       background: $vattenfall-button-blue;
     }
 
@@ -164,9 +181,9 @@
       position: absolute;
       margin-bottom: 0;
       color: rgb(0, 0, 0);
-      // font-family: VattenfallHall-Bold;
+      font-family: Vattenfall Hall Bold NORDx;
       font-size: 14px;
-      // font-weight: bold;
+      font-weight: bold;
       height: 16px;
       line-height: 16px;
       width: 247px;

@@ -31,7 +31,7 @@
       );
     }
 
-    if (type === 'alternative-mobile') {
+    if (type === 'alternative-mobile' || type === 'portal-details-mobile') {
       const htmlText =
         `${index + 1} of ${steppers.length} - ` +
         steppers[index].nextElementSibling.innerText;
@@ -39,7 +39,8 @@
       steppers[index].nextElementSibling.innerText = htmlText;
     }
 
-    steppers[index].nextElementSibling.style = 'font-weight:bold;';
+    steppers[index].nextElementSibling.style =
+      'font-family: Vattenfall Hall Bold NORDx; font-weight:bold;';
   }
 
   function completePreviousBullet(bullets, type, index) {
@@ -86,11 +87,22 @@
     );
 
     if (dash.length > 0) {
-      let index = activeIndex(dash, type);
-      let length = dash.length;
       hideLabels(dash);
-      addActiveClass(dash, type, index);
-      completePreviousDash(dash, type, index);
+      addActiveClass(dash, type, activeIndex(dash, type));
+      completePreviousDash(dash, type, activeIndex(dash, type));
+    }
+  }
+
+  function portalStepper(type) {
+    const portal = document.getElementsByClassName(
+      `vf-horizontal-steppers--${type}`
+    );
+    if (portal.length > 0) {
+      if (type === 'portal-details-mobile') {
+        hideLabels(portal);
+      }
+      addActiveClass(portal, type, activeIndex(portal, type));
+      completePreviousDash(portal, type, activeIndex(portal, type));
     }
   }
 
@@ -100,4 +112,6 @@
   bulletStepper('default-mobile');
   bulletStepper('numbers-mobile');
   dashedStepper('alternative-mobile');
+  portalStepper('portal-mobile');
+  portalStepper('portal-details-mobile');
 })(jQuery);

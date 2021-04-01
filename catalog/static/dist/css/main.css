@@ -16195,6 +16195,9 @@ section.spinners {
   pointer-events: none;
   margin: 0;
   padding: 0;
+  font-family: 'Vattenfall Hall Bold NORDx';
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--vf-icon-edit::before,
@@ -16326,7 +16329,9 @@ section.spinners {
   width: 98px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--dash {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16334,7 +16339,9 @@ section.spinners {
   height: 30px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--dash--alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--dash--alternative-mobile {
   background: #edf1f6;
   border-radius: 0px;
   height: 4px;
@@ -16342,20 +16349,54 @@ section.spinners {
   margin-left: 6px;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile:first-child {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile:first-child,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--dash--alternative-mobile:first-child,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--dash--alternative-mobile:first-child {
   margin-left: 0;
 }
 
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--portal-details-mobile {
+  background: #edf1f6;
+  border-radius: 0px;
+  height: 4px;
+  width: 84px;
+}
+
 .vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-alternative-mobile,
-.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-alternative-mobile {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-portal-details-mobile {
   background: #1964A3;
 }
 
-.vf-horizontal-steppers--container .vf-horizontal-steppers--dash > label {
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details > label {
   position: absolute;
   margin-bottom: 0;
   color: black;
+  font-family: Vattenfall Hall Bold NORDx;
   font-size: 14px;
+  font-weight: bold;
   height: 16px;
   line-height: 16px;
   width: 247px;
