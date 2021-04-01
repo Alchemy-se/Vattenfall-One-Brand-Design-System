@@ -1,7 +1,5 @@
 ### Mobile / Alternative
 
-`.vf-horizontal-steppers--active-alternative-mobile`
-
 ```html
 showSource: true
 ---

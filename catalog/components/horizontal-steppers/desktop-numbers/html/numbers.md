@@ -1,7 +1,5 @@
 ### Desktop / Numbers
 
-`.vf-horizontal-steppers--active-numbers`
-
 ```html
 showSource: true
 ---

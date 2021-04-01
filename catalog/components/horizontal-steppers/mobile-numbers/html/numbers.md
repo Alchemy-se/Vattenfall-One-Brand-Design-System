@@ -1,7 +1,5 @@
 ### Mobile / Numbers
 
-`.vf-horizontal-steppers--active-numbers-mobile`
-
 ```html
 showSource: true
 ---

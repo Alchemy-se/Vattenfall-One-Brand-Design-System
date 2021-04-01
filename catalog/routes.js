@@ -87,6 +87,7 @@ import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
 import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
 import GuideLinesTabBar from "./guidelines/tab-bar"
+import GuideLinesHorizontalSteppers from "./guidelines/horizontal-steppers"
 
 // Other
 import Login from './admin/login'
@@ -567,7 +568,16 @@ const GUIDELINES_ROUTES = [
       </GuidelinesWrapper>
     ),
   },
-]
+  {
+    path: '/guidelines/horizontal-steppers',
+    name: 'Horizontal Steppers',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesHorizontalSteppers />
+      </GuidelinesWrapper>
+    ),
+  },
+];
 
 const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange)

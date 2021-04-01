@@ -23,6 +23,7 @@ const MENU_GROUP_ITEMS = [
   { path: '/spinner', name: 'Spinner' },
   { path: '/visual-pickers', name: 'Visual Pickers' },
   { path: '/tab-bar', name: 'Tab bar' },
+  { path: '/horizontal-steppers', name: 'Horizontal Steppers' },
 ]
 
 const ComponentsMenu = () => {

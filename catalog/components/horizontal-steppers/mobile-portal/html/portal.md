@@ -1,8 +1,5 @@
 ### Mobile / Portal
 
-`.vf-horizontal-steppers--active-portal-mobile`
-
-
 ```html
 showSource: true
 ---

@@ -1,7 +1,5 @@
 ### Mobile / Default
 
-`.vf-horizontal-steppers--active-default-mobile`
-
 ```html
 showSource: true
 ---

@@ -1,7 +1,5 @@
 ### Desktop / Alternative
 
-`.vf-horizontal-steppers--active-alternative`
-
 ```html
 showSource: true
 ---
