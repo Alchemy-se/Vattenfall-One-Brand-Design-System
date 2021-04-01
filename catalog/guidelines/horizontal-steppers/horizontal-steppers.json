@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Horizontal Steppers",
+    "description": "Horizontal Steppers",
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers",
+    "objectID": "horizontal-steppers-guideline",
+    "children": [
+      {
+        "name": "Desktop / Default"
+      },
+      {
+        "name": "Desktop / Numbers"
+      },
+      {
+        "name": "Desktop / Alternative"
+      },
+      {
+        "name": "Mobile / Default"
+      },
+      {
+        "name": "Mobile / Numbers"
+      },
+      {
+        "name": "Mobile / Alternative"
+      },
+      {
+        "name": "Mobile / Portal"
+      },
+      {
+        "name": "Mobile / Portal with details"
+      }
+    ]
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#desktop-/-default",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Desktop / Default",
+    "id": "horizontal-steppers-desktop-/-default"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#desktop-/-numbers",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Desktop / Numbers",
+    "id": "horizontal-steppers-desktop-/-numbers"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#desktop-/-alternative",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Desktop / Alternative",
+    "id": "horizontal-steppers-desktop-/-alternative"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#mobile-/-default",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Mobile / Default",
+    "id": "horizontal-steppers-mobile-/-default"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#mobile-/-numbers",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Mobile / Numbers",
+    "id": "horizontal-steppers-mobile-/-numbers"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#mobile-/-alternative",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Mobile / Alternative",
+    "id": "horizontal-steppers-mobile-/-alternative"
+  },
+  {
+    "parent": [
+      {
+        "name": "Horizontal Steppers"
+      }
+    ],
+    "type": "guideline",
+    "uri": "/guidelines/horizontal-steppers#mobile-/-portal",
+    "description": "",
+    "objectID": "horizontal-steppers-guideline",
+    "name": "Mobile / Portal",
+    "id": "horizontal-steppers-mobile-/-portal"
+  }
+]

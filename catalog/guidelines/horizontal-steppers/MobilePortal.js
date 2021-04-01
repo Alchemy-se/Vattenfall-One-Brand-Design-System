@@ -9,7 +9,7 @@ const MobilePortal = () => {
          displaying steps and detail (used in portal) Lenght of blue bar is
          determined through division of steps that being used. Below a 4 step
          example. Placement of text could be placed above as below and 14 or
-         16px size depending on usage.{' '}
+         16px size depending on usage.
        </p>
        <div
          className='vf-horizontal-steppers--container'

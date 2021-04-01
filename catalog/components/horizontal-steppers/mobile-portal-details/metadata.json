@@ -2,7 +2,7 @@
   "id": "mobile-portal-details",
   "uri": "#mobile-/-portal-with-details",
   "name": "Mobile / Portal with details",
-  "guidelineUri": "#mobile-/-portal-with-details",
+  "guidelineUri": "#mobile-/-portal",
   "description": null,
   "react": {
     "exists": false,
