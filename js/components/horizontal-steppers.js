@@ -1,40 +1,54 @@
 (function ($) {
-  function activeIndex(bullets, type) {
-    bulletsArray = [];
-    for (let i = 0; i < bullets.length; i++) {
-      bulletsArray.push(bullets[i]);
+  function activeIndex(stepper, type) {
+    stepperArray = [];
+    for (let i = 0; i < stepper.length; i++) {
+      stepperArray.push(stepper[i]);
     }
 
-    let filterActive = bulletsArray.filter(bullet =>
+    let filterActive = stepperArray.filter(bullet =>
       bullet.classList.contains(`vf-horizontal-steppers--active-${type}`)
     );
 
-    let activeIndex = bulletsArray.indexOf(filterActive[0]);
+    let activeIndex = stepperArray.indexOf(filterActive[0]);
     return activeIndex;
   }
 
-  function hideLabels(bullets) {
-    for (bullet of bullets) {
-      bullet.nextElementSibling.style="display:none;";
+  function hideLabels(steppers) {
+    for (stepper of steppers) {
+      stepper.nextElementSibling.style = 'display:none;';
     }
   }
 
-  function addActiveClass(bullets, type) {
-    if (type === 'default' || type === 'alternative' || type === "default-mobile") {
-      bullets[activeIndex(bullets, type)].children[0].classList.add(
-        'vf-icon-edit'
-      );
-      bullets[activeIndex(bullets, type)].children[0].classList.add(
-        "vf-horizontal-steppers--vf-icon-edit"
+  function addActiveClass(steppers, type, index) {
+    if (
+      type === 'default' ||
+      type === 'alternative' ||
+      type === 'default-mobile'
+    ) {
+      steppers[index].children[0].classList.add('vf-icon-edit');
+      steppers[index].children[0].classList.add(
+        'vf-horizontal-steppers--vf-icon-edit'
       );
     }
-    bullets[activeIndex(bullets, type)].nextElementSibling.style =
-      'font-weight:bold;';
+
+    if (type === 'alternative-mobile') {
+      const htmlText =
+        `${index + 1} of ${steppers.length} - ` +
+        steppers[index].nextElementSibling.innerText;
+
+      steppers[index].nextElementSibling.innerText = htmlText;
+    }
+
+    steppers[index].nextElementSibling.style = 'font-weight:bold;';
   }
 
-  function completePrevious(bullets, type) {
-    for (let i = 0; i < activeIndex(bullets, type); i++) {
-      if (type === 'default' || type === 'alternative' || type === "default-mobile") {
+  function completePreviousBullet(bullets, type, index) {
+    for (let i = 0; i < index; i++) {
+      if (
+        type === 'default' ||
+        type === 'alternative' ||
+        type === 'default-mobile'
+      ) {
         bullets[i].children[0].classList.add('vf-icon-check');
       }
       bullets[i].classList.add(`vf-horizontal-steppers--complete-${type}`);
@@ -42,23 +56,48 @@
     }
   }
 
-  function horizontalTabBar(type) {
+  function completePreviousDash(dash, type, index) {
+    for (let i = 0; i < index; i++) {
+      dash[i].classList.add(`vf-horizontal-steppers--complete-${type}`);
+    }
+  }
+
+  function bulletStepper(type) {
     const bullets = document.getElementsByClassName(
       `vf-horizontal-steppers--bullet-${type}`
     );
 
     if (bullets.length > 0) {
-      if (type === 'alternative' || type === "default-mobile" || type === "numbers-mobile") {
+      if (
+        type === 'alternative' ||
+        type === 'default-mobile' ||
+        type === 'numbers-mobile'
+      ) {
         hideLabels(bullets);
       }
-      addActiveClass(bullets, type);
-      completePrevious(bullets, type);
+      addActiveClass(bullets, type, activeIndex(bullets, type));
+      completePreviousBullet(bullets, type, activeIndex(bullets, type));
     }
   }
 
-  horizontalTabBar('default');
-  horizontalTabBar('numbers');
-  horizontalTabBar('alternative');
-  horizontalTabBar("default-mobile")
-  horizontalTabBar("numbers-mobile")
+  function dashedStepper(type) {
+    const dash = document.getElementsByClassName(
+      `vf-horizontal-steppers--dash--${type}`
+    );
+
+    if (dash.length > 0) {
+      let index = activeIndex(dash, type);
+      let length = dash.length;
+      hideLabels(dash);
+      addActiveClass(dash, type, index);
+      completePreviousDash(dash, type, index);
+    }
+  }
+
+  bulletStepper('default');
+  bulletStepper('numbers');
+  bulletStepper('alternative');
+  bulletStepper('default-mobile');
+  bulletStepper('numbers-mobile');
+  dashedStepper('alternative-mobile');
 })(jQuery);

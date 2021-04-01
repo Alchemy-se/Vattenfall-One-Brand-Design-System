@@ -122,8 +122,7 @@
     .vf-horizontal-steppers--active-numbers,
     .vf-horizontal-steppers--complete-numbers,
     .vf-horizontal-steppers--active-numbers-mobile,
-    .vf-horizontal-steppers--complete-numbers-mobile
-     {
+    .vf-horizontal-steppers--complete-numbers-mobile {
       background: $vattenfall-button-blue;
       color: #fff;
     }
@@ -138,5 +137,40 @@
 
   .vf-horizontal-steppers--step-mobile {
     width: 98px;
+  }
+
+  .vf-horizontal-steppers--dash {
+    display: flex;
+    position: relative;
+    height: 30px;
+
+    .vf-horizontal-steppers--dash--alternative-mobile {
+      &:first-child {
+        margin-left: 0;
+      }
+      background: rgb(237, 241, 246);
+      border-radius: 0px;
+      height: 4px;
+      width: 50px;
+      margin-left: 6px;
+    }
+
+    .vf-horizontal-steppers--active-alternative-mobile,
+    .vf-horizontal-steppers--complete-alternative-mobile {
+      background: $vattenfall-button-blue;
+    }
+
+    > label {
+      position: absolute;
+      margin-bottom: 0;
+      color: rgb(0, 0, 0);
+      // font-family: VattenfallHall-Bold;
+      font-size: 14px;
+      // font-weight: bold;
+      height: 16px;
+      line-height: 16px;
+      width: 247px;
+      top: 11px;
+    }
   }
 }

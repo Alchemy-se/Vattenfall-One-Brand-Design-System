@@ -9,13 +9,15 @@ import desktopAlternative from './desktop-alternative/html/alternative.md';
 
 import mobileDefault from './mobile-default/html/default.md';
 import mobileNumbers from './mobile-numbers/html/numbers.md';
+import mobileAlternative from './mobile-alternative/html/alternative.md';
 
 const markdown =
   desktopDefault +
   desktopNumbers +
   desktopAlternative +
   mobileDefault +
-  mobileNumbers;
+  mobileNumbers +
+  mobileAlternative;
 
 const index = ({ uri }) => {
   return (

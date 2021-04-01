@@ -16326,6 +16326,42 @@ section.spinners {
   width: 98px;
 }
 
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 30px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile {
+  background: #edf1f6;
+  border-radius: 0px;
+  height: 4px;
+  width: 50px;
+  margin-left: 6px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile:first-child {
+  margin-left: 0;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-alternative-mobile {
+  background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash > label {
+  position: absolute;
+  margin-bottom: 0;
+  color: black;
+  font-size: 14px;
+  height: 16px;
+  line-height: 16px;
+  width: 247px;
+  top: 11px;
+}
+
 .news-outer-container {
   margin-top: 50px;
 }
