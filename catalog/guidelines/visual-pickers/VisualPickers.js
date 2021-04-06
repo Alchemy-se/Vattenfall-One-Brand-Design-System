@@ -237,7 +237,7 @@ const VisualPickers = () => {
 
 const disablePointer = {
   pointerEvents: 'none',
-  color: '#767676',
+  color: '#000',
 }
 
 const hoverStyle = {
