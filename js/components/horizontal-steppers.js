@@ -31,9 +31,14 @@
       );
     }
 
+    if (type === 'numbers' || type === 'numbers-mobile') {
+      steppers[index].children[0].style =
+        'font-family: Vattenfall Hall Bold NORDx; font-weight: bold;';
+    }
+
     if (type === 'alternative-mobile' || type === 'portal-details-mobile') {
       const htmlText =
-        `${index + 1} of ${steppers.length} - ` +
+        `${index + 1} of ${steppers.length} — ` +
         steppers[index].nextElementSibling.innerText;
 
       steppers[index].nextElementSibling.innerText = htmlText;
@@ -52,8 +57,14 @@
       ) {
         bullets[i].children[0].classList.add('vf-icon-check');
       }
+
       bullets[i].classList.add(`vf-horizontal-steppers--complete-${type}`);
       bullets[i].children[0].style = 'color:#fff;';
+
+      if (type === 'numbers' || type === 'numbers-mobile') {
+        bullets[i].children[0].style =
+          'font-family: Vattenfall Hall Bold NORDx; font-weight:bold;';
+      }
     }
   }
 
