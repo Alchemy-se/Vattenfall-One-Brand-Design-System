@@ -7,6 +7,7 @@ import MediumTwoLine from './MediumTwoLine'
 import MediumTwoLineIcon from './MediumTwoLineIcon'
 import Large from './Large'
 import Description from '../Description'
+import { nodeName } from 'jquery'
 
 const VisualPickers = () => {
   return (
@@ -63,7 +64,7 @@ const VisualPickers = () => {
             type={'radio'}
             select={'single-select'}
             divStyles={disabledStyle}
-            labelStyles={disablePointer}
+            labelStyles={disabledLabelStyle}
           />
         </Column>
       </div>
@@ -106,7 +107,7 @@ const VisualPickers = () => {
             type={'radio'}
             select={'single-select'}
             divStyles={disabledStyle}
-            labelStyles={disablePointer}
+            labelStyles={disabledLabelStyle}
           />
         </Column>
       </div>
@@ -146,7 +147,7 @@ const VisualPickers = () => {
             type={'radio'}
             select={'single-select'}
             divStyles={disabledStyle}
-            labelStyles={disablePointer}
+            labelStyles={disabledLabelStyle}
           />
         </Column>
       </div>
@@ -186,7 +187,7 @@ const VisualPickers = () => {
             type={'radio'}
             select={'single-select'}
             divStyles={disabledStyle}
-            labelStyles={disablePointer}
+            labelStyles={disabledLabelStyle}
           />
         </Column>
       </div>
@@ -226,35 +227,39 @@ const VisualPickers = () => {
             type={'radio'}
             select={'single-select'}
             divStyles={disabledStyle}
-            labelStyles={disablePointer}
+            labelStyles={disabledLabelStyle}
             imgStyles={disabledImgStyle}
           />
         </Column>
       </div>
     </Fragment>
-  )
+  );
 }
 
 const disablePointer = {
   pointerEvents: 'none',
-  color: '#767676',
 }
 
 const hoverStyle = {
   border: '1px solid rgb(153, 153, 153)',
   pointerEvents: 'none',
-}
+};
 
 const activeStyle = {
   border: '2px solid #1964A3',
   pointerEvents: 'none',
   background: '#EDF1F6',
-}
+};
 
 const disabledStyle = {
   background: '#EEEEEE',
   pointerEvents: 'none',
 }
+
+const disabledLabelStyle = {
+  color: '#767676',
+  pointerEvents: "none"
+};
 
 const disabledImgStyle = {
   opacity: '0.65',

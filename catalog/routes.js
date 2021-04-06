@@ -40,6 +40,7 @@ import CookieBanner from './components/cookie-banner/cookie-banner'
 import Navigation from './components/navigation/Navigation'
 import Spinner from "./components/spinner/Spinner"
 import VisualPickers from "./components/visual-pickers"
+import HorizontalSteppers from "./components/horizontal-steppers"
 
 // PARALLAX
 import ParallaxImageBlock from "./components/parallax-image-block/parallax-image-block";
@@ -87,6 +88,7 @@ import GuideLinesNavigation from './guidelines/navigation/Navigation'
 import GuideLinesSpinner from "./guidelines/spinner/Spinner"
 import GuideLineVisualPickers from "./guidelines/visual-pickers/VisualPickers"
 import GuideLinesTabBar from "./guidelines/tab-bar"
+import GuideLinesHorizontalSteppers from "./guidelines/horizontal-steppers"
 
 // Other
 import Login from './admin/login'
@@ -212,6 +214,11 @@ const COMPONENTS_ROUTES = [
     path: '/css/visual-pickers',
     name: 'Visual Pickers',
     component: <VisualPickers uri={'/components/css/visual-pickers'} />,
+  },
+  {
+    path: '/css/horizontal-steppers',
+    name: 'Horizontal Steppers',
+    component: <HorizontalSteppers uri={'/components/css/horizontal-steppers'} />,
   },
   {
     path: '/css/preloader',
@@ -562,7 +569,16 @@ const GUIDELINES_ROUTES = [
       </GuidelinesWrapper>
     ),
   },
-]
+  {
+    path: '/guidelines/horizontal-steppers',
+    name: 'Horizontal Steppers',
+    component: (
+      <GuidelinesWrapper>
+        <GuideLinesHorizontalSteppers />
+      </GuidelinesWrapper>
+    ),
+  },
+];
 
 const Routes = ({ onRouteChange, openModal }) => {
   usePageViews(onRouteChange)

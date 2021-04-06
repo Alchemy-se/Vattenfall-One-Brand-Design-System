@@ -48,6 +48,7 @@ const MENU_GROUP_ITEMS = {
     { path: '/css/topbar', name: 'Top Bar' },
     { path: '/css/visual-pickers', name: 'Visual Pickers' },
     { path: '/css/logotype', name: 'Logotypes' },
+    { path: '/css/horizontal-steppers', name: 'Horizontal Steppers' },
   ],
   organisms: [
     { path: '/css/organisms', name: 'Intro' },

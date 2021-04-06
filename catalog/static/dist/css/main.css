@@ -15915,10 +15915,6 @@ div[class*="vf-calendar"] .daterangepicker .calendar-table .month {
   margin-right: 8px;
 }
 
-#content-container > div > div.index__container___3_kmB.markdown-body > p:nth-child(21) {
-  margin-bottom: 100px;
-}
-
 section.spinners {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16114,6 +16110,293 @@ section.spinners {
   border: 2px solid #1964A3;
   background: #fff;
   padding: 7px;
+}
+
+.vf-horizontal-steppers--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile {
+  position: relative;
+  width: 236px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #edf1f6;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--icon,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--icon {
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--icon::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--icon::before {
+  pointer-events: none;
+  font-size: 20px;
+  color: white;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--numbers {
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Vattenfall Hall NORDx';
+  font-size: 16px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-alternative .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-default-mobile .vf-horizontal-steppers--vf-icon-edit::before,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--bullet-numbers-mobile .vf-horizontal-steppers--vf-icon-edit::before {
+  font-size: 14px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-alternative::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-default-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--bullet-numbers-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--bullet-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--bullet-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--bullet-alternative::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--bullet-default-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--bullet-numbers-mobile::after {
+  content: '';
+  background: #edf1f6;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 36px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-alternative::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-default-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:last-child) .vf-horizontal-steppers--complete-numbers-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--complete-default::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--complete-numbers::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--complete-alternative::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--complete-default-mobile::after,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:last-child) .vf-horizontal-steppers--complete-numbers-mobile::after {
+  background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile > label {
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 500;
+  height: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:not(:first-child):not(:last-child) > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:not(:first-child):not(:last-child) > label {
+  text-align: center;
+  width: 100%;
+  margin-left: 18px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:first-child > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:first-child > label {
+  margin-right: 18px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:last-child,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:last-child {
+  width: 36px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step:last-child > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile:last-child > label {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  margin-left: 36px;
+  width: auto;
+  text-align: right;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--line,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--line {
+  background: lightgrey;
+  height: 4px;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  width: calc(100% - 36px);
+  top: 16px;
+  right: 36px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--active-default,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--complete-default {
+  background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-numbers-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-numbers-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--active-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--complete-numbers,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--active-numbers-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--complete-numbers-mobile {
+  background: #1964A3;
+  color: #fff;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--active-default-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step .vf-horizontal-steppers--complete-default-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--active-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--complete-alternative,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--active-default-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile .vf-horizontal-steppers--complete-default-mobile {
+  background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--step-mobile {
+  width: 98px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 30px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--dash--alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--dash--alternative-mobile {
+  background: #edf1f6;
+  border-radius: 0px;
+  height: 4px;
+  width: 50px;
+  margin-left: 6px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--dash--alternative-mobile:first-child,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--dash--alternative-mobile:first-child,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--dash--alternative-mobile:first-child {
+  margin-left: 0;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--portal-details-mobile {
+  background: #edf1f6;
+  border-radius: 0px;
+  height: 4px;
+  width: 84px;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash .vf-horizontal-steppers--complete-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal .vf-horizontal-steppers--complete-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-alternative-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-portal-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--active-portal-details-mobile,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details .vf-horizontal-steppers--complete-portal-details-mobile {
+  background: #1964A3;
+}
+
+.vf-horizontal-steppers--container .vf-horizontal-steppers--dash > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal > label,
+.vf-horizontal-steppers--container .vf-horizontal-steppers--portal-details > label {
+  position: absolute;
+  margin-bottom: 0;
+  color: black;
+  font-family: Vattenfall Hall Bold NORDx;
+  font-size: 14px;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  width: 247px;
+  top: 11px;
 }
 
 .news-outer-container {
