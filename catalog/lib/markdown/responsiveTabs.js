@@ -13,12 +13,12 @@ class Frame extends Component {
     this.renderFrameContent();
   }
   renderFrameContent() {
-    // let doc = document.querySelector('.responsiveTabs__iframe___1nTCV')
-    //   .contentDocument
     let responsiveTabs = document.querySelectorAll('.responsiveTabs__iframe___1nTCV')
     responsiveTabs.forEach(tab => {
-         let doc = tab.contentDocument
-      if (doc.readyState === 'interactive') {
+      let doc = tab.contentDocument
+      console.log(document.readyState);
+
+      if (doc.readyState !== "loading") {
         let contents = React.createElement(
           'div',
           null,
@@ -43,14 +43,12 @@ class Frame extends Component {
           function () {}
         )
       }
-      else {
-        setTimeout(this.renderFrameContent, 0)
-      }
+      // else {
+      //   setTimeout(this.renderFrameContent, 0)
+      // }
     })
   }
-  componentDidUpdate() {
-    this.renderFrameContent();
-  }
+
   render() {
     return <iframe id={"iframe"} className={styles.iframe} />;
   }
