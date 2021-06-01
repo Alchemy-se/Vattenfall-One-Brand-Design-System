@@ -15,7 +15,7 @@ responsive: true
 
       <div class="vf-col">
 
-        <div class="vf-icon-map-tag mb-2">
+        <div class="vf-icon-pin mb-2">
         </div>
 
         <p class="vf-preamble">
@@ -28,7 +28,7 @@ responsive: true
 
       <div class="vf-col">
 
-        <div class="vf-icon-time mb-2">
+        <div class="vf-icon-calendar-13 mb-2">
         </div>
 
         <p class="vf-preamble">

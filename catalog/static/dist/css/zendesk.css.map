@@ -1,1 +1,1 @@
-{"version":3,"sources":["zendesk.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,eAAe;IACf,mEAAmE;AACvE","file":"zendesk.css","sourcesContent":[".report-issue-button {\n    font-size: 16px;\n    cursor: pointer;\n    font-family: \"VattenfallHall-Regular\", Helvetica, Arial, sans-serif;\n}\n/*# sourceMappingURL=zendesk.css.map */"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"zendesk.css"}
