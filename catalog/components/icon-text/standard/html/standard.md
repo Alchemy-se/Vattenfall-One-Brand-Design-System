@@ -7,7 +7,7 @@ showSource: true,
 responsive: true
 ---
 
-<section class="vf-icon-text p-4 vf-border-top-gray-200 vf-border-bottom-gray-200">
+<section class="vf-icon-text p-1 vf-border-top-gray-200 vf-border-bottom-gray-200">
 
   <div class="vf-container vf-container--tight vf-text--center">
 
@@ -20,7 +20,7 @@ responsive: true
 
         <p class="vf-preamble">
           Evenemangsgatan 13C,
-          <br class="vf-u--sm-hidden vf-u--md-hidden" />
+          <br />
           169 56 Solna
         </p>
 
@@ -33,7 +33,7 @@ responsive: true
 
         <p class="vf-preamble">
           28 November 2019,
-          <br class="vf-u--sm-hidden vf-u--md-hidden" />
+          <br />
           12:00
         </p>
 
