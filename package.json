@@ -74,7 +74,7 @@
     "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.20",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.24.0",
     "react": "^16.13.1",
     "react-autosuggest": "^10.0.2",
     "react-dom": "^16.13.1",
