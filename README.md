@@ -1,3 +1,5 @@
+# DEPRECATED
+
 We have moved the latest DDS code repository from Github to Bitbucket and will no longer be maintaining this now **legacy** version on Github.
 
 To ensure you have the most recent code please visit our Bitbucket repository instead, [here](https://bitbucket.org/thebrewery/vf-dds-vanilla). From now on you will only have to download the component part of the DDS, and no longer need to download the entire platform.
